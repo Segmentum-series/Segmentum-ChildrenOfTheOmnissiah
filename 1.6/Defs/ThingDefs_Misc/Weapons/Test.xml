@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GunTest_AssaultRifle</defName>
+    <label>Test assault rifle</label>
+    <description>A Test weapon for sounds.</description>
+     <graphicData>
+       <texPath>Things/Weapon/Seg_COTO_Ranged_MacroStubber</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+     </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+ <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Stubber</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+ </verbs>
+</ThingDef>
+  
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AssaultRifle</defName>
+    <label>assault rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+</ThingDef>
+ 
+<SoundDef>
+    <defName>Stubber</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>99</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MacroStubber</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+</SoundDef>
+
+</Defs>
