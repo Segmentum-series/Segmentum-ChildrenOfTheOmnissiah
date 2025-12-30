@@ -25,7 +25,7 @@
 			<researchPrerequisite>Seg_COTO_AutoWeapons</researchPrerequisite><!-- Update the name if research is different -->
 			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
 			<recipeUsers Inherit="False">
-				<li>Seg_COTO_MechanicusFabricationBench</li>
+				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
 		<thingSetMakerTags>
@@ -43,7 +43,7 @@
 	<!-- Macrostubber -->
 	<ThingDef ParentName="Seg_COTO_Stubber_base">
 		<defName>Gun_COTO_Macrostubber</defName>
-		<label>Macrostubber</label>
+		<label>macrostubber</label>
 		<description>Favoured by Tech-Priests, macrostubbers are able to hurling out a thunderous cloud of solid slugs.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>

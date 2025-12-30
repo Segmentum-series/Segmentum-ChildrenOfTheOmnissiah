@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef Abstract="True" Name="Seg_COTO_TechIndustrial">
+		<techLevel>Industrial</techLevel>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef Abstract="True" Name="Seg_COTO_TechSpacer">
+		<techLevel>Spacer</techLevel>
+	</ResearchProjectDef>
+
+<!-- Cult Mechanicus -->
+	<ResearchProjectDef ParentName="Seg_COTO_TechIndustrial">
+		<defName>Seg_COTO_CultMechanicus</defName>
+		<label>Cult Mechanicus</label>
+		<description>Be vested with the rites of the Machine Cult, authorizing the construction of Mechanicus forge altars capable of producing the majority of faction armaments, apparel, and sanctioned equipment.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Machining</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>Seg_COTO_SegmentumTab</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+<!-- Tech-Guard -->
+	<ResearchProjectDef ParentName="Seg_COTO_TechIndustrial">
+		<defName>Seg_COTO_TechGuard</defName>
+		<label>Tech-Guard</label>
+		<description>Be granted basic Skitarii fabrication data sheets, containing the data for the making of special equipment, including implants, weapons and apparel.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Seg_COTO_CultMechanicus</li>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_COTO_SegmentumTab</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.7</researchViewY>
+	</ResearchProjectDef>
+
+<!-- Tech-Guard advanced arsenal -->
+	<ResearchProjectDef ParentName="Seg_COTO_TechSpacer">
+		<defName>Seg_COTO_TechGuardAdvanced</defName>
+		<label>Tech-Guard advanced arsenal</label>
+		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
+		<baseCost>1200</baseCost>
+		<prerequisites>
+			<li>Seg_COTO_TechGuard</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_COTO_SegmentumTab</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.7</researchViewY>
+	</ResearchProjectDef>
+
+<!-- Maniple tactics 
+Left out for 1.0
+-->
+
+<!-- Auto weapons -->
+<!-- Ceramite production -->
+<!-- Radium volleys -->
+<!-- Arc permacapacitors -->
+<!-- Phosphex weapons -->
+<!-- Plasma induction -->
+<!-- Matter destabilization -->
+</Defs>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!-- Adamantium -->
 	<ThingDef ParentName="ResourceBase">
 		<defName>Seg_COTO_Adamantium</defName>
 		<label>adamantium</label>
@@ -72,7 +73,7 @@
 			<li>ResourcesRaw</li>
 		</thingCategories>
 		<statBases>
-			<MarketValue>30</MarketValue>
+			<MarketValue>3.20</MarketValue>
 			<Mass>1</Mass>
 			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
