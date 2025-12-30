@@ -73,7 +73,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CeramiteFurnace</defName>
 		<label>ceramite furnace</label>
-		<description>A .</description>
+		<description>A small foundry, often used in settlements that require a constant but small supply of ceramite.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
