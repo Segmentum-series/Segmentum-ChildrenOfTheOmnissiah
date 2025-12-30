@@ -94,7 +94,7 @@
 			<li>
 				<label>stock</label>
 				<capacities>
-				<li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
@@ -102,8 +102,8 @@
 			<li>
 				<label>barrel</label>
 				<capacities>
-				<li>Blunt</li>
-				<li>Poke</li>
+					<li>Blunt</li>
+					<li>Poke</li>
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
