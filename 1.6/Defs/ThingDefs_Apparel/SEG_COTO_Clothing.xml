@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-
-    <ThingDef Abstract="true" Name="SEG_COTO_RobeBase" ParentName="ArmorMachineableBase">
+<ThingDef Abstract="true" Name="SEG_COTO_RobeBase" ParentName="ArmorMachineableBase">
     <thingClass>Apparel</thingClass>
 
     <graphicData>
@@ -39,20 +36,18 @@
     </apparel>
 
     <comps>
-        <li Class="Core40k.CompProperties_MultiColor">
+        <li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
             <defaultPrimaryColor>(1, 1, 1)</defaultPrimaryColor>
             <defaultSecondaryColor>(1, 1, 1)</defaultSecondaryColor>
             <tabDefs>
                 <li>BEWH_ExtraDecoration</li>
             </tabDefs>
         </li>
-        <li Class="Core40k.CompProperties_Decorative">
+        <li Class="Core40k.CompProperties_Decorative" MayRequire="phonicmas.rimdark.frameworkcore">
             <decorativeType>Body</decorativeType>
         </li>
     </comps>
 </ThingDef>
-
-
 <ThingDef ParentName="SEG_COTO_RobeBase">
     <defName>SEG_COTO_MagosRobes</defName>
     <label>magos robes</label>
@@ -108,5 +103,3 @@
         </wornGraphicPaths>
     </apparel>
 </ThingDef>
-
-</Defs>
