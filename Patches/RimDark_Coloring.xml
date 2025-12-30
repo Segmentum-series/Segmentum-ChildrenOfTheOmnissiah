@@ -2,18 +2,19 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd" MayRequire="phonicmas.rimdark.frameworkcore">
-        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase" and not(comps)]</xpath>
+        <xpath>Defs/ThingDef[@Name="SEG_COTO_RobeBase" and not(comps)]</xpath>
         <value>
             <comps />
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd" MayRequire="phonicmas.rimdark.frameworkcore">
-        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase"]/comps</xpath>
+        <xpath>Defs/ThingDef[@Name="SEG_COTO_RobeBase"]/comps</xpath>
         <value>
-            <li Class="Genes40k.CompProperties_ChapterColorWithShoulderDecoration">
+            <li Class="Core40k.CompProperties_MultiColor">
+                <defaultPrimaryColor>(1, 1, 1)</defaultPrimaryColor>
+                <defaultSecondaryColor>(1, 1, 1)</defaultSecondaryColor>
                 <tabDefs>
-                    <li>BEWH_AstartesShoulderIcon</li>
                     <li>BEWH_ExtraDecoration</li>
                 </tabDefs>
             </li>
@@ -24,7 +25,7 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace" MayRequire="phonicmas.rimdark.frameworkcore">
-        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase"]/graphicData/shaderType</xpath>
+        <xpath>Defs/ThingDef[@Name="SEG_COTO_RobeBase"]/graphicData/shaderType</xpath>
         <value>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </value>
