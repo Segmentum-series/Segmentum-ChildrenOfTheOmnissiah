@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <matchPackageId>Core40k</matchPackageId>
+        <xpath>Defs/ThingDef[@Name="SEG_COTO_RobeBase"]/comps</xpath>
+        <value>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <defaultPrimaryColor>(61,61,61)</defaultPrimaryColor>
+                <defaultSecondaryColor>(223,164,29)</defaultSecondaryColor>
+                <tabDefs>
+                    <li>BEWH_ExtraDecoration</li>
+                </tabDefs>
+            </li>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Body</decorativeType>
+            </li>
+        </value>
+    </Operation>
+</Patch>
