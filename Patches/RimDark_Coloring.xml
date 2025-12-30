@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Phonicmas.RimDark.FrameworkCore</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name="SEG_COTO_RobeBase"]/comps</xpath>
-            <value>
-                <li Class="Core40k.CompProperties_MultiColor">
-                    <defaultPrimaryColor>(61,61,61)</defaultPrimaryColor>
-                    <defaultSecondaryColor>(223,164,29)</defaultSecondaryColor>
-                    <tabDefs>
-                        <li>BEWH_ExtraDecoration</li>
-                    </tabDefs>
-                </li>
-                <li Class="Core40k.CompProperties_Decorative">
-                    <decorativeType>Body</decorativeType>
-                </li>
-            </value>
-        </match>
-    </Operation>
-</Patch>
 
+    <Operation Class="PatchOperationAdd" MayRequire="phonicmas.rimdark.frameworkcore">
+        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase" and not(comps)]</xpath>
+        <value>
+            <comps />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="phonicmas.rimdark.frameworkcore">
+        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase"]/comps</xpath>
+        <value>
+            <li Class="Genes40k.CompProperties_ChapterColorWithShoulderDecoration">
+                <tabDefs>
+                    <li>BEWH_AstartesShoulderIcon</li>
+                    <li>BEWH_ExtraDecoration</li>
+                </tabDefs>
+            </li>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Body</decorativeType>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace" MayRequire="phonicmas.rimdark.frameworkcore">
+        <xpath>Defs/ThingDef[defName="SEG_COTO_RobeBase"]/graphicData/shaderType</xpath>
+        <value>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </value>
+    </Operation>
+
+</Patch>
