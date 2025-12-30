@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Stubber sound -->
+	<SoundDef>
+		<defName>Seg_COTO_Stubber</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>99</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>MacroStubber</clipPath>
+					</li>
+				</grains>      
+			<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

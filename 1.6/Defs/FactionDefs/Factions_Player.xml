@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs><!-- Requires update -->
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>Seg_COTO_PlayerMechanicus</defName>
+		<label>New Forge</label>
+		<description>A small forge enclave.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>cultist</pawnSingular>
+		<pawnsPlural>cultists</pawnsPlural>
+		<basicMemberKind>Seg_COTO_MechanicusColonist</basicMemberKind>
+		<techLevel>Industrial</techLevel>
+		<allowedCultures>
+			<li>Seg_COTO_Mechanicus</li>
+		</allowedCultures>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker><!-- Requires update - Seg_COTO_NamerFactionMechanicus -->
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker><!-- Requires update - Seg_COTO_NamerSettlementMechanicus -->
+		<backstoryFilters><!-- Requires update -->
+			<li>
+				<categories>
+					<li>Corunan</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>UI/Factions/Seg_COTO_MechanicusOutpost</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<startingResearchTags><!-- Requires update -->
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>	<!-- Requires update -->
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+</Defs>

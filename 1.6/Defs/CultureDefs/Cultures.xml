@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs><!-- Requires update -->
+	<CultureDef>
+		<defName>Seg_COTO_Mechanicus</defName>
+		<label>omnissian</label>
+		<description>A category describing the styles and practices of humankind's tech-adept groups.</description>
+		<!-- Name makers for pawns commented out for now due to lacking the content.
+		<pawnNameMaker></pawnNameMaker>
+		<pawnNameMakerFemale></pawnNameMakerFemale>-->
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>	<!-- These makers for ideologies, will require eventual updates -->
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+		<allowedPlaceTags>
+			<li>OriginSpacer</li>
+		</allowedPlaceTags>
+		<iconPath>UI/Factions/Seg_COTO_MechanicusOutpost</iconPath>
+		<thingStyleCategories>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<category>Techist</category>
+			<priority>2</priority>
+		</li>
+		</thingStyleCategories>
+		<styleItemTags><!-- Requires update -->
+		<li>
+			<tag>Punk</tag>
+			<baseWeight>0.1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>Urban</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoBeard</tag>
+			<baseWeight>10</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>BeardUrban</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>BeardPunk</tag>
+			<baseWeight>0.1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoTattoo</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooFacePunk</tag>
+			<baseWeight>0.1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>TattooBodyPunk</tag>
+			<baseWeight>0.1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+
+		</styleItemTags>
+	</CultureDef>
+
+</Defs>

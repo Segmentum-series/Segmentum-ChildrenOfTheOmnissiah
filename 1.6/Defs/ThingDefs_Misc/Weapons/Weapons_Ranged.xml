@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs><!-- Barebones doc -->
+
+	<!-- Stubber bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Stubber</defName>
+		<label>stubber bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+		<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Stubber guns -->
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_AutoWeapons</researchPrerequisite><!-- Update the name if research is different -->
+			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_MechanicusFabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<!-- Optional tags for trading and categorization 
+		<tradeTags>
+			<li></li>
+		</tradeTags>
+		<weaponTags>
+			<li></li>
+		</weaponTags>-->
+	</ThingDef>
+
+	<!-- Macrostubber -->
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
+		<defName>Gun_COTO_Macrostubber</defName>
+		<label>Macrostubber</label>
+		<description>Favoured by Tech-Priests, macrostubbers are able to hurling out a thunderous cloud of solid slugs.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2.8</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Stubber</defaultProjectile>
+				<warmupTime>0.7</warmupTime>
+				<range>22.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_Stubber</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>ShortShots</li>
+			<li>Gun</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>
