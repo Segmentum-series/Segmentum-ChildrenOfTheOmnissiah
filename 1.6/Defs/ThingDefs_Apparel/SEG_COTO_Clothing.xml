@@ -5,7 +5,7 @@
         <thingClass>Apparel</thingClass>
 
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1.0</drawSize>
         </graphicData>
@@ -48,14 +48,15 @@
         </comps>
     </ThingDef>
 
-
     <ThingDef ParentName="SEG_COTO_RobeBase">
         <defName>SEG_COTO_MagosRobes</defName>
         <label>magos robes</label>
         <description>a</description>
 
         <graphicData>
-            <texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe_Male_south</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+            <texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
         </graphicData>
 
         <statBases>
@@ -76,28 +77,22 @@
 
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
-
             <tags>
                 <li>SEG_COTO_Robe</li>
                 <li>SEG_COTO_Magos</li>
             </tags>
-
             <countsAsClothingForNudity>true</countsAsClothingForNudity>
-
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Shoulders</li>
                 <li>Neck</li>
             </bodyPartGroups>
-
             <layers>
                 <li>Middle</li>
             </layers>
-
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
-
             <wornGraphicPaths>
                 <li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
             </wornGraphicPaths>
