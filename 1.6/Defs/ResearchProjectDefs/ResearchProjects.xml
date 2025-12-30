@@ -1,0 +1,17 @@
+<Defs>
+	<ResearchProjectDef Abstract="True" Name="Seg_COTO_TechBase">
+		<techLevel>Spacer</techLevel>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="Seg_COTO_TechBase">
+		<defName>Seg_COTO_CultMechanicus</defName>
+		<label>Cult Mechanicus</label>
+		<description>test.</description>
+		<baseCost>2000</baseCost>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+  			<researchViewX>1.00</researchViewX>
+  			<researchViewY>1.00</researchViewY>
+	</ResearchProjectDef>
+</Defs>

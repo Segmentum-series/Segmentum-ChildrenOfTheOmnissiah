@@ -72,7 +72,7 @@
 			<li>ResourcesRaw</li>
 		</thingCategories>
 		<statBases>
-			<MarketValue>30</MarketValue>
+			<MarketValue>5</MarketValue>
 			<Mass>1</Mass>
 			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
@@ -108,4 +108,54 @@
 		</stuffProps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
+
+	<RecipeDef>
+		<defName>GW_Make_CeramiteHyperweave</defName>
+		<label>make ceramite with hyperweave</label>
+		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
+		<jobString>manufacturing ceramite.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+				<categories>
+					<li>StoneBlocks</li>
+				</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Hyperweave</li>
+				</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneBlocks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>Seg_COTO_CeramiteFurnace</li>
+		</recipeUsers>
+		<products>
+			<Seg_COTO_Ceramite>20</Seg_COTO_Ceramite>
+		</products>
+	</RecipeDef>
+
 </Defs>
