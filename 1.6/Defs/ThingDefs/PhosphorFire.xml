@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- CURRENT STATE: Filth version for testing visuals. Next step: convert to Mote. -->
+
+	<ThingDef>
+		<defName>Seg_COTO_PhosphorFire</defName>
+		<label>phosphor fire</label>
+		<thingClass>SegCOTO.Fire_Phosphor</thingClass>
+
+		<category>Filth</category>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<selectable>false</selectable>
+		<useHitPoints>false</useHitPoints>
+		<neverMultiSelect>true</neverMultiSelect>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Special/PhosphorFire</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4.0</glowRadius>
+				<glowColor>(255,255,255)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
+
+
