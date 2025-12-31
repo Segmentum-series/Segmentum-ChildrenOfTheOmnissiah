@@ -46,7 +46,7 @@
 
  		 <projectile>
     		<damageDef>SEG_COTO_ArcDamage</damageDef>
-    		<damageAmountBase>10</damageAmountBase>
+    		<damageAmountBase>3</damageAmountBase>
     		<armorPenetrationBase>20</armorPenetrationBase>
     		<stoppingPower>0.2</stoppingPower>
     		<speed>999</speed>
@@ -57,8 +57,8 @@
     <damageTickRate>4</damageTickRate>
     <lifetimeTicks>10</lifetimeTicks>
 
-    <beamWidth>0.55</beamWidth>
-    <beamWidthDrawScale>1.0</beamWidthDrawScale>
+    <beamWidth>.45</beamWidth>
+    <beamWidthDrawScale>2.5</beamWidthDrawScale>
 
     <sweepRatePerTick>0.15</sweepRatePerTick>
     <maxSweepAngle>3</maxSweepAngle>
@@ -69,9 +69,9 @@
     <textureScrollOffsetPerTick>(0.25, 0)</textureScrollOffsetPerTick>
     <lockOnTarget>true</lockOnTarget>
 
-    <sustainerSoundDef>SEG_COTO_Arc</sustainerSoundDef>
+    <sustainerSoundDef>ElectricShock</sustainerSoundDef>
     <sustainerTickPeriod>8</sustainerTickPeriod>
-    <trailSoundDef>SEG_COTO_Arc</trailSoundDef>
+    <trailSoundDef>ElectricShock</trailSoundDef>
   </li>
 </modExtensions>
 	</ThingDef>	
