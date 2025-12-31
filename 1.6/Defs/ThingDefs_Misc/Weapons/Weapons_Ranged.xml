@@ -15,6 +15,68 @@
 		<speed>70</speed>
 		</projectile>
 	</ThingDef>
+	<!-- Arc Damage -->
+	<DamageDef ParentName="Bullet">
+  		<defName>SEG_COTO_ArcDamage</defName>
+  		<label>arc burn</label>
+  		<workerClass>DamageWorker_AddInjury</workerClass>
+  		<armorCategory>Heat</armorCategory>
+  		<hediff>Burn</hediff>
+  		<deathMessage>{0} was shown the holy wrath of the Omnissiah.</deathMessage>
+  		<impactSoundType>Bullet</impactSoundType>
+		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+	</DamageDef>
+	<!-- Arc Pistol Beam -->
+
+	<ThingDef ParentName="BaseBullet">
+  		<defName>SEG_COTO_ArcPistol_Beam</defName>
+  		<label>arc pistol beam</label>
+  		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+  		<category>Projectile</category>
+  		<drawOffscreen>true</drawOffscreen>
+  		<seeThroughFog>true</seeThroughFog>
+
+  		<graphicData>
+    		<graphicClass>Graphic_Single</graphicClass>
+    		<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+    		<shaderType>TransparentPostLight</shaderType>
+    		<drawSize>1</drawSize>
+ 		 </graphicData>
+
+ 		 <projectile>
+    		<damageDef>SEG_COTO_ArcDamage</damageDef>
+    		<damageAmountBase>10</damageAmountBase>
+    		<armorPenetrationBase>20</armorPenetrationBase>
+    		<stoppingPower>0.2</stoppingPower>
+    		<speed>999</speed>
+  		</projectile>
+
+  <modExtensions>
+  <li Class="taranchuk_lasers.LaserProperties">
+    <damageTickRate>4</damageTickRate>
+    <lifetimeTicks>10</lifetimeTicks>
+
+    <beamWidth>0.55</beamWidth>
+    <beamWidthDrawScale>1.0</beamWidthDrawScale>
+
+    <sweepRatePerTick>0.15</sweepRatePerTick>
+    <maxSweepAngle>3</maxSweepAngle>
+
+    <damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+    <debugCells>false</debugCells>
+
+    <textureScrollOffsetPerTick>(0.25, 0)</textureScrollOffsetPerTick>
+    <lockOnTarget>true</lockOnTarget>
+
+    <sustainerSoundDef>SEG_COTO_Arc</sustainerSoundDef>
+    <sustainerTickPeriod>8</sustainerTickPeriod>
+    <trailSoundDef>SEG_COTO_Arc</trailSoundDef>
+  </li>
+</modExtensions>
+	</ThingDef>	
+
+
 
 	<!-- Stubber guns -->
 	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
@@ -110,4 +172,85 @@
 			</li>
 		</tools>
 	</ThingDef>
+	<!-- Arc Weapon Base -->
+	
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="SEG_COTO_ArcWeaponBase" Abstract="True">
+  		<label>arc weapon (base)</label>
+  		<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
+  		<techLevel>Spacer</techLevel>
+		<comps>
+   		 <li Class="CompProperties_Forbiddable"/>
+    	<li Class="CompProperties_Styleable"/>
+    	<li Class="CompProperties_Biocodable"/>
+    	<li>
+      	<compClass>CompQuality</compClass>
+    	</li>
+    <li Class="CompProperties_Art">
+      <nameMaker>NamerArtWeaponGun</nameMaker>
+      <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      <minQualityForArtistic>Good</minQualityForArtistic>
+    </li>
+    <li Class="Core40k.CompProperties_MultiColor">
+      <colorMaskAmount>3</colorMaskAmount>
+      <defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+      <defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+      <defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+    </li>
+  </comps>
+
+	</ThingDef>
+	<!-- Arc Pistol -->
+<ThingDef ParentName="SEG_COTO_ArcWeaponBase">
+  <defName>SEG_COTO_ArcPistol</defName>
+  <label>arc pistol</label>
+  <description>A compact arc‑energy sidearm that fires a thin, tracking beam of searing energy.</description>
+
+  <graphicData>
+    <texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
+    <shaderType>BEWH_CutoutThreeColor</shaderType>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+
+  <statBases>
+    <Mass>2.5</Mass>
+    <EquipDelay>0.5</EquipDelay>
+    <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    <AccuracyTouch>0.80</AccuracyTouch>
+    <AccuracyShort>0.90</AccuracyShort>
+    <AccuracyMedium>0.80</AccuracyMedium>
+    <AccuracyLong>0.55</AccuracyLong>
+    <WorkToMake>6000</WorkToMake>
+    <MarketValue>500</MarketValue>
+  </statBases>
+
+  <verbs>
+    <li>
+      <verbClass>Verb_Shoot</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>SEG_COTO_ArcPistol_Beam</defaultProjectile>
+      <soundCast>SEG_COTO_Arc</soundCast>
+      <warmupTime>1</warmupTime>
+      <range>20.0</range>
+      <burstShotCount>1</burstShotCount>
+      <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+      <muzzleFlashScale>0.5</muzzleFlashScale>
+    </li>
+  </verbs>
+
+  <costList>
+    <Steel>40</Steel>
+    <ComponentIndustrial>3</ComponentIndustrial>
+  </costList>
+
+  <recipeMaker>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </recipeMaker>
+</ThingDef>
 </Defs>
+
+
