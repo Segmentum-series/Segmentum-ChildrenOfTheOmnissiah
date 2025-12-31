@@ -76,6 +76,60 @@
 			</li>
 		</modExtensions>
 	</ThingDef>	
+	<!-- Phospor Damage -->
+	<DamageDef>
+  		<defName>Seg_COTO_PhosphorDamage</defName>
+  		<label>phosphor burn</label>
+  		<workerClass>DamageWorker_AddInjury</workerClass>
+  		<externalViolence>true</externalViolence>
+  		<hediff>Burn</hediff>
+  		<armorCategory>Heat</armorCategory>
+  		<deathMessage>{0} was consumed by phosphor fire.</deathMessage>
+	</DamageDef>
+	<!-- Phosphor Projectile -->
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_PhosphorBeam</defName>
+  		<label>phosphor beam</label>
+ 		<description>A concentrated phosphor beam that burns through targets with white-hot intensity.</description>
+  		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+  		<category>Projectile</category>
+  		<drawOffscreen>true</drawOffscreen>
+  		<seeThroughFog>true</seeThroughFog>
+
+  		<graphicData>
+    		<graphicClass>Graphic_Single</graphicClass>
+    		<texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
+    		<shaderType>TransparentPostLight</shaderType>
+    		<drawSize>1</drawSize>
+  		</graphicData>
+
+  		<projectile>
+   		 <damageDef>Seg_COTO_PhosphorDamage</damageDef>
+   		 <damageAmountBase>16</damageAmountBase>
+    	<armorPenetrationBase>0.30</armorPenetrationBase>
+   		<stoppingPower>0.3</stoppingPower>
+    	<speed>1000</speed>
+    	<soundImpact>Seg_COTO_PhosphoreImpact</soundImpact>
+  		</projectile>
+
+  	<modExtensions>
+    <li Class="taranchuk_lasers.LaserProperties">
+      <damageTickRate>11</damageTickRate>
+      <lifetimeTicks>10</lifetimeTicks>
+      <beamWidth>0.55</beamWidth>
+      <beamWidthDrawScale>1</beamWidthDrawScale>
+      <sweepRatePerTick>0.015</sweepRatePerTick>
+      <maxSweepAngle>1.5</maxSweepAngle>
+      <damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+      <debugCells>false</debugCells>
+      <textureScrollOffsetPerTick>(0.15, 0.25)</textureScrollOffsetPerTick>
+      <lockOnTarget>true</lockOnTarget>
+      <trailSoundDef>Seg_COTO_PhosphoreFire</trailSoundDef>
+    </li>
+  	</modExtensions>
+	</ThingDef>
+
+
 
 	<!-- Stubber guns -->
 	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
@@ -250,6 +304,83 @@
 				</skillRequirements>
 			</recipeMaker>
 		</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
+	<label>phosphor weapon (base)</label>
+	<description>Base definition for phosphor weapons.</description>
+	<techLevel>Spacer</techLevel>
+	<comps>
+		<li Class="CompProperties_Forbiddable"/>
+		<li Class="CompProperties_Styleable"/>
+		<li Class="CompProperties_Biocodable"/>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Good</minQualityForArtistic>
+		</li>
+		<li Class="Core40k.CompProperties_MultiColor">
+			<colorMaskAmount>3</colorMaskAmount>
+			<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+			<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+		</li>
+	</comps>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
+	<defName>Seg_COTO_PhosphorSerpentia</defName>
+	<label>phosphor serpentia</label>
+	<description>A compact phosphor serpentia that fires a concentrated beam of white-hot phosphor energy.</description>
+
+	<graphicData>
+		<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1</drawSize>
+	</graphicData>
+
+	<statBases>
+		<Mass>2.2</Mass>
+		<EquipDelay>0.5</EquipDelay>
+		<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		<AccuracyTouch>0.85</AccuracyTouch>
+		<AccuracyShort>0.92</AccuracyShort>
+		<AccuracyMedium>0.82</AccuracyMedium>
+		<AccuracyLong>0.55</AccuracyLong>
+		<WorkToMake>6000</WorkToMake>
+		<MarketValue>600</MarketValue>
+	</statBases>
+
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Seg_COTO_PhosphorBeam</defaultProjectile>
+			<soundCast>Seg_COTO_PhosphoreFire</soundCast>
+			<warmupTime>1.0</warmupTime>
+			<range>22.0</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			<muzzleFlashScale>10</muzzleFlashScale>
+		</li>
+	</verbs>
+
+	<costList>
+		<Steel>40</Steel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+	</costList>
+
+	<recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	</ThingDef>
+
+
 	</Defs>
 
 

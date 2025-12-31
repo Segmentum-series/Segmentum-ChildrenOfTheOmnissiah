@@ -33,4 +33,36 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+<SoundDef>
+  <defName>Seg_COTO_PhosphoreFire</defName>
+  <context>MapOnly</context>
+  <maxSimultaneous>20</maxSimultaneous>
+  <subSounds>
+    <li>
+      <grains>
+        <li Class="AudioGrain_Clip">
+          <clipPath>Seg_COTO_Phosphore</clipPath>
+        </li>
+      </grains>
+      <volumeRange>30~40</volumeRange>
+    </li>
+  </subSounds>
+</SoundDef>
+<!--Phosphor Sounds-->
+<SoundDef>
+  <defName>Seg_COTO_PhosphoreImpact</defName>
+  <context>MapOnly</context>
+  <maxSimultaneous>20</maxSimultaneous>
+  <subSounds>
+    <li>
+      <grains>
+        <li Class="AudioGrain_Clip">
+          <clipPath>Seg_COTO_PhosphoreImpact</clipPath>
+        </li>
+      </grains>
+      <volumeRange>30~40</volumeRange>
+    </li>
+  </subSounds>
+</SoundDef>
+
 </Defs>
