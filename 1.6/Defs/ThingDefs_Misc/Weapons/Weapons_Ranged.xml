@@ -34,16 +34,16 @@
   		<label>arc pistol beam</label>
   		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-  		<category>Projectile</category>
-  		<drawOffscreen>true</drawOffscreen>
-  		<seeThroughFog>true</seeThroughFog>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>2</drawSize>
- 		 </graphicData>
+		</graphicData>
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
@@ -72,7 +72,7 @@
 
 				<!-- <sustainerSoundDef>Seg_COTO_ArcSound</sustainerSoundDef>
 				<sustainerTickPeriod>8</sustainerTickPeriod> -->
-				<trailSoundDef>ElectricShock</trailSoundDef>
+				<trailSoundDef>Electric</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>	
@@ -137,11 +137,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_AutoWeapons</researchPrerequisite><!-- Update the name if research is different -->
+			<researchPrerequisite>Seg_COTO_AutoWeapons</researchPrerequisite>
 			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
 			<recipeUsers Inherit="False">
 				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
+		</recipeUsers>
 		</recipeMaker>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -169,6 +169,9 @@
 		<uiIconScale>1.1</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -225,31 +228,37 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<!-- Arc Weapon Base -->
-	
+
+	<!-- Arc weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_ArcWeaponBase" Abstract="True">
-			<label>arc weapon (base)</label>
-			<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
-			<techLevel>Spacer</techLevel>
-			<comps>
+		<label>arc weapon (base)</label>
+		<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Biocodable"/>
 			<li>
-			<compClass>CompQuality</compClass>
+				<compClass>CompQuality</compClass>
 			</li>
-		<li Class="CompProperties_Art">
-		<nameMaker>NamerArtWeaponGun</nameMaker>
-		<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-		<minQualityForArtistic>Good</minQualityForArtistic>
-		</li>
-		<li Class="Core40k.CompProperties_MultiColor">
-		<colorMaskAmount>3</colorMaskAmount>
-		<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
-		<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-		<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-		</li>
-	</comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_ArcPermacapacitors</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	
 	<!-- Arc Pistol -->
@@ -297,6 +306,9 @@
 		</costList>
 
 			<recipeMaker>
+				<researchPrerequisites>
+					<li>Seg_COTO_TechGuard</li>
+				</researchPrerequisites>
 				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 				<workSkill>Crafting</workSkill>
 				<skillRequirements>

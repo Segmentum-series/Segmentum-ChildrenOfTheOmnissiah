@@ -1,35 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ResearchProjectDef Abstract="True" Name="Seg_COTO_TechIndustrial">
+<!-- Main research tree -->
+<!-- Auto weapons -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_AutoWeapons</defName>
+		<label>auto weapons</label>
+		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
+		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
+		<researchViewX>12.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef Abstract="True" Name="Seg_COTO_TechSpacer">
+<!-- Ceramite production -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_CeramiteProduction</defName>
+		<label>ceramite production</label>
+		<description>Produce advanced ceramic resources from stone blocks and other materials.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>4.20</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+<!-- Radium volleys -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_RadiumVolleys</defName>
+		<label>radium volleys</label>
+		<description>Receive sacred rites of radium armament construction, weapons capable of unleashing volatile radium volleys that annihilate foes through sanctified radioactive force.</description>
+		<baseCost>1250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>4.20</researchViewY>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+<!-- Arc permacapacitors -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_ArcPermacapacitors</defName>
+		<label>arc permacapacitors</label>
+		<description>Be invested with the consecrated rites of Arc permacapacitors, channeling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armor, and circuitry alike.</description>
+		<baseCost>1550</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+			<li>MultiAnalyzer</li>
+			<li>Batteries</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+<!-- Phosphex munitions -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_PhosphexMunitions</defName>
+		<label>phosphex munitions</label>
+		<description>Receive sacred rites of Phosphex manipulation, alchemical machine-spirits to project blinding burning phosphor discharges.</description>
+		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
+			<researchViewX>18.00</researchViewX>
+			<researchViewY>2.50</researchViewY>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
+<!-- Plasma induction -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_PlasmaInduction</defName>
+		<label>plasma induction</label>
+		<description>Be granted the consecrated rites of Plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+			<researchViewX>19.00</researchViewX>
+			<researchViewY>1.80</researchViewY>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+			<li>Batteries</li>
+			<li>Seg_COTO_ArcPermacapacitors</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+<!-- Matter destabilization -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_MatterDestabilization</defName>
+		<label>matter destabilization</label>
+		<description>Be invested with rites of matter destabilization, capable of unmaking materials and living tissue.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+			<researchViewX>20.00</researchViewX>
+			<researchViewY>1.80</researchViewY>
+		<prerequisites>
+			<li>Seg_COTO_PlasmaInduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+<!-- Segmentum research tree -->
 <!-- Cult Mechanicus -->
-	<ResearchProjectDef ParentName="Seg_COTO_TechIndustrial">
+	<ResearchProjectDef>
 		<defName>Seg_COTO_CultMechanicus</defName>
 		<label>Cult Mechanicus</label>
 		<description>Be vested with the rites of the Machine Cult, authorizing the construction of Mechanicus forge altars capable of producing the majority of faction armaments, apparel, and sanctioned equipment.</description>
 		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
 		<prerequisites>
 			<li>Machining</li>
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Seg_COTO_SegmentumTab</tab>
-		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 <!-- Tech-Guard -->
-	<ResearchProjectDef ParentName="Seg_COTO_TechIndustrial">
+	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuard</defName>
 		<label>Tech-Guard</label>
 		<description>Be granted basic Skitarii fabrication data sheets, containing the data for the making of special equipment, including implants, weapons and apparel.</description>
 		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.7</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_CultMechanicus</li>
 			<li>ComplexClothing</li>
@@ -39,16 +162,17 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>Seg_COTO_SegmentumTab</tab>
-		<researchViewX>1</researchViewX>
-		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
 <!-- Tech-Guard advanced arsenal -->
-	<ResearchProjectDef ParentName="Seg_COTO_TechSpacer">
+	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuardAdvanced</defName>
 		<label>Tech-Guard advanced arsenal</label>
 		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
 		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.7</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_TechGuard</li>
 		</prerequisites>
@@ -57,19 +181,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>Seg_COTO_SegmentumTab</tab>
-		<researchViewX>2</researchViewX>
-		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
-<!-- Maniple tactics 
-Left out for 1.0
--->
-
-<!-- Auto weapons -->
-<!-- Ceramite production -->
-<!-- Radium volleys -->
-<!-- Arc permacapacitors -->
-<!-- Phosphex weapons -->
-<!-- Plasma induction -->
-<!-- Matter destabilization -->
+<!-- Maniple tactics || Left out for 1.0 -->
 </Defs>

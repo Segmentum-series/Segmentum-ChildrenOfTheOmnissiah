@@ -24,7 +24,12 @@
 			<packageId>Phonicmas.RimDark.FrameworkCore</packageId>
 			<displayName>RimDark 40k - Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3267464767</steamWorkshopUrl>
-			</li>
+		</li>
+		<li>
+			<packageId>ShunTheWitch.CVNmechanoidwarfarecore</packageId>
+			<displayName>CVN Mechanoid Warfare Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3047564391</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -41,5 +46,6 @@
 		<li>ceteam.combatextended</li>
 		<li>Phonicmas.RimDark.FrameworkCore</li>
 		<li>vanillaexpanded.vpsycastse</li>
+		<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
 	</loadAfter>
 </ModMetaData>

@@ -131,7 +131,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>Seg_COTO_CultMechanicus</li>
+			<li>Seg_COTO_CeramiteProduction</li>
 		</researchPrerequisites>
 	</ThingDef>
 </Defs>
