@@ -9,9 +9,26 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>MacroStubber</clipPath>
+						<clipPath>Seg_COTO_Macrostubber</clipPath>
 					</li>
-				</grains>      
+				</grains>
+			<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Arc sound -->
+	<SoundDef>
+		<defName>Seg_COTO_ArcSound</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>20</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Arc</clipPath>
+					</li>
+				</grains>
 			<volumeRange>30~40</volumeRange>
 			</li>
 		</subSounds>
