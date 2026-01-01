@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
     <ThingDef>
         <defName>Seg_COTO_PhosphorFire</defName>
         <label>phosphor fire</label>
-        <thingClass>Fire</thingClass>
+        <thingClass>Seg.COTO.PhosphorFire</thingClass>
 
         <category>None</category>
-
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <tickerType>Normal</tickerType>
         <selectable>false</selectable>
@@ -15,7 +15,7 @@
 
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Special/PhosphorFire_0</texPath>
+            <texPath>Things/Special/PhosphorFire</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1.5</drawSize>
         </graphicData>
@@ -26,8 +26,8 @@
                 <glowColor>(255,255,255)</glowColor>
             </li>
         </comps>
-    </ThingDef>
 
+    </ThingDef>
 
 
 </Defs>
