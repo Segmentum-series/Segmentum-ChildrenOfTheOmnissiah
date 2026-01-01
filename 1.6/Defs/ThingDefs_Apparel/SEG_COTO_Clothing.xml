@@ -1,102 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef Abstract="true" Name="SEG_COTO_RobeBase" ParentName="ArmorMachineableBase">
-        <thingClass>Apparel</thingClass>
+	<ThingDef Abstract="true" Name="Seg_COTO_RobeBase" ParentName="ArmorMachineableBase">
+		<thingClass>Apparel</thingClass>
 
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1.0</drawSize>
-        </graphicData>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<drawSize>1.0</drawSize>
+		</graphicData>
 
-        <thingCategories>
-            <li>Apparel</li>
-        </thingCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
 
-        <tradeTags>
-            <li>SEG_COTO_Robe</li>
-        </tradeTags>
+		<tradeTags>
+			<li>Seg_COTO_Robe</li>
+		</tradeTags>
 
-        <apparel>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <tags>
-                <li>SEG_COTO_Robe</li>
-            </tags>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Neck</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-        </apparel>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Robe</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
 
-        <comps>
-            <li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-                <defaultPrimaryColor>(0.55, 0.05, 0.05)</defaultPrimaryColor>
-                <defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
-                <tabDefs>
-                    <li>BEWH_ExtraDecoration</li>
-                </tabDefs>
-            </li>
-        </comps>
-    </ThingDef>
+		<comps>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+	</ThingDef>
 
-    <ThingDef ParentName="SEG_COTO_RobeBase">
-        <defName>SEG_COTO_MagosRobes</defName>
-        <label>magos robes</label>
-        <description>a</description>
+	<ThingDef ParentName="Seg_COTO_RobeBase">
+		<defName>Seg_COTO_MagosRobes</defName>
+		<label>magos robe</label>
+		<description>a</description>
 
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
-        </graphicData>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
+		</graphicData>
 
-        <statBases>
-            <WorkToMake>6000</WorkToMake>
-            <MaxHitPoints>350</MaxHitPoints>
-            <Mass>2.2</Mass>
-            <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.55</ArmorRating_Heat>
-        </statBases>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
 
-        <costList>
-            <Steel>20</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-            <Hyperweave>40</Hyperweave>
-            <Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
-        </costList>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hyperweave>40</Hyperweave>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
 
-        <apparel>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <tags>
-                <li>SEG_COTO_Robe</li>
-                <li>SEG_COTO_Magos</li>
-            </tags>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Neck</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-            <wornGraphicPaths>
-                <li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
-            </wornGraphicPaths>
-        </apparel>
-    </ThingDef>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Robe</li>
+				<li>Seg_COTO_Magos</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
+			</wornGraphicPaths>
+		</apparel>
+	</ThingDef>
 
 </Defs>
