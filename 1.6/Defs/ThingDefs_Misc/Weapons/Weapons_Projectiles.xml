@@ -132,4 +132,28 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+<!--Phoshor Damage-->
+<ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_PhosphorBlast</defName>
+        <label>phosphor bolt</label>
+
+        <graphicData>
+            <texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+
+       <projectile>
+    		<damageDef>Burn</damageDef>
+    		<damageAmountBase>1</damageAmountBase>
+    		<speed>70</speed>
+
+    		<explosionRadius>1</explosionRadius>
+
+   		 <postExplosionSpawnThingDef>Seg_COTO_PhosphorFire</postExplosionSpawnThingDef>
+    	<postExplosionSpawnChance>1</postExplosionSpawnChance>
+    	<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+</projectile>
+
+    </ThingDef>
 </Defs>

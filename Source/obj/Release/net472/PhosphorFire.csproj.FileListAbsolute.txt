@@ -1,8 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\bin\Release\net472\PhosphorFire.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\bin\Release\net472\PhosphorFire.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.GeneratedMSBuildEditorConfig.editorconfig
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.sourcelink.json
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Source\obj\Release\net472\PhosphorFire.pdb
