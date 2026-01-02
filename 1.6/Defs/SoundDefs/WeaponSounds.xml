@@ -13,6 +13,7 @@
 					</li>
 				</grains>
 			<volumeRange>30~40</volumeRange>
+			<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -30,6 +31,7 @@
 					</li>
 				</grains>
 				<volumeRange>30~40</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -47,6 +49,7 @@
 					</li>
 				</grains>
 				<volumeRange>30~40</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -63,6 +66,7 @@
 					</li>
 				</grains>
 				<volumeRange>30~40</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -80,6 +84,7 @@
 					</li>
 				</grains>
 				<volumeRange>30~60</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -96,6 +101,7 @@
 					</li>
 				</grains>
 				<volumeRange>30~60</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
