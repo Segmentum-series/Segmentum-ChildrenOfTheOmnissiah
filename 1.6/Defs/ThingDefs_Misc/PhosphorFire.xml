@@ -6,10 +6,10 @@
         <label>phosphor fire</label>
         <thingClass>Seg.COTO.PhosphorFire</thingClass>
 
-        <category>None</category>
+        <category>Attachment</category>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <tickerType>Normal</tickerType>
-        <selectable>false</selectable>
+        <selectable>true</selectable>
         <useHitPoints>false</useHitPoints>
         <neverMultiSelect>true</neverMultiSelect>
 
@@ -25,7 +25,10 @@
                 <glowRadius>4.0</glowRadius>
                 <glowColor>(255,255,255)</glowColor>
             </li>
+            <li Class="Seg.COTO.CompProperties_PhosphorFire" />
+            <li Class="Seg.COTO.CompProperties_Targetable" />
         </comps>
+
 
     </ThingDef>
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- <JobDef>
+        <defName>Seg_COTO_ExtinguishPhosphorFire</defName>
+        <driverClass>JobDriver_BeatFire</driverClass>
+        <reportString>extinguishing phosphor fire.</reportString>
+    </JobDef>
+
+    <WorkGiverDef>
+        <defName>Seg_COTO_FightPhosphorFire</defName>
+        <giverClass>RimWorld.WorkGiver_FightFires</giverClass>
+        <workType>Firefighter</workType>
+        <priorityInType>100</priorityInType>
+        <verb>extinguish</verb>
+        <gerund>extinguishing</gerund>
+
+    </WorkGiverDef> -->
+
+</Defs>

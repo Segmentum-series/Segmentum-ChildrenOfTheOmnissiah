@@ -4,6 +4,18 @@ using UnityEngine;
 
 namespace Seg.COTO
 {
+    public class CompProperties_Targetable : CompProperties
+    {
+        public CompProperties_Targetable()
+        {
+            this.compClass = typeof(CompTargetable);
+        }
+    }
+
+    public class CompTargetable : ThingComp
+    {
+    }
+
     public class PhosphorFire : ThingWithComps
     {
         private int ageTicks;
@@ -27,7 +39,7 @@ namespace Seg.COTO
             if (this.IsHashIntervalTick(60))
                 DoDamageAndHeat();
 
-            if (this.IsHashIntervalTick(120))
+            if (this.IsHashIntervalTick(1200))
                 TrySpread();
         }
 
@@ -43,7 +55,7 @@ namespace Seg.COTO
                 if (t.def.category == ThingCategory.Mote)
                     continue;
 
-                float dmg = 5f;
+                float dmg = 3f;
                 t.TakeDamage(new DamageInfo(DamageDefOf.Flame, dmg, instigator: this));
             }
 
@@ -85,6 +97,27 @@ namespace Seg.COTO
 
             var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("Seg_COTO_PhosphorFire"));
             GenSpawn.Spawn(fire, pos, map);
+        }
+    }
+
+    public class CompProperties_PhosphorFire : CompProperties
+    {
+        public CompProperties_PhosphorFire()
+        {
+            this.compClass = typeof(CompPhosphorFire);
+        }
+    }
+
+    public class CompPhosphorFire : ThingComp
+    {
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+        }
+
+        public override string CompInspectStringExtra()
+        {
+            return "Burning (Phosphor Fire)";
         }
     }
 }
