@@ -344,6 +344,85 @@
 		</recipeMaker>
 	</ThingDef>
 
+<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
+	<label>RadBase</label>
+	<description>not in game report to SEG team if you see in game</description>
+	<techLevel>Spacer</techLevel>
+	<comps>
+		<li Class="CompProperties_Forbiddable"/>
+		<li Class="CompProperties_Styleable"/>
+		<li Class="CompProperties_Biocodable"/>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Good</minQualityForArtistic>
+		</li>
+		<li Class="Core40k.CompProperties_MultiColor">
+			<colorMaskAmount>3</colorMaskAmount>
+			<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+			<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+		</li>
+	</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
+		<defName>Seg_COTO_RadPistol</defName>
+		<label>Radium Pistol</label>
+		<description>.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+
+		<statBases>
+			<Mass>1</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<WorkToMake>6500</WorkToMake>
+			<MarketValue>650</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
+				<soundCast>Seg_COTO_GammaSound</soundCast>
+				<warmupTime>1.0</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_RadiumVolleys</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
 
 
 	</Defs>
