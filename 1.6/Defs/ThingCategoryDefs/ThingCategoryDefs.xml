@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>Seg_COTO_WeaponMelee</defName>
+		<label>Mechanicus melee weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Seg_COTO_WeaponRangedLowTier</defName>
+		<label>Mechanicus low-tier ranged weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Seg_COTO_WeaponRangedMidTier</defName>
+		<label>Mechanicus mid-tier ranged weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Seg_COTO_WeaponRangedHighTier</defName>
+		<label>Mechanicus high-tier ranged weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+</Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs><!-- Barebones doc -->
 
-	<!-- Stubber guns -->
+<!-- Stubber guns -->
 	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -16,10 +16,10 @@
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
-		<!-- Optional tags for trading and categorization 
 		<tradeTags>
-			<li></li>
+			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
+		<!-- Optional tags for trading and categorization 
 		<weaponTags>
 			<li></li>
 		</weaponTags>-->
@@ -27,7 +27,7 @@
 
 	<!-- Macrostubber -->
 	<ThingDef ParentName="Seg_COTO_Stubber_base">
-		<defName>Gun_COTO_Macrostubber</defName>
+		<defName>Seg_COTO_Gun_Macrostubber</defName>
 		<label>macrostubber</label>
 		<description>Favoured by Tech-Priests, macrostubbers are able to hurling out a thunderous cloud of solid slugs.</description>
 		<graphicData>
@@ -97,9 +97,10 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
-	<!-- Arc weapons base -->
+<!-- Arc weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_ArcWeaponBase" Abstract="True">
 		<label>arc weapon (base)</label>
 		<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
@@ -129,11 +130,14 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<!-- Arc Pistol -->
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
-		<defName>Seg_COTO_ArcPistol</defName>
+		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
 		<description>A compact arc‑energy sidearm that fires a thin, tracking beam of searing energy.</description>
 
@@ -175,122 +179,133 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 
-			<recipeMaker>
-				<researchPrerequisites>
-					<li>Seg_COTO_TechGuard</li>
-				</researchPrerequisites>
-				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<skillRequirements>
-				<Crafting>6</Crafting>
-				</skillRequirements>
-			</recipeMaker>
-		</ThingDef>
-	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
-	<label>phosphor weapon (base)</label>
-	<description>Base definition for phosphor weapons.</description>
-	<techLevel>Spacer</techLevel>
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Styleable"/>
-		<li Class="CompProperties_Biocodable"/>
-		<li>
-			<compClass>CompQuality</compClass>
-		</li>
-		<li Class="CompProperties_Art">
-			<nameMaker>NamerArtWeaponGun</nameMaker>
-			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-			<minQualityForArtistic>Good</minQualityForArtistic>
-		</li>
-		<li Class="Core40k.CompProperties_MultiColor">
-			<colorMaskAmount>3</colorMaskAmount>
-			<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
-			<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-		</li>
-	</comps>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+			<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
+
+<!-- Phosphor weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
+		<label>phosphor weapon (base)</label>
+		<description>Base definition for phosphor weapons.</description>
+		<techLevel>Spacer</techLevel>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
 	<!-- Phosphor Serpentia -->
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
-    <defName>Seg_COTO_PhosphorSerpentia</defName>
-    <label>phosphor serpentia</label>
-    <description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description>
+		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
+		<label>phosphor serpentia</label>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description>
 
-    <graphicData>
-        <texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
-        <shaderType>BEWH_CutoutThreeColor</shaderType>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>1</drawSize>
-    </graphicData>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
 
-    <statBases>
-        <Mass>2.2</Mass>
-        <EquipDelay>0.5</EquipDelay>
-        <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-        <AccuracyTouch>0.85</AccuracyTouch>
-        <AccuracyShort>0.92</AccuracyShort>
-        <AccuracyMedium>0.82</AccuracyMedium>
-        <AccuracyLong>0.55</AccuracyLong>
-        <WorkToMake>6000</WorkToMake>
-        <MarketValue>600</MarketValue>
-    </statBases>
+		<statBases>
+			<Mass>2.2</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.92</AccuracyShort>
+			<AccuracyMedium>0.82</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<WorkToMake>6000</WorkToMake>
+			<MarketValue>600</MarketValue>
+		</statBases>
 
-    <verbs>
-        <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
-            <soundCast>Seg_COTO_PhosphoreSound</soundCast>
-            <warmupTime>1.0</warmupTime>
-            <range>22.0</range>
-            <burstShotCount>1</burstShotCount>
-            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-            <muzzleFlashScale>10</muzzleFlashScale>
-        </li>
-    </verbs>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
+				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
+				<warmupTime>1.0</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
 
-    <costList>
-        <Steel>40</Steel>
-        <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
 
-    <recipeMaker>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <skillRequirements>
-            <Crafting>6</Crafting>
-        </skillRequirements>
-    </recipeMaker>
-</ThingDef>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+	</ThingDef>
 
-
+<!-- Gamma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_GammaWeaponBase" Abstract="True">
-	<label>GammaBase</label>
-	<description>not in game report to SEG team if you see in game</description>
-	<techLevel>Spacer</techLevel>
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Styleable"/>
-		<li Class="CompProperties_Biocodable"/>
-		<li>
-			<compClass>CompQuality</compClass>
-		</li>
-		<li Class="CompProperties_Art">
-			<nameMaker>NamerArtWeaponGun</nameMaker>
-			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-			<minQualityForArtistic>Good</minQualityForArtistic>
-		</li>
-		<li Class="Core40k.CompProperties_MultiColor">
-			<colorMaskAmount>3</colorMaskAmount>
-			<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
-			<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-		</li>
-	</comps>
+		<label>GammaBase</label>
+		<description>not in game report to SEG team if you see in game</description>
+		<techLevel>Spacer</techLevel>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>
 	</ThingDef>
 
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
-		<defName>Seg_COTO_GammaPistol</defName>
+		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
 		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.</description>
 
@@ -342,8 +357,10 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
+<!-- Rad weapons base -->
 <ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
 	<label>RadBase</label>
 	<description>not in game report to SEG team if you see in game</description>
@@ -423,7 +440,6 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
-
 
 	</Defs>
 

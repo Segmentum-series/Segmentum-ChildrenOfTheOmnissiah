@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef>
+		<defName>Seg_COTO_MeleeElectricBurn</defName>
+		<label>electric burn</label>
+		<deathMessage>{0} has been electrocuted to death.</deathMessage>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<makesBlood>false</makesBlood>
+		<impactSoundType>Electric</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<explosionCellFleck>ElectricalSpark</explosionCellFleck>
+		<explosionColorEdge>(0.8, 0.8, 1.0, 0.8)</explosionColorEdge>
+		<explosionColorCenter>(1.0, 0.5, 0.0)</explosionColorCenter>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<causeStun>true</causeStun>
+		<stunAdaptationTicks>1800</stunAdaptationTicks>
+		<hediff>Burn</hediff>
+		<defaultDamage>15</defaultDamage>
+		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+	</DamageDef>
+</Defs>
