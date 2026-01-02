@@ -1,9 +1,28 @@
 using RimWorld;
 using Verse;
+using Verse.AI;
 using UnityEngine;
+using HarmonyLib;
+using System.Collections.Generic;
 
 namespace Seg.COTO
 {
+    public class CompProperties_PhosphorFire : CompProperties
+    {
+        public CompProperties_PhosphorFire()
+        {
+            this.compClass = typeof(CompPhosphorFire);
+        }
+    }
+
+    public class CompPhosphorFire : ThingComp
+    {
+        public override string CompInspectStringExtra()
+        {
+            return "Burning (Phosphor Fire)";
+        }
+    }
+
     public class CompProperties_Targetable : CompProperties
     {
         public CompProperties_Targetable()
@@ -16,11 +35,10 @@ namespace Seg.COTO
     {
     }
 
-    public class PhosphorFire : ThingWithComps
+    public class PhosphorFire : Fire
     {
         private int ageTicks;
         private const int LifetimeTicks = 10000;
-        private float fireSize = 1.0f;
 
         protected override void Tick()
         {
@@ -37,13 +55,16 @@ namespace Seg.COTO
                 return;
 
             if (this.IsHashIntervalTick(60))
-                DoDamageAndHeat();
+                DoPhosphorDamageAndHeat();
+
+            if (this.IsHashIntervalTick(120))
+                IgniteNearbyPawns();
 
             if (this.IsHashIntervalTick(1200))
-                TrySpread();
+                TryPhosphorSpread();
         }
 
-        private void DoDamageAndHeat()
+        private void DoPhosphorDamageAndHeat()
         {
             var list = Map.thingGrid.ThingsListAt(Position);
             for (int i = 0; i < list.Count; i++)
@@ -59,14 +80,39 @@ namespace Seg.COTO
                 t.TakeDamage(new DamageInfo(DamageDefOf.Flame, dmg, instigator: this));
             }
 
-            float energy = fireSize * 160f;
+            float energy = this.fireSize * 160f;
             GenTemperature.PushHeat(Position, Map, energy);
 
             if (Rand.Value < 0.4f)
-                WeatherBuildupUtility.AddSnowRadial(Position, Map, fireSize * 3f, -(fireSize * 0.1f));
+                WeatherBuildupUtility.AddSnowRadial(Position, Map, this.fireSize * 3f, -(this.fireSize * 0.1f));
         }
 
-        private void TrySpread()
+        private void IgniteNearbyPawns()
+        {
+            var pawns = Map.mapPawns.AllPawnsSpawned;
+            for (int i = 0; i < pawns.Count; i++)
+            {
+                Pawn pawn = pawns[i];
+                if (!pawn.Position.InHorDistOf(Position, 1.5f))
+                    continue;
+
+                if (pawn.Dead || pawn.Downed)
+                    continue;
+
+                pawn.TakeDamage(new DamageInfo(DamageDefOf.Flame, 2f, instigator: this));
+
+                if (Rand.Chance(0.15f))
+                {
+                    if (Map.thingGrid.ThingAt<PhosphorFire>(pawn.Position) == null)
+                    {
+                        var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("Seg_COTO_PhosphorFire"));
+                        GenSpawn.Spawn(fire, pawn.Position, Map);
+                    }
+                }
+            }
+        }
+
+        private void TryPhosphorSpread()
         {
             IntVec3 c = Position + GenRadial.ManualRadialPattern[Rand.RangeInclusive(1, 8)];
             if (!c.InBounds(Map))
@@ -100,24 +146,40 @@ namespace Seg.COTO
         }
     }
 
-    public class CompProperties_PhosphorFire : CompProperties
+    [HarmonyPatch(typeof(JobDriver_BeatFire), "MakeNewToils")]
+    public static class Patch_ExtinguishFire_MakeNewToils
     {
-        public CompProperties_PhosphorFire()
+        static IEnumerable<Toil> Postfix(IEnumerable<Toil> __result, JobDriver_BeatFire __instance)
         {
-            this.compClass = typeof(CompPhosphorFire);
+            Thing target = __instance.job.targetA.Thing;
+
+            if (target != null && target.def.defName == "Seg_COTO_PhosphorFire")
+            {
+                foreach (var t in __result)
+                    yield return t;
+
+                Toil extinguish = new Toil();
+                extinguish.initAction = () =>
+                {
+                    if (target.Spawned)
+                        target.Destroy(DestroyMode.Vanish);
+                };
+                extinguish.defaultCompleteMode = ToilCompleteMode.Instant;
+                yield return extinguish;
+                yield break;
+            }
+
+            foreach (var t in __result)
+                yield return t;
+        }
+    }
+    [HarmonyPatch(typeof(Fire), "DoComplexCalcs")]
+    public static class Patch_Fire_DoComplexCalcs
+    {
+        static bool Prefix()
+        {
+            return false;
         }
     }
 
-    public class CompPhosphorFire : ThingComp
-    {
-        public override void PostSpawnSetup(bool respawningAfterLoad)
-        {
-            base.PostSpawnSetup(respawningAfterLoad);
-        }
-
-        public override string CompInspectStringExtra()
-        {
-            return "Burning (Phosphor Fire)";
-        }
-    }
 }

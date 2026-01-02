@@ -7,11 +7,10 @@
         <thingClass>Seg.COTO.PhosphorFire</thingClass>
 
         <category>Attachment</category>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <altitudeLayer>PawnState</altitudeLayer>
         <tickerType>Normal</tickerType>
         <selectable>true</selectable>
         <useHitPoints>false</useHitPoints>
-        <neverMultiSelect>true</neverMultiSelect>
 
         <graphicData>
             <graphicClass>Graphic_Flicker</graphicClass>
@@ -29,9 +28,6 @@
             <li Class="Seg.COTO.CompProperties_Targetable" />
         </comps>
 
-
     </ThingDef>
 
-
 </Defs>
-
