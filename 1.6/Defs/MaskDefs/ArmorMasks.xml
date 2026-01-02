@@ -1,0 +1,21 @@
+<Defs>
+<Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
+    <defName>SEG_COTO_MagosRobe_DefaultMask</defName>
+    <label>.</label>
+    <description>.</description>
+
+    <maskPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</maskPath>
+
+    <appliesTo>
+        <li>Seg_COTO_MagosRobes</li>
+    </appliesTo>
+
+    <shaderType>BEWH_CutoutThreeColor</shaderType>
+
+    <sortOrder>1</sortOrder>
+
+    <maskExtraFlags>
+        <li>None</li>
+    </maskExtraFlags>
+</Core40k.MaskDef>
+</Defs>
