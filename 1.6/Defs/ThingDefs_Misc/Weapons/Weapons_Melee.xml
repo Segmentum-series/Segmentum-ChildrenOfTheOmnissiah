@@ -1,3 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs><!-- Barebones doc -->
+<Defs>
+<!-- Barebones doc -->
+	<ThingDef Abstract="True" Name="MeleePowerWeapon_base" ParentName="BaseWeapon">
+		<techLevel>Ultra</techLevel>
+			<statBases>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>Seg_COTO_WeaponMelee</li>
+		</thingCategories>
+		<weaponTags>
+			<li>UltratechMelee</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponMelee</li>
+		</tradeTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>Ultratech</li>
+		</weaponClasses>
+	</ThingDef>
+
+<!-- Omnissian axe -->
+	<ThingDef ParentName="MeleePowerWeapon_base">
+		<defName>Seg_COTO_Melee_OmnissianAxeBasic</defName>
+		<label>omnissian axe</label>
+		<description>A holy icon granted to cultist adepts that have proven themselves suitably devoted to the Machine God.</description>
+		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Melee_OmnissianAxeBasic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<costList>
+			<Steel>35</Steel>
+			<Plasteel>95</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>

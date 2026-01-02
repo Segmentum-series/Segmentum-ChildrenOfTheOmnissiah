@@ -17,7 +17,7 @@
 	</ThingDef>
 
 <!-- Arc -->
-	<!-- Arc Damage -->
+	<!-- Arc damage -->
 	<DamageDef ParentName="Bullet">
 		<defName>Seg_COTO_ArcDamage</defName>
 		<label>arc burn</label>
@@ -71,9 +71,7 @@
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 
-				<!-- <sustainerSoundDef>Seg_COTO_ArcSound</sustainerSoundDef>
-				<sustainerTickPeriod>8</sustainerTickPeriod> -->
-				<trailSoundDef>Electric</trailSoundDef>
+				<trailSoundDef>Power_OnSmall</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -113,10 +111,10 @@
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<stoppingPower>0.3</stoppingPower>
 			<speed>1000</speed>
-			<soundImpact>Seg_COTO_Gamma</soundImpact>
+			<soundImpact>Seg_COTO_GammaSound</soundImpact>
 		</projectile>
 
-			<modExtensions>
+		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
 				<damageTickRate>11</damageTickRate>
 				<lifetimeTicks>10</lifetimeTicks>
@@ -128,37 +126,35 @@
 				<debugCells>false</debugCells>
 				<textureScrollOffsetPerTick>(0.15, 0.25)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
-				<trailSoundDef>Seg_COTO_PhosphoreFire</trailSoundDef>
+				<trailSoundDef>Seg_COTO_PhosphoreSound</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
-<!--Phoshor Damage-->
-<ThingDef ParentName="BaseBullet">
-        <defName>Seg_COTO_PhosphorBlast</defName>
-        <label>phosphor bolt</label>
+
+<!-- Phoshor -->
+	<!-- Phoshor damage -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_PhosphorBlast</defName>
+		<label>phosphor bolt</label>
 		<thingClass>Seg.COTO.Projectile_Phosphor</thingClass>
 
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
 
-        <graphicData>
-            <texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.2</drawSize>
-        </graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>70</speed>
 
-     <projectile>
-            <damageDef>Flame</damageDef>
-            <damageAmountBase>1</damageAmountBase>
-            <speed>70</speed>
+			<explosionRadius>0.5</explosionRadius>
 
-            <explosionRadius>0.5</explosionRadius>
-        
+			<preExplosionSpawnThingDef>Seg_COTO_PhosphorFire</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+		</projectile>
 
-            <preExplosionSpawnThingDef>Seg_COTO_PhosphorFire</preExplosionSpawnThingDef>
-            <preExplosionSpawnChance>1</preExplosionSpawnChance>
-            <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-        </projectile>
-
-
-
-    </ThingDef>
+	</ThingDef>
 </Defs>

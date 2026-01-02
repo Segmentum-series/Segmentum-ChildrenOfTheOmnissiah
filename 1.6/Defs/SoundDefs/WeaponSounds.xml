@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Stubber sound -->
+	<!-- Stubber sounds -->
 	<SoundDef>
-		<defName>Seg_COTO_Stubber</defName>  
+		<defName>Seg_COTO_StubberSound</defName>  
 		<context>MapOnly</context>  
 		<maxSimultaneous>99</maxSimultaneous>  
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>Seg_COTO_Macrostubber</clipPath>
+						<clipPath>Seg_COTO_Sound_Macrostubber</clipPath>
 					</li>
 				</grains>
 			<volumeRange>30~40</volumeRange>
@@ -17,7 +17,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<!-- Arc sound -->
+	<!-- Arc sounds -->
 	<SoundDef>
 		<defName>Seg_COTO_ArcSound</defName>  
 		<context>MapOnly</context>  
@@ -26,91 +26,110 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>Seg_COTO_Arc</clipPath>
+						<clipPath>Seg_COTO_Sound_Arc</clipPath>
 					</li>
 				</grains>
-			<volumeRange>30~40</volumeRange>
+				<volumeRange>30~40</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>
-<SoundDef>
-  <defName>Seg_COTO_PhosphoreFire</defName>
-  <context>MapOnly</context>
-  <maxSimultaneous>20</maxSimultaneous>
-  <subSounds>
-    <li>
-      <grains>
-        <li Class="AudioGrain_Clip">
-          <clipPath>Seg_COTO_Phosphore</clipPath>
-        </li>
-      </grains>
-      <volumeRange>30~40</volumeRange>
-    </li>
-  </subSounds>
-</SoundDef>
-<!--Phosphor Sounds-->
-<SoundDef>
-  <defName>Seg_COTO_PhosphoreImpact</defName>
-  <context>MapOnly</context>
-  <maxSimultaneous>20</maxSimultaneous>
-  <subSounds>
-    <li>
-      <grains>
-        <li Class="AudioGrain_Clip">
-          <clipPath>Seg_COTO_PhosphoreImpact</clipPath>
-        </li>
-      </grains>
-      <volumeRange>30~40</volumeRange>
-    </li>
-  </subSounds>
-</SoundDef>
-<SoundDef>
-	<defName>Seg_COTO_Gamma</defName>
-	<context>MapOnly</context>
-	<maxSimultaneous>20</maxSimultaneous>
-	<subSounds>
-		<li>
-			<grains>
-				<li Class="AudioGrain_Clip">
-					<clipPath>Seg_COTO_Gamma</clipPath>
-				</li>
-			</grains>
-			<volumeRange>30~60</volumeRange>
-		</li>
-	</subSounds>
-</SoundDef>
- <SoundDef>
-        <defName>Seg_COTO_Phosphore</defName>
-        <context>MapOnly</context>
-        <maxSimultaneous>20</maxSimultaneous>
-        <subSounds>
-            <li>
-                <grains>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Seg_COTO_Phosphore</clipPath>
-                    </li>
-                </grains>
-                <volumeRange>30~40</volumeRange>
-            </li>
-        </subSounds>
-    </SoundDef>
 
-    <SoundDef>
-        <defName>Seg_COTO_PhosphoreImpact</defName>
-        <context>MapOnly</context>
-        <maxSimultaneous>20</maxSimultaneous>
-        <subSounds>
-            <li>
-                <grains>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Seg_COTO_PhosphoreImpact</clipPath>
-                    </li>
-                </grains>
-                <volumeRange>30~40</volumeRange>
-            </li>
-        </subSounds>
-    </SoundDef>
+	<!-- Phosphor sounds -->	
+	<SoundDef>
+		<defName>Seg_COTO_PhosphoreImpact</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_PhosphoreImpact</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
+	<SoundDef>
+		<defName>Seg_COTO_PhosphoreSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Phosphore</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
+	<!-- Gamma sounds -->
+	<SoundDef>
+		<defName>Seg_COTO_GammaSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Gamma</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
+	<SoundDef>
+		<defName>Seg_COTO_GammaImpactSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_GammaImpact</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- Powered melee weapon sounds -->
+	<SoundDef>
+		<defName>Seg_COTO_PoweredMeleeWeaponImpactSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_PoweredMeleeWeapon_Impact</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Seg_COTO_PoweredMeleeWeaponEquipSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_PoweredMeleeWeapon_Equip</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>
