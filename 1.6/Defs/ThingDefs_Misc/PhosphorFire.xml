@@ -14,7 +14,7 @@
         <neverMultiSelect>true</neverMultiSelect>
 
         <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>Graphic_Flicker</graphicClass>
             <texPath>Things/Special/PhosphorFire</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1.5</drawSize>
