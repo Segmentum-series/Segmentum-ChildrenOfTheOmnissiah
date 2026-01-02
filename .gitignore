@@ -1,2 +1,11 @@
 Source/obj/Debug/net48/PhosphorFire.AssemblyInfo.cs
 Source/obj/Debug/net48/PhosphorFire.AssemblyInfoInputs.cache
+Source/obj/PhosphorFire.csproj.nuget.dgspec.json
+Source/obj/PhosphorFire.csproj.nuget.g.props
+Source/obj/PhosphorFire.csproj.nuget.g.targets
+Source/obj/project.assets.json
+Source/obj/project.nuget.cache
+Source/obj/Debug/net48/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+Source/obj/Debug/net48/PhosphorFire.assets.cache
+Source/obj/Debug/net48/PhosphorFire.csproj.AssemblyReference.cache
+Source/obj/Debug/net48/PhosphorFire.GeneratedMSBuildEditorConfig.editorconfig
