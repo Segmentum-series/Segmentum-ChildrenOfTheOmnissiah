@@ -188,7 +188,7 @@
         <defName>SEG_COTO_Bullet_Plasma</defName>
         <label>plasma shot</label>
         <graphicData>
-            <texPath>Textures\Things\Projectile\Seg_COTO_Plasma</texPath>
+            <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>

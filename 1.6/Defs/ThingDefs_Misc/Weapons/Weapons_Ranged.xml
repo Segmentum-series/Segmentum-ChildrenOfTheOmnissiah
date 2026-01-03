@@ -479,7 +479,7 @@
 		<description>.</description>
 
 		<graphicData>
-			<texPath>TThings\Weapon\Seg_COTO_Ranged_PlasmaCaliver</texPath>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PlasmaCaliver</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
@@ -499,12 +499,13 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Seg_COTO_Plasma</defaultProjectile>
+				<defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
 				<warmupTime>1.0</warmupTime>
 				<range>22.0</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<forcedMissRadius>1.0</forcedMissRadius>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
