@@ -37,12 +37,6 @@
             		<li>BEWH_ExtraDecoration</li>
         		</tabDefs>
     		</li>
-    		<li Class="Core40k.CompProperties_Decorative">
-        		<decorativeType>Body</decorativeType>
-        		<extraDecorations>
-            <li>Seg_COTO_Deco_MagoRobeGearStripe</li>
-        		</extraDecorations>
-    			</li>
 
 		</comps>
 	</ThingDef>
@@ -96,6 +90,14 @@
 				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
 			</wornGraphicPaths>
 		</apparel>
+		<comps>
+		<li Class="Core40k.CompProperties_Decorative">
+        		<decorativeType>Body</decorativeType>
+        		<extraDecorations>
+            <li>Seg_COTO_Deco_MagosRobeGearStripe</li>
+        		</extraDecorations>
+    			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_RobeBase">
 		<defName>Seg_COTO_MagosCossock</defName>
@@ -197,6 +199,14 @@
 				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
 			</wornGraphicPaths>
 		</apparel>
+		<comps>
+		<li Class="Core40k.CompProperties_Decorative">
+        		<decorativeType>Head</decorativeType>
+        		<extraDecorations>
+            <li>Seg_COTO_Deco_MagosHoodGearStripe</li>
+        		</extraDecorations>
+    			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>
