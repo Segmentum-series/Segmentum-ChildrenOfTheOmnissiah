@@ -15,6 +15,20 @@
 		<speed>70</speed>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Transuranic</defName>
+		<label>stubber bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>2</armorPenetrationBase>
+		<speed>900</speed>
+		</projectile>
+	</ThingDef>
 
 <!-- Arc -->
 	<!-- Arc damage -->
