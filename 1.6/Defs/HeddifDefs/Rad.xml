@@ -2,8 +2,8 @@
 <Defs>
 <HediffDef>
     <defName>SEG_COTO_RadBuildup</defName>
-    <label>Radiation Damage</label>
-    <description>.</description>
+    <label>Rad-Poisoning</label>
+    <description>the deleterous effects of being exposed to a radiation. Will slowly go away on its own, but very likely to cause cancers and severely weakens pawns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.9, 0.8, 0.4)</defaultLabelColor>
     <lethalSeverity>1</lethalSeverity>

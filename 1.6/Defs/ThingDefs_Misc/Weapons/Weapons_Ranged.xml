@@ -274,6 +274,58 @@
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
+		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
+		<label>phosphor serpentia</label>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description> <!-- update with spreedsheet eventually-->
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+
+		<statBases>
+			<Mass>2.2</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.12</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<WorkToMake>6000</WorkToMake>
+			<MarketValue>600</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
+				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
+				<warmupTime>2.1</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+	</ThingDef>
 
 <!-- Gamma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_GammaWeaponBase" Abstract="True">
@@ -440,6 +492,60 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
+		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
+		<label>Radium Carbine</label>
+		<description>.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+
+		<statBases>
+			<Mass>1</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<WorkToMake>6500</WorkToMake>
+			<MarketValue>650</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
+				<soundCast>Seg_COTO_RadiumSound</soundCast>
+				<warmupTime>.5</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_RadiumVolleys</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
 	<!-- Plasma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PlasmaWeaponBase" Abstract="True">
 		<label>PlasmaWeaponBase</label>
@@ -526,6 +632,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	<!-- Transuranic Arquebus weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_TUABWeaponBase" Abstract="True">
 		<label>TransuranicArquebusWeaponBase</label>
 		<description>Base definition for that skitarri rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
