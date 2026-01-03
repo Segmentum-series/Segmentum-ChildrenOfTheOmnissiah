@@ -29,9 +29,6 @@
 				<li>Shoulders</li>
 				<li>Neck</li>
 			</bodyPartGroups>
-			<layers>
-				<li>Shell</li>
-			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
@@ -102,6 +99,58 @@
 			</defaultOutfitTags>
 			<wornGraphicPaths>
 				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
+			</wornGraphicPaths>
+		</apparel>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_RobeBase">
+		<defName>Seg_COTO_MagosCossock</defName>
+		<label>Magos Cossack</label>
+		<description>a</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
+
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hyperweave>40</Hyperweave>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Robe</li>
+				<li>Seg_COTO_Magos</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</li>
 			</wornGraphicPaths>
 		</apparel>
 	</ThingDef>
