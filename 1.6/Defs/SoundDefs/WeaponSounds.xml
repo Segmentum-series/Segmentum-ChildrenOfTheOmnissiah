@@ -106,6 +106,39 @@
 		</subSounds>
 	</SoundDef>
 
+	<SoundDef>
+		<defName>Seg_COTO_RadiumSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Radium</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~90</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+		<SoundDef>
+		<defName>Seg_COTO_PlasmaSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Plasma</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~90</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 	<!-- Powered melee weapon sounds -->
 	<SoundDef>
 		<defName>Seg_COTO_PoweredMeleeWeaponImpactSound</defName>

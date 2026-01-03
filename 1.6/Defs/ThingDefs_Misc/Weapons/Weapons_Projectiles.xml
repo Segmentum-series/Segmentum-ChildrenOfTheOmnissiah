@@ -184,6 +184,24 @@
         	<speed>100</speed>
     	</projectile>
 </ThingDef>
-
+<ThingDef ParentName="BaseBullet">
+        <defName>SEG_COTO_Bullet_Plasma</defName>
+        <label>plasma shot</label>
+        <graphicData>
+            <texPath>Textures\Things\Projectile\Seg_COTO_Plasma</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Vaporize</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+            <stoppingPower>1.0</stoppingPower>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <explosionRadius>2.5</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
+        </projectile>
+    </ThingDef>
 
 </Defs>
