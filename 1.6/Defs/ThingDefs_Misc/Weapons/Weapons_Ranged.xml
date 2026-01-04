@@ -169,12 +169,12 @@
 		<statBases>
 			<Mass>2.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>13000</WorkToMake>
 			<MarketValue>500</MarketValue>
 		</statBases>
 
@@ -184,7 +184,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 			<soundCast>Seg_COTO_ArcSound</soundCast>
-			<warmupTime>0.16</warmupTime>
+			<warmupTime>0.50</warmupTime>
 			<range>15.9</range>
 			<burstShotCount>1</burstShotCount>
 			<ticksBetweenBurstShots>0</ticksBetweenBurstShots> <!-- may be safe to take out? idk-->
@@ -194,7 +194,7 @@
 
 		<costList>
 			<Steel>40</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 
 		<recipeMaker>
@@ -204,7 +204,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-			<Crafting>6</Crafting>
+			<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
