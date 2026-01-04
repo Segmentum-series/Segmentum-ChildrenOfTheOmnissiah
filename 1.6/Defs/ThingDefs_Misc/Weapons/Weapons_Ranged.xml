@@ -592,7 +592,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
-		<equippedAngleOffset>-45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
 			<Mass>2.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
