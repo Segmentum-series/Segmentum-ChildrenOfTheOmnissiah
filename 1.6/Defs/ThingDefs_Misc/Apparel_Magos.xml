@@ -31,13 +31,12 @@
 
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-        		<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
-        		<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
-        		<tabDefs>
-            		<li>BEWH_ExtraDecoration</li>
-        		</tabDefs>
-    		</li>
-
+				<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -153,7 +152,7 @@
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_RobeBase">
 		<defName>Seg_COTO_MagosHood</defName>
-		<label>Magos Hood </label>
+		<label>magos hood</label>
 		<description>a</description>
 
 		<graphicData>

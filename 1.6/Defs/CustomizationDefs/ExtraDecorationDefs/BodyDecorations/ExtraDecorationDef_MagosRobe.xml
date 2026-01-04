@@ -71,7 +71,7 @@
 		<label>Cog-edged stripe</label>
 		<description>...</description>
 
-		<iconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</iconPath>
+		<iconPath>UI/Decoration/Icons/MagosHood/Seg_COTO_MagosHood_GearStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</drawnTextureIconPath>
 
 		<drawSize>(0.5, 0.5)</drawSize>

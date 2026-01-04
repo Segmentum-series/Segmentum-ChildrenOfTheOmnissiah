@@ -68,6 +68,12 @@
 		<researchPrerequisites>
 			<li>Seg_COTO_CultMechanicus</li>
 		</researchPrerequisites>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AllowColoringOfThings">
+				<allowColoringOfApparel>true</allowColoringOfApparel>
+				<allowColoringOfEquipment>true</allowColoringOfEquipment>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
