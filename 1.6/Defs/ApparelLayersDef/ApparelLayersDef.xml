@@ -1,0 +1,7 @@
+<Defs>
+    <ApparelLayerDef>
+        <defName>Backpack</defName>
+        <label>backpack</label>
+        <drawOrder>600</drawOrder>
+    </ApparelLayerDef>
+</Defs>

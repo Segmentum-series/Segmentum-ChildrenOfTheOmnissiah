@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Abstract="true" Name="Seg_COTO_SkitariiBase" ParentName="ArmorMachineableBase">
+		<thingClass>Apparel</thingClass>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+
+		<tradeTags>
+			<li>Seg_COTO_Skitarii</li>
+		</tradeTags>
+
+		<apparel>
+			<tags>
+				<li>Seg_COTO_Skitarii</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<defaultOutfitTags>
+				<li>Soldier</li> <!-- if broken switch back to worker, i have a gd english degree and cant remember if that is spelled right and frankly refuse to google it out of hubris.-->
+			</defaultOutfitTags>
+		</apparel>
+        <recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		
+	</ThingDef>
+    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_SkitariiFatigues</defName>
+		<label>Skitarii Fatigues</label>
+		<description>a</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SkitariiFatigues/Seg_COTO_SkitariiFatigues</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
+		</statBases>
+
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hyperweave>40</Hyperweave>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Robe</li>
+				<li>Seg_COTO_Skitarii</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+                <li>Legs</li>
+                <li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SkitariiFatigues/Seg_COTO_SkitariiFatigues</li>
+			</wornGraphicPaths>
+		</apparel>
+		<comps>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+        		<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
+        		<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
+        		<tabDefs>
+            		<li>BEWH_ExtraDecoration</li>
+        		</tabDefs>
+    		</li>
+
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_SkitariiBackpack</defName>
+		<label>Skitarii Backpack</label>
+		<description>a</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
+		</statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+            <CarryingCapacity>50</CarryingCapacity>
+            <VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+        </equippedStatOffsets>
+
+
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Cloth>40</Cloth>
+		</costList>
+
+		<apparel>
+			<tags>
+				<li>Seg_COTO_Skitarii</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Backpack</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</li>
+			</wornGraphicPaths>
+		</apparel>
+		<comps>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_SkitariiRangerHood</defName>
+		<label>Skitarii Ranger Hood </label>
+		<description>a</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
+
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Hood</li>
+				<li>Seg_COTO_Skitarii</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</li>
+			</wornGraphicPaths>
+		</apparel>
+        <comps>
+		<li Class="Core40k.CompProperties_Decorative">
+        		<decorativeType>Head</decorativeType>
+        		<extraDecorations>
+            <li>Seg_COTO_Deco_SkitariiRangerHoodLenses2</li>
+        		</extraDecorations>
+    			</li>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+        		<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
+        		<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
+        		<tabDefs>
+            		<li>BEWH_ExtraDecoration</li>
+        		</tabDefs>
+    		</li>
+
+		</comps>
+        </ThingDef>
+</Defs>

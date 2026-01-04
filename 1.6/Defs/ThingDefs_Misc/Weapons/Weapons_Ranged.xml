@@ -636,7 +636,7 @@
 	<!-- Transuranic Arquebus weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_TUABWeaponBase" Abstract="True">
 		<label>TransuranicArquebusWeaponBase</label>
-		<description>Base definition for that skitarri rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
+		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
