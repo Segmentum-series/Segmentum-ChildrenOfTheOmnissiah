@@ -20,4 +20,39 @@
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
 	</DamageDef>
+	<!-- Arc damage -->
+	<DamageDef ParentName="Bullet">
+		<defName>Seg_COTO_ArcDamage</defName>
+		<label>arc burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<armorCategory>Heat</armorCategory>
+		<hediff>Burn</hediff>
+		<causeStun>true</causeStun>
+		<deathMessage>{0} was electrified to death.</deathMessage>
+		<impactSoundType>Electric</impactSoundType>
+		<defaultArmorPenetration>2.0</defaultArmorPenetration>
+	</DamageDef>
+	<!-- Gamma damage -->
+	<DamageDef>
+		<defName>Seg_COTO_GammaDamage</defName>
+		<label>Radiation burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
+	</DamageDef>
+	<!-- Phoshor damage -->
+
+	<DamageDef ParentName="Bullet">
+    	<defName>SEG_COTO_RadDamage</defName>
+    	<label>radiation damage</label>
+    	<additionalHediffs>
+       		<li>
+            	<hediff>SEG_COTO_RadBuildup</hediff>
+            	<severityPerDamageDealt>0.001</severityPerDamageDealt> <!-- this means 10 damage will add 1%-->
+        	</li>
+    	</additionalHediffs>
+    	<impactSoundType>Bullet</impactSoundType> <!--add ours later-->
+	</DamageDef>
 </Defs>

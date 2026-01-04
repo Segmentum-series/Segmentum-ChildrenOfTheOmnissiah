@@ -1,0 +1,18 @@
+<Defs>
+  <ToolCapacityDef>
+    <defName>SEG_COTO_ElectricShock</defName>
+    <label>electric shock</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>SEG_COTO_Maneuver_ElectricBurn</defName>
+    <requiredCapacity>SEG_COTO_ElectricShock</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Seg_COTO_MeleeElectricBurn</meleeDamageDef>
+    </verb>
+    <combatLogRulesHit>Maneuver_Poke_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Poke_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Poke_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Poke_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+</Defs>
