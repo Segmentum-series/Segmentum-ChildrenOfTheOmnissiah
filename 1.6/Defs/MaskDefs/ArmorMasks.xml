@@ -1,41 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
-    <defName>SEG_COTO_MagosRobe_DefaultMask</defName>
-    <label>.</label>
-    <description>.</description>
+	<Core40k.MaskDef Name="BEWH_MaskDef_ExtraDecoration" Abstract="true"><!--Base definition for extra decoration masks-->
+		<appliesToKind>ExtraDecoration</appliesToKind>
+	</Core40k.MaskDef>
 
-    <maskPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobem</maskPath>
+	<Core40k.MaskDef Name="BEWH_MaskDef_Thing" Abstract="true">
+		<appliesToKind>Thing</appliesToKind>
+	</Core40k.MaskDef>
 
-    <appliesTo>
-        <li>Seg_COTO_MagosRobes</li>
-    </appliesTo>
+	<Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
+		<defName>SEG_COTO_MagosRobe_DefaultMask</defName>
+		<label>.</label>
+		<description>.</description>
+		<maskPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobem</maskPath>
+		<appliesTo>
+			<li>Seg_COTO_MagosRobes</li>
+		</appliesTo>
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<sortOrder>1</sortOrder>
+		<maskExtraFlags>
+			<li>None</li>
+		</maskExtraFlags>
+	</Core40k.MaskDef>
 
-    <shaderType>BEWH_CutoutThreeColor</shaderType>
+	<Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
+		<defName>SEG_COTO_MagosHood_DefaultMask</defName>
+		<label>.</label>
+		<description>.</description>
 
-    <sortOrder>1</sortOrder>
+		<maskPath>Things/Apparel/MagosHood/Seg_COTO_MagosHoodm</maskPath>
 
-    <maskExtraFlags>
-        <li>None</li>
-    </maskExtraFlags>
-</Core40k.MaskDef><Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
-    <defName>SEG_COTO_MagosHood_DefaultMask</defName>
-    <label>.</label>
-    <description>.</description>
+		<appliesTo>
+			<li>Seg_COTO_MagosHood</li>
+		</appliesTo>
 
-    <maskPath>Things/Apparel/MagosHood/Seg_COTO_MagosHoodm</maskPath>
+		<shaderType>Cutout</shaderType>
 
-    <appliesTo>
-        <li>Seg_COTO_MagosHood</li>
-    </appliesTo>
+		<sortOrder>1</sortOrder>
 
-    <shaderType>BEWH_CutoutThreeColor</shaderType>
+		<maskExtraFlags>
+			<li>None</li>
+		</maskExtraFlags>
+	</Core40k.MaskDef>
 
-    <sortOrder>1</sortOrder>
-
-    <maskExtraFlags>
-        <li>None</li>
-    </maskExtraFlags>
-</Core40k.MaskDef>
 <Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
     <defName>SEG_COTO_SkitariiRangerHood_DefaultMask</defName>
     <label>.</label>

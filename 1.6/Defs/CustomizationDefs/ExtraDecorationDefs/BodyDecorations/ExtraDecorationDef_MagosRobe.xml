@@ -10,7 +10,6 @@
     	<iconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearStripeIcon</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearStripe</drawnTextureIconPath>
 
-
     	<drawSize>(0.5,0.5)</drawSize>
     	<sortOrder>2.1</sortOrder>
 
@@ -66,83 +65,63 @@
 
 	<!-- Thin stripe -->
 
-	<!-- helmet stripe-->
-<Core40k.ExtraDecorationDef>
-    	<defName>Seg_COTO_Deco_MagosHoodGearStripe</defName>
-   		<label>Cog-edged stripe</label>
-    	<description>...</description>
+	<!-- Hood stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosHoodGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
 
-    	<iconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</iconPath>
+		<iconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</drawnTextureIconPath>
 
-
-    	<drawSize>(0.5, 0.5)</drawSize>
-    	<sortOrder>2.1</sortOrder>
-
-    	<defaultShowRotation>
-    		<li>South</li>
-    		<li>East</li>
-    		<li>North</li>
-    		<li>West</li>
-		</defaultShowRotation>
-
-   		 <appliesTo>
-        	<li>Seg_COTO_MagosHood</li>
-    	</appliesTo>
-
-   	 	<drawData>
-  			<dataSouth>
-    			<layer>81</layer>
-    			<offset>(0, 0, 0.1)</offset>
-  			</dataSouth>
-  			<dataEast>
-    			<layer>71.5</layer>
-    			<offset>(0, 0, 0.1)</offset>
-  			</dataEast>
-  			<dataNorth>
-    			<layer>76.5</layer>
-    			<offset>(0, 0, 0.1)</offset>
-    			<flip>true</flip>
-  			</dataNorth>
-  			<dataWest>
-    			<layer>71.5</layer>
-    			<offset>(0, 0, 0.1)</offset>
-    			<flip>true</flip>
-  			</dataWest>
-		</drawData>
-
-
-    	<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
-    	<colourable>true</colourable>
-    	<flipable>true</flipable>
-    	<useMask>true</useMask>
-    	<colorAmount>1</colorAmount>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
 
-   		<defaultColour>(255,255,255)</defaultColour>
+		<appliesTo>
+			<li>Seg_COTO_MagosHood</li>
+		</appliesTo>
 
-    	<defaultMask>SEG_COTO_MagosHood_DefaultMask</defaultMask>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
 
-    	<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-    	<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
 
-    	<appliesToBodyTypes>
-        	<li>Male</li>
-        	<li>Female</li>
-        	<li>Thin</li>
-        	<li>Hulk</li>
-   		</appliesToBodyTypes>
-</Core40k.ExtraDecorationDef>
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
 <!--Skitarii hood tester-->
-<Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
     	<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses2</defName>
    		<label>Eyes dog</label>
     	<description>...</description>
 
     	<iconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses2</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses2</drawnTextureIconPath>
-
 
     	<drawSize>(0.5, 0.5)</drawSize>
     	<sortOrder>2.1</sortOrder>

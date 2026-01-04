@@ -31,7 +31,7 @@
 		<label>macrostubber</label>
 		<description>Favoured by Tech-Priests, macrostubbers are able to hurling out a thunderous cloud of solid slugs.</description>
 		<graphicData>
-			<texPath>Things/Weapon/Seg_COTO_Ranged_MacroStubber</texPath>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.4</drawSize>
 			<shaderType>CutoutComplex</shaderType>
