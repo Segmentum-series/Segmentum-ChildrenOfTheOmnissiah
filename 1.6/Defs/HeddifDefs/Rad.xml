@@ -3,7 +3,7 @@
 <HediffDef>
     <defName>SEG_COTO_RadBuildup</defName>
     <label>Rad-Poisoning</label>
-    <description>"The deleterious effects of being exposed to radiation. Will slowly go away on its own, but very likely to cause cancers and severely weakens pawns.</description>
+    <description>The deleterious effects of being exposed to radiation. Will slowly go away on its own, but very likely to cause cancers and severely weakens pawns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0, 1, 0)</defaultLabelColor>
     <lethalSeverity>1</lethalSeverity>
@@ -55,6 +55,7 @@
         <li>
             <label>minor</label>
             <minSeverity>0.20</minSeverity>
+            <vomitMtbDays>1</vomitMtbDays>
             <capMods>
                 <li>
                     <capacity>Consciousness</capacity>
@@ -81,7 +82,7 @@
         <li>
             <label>moderate</label>
             <minSeverity>0.40</minSeverity>
-            <vomitMtbDays>4</vomitMtbDays>
+            <vomitMtbDays>2</vomitMtbDays>
             <capMods>
                 <li>
                     <capacity>Consciousness</capacity>
@@ -104,7 +105,7 @@
         <li>
             <label>serious</label>
             <minSeverity>0.60</minSeverity>
-            <vomitMtbDays>1</vomitMtbDays>
+            <vomitMtbDays>.45</vomitMtbDays>
             <capMods>
                 <li>
                     <capacity>Consciousness</capacity>
@@ -122,7 +123,7 @@
             <hediffGivers>
                 <li Class="HediffGiver_Random">
                     <hediff>Carcinoma</hediff>
-                    <mtbDays>80</mtbDays>
+                    <mtbDays>60</mtbDays>
                     <canAffectAnyLivePart>true</canAffectAnyLivePart>
                 </li>
             </hediffGivers>
@@ -131,7 +132,7 @@
         <li>
             <label>extreme</label>
             <minSeverity>0.80</minSeverity>
-            <vomitMtbDays>0.5</vomitMtbDays>
+            <vomitMtbDays>0.35</vomitMtbDays>
             <capMods>
                 <li>
                     <capacity>Consciousness</capacity>
@@ -153,7 +154,7 @@
             <hediffGivers>
                 <li Class="HediffGiver_Random">
                     <hediff>Carcinoma</hediff>
-                    <mtbDays>40</mtbDays>
+                    <mtbDays>20</mtbDays>
                     <canAffectAnyLivePart>true</canAffectAnyLivePart>
                 </li>
             </hediffGivers>
@@ -163,8 +164,8 @@
 
  <RecipeDef ParentName="SurgeryFlesh">
     <defName>CureRad</defName>
-    <label>anti-rad meds infusion</label>
-    <description>This special medical operation uses a massive dose of RadAway, but consumes a large amount of glitterworld medicine.</description>
+    <label>Anti-Rad Neutroamine Infusion</label>
+    <description>This special medical operation uses a massive dose of Neutroamine. It binds and clears the radioactive substances, allowing for a much quicker recovery than normal.</description>
     <workerClass>Recipe_RemoveHediff</workerClass>
     <jobString>Infusing RadAway.</jobString>
     <workAmount>2000</workAmount>
@@ -180,7 +181,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>MedicineIndustrial</li>
+            <li>Neutroamine</li>
           </thingDefs>
         </filter>
         <count>5</count>
@@ -188,7 +189,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>Medicine</li>
+        <li>Neutroamine</li>
       </categories>
     </fixedIngredientFilter>
   </RecipeDef>
