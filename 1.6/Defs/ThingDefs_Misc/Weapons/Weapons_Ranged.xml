@@ -209,7 +209,64 @@
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
+<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
+		<defName>Seg_COTO_Gun_ArcRifle</defName>
+		<label>arc rifle</label>
+		<description>A rapid firing Arc Weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
 
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>2.5</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<WorkToMake>13000</WorkToMake>
+			<MarketValue>500</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
+			<soundCast>Seg_COTO_ArcSound</soundCast>
+			<warmupTime>0.75</warmupTime>
+			<range>35.9</range>
+			<burstShotCount>4</burstShotCount>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots> 
+			<muzzleFlashScale>10</muzzleFlashScale>
+			<targetParams>
+      			<canTargetLocations>true</canTargetLocations>
+    		</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+			<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+	</ThingDef>
 <!-- Phosphor weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
 		<label>phosphor weapon (base)</label>
@@ -329,6 +386,7 @@
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				
 			</li>
 		</verbs>
 
@@ -669,7 +727,7 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Verb_LaunchProjectile</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
@@ -679,6 +737,9 @@
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<forcedMissRadius>1.0</forcedMissRadius>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+      					<canTargetLocations>true</canTargetLocations>
+    			</targetParams>
 			</li>
 		</verbs>
 		<costList>
