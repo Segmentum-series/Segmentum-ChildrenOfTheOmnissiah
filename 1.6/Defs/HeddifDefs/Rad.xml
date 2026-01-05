@@ -2,7 +2,7 @@
 <Defs>
 <HediffDef>
     <defName>SEG_COTO_RadBuildup</defName>
-    <label>Rad-Poisoning</label>
+    <label>rad-poisoning</label>
     <description>The deleterious effects of being exposed to radiation. Will slowly go away on its own, but very likely to cause cancers and severely weakens pawns.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0, 1, 0)</defaultLabelColor>
@@ -164,7 +164,7 @@
 
  <RecipeDef ParentName="SurgeryFlesh">
     <defName>CureRad</defName>
-    <label>Anti-Rad Neutroamine Infusion</label>
+    <label>anti-rad neutroamine infusion</label>
     <description>This special medical operation uses a massive dose of Neutroamine. It binds and clears the radioactive substances, allowing for a much quicker recovery than normal.</description>
     <workerClass>Recipe_RemoveHediff</workerClass>
     <jobString>Infusing RadAway.</jobString>
