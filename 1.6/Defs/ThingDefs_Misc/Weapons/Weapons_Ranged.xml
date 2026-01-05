@@ -647,7 +647,7 @@
 	<ThingDef ParentName="Seg_COTO_PlasmaWeaponBase">
 		<defName>Seg_COTO_Gun_PlasmaCaliver</defName>
 		<label>Plasma Caliver</label>
-		<description>.</description>
+		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PlasmaCaliver</texPath>
