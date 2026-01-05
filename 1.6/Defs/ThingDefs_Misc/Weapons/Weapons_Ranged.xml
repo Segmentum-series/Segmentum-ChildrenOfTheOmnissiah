@@ -760,6 +760,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
 			<Mass>9</Mass>
 			<EquipDelay>1.2</EquipDelay>
