@@ -140,7 +140,7 @@
 
 		<projectile>
 			<damageDef>Flame</damageDef>
-			<damageAmountBase>1</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<speed>70</speed>
 
 			<explosionRadius>0.5</explosionRadius>

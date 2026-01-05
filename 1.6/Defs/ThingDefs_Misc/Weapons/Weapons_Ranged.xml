@@ -243,7 +243,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
 		<label>phosphor serpentia</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description>
+		<description>a medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
@@ -253,15 +253,15 @@
 		</graphicData>
 
 		<statBases>
-			<Mass>2.2</Mass>
+			<Mass>3.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.85</AccuracyTouch>
-			<AccuracyShort>0.92</AccuracyShort>
-			<AccuracyMedium>0.82</AccuracyMedium>
-			<AccuracyLong>0.55</AccuracyLong>
-			<WorkToMake>6000</WorkToMake>
-			<MarketValue>600</MarketValue>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<WorkToMake>34000</WorkToMake>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -270,8 +270,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
 				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
-				<warmupTime>1.0</warmupTime>
-				<range>22.0</range>
+				<warmupTime>1.7</warmupTime>
+				<range>36.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -279,8 +279,10 @@
 		</verbs>
 
 		<costList>
-			<Steel>40</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Chemfuel>150</Chemfuel>
+			<Uranium>20</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -294,8 +296,8 @@
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
-		<label>phosphor serpentia</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description> <!-- update with spreedsheet eventually-->
+		<label>phosphor blast pistol</label>
+		<description>a short-ranged sidearm capable of projecting blinding burning phosphor discharges.</description> <!-- update with spreedsheet eventually-->
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
@@ -305,15 +307,15 @@
 		</graphicData>
 
 		<statBases>
-			<Mass>2.2</Mass>
+			<Mass>6</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.35</AccuracyShort>
-			<AccuracyMedium>0.12</AccuracyMedium>
-			<AccuracyLong>0.10</AccuracyLong>
-			<WorkToMake>6000</WorkToMake>
-			<MarketValue>600</MarketValue>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<WorkToMake>13000</WorkToMake>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -322,24 +324,26 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
 				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
-				<warmupTime>2.1</warmupTime>
-				<range>22.0</range>
+				<warmupTime>.5</warmupTime>
+				<range>18.9</range>
 				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
 
 		<costList>
-			<Steel>40</Steel>
+			<Steel>45</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
+			<Chemfuel>100</Chemfuel>
+			<Uranium>10</Uranium>
 		</costList>
 
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
@@ -497,7 +501,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_RadPistol</defName>
 		<label>Radium Pistol</label>
-		<description>.</description>
+		<description>a sidearm that utilises scaled-down Radium technology, reaching a similar effect in smaller potency and scale, while still killing their own wielders.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
@@ -552,7 +556,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>Radium Carbine</label>
-		<description>.</description>
+		<description>a rapid-firing weapon capable of a punishing rate of fire. Though be warned, Radium weapons are so volatile that they eventually kill their own wielders.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>

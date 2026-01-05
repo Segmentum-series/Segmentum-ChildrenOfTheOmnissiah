@@ -173,41 +173,41 @@ namespace Seg.COTO
                 yield return t;
         }
     }
+
     [HarmonyPatch(typeof(Fire), "DoComplexCalcs")]
     public static class Patch_Fire_DoComplexCalcs
     {
-        static bool Prefix()
+        static bool Prefix(Fire __instance)
         {
-            return false;
+            return __instance.def.defName != "Seg_COTO_PhosphorFire";
         }
     }
-public class SEG_COTO_Radium_Verb_Shoot : Verb_Shoot
-{
-    private static readonly HediffDef RadBuildupDef = HediffDef.Named("SEG_COTO_RadBuildup");
 
-    protected override bool TryCastShot()
+    public class SEG_COTO_Radium_Verb_Shoot : Verb_Shoot
     {
-        bool fired = base.TryCastShot();
-        if (!fired)
-            return false;
+        private static readonly HediffDef RadBuildupDef = HediffDef.Named("SEG_COTO_RadBuildup");
 
-        if (!CasterIsPawn)
-            return true;
-
-        Pawn pawn = CasterPawn;
-
-        Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(RadBuildupDef);
-        if (hediff == null)
+        protected override bool TryCastShot()
         {
-            hediff = HediffMaker.MakeHediff(RadBuildupDef, pawn);
-            pawn.health.AddHediff(hediff);
+            bool fired = base.TryCastShot();
+            if (!fired)
+                return false;
+
+            if (!CasterIsPawn)
+                return true;
+
+            Pawn pawn = CasterPawn;
+
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(RadBuildupDef);
+            if (hediff == null)
+            {
+                hediff = HediffMaker.MakeHediff(RadBuildupDef, pawn);
+                pawn.health.AddHediff(hediff);
+            }
+
+            hediff.Severity += 0.001f;
+
+            return true;
         }
-
-        hediff.Severity += 0.001f;
-
-        return true;
     }
-}
-
-
 }
