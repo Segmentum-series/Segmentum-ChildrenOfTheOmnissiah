@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef Abstract="true" Name="Seg_COTO_RobeBase" ParentName="ArmorMachineableBase">
+	<ThingDef Abstract="true" Name="Seg_COTO_MagosBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
-
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<drawSize>1.0</drawSize>
 		</graphicData>
-
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
-
 		<tradeTags>
 			<li>Seg_COTO_Robe</li>
 		</tradeTags>
-
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -28,7 +24,6 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
-
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
@@ -40,11 +35,71 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Seg_COTO_RobeBase">
+	<!-- Magos hood -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_MagosHood</defName>
+		<label>magos hood</label>
+		<description>A simple magos hood, utilized by new and low ranking Magos according to doctrine.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/MagosHood/Seg_COTO_MagosHood</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
+
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hyperweave>40</Hyperweave>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Hood</li>
+				<li>Seg_COTO_Magos</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
+			</wornGraphicPaths>
+		</apparel>
+		
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+				<extraDecorations>
+					<li>Seg_COTO_Deco_MagosHoodGearStripe</li>
+				</extraDecorations>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Magos robe -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_MagosRobes</defName>
 		<label>magos robe</label>
-		<description>a</description>
-
+		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it's not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -89,19 +144,22 @@
 				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
 			</wornGraphicPaths>
 		</apparel>
+
 		<comps>
-		<li Class="Core40k.CompProperties_Decorative">
-        		<decorativeType>Body</decorativeType>
-        		<extraDecorations>
-            <li>Seg_COTO_Deco_MagosRobeGearStripe</li>
-        		</extraDecorations>
-    			</li>
+			<li Class="Core40k.CompProperties_Decorative">
+					<decorativeType>Body</decorativeType>
+					<extraDecorations>
+				<li>Seg_COTO_Deco_MagosRobeGearStripe</li>
+					</extraDecorations>
+				</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="Seg_COTO_RobeBase">
-		<defName>Seg_COTO_MagosCossock</defName>
-		<label>Magos Cossack</label>
-		<description>a</description>
+
+	<!-- Magos cassock -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_MagosCassock</defName>
+		<label>magos cassock</label>
+		<description>Regular uniforms utilized by the cultists of the Mechanicus. Usually a common sight around priets of Forge Worlds, it may be replaced by higher ranking members by more distinct apparel, suited for their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -150,62 +208,4 @@
 			</wornGraphicPaths>
 		</apparel>
 	</ThingDef>
-	<ThingDef ParentName="Seg_COTO_RobeBase">
-		<defName>Seg_COTO_MagosHood</defName>
-		<label>magos hood</label>
-		<description>a</description>
-
-		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
-			<texPath>Things/Apparel/MagosHood/Seg_COTO_MagosHood</texPath>
-		</graphicData>
-
-		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
-		</statBases>
-
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Hyperweave>40</Hyperweave>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
-		</costList>
-
-		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
-				<li>Seg_COTO_Hood</li>
-				<li>Seg_COTO_Magos</li>
-			</tags>
-			<countsAsClothingForNudity>true</countsAsClothingForNudity>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-			<wornGraphicPaths>
-				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
-			</wornGraphicPaths>
-		</apparel>
-		<comps>
-		<li Class="Core40k.CompProperties_Decorative">
-        		<decorativeType>Head</decorativeType>
-        		<extraDecorations>
-            <li>Seg_COTO_Deco_MagosHoodGearStripe</li>
-        		</extraDecorations>
-    			</li>
-		</comps>
-	</ThingDef>
-
 </Defs>

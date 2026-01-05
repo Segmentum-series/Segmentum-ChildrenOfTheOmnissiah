@@ -35,7 +35,7 @@
 		</appliesTo>
 
 		<shaderType>Cutout</shaderType>
-
+ 
 		<sortOrder>1</sortOrder>
 
 		<maskExtraFlags>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Skitarii hood stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_SkitariiRangerHood</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+<!--Skitarii lenses 1-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses1L</defName>
+		<label>Rounded lenses</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses1L</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses1L</drawnTextureIconPath>
+		<drawSize>(0.25, 0.25)</drawSize>
+		<sortOrder>2</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_SkitariiRangerHood</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>80</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>77</layer>
+			</dataNorth>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+<!--Skitarii lenses 1 mirrored-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses1R</defName>
+		<label>Rounded lenses</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses1R</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses1R</drawnTextureIconPath>
+		<drawSize>(0.25, 0.25)</drawSize>
+		<sortOrder>3</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_SkitariiRangerHood</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>77</layer>
+			</dataNorth>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii lenses 2-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses2</defName>
+		<label>Triple lenses</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses2</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses2</drawnTextureIconPath>
+		<drawSize>(0.25, 0.25)</drawSize>
+		<sortOrder>4</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_SkitariiRangerHood</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>82</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>77</layer>
+			</dataNorth>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii lenses 3-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses3</defName>
+		<label>Targetting lenses</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses3</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses3</drawnTextureIconPath>
+		<drawSize>(0.25, 0.25)</drawSize>
+		<sortOrder>4</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_SkitariiRangerHood</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>82</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>77</layer>
+			</dataNorth>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+		<colorAmount>2</colorAmount>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<!-- DefaultColor uses armor color option -->
+		<defaultColourTwo>(26,148,200)</defaultColourTwo>
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+
+	</Core40k.ExtraDecorationDef>
+
+</Defs>

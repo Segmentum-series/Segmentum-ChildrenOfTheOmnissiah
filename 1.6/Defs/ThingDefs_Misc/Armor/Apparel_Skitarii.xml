@@ -3,31 +3,27 @@
 
 	<ThingDef Abstract="true" Name="Seg_COTO_SkitariiBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
-
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<drawSize>1.0</drawSize>
 		</graphicData>
-
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
-
 		<tradeTags>
 			<li>Seg_COTO_Skitarii</li>
 		</tradeTags>
-
 		<apparel>
 			<tags>
 				<li>Seg_COTO_Skitarii</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<defaultOutfitTags>
-				<li>Soldier</li> <!-- if broken switch back to worker, i have a gd english degree and cant remember if that is spelled right and frankly refuse to google it out of hubris.-->
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-        <recipeMaker>
+		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_TechGuard</li>
 			</researchPrerequisites>
@@ -37,13 +33,13 @@
 				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-
-		
 	</ThingDef>
-    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+	
+	<!-- Skitarii bodysuit -->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_SkitariiFatigues</defName>
-		<label>Skitarii Fatigues</label>
-		<description>a</description>
+		<label>skitarii bodysuit</label>
+		<description>A bodysuit utilized in the entire Skitarii range. It's designed to cover only the fleshy bits of the remaining body of the tech-guards, giving a degree of environmental protection, while being adaptable to their ever decreasing biomass.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -78,8 +74,8 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 				<li>Neck</li>
-                <li>Legs</li>
-                <li>Arms</li>
+				<li>Legs</li>
+				<li>Arms</li>
 			</bodyPartGroups>
 			<layers>
 				<li>OnSkin</li>
@@ -93,19 +89,18 @@
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-        		<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
-        		<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
-        		<tabDefs>
-            		<li>BEWH_ExtraDecoration</li>
-        		</tabDefs>
-    		</li>
-
+				<defaultPrimaryColor>(0.31, 0.37, 0.40)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.64, 0.64, 0.64)</defaultSecondaryColor>
+				<!-- It has no extra decorations -->
+			</li>
 		</comps>
 	</ThingDef>
-    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+
+	<!-- Skitarii backpack -->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_SkitariiBackpack</defName>
-		<label>Skitarii Backpack</label>
-		<description>a</description>
+		<label>skitarii backpack</label>
+		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -121,12 +116,11 @@
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
 		</statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.15</MoveSpeed>
-            <CarryingCapacity>50</CarryingCapacity>
-            <VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
-        </equippedStatOffsets>
-
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<CarryingCapacity>50</CarryingCapacity>
+			<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
 
 		<costList>
 			<Steel>20</Steel>
@@ -156,9 +150,11 @@
 		<comps>
 		</comps>
 	</ThingDef>
-    <ThingDef ParentName="Seg_COTO_SkitariiBase">
+
+	<!-- Skitarii ranger hood -->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_SkitariiRangerHood</defName>
-		<label>Skitarii Ranger Hood</label>
+		<label>skitarii ranger hood</label>
 		<description>a</description>
 
 		<graphicData>
@@ -185,8 +181,7 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
-				<li>Seg_COTO_Hood</li>
-				<li>Seg_COTO_Skitarii</li>
+				<li>Seg_COTO_SkitariiRangerHood</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -203,21 +198,18 @@
 				<li>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</li>
 			</wornGraphicPaths>
 		</apparel>
-        <comps>
-		<li Class="Core40k.CompProperties_Decorative">
-        		<decorativeType>Head</decorativeType>
-        		<extraDecorations>
-            <li>Seg_COTO_Deco_SkitariiRangerHoodLenses2</li>
-        		</extraDecorations>
-    			</li>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-        		<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
-        		<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
-        		<tabDefs>
-            		<li>BEWH_ExtraDecoration</li>
-        		</tabDefs>
-    		</li>
-
+				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.56, 0.03, 0.06)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.10, 0.57, 0.78)</defaultTertiaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
 		</comps>
-        </ThingDef>
+	</ThingDef>
 </Defs>
