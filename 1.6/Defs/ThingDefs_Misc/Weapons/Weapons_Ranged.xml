@@ -332,6 +332,9 @@
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+      				<canTargetLocations>true</canTargetLocations>
+    			</targetParams>
 			</li>
 		</verbs>
 
@@ -386,7 +389,9 @@
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
-				
+				<targetParams>
+      				<canTargetLocations>true</canTargetLocations>
+    			</targetParams>
 			</li>
 		</verbs>
 
@@ -468,13 +473,13 @@
 		</graphicData>
 
 		<statBases>
-			<Mass>2.4</Mass>
+			<Mass>4</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.82</AccuracyTouch>
-			<AccuracyShort>0.90</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
 			<WorkToMake>6500</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
@@ -486,7 +491,7 @@
 				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
 				<soundCast>Seg_COTO_GammaSound</soundCast>
 				<warmupTime>1.0</warmupTime>
-				<range>22.0</range>
+				<range>17.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -494,8 +499,9 @@
 		</verbs>
 
 		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Uranium>70</Uranium>
+			<Steel>80</Steel>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 
 		<recipeMaker>
@@ -505,7 +511,8 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>10</Crafting>
+				<Intellectual>10</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
@@ -715,15 +722,15 @@
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
-			<Mass>2.5</Mass>
-			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.82</AccuracyTouch>
-			<AccuracyShort>0.90</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
+			<Mass>8</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
 			<WorkToMake>6500</WorkToMake>
-			<MarketValue>650</MarketValue>
+			<MarketValue>6500</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -731,9 +738,9 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
-				<warmupTime>1.0</warmupTime>
+				<warmupTime>1.35</warmupTime>
 				<range>22.0</range>
-				<burstShotCount>1</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<forcedMissRadius>1.0</forcedMissRadius>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -743,8 +750,9 @@
 			</li>
 		</verbs>
 		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>120</Steel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>120</Plasteel>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -753,7 +761,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
@@ -813,7 +821,7 @@
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_TransuranicArquebus</defName>
 		<label>Transuranic Arquebus</label>
-		<description>.</description>
+		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive weapon penetration capabilities.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
@@ -861,6 +869,58 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
+		<defName>Seg_COTO_Gun_GalvanicRifle</defName>
+		<label>galvanic rifle</label>
+		<description>An exquisitely hand crafted rifle that fires electrified rounds at a great distance.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_GalvanicRifle</texPath>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>5</Mass>
+			<EquipDelay>.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>6500</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Galvanic</defaultProjectile>
+				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
+				<warmupTime>2</warmupTime>
+				<range>34.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuardAdvanced</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>	
+
 	</Defs>
 
 

@@ -30,7 +30,20 @@
 		<speed>900</speed>
 		</projectile>
 	</ThingDef>
-
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Galvanic</defName>
+		<label>stubber bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>70</speed>
+		</projectile>
+	</ThingDef>
 <!-- Arc -->
 	
 
@@ -103,9 +116,9 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_GammaDamage</damageDef>
-			<damageAmountBase>16</damageAmountBase>
+			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationBase>0.30</armorPenetrationBase>
-			<stoppingPower>0.3</stoppingPower>
+			<stoppingPower>1</stoppingPower>
 			<speed>1000</speed>
 			<soundImpact>Seg_COTO_GammaSound</soundImpact>
 		</projectile>
@@ -115,12 +128,12 @@
 				<damageTickRate>11</damageTickRate>
 				<lifetimeTicks>10</lifetimeTicks>
 				<beamWidth>0.55</beamWidth>
-				<beamWidthDrawScale>1</beamWidthDrawScale>
-				<sweepRatePerTick>0.015</sweepRatePerTick>
-				<maxSweepAngle>1.5</maxSweepAngle>
+				<beamWidthDrawScale>3</beamWidthDrawScale>
+				<sweepRatePerTick>0.5</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
 				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
-				<textureScrollOffsetPerTick>(0.15, 0.25)</textureScrollOffsetPerTick>
+				<textureScrollOffsetPerTick>(5,5)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 				<trailSoundDef>Seg_COTO_PhosphoreSound</trailSoundDef>
 			</li>
@@ -152,6 +165,7 @@
 		</projectile>
 
 	</ThingDef>
+<!-- Radium -->
 	<ThingDef ParentName="BaseBullet">
     	<defName>SEG_COTO_RadBullet</defName>
    	 	<label>radiation bullet</label>
@@ -168,6 +182,7 @@
         	<speed>70</speed>
     	</projectile>
 </ThingDef>
+<!-- Plasma -->
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>
         <label>plasma shot</label>
@@ -178,11 +193,11 @@
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Vaporize</damageDef>
+            <damageDef>Seg_COTO_PlasDamage</damageDef>
             <damageAmountBase>30</damageAmountBase>
             <stoppingPower>1.0</stoppingPower>
             <armorPenetrationBase>0.5</armorPenetrationBase>
-            <explosionRadius>.5</explosionRadius>
+            <explosionRadius>.3</explosionRadius>
             <speed>60</speed>
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
         </projectile>

@@ -11,7 +11,7 @@
     <makesSickThought>true</makesSickThought>
     <scenarioCanAdd>true</scenarioCanAdd>
     <taleOnVisible>ToxicityRevealed</taleOnVisible>
-     <initialSeverity> 0.01</initialSeverity>
+    <initialSeverity> 0.01</initialSeverity>
 
 
     <comps>

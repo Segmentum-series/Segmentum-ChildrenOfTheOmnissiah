@@ -41,8 +41,14 @@
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
+		<additionalHediffs>
+       		<li>
+            	<hediff>SEG_COTO_RadBuildup</hediff>
+            	<severityPerDamageDealt>0.01</severityPerDamageDealt>
+        	</li>
+		</additionalHediffs>
 	</DamageDef>
-	<!-- Phoshor damage -->
+	<!-- Rad damage -->
 
 	<DamageDef ParentName="Bullet">
     	<defName>SEG_COTO_RadDamage</defName>
@@ -54,5 +60,17 @@
         	</li>
     	</additionalHediffs>
     	<impactSoundType>Bullet</impactSoundType> <!--add ours later-->
+	</DamageDef>
+	<!-- Plasma damage -->
+	<DamageDef>
+		<defName>Seg_COTO_PlasDamage</defName>
+		<label>Plasma burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<impactSoundType>Bullet</impactSoundType>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<externalViolence>true</externalViolence>
+		<hediff>Shredded</hediff>
+		<armorCategory>Heat</armorCategory>
+		<deathMessage>{0} has been shown the power of the sun.</deathMessage>
 	</DamageDef>
 </Defs>

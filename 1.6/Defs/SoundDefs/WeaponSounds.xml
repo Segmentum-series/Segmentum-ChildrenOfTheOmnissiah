@@ -138,6 +138,22 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	<SoundDef>
+		<defName>Seg_COTO_PlasmaImpactSound</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>20</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Seg_COTO_Sound_Plasma</clipPath>
+					</li>
+				</grains>
+				<volumeRange>10~30</volumeRange>
+				<pitchRange>.8~1.4</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 
 	<!-- Powered melee weapon sounds -->
 	<SoundDef>
