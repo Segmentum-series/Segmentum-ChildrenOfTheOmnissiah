@@ -372,6 +372,25 @@
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedHighTier</li>
 		</tradeTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
 
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
@@ -454,6 +473,25 @@
 			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 		</li>
 	</comps>
+	<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
 <!-- Rad weapons -->
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
@@ -469,15 +507,15 @@
 		</graphicData>
 
 		<statBases>
-			<Mass>1</Mass>
+			<Mass>3</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.</AccuracyTouch>
-			<AccuracyShort>0.</AccuracyShort>
-			<AccuracyMedium>0.</AccuracyMedium>
-			<AccuracyLong>0.</AccuracyLong>
-			<WorkToMake>6500</WorkToMake>
-			<MarketValue>650</MarketValue>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<WorkToMake>13000</WorkToMake>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -486,9 +524,9 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
 				<soundCast>Seg_COTO_RadiumSound</soundCast>
-				<warmupTime>1.0</warmupTime>
-				<range>22.9</range>
-				<burstShotCount>5</burstShotCount>
+				<warmupTime>1</warmupTime>
+				<range>19.9</range>
+				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
@@ -506,7 +544,8 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>4</Crafting>
+				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
@@ -523,15 +562,15 @@
 		</graphicData>
 
 		<statBases>
-			<Mass>1</Mass>
+			<Mass>4</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.30</AccuracyShort>
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.10</AccuracyLong>
-			<WorkToMake>6500</WorkToMake>
-			<MarketValue>650</MarketValue>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -561,7 +600,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>7</Crafting>
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>

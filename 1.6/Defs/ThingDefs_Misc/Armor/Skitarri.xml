@@ -158,7 +158,7 @@
 	</ThingDef>
     <ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_SkitariiRangerHood</defName>
-		<label>Skitarii Ranger Hood </label>
+		<label>Skitarii Ranger Hood</label>
 		<description>a</description>
 
 		<graphicData>
