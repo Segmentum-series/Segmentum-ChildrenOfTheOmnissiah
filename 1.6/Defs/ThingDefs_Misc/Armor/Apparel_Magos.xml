@@ -37,13 +37,13 @@
 
 	<!-- Magos hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_MagosHood</defName>
+		<defName>Seg_COTO_Apparel_MagosHood</defName>
 		<label>magos hood</label>
 		<description>A simple magos hood, utilized by new and low ranking Magos according to doctrine.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/MagosHood/Seg_COTO_MagosHood</texPath>
 		</graphicData>
 
@@ -88,21 +88,18 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
-				<extraDecorations>
-					<li>Seg_COTO_Deco_MagosHoodGearStripe</li>
-				</extraDecorations>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<!-- Magos robe -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_MagosRobes</defName>
+		<defName>Seg_COTO_Apparel_MagosRobes</defName>
 		<label>magos robe</label>
 		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it's not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
 		</graphicData>
 
@@ -125,8 +122,7 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
-				<li>Seg_COTO_Robe</li>
-				<li>Seg_COTO_Magos</li>
+				<li>Seg_COTO_MagosRobes</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -147,23 +143,20 @@
 
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
-					<decorativeType>Body</decorativeType>
-					<extraDecorations>
-				<li>Seg_COTO_Deco_MagosRobeGearStripe</li>
-					</extraDecorations>
-				</li>
+				<decorativeType>Body</decorativeType>
+			</li>
 		</comps>
 	</ThingDef>
 
 	<!-- Magos cassock -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_MagosCassock</defName>
+		<defName>Seg_COTO_Apparel_MagosCassock</defName>
 		<label>magos cassock</label>
 		<description>Regular uniforms utilized by the cultists of the Mechanicus. Usually a common sight around priets of Forge Worlds, it may be replaced by higher ranking members by more distinct apparel, suited for their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</texPath>
 		</graphicData>
 
@@ -186,8 +179,7 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
-				<li>Seg_COTO_Robe</li>
-				<li>Seg_COTO_Magos</li>
+				<li>Seg_COTO_MagosCassock</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -207,5 +199,11 @@
 				<li>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</li>
 			</wornGraphicPaths>
 		</apparel>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

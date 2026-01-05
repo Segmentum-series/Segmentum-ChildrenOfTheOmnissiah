@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- Hood stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosHoodGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MagosHood/Seg_COTO_Deco_MagosHood_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
 
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosHood</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+
+	</Core40k.ExtraDecorationDef>
 </Defs>

@@ -37,7 +37,7 @@
 	
 	<!-- Skitarii bodysuit -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
-		<defName>Seg_COTO_SkitariiFatigues</defName>
+		<defName>Seg_COTO_Apparel_SkitariiFatigues</defName>
 		<label>skitarii bodysuit</label>
 		<description>A bodysuit utilized in the entire Skitarii range. It's designed to cover only the fleshy bits of the remaining body of the tech-guards, giving a degree of environmental protection, while being adaptable to their ever decreasing biomass.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
@@ -98,7 +98,7 @@
 
 	<!-- Skitarii backpack -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
-		<defName>Seg_COTO_SkitariiBackpack</defName>
+		<defName>Seg_COTO_Apparel_SkitariiBackpack</defName>
 		<label>skitarii backpack</label>
 		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
@@ -153,7 +153,7 @@
 
 	<!-- Skitarii ranger hood -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
-		<defName>Seg_COTO_SkitariiRangerHood</defName>
+		<defName>Seg_COTO_Apparel_SkitariiRangerHood</defName>
 		<label>skitarii ranger hood</label>
 		<description>a</description>
 

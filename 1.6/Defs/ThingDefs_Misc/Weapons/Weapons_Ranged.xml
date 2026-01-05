@@ -564,8 +564,8 @@
 	</ThingDef>
 <!-- Rad weapons -->
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
-		<defName>Seg_COTO_RadPistol</defName>
-		<label>Radium Pistol</label>
+		<defName>Seg_COTO_Gun_RadPistol</defName>
+		<label>radium pistol</label>
 		<description>a sidearm that utilises scaled-down Radium technology, reaching a similar effect in smaller potency and scale, while still killing their own wielders.</description>
 
 		<graphicData>
@@ -620,7 +620,7 @@
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
-		<label>Radium Carbine</label>
+		<label>radium carbine</label>
 		<description>a rapid-firing weapon capable of a punishing rate of fire. Though be warned, Radium weapons are so volatile that they eventually kill their own wielders.</description>
 
 		<graphicData>

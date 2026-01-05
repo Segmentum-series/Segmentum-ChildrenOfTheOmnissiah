@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<Core40k.MaskDef Name="BEWH_MaskDef_ExtraDecoration" Abstract="true"><!--Base definition for extra decoration masks-->
+	<!--<Core40k.MaskDef Name="BEWH_MaskDef_ExtraDecoration" Abstract="true">Base definition for extra decoration masks
 		<appliesToKind>ExtraDecoration</appliesToKind>
 	</Core40k.MaskDef>
 
@@ -41,8 +41,8 @@
 		<maskExtraFlags>
 			<li>None</li>
 		</maskExtraFlags>
-	</Core40k.MaskDef>
-
+	</Core40k.MaskDef>-->
+<!--
 <Core40k.MaskDef ParentName="BEWH_MaskDef_ExtraDecoration">
     <defName>SEG_COTO_SkitariiRangerHood_DefaultMask</defName>
     <label>.</label>
@@ -61,5 +61,5 @@
     <maskExtraFlags>
         <li>None</li>
     </maskExtraFlags>
-</Core40k.MaskDef>
+</Core40k.MaskDef>-->
 </Defs>

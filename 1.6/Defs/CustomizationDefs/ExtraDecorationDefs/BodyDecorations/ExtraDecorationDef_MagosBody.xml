@@ -6,97 +6,87 @@
 		<defName>Seg_COTO_Deco_MagosRobeGearStripe</defName>
 		<label>Cog-edged stripe</label>
 		<description>...</description>
-		<iconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearStripeIcon</iconPath>
+		<iconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearStripe</drawnTextureIconPath>
-		<drawSize>(0.5,0.5)</drawSize>
-		<sortOrder>2</sortOrder>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>1</sortOrder>
 
 		<defaultShowRotation>
-			<li>South</li>
 			<li>East</li>
 			<li>North</li>
+			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
 		</appliesTo>
 
 		<drawData>
 			<dataNorth>
-				<layer>71</layer>
-				<offset>(0, 0, 0.01)</offset>
+				<layer>90</layer>
 			</dataNorth>
 			<dataSouth>
-				<layer>76</layer>
-				<offset>(0, 0, -0.01)</offset>
+				<layer>75</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>71</layer>
-				<offset>(0, 0, 0.01)</offset>
+				<layer>65</layer>
 			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
 		</drawData>
 
-		<shaderType>BEWH_CutoutThreeColor</shaderType>
-
-		<colourable>true</colourable>
-		<flipable>true</flipable>
-		<useMask>true</useMask>
-		<colorAmount>1</colorAmount>
-
+		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
+		<colourable>true</colourable>
 
-		<defaultMask>SEG_COTO_MagosRobe_DefaultMask</defaultMask>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
+		
 		<appliesToBodyTypes>
 			<li>Male</li>
 			<li>Female</li>
 			<li>Thin</li>
 			<li>Hulk</li>
+			<li>Fat</li>
 		</appliesToBodyTypes>
+
 	</Core40k.ExtraDecorationDef>
 
-
-	<!-- Gear teeth stripe -->
-
-	<!-- Thin stripe -->
-
-	<!-- Hood stripe -->
+	<!-- Gear teeth -->
 	<Core40k.ExtraDecorationDef>
-		<defName>Seg_COTO_Deco_MagosHoodGearStripe</defName>
-		<label>Cog-edged stripe</label>
+		<defName>Seg_COTO_Deco_MagosRobeGearTeeth</defName>
+		<label>Cog teeths</label>
 		<description>...</description>
-		<iconPath>UI/Decoration/Icons/MagosHood/Seg_COTO_Deco_MagosHood_GearStripe</iconPath>
-		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		<iconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearTeeth</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>2</sortOrder>
 
 		<defaultShowRotation>
-			<li>West</li>
-			<li>South</li>
 			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
 		</appliesTo>
 
 		<drawData>
 			<dataNorth>
-				<layer>77</layer>
-				<flip>true</flip>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
-				<layer>81</layer>
+				<layer>76</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>75</layer>
+				<layer>66</layer>
 			</dataEast>
 			<dataWest>
-				<layer>75</layer>
+				<layer>71</layer>
 			</dataWest>
 		</drawData>
 
@@ -105,9 +95,18 @@
 
 		<colourable>true</colourable>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+
 
 </Defs>

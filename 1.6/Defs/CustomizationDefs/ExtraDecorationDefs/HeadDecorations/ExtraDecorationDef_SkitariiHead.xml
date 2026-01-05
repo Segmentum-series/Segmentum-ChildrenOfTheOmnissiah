@@ -13,13 +13,13 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>West</li>
-			<li>South</li>
 			<li>East</li>
+			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_SkitariiRangerHood</li>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 		</appliesTo>
 
 		<drawData>
@@ -45,7 +45,6 @@
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
 	</Core40k.ExtraDecorationDef>
 
 <!--Skitarii lenses 1-->
@@ -60,12 +59,12 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>South</li>
 			<li>North</li>
+			<li>South</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_SkitariiRangerHood</li>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 		</appliesTo>
 		<drawData>
 			<dataSouth>
@@ -91,7 +90,6 @@
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
 	</Core40k.ExtraDecorationDef>
 
 <!--Skitarii lenses 1 mirrored-->
@@ -106,12 +104,12 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>South</li>
 			<li>North</li>
+			<li>South</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_SkitariiRangerHood</li>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 		</appliesTo>
 		<drawData>
 			<dataSouth>
@@ -137,7 +135,6 @@
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii lenses 2-->
@@ -157,7 +154,7 @@
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_SkitariiRangerHood</li>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 		</appliesTo>
 		<drawData>
 			<dataSouth>
@@ -183,7 +180,6 @@
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii lenses 3-->
@@ -198,12 +194,12 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>South</li>
 			<li>North</li>
+			<li>South</li>
 		</defaultShowRotation>
 
 		<appliesTo>
-			<li>Seg_COTO_SkitariiRangerHood</li>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 		</appliesTo>
 		<drawData>
 			<dataSouth>
@@ -230,7 +226,52 @@
 		<!-- DefaultColor uses armor color option -->
 		<defaultColourTwo>(26,148,200)</defaultColourTwo>
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
 
+	<!--Skitarii visor-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiRangerHoodVisor</defName>
+		<label>Visor</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Visor</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Visor</drawnTextureIconPath>
+		<drawSize>(0.55, 0.55)</drawSize>
+		<sortOrder>4</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>82</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>77</layer>
+			</dataNorth>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 </Defs>
