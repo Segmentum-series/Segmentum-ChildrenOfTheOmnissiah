@@ -520,7 +520,7 @@
 
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Seg.COTO.SEG_COTO_Radium_Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
 				<soundCast>Seg_COTO_RadiumSound</soundCast>
@@ -575,7 +575,7 @@
 
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Seg.COTO.SEG_COTO_Radium_Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
 				<soundCast>Seg_COTO_RadiumSound</soundCast>
