@@ -163,8 +163,8 @@
     	<projectile>
         	<damageDef>SEG_COTO_RadDamage</damageDef>
         	<damageAmountBase>10</damageAmountBase>
-        	<armorPenetrationBase>0.40</armorPenetrationBase>
-        	<speed>100</speed>
+        	<armorPenetrationBase>0.20</armorPenetrationBase>
+        	<speed>70</speed>
     	</projectile>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">

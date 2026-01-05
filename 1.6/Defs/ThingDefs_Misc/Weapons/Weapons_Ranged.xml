@@ -471,11 +471,11 @@
 		<statBases>
 			<Mass>1</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.82</AccuracyTouch>
-			<AccuracyShort>0.90</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.</AccuracyTouch>
+			<AccuracyShort>0.</AccuracyShort>
+			<AccuracyMedium>0.</AccuracyMedium>
+			<AccuracyLong>0.</AccuracyLong>
 			<WorkToMake>6500</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
@@ -487,9 +487,9 @@
 				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
 				<soundCast>Seg_COTO_RadiumSound</soundCast>
 				<warmupTime>1.0</warmupTime>
-				<range>22.0</range>
-				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<range>22.9</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -525,11 +525,11 @@
 		<statBases>
 			<Mass>1</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.82</AccuracyTouch>
-			<AccuracyShort>0.90</AccuracyShort>
-			<AccuracyMedium>0.78</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.30</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
 			<WorkToMake>6500</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
@@ -550,6 +550,7 @@
 
 		<costList>
 			<Steel>45</Steel>
+			<Uranium>10</Uranium>
 			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 
@@ -560,7 +561,8 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>3</Crafting>
+				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
