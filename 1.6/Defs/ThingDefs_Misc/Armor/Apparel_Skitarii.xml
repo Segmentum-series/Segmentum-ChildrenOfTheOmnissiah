@@ -232,6 +232,11 @@
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
 		</statBases>
+		<equippedStatOffsets>
+			<RangedWeapon_Cooldown>-.1</RangedWeapon_Cooldown>
+			<AimingDelayFactor>-0.3</AimingDelayFactor>
+			<MoveSpeed>0.55</MoveSpeed>
+		</equippedStatOffsets>
 
 		<costList>
 			<Steel>120</Steel>
