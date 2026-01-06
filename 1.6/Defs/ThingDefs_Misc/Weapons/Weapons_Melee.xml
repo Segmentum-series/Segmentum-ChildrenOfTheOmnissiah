@@ -88,7 +88,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>16</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>2.1</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Seg_COTO_MeleeElectricBurn</def>
@@ -158,7 +158,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>19</power>
-				<cooldownTime>2.6</cooldownTime>
+				<cooldownTime>3.2</cooldownTime>
 				<armorPenetration>0.4</armorPenetration>
 			</li>
 			<li>
@@ -166,8 +166,8 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>22</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>26</power>
+				<cooldownTime>3.5</cooldownTime>
 				<armorPenetration>0.4</armorPenetration>
 			</li>
 		</tools>
@@ -289,7 +289,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
+				<power>14</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -298,16 +298,16 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>2</cooldownTime>
+				<power>8</power>
+				<cooldownTime>2.4</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Seg_COTO_MeleeElectricBurn</def>
-						<amount>3</amount>
+						<amount>10</amount>
 					</li>
 					<li>
 						<def>EMP</def>
-						<amount>3</amount>
+						<amount>10</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>
