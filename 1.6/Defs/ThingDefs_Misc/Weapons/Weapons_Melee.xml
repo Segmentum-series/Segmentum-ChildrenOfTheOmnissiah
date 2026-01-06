@@ -289,7 +289,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
+				<power>11</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -298,7 +298,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8</power>
+				<power>6</power>
 				<cooldownTime>2.4</cooldownTime>
 				<extraMeleeDamages>
 					<li>
