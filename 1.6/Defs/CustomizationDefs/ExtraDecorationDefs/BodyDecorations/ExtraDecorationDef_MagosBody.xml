@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+<!-- Magos cassock decorations -->
+	<!-- Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosCassockGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MagosCassock/Seg_COTO_Deco_MagosCassock_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosCassock/Seg_COTO_MagosCassock_GearStripe</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+	
+<!-- Magos robe decorations -->
 	<!-- Gear stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MagosRobeGearStripe</defName>
@@ -107,6 +161,56 @@
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosRobeThinStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_ThinStripe</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>3</sortOrder>
 
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
 
 </Defs>

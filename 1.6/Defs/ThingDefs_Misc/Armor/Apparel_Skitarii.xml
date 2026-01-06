@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<ThingDef Abstract="true" Name="Seg_COTO_SkitariiBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
@@ -212,4 +211,131 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- Skitarii vanguard helmet -->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_Apparel_SkitariiVanguardHelmet</defName>
+		<label>skitarii vanguard helmet</label>
+		<description>A hood and mask designed for the far-ranged Skitarii Rangers. Providing less protection and better view of the battlefied, they are designed to be resilient in the relentless pursuit of the enemies of the Mechanicus.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
+
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_SkitariiVanguardHelmet</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</li>
+			</wornGraphicPaths>
+		</apparel>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.91, 0.50, 0.22)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.10, 0.57, 0.78)</defaultTertiaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Skitarii war plate -->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
+		<label>skitarii war plate</label>
+		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it's not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+		</statBases>
+
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Hyperweave>40</Hyperweave>
+			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_SkitariiWarPlate</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate</li>
+			</wornGraphicPaths>
+		</apparel>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.56, 0.03, 0.06)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.91, 0.50, 0.22)</defaultTertiaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
 </Defs>

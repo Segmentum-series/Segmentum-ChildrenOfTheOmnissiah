@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+<!-- Skitarii ranger hood -->
 	<!-- Skitarii hood stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodGearStripe</defName>
@@ -273,5 +274,8 @@
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
+
+<!-- Skitarii vanguard helmet -->
+
 
 </Defs>
