@@ -15,4 +15,22 @@
     <combatLogRulesMiss>Maneuver_Poke_MeleeMiss</combatLogRulesMiss>
     <combatLogRulesDodge>Maneuver_Poke_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
+  <ToolCapacityDef>
+  <defName>SEG_COTO_StunShock</defName>
+  <label>stun shock</label>
+</ToolCapacityDef>
+
+<ManeuverDef>
+  <defName>SEG_COTO_Maneuver_StunShock</defName>
+  <requiredCapacity>SEG_COTO_StunShock</requiredCapacity>
+  <verb>
+    <verbClass>Seg.COTO.Verb_SEG_COTO_StunVerb</verbClass>
+    <meleeDamageDef>Stun</meleeDamageDef>
+  </verb>
+  <combatLogRulesHit>Maneuver_Poke_MeleeHit</combatLogRulesHit>
+  <combatLogRulesDeflect>Maneuver_Poke_MeleeDeflect</combatLogRulesDeflect>
+  <combatLogRulesMiss>Maneuver_Poke_MeleeMiss</combatLogRulesMiss>
+  <combatLogRulesDodge>Maneuver_Poke_MeleeDodge</combatLogRulesDodge>
+</ManeuverDef>
+
 </Defs>

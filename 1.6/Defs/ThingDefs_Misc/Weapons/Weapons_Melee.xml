@@ -311,6 +311,16 @@
 					</li>
 				</extraMeleeDamages>
 			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>SEG_COTO_StunShock</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+
 		</tools>
 	</ThingDef>
 </Defs>

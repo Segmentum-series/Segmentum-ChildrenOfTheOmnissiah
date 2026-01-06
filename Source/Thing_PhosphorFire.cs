@@ -210,4 +210,19 @@ namespace Seg.COTO
             return true;
         }
     }
+    public class Verb_SEG_COTO_StunVerb : Verb_MeleeAttackDamage
+    {
+        protected override bool TryCastShot()
+        {
+            Pawn targetPawn = currentTarget.Pawn;
+            if (targetPawn == null)
+                return false;
+
+            int stunDuration = 120; // ticks of stun (2 seconds)
+
+            targetPawn.stances.stunner.StunFor(stunDuration, Caster);
+
+            return true;
+        }
+    }
 }
