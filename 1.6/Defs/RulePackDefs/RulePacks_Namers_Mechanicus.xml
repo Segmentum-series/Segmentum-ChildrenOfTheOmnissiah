@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Mechanicus Namers-->
+
+  <RulePackDef>
+    <defName>MechanicusNameUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>MechanicusFirstMale->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFirst_Male</li>
+	    <li>MechanicusFirstFemale->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFirst_Female</li>
+        <li>MechanicusLast->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusLast</li>
+        <li>MechanicusName->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusName</li>
+        <li>MechanicusDesignation->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusDesignation</li>
+      </rulesFiles>
+	  <rulesStrings>
+        <li>MechanicusFirstMale->[MechanicusFirst_Male]</li>
+        <li>MechanicumFirstFemale->[MechanicusFirst_Female]</li>
+        <li>MechanicusLast->[MechanicusLast]</li>
+        <li>MechanicusName->[MechanicusName]</li>
+        <li>MechanicusDesignation->[MechanicusDesignation]</li>
+      </rulesStrings>
+	  </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonMechanicusMale</defName>
+	<include>
+		<li>MechanicusNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusFirstMale] [MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusLast]-[Letter]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusDesignation]-[MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstMale]-[Digit][Digit] [MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusLast]-[Digit][Letter]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusName]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusDesignation]-[Digit][Digit]</li>
+        <li>r_name->[MechanicusFirstMale] [MechanicusDesignation]</li>
+        <li>r_name->[MechanicusDesignation] [MechanicusFirstMale]-[Digit][/Digit]</li>
+        <li>r_name->[MechanicusName] [MechanicusLast]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit][Letter]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit]</li>
+        <li>r_name->[MechanicusName]-[Letter][Digit][Letter] [MechanicusLast]</li>
+        <li>r_name->[MechanicusDesignation]-[MechanicusDesignation] [Digit][Digit]</li>
+        <li>r_name->[MechanicusDesignation] [Digit][Digit]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonMechanicusFemale</defName>
+	<include>
+		<li>MechanicusNameUtility</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusLast]-[Letter]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusDesignation]-[MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstFemale]-[Digit][Digit] [MechanicusLast]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusLast]-[Digit][Letter]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusName]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusDesignation]-[Digit][Digit]</li>
+        <li>r_name->[MechanicusFirstFemale] [MechanicusDesignation]</li>
+        <li>r_name->[MechanicusDesignation] [MechanicusFirstFemale]-[Digit][/Digit]</li>
+        <li>r_name->[MechanicusName] [MechanicusLast]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit][Letter]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit]</li>
+        <li>r_name->[MechanicusName]-[Letter][Digit][Letter] [MechanicusLast]</li>
+        <li>r_name->[MechanicusDesignation]-[MechanicusDesignation] [Digit][Digit]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerSettlementMechanicus</defName>
+    <rulePack>
+      <rulesStrings>
+		<li>r_name(p=6)->[mechanicustowntype] [mechanicustownfamousplace] [mechanicustowncode]</li>
+		<li>r_name(p=6)->[mechanicustownholyname]'s [mechanicustownholynamenoun] [Digit][Digit]-[mechanicustowncode]</li>
+		<li>r_name(p=4)->[mechanicustowntype] [Digit][Digit][Digit]-[mechanicustowncode]-[Digit]</li>
+		<li>r_name(p=4)->[mechanicustowntype] [mechanicustownfamousplace] [mechanicustownplacesuffix]-[mechanicustowncode]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>mechanicustowncode->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementCode</li>
+		<li>mechanicustownfamousplace->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementFamousPlace</li>
+        <li>mechanicustownholyname->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementHolyName</li>
+		<li>mechanicustownholynamenoun->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementHolyNameNoun</li>
+		<li>mechanicustownplacesuffix->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementPlaceSuffix</li>		
+		<li>mechanicustowntype->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusSettlementType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionMechanicusNeutral</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionNeutralType]</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>MechanicusFactionNumber->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNumber</li>
+        <li>MechanicusFactionRegiment->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionRegiment</li>
+		<li>MechanicusFactionNeutralType->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNeutralType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionMechanicusHostile</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionHostileType]</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>MechanicusFactionNumber->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNumber</li>
+        <li>MechanicusFactionRegiment->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionRegiment</li>
+		<li>MechanicusFactionHostileType->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionHostileType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+ 
+</Defs>
