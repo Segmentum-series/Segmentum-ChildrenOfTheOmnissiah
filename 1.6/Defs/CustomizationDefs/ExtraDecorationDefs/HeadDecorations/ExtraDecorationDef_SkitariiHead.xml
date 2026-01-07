@@ -47,7 +47,7 @@
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
-<!--Skitarii lenses 1-->
+<!--Skitarii hood lenses 1-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses1L</defName>
 		<label>Rounded lenses</label>
@@ -81,7 +81,7 @@
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
-<!--Skitarii lenses 1 mirrored-->
+<!--Skitarii hood lenses 1 mirrored-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses1R</defName>
 		<label>Rounded lenses</label>
@@ -115,7 +115,7 @@
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
-	<!--Skitarii lenses 2-->
+	<!--Skitarii hood lenses 2-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses2</defName>
 		<label>Triple lenses</label>
@@ -160,7 +160,7 @@
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
-	<!--Skitarii lenses 3-->
+	<!--Skitarii hood lenses 3-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses3</defName>
 		<label>Targetting lenses</label>
@@ -206,7 +206,7 @@
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
-	<!--Skitarii visor-->
+	<!--Skitarii hood visor-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodVisor</defName>
 		<label>Visor</label>
@@ -252,7 +252,278 @@
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
-<!-- Skitarii vanguard helmet -->
 
+<!-- Skitarii vanguard helmet -->
+	<!--Skitarii helmet antena-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetAntena</defName>
+		<label>Antena</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Antena</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Antena</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>60</layer>
+				<offset>(0, 0, 0.24)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>72</layer>
+				<offset>(0, 0, 0.24)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>80</layer>
+				<offset>(0, 0, 0.24)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>71</layer>
+				<offset>(0, 0, 0.24)</offset>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii helmet crest -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetCrest</defName>
+		<label>Crest</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Crest</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Crest</drawnTextureIconPath>
+		<drawSize>(0.55, 0.55)</drawSize>
+		<sortOrder>2</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>80</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>80</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>70</layer>
+			</dataEast>
+			<dataWest>
+				<layer>70</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii helmet gear crest -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetGearCrest</defName>
+		<label>Gear crest</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_GearCrest</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_GearCrest</drawnTextureIconPath>
+		<drawSize>(0.56, 0.56)</drawSize>
+		<sortOrder>3</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>80</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>80</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>70</layer>
+			</dataEast>
+			<dataWest>
+				<layer>70</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii helmet alpha crest -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetAlphaCrest</defName>
+		<label>Alpha crest</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_AlphaCrest</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_AlphaCrest</drawnTextureIconPath>
+		<drawSize>(0.8, 0.8)</drawSize>
+		<sortOrder>4</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>79</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>79</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>73</layer>
+			</dataEast>
+			<dataWest>
+				<layer>73</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii vanguard lenses-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</defName>
+		<label>Range finder</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Lenses</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Lenses</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>5</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>85</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>85</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+
+	<!--Skitarii vanguard reinforced visor-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetReinforcedVisor</defName>
+		<label>Reinforced visor</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_ReinforcedVisor</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_ReinforcedVisor</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>6</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>71</layer>
+			</dataEast>
+			<dataWest>
+				<layer>71</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+		<colorAmount>2</colorAmount>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
+	</Core40k.ExtraDecorationDef>
 
 </Defs>
