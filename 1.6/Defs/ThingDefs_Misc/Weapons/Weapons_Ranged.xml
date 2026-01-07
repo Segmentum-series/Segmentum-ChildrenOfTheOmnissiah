@@ -163,8 +163,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.3</drawSize>
 		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
 
 		<statBases>
 			<Mass>2.5</Mass>
@@ -220,8 +221,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.3</drawSize>
 		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
 			<Mass>2.5</Mass>
@@ -309,8 +311,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
 
 		<statBases>
 			<Mass>3.5</Mass>
@@ -368,8 +371,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
 
 		<statBases>
 			<Mass>6</Mass>
@@ -475,8 +479,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.4</drawSize>
 		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
 
 		<statBases>
 			<Mass>4</Mass>
@@ -579,8 +584,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.4</drawSize>
 		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
 
 		<statBases>
 			<Mass>3</Mass>
@@ -636,7 +642,7 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.1</drawSize>
 		</graphicData>
 
 		<statBases>
@@ -841,8 +847,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.8</drawSize>
 		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
 			<Mass>9</Mass>
@@ -894,8 +901,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GalvanicRifle</texPath>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.6</drawSize>
 		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
 			<Mass>5</Mass>
