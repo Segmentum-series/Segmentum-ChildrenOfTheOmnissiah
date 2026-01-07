@@ -42,9 +42,11 @@
         <li>r_name->[MechanicusName] [MechanicusLast]</li>
         <li>r_name->[MechanicusName] [Digit][Digit][Letter]</li>
         <li>r_name->[MechanicusName] [Digit][Digit]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit]-[MechanicusDesignation]</li>
         <li>r_name->[MechanicusName]-[Letter][Digit][Letter] [MechanicusLast]</li>
         <li>r_name->[MechanicusDesignation]-[MechanicusDesignation] [Digit][Digit]</li>
         <li>r_name->[MechanicusDesignation] [Digit][Digit]</li>
+        <li>r_name->[MechanicusDesignation] [Digit][Digit]-[MechanicusDesignation]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -68,8 +70,10 @@
         <li>r_name->[MechanicusName] [MechanicusLast]</li>
         <li>r_name->[MechanicusName] [Digit][Digit][Letter]</li>
         <li>r_name->[MechanicusName] [Digit][Digit]</li>
+        <li>r_name->[MechanicusName] [Digit][Digit]-[MechanicusDesignation]</li>
         <li>r_name->[MechanicusName]-[Letter][Digit][Letter] [MechanicusLast]</li>
         <li>r_name->[MechanicusDesignation]-[MechanicusDesignation] [Digit][Digit]</li>
+        <li>r_name->[MechanicusDesignation] [Digit][Digit]-[MechanicusDesignation]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
