@@ -26,7 +26,6 @@
 		<drawData>
 			<dataNorth>
 				<layer>77</layer>
-				<flip>true</flip>
 			</dataNorth>
 			<dataSouth>
 				<layer>81</layer>
@@ -60,7 +59,6 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>North</li>
 			<li>South</li>
 		</defaultShowRotation>
 
@@ -71,19 +69,9 @@
 			<dataSouth>
 				<layer>80</layer>
 			</dataSouth>
-			<dataEast>
-				<layer>72</layer>
-			</dataEast>
-			<dataNorth>
-				<layer>77</layer>
-			</dataNorth>
-			<dataWest>
-				<layer>72</layer>
-			</dataWest>
 		</drawData>
 
 		<colourable>true</colourable>
-		<flipable>true</flipable>
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>
@@ -105,7 +93,6 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>North</li>
 			<li>South</li>
 		</defaultShowRotation>
 
@@ -116,19 +103,9 @@
 			<dataSouth>
 				<layer>81</layer>
 			</dataSouth>
-			<dataEast>
-				<layer>72</layer>
-			</dataEast>
-			<dataNorth>
-				<layer>77</layer>
-			</dataNorth>
-			<dataWest>
-				<layer>72</layer>
-			</dataWest>
 		</drawData>
 
 		<colourable>true</colourable>
-		<flipable>true</flipable>
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>

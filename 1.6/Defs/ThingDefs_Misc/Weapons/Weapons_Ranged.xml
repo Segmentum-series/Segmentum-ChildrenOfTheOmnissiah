@@ -674,6 +674,7 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- Plasma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PlasmaWeaponBase" Abstract="True">
 		<label>PlasmaWeaponBase</label>
