@@ -98,7 +98,7 @@
 	<!-- Skitarii backpack -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiBackpack</defName>
-		<label>skitarii backpack</label>
+		<label>skitarii powerpack</label>
 		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
@@ -154,7 +154,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiRangerHood</defName>
 		<label>skitarii ranger hood</label>
-		<description>a</description>
+		<description>A hood and mask designed for the far-ranged Skitarii Rangers. Providing less protection and better view of the battlefied, they are designed to be resilient in the relentless pursuit of the enemies of the Mechanicus.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -216,7 +216,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiVanguardHelmet</defName>
 		<label>skitarii vanguard helmet</label>
-		<description>A hood and mask designed for the far-ranged Skitarii Rangers. Providing less protection and better view of the battlefied, they are designed to be resilient in the relentless pursuit of the enemies of the Mechanicus.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A helmet designed for the closer-ranged Vanguard troopers. Providing better protection and better radiation resitance, they are designed to be deployed to the most hazardous war zones the Rim has to offer.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>

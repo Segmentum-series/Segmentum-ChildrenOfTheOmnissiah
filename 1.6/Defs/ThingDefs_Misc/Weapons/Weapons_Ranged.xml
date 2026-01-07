@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs><!-- Barebones doc -->
 
-<!-- Stubber guns -->
+<!-- Stubber guns base -->
 	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -134,21 +134,21 @@
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 		<tools>
-  			<li>
-    			<label>stock</label>
-   				 <capacities>
-      				<li>SEG_COTO_ElectricShock</li>
-   				 </capacities>
-    			<power>9</power>
-    			<cooldownTime>2</cooldownTime>
-  			</li>
-  			<li>
-    			<label>barrel</label>
-    			<capacities>
-      				<li>SEG_COTO_ElectricShock</li>
-    			</capacities>
-    			<power>9</power>
-    			<cooldownTime>2</cooldownTime>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>SEG_COTO_ElectricShock</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>SEG_COTO_ElectricShock</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
   			</li>
 		</tools>
 	</ThingDef>
@@ -157,7 +157,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A compact arc‑energy sidearm that fires a thin, tracking beam of searing energy.</description>
+		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
@@ -209,10 +209,12 @@
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
-<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
+
+	<!-- Arc rifle -->
+	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing Arc Weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
@@ -245,8 +247,8 @@
 			<ticksBetweenBurstShots>10</ticksBetweenBurstShots> 
 			<muzzleFlashScale>10</muzzleFlashScale>
 			<targetParams>
-      			<canTargetLocations>true</canTargetLocations>
-    		</targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 			</li>
 		</verbs>
 
@@ -267,6 +269,7 @@
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
+
 <!-- Phosphor weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
 		<label>phosphor weapon (base)</label>
@@ -296,11 +299,11 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!-- Phosphor Serpentia -->
+	<!-- Phosphor serpentia -->
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
 		<label>phosphor serpentia</label>
-		<description>a medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly..</description>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
@@ -333,8 +336,8 @@
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
-      				<canTargetLocations>true</canTargetLocations>
-    			</targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 
@@ -354,10 +357,12 @@
 		</recipeMaker>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
+	
+	<!-- Phosphor blast pistol -->
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
 		<label>phosphor blast pistol</label>
-		<description>a short-ranged sidearm capable of projecting blinding burning phosphor discharges.</description> <!-- update with spreedsheet eventually-->
+		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
@@ -390,8 +395,8 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
-      				<canTargetLocations>true</canTargetLocations>
-    			</targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 
@@ -460,6 +465,7 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Gamma pistol -->
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
 		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
@@ -519,30 +525,30 @@
 	</ThingDef>
 
 <!-- Rad weapons base -->
-<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
-	<label>RadBase</label>
-	<description>not in game report to SEG team if you see in game</description>
-	<techLevel>Spacer</techLevel>
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Styleable"/>
-		<li Class="CompProperties_Biocodable"/>
-		<li>
-			<compClass>CompQuality</compClass>
-		</li>
-		<li Class="CompProperties_Art">
-			<nameMaker>NamerArtWeaponGun</nameMaker>
-			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-			<minQualityForArtistic>Good</minQualityForArtistic>
-		</li>
-		<li Class="Core40k.CompProperties_MultiColor">
-			<colorMaskAmount>3</colorMaskAmount>
-			<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
-			<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
-			<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-		</li>
-	</comps>
-	<tools>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
+		<label>RadBase</label>
+		<description>not in game report to SEG team if you see in game</description>
+		<techLevel>Spacer</techLevel>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li>
+		</comps>
+		<tools>
 			<li>
 				<label>stock</label>
 				<capacities>
@@ -562,11 +568,12 @@
 			</li>
 		</tools>
 	</ThingDef>
-<!-- Rad weapons -->
+
+	<!-- Radium pistol -->
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadPistol</defName>
 		<label>radium pistol</label>
-		<description>a sidearm that utilises scaled-down Radium technology, reaching a similar effect in smaller potency and scale, while still killing their own wielders.</description>
+		<description>A sidearm that utilises scaled-down Radium technology, reaching a similar effect in smaller potency and scale, while still killing their own wielders.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
@@ -618,10 +625,12 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+
+	<!-- Radium carbine -->
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>radium carbine</label>
-		<description>a rapid-firing weapon capable of a punishing rate of fire. Though be warned, Radium weapons are so volatile that they eventually kill their own wielders.</description>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, Radium weapons are so volatile that they eventually kill their own wielders.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
@@ -674,8 +683,8 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
-	
-	<!-- Plasma weapons base -->
+
+<!-- Plasma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PlasmaWeaponBase" Abstract="True">
 		<label>PlasmaWeaponBase</label>
 		<description>Base definition for plas‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
@@ -709,10 +718,11 @@
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 	</ThingDef>
-	<!-- Plasma Caliver -->
+
+	<!-- Plasma caliver -->
 	<ThingDef ParentName="Seg_COTO_PlasmaWeaponBase">
 		<defName>Seg_COTO_Gun_PlasmaCaliver</defName>
-		<label>Plasma Caliver</label>
+		<label>plasma caliver</label>
 		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
 
 		<graphicData>
@@ -746,8 +756,8 @@
 				<forcedMissRadius>1.0</forcedMissRadius>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
-      					<canTargetLocations>true</canTargetLocations>
-    			</targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 		<costList>
@@ -766,7 +776,8 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
-	<!-- Transuranic Arquebus weapons base -->
+
+<!-- Transuranic arquebus base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_TUABWeaponBase" Abstract="True">
 		<label>TransuranicArquebusWeaponBase</label>
 		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
@@ -819,9 +830,11 @@
 			</li>
 		</tools>
 	</ThingDef>
+
+	<!-- Transuranic arquebus -->
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_TransuranicArquebus</defName>
-		<label>Transuranic Arquebus</label>
+		<label>transuranic arquebus</label>
 		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive weapon penetration capabilities.</description>
 
 		<graphicData>
@@ -870,6 +883,8 @@
 			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
+
+	<!-- Galvanic rifle -->
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_GalvanicRifle</defName>
 		<label>galvanic rifle</label>
@@ -922,6 +937,6 @@
 		</recipeMaker>
 	</ThingDef>	
 
-	</Defs>
+</Defs>
 
 
