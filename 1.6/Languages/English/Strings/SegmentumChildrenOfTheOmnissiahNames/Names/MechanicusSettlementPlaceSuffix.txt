@@ -1,0 +1,10 @@
+Principal
+Secondary
+Tertiary
+Quaternary
+Quinary
+Senary
+Septenary
+Octonary
+Nonary
+Denary
