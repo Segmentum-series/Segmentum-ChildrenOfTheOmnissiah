@@ -4,8 +4,8 @@
 		<defName>Seg_COTO_Mechanicus</defName>
 		<label>omnissian</label>
 		<description>A category describing the styles and practices of humankind's tech-adept groups.</description>
-		<pawnNameMaker>NamerPersonMechanicusMale</pawnNameMaker>
-		<pawnNameMakerFemale>NamerPersonMechanicusFemale</pawnNameMakerFemale>
+		<pawnNameMaker>Seg_COTO_NamerPersonMechanicusMale</pawnNameMaker>
+		<pawnNameMakerFemale>Seg_COTO_NamerPersonMechanicusFemale</pawnNameMakerFemale>
 		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>	<!-- These makers for ideologies, will require eventual updates -->
 		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
 		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>

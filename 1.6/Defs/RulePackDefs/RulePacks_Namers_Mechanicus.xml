@@ -4,7 +4,7 @@
 <!--Mechanicus Namers-->
 
   <RulePackDef>
-    <defName>MechanicusNameUtility</defName>
+    <defName>Seg_COTO_MechanicusNameUtility</defName>
     <rulePack>
       <rulesFiles>
         <li>MechanicusFirstMale->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFirst_Male</li>
@@ -24,9 +24,9 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerPersonMechanicusMale</defName>
+    <defName>Seg_COTO_NamerPersonMechanicusMale</defName>
 	<include>
-		<li>MechanicusNameUtility</li>
+		<li>Seg_COTO_MechanicusNameUtility</li>
 	</include>
     <rulePack>
       <rulesStrings>
@@ -50,9 +50,9 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerPersonMechanicusFemale</defName>
+    <defName>Seg_COTO_NamerPersonMechanicusFemale</defName>
 	<include>
-		<li>MechanicusNameUtility</li>
+		<li>Seg_COTO_MechanicusNameUtility</li>
 	</include>
     <rulePack>
       <rulesStrings>
@@ -75,7 +75,7 @@
   </RulePackDef>
   
   <RulePackDef>
-    <defName>NamerSettlementMechanicus</defName>
+    <defName>Seg_COTO_NamerSettlementMechanicus</defName>
     <rulePack>
       <rulesStrings>
 		<li>r_name(p=6)->[mechanicustowntype] [mechanicustownfamousplace] [mechanicustowncode]</li>
@@ -95,7 +95,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerFactionMechanicusNeutral</defName>
+    <defName>Seg_COTO_NamerFactionMechanicusNeutral</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionNeutralType]</li>

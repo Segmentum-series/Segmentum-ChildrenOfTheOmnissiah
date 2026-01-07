@@ -12,8 +12,8 @@
 		<allowedCultures>
 			<li>Seg_COTO_Mechanicus</li>
 		</allowedCultures>
-		<factionNameMaker>NamerFactionPirate</factionNameMaker><!-- Requires update - Seg_COTO_NamerFactionMechanicus -->
-		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker><!-- Requires update - Seg_COTO_NamerSettlementMechanicus -->
+		<factionNameMaker>Seg_COTO_NamerFactionMechanicus</factionNameMaker>
+		<settlementNameMaker>Seg_COTO_NamerFactionMechanicusNeutral</settlementNameMaker>
 		<backstoryFilters><!-- Requires update -->
 			<li>
 				<categories>
