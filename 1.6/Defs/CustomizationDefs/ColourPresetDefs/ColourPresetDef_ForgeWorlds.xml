@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Apparel colour base presets -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_MagosApparel" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiRangerHood" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet  -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiVanguardHelmet" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiWarPlate" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiFatigues" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiBackpack" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
+
+<!-- Mars palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(80,94,104)</primaryColour><!-- Bodysuit grey blue -->
+		<secondaryColour>(166,166,166)</secondaryColour><!-- Grey -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- White -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+
+<!-- Agrippina palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(152,152,152)</primaryColour><!-- Steel -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(152,152,152)</primaryColour><!-- Steel -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(152,152,152)</primaryColour><!-- Steel -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(152,152,152)</secondaryColour><!-- Steel -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+
+<!-- Stygies VIII palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(38,38,38)</primaryColour><!-- Stygies black -->
+		<secondaryColour>(38,38,38)</secondaryColour><!-- Stygies black -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(152,152,152)</primaryColour><!-- Steel -->
+		<secondaryColour>(38,38,38)</secondaryColour><!-- Stygies black -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(38,38,38)</secondaryColour><!-- Stygies black -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(80,94,104)</primaryColour><!-- Bodysuit grey blue -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- White -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+
+<!-- Metalica palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(255,255,255)</primaryColour><!-- Metalica white -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- Metalica white -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- Metalica white -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- Metalica white -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(80,94,104)</primaryColour><!-- Bodysuit grey blue -->
+		<secondaryColour>(166,166,166)</secondaryColour><!-- Grey -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+
+<!-- Triplex Phall palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(220,160,45)</primaryColour><!-- Triplex yellow -->
+		<secondaryColour>(220,160,45)</secondaryColour><!-- Triplex yellow -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(182,182,182)</primaryColour><!-- Silver -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(182,182,182)</primaryColour><!-- Silver -->
+		<secondaryColour>(240,176,29)</secondaryColour><!-- Golden Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(182,182,182)</primaryColour><!-- Silver -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<tertiaryColour>(240,176,29)</tertiaryColour><!-- Golden Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(200,178,110)</primaryColour><!-- Bodysuit yellow -->
+		<secondaryColour>(182,182,182)</secondaryColour><!-- Silver -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(240,176,29)</secondaryColour><!-- Golden Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+
+<!-- Deimos palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
+		<secondaryColour>(90,138,140)</secondaryColour><!-- Deimos cyan -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(152,152,125)</primaryColour><!-- Steel -->
+		<secondaryColour>(90,138,140)</secondaryColour><!-- Deimos cyan -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(144,75,46)</primaryColour><!-- Bronze -->
+		<secondaryColour>(240,176,29)</secondaryColour><!-- Golden Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(144,75,46)</primaryColour><!-- Bronze -->
+		<secondaryColour>(90,138,140)</secondaryColour><!-- Deimos cyan -->
+		<tertiaryColour>(240,176,29)</tertiaryColour><!-- Golden Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(144,75,46)</secondaryColour><!-- Bronze -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(144,75,46)</secondaryColour><!-- Bronze -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+</Defs>

@@ -30,10 +30,8 @@
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>
-		<defaultColour>(166,166,166)</defaultColour>
-
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
 		
 		<appliesToBodyTypes>
 			<li>Male</li>

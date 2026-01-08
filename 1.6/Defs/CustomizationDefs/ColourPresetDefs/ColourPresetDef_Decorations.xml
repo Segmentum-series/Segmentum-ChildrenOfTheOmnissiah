@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Trims -->
+	<!-- Golden Adamantium (3 channels) -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Gold</defName>
+		<label>Golden</label>
+		<colour>(240,176,29)</colour>
+		<colourTwo>(240,176,29)</colourTwo>
+		<colourThree>(240,176,29)</colourThree>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Adamantium (3 channels) -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Adamantium</defName>
+		<label>Adamantium</label>
+		<colour>(234,130,56)</colour>
+		<colourTwo>(234,130,56)</colourTwo>
+		<colourThree>(234,130,56)</colourThree>
+	</Core40k.DecorationColourPresetDef>
+
+<!-- Armour metals -->
+	<!-- Silver -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Silver</defName>
+		<label>Silver</label>
+		<colour>(182,182,182)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Grey -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Grey</defName>
+		<label>Grey</label>
+		<colour>(166,166,166)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Steel -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Steel</defName>
+		<label>Steel</label>
+		<colour>(152,152,152)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Bronze -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Bronze</defName>
+		<label>Bronze</label>
+		<colour>(144,75,46)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+<!-- Bodysuits -->
+	<!-- Bodysuit grey blue
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_BodysuitGreyBlue</defName>
+		<label>Bodysuit Grey Blue</label>
+		<colour>80,94,104</colour>
+	</Core40k.DecorationColourPresetDef>
+	-->
+	<!-- Bodysuit yellow
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_BodysuitYellow</defName>
+		<label>Bodysuit yellow</label>
+		<colour>200,178,110</colour>
+	</Core40k.DecorationColourPresetDef>
+	-->
+
+<!-- Cloack colours -->
+	<!-- Mars red -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_MarsRed</defName>
+		<label>Mars red</label>
+		<colour>(146,12,18)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Agrippa dark grey -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_AgrippaGrey</defName>
+		<label>Agrippa grey</label>
+		<colour>(51,51,51)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Stygies VIII black -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_StygiesBlack</defName>
+		<label>Stygies black</label>
+		<colour>(38,38,38)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Metalica white -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_MetalicaWhite</defName>
+		<label>Metalica white</label>
+		<colour>(255,255,255)</colour>
+	</Core40k.DecorationColourPresetDef>
+	
+	<!-- Deimos cyan -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_DeimosCyan</defName>
+		<label>Deimos cyan</label>
+		<colour>(90,138,140)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Triplex yellow -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_TriplexYellow</defName>
+		<label>Triplex yellow</label>
+		<colour>(220,160,45)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+<!-- Other colours -->
+	<!-- Lenses blue -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_LensesBlue</defName>
+		<label>Lenses blue</label>
+		<colour>(25,146,198)</colour>
+	</Core40k.DecorationColourPresetDef>
+
+	<!-- Leather -->
+	<Core40k.DecorationColourPresetDef>
+		<defName>Seg_COTO_DecoPalette_Leather</defName>
+		<label>Leather</label>
+		<colour>(120,82,66)</colour>
+	</Core40k.DecorationColourPresetDef>
+</Defs>
