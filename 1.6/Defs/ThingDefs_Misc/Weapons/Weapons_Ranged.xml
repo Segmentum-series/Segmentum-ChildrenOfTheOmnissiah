@@ -11,7 +11,7 @@
 			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
 			<recipeUsers Inherit="False">
 				<li>Seg_COTO_CraftingTable</li>
-		</recipeUsers>
+			</recipeUsers>
 		</recipeMaker>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -278,6 +278,12 @@
 		<label>phosphor weapon (base)</label>
 		<description>Base definition for phosphor weapons.</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_PhosphexMunitions</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -353,6 +359,9 @@
 		</costList>
 
 		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuardAdvanced</li>
+			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
@@ -413,6 +422,9 @@
 		</costList>
 
 		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
@@ -427,6 +439,12 @@
 		<label>GammaBase</label>
 		<description>not in game report to SEG team if you see in game</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_MatterDestabilization</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -518,7 +536,7 @@
 
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_MatterDestabilization</li>
+				<li>Seg_COTO_TechGuardAdvanced</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -535,6 +553,12 @@
 		<label>RadBase</label>
 		<description>not in game report to SEG team if you see in game</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_RadiumVolleys</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -622,7 +646,7 @@
 
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_RadiumVolleys</li>
+				<li>Seg_COTO_TechGuard</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -680,7 +704,7 @@
 
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_RadiumVolleys</li>
+				<li>Seg_COTO_TechGuard</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -696,6 +720,12 @@
 		<label>PlasmaWeaponBase</label>
 		<description>Base definition for plas‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_PlasmaInduction</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -774,7 +804,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_PlasmaInduction</li>
+				<li>Seg_COTO_TechGuardAdvanced</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -789,6 +819,12 @@
 		<label>TransuranicArquebusWeaponBase</label>
 		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -808,12 +844,6 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
-		</recipeMaker>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
@@ -936,7 +966,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuardAdvanced</li>
+				<li>Seg_COTO_TechGuard</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

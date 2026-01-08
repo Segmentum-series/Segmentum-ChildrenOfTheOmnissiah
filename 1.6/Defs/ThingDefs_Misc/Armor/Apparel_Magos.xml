@@ -84,6 +84,16 @@
 				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
 			</wornGraphicPaths>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
@@ -140,6 +150,16 @@
 				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
 			</wornGraphicPaths>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
@@ -199,6 +219,16 @@
 				<li>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</li>
 			</wornGraphicPaths>
 		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
