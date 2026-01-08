@@ -4,7 +4,7 @@
 <!-- Trims -->
 	<!-- Golden Adamantium (3 channels) -->
 	<Core40k.DecorationColourPresetDef>
-		<defName>Seg_COTO_DecoPalette_Gold</defName>
+		<defName>Seg_COTO_DecoPalette_GoldenAdamantium</defName>
 		<label>Golden</label>
 		<colour>(240,176,29)</colour>
 		<colourTwo>(240,176,29)</colourTwo>

@@ -40,7 +40,10 @@
 
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
-
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+		</availablePresets>
 		<colourable>true</colourable>
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
@@ -299,6 +302,11 @@
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
@@ -343,6 +351,11 @@
 
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
@@ -388,6 +401,11 @@
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
@@ -433,7 +451,12 @@
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
-
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
+		
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 

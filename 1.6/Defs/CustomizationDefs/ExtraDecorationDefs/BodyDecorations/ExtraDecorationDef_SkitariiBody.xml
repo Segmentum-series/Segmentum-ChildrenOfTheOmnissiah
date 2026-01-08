@@ -82,9 +82,13 @@
 			</dataWest>
 		</drawData>
 
+		<colourable>true</colourable>
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
-		<colourable>true</colourable>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
@@ -133,9 +137,13 @@
 			</dataWest>
 		</drawData>
 
+		<colourable>true</colourable>
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
-		<colourable>true</colourable>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
@@ -184,9 +192,13 @@
 			</dataWest>
 		</drawData>
 
+		<colourable>true</colourable>
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
-		<colourable>true</colourable>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+		</availablePresets>
 
 		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
