@@ -225,4 +225,47 @@ namespace Seg.COTO
             return true;
         }
     }
+
+[HarmonyPatch(typeof(Fire), "TryAttachFire")]
+public static class Patch_Fire_TryAttachFire
+{
+    static bool Prefix(Fire __instance, Thing t, ref bool __result)
+    {
+        if (__instance.def.defName != "Seg_COTO_PhosphorFire")
+            return true;
+
+        if (t == null)
+            return true;
+
+        if (t is Pawn)
+        {
+            __result = true;
+            return false;
+        }
+
+        if (t.def.category == ThingCategory.Building)
+
+        {
+            __result = true;
+            return false;
+        }
+
+        return true;
+    }
+}
+
+
+[HarmonyPatch(typeof(Fire), "FireSpreadAndBurn")]
+public static class Patch_Fire_FireSpreadAndBurn
+{
+    static bool Prefix(Fire __instance)
+    {
+        if (__instance.def.defName == "Seg_COTO_PhosphorFire")
+            return false; // noooo dont kill my fire owo
+
+        return true;
+    }
+}
+
+
 }
