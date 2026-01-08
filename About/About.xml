@@ -30,6 +30,11 @@
 			<displayName>CVN Mechanoid Warfare Core</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3047564391</steamWorkshopUrl>
 		</li>
+		<li>	
+			<packageId>REDACTED.Segmentum.Core</packageId>
+			<displayName>Segmentum-Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/Workshop/FillThisShitInLater</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -47,6 +52,7 @@
 		<li>Phonicmas.RimDark.FrameworkCore</li>
 		<li>vanillaexpanded.vpsycastse</li>
 		<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
+		<li>REDACTED.Segmentum.Core</li>
 	</loadAfter>
 	
 </ModMetaData>
