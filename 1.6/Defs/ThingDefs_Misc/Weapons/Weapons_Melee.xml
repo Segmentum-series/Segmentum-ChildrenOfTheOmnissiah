@@ -51,7 +51,7 @@
 		<uiIconScale>1.1</uiIconScale>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
-			<Mass>1.5</Mass>
+			<Mass>6</Mass>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
@@ -68,7 +68,7 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
@@ -123,12 +123,13 @@
 		<uiIconScale>0.6</uiIconScale>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
-			<Mass>3.5</Mass>
+			<Mass>10</Mass>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
 			<Plasteel>95</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Uranium>10</Uranium>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -191,13 +192,13 @@
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>2.2</Mass>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>4</Mass>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
-			<Plasteel>45</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -209,7 +210,7 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
@@ -228,7 +229,7 @@
 					<li>Stab</li>
 				</capacities>
 				<power>25</power>
-				<cooldownTime>2.0</cooldownTime>
+				<cooldownTime>3.2</cooldownTime>
 				<armorPenetration>0.9</armorPenetration>
 			</li>
 			<li>
@@ -237,7 +238,7 @@
 					<li>Cut</li>
 				</capacities>
 				<power>25</power>
-				<cooldownTime>2.0</cooldownTime>
+				<cooldownTime>3</cooldownTime>
 				<armorPenetration>0.9</armorPenetration>
 			</li>
 		</tools>
@@ -261,13 +262,14 @@
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<statBases>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>1.5</Mass>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>4</Mass>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
 			<Plasteel>35</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -279,7 +281,7 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>

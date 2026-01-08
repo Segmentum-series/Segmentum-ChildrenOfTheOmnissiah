@@ -47,7 +47,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
+			<WorkToMake>24000</WorkToMake>
 			<Mass>2.8</Mass>
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.65</AccuracyShort>
@@ -175,7 +175,7 @@
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
-			<WorkToMake>13000</WorkToMake>
+			<WorkToMake>24000</WorkToMake>
 			<MarketValue>500</MarketValue>
 		</statBases>
 
@@ -233,7 +233,7 @@
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
-			<WorkToMake>13000</WorkToMake>
+			<WorkToMake>36000</WorkToMake>
 			<MarketValue>500</MarketValue>
 		</statBases>
 
@@ -255,8 +255,9 @@
 		</verbs>
 
 		<costList>
-			<Steel>40</Steel>
+			<Steel>70</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
+			<Uranium>15</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -383,7 +384,7 @@
 			<AccuracyShort>0.6</AccuracyShort>
 			<AccuracyMedium>0.3</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
-			<WorkToMake>13000</WorkToMake>
+			<WorkToMake>34000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 		</statBases>
 
@@ -491,7 +492,7 @@
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.10</AccuracyLong>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToMake>48000</WorkToMake>
 			<MarketValue>650</MarketValue>
 		</statBases>
 
@@ -746,7 +747,7 @@
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
-			<WorkToMake>6500</WorkToMake>
+			<WorkToMake>48000</WorkToMake>
 			<MarketValue>6500</MarketValue>
 		</statBases>
 		<verbs>
@@ -768,7 +769,7 @@
 		</verbs>
 		<costList>
 			<Steel>120</Steel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>7</ComponentSpacer>
 			<Plasteel>120</Plasteel>
 		</costList>
 		<recipeMaker>
