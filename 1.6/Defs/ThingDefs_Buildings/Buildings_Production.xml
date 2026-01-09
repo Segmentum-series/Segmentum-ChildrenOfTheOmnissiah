@@ -24,6 +24,29 @@
 		<recipes>
 			<li>SmeltWeapon</li>
 			<li>SmeltApparel</li>
+			<li>Make_Seg_COTO_Apparel_MagosHood</li>
+    		<li>Make_Seg_COTO_Apparel_MagosRobes</li>
+			<li>Make_Seg_COTO_Apparel_MagosCassock</li>
+    		<li>Make_Seg_COTO_Apparel_SkitariiFatigues</li>
+			<li>Make_Seg_COTO_Apparel_SkitariiRangerHood</li>
+    		<li>Make_Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+    		<li>Make_Seg_COTO_Apparel_SkitariiWarPlate</li>
+			<li>Make_Seg_COTO_Gun_Macrostubber</li>
+			<li>Make_Seg_COTO_Gun_RadiumCarbine</li>
+			<li>Make_Seg_COTO_Gun_PlasmaCaliver</li>
+			<li>Make_Seg_COTO_Gun_RadPistol</li>
+			<li>Make_Seg_COTO_Gun_TransuranicArquebus</li>
+			<li>Make_Seg_COTO_Gun_ArcPistol</li>
+			<li>Make_Seg_COTO_Gun_ArcRifle</li>
+			<li>Make_Seg_COTO_Gun_PhosphorBlastPistol</li>
+			<li>Make_Seg_COTO_Gun_PhosphorSerpentia</li>
+			<li>Make_Seg_COTO_MeleeWeapon_TaserGoad</li>
+			<li>Make_Seg_COTO_MeleeWeapon_ArcMaul</li>
+			<li>Make_Seg_COTO_MeleeWeapon_PowerSword</li>
+			<li>Make_Seg_COTO_MeleeWeapon_OmnissianAxeBasic</li>
+
+
+
 		</recipes>
 		<comps>
 		<li Class="CompProperties_Power">
