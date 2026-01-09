@@ -56,7 +56,7 @@
     	<additionalHediffs>
        		<li>
             	<hediff>SEG_COTO_RadBuildup</hediff>
-            	<severityPerDamageDealt>0.02</severityPerDamageDealt> <!-- this means 10 damage will add 1%-->
+            	<severityPerDamageDealt>0.001</severityPerDamageDealt> <!-- this means 10 damage will add 1%-->
         	</li>
     	</additionalHediffs>
     	<impactSoundType>Bullet</impactSoundType> <!--add ours later-->
