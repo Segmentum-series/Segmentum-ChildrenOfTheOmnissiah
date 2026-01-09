@@ -20,16 +20,18 @@
 		<thingCategories>
 			<li>Seg_COTO_WeaponMelee</li>
 		</thingCategories>
+		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li>UltratechMelee</li>
 		</weaponTags>
-		<tradeTags>
-			<li>Seg_COTO_WeaponMelee</li>
-		</tradeTags>
 		<weaponClasses>
 			<li>Melee</li>
 			<li>Ultratech</li>
 		</weaponClasses>
+		<tradeTags>
+			<li>Seg_COTO_WeaponMelee</li>
+		</tradeTags>-->
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 <!-- Arc Maul -->
