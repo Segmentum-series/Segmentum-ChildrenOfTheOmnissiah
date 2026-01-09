@@ -47,19 +47,19 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.56</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<Insulation_Cold>14.4</Insulation_Cold>
+      		<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
 
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Hyperweave>40</Hyperweave>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+			<Hyperweave>30</Hyperweave>
+			<Seg_COTO_Ceramite>10</Seg_COTO_Ceramite>
 		</costList>
 
 		<apparel>
@@ -161,20 +161,26 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</texPath>
 		</graphicData>
-
+		<equippedStatOffsets>
+			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
+			<AimingDelayFactor>-0.3</AimingDelayFactor>
+			<MoveSpeed>0.55</MoveSpeed>
+		</equippedStatOffsets>
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>14000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>14.4</Insulation_Cold>
+      		<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
 
 		<costList>
-			<Steel>120</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Hyperweave>30</Hyperweave>
 		</costList>
 
 		<apparel>
@@ -225,23 +231,24 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>17000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+      		<Insulation_Heat>2</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<RangedWeapon_Cooldown>-.1</RangedWeapon_Cooldown>
-			<AimingDelayFactor>-0.3</AimingDelayFactor>
-			<MoveSpeed>0.55</MoveSpeed>
+		<ToxicResistance>1.00</ToxicResistance>
+		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>120</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Seg_COTO_Ceramite>50</Seg_COTO_Ceramite>
 		</costList>
 
 		<apparel>
@@ -291,17 +298,19 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>45000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>7</Insulation_Cold>
+      		<Insulation_Heat>10</Insulation_Heat>
 		</statBases>
 
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
 			<Hyperweave>40</Hyperweave>
 			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
 		</costList>
@@ -316,9 +325,14 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Shell</li>
+				<li>Middle</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>

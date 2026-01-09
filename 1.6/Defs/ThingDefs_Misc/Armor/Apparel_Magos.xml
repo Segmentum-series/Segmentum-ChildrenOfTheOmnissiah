@@ -48,13 +48,18 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+      		<Insulation_Heat>4</Insulation_Heat>
 		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
 
 		<costList>
 			<Steel>20</Steel>
@@ -114,13 +119,19 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+      		<Insulation_Heat>20.4</Insulation_Heat>
 		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>.15</SocialImpact>
+			<ResearchSpeed>.10</ResearchSpeed>
+		</equippedStatOffsets>
 
 		<costList>
 			<Steel>20</Steel>
@@ -181,14 +192,19 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>20.4</Insulation_Cold>
+      		<Insulation_Heat>3</Insulation_Heat>
 		</statBases>
-
+		<equippedStatOffsets>
+			<ConstructionSpeed>.20</ConstructionSpeed>
+			<ConstructSuccessChance>.20</ConstructSuccessChance>
+		</equippedStatOffsets>
 		<costList>
 			<Steel>20</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
