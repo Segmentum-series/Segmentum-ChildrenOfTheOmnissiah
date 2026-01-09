@@ -13,16 +13,10 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
-		<thingSetMakerTags>
+		<!-- <thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedLowTier</li>
-		</tradeTags>
-		<!-- Optional tags for trading and categorization 
-		<weaponTags>
-			<li></li>
-		</weaponTags>-->
+		</thingSetMakerTags>-->
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Macrostubber -->
@@ -34,7 +28,7 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.4</drawSize>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Cutout</shaderType>
 		</graphicData>
 		<uiIconScale>1.1</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -73,11 +67,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<weaponTags>
-			<li>ShortShots</li>
-			<li>Gun</li>
-			<li>IndustrialGunAdvanced</li>
-		</weaponTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -97,7 +86,16 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li>ShortShots</li>
+			<li>Gun</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedLowTier</li>
+		</tradeTags>
+		-->
 	</ThingDef>
 
 <!-- Arc weapons base -->
@@ -105,6 +103,12 @@
 		<label>arc weapon (base)</label>
 		<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_ArcPermacapacitors</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Styleable"/>
@@ -124,15 +128,6 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_ArcPermacapacitors</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
-		</recipeMaker>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -149,8 +144,9 @@
 				</capacities>
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
-  			</li>
+			</li>
 		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 	
 	<!-- Arc Pistol -->
@@ -161,7 +157,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
@@ -208,7 +204,14 @@
 			<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+		-->
 	</ThingDef>
 
 	<!-- Arc rifle -->
@@ -219,7 +222,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
@@ -270,7 +273,14 @@
 			<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+		-->
 	</ThingDef>
 
 <!-- Phosphor weapons base -->
@@ -303,9 +313,7 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Phosphor serpentia -->
@@ -316,7 +324,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
@@ -368,7 +376,13 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>-->
 	</ThingDef>
 	
 	<!-- Phosphor blast pistol -->
@@ -379,7 +393,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
@@ -431,7 +445,13 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>-->
 	</ThingDef>
 
 <!-- Gamma weapons base -->
@@ -464,9 +484,6 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedHighTier</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -486,6 +503,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Gamma pistol -->
@@ -496,7 +514,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.4</drawSize>
 		</graphicData>
@@ -545,7 +563,13 @@
 				<Intellectual>10</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>-->
 	</ThingDef>
 
 <!-- Rad weapons base -->
@@ -597,6 +621,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Radium pistol -->
@@ -607,7 +632,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.4</drawSize>
 		</graphicData>
@@ -655,6 +680,13 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li></li>
+		</tradeTags>-->
 	</ThingDef>
 
 	<!-- Radium carbine -->
@@ -665,7 +697,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.1</drawSize>
 		</graphicData>
@@ -713,6 +745,13 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li></li>
+		</tradeTags>-->
 	</ThingDef>
 
 <!-- Plasma weapons base -->
@@ -745,15 +784,7 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_PlasmaInduction</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
-		</recipeMaker>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Plasma caliver -->
@@ -764,7 +795,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PlasmaCaliver</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.2</drawSize>
 		</graphicData>
@@ -812,6 +843,13 @@
 				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>-->
 	</ThingDef>
 
 <!-- Transuranic arquebus base -->
@@ -844,9 +882,6 @@
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
 			</li>
 		</comps>
-		<tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -866,6 +901,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 	</ThingDef>
 
 	<!-- Transuranic arquebus -->
@@ -876,7 +912,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.8</drawSize>
 		</graphicData>
@@ -920,6 +956,13 @@
 				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>-->
 	</ThingDef>
 
 	<!-- Galvanic rifle -->
@@ -930,7 +973,7 @@
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GalvanicRifle</texPath>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.6</drawSize>
 		</graphicData>
@@ -974,6 +1017,13 @@
 				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<!-- Tags for trading and categorization for later
+		<weaponTags>
+			<li></li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>-->
 	</ThingDef>	
 
 </Defs>
