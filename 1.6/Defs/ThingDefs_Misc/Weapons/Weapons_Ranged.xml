@@ -176,7 +176,12 @@
 		</statBases>
 
 		<verbs>
-			<li>
+		 <li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+			<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+			<apparelList>
+			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+			</apparelList>
+			<missingReason>Missing  backpack. Equip it first.</missingReason>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
