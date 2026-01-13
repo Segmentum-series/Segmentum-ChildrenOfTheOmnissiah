@@ -77,13 +77,14 @@
 		<building>
 			<workTableRoomRole>Workshop</workTableRoomRole>
 			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<fillPercent>0.5</fillPercent>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
-		<surfaceType>Item</surfaceType>
+
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -148,13 +149,14 @@
 		<building>
 			<workTableRoomRole>Workshop</workTableRoomRole>
 			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<fillPercent>0.5</fillPercent>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
-		<surfaceType>Item</surfaceType>
+	
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

@@ -7,6 +7,7 @@
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>1000</workAmount>
+		<workSkill>Crafting</workSkill>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -56,6 +57,7 @@
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>4000</workAmount>
+		<workSkill>Crafting</workSkill>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -106,6 +108,7 @@
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>1000</workAmount>
+		<workSkill>Crafting</workSkill>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -155,6 +158,7 @@
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>4000</workAmount>
+		<workSkill>Crafting</workSkill>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
@@ -197,4 +201,16 @@
 			<Seg_COTO_Ceramite>120</Seg_COTO_Ceramite>
 		</products>
 	</RecipeDef>
+<WorkGiverDef>
+    <defName>WorkGiver_CeramiteFurnace</defName>
+    <label>operate ceramite furnace</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>50</priorityInType>
+    <verb>smelt</verb>
+    <gerund>smelting ceramite at</gerund>
+    <requiredCapacities>
+        <li>Manipulation</li>
+    </requiredCapacities>
+</WorkGiverDef>
 </Defs>
