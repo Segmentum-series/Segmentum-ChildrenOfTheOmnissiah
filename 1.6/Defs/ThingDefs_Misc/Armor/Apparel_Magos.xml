@@ -62,11 +62,16 @@
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Hyperweave>40</Hyperweave>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
-		</costList>
+        	<Steel>20</Steel>
+        	<ComponentIndustrial>1</ComponentIndustrial>
+    	</costList>
+		
+    	<stuffCategories>
+        	<li>Fabric</li>
+    	</stuffCategories>
+    	<costStuffCount>40</costStuffCount>
+
+
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -134,11 +139,16 @@
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Hyperweave>40</Hyperweave>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
-		</costList>
+        	<Steel>20</Steel>
+        	<ComponentIndustrial>1</ComponentIndustrial>
+    	</costList>
+		
+    	<stuffCategories>
+        	<li>Fabric</li>
+    	</stuffCategories>
+    	<costStuffCount>40</costStuffCount>
+
+
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -206,11 +216,16 @@
 			<ConstructSuccessChance>.20</ConstructSuccessChance>
 		</equippedStatOffsets>
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Hyperweave>40</Hyperweave>
-			<Seg_COTO_Ceramite>15</Seg_COTO_Ceramite>
-		</costList>
+        	<Steel>20</Steel>
+        	<ComponentIndustrial>1</ComponentIndustrial>
+    	</costList>
+		
+    	<stuffCategories>
+        	<li>Fabric</li>
+    	</stuffCategories>
+    	<costStuffCount>40</costStuffCount>
+
+
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
