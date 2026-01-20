@@ -123,12 +123,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<tools>
 			<li>
@@ -157,7 +157,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
@@ -180,21 +180,20 @@
 		</statBases>
 
 		<verbs>
-		 <li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
-			<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
-			<apparelList>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-			</apparelList>
-			<missingReason>Missing  backpack. Equip it first.</missingReason>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
-			<soundCast>Seg_COTO_ArcSound</soundCast>
-			<warmupTime>0.50</warmupTime>
-			<range>15.9</range>
-			<burstShotCount>1</burstShotCount>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots> <!-- may be safe to take out? idk-->
-			<muzzleFlashScale>10</muzzleFlashScale>
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_MagosBackpack</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
+				<warmupTime>0.50</warmupTime>
+				<range>15.9</range>
+				<burstShotCount>1</burstShotCount>
+				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
 
@@ -227,7 +226,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
@@ -250,19 +249,24 @@
 		</statBases>
 
 		<verbs>
-			<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
-			<soundCast>Seg_COTO_ArcSound</soundCast>
-			<warmupTime>0.75</warmupTime>
-			<range>35.9</range>
-			<burstShotCount>4</burstShotCount>
-			<ticksBetweenBurstShots>10</ticksBetweenBurstShots> 
-			<muzzleFlashScale>10</muzzleFlashScale>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_MagosBackpack</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
+				<warmupTime>0.75</warmupTime>
+				<range>35.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots> 
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 
@@ -315,12 +319,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 		<weaponTags Inherit="False" />
@@ -488,12 +492,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<tools>
 			<li>
@@ -523,7 +527,7 @@
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
 		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
-		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.</description>
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
@@ -546,8 +550,13 @@
 		</statBases>
 
 		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_MagosBackpack</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
 				<soundCast>Seg_COTO_GammaSound</soundCast>
@@ -608,12 +617,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<weaponTags Inherit="False" />
 		<tradeTags Inherit="False" />
@@ -792,12 +801,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 		<weaponTags Inherit="False" />
@@ -892,12 +901,12 @@
 				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
 				<minQualityForArtistic>Good</minQualityForArtistic>
 			</li>
-			<li Class="Core40k.CompProperties_MultiColor">
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
 				<colorMaskAmount>3</colorMaskAmount>
 				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
 				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
 				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
-			</li>
+			</li> -->
 		</comps>
 		<tools>
 			<li>

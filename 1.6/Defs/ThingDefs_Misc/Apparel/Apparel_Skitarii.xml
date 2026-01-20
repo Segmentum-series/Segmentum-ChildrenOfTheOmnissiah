@@ -106,7 +106,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiBackpack</defName>
 		<label>skitarii powerpack</label>
-		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -129,9 +129,9 @@
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Cloth>40</Cloth>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Cloth>20</Cloth>
 		</costList>
 
 		<apparel>
