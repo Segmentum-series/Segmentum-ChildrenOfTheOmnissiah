@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<WorkGiverDef><!-- Forge altar work giver-->
+		<defName>WorkGiver_CraftingTable</defName>
+		<label>make things at forge altar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>75</priorityInType>
+		<verb>work at</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_COTO_CraftingTable</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef><!-- Ceramite furnace work giver-->
+		<defName>WorkGiver_CeramiteFurnace</defName>
+		<label>operate ceramite furnace</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>80</priorityInType>
+		<verb>smelt</verb>
+		<gerund>smelting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_COTO_CeramiteFurnace</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CraftingTable</defName>
 		<label>mechanicus forge altar</label>

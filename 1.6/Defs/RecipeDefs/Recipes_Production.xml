@@ -2,7 +2,7 @@
 <Defs>
 <!-- With devilstrand -->
 	<RecipeDef>
-		<defName>GW_Make_CeramiteDevilstrand</defName>
+		<defName>Seg_COTO_Make_CeramiteDevilstrand</defName>
 		<label>make ceramite with devilstrand</label>
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
@@ -52,7 +52,7 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GW_Make_CeramiteDevilstrandBulk</defName>
+		<defName>Seg_COTO_Make_CeramiteDevilstrandBulk</defName>
 		<label>make ceramite with devilstrand x4</label>
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
@@ -103,7 +103,7 @@
 
 <!-- With hyperweave -->
 	<RecipeDef>
-		<defName>GW_Make_CeramiteHyperweave</defName>
+		<defName>Seg_COTO_Make_CeramiteHyperweave</defName>
 		<label>make ceramite with hyperweave</label>
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
@@ -153,7 +153,7 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GW_Make_CeramiteHyperweaveBulk</defName>
+		<defName>Seg_COTO_Make_CeramiteHyperweaveBulk</defName>
 		<label>make ceramite with hyperweave x4</label>
 		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
@@ -201,16 +201,5 @@
 			<Seg_COTO_Ceramite>120</Seg_COTO_Ceramite>
 		</products>
 	</RecipeDef>
-<WorkGiverDef>
-    <defName>WorkGiver_CeramiteFurnace</defName>
-    <label>operate ceramite furnace</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Smithing</workType>
-    <priorityInType>50</priorityInType>
-    <verb>smelt</verb>
-    <gerund>smelting ceramite at</gerund>
-    <requiredCapacities>
-        <li>Manipulation</li>
-    </requiredCapacities>
-</WorkGiverDef>
+
 </Defs>
