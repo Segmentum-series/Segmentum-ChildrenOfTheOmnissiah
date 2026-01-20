@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
 	<ThingDef Abstract="true" Name="Seg_COTO_MagosBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<thingCategories>
@@ -33,6 +30,17 @@
 				</tabDefs>
 			</li>
 		</comps>
+		
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- Magos hood -->
@@ -55,23 +63,20 @@
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
-      		<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 
 		<costList>
-        	<Steel>20</Steel>
-        	<ComponentIndustrial>1</ComponentIndustrial>
-    	</costList>
-		
-    	<stuffCategories>
-        	<li>Fabric</li>
-    	</stuffCategories>
-    	<costStuffCount>40</costStuffCount>
-
-
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+			</stuffCategories>
+			<costStuffCount>40</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -98,10 +103,8 @@
 			<researchPrerequisites>
 				<li>Seg_COTO_CultMechanicus</li>
 			</researchPrerequisites>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		
@@ -131,7 +134,7 @@
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>
-      		<Insulation_Heat>20.4</Insulation_Heat>
+			<Insulation_Heat>20.4</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>.15</SocialImpact>
@@ -139,16 +142,13 @@
 		</equippedStatOffsets>
 
 		<costList>
-        	<Steel>20</Steel>
-        	<ComponentIndustrial>1</ComponentIndustrial>
-    	</costList>
-		
-    	<stuffCategories>
-        	<li>Fabric</li>
-    	</stuffCategories>
-    	<costStuffCount>40</costStuffCount>
-
-
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -175,10 +175,8 @@
 			<researchPrerequisites>
 				<li>Seg_COTO_CultMechanicus</li>
 			</researchPrerequisites>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 
@@ -209,23 +207,21 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.55</ArmorRating_Heat>
 			<Insulation_Cold>20.4</Insulation_Cold>
-      		<Insulation_Heat>3</Insulation_Heat>
+			<Insulation_Heat>3</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<ConstructionSpeed>.20</ConstructionSpeed>
 			<ConstructSuccessChance>.20</ConstructSuccessChance>
 		</equippedStatOffsets>
 		<costList>
-        	<Steel>20</Steel>
-        	<ComponentIndustrial>1</ComponentIndustrial>
-    	</costList>
-		
-    	<stuffCategories>
-        	<li>Fabric</li>
-    	</stuffCategories>
-    	<costStuffCount>40</costStuffCount>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
 
-
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -254,10 +250,8 @@
 			<researchPrerequisites>
 				<li>Seg_COTO_CultMechanicus</li>
 			</researchPrerequisites>
-			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 

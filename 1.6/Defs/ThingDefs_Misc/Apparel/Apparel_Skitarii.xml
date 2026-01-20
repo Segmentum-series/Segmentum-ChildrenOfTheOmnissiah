@@ -3,8 +3,6 @@
 	<ThingDef Abstract="true" Name="Seg_COTO_SkitariiBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<thingCategories>
@@ -21,13 +19,22 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
 		</apparel>
+
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_TechGuard</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -54,7 +61,7 @@
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.40</ArmorRating_Heat>
 			<Insulation_Cold>14.4</Insulation_Cold>
-      		<Insulation_Heat>20</Insulation_Heat>
+			<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
 
 		<costList>
