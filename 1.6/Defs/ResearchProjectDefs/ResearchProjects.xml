@@ -141,7 +141,7 @@
 			<li>MicroelectronicsBasics</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<tab>Seg_COTO_SegmentumTab</tab>
+		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
 <!-- Tech-Guard -->
@@ -161,7 +161,7 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<tab>Seg_COTO_SegmentumTab</tab>
+		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
 <!-- Tech-Guard advanced arsenal -->
@@ -180,7 +180,7 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<tab>Seg_COTO_SegmentumTab</tab>
+		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
 <!-- Maniple tactics || Left out for 1.0 -->
