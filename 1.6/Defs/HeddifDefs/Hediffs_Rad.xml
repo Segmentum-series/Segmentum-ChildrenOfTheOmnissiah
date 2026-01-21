@@ -167,7 +167,7 @@
     <label>anti-rad neutroamine infusion</label>
     <description>This special medical operation uses a massive dose of Neutroamine. It binds and clears the radioactive substances, allowing for a much quicker recovery than normal.</description>
     <workerClass>Recipe_RemoveHediff</workerClass>
-    <jobString>Infusing RadAway.</jobString>
+    <jobString>Infusing neutroamine.</jobString>
     <workAmount>2000</workAmount>
     <hideBodyPartNames>true</hideBodyPartNames>
     <isViolation>false</isViolation>
