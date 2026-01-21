@@ -103,7 +103,7 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
-		<!-- <comps>
+		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
 				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
@@ -111,7 +111,7 @@
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
 			</li>
-		</comps> -->
+		</comps>
 	</ThingDef>
 
 	<!-- Skitarii backpack -->

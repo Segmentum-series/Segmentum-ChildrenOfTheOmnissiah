@@ -258,11 +258,11 @@
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
-				<soundCast>Seg_COTO_ArcSound</soundCast>
 				<warmupTime>0.75</warmupTime>
 				<range>35.9</range>
 				<burstShotCount>4</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots> 
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>

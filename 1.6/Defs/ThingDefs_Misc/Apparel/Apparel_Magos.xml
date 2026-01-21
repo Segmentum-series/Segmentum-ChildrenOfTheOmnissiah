@@ -5,16 +5,16 @@
 		<graphicData>
 			<drawSize>1.0</drawSize>
 		</graphicData>
-		<thingCategories>
+		<!-- <thingCategories>
 			<li>Apparel</li>
-		</thingCategories>
-		<tradeTags>
+		</thingCategories> -->
+		<!-- <tradeTags>
 			<li>Seg_COTO_Robe</li>
-		</tradeTags>
+		</tradeTags> -->
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
-				<li>Seg_COTO_Robe</li>
+				<li>Seg_COTO_Backpacks</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<defaultOutfitTags>
