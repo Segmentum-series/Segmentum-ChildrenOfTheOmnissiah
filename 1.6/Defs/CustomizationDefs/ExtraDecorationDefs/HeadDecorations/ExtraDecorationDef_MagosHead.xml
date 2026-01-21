@@ -11,16 +11,14 @@
 		<sortOrder>1</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosHood</li>
+		</appliesTo>
 		<defaultShowRotation>
 			<li>West</li>
 			<li>South</li>
 			<li>East</li>
 		</defaultShowRotation>
-
-		<appliesTo>
-			<li>Seg_COTO_Apparel_MagosHood</li>
-		</appliesTo>
-
 		<drawData>
 			<dataNorth>
 				<layer>77</layer>
@@ -44,9 +42,7 @@
 			<li>Seg_COTO_DecoPalette_MarsRed</li>
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 		</availablePresets>
-
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-
 	</Core40k.ExtraDecorationDef>
 </Defs>

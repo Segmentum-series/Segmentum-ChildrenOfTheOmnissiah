@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-	<ApparelLayerDef>
-		<defName>Backpack</defName>
-		<label>backpack</label>
-		<drawOrder>220</drawOrder>
-	</ApparelLayerDef>
-</Defs>

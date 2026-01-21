@@ -7,7 +7,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_AutoWeapons</researchPrerequisite>
+			<researchPrerequisite>Seg_AutoWeapons</researchPrerequisite>
 			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
 			<recipeUsers Inherit="False">
 				<li>Seg_COTO_CraftingTable</li>
@@ -180,13 +180,16 @@
 		</statBases>
 
 		<verbs>
+			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 				</apparelList>
-				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<soundCast>Seg_COTO_ArcSound</soundCast>
@@ -249,13 +252,16 @@
 		</statBases>
 
 		<verbs>
+			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 				</apparelList>
-				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
@@ -550,13 +556,16 @@
 		</statBases>
 
 		<verbs>
+			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 				</apparelList>
-				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
 				<soundCast>Seg_COTO_GammaSound</soundCast>
@@ -784,7 +793,7 @@
 		<description>Base definition for plas‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_PlasmaInduction</researchPrerequisite>
+			<researchPrerequisite>Seg_PlasmaInduction</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>

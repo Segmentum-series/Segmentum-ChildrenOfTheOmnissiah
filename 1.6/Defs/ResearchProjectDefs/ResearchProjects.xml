@@ -3,7 +3,7 @@
 <!-- Main research tree -->
 <!-- Auto weapons -->
 	<ResearchProjectDef>
-		<defName>Seg_COTO_AutoWeapons</defName>
+		<defName>Seg_AutoWeapons</defName><!-- To be moved later -->
 		<label>auto weapons</label>
 		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
 		<baseCost>500</baseCost>
@@ -18,7 +18,7 @@
 
 <!-- Ceramite production -->
 	<ResearchProjectDef>
-		<defName>Seg_COTO_CeramiteProduction</defName>
+		<defName>Seg_CeramiteProduction</defName><!-- To be moved later -->
 		<label>ceramite production</label>
 		<description>Produce advanced ceramic resources from stone blocks and other materials.</description>
 		<baseCost>700</baseCost>
@@ -90,7 +90,7 @@
 
 <!-- Plasma induction -->
 	<ResearchProjectDef>
-		<defName>Seg_COTO_PlasmaInduction</defName>
+		<defName>Seg_PlasmaInduction</defName><!-- To be moved later -->
 		<label>plasma induction</label>
 		<description>Be granted the consecrated rites of Plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
 		<baseCost>2500</baseCost>
@@ -118,7 +118,7 @@
 			<researchViewX>20.00</researchViewX>
 			<researchViewY>1.80</researchViewY>
 		<prerequisites>
-			<li>Seg_COTO_PlasmaInduction</li>
+			<li>Seg_PlasmaInduction</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
