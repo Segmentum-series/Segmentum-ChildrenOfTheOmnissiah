@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Backpack base -->
+	<ThingDef Abstract="true" Name="Seg_COTO_BackpackBase" ParentName="ArmorMachineableBase">
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+		</graphicData>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<!--<drawData>
+				<dataSouth>
+					<offset>(0.0, 0.0, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.0, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(0.0, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.0, 0.0)</offset>
+				</dataNorth>
+			</drawData>-->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Backpack</li>
+			</layers>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+		</apparel>
+		<modExtensions>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- Magos backpack -->
+	<ThingDef ParentName="Seg_COTO_BackpackBase">
+		<defName>Seg_COTO_Apparel_MagosBackpack</defName>
+		<label>magos powerpack</label>
+		<description>A standard modular powered backpacks, designed to power and manipulate a multitude of tools required in the general operations of any Magos.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MagosBackpack/Seg_COTO_MagosBackpack</texPath>
+			<drawSize>(1.20,1.20)</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_CultMechanicus</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MagosBackpack/Seg_COTO_MagosBackpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>15</layer>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>80</layer>
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>80</layer>
+				</dataEast>
+				<dataNorth>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>100</layer>
+				</dataNorth>
+			</drawData>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- <comps>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
+				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
+		</comps> -->
+	</ThingDef>
+
+	<!-- Skitarii backpack -->
+	<ThingDef ParentName="Seg_COTO_BackpackBase">
+		<defName>Seg_COTO_Apparel_SkitariiBackpack</defName>
+		<label>skitarii powerpack</label>
+		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description>
+		<graphicData>
+			<texPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<CarryingCapacity>50</CarryingCapacity>
+			<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>15</layer>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>80</layer>
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>80</layer>
+				</dataEast>
+				<dataNorth>
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+					<layer>100</layer>
+				</dataNorth>
+			</drawData>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- <comps>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
+				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
+				<tabDefs>
+					<li>BEWH_ExtraDecoration</li>
+				</tabDefs>
+			</li>
+		</comps> -->
+	</ThingDef>
+</Defs>
