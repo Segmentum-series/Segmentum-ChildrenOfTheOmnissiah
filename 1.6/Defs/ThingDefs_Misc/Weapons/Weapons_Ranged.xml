@@ -283,7 +283,6 @@
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<Uranium>15</Uranium>
 		</costList>
-
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_TechGuard</li>
@@ -294,6 +293,23 @@
 			<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<east>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
@@ -781,6 +797,16 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.05, 0, 0)</drawOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
@@ -881,6 +907,25 @@
 				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, 0.1)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
@@ -996,6 +1041,26 @@
 				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.25, 0, 0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.3, 0, -0.15)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.25, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.3, 0, -0.15)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
@@ -1057,6 +1122,25 @@
 				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
@@ -1064,7 +1148,7 @@
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
-	</ThingDef>	
+	</ThingDef>
 
 </Defs>
 
