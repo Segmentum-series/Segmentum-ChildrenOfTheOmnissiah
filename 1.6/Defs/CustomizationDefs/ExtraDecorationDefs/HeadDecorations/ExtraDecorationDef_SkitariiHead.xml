@@ -234,13 +234,14 @@
 				<layer>82</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>75</layer>
+				<flip>true</flip>
 			</dataEast>
 			<dataNorth>
 				<layer>77</layer>
 			</dataNorth>
 			<dataWest>
-				<layer>72</layer>
+				<layer>75</layer>
 			</dataWest>
 		</drawData>
 
