@@ -157,8 +157,9 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
-
+		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
+		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -229,8 +230,9 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
-
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
+		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
 			<shaderType>Cutout</shaderType>
@@ -533,8 +535,9 @@
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
 		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
-		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
-
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.</description>
+		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
 			<shaderType>Cutout</shaderType>
