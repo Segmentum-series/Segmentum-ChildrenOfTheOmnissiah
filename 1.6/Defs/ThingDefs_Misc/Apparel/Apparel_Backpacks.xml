@@ -12,6 +12,9 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 		</recipeMaker>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
