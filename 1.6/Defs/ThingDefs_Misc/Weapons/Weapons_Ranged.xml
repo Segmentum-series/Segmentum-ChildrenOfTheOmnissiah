@@ -25,7 +25,7 @@
 	<ThingDef ParentName="Seg_COTO_Stubber_base">
 		<defName>Seg_COTO_Gun_Macrostubber</defName>
 		<label>macrostubber</label>
-		<description>Favoured by Tech-Priests, macrostubbers are able to hurling out a thunderous cloud of solid slugs.</description>
+		<description>Favoured by Tech-Priests, macrostubbers are able to hurl out a thunderous cloud of solid slugs.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -157,9 +157,9 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
 		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
-		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -680,7 +680,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadPistol</defName>
 		<label>radium pistol</label>
-		<description>A sidearm that utilises scaled-down Radium technology, reaching a similar effect in smaller potency and scale, while still killing their own wielders.</description>
+		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
@@ -745,7 +745,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>radium carbine</label>
-		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, Radium weapons are so volatile that they eventually kill their own wielders.</description>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
@@ -993,7 +993,7 @@
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_TransuranicArquebus</defName>
 		<label>transuranic arquebus</label>
-		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive weapon penetration capabilities.</description>
+		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive armor penetration capabilities.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
