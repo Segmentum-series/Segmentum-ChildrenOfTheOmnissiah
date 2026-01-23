@@ -5,9 +5,9 @@
 		<graphicData>
 			<drawSize>1.0</drawSize>
 		</graphicData>
-		<!-- <thingCategories>
+		<thingCategories>
 			<li>Apparel</li>
-		</thingCategories> -->
+		</thingCategories>
 		<!-- <tradeTags>
 			<li>Seg_COTO_Robe</li>
 		</tradeTags> -->
