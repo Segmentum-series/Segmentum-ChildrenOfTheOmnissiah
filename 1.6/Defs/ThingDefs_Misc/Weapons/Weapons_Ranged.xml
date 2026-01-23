@@ -1110,7 +1110,7 @@
 		</verbs>
 		<costList>
 			<Plasteel>70</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
