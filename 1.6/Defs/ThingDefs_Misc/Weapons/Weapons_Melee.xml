@@ -2,9 +2,6 @@
 <Defs>
 	<ThingDef Abstract="True" Name="MeleePowerWeapon_base" ParentName="BaseWeapon">
 		<techLevel>Ultra</techLevel>
-			<statBases>
-			<MarketValue>2000</MarketValue>
-		</statBases>
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>
@@ -20,6 +17,9 @@
 		<thingCategories>
 			<li>Seg_COTO_WeaponMelee</li>
 		</thingCategories>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li>UltratechMelee</li>
@@ -54,11 +54,12 @@
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>6</Mass>
+			<MarketValue>485</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
-			<Plasteel>35</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -120,17 +121,18 @@
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Melee_OmnissianAxeBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.8</drawSize>
+			<drawSize>1.6</drawSize>
 		</graphicData>
-		<uiIconScale>0.6</uiIconScale>
+		<uiIconScale>0.7</uiIconScale>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>10</Mass>
+			<MarketValue>1205</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
-			<Plasteel>95</Plasteel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<Uranium>10</Uranium>
 		</costList>
 		<recipeMaker>
@@ -174,6 +176,24 @@
 				<armorPenetration>0.4</armorPenetration>
 			</li>
 		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<east>
+						<drawOffset>(0, 0,  0.1)</drawOffset>
+					</east>
+					<north>
+						<drawOffset>(0.3, 0, 0.1)</drawOffset>
+					</north>
+					<south>
+						<drawOffset>(0.3, 0, 0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, 0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 <!-- Power Sword -->
@@ -196,11 +216,13 @@
 		<statBases>
 			<WorkToMake>48000</WorkToMake>
 			<Mass>4</Mass>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
 			<Plasteel>100</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -266,12 +288,13 @@
 		<statBases>
 			<WorkToMake>36000</WorkToMake>
 			<Mass>4</Mass>
+			<MarketValue>1380</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>35</Steel>
 			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<ComponentSpacer>3</ComponentSpacer>
-			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>

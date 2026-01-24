@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs><!-- Requires update -->
+<Defs>
+<!-- Requires update -->
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>Seg_COTO_PlayerMechanicus</defName>
 		<label>New Forge</label>
@@ -18,6 +19,7 @@
 			<li>
 				<categories>
 					<li>Corunan</li>
+					<li>Offworld</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -26,9 +28,14 @@
 		<startingResearchTags><!-- Requires update -->
 			<li>ClassicStart</li>
 		</startingResearchTags>
-		<startingTechprintsResearchTags>	<!-- Requires update -->
+		<startingTechprintsResearchTags><!-- Requires update -->
 			<li>ClassicStart</li>
 			<li>ClassicStartTechprints</li>
 		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
 	</FactionDef>
 </Defs>

@@ -23,8 +23,7 @@
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(0.56, 0.03, 0.06)</defaultPrimaryColor>
-				<defaultSecondaryColor>(0.95, 0.90, 0.75)</defaultSecondaryColor>
+				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor>
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -73,6 +72,7 @@
 		</costList>
 			<stuffCategories>
 				<li>Fabric</li>
+				<li>Leathery</li>
 			</stuffCategories>
 			<costStuffCount>40</costStuffCount>
 
@@ -143,6 +143,7 @@
 		</costList>
 		<stuffCategories>
 			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 
@@ -214,6 +215,7 @@
 
 		<stuffCategories>
 			<li>Fabric</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 
