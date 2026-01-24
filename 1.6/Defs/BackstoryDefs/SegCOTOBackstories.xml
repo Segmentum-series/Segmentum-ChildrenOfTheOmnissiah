@@ -41,7 +41,7 @@
     <titleShort>skitarius</titleShort>
     <baseDesc>[PAWN_nameDef] was a member of the vanguard in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah.</baseDesc>
     <spawnCategories>
-      <li>SegCOTO_Skitarii</li>
+      <li>SegCOTO_SkitariiVanguard</li>
     </spawnCategories>
     <requiredWorkTags>
       <li>Violent</li>
@@ -71,7 +71,7 @@
     <titleShort>skitarius</titleShort>
     <baseDesc>[PAWN_nameDef] was a member of the rangers in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah.</baseDesc>
     <spawnCategories>
-      <li>SegCOTO_Skitarii</li>
+      <li>SegCOTO_SkitariiRanger</li>
     </spawnCategories>
     <requiredWorkTags>
       <li>Violent</li>

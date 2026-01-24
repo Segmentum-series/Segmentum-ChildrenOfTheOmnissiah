@@ -33,6 +33,16 @@
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
+		<backstoryFiltersOverride>
+			<li>
+			<categoriesChildhood>
+				<li>SegCOTO_Mechanicus</li>
+			</categoriesChildhood>
+			<categoriesAdulthood>
+				<li>SegCOTO_Techpriest</li>
+			</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<!-- Skitarii Ranger -->
@@ -57,6 +67,16 @@
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
+		<backstoryFiltersOverride>
+			<li>
+			<categoriesChildhood>
+				<li>SegCOTO_Mechanicus</li>
+			</categoriesChildhood>
+			<categoriesAdulthood>
+				<li>SegCOTO_SkitariiRanger</li>
+			</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<!-- Skitarii Vanguard -->
@@ -81,6 +101,16 @@
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
+		<backstoryFiltersOverride>
+			<li>
+			<categoriesChildhood>
+				<li>SegCOTO_Mechanicus</li>
+			</categoriesChildhood>
+			<categoriesAdulthood>
+				<li>SegCOTO_SkitariiVanguard</li>
+			</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<!-- Exploratoris Extremis Scenario -->
