@@ -95,8 +95,9 @@
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(0.31, 0.37, 0.40)</defaultPrimaryColor>
-				<defaultSecondaryColor>(0.64, 0.64, 0.64)</defaultSecondaryColor>
+				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
 				<!-- It has no extra decorations -->
 			</li>
 		</comps>
@@ -160,9 +161,9 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
-				<defaultSecondaryColor>(0.56, 0.03, 0.06)</defaultSecondaryColor>
-				<defaultTertiaryColor>(0.10, 0.57, 0.78)</defaultTertiaryColor>
+				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -228,9 +229,9 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
-				<defaultSecondaryColor>(0.91, 0.50, 0.22)</defaultSecondaryColor>
-				<defaultTertiaryColor>(0.10, 0.57, 0.78)</defaultTertiaryColor>
+				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -299,9 +300,9 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(0.64, 0.64, 0.64)</defaultPrimaryColor>
-				<defaultSecondaryColor>(0.56, 0.03, 0.06)</defaultSecondaryColor>
-				<defaultTertiaryColor>(0.91, 0.50, 0.22)</defaultTertiaryColor>
+				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
+				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
