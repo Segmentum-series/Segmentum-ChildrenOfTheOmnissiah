@@ -95,10 +95,10 @@
 				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
 				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
 			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420
+			<!-- Was disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420 -->
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
-				<ammoDef>Ammunition_Spacer</ammoDef>
+				<ammoDef>Uranium</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
@@ -106,7 +106,7 @@
 				<chargeNoun>smokepop</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li> -->
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -173,10 +173,10 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420
+			<!-- Was disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420 -->
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
-				<ammoDef>Ammunition_Spacer</ammoDef>
+				<ammoDef>Uranium</ammoDef>
 				<ammoCountPerCharge>1</ammoCountPerCharge>
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
@@ -184,7 +184,7 @@
 				<chargeNoun>smokepop</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li> -->
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>
