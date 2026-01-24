@@ -17,6 +17,9 @@
 		<thingCategories>
 			<li>Seg_COTO_WeaponMelee</li>
 		</thingCategories>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li>UltratechMelee</li>
