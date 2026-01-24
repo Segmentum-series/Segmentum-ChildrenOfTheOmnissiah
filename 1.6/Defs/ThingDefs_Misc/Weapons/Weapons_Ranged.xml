@@ -50,9 +50,10 @@
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<MarketValue>420</MarketValue>
 		</statBases>
 		<costList>
-			<Steel>70</Steel>
+			<Steel>60</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
@@ -157,7 +158,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
 		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
 		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
@@ -177,7 +178,7 @@
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>24000</WorkToMake>
-			<MarketValue>500</MarketValue>
+			<MarketValue>480</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -204,6 +205,7 @@
 		<costList>
 			<Steel>40</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
+			<Uranium>5</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -213,7 +215,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-			<Crafting>4</Crafting>
+			<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later
@@ -230,7 +232,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
 		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
 		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
@@ -242,7 +244,7 @@
 		<uiIconScale>0.9</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
 		<statBases>
-			<Mass>2.5</Mass>
+			<Mass>4.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.90</AccuracyTouch>
@@ -250,7 +252,7 @@
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
 			<WorkToMake>36000</WorkToMake>
-			<MarketValue>500</MarketValue>
+			<MarketValue>645</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -280,8 +282,8 @@
 
 		<costList>
 			<Steel>70</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<Uranium>15</Uranium>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Uranium>5</Uranium>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -359,8 +361,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
 		<label>phosphor serpentia</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly.</description>
-
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
 			<shaderType>Cutout</shaderType>
@@ -378,7 +379,7 @@
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
 			<WorkToMake>34000</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>1050</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -399,10 +400,11 @@
 		</verbs>
 
 		<costList>
-			<Steel>70</Steel>
+			<Steel>55</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Chemfuel>150</Chemfuel>
-			<Uranium>20</Uranium>
+			<Uranium>15</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -428,8 +430,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
 		<label>phosphor blast pistol</label>
-		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.</description>
-
+		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -447,7 +448,7 @@
 			<AccuracyMedium>0.3</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
 			<WorkToMake>34000</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>800</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -469,7 +470,8 @@
 
 		<costList>
 			<Steel>45</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Chemfuel>100</Chemfuel>
 			<Uranium>10</Uranium>
 		</costList>
@@ -551,7 +553,7 @@
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
 		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
-		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.</description>
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
 		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
 		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
@@ -571,7 +573,7 @@
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.10</AccuracyLong>
 			<WorkToMake>48000</WorkToMake>
-			<MarketValue>650</MarketValue>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -597,9 +599,9 @@
 		</verbs>
 
 		<costList>
-			<Uranium>70</Uranium>
-			<Steel>80</Steel>
+			<Steel>40</Steel>
 			<ComponentSpacer>5</ComponentSpacer>
+			<Uranium>70</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -680,8 +682,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadPistol</defName>
 		<label>radium pistol</label>
-		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.</description>
-
+		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -699,7 +700,7 @@
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.40</AccuracyLong>
 			<WorkToMake>13000</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>480</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -717,8 +718,9 @@
 		</verbs>
 
 		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>30</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Uranium>20</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -728,7 +730,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>6</Crafting>
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
@@ -745,7 +747,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>radium carbine</label>
-		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.</description>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
@@ -763,7 +765,7 @@
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.10</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>585</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -782,8 +784,8 @@
 
 		<costList>
 			<Steel>45</Steel>
-			<Uranium>10</Uranium>
 			<ComponentIndustrial>4</ComponentIndustrial>
+			<Uranium>20</Uranium>
 		</costList>
 
 		<recipeMaker>
@@ -873,7 +875,7 @@
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
 			<WorkToMake>48000</WorkToMake>
-			<MarketValue>6500</MarketValue>
+			<MarketValue>1805</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -894,8 +896,9 @@
 		</verbs>
 		<costList>
 			<Steel>120</Steel>
-			<ComponentSpacer>7</ComponentSpacer>
-			<Plasteel>120</Plasteel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -1012,7 +1015,7 @@
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.9</AccuracyLong>
 			<WorkToMake>80000</WorkToMake>
-			<MarketValue>6500</MarketValue>
+			<MarketValue>1830</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -1093,7 +1096,7 @@
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.8</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
-			<MarketValue>6500</MarketValue>
+			<MarketValue>605</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -1109,8 +1112,9 @@
 			</li>
 		</verbs>
 		<costList>
-			<Plasteel>70</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Steel>60</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
