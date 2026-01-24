@@ -95,9 +95,9 @@
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
-				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
-				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
+				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
+				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<!-- It has no extra decorations -->
 			</li>
 		</comps>
@@ -161,9 +161,9 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
-				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
-				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
+				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
+				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -229,9 +229,9 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
-				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
-				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
+				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
+				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -300,9 +300,9 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<primaryColour>(166,166,166)</primaryColour><!-- Grey -->
-				<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
-				<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
+				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
+				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
