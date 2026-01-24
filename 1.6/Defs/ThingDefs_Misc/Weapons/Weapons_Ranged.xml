@@ -186,10 +186,8 @@
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-					<li>Seg_COTO_Apparel_MagosBackpack</li>
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
-				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<soundCast>Seg_COTO_ArcSound</soundCast>
@@ -199,7 +197,7 @@
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
-
+		
 		<costList>
 			<Steel>40</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
