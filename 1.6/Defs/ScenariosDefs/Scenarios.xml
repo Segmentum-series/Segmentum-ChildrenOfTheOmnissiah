@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ScenPartDef>
-		<defName>Seg_ConfigurePawnsKindDefs</defName>
-		<label>starting people</label>
-		<scenPartClass>ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs</scenPartClass>
-		<selectionWeight>0</selectionWeight>
-		<pageClass>Page_ConfigureStartingPawns</pageClass>
-		<summaryPriority>500</summaryPriority>
-		<category>Fixed</category>
-	</ScenPartDef>
-
 	<!-- Magos -->
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>Seg_COTO_ScenarioPawnKind_Magos</defName>
@@ -29,6 +19,7 @@
 			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<apparelColor>(146,12,18)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
@@ -53,6 +44,7 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
@@ -77,6 +69,7 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
@@ -89,9 +82,9 @@
 		<label>Exploratoris Extremis</label>
 		<description>The data-engines had classified the expedition as "minimal risk". Auspex scans showed no trace of hostiles in the area. The flesh is, of course, weak. But sometimes the holy machinery of the Omnissiah can fall short as well.\n\nNoospheric alerts gave just enough warning of suspicious data-spoor for the incoming fire not to destroy the ship entirely. As hull plates buckled and salvation pods were armed for launch, confirmation was received: this planet was not as safe as had been assumed. It is up to the survivors to establish an outpost of the forgeworld on this hostile planet with what has been salvaged from the disaster, in order to spread the light of the Machine God to this benighted and backward corner of the galaxy.</description>
 		<scenario>
-		<playerFaction>
-			<factionDef>Seg_COTO_PlayerMechanicus</factionDef>
-		</playerFaction>
+			<playerFaction>
+				<factionDef>Seg_COTO_PlayerMechanicus</factionDef>
+			</playerFaction>
 			<summary>A techpriest and their skitarii escort are shot down with minimal supplies on an unforgiving rimworld.</summary>
 			<parts>
 				
