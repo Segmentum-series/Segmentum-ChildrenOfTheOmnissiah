@@ -34,6 +34,8 @@
 
 <!-- Adulthood Traits -->
 
+<!-- Skitarii Traits -->
+
   <BackstoryDef>
     <slot>Adulthood</slot>
     <title>skitarii vanguard</title>
@@ -94,6 +96,8 @@
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
+<!-- Techpriest Traits -->
+
   <BackstoryDef>
     <slot>Adulthood</slot>
     <title>magos</title>
@@ -106,10 +110,10 @@
     <requiredWorkTags>
       <li>Crafting</li>
       <li>Intellectual</li>
-      <li>Construction</li>
+      <li>Constructing</li>
     </requiredWorkTags>
     <workDisables>
-      <li>none</li>
+      <li>None</li>
     </workDisables>
     <skillGains>
       <Shooting>2</Shooting>
@@ -126,5 +130,7 @@
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
+
+<!-- General Mechanicus Traits -->
 
 </Defs>
