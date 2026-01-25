@@ -343,7 +343,7 @@
 	<!-- Magos backpack -->
 	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosBackpack">
 		<defName>Seg_COTO_MagosBackpack_ColorPreset_5</defName>
-		<label>Metalica</label>
+		<label>Triplex Phall</label>
 		<colorAmount>2</colorAmount>
 		<primaryColour>(240,176,29)</primaryColour><!-- Golden Adamantium -->
 		<secondaryColour>(25,146,198)</secondaryColour><!-- Lenses blue -->
@@ -412,7 +412,7 @@
 	<!-- Magos backpack -->
 	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosBackpack">
 		<defName>Seg_COTO_MagosBackpack_ColorPreset_6</defName>
-		<label>Metalica</label>
+		<label>Deimos</label>
 		<colorAmount>2</colorAmount>
 		<primaryColour>(144,75,46)</primaryColour><!-- Bronze -->
 		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
