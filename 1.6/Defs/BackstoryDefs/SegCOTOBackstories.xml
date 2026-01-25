@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Childhood Traits -->
+<!-- Childhood Backstories -->
 
   <BackstoryDef>
     <slot>Childhood</slot>
@@ -234,9 +234,9 @@
 	</forcedTraits>
   </BackstoryDef>
   
-<!-- Adulthood Traits -->
+<!-- Adulthood Backstories -->
 
-<!-- Skitarii Traits -->
+<!-- Skitarii Backstories -->
 
   <BackstoryDef>
     <slot>Adulthood</slot>
@@ -298,7 +298,7 @@
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
-<!-- Techpriest Traits -->
+<!-- Techpriest Backstories -->
 
   <BackstoryDef>
     <slot>Adulthood</slot>
@@ -333,7 +333,7 @@
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
-<!-- General Mechanicus Traits -->
+<!-- General Mechanicus Backstories -->
 
   <BackstoryDef>
     <slot>Adulthood</slot>
@@ -680,6 +680,63 @@
 	<forcedTraits>
 	  <Neurotic>2</Neurotic>
 	  <SpeedOffset>2</SpeedOffset>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<!-- Military Type Mechanicus Backstories -->
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>activated PDF conscript</title>
+    <defName>SegCOTO_MechanicusPDFConscript</defName>
+    <titleShort>conscript</titleShort>
+    <baseDesc>[PAWN_nameDef] was a civilian worker in a Mechanicus forgeplex until the demands of war saw [PAWN_objective] conscripted into an Activated PDF unit. With the bare minimum of training and equipment, [PAWN_pronoun] miraculously survived this experience, though not without psychological scars.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>2</Shooting>
+	  <Melee>2</Melee>
+    </skillGains>
+	<forcedTraits>
+	  <Nerves>-1</Nerves>
+	</forcedTraits>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>servitorisation plant guard</title>
+    <defName>SegCOTO_MechanicusServitorPlantGuard</defName>
+    <titleShort>guard</titleShort>
+    <baseDesc>[PAWN_nameDef] was a guard at a manufactorum that processed condemned criminals and the dregs of society into servitors. [PAWN_possessive] responsibility was to keep them in line with threats and physical force, and [PAWN_pronoun] quickly became desensitised to the horror of what [PAWN_pronoun] was doing.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Pirate</li>
+      <li>Madman</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>Artistic</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>2</Shooting>
+	  <Melee>3</Melee>
+	  <Social>-3</Social>
+    </skillGains>
+	<forcedTraits>
+	  <Psychopath />
 	</forcedTraits>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
