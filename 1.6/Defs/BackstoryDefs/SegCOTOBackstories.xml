@@ -152,7 +152,7 @@
     <title>underhive juve</title>
     <defName>SegCOTO_MechanicusUnderhiveJuve</defName>
     <titleShort>underhive juve</titleShort>
-    <baseDesc>[PAWN_nameDef] was selectively bred as part of a eugenics programme on a Mechanicus forge world. The programme intended to create ideal recruits for the forge's skitarii legion, but was far from a normal childhood for [PAWN_objective] even by the standards of the Cult Mechanicus.</baseDesc>
+    <baseDesc>[PAWN_nameDef] grew up in the dank and deteriorating lower levels of a hive city. Day to day survival was [PAWN_possessive] only concern.</baseDesc>
     <spawnCategories>
       <li>SegCOTO_Mechanicus</li>
     </spawnCategories>
@@ -161,18 +161,23 @@
       <li>ManualDumb</li>
     </requiredWorkTags>
     <skillGains>
-      <Shooting>3</Shooting>
       <Melee>4</Melee>
-	  <Construction>2</Construction>
-	  <Mining>2</Mining>
-	  <Social>-2</Social>
+      <Plants>-5</Plants>
+	  <Animals>-5</Animals>
+	  <Crafting>2</Crafting>
+	  <Medicine>3</Medicine>
+      <Social>3</Social>
     </skillGains>
     <workDisables>
-      <li>None</li>
+      <li>Artistic</li>
     </workDisables>
 	<forcedTraits>
-	  <Tough />
+	  <Undergrounder />
+	  <Nimble />
 	</forcedTraits>
+    <disallowedTraits>
+	  <Recluse MayRequire="Ludeon.RimWorld.Biotech"/>
+    </disallowedTraits>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -206,22 +211,27 @@
     <title>eugenics child</title>
     <defName>SegCOTO_MechanicusVatChild</defName>
     <titleShort>vat child</titleShort>
-    <baseDesc>[PAWN_nameDef] was a child of a voidship clan tasked with menial maintenance of a machine none of them understood but regarded almost as divine. [PAWN_pronoun] is unused to open skies but good with [PAWN_possessive] hands.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was selectively bred as part of a eugenics programme on a Mechanicus forge world. The programme intended to create ideal recruits for the forge's skitarii legion, but was far from a normal childhood for [PAWN_objective] even by the standards of the Cult Mechanicus.</baseDesc>
     <spawnCategories>
       <li>SegCOTO_Mechanicus</li>
     </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
     <skillGains>
-      <Construction>2</Construction>
-	  <Crafting>2</Crafting>
-	  <Intellectual>1</Intellectual>
+      <Shooting>3</Shooting>
+      <Melee>4</Melee>
+	  <Construction>2</Construction>
+	  <Mining>2</Mining>
+	  <Social>-2</Social>
     </skillGains>
     <workDisables>
-      <li>PlantWork</li>
-      <li>Animals</li>
+      <li>None</li>
     </workDisables>
-    <disallowedTraits>
-	  <Pyromaniac />
-    </disallowedTraits>
+	<forcedTraits>
+	  <Tough />
+	</forcedTraits>
   </BackstoryDef>
   
 <!-- Adulthood Traits -->
