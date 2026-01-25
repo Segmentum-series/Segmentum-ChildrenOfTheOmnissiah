@@ -333,6 +333,267 @@
     <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Biologis adept</title>
+    <defName>SegCOTO_MechanicusBiologisAdept</defName>
+    <titleShort>adept</titleShort>
+    <baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus as a lay member of the Ordo Biologis. [PAWN_pronoun] has knowledge about flora, fauna, and anatomy far beyond the average Imperial citizen.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+      <li>Intellectual</li>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>4</Plants>
+      <Animals>4</Animals>
+	  <Medicine>2</Medicine>
+	  <Intellectual>3</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Biologis Extremis adept</title>
+    <defName>SegCOTO_MechanicusBiologisExtremisAdept</defName>
+    <titleShort>adept</titleShort>
+    <baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus as a lay adept of the Ordo Biologis Extremis. [PAWN_pronoun] was particularly trained to be a medicae chirurgeon on ships of the Imperial Navy.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>2</Plants>
+      <Animals>2</Animals>
+	  <Medicine>5</Medicine>
+	  <Intellectual>3</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Linguistica adept</title>
+    <defName>SegCOTO_MechanicusLinguisticaAdept</defName>
+    <titleShort>adept</titleShort>
+    <baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Divisio Linguistica of the Cult Mechanicus. [PAWN_pronoun] has been allowed access to certain xenos materials and languages in order to work as a translation assistant to a Magos Linguistica - a rare privilege indeed.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Social>1</Social>
+	  <Intellectual>5</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Technicus adept</title>
+    <defName>SegCOTO_MechanicusTechnicusAdept</defName>
+    <titleShort>adept</titleShort>
+    <baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus. [PAWN_pronoun] has knowledge about the rites and practices of assembling machine parts which may appear insignificant but are crucial to the operation of the Machine God's sacred mechanisms.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+      <li>Crafting</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Crafting>3</Crafting>
+	  <Intellectual>4</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Metallurgicus adept</title>
+    <defName>SegCOTO_MechanicusMetallurgicusAdept</defName>
+    <titleShort>adept</titleShort>
+    <baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus. [PAWN_pronoun] has knowledge about the rites and practices of forging metals and materials of holy purity and strength.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+      <li>Crafting</li>
+      <li>Constructing</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Construction>4</Construction>
+	  <Crafting>5</Crafting>
+	  <Intellectual>2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>lexmechanic probatoris</title>
+    <defName>SegCOTO_MechanicusLexmechanicProbatoris</defName>
+    <titleShort>lexmechanic</titleShort>
+    <baseDesc>[PAWN_nameDef] was selected to be trained in the mysteries of the lexmechanics, one of the lowest ranks of the Cult Mechanicus priesthood. [PAWN_pronoun] is trained to compile, sort, and assess all manner of data and statistics - industrial output, battlefield casualties, population numbers, and innumerable other fields - and has been taught mnemonic techniques to more easily comprehend all of this.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Intellectual>5</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	  <GreatMemory />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>transmechanic probatoris</title>
+    <defName>SegCOTO_MechanicusTransmechanicProbatoris</defName>
+    <titleShort>transmechanic</titleShort>
+    <baseDesc>[PAWN_nameDef] was selected to be trained in the mysteries of the transmechanics - relatively low-ranking members of the Cult Mechanicus priesthood with responsibility over communications technology. [PAWN_pronoun] has a good grasp of operating and maintaining such technical machinery.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+      <li>Crafting</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Crafting>2</Crafting>
+	  <Intellectual>4</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>apprentice Datasmith</title>
+    <defName>SegCOTO_MechanicusApprenticeDatasmith</defName>
+    <titleShort>Datasmith</titleShort>
+    <baseDesc>[PAWN_nameDef] was apprenticed to a Cybernetica Datasmith - members of the Legio Cybernetica who command, maintain, and shepherd the autonomous war robots of the Adeptus Mechanicus. While [PAWN_pronoun] has not been entrusted with independent command of a maniple just yet, [PAWN_pronoun] has learned the skills of this martial and mechanical calling.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+      <li>Crafting</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Shooting>1</Shooting>
+	  <Melee>1</Melee>
+	  <Crafting>2</Crafting>
+	  <Intellectual>3</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>disgraced techpriest</title>
+    <defName>SegCOTO_MechanicusDisgracedMagos</defName>
+    <titleShort>ex-techpriest</titleShort>
+    <baseDesc>[PAWN_nameDef] was once a respected Magos of the Cult Mechanicus, until [PAWN_pronoun] was judged to have committed a minor act of tech-heresy. With the intervention of a sympathetic superior, [PAWN_pronoun] managed to avoid execution or servitorisation, but was stripped of [PAWN_possessive] rank and privileges.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_MechanicusAdept</li>
+      <li>Pirate</li>
+      <li>Madman</li>
+      <li>Cult</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Shooting>2</Shooting>
+	  <Melee>2</Melee>
+	  <Construction>2</Construction>
+	  <Mining>2</Mining>
+	  <Crafting>4</Crafting>
+	  <Medicine>2</Medicine>
+	  <Social>-2</Social>
+	  <Intellectual>6</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Transhumanist />
+	  <Abrasive />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
 <!-- General Mechanicus Backstories -->
 
   <BackstoryDef>
