@@ -101,7 +101,7 @@
   <BackstoryDef>
     <slot>Adulthood</slot>
     <title>magos</title>
-    <defName>SegCOTO_MechanicusSkitariiRanger</defName>
+    <defName>SegCOTO_MechanicusMagos</defName>
     <titleShort>magos</titleShort>
     <baseDesc>[PAWN_nameDef] was inducted as a ranking Magos of the Adeptus Mechanicus, and [PAWN_pronoun] has achieved a broad mastery of many disciplines in the pursuit of the Quest for Knowledge.</baseDesc>
     <spawnCategories>
@@ -121,7 +121,7 @@
 	  <Construction>3</Construction>
 	  <Mining>1</Mining>
 	  <Crafting>4</Crafting>
-	  <Medical>2</Medical>
+	  <Medicine>2</Medicine>
 	  <Intellectual>5</Intellectual>
     </skillGains>
 	<forcedTraits>
