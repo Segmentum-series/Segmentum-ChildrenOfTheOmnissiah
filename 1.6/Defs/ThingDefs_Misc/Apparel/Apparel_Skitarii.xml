@@ -95,8 +95,8 @@
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
-				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
+				<defaultPrimaryColor>(80,94,104)</defaultPrimaryColor><!-- Bodysuit Grey Blue -->
+				<defaultSecondaryColor>(166,166,166)</defaultSecondaryColor><!-- Grey -->
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<!-- It has no extra decorations -->
 			</li>
@@ -163,7 +163,7 @@
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
-				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
+				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
@@ -230,8 +230,8 @@
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
-				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
-				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
+				<defaultSecondaryColor>(234,130,56)</defaultSecondaryColor><!-- Adamantium -->
+				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
 				<tabDefs>
 					<li>BEWH_ExtraDecoration</li>
 				</tabDefs>
