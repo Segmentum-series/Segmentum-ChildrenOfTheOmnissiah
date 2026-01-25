@@ -119,7 +119,7 @@
 	<!-- Gear teeth -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MagosRobeGearTeeth</defName>
-		<label>Cog teeths</label>
+		<label>Cog teeth</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearTeeth</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_GearTeeth</drawnTextureIconPath>
@@ -171,7 +171,7 @@
 	<!-- Thin stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MagosRobeThinStripe</defName>
-		<label>Cog-edged stripe</label>
+		<label>Thin stripe</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_ThinStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosRobe/Seg_COTO_MagosRobe_ThinStripe</drawnTextureIconPath>

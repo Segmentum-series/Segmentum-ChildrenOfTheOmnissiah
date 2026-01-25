@@ -45,7 +45,7 @@
 	<!-- Horizontal gear stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlateHorizontalGearStripe</defName>
-		<label>Cog-edged stripe</label>
+		<label>Horizontal gear stripe</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_HorizontalGearStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_HorizontalGearStripe</drawnTextureIconPath>
