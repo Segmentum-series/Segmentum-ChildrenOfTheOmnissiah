@@ -15,11 +15,10 @@
 		</allowedCultures>
 		<factionNameMaker>Seg_COTO_NamerFactionMechanicusNeutral</factionNameMaker>
 		<settlementNameMaker>Seg_COTO_NamerSettlementMechanicus</settlementNameMaker>
-		<backstoryFilters><!-- Requires update -->
+		<backstoryFilters>
 			<li>
 				<categories>
-					<li>Corunan</li>
-					<li>Offworld</li>
+					<li>SegCOTO_Mechanicus</li>
 				</categories>
 			</li>
 		</backstoryFilters>
