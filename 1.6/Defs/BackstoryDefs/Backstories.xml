@@ -1,0 +1,1229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Childhood Backstories -->
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>manufactorum child</title>
+		<defName>SegCOTO_MechanicusManufactorumChild</defName>
+		<titleShort>manufactorum child</titleShort>
+		<baseDesc>[PAWN_nameDef] was pressed into service in a manufactorum while still a child due to a need for fine-detail work and a shortage of appropriate servitors. [PAWN_pronoun] has quite the manual dexterity to show for it, unlike the unfortunate ones who lost fingers or worse.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>3</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<forcedTraits>
+			<Nimble />
+		</forcedTraits>
+		<disallowedTraits>
+			<Recluse MayRequire="Ludeon.RimWorld.Biotech"/>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>tech acolytum</title>
+		<defName>SegCOTO_MechanicusTechAcolytum</defName>
+		<titleShort>acolytum</titleShort>
+		<baseDesc>[PAWN_nameDef] was selected to be trained among the acolyta of the Cult Mechanicus at a very young age. While acolyta are granted scarcely any more respect than other menials in Mechanicus society, [PAWN_pronoun] enjoyed the fruits of this training and developed a thirst for induction into the mysteries of the priesthood and its quest to transcend the flesh.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Construction>2</Construction>
+			<Mining>1</Mining>
+			<Crafting>3</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>preservitor</title>
+		<defName>SegCOTO_MechanicusPreservitor</defName>
+		<titleShort>preservitor</titleShort>
+		<baseDesc>[PAWN_nameDef] was deemed at a young age to be part of the surplus population of a Mechanicus-run facility, and was marked for servitorisation in future when the lobotomised workforce numbers required it. For whatever reason, [PAWN_pronoun] managed to escape this fate.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>PDF cadet</title>
+		<defName>SegCOTO_MechanicusPDFCadet</defName>
+		<titleShort>PDF cadet</titleShort>
+		<baseDesc>[PAWN_nameDef] was enrolled as a Planetary Defence Force cadet at a young age, training with dummy weapons and doing basic drill in addition to regular labour or education.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+			<Social>1</Social>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>recolliger child</title>
+		<defName>SegCOTO_MechanicusRecolligerChild</defName>
+		<titleShort>recolliger</titleShort>
+		<baseDesc>[PAWN_nameDef] was born and raised on a derelict voidship being salvaged by a recolliger clan, who were dropped off decades before and hoped to be picked up by another ship at some point in the future.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+			<li>Outlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>2</Mining>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>3</Crafting>
+			<Social>1</Social>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>hive juve</title>
+		<defName>SegCOTO_MechanicusHiveJuve</defName>
+		<titleShort>hive juve</titleShort>
+		<baseDesc>Growing up among the labouring class of a crowded hive city, [PAWN_nameDef] is as close as can be to a typical Imperial citizen. [PAWN_pronoun] is used to crowds but unused to frontier living.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>-3</Plants>
+			<Animals>-3</Animals>
+			<Social>3</Social>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<forcedTraits>
+			<Nimble />
+		</forcedTraits>
+		<disallowedTraits>
+			<Recluse MayRequire="Ludeon.RimWorld.Biotech"/>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>underhive juve</title>
+		<defName>SegCOTO_MechanicusUnderhiveJuve</defName>
+		<titleShort>underhive juve</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up in the dank and deteriorating lower levels of a hive city. Day to day survival was [PAWN_possessive] only concern.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>4</Melee>
+			<Plants>-5</Plants>
+			<Animals>-5</Animals>
+			<Crafting>2</Crafting>
+			<Medicine>3</Medicine>
+			<Social>3</Social>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<forcedTraits>
+			<Undergrounder />
+			<Nimble />
+		</forcedTraits>
+		<disallowedTraits>
+			<Recluse MayRequire="Ludeon.RimWorld.Biotech"/>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>voidship child</title>
+		<defName>SegCOTO_MechanicusVoidshipChild</defName>
+		<titleShort>lowerdecker</titleShort>
+		<baseDesc>[PAWN_nameDef] was a child of a voidship clan tasked with menial maintenance of a machine none of them understood but regarded almost as divine. [PAWN_pronoun] is unused to open skies but good with [PAWN_possessive] hands.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Pirate</li>
+			<li>Offworld</li>
+			<li>Outlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>PlantWork</li>
+			<li>Animals</li>
+		</workDisables>
+		<disallowedTraits>
+			<Pyromaniac />
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Childhood</slot>
+		<title>eugenics child</title>
+		<defName>SegCOTO_MechanicusVatChild</defName>
+		<titleShort>vat child</titleShort>
+		<baseDesc>[PAWN_nameDef] was selectively bred as part of a eugenics programme on a Mechanicus forge world. The programme intended to create ideal recruits for the forge's skitarii legion, but was far from a normal childhood for [PAWN_objective] even by the standards of the Cult Mechanicus.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>4</Melee>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Social>-2</Social>
+		</skillGains>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<forcedTraits>
+			<Tough />
+		</forcedTraits>
+	</BackstoryDef>
+
+<!-- Adulthood backstories -->
+
+<!-- Skitarii backstories -->
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>skitarii vanguard</title>
+		<defName>SegCOTO_MechanicusSkitariiVanguard</defName>
+		<titleShort>skitarius</titleShort>
+		<baseDesc>[PAWN_nameDef] was a member of the vanguard in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah. [PAWN_pronoun] has seen and survived combat against xenos, hereteks, and the Archenemy.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_SkitariiVanguard</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>skitarii ranger</title>
+		<defName>SegCOTO_MechanicusSkitariiRanger</defName>
+		<titleShort>skitarius</titleShort>
+		<baseDesc>[PAWN_nameDef] was a member of the rangers in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah. [PAWN_pronoun] has seen and survived combat against xenos, hereteks, and the Archenemy.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_SkitariiRanger</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>1</Melee>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+		<Transhumanist />
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+<!-- Techpriest Backstories -->
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos</title>
+		<defName>SegCOTO_MechanicusMagos</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted as a ranking Magos of the Adeptus Mechanicus, and [PAWN_pronoun] has achieved a broad mastery of many disciplines in the pursuit of the Quest for Knowledge.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Crafting</li>
+			<li>Intellectual</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Construction>3</Construction>
+			<Mining>1</Mining>
+			<Crafting>4</Crafting>
+			<Medicine>2</Medicine>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Biologis adept</title>
+		<defName>SegCOTO_MechanicusBiologisAdept</defName>
+		<titleShort>adept</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus as a lay member of the Ordo Biologis. [PAWN_pronoun] has knowledge about flora, fauna, and anatomy far beyond the average Imperial citizen.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+		<li>PlantWork</li>
+		<li>Intellectual</li>
+		<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+			<Medicine>2</Medicine>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Biologis Extremis adept</title>
+		<defName>SegCOTO_MechanicusBiologisExtremisAdept</defName>
+		<titleShort>adept</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus as a lay adept of the Ordo Biologis Extremis. [PAWN_pronoun] was particularly trained to be a medicae chirurgeon on ships of the Imperial Navy.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+			<Medicine>5</Medicine>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Linguistica adept</title>
+		<defName>SegCOTO_MechanicusLinguisticaAdept</defName>
+		<titleShort>adept</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Divisio Linguistica of the Cult Mechanicus. [PAWN_pronoun] has been allowed access to certain xenos materials and languages in order to work as a translation assistant to a Magos Linguistica - a rare privilege indeed.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Social>1</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Technicus adept</title>
+		<defName>SegCOTO_MechanicusTechnicusAdept</defName>
+		<titleShort>adept</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus. [PAWN_pronoun] has knowledge about the rites and practices of assembling machine parts which may appear insignificant but are crucial to the operation of the Machine God's sacred mechanisms.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Crafting>3</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Metallurgicus adept</title>
+		<defName>SegCOTO_MechanicusMetallurgicusAdept</defName>
+		<titleShort>adept</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the lower mysteries of the Cult Mechanicus. [PAWN_pronoun] has knowledge about the rites and practices of forging metals and materials of holy purity and strength.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>5</Crafting>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>lexmechanic probatoris</title>
+		<defName>SegCOTO_MechanicusLexmechanicProbatoris</defName>
+		<titleShort>lexmechanic</titleShort>
+		<baseDesc>[PAWN_nameDef] was selected to be trained in the mysteries of the lexmechanics, one of the lowest ranks of the Cult Mechanicus priesthood. [PAWN_pronoun] is trained to compile, sort, and assess all manner of data and statistics - industrial output, battlefield casualties, population numbers, and innumerable other fields - and has been taught mnemonic techniques to more easily comprehend all of this.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+			<GreatMemory />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>transmechanic probatoris</title>
+		<defName>SegCOTO_MechanicusTransmechanicProbatoris</defName>
+		<titleShort>transmechanic</titleShort>
+		<baseDesc>[PAWN_nameDef] was selected to be trained in the mysteries of the transmechanics - relatively low-ranking members of the Cult Mechanicus priesthood with responsibility over communications technology. [PAWN_pronoun] has a good grasp of operating and maintaining such technical machinery.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>apprentice Datasmith</title>
+		<defName>SegCOTO_MechanicusApprenticeDatasmith</defName>
+		<titleShort>Datasmith</titleShort>
+		<baseDesc>[PAWN_nameDef] was apprenticed to a Cybernetica Datasmith - members of the Legio Cybernetica who command, maintain, and shepherd the autonomous war robots of the Adeptus Mechanicus. While [PAWN_pronoun] has not been entrusted with independent command of a maniple just yet, [PAWN_pronoun] has learned the skills of this martial and mechanical calling.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+		<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Melee>1</Melee>
+			<Crafting>2</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>disgraced techpriest</title>
+		<defName>SegCOTO_MechanicusDisgracedMagos</defName>
+		<titleShort>ex-techpriest</titleShort>
+		<baseDesc>[PAWN_nameDef] was once a respected Magos of the Cult Mechanicus, until [PAWN_pronoun] was judged to have committed a minor act of tech-heresy. With the intervention of a sympathetic superior, [PAWN_pronoun] managed to avoid execution or servitorisation, but was stripped of [PAWN_possessive] rank and privileges.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_MechanicusAdept</li>
+			<li>Pirate</li>
+			<li>Madman</li>
+			<li>Cult</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Crafting>4</Crafting>
+			<Medicine>2</Medicine>
+			<Social>-2</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+			<Abrasive />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos Biologis</title>
+		<defName>SegCOTO_MechanicusMagosBiologis</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the mysteries of the Cult Mechanicus as ranking Magos of the Ordo Biologis. [PAWN_pronoun] has knowledge about flora, fauna, and anatomy almost unimaginably beyond the average Imperial citizen.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Intellectual</li>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>6</Plants>
+			<Animals>6</Animals>
+			<Medicine>3</Medicine>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos Biologis Extremis</title>
+		<defName>SegCOTO_MechanicusMagosBiologisExtremis</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the mysteries of the Cult Mechanicus as ranking Magos of the Ordo Biologis Extremis. [PAWN_pronoun] was particularly trained to be a medicae chirurgeon on ships of the Imperial Navy and has extensive surgical experience.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>3</Plants>
+			<Animals>3</Animals>
+			<Medicine>7</Medicine>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos Linguistica</title>
+		<defName>SegCOTO_MechanicusMagosLinguistica</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the mysteries of the Divisio Linguistica of the Cult Mechanicus. [PAWN_pronoun] has been allowed access to a diverse range of xenos materials and languages as part of [PAWN_possessive] work as a Magos Linguistica - a rare privilege indeed.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Social>2</Social>
+			<Intellectual>9</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos Technicus</title>
+		<defName>SegCOTO_MechanicusMagosTechnicus</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the mysteries of the Cult Mechanicus. [PAWN_pronoun] has extensive knowledge about the rites and practices of assembling machine parts which may appear insignificant but are crucial to the operation of the Machine God's sacred mechanisms.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Crafting>5</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Magos Metallurgicus</title>
+		<defName>SegCOTO_MechanicusMagosMetallurgicus</defName>
+		<titleShort>Magos</titleShort>
+		<baseDesc>[PAWN_nameDef] was inducted into the mysteries of the Cult Mechanicus. [PAWN_pronoun] has extensive knowledge about the rites and practices of forging metals and materials of holy purity and strength.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Construction>7</Construction>
+			<Crafting>6</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>lexmechanic</title>
+		<defName>SegCOTO_MechanicusLexmechanic</defName>
+		<titleShort>lexmechanic</titleShort>
+		<baseDesc>[PAWN_nameDef] was trained in the mysteries of the lexmechanics, one of the lowest ranks of the Cult Mechanicus priesthood. [PAWN_pronoun] is trained to compile, sort, and assess all manner of data and statistics - industrial output, battlefield casualties, population numbers, and innumerable other fields - and has been taught mnemonic techniques to more easily comprehend all of this.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Intellectual>7</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+			<GreatMemory />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>transmechanic</title>
+		<defName>SegCOTO_MechanicusTransmechanic</defName>
+		<titleShort>transmechanic</titleShort>
+		<baseDesc>[PAWN_nameDef] was trained in the mysteries of the transmechanics - relatively low-ranking members of the Cult Mechanicus priesthood with responsibility over communications technology. [PAWN_pronoun] has an excellent grasp of operating and maintaining such technical machinery.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Cybernetica Datasmith</title>
+		<defName>SegCOTO_MechanicusCyberneticaDatasmith</defName>
+		<titleShort>Datasmith</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed a Cybernetica Datasmith - members of the Legio Cybernetica who command, maintain, and shepherd the autonomous war robots of the Adeptus Mechanicus. [PAWN_pronoun] has spent some time in independent command of a maniple of war robots, and [PAWN_pronoun] has honed the skills of this martial and mechanical calling.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Techpriest</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Crafting>3</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+<!-- General Mechanicus backstories -->
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>hab monitor</title>
+		<defName>SegCOTO_MechanicusHabMonitor</defName>
+		<titleShort>monitor</titleShort>
+		<baseDesc>[PAWN_nameDef] was a hab monitor, a combination of law enforcement and maintenance personnel in a Mechanicus hab facility. [PAWN_pronoun] ensured that key building systems were in working order, and that the building's inhabitants behaved themselves.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Melee>2</Melee>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+		<QuickSleeper />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>manufactorum overseer</title>
+		<defName>SegCOTO_MechanicusManufactorumOverseer</defName>
+		<titleShort>overseer</titleShort>
+		<baseDesc>[PAWN_nameDef] worked as an overseer in a gargantuan manufactorum. [PAWN_pronoun] managed the work of dozens of underlings and hundreds of menials and servitors. [PAWN_pronoun] cared only that they met each shift quota, no matter how, but would never deign to do such work [PAWN_objective]self.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+		</spawnCategories>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<skillGains>
+			<Melee>1</Melee>
+			<Crafting>1</Crafting>
+			<Social>3</Social>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>manufactorum underseer</title>
+		<defName>SegCOTO_MechanicusManufactorumUnderseer</defName>
+		<titleShort>underseer</titleShort>
+		<baseDesc>[PAWN_nameDef] worked as a supervisor in a gargantuan manufactorum. [PAWN_pronoun] was expected to manage crews of labourers and servitors and keep them on-task and efficient by any means.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+		</spawnCategories>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Melee>1</Melee>
+			<Crafting>2</Crafting>
+			<Social>1</Social>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+  
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>manufactorum worker</title>
+		<defName>SegCOTO_MechanicusManufactorumWorker</defName>
+		<titleShort>worker</titleShort>
+		<baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>manufactorum worker</title>
+		<defName>SegCOTO_MechanicusManufactorumWorkerAddict</defName>
+		<titleShort>worker</titleShort>
+		<baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour, and [PAWN_pronoun] spent much of [PAWN_possessive] meagre pay on stims and chems to cope.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+			<DrugDesire>2</DrugDesire>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>salvatorium worker</title>
+		<defName>SegCOTO_MechanicusSalvatoriumWorker</defName>
+		<titleShort>worker</titleShort>
+		<baseDesc>[PAWN_nameDef] worked in a salvatorium, a gigantic scrapyard dedicated to salvaging usable parts and metals from wrecked equipment. [PAWN_possessive] days were spent hauling immense machine parts and hull plates to furnaces and storage yards, breaking them apart where necessary, and [PAWN_pronoun] relied on [PAWN_possessive] innate strength to make it through each shift.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Melee>2</Melee>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>2</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+			<Tough />
+		</forcedTraits>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>chem plant worker</title>
+		<defName>SegCOTO_MechanicusChemWorker</defName>
+		<titleShort>chem worker</titleShort>
+		<baseDesc>[PAWN_nameDef] worked in the bowels of a gargantuan chemworks, producing chemicals necessary for the Imperium's functioning. [PAWN_pronoun] was given insufficient protective gear for the toxic fumes and has never recovered from the privations of the job, while also chasing the highs [PAWN_pronoun] he experienced.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Crafting>2</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+			<Immunity>-1</Immunity>
+			<DrugDesire>2</DrugDesire>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Mechanicus thrall</title>
+		<defName>SegCOTO_MechanicusThrall</defName>
+		<titleShort>thrall</titleShort>
+		<baseDesc>[PAWN_nameDef] was a thrall in the service of the Adeptus Mechanicus. The lowest in Mechanicus society, above only lobotomised servitors, thralls are used for menial work of all kinds and treated as expendable by many tech-priests. [PAWN_pronoun] was lucky not to be worked to death.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>Cooking</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Social>-2</Social>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>nightshift labourer</title>
+		<defName>SegCOTO_MechanicusNightshiftWorker</defName>
+		<titleShort>night worker</titleShort>
+		<baseDesc>[PAWN_nameDef] was a manufactorum worker assigned to the night shift to allow production to continue around the clock. [PAWN_pronoun] has never been able to adapt to different hours.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+			<li>Pirate</li>
+			<li>Madman</li>
+			<li>Cult</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+			<NightOwl />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>censer bearer</title>
+		<defName>SegCOTO_MechanicusCenserBearer</defName>
+		<titleShort>censer bearer</titleShort>
+		<baseDesc>[PAWN_nameDef] was charged with one of the most important duties at any Mechanicus facility: spreading holy incense by key equipment to ensure the machine spirits are appeased. [PAWN_pronoun] is used to standing for long periods swinging [PAWN_possessive] censer while a techpriest performs complex rites of operation.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Ascetic />
+		</forcedTraits>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>artisan</title>
+		<defName>SegCOTO_MechanicusArtisan</defName>
+		<titleShort>artisan</titleShort>
+		<baseDesc>While the Cult Mechanicus does not go in for the same ostentatious decoration as the rest of the Imperium, there is still a place in the Omnissiah's design for art. [PAWN_nameDef] was a skilled artisan who was skilled at carving circuit patterns and stamping out cog-and-skull emblems to adorn the halls and ships of the Cult.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Construction>3</Construction>
+			<Mining>1</Mining>
+			<Cooking>1</Cooking>
+			<Crafting>2</Crafting>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>menial</title>
+		<defName>SegCOTO_MechanicusMenial</defName>
+		<titleShort>menial</titleShort>
+		<baseDesc>[PAWN_nameDef] was one of the lowest-ranking menials in a Mechanicus facility. [PAWN_pronoun] lived in constant fear that [PAWN_pronoun] would be servitorised for efficiency savings, and made sure to work extra hard to justify [PAWN_objective] existence. The stress of this has rooted itself deeply in [PAWN_possessive] psyche.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+			<Social>2</Social>
+			<Intellectual>-1</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Neurotic>2</Neurotic>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+<!-- Military type Mechanicus backstories -->
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>activated PDF conscript</title>
+		<defName>SegCOTO_MechanicusPDFConscript</defName>
+		<titleShort>conscript</titleShort>
+		<baseDesc>[PAWN_nameDef] was a civilian worker in a Mechanicus forgeplex until the demands of war saw [PAWN_objective] conscripted into an Activated PDF unit. With the bare minimum of training and equipment, [PAWN_pronoun] miraculously survived this experience, though not without psychological scars.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>-1</Nerves>
+		</forcedTraits>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>servitorisation plant guard</title>
+		<defName>SegCOTO_MechanicusServitorPlantGuard</defName>
+		<titleShort>guard</titleShort>
+		<baseDesc>[PAWN_nameDef] was a guard at a manufactorum that processed condemned criminals and the dregs of society into servitors. [PAWN_possessive] responsibility was to keep them in line with threats and physical force, and [PAWN_pronoun] quickly became desensitised to the horror of what [PAWN_pronoun] was doing.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Pirate</li>
+			<li>Madman</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>3</Melee>
+			<Social>-3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
+</Defs>
