@@ -335,4 +335,354 @@
 
 <!-- General Mechanicus Traits -->
 
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>hab monitor</title>
+    <defName>SegCOTO_MechanicusHabMonitor</defName>
+    <titleShort>monitor</titleShort>
+    <baseDesc>[PAWN_nameDef] was a hab monitor, a combination of law enforcement and maintenance personnel in a Mechanicus hab facility. [PAWN_pronoun] ensured that key building systems were in working order, and that the building's inhabitants behaved themselves.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Melee>2</Melee>
+	  <Construction>2</Construction>
+	  <Crafting>2</Crafting>
+	  <Social>2</Social>
+    </skillGains>
+	<forcedTraits>
+	  <QuickSleeper />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>manufactorum overseer</title>
+    <defName>SegCOTO_MechanicusManufactorumOverseer</defName>
+    <titleShort>overseer</titleShort>
+    <baseDesc>[PAWN_nameDef] worked as an overseer in a gargantuan manufactorum. [PAWN_pronoun] managed the work of dozens of underlings and hundreds of menials and servitors. [PAWN_pronoun] cared only that they met each shift quota, no matter how, but would never deign to do such work [PAWN_objective]self.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+    </spawnCategories>
+    <workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+    <skillGains>
+      <Melee>1</Melee>
+	  <Crafting>1</Crafting>
+	  <Social>3</Social>
+	  <Intellectual>1</Intellectual>
+    </skillGains>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>manufactorum underseer</title>
+    <defName>SegCOTO_MechanicusManufactorumUnderseer</defName>
+    <titleShort>underseer</titleShort>
+    <baseDesc>[PAWN_nameDef] worked as a supervisor in a gargantuan manufactorum. [PAWN_pronoun] was expected to manage crews of labourers and servitors and keep them on-task and efficient by any means.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+    </spawnCategories>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Melee>1</Melee>
+	  <Crafting>2</Crafting>
+	  <Social>1</Social>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>1</Industriousness>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>manufactorum worker</title>
+    <defName>SegCOTO_MechanicusManufactorumWorker</defName>
+    <titleShort>worker</titleShort>
+    <baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+	  <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>2</Industriousness>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>manufactorum worker</title>
+    <defName>SegCOTO_MechanicusManufactorumWorkerAddict</defName>
+    <titleShort>worker</titleShort>
+    <baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour, and [PAWN_pronoun] spent much of [PAWN_possessive] meagre pay on stims and chems to cope.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+	  <Intellectual>-3</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>1</Industriousness>
+	  <DrugDesire>2</DrugDesire>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>salvatorium worker</title>
+    <defName>SegCOTO_MechanicusSalvatoriumWorker</defName>
+    <titleShort>worker</titleShort>
+    <baseDesc>[PAWN_nameDef] worked in a salvatorium, a gigantic scrapyard dedicated to salvaging usable parts and metals from wrecked equipment. [PAWN_possessive] days were spent hauling immense machine parts and hull plates to furnaces and storage yards, breaking them apart where necessary, and [PAWN_pronoun] relied on [PAWN_possessive] innate strength to make it through each shift.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Melee>2</Melee>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+	  <Crafting>2</Crafting>
+	  <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>2</Industriousness>
+	  <Tough />
+	</forcedTraits>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>chem plant worker</title>
+    <defName>SegCOTO_MechanicusChemWorker</defName>
+    <titleShort>chem worker</titleShort>
+    <baseDesc>[PAWN_nameDef] worked in the bowels of a gargantuan chemworks, producing chemicals necessary for the Imperium's functioning. [PAWN_pronoun] was given insufficient protective gear for the toxic fumes and has never recovered from the privations of the job, while also chasing the highs [PAWN_pronoun] he experienced.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+	  <Crafting>2</Crafting>
+	  <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>2</Industriousness>
+	  <Immunity>-1</Immunity>
+	  <DrugDesire>2</DrugDesire>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Mechanicus thrall</title>
+    <defName>SegCOTO_MechanicusThrall</defName>
+    <titleShort>thrall</titleShort>
+    <baseDesc>[PAWN_nameDef] was a thrall in the service of the Adeptus Mechanicus. The lowest in Mechanicus society, above only lobotomised servitors, thralls are used for menial work of all kinds and treated as expendable by many tech-priests. [PAWN_pronoun] was lucky not to be worked to death.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+      <li>Cooking</li>
+      <li>Mining</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>-2</Shooting>
+	  <Melee>-2</Melee>
+	  <Construction>1</Construction>
+	  <Mining>1</Mining>
+	  <Cooking>1</Cooking>
+	  <Crafting>1</Crafting>
+	  <Social>-2</Social>
+	  <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>1</Industriousness>
+	</forcedTraits>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>nightshift labourer</title>
+    <defName>SegCOTO_MechanicusNightshiftWorker</defName>
+    <titleShort>night worker</titleShort>
+    <baseDesc>[PAWN_nameDef] was a manufactorum worker assigned to the night shift to allow production to continue around the clock. [PAWN_pronoun] has never been able to adapt to different hours.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+      <li>Madman</li>
+      <li>Cult</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+	  <Intellectual>-2</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>2</Industriousness>
+	  <NightOwl />
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>censer bearer</title>
+    <defName>SegCOTO_MechanicusCenserBearer</defName>
+    <titleShort>censer bearer</titleShort>
+    <baseDesc>[PAWN_nameDef] was charged with one of the most important duties at any Mechanicus facility: spreading holy incense by key equipment to ensure the machine spirits are appeased. [PAWN_pronoun] is used to standing for long periods swinging [PAWN_possessive] censer while a techpriest performs complex rites of operation.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>-2</Shooting>
+	  <Melee>-2</Melee>
+    </skillGains>
+	<forcedTraits>
+	  <Ascetic />
+	</forcedTraits>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>artisan</title>
+    <defName>SegCOTO_MechanicusArtisan</defName>
+    <titleShort>artisan</titleShort>
+    <baseDesc>While the Cult Mechanicus does not go in for the same ostentatious decoration as the rest of the Imperium, there is still a place in the Omnissiah's design for art. [PAWN_nameDef] was a skilled artisan who was skilled at carving circuit patterns and stamping out cog-and-skull emblems to adorn the halls and ships of the Cult.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Construction>3</Construction>
+	  <Mining>1</Mining>
+	  <Cooking>1</Cooking>
+	  <Crafting>2</Crafting>
+	  <Artistic>5</Artistic>
+    </skillGains>
+	<forcedTraits>
+	  <Industriousness>1</Industriousness>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>menial</title>
+    <defName>SegCOTO_MechanicusMenial</defName>
+    <titleShort>menial</titleShort>
+    <baseDesc>[PAWN_nameDef] was one of the lowest-ranking menials in a Mechanicus facility. [PAWN_pronoun] lived in constant fear that [PAWN_pronoun] would be servitorised for efficiency savings, and made sure to work extra hard to justify [PAWN_objective] existence. The stress of this has rooted itself deeply in [PAWN_possessive] psyche.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	  <Cooking>1</Cooking>
+	  <Crafting>1</Crafting>
+	  <Social>2</Social>
+	  <Intellectual>-1</Intellectual>
+    </skillGains>
+	<forcedTraits>
+	  <Neurotic>2</Neurotic>
+	  <SpeedOffset>2</SpeedOffset>
+	</forcedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
 </Defs>
