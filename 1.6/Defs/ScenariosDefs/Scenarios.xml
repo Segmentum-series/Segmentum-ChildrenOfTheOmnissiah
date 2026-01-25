@@ -30,7 +30,7 @@
 				<li>SegCOTO_Mechanicus</li>
 			</categoriesChildhood>
 			<categoriesAdulthood>
-				<li>SegCOTO_Techpriest</li>
+				<li>SegCOTO_MechanicusAdept</li>
 			</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
