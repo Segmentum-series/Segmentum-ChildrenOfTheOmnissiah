@@ -32,6 +32,198 @@
     </disallowedTraits>
   </BackstoryDef>
 
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>tech acolytum</title>
+    <defName>SegCOTO_MechanicusTechAcolytum</defName>
+    <titleShort>acolytum</titleShort>
+    <baseDesc>[PAWN_nameDef] was selected to be trained among the acolyta of the Cult Mechanicus at a very young age. While acolyta are granted scarcely any more respect than other menials in Mechanicus society, [PAWN_pronoun] enjoyed the fruits of this training and developed a thirst for induction into the mysteries of the priesthood and its quest to transcend the flesh.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Construction>2</Construction>
+	  <Mining>1</Mining>
+      <Crafting>3</Crafting>
+	  <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+	<forcedTraits>
+	  <Transhumanist />
+	</forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>preservitor</title>
+    <defName>SegCOTO_MechanicusPreservitor</defName>
+    <titleShort>preservitor</titleShort>
+    <baseDesc>[PAWN_nameDef] was deemed at a young age to be part of the surplus population of a Mechanicus-run facility, and was marked for servitorisation in future when the lobotomised workforce numbers required it. For whatever reason, [PAWN_pronoun] managed to escape this fate.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>PDF cadet</title>
+    <defName>SegCOTO_MechanicusPDFCadet</defName>
+    <titleShort>PDF cadet</titleShort>
+    <baseDesc>[PAWN_nameDef] was enrolled as a Planetary Defence Force cadet at a young age, training with dummy weapons and doing basic drill in addition to regular labour or education.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Shooting>2</Shooting>
+	  <Melee>1</Melee>
+      <Social>1</Social>
+    </skillGains>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>recolliger child</title>
+    <defName>SegCOTO_MechanicusRecolligerChild</defName>
+    <titleShort>recolliger</titleShort>
+    <baseDesc>[PAWN_nameDef] was born and raised on a derelict voidship being salvaged by a recolliger clan, who were dropped off decades before and hoped to be picked up by another ship at some point in the future.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Offworld</li>
+      <li>Pirate</li>
+      <li>Outlander</li>
+    </spawnCategories>
+    <skillGains>
+	  <Mining>2</Mining>
+      <Plants>-2</Plants>
+	  <Animals>-2</Animals>
+      <Crafting>3</Crafting>
+	  <Social>1</Social>
+    </skillGains>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>hive juve</title>
+    <defName>SegCOTO_MechanicusHiveJuve</defName>
+    <titleShort>hive juve</titleShort>
+    <baseDesc>Growing up among the labouring class of a crowded hive city, [PAWN_nameDef] is as close as can be to a typical Imperial citizen. [PAWN_pronoun] is used to crowds but unused to frontier living.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <skillGains>
+      <Plants>-3</Plants>
+	  <Animals>-3</Animals>
+      <Social>3</Social>
+	  <Intellectual>1</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+	<forcedTraits>
+	  <Nimble />
+	</forcedTraits>
+    <disallowedTraits>
+	  <Recluse MayRequire="Ludeon.RimWorld.Biotech"/>
+    </disallowedTraits>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>underhive juve</title>
+    <defName>SegCOTO_MechanicusUnderhiveJuve</defName>
+    <titleShort>underhive juve</titleShort>
+    <baseDesc>[PAWN_nameDef] was selectively bred as part of a eugenics programme on a Mechanicus forge world. The programme intended to create ideal recruits for the forge's skitarii legion, but was far from a normal childhood for [PAWN_objective] even by the standards of the Cult Mechanicus.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Melee>4</Melee>
+	  <Construction>2</Construction>
+	  <Mining>2</Mining>
+	  <Social>-2</Social>
+    </skillGains>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+	<forcedTraits>
+	  <Tough />
+	</forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>voidship child</title>
+    <defName>SegCOTO_MechanicusVoidshipChild</defName>
+    <titleShort>lowerdecker</titleShort>
+    <baseDesc>[PAWN_nameDef] was a child of a voidship clan tasked with menial maintenance of a machine none of them understood but regarded almost as divine. [PAWN_pronoun] is unused to open skies but good with [PAWN_possessive] hands.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+      <li>Pirate</li>
+      <li>Offworld</li>
+      <li>Outlander</li>
+    </spawnCategories>
+    <skillGains>
+      <Construction>2</Construction>
+	  <Crafting>2</Crafting>
+	  <Intellectual>1</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>PlantWork</li>
+      <li>Animals</li>
+    </workDisables>
+    <disallowedTraits>
+	  <Pyromaniac />
+    </disallowedTraits>
+  </BackstoryDef>
+  
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>eugenics child</title>
+    <defName>SegCOTO_MechanicusVatChild</defName>
+    <titleShort>vat child</titleShort>
+    <baseDesc>[PAWN_nameDef] was a child of a voidship clan tasked with menial maintenance of a machine none of them understood but regarded almost as divine. [PAWN_pronoun] is unused to open skies but good with [PAWN_possessive] hands.</baseDesc>
+    <spawnCategories>
+      <li>SegCOTO_Mechanicus</li>
+    </spawnCategories>
+    <skillGains>
+      <Construction>2</Construction>
+	  <Crafting>2</Crafting>
+	  <Intellectual>1</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>PlantWork</li>
+      <li>Animals</li>
+    </workDisables>
+    <disallowedTraits>
+	  <Pyromaniac />
+    </disallowedTraits>
+  </BackstoryDef>
+  
 <!-- Adulthood Traits -->
 
 <!-- Skitarii Traits -->
@@ -41,7 +233,7 @@
     <title>skitarii vanguard</title>
     <defName>SegCOTO_MechanicusSkitariiVanguard</defName>
     <titleShort>skitarius</titleShort>
-    <baseDesc>[PAWN_nameDef] was a member of the vanguard in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was a member of the vanguard in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah. [PAWN_pronoun] has seen and survived combat against xenos, hereteks, and the Archenemy.</baseDesc>
     <spawnCategories>
       <li>SegCOTO_SkitariiVanguard</li>
     </spawnCategories>
@@ -71,7 +263,7 @@
     <title>skitarii ranger</title>
     <defName>SegCOTO_MechanicusSkitariiRanger</defName>
     <titleShort>skitarius</titleShort>
-    <baseDesc>[PAWN_nameDef] was a member of the rangers in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was a member of the rangers in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah. [PAWN_pronoun] has seen and survived combat against xenos, hereteks, and the Archenemy.</baseDesc>
     <spawnCategories>
       <li>SegCOTO_SkitariiRanger</li>
     </spawnCategories>
