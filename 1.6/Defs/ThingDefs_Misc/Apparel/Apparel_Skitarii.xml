@@ -107,7 +107,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiRangerHood</defName>
 		<label>skitarii ranger hood</label>
-		<description>A hood and mask designed for the far-ranged Skitarii Rangers. Providing less protection and better view of the battlefied, they are designed to be resilient in the relentless pursuit of the enemies of the Mechanicus.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A hood and mask designed for the long-ranged Skitarii Rangers. Providing less protection and a better view of the battlefied, they are designed to be resilient in the relentless pursuit of the enemies of the Mechanicus.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -175,7 +175,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiVanguardHelmet</defName>
 		<label>skitarii vanguard helmet</label>
-		<description>A helmet designed for the closer-ranged Vanguard troopers. Providing better protection and better radiation resitance, they are designed to be deployed to the most hazardous war zones the Rim has to offer.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A helmet designed for the closer-ranged Vanguard troopers. Providing better protection and better radiation resistance, they are designed to be deployed to the most hazardous war zones the Rim has to offer.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -243,7 +243,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
 		<label>skitarii war plate</label>
-		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it's not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special techiniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>

@@ -188,7 +188,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_MagosCassock</defName>
 		<label>magos cassock</label>
-		<description>Regular uniforms utilized by the cultists of the Mechanicus. Usually a common sight around priets of Forge Worlds, it may be replaced by higher ranking members by more distinct apparel, suited for their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>Regular uniforms utilized by the cultists of the Mechanicus. Usually a common sight around priests of forge worlds, higher ranking members may replace it with more distinct apparel, suited for their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
