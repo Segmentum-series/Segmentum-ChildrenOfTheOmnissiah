@@ -996,7 +996,7 @@
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_TransuranicArquebus</defName>
 		<label>transuranic arquebus</label>
-		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive armor penetration capabilities.</description>
+		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive armour penetration capabilities.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
