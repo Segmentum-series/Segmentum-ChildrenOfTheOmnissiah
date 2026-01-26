@@ -41,24 +41,24 @@
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
-		<additionalHediffs>
+		<!-- <additionalHediffs>
        		<li>
             	<hediff>SEG_COTO_RadBuildup</hediff>
             	<severityPerDamageDealt>0.01</severityPerDamageDealt>
         	</li>
-		</additionalHediffs>
+		</additionalHediffs> -->
 	</DamageDef>
 	<!-- Rad damage -->
 
 	<DamageDef ParentName="Bullet">
     	<defName>SEG_COTO_RadDamage</defName>
     	<label>radiation damage</label>
-    	<additionalHediffs>
+    	<!-- <additionalHediffs>
        		<li>
             	<hediff>SEG_COTO_RadBuildup</hediff>
-            	<severityPerDamageDealt>0.004</severityPerDamageDealt> <!-- this means 10 damage will add 1%-->
+            	<severityPerDamageDealt>0.004</severityPerDamageDealt>
         	</li>
-    	</additionalHediffs>
+    	</additionalHediffs> -->
     	<impactSoundType>Bullet</impactSoundType> <!--add ours later-->
 	</DamageDef>
 	<!-- Plasma damage -->

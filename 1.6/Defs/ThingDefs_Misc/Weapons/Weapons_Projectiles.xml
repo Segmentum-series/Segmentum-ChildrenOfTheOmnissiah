@@ -120,7 +120,7 @@
 			<armorPenetrationBase>0.30</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>1000</speed>
-			<soundImpact>Seg_COTO_GammaSound</soundImpact>
+			<!-- <soundImpact>Seg_COTO_GammaSound</soundImpact> -->
 		</projectile>
 
 		<modExtensions>
@@ -135,36 +135,11 @@
 				<debugCells>false</debugCells>
 				<textureScrollOffsetPerTick>(5,5)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
-				<trailSoundDef>Seg_COTO_PhosphoreSound</trailSoundDef>
+				<!-- <trailSoundDef>Seg_COTO_PhosphoreSound</trailSoundDef> -->
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-<!-- Phoshor -->
-	<ThingDef ParentName="BaseBullet">
-		<defName>Seg_COTO_PhosphorBlast</defName>
-		<label>phosphor bolt</label>
-		<thingClass>Seg.COTO.Projectile_Phosphor</thingClass>
-
-		<graphicData>
-			<texPath>Things/Projectile/Seg_COTO_Phospor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
-		</graphicData>
-
-		<projectile>
-			<damageDef>Flame</damageDef>
-			<damageAmountBase>10</damageAmountBase>
-			<speed>70</speed>
-
-			<explosionRadius>0.5</explosionRadius>
-
-			<preExplosionSpawnThingDef>Seg_COTO_PhosphorFire</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>1</preExplosionSpawnChance>
-			<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-		</projectile>
-
-	</ThingDef>
 <!-- Radium -->
 	<ThingDef ParentName="BaseBullet">
     	<defName>SEG_COTO_RadBullet</defName>
@@ -182,6 +157,7 @@
         	<speed>70</speed>
     	</projectile>
 </ThingDef>
+
 <!-- Plasma -->
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>

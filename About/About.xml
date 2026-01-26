@@ -21,19 +21,9 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>Phonicmas.RimDark.FrameworkCore</packageId>
-			<displayName>RimDark 40k - Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3267464767</steamWorkshopUrl>
-		</li>
-		<li>
 			<packageId>ShunTheWitch.CVNmechanoidwarfarecore</packageId>
 			<displayName>CVN Mechanoid Warfare Core</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/Workshop/filedetails/?id=3047564391</steamWorkshopUrl>
-		</li>
-		<li>	
-			<packageId>REDACTED.Segmentum.Core</packageId>
-			<displayName>Segmentum-Core</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/Workshop/FillThisShitInLater</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>

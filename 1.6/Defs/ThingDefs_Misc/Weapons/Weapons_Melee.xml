@@ -36,8 +36,8 @@
 		<defName>Seg_COTO_MeleeWeapon_ArcMaul</defName>
 		<label>arc maul</label>
 		<description>A heavy shock weapon that discharges disruptive electrical force on impact. Effective for disabling armoured targets and crushing enemies through arc force.</description>
-		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
-		<meleeHitSound>Explosion_EMP</meleeHitSound>
+<!-- 		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Explosion_EMP</meleeHitSound> -->
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<smeltable>false</smeltable>
 		<weaponClasses>
@@ -59,14 +59,14 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
+<!-- 			<researchPrerequisites>
 				<li>Smithing</li>
 				<li>Seg_COTO_ArcPermacapacitors</li>
 				<li>Seg_COTO_TechGuard</li>
-			</researchPrerequisites>
-			<recipeUsers>
+			</researchPrerequisites> -->
+			<!-- <recipeUsers>
 				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
+			</recipeUsers> -->
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -89,7 +89,7 @@
 				</capacities>
 				<power>16</power>
 				<cooldownTime>2.1</cooldownTime>
-				<extraMeleeDamages>
+				<!-- <extraMeleeDamages>
 					<li>
 						<def>Seg_COTO_MeleeElectricBurn</def>
 						<amount>3</amount>
@@ -98,7 +98,7 @@
 						<def>EMP</def>
 						<amount>3</amount>
 					</li>
-				</extraMeleeDamages>
+				</extraMeleeDamages> -->
 			</li>
 		</tools>
 	</ThingDef>
@@ -108,8 +108,8 @@
 		<defName>Seg_COTO_MeleeWeapon_OmnissianAxeBasic</defName>
 		<label>omnissian axe</label>
 		<description>A holy icon granted to cultist adepts that have proven themselves suitably devoted to the Machine God.</description>
-		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
-		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
+<!-- 		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound> -->
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<smeltable>false</smeltable>
 		<weaponClasses>
@@ -133,12 +133,12 @@
 			<Uranium>10</Uranium>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
+<!-- 			<researchPrerequisites>
 				<li>ShieldBelt</li>
 				<li>Seg_COTO_CultMechanicus</li>
-			</researchPrerequisites>
+			</researchPrerequisites> -->
 			<recipeUsers>
-				<li>Seg_COTO_CraftingTable</li>
+				<!-- <li>Seg_COTO_CraftingTable</li> -->
 			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
@@ -172,179 +172,6 @@
 				<cooldownTime>3.5</cooldownTime>
 				<armorPenetration>0.4</armorPenetration>
 			</li>
-		</tools>
-		<modExtensions>
-			<li Class="VEF.Things.ThingDefExtension">
-				<weaponCarryDrawOffsets>
-					<east>
-						<drawOffset>(0, 0,  0.1)</drawOffset>
-					</east>
-					<north>
-						<drawOffset>(0.3, 0, 0.1)</drawOffset>
-					</north>
-					<south>
-						<drawOffset>(0.3, 0, 0.2)</drawOffset>
-					</south>
-					<west>
-						<drawOffset>(0, 0, 0.1)</drawOffset>
-					</west>
-				</weaponCarryDrawOffsets>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
-<!-- Power Sword -->
-	<ThingDef ParentName="MeleePowerWeapon_base">
-		<defName>Seg_COTO_MeleeWeapon_PowerSword</defName>
-		<label>martian power sword</label>
-		<description>A high-status melee weapon that has it's blade surrounded by a disruptive power field. While looking like a regular sword, it is capable of slicing through armor and flesh with ease.</description>
-		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
-		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
-		<equippedAngleOffset>-60</equippedAngleOffset>
-		<smeltable>false</smeltable>
-		<weaponClasses>
-			<li>MeleePiercer</li>
-		</weaponClasses>
-		<graphicData>
-			<texPath>Things/Weapon/Seg_COTO_Melee_PowerSword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.1</uiIconScale>
-		<statBases>
-			<WorkToMake>48000</WorkToMake>
-			<Mass>4</Mass>
-			<MarketValue>2000</MarketValue>
-		</statBases>
-		<costList>
-			<Steel>35</Steel>
-			<Plasteel>100</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>ShieldBelt</li>
-				<li>LongBlades</li>
-				<li>Seg_COTO_TechGuardAdvanced</li>
-			</researchPrerequisites>
-			<recipeUsers>
-				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>12</Crafting>
-			</skillRequirements>
-			<displayPriority>400</displayPriority>
-		</recipeMaker>
-		<tools>
-			<li>
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>1.6</cooldownTime>
-			</li>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>3.2</cooldownTime>
-				<armorPenetration>0.9</armorPenetration>
-			</li>
-			<li>
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>3</cooldownTime>
-				<armorPenetration>0.9</armorPenetration>
-			</li>
-		</tools>
-	</ThingDef>
-
-<!-- Taser Goad -->
-	<ThingDef ParentName="MeleePowerWeapon_base">
-		<defName>Seg_COTO_MeleeWeapon_TaserGoad</defName>
-		<label>taser goad</label>
-		<description>Powered by hyperdynamo capacitors, it stores an incredible amount of potential energy that is discharged upon contact with prongs at the weapon's tip.</description>
-		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
-		<meleeHitSound>Explosion_EMP</meleeHitSound>
-		<equippedAngleOffset>-45</equippedAngleOffset>
-		<smeltable>false</smeltable>
-		<weaponClasses>
-			<li>Melee</li>
-		</weaponClasses>
-		<graphicData>
-			<texPath>Things/Weapon/Seg_COTO_Melee_TaserGoad</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<uiIconScale>1.1</uiIconScale>
-		<statBases>
-			<WorkToMake>36000</WorkToMake>
-			<Mass>4</Mass>
-			<MarketValue>1380</MarketValue>
-		</statBases>
-		<costList>
-			<Steel>35</Steel>
-			<Plasteel>35</Plasteel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>LongBlades</li>
-				<li>Seg_COTO_ArcPermacapacitors</li>
-				<li>Seg_COTO_TechGuardAdvanced</li>
-			</researchPrerequisites>
-			<recipeUsers>
-				<li>Seg_COTO_CraftingTable</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>10</Crafting>
-			</skillRequirements>
-			<displayPriority>400</displayPriority>
-		</recipeMaker>
-		<tools>
-			<li>
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>point</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>2.4</cooldownTime>
-				<extraMeleeDamages>
-					<li>
-						<def>Seg_COTO_MeleeElectricBurn</def>
-						<amount>10</amount>
-					</li>
-					<li>
-						<def>EMP</def>
-						<amount>10</amount>
-					</li>
-				</extraMeleeDamages>
-			</li>
-			<li>
-				<label>head</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
-				<capacities>
-					<li>SEG_COTO_StunShock</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>2.4</cooldownTime>
-			</li>
-
 		</tools>
 	</ThingDef>
 </Defs>

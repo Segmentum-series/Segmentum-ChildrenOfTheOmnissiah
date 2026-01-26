@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<!-- Backpack layer temp location -->
+	<ApparelLayerDef>
+		<defName>Backpack</defName>
+		<label>backpack</label>
+		<drawOrder>220</drawOrder>
+	</ApparelLayerDef>
+
 	<!-- Backpack base -->
 	<ThingDef Abstract="true" Name="Seg_COTO_BackpackBase" ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
@@ -9,7 +17,7 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="false">
-				<li>Seg_COTO_CraftingTable</li>
+				<!-- <li>Seg_COTO_CraftingTable</li> -->
 			</recipeUsers>
 		</recipeMaker>
 		<thingCategories>
@@ -17,7 +25,7 @@
 		</thingCategories>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -49,9 +57,9 @@
 			<texPath>Things/Apparel/MagosBackpack/Seg_COTO_MagosBackpack</texPath>
 			<drawSize>(1.20,1.20)</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<!-- <recipeMaker>
 			<researchPrerequisite>Seg_COTO_CultMechanicus</researchPrerequisite>
-		</recipeMaker>
+		</recipeMaker> -->
 		<costList>
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -91,11 +99,6 @@
 			</defaultOutfitTags>
 		</apparel>
 		<comps>
-			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
-				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
-			</li>
-			<!-- Was disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420 -->
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
 				<ammoDef>Uranium</ammoDef>
@@ -120,9 +123,9 @@
 		<graphicData>
 			<texPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</texPath>
 		</graphicData>
-		<recipeMaker>
+		<!-- <recipeMaker>
 			<researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
-		</recipeMaker>
+		</recipeMaker> -->
 		<costList>
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -162,18 +165,6 @@
 			</defaultOutfitTags>
 		</apparel>
 		<comps>
-			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(120,82,66)</defaultPrimaryColor>
-				<defaultSecondaryColor>(255,255,255)</defaultSecondaryColor>
-				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
-				<tabDefs>
-					<li>BEWH_ExtraDecoration</li>
-				</tabDefs>
-			</li>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
-			</li>
-			<!-- Was disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420 -->
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
 				<ammoDef>Uranium</ammoDef>
