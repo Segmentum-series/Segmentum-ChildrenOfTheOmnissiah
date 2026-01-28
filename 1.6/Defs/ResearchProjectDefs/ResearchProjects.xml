@@ -5,7 +5,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_AutoWeapons</defName><!-- To be moved later -->
 		<label>auto weapons</label>
-		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
+		<description>Receive advanced schemata data, containing instructions on how to forge advanced Skitarii weaponry.</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>12.00</researchViewX>
@@ -20,7 +20,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_CeramiteProduction</defName><!-- To be moved later -->
 		<label>ceramite production</label>
-		<description>Produce advanced ceramic resources from stone blocks and other materials.</description>
+		<description>Produce advanced ceramic composites from stone blocks and other materials.</description>
 		<baseCost>700</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>5.00</researchViewX>
@@ -54,7 +54,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_ArcPermacapacitors</defName>
 		<label>arc permacapacitors</label>
-		<description>Be invested with the consecrated rites of Arc permacapacitors, channeling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armor, and circuitry alike.</description>
+		<description>Be vested with the consecrated rites of arc permacapacitors, channeling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armour, and circuitry alike.</description>
 		<baseCost>1550</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>16.00</researchViewX>
@@ -74,7 +74,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_PhosphexMunitions</defName>
 		<label>phosphex munitions</label>
-		<description>Receive sacred rites of Phosphex manipulation, alchemical machine-spirits to project blinding burning phosphor discharges.</description>
+		<description>Receive sacred rites of phosphex manipulation, allowing machine-spirits to project blinding burning phosphor discharges.</description>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
 			<researchViewX>18.00</researchViewX>
@@ -92,7 +92,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_PlasmaInduction</defName><!-- To be moved later -->
 		<label>plasma induction</label>
-		<description>Be granted the consecrated rites of Plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
+		<description>Be granted the consecrated rites of plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
 		<baseCost>2500</baseCost>
 		<techLevel>Spacer</techLevel>
 			<researchViewX>19.00</researchViewX>
@@ -112,7 +112,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_MatterDestabilization</defName>
 		<label>matter destabilization</label>
-		<description>Be invested with rites of matter destabilization, capable of unmaking materials and living tissue.</description>
+		<description>Be vested with rites of matter destabilization, capable of unmaking materials and living tissue.</description>
 		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 			<researchViewX>20.00</researchViewX>
@@ -168,7 +168,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuardAdvanced</defName>
 		<label>Tech-Guard advanced arsenal</label>
-		<description>Receive advanced schemata data, containing instruction of how to forge advanced Skitarii weaponry.</description>
+		<description>Receive advanced schemata data, containing instruction on how to forge advanced Skitarii weaponry.</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>
