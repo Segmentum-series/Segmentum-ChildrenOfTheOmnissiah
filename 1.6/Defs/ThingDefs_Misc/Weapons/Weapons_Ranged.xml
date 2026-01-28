@@ -360,8 +360,8 @@
 	<!-- Phosphor serpentia -->
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
-		<label>phosphor serpentia</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by Tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
+		<label>phosphor serpenta</label>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
 			<shaderType>Cutout</shaderType>
