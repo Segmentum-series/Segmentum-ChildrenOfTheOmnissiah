@@ -70,11 +70,11 @@
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
-<!-- Phosphex munitions -->
+<!-- Phosphor munitions -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_PhosphexMunitions</defName>
-		<label>phosphex munitions</label>
-		<description>Receive sacred rites of phosphex manipulation, allowing machine-spirits to project blinding burning phosphor discharges.</description>
+		<label>phosphor munitions</label>
+		<description>Receive sacred rites of phosphor manipulation, allowing machine-spirits to project blinding burning phosphor discharges.</description>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
 			<researchViewX>18.00</researchViewX>
