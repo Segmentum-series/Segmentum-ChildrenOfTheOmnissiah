@@ -156,6 +156,11 @@
 
 		<shaderType>Cutout</shaderType>
 		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
 
 		<colourable>true</colourable>
 
