@@ -63,6 +63,11 @@
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
+		<equippedStatOffsets>    
+
+      			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+      			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+    	</equippedStatOffsets>
 
 		<costList>
 			<Hyperweave>30</Hyperweave>
@@ -100,6 +105,9 @@
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<!-- It has no extra decorations -->
 			</li>
+			 <li MayRequire="kentington.saveourship2">
+     			 <compClass>SaveOurShip2.CompEVA</compClass>
+    	</li>
 		</comps>
 	</ThingDef>
 
@@ -118,6 +126,8 @@
 			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 			<MoveSpeed>0.55</MoveSpeed>
+      		<DecompressionResistance MayRequire="kentington.saveourship2">0.10</DecompressionResistance>
+      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
@@ -194,8 +204,10 @@
       		<Insulation_Heat>2</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-		<ToxicResistance>1.00</ToxicResistance>
-		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+      		<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</equippedStatOffsets>
 
 		<costList>
