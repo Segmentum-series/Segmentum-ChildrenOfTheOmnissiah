@@ -132,7 +132,7 @@
 
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Hyperweave>30</Hyperweave>
 		</costList>
 
@@ -200,7 +200,7 @@
 
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 			<Seg_Ceramite>50</Seg_Ceramite>
 		</costList>
 
