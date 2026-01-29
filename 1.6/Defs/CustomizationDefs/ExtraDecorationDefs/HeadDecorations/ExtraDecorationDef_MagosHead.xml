@@ -43,7 +43,7 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 </Defs>
