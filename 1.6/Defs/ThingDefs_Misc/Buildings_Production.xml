@@ -4,7 +4,7 @@
 		<defName>WorkGiver_CraftingTable</defName>
 		<label>make things at forge altar</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>Smithing</workType>
 		<priorityInType>75</priorityInType>
 		<verb>work at</verb>
 		<gerund>working at</gerund>
@@ -21,7 +21,7 @@
 		<defName>WorkGiver_CeramiteFurnace</defName>
 		<label>operate ceramite furnace</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>Smithing</workType>
 		<priorityInType>80</priorityInType>
 		<verb>smelt</verb>
 		<gerund>smelting at</gerund>
