@@ -62,6 +62,7 @@
 			<li>DestroyWeapon</li>
 			<li>DestroyApparel</li>
 			<li>Seg_SmeltNonSmeltable</li>
+			<li>Seg_SmeltNonSmeltableLowTier</li>
 		</recipes>
 		<comps>
 		<li Class="CompProperties_Power">

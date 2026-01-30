@@ -205,20 +205,90 @@
     <defName>Seg_SmeltNonSmeltable</defName>
     <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
     <label>Scrap armor for hyperweave</label>
-    <description>Use heat and strong electromagnets to break down weapons into useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
-    <jobString>Smelting weapon.</jobString>
+    <description>Use heat and strong electromagnets to break down armor into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
+    <jobString>Smelting Armor.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <categories>
-        <li>ApparelMisc</li>
+       
         <li>ApparelArmor</li>
         <li>Seg_COTO_ArmorSkitarrii</li>
-         <li>Seg_COTO_ArmorMagos</li>
+        
+        </categories>
+		<thingDefs>
+		<li>Apparel_PsyfocusHelmet</li>
+		<li>Apparel_PsyfocusRobe</li>
+		<li>Apparel_PsyfocusVest</li>
+		<li>Apparel_PsyfocusShirt</li>
+		<li>Apparel_EltexSkullcap</li>
+		</thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ApparelArmor</li>
+        <li>Seg_COTO_ArmorSkitarrii</li>
+		<li>ApparelNoble</li>
+
+        </categories>
+		<thingDefs>
+		<li>Apparel_PsyfocusHelmet</li>
+		<li>Apparel_PsyfocusRobe</li>
+		<li>Apparel_PsyfocusVest</li>
+		<li>Apparel_PsyfocusShirt</li>
+		<li>Apparel_EltexSkullcap</li>
+		</thingDefs>
+ 	<specialFiltersToDisallow>
+        <li>AllowSmeltable</li>
+    </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	<products>
+			<Hyperweave>5</Hyperweave>
+	</products>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+    </forceHiddenSpecialFilters>
+	
+    <modExtensions>
+        <li Class="CVN_UnMakr.RecipeExtension_SmeltNonSmeltable">
+            <yieldModifier>0.50</yieldModifier>
+            <isItemHealthAffectYield>true</isItemHealthAffectYield>
+        </li>
+    </modExtensions>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Seg_SmeltNonSmeltableLowTier</defName>
+    <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
+    <label>Scrap apparel for hyperweave</label>
+    <description>Use heat and strong electromagnets to break down apparel into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all apparel.</description>
+    <jobString>Smelting Apparel.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+	<skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+       
+        <li>ApparelMisc</li>
+      	<li>Seg_COTO_ArmorMagos</li>
+        
         </categories>
         </filter>
         <count>1</count>
@@ -226,19 +296,16 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
+       
         <li>ApparelMisc</li>
-        <li>ApparelArmor</li>
-        <li>Seg_COTO_ArmorSkitarrii</li>
-         <li>Seg_COTO_ArmorMagos</li>
+      	<li>Seg_COTO_ArmorMagos</li>
+        
+
         </categories>
       
-
-      <specialFiltersToDisallow>
-        <li>AllowSmeltable</li>
-      </specialFiltersToDisallow>
     </fixedIngredientFilter>
 	<products>
-			<Hyperweave>15</Hyperweave>
+			<Hyperweave>2</Hyperweave>
 	</products>
     <forceHiddenSpecialFilters>
       <li>AllowSmeltable</li>
@@ -247,7 +314,7 @@
     </forceHiddenSpecialFilters>
     <modExtensions>
         <li Class="CVN_UnMakr.RecipeExtension_SmeltNonSmeltable">
-            <yieldModifier>0.25</yieldModifier>
+            <yieldModifier>0.50</yieldModifier>
             <isItemHealthAffectYield>true</isItemHealthAffectYield>
         </li>
     </modExtensions>
