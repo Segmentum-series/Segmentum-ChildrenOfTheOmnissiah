@@ -167,7 +167,7 @@
 	<!--Skitarii hood lenses 3-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses3</defName>
-		<label>Targetting lenses</label>
+		<label>Targeting lenses</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses3</drawnTextureIconPath>
@@ -262,7 +262,7 @@
 	<!--Skitarii helmet antena-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetAntena</defName>
-		<label>Antena</label>
+		<label>Antenna</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Antena</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Antena</drawnTextureIconPath>
