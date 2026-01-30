@@ -201,5 +201,56 @@
 			<Seg_Ceramite>120</Seg_Ceramite>
 		</products>
 	</RecipeDef>
+	<RecipeDef>
+    <defName>Seg_SmeltNonSmeltable</defName>
+    <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
+    <label>Scrap armor for hyperweave</label>
+    <description>Use heat and strong electromagnets to break down weapons into useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
+    <jobString>Smelting weapon.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+        <li>ApparelMisc</li>
+        <li>ApparelArmor</li>
+        <li>Seg_COTO_ArmorSkitarrii</li>
+         <li>Seg_COTO_ArmorMagos</li>
+        </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ApparelMisc</li>
+        <li>ApparelArmor</li>
+        <li>Seg_COTO_ArmorSkitarrii</li>
+         <li>Seg_COTO_ArmorMagos</li>
+        </categories>
+      
+
+      <specialFiltersToDisallow>
+        <li>AllowSmeltable</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+	<products>
+			<Hyperweave>15</Hyperweave>
+	</products>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+    </forceHiddenSpecialFilters>
+    <modExtensions>
+        <li Class="CVN_UnMakr.RecipeExtension_SmeltNonSmeltable">
+            <yieldModifier>0.25</yieldModifier>
+            <isItemHealthAffectYield>true</isItemHealthAffectYield>
+        </li>
+    </modExtensions>
+  </RecipeDef>
 
 </Defs>
