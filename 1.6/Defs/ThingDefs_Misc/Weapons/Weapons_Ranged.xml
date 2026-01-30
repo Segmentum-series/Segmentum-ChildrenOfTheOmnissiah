@@ -682,7 +682,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadPistol</defName>
 		<label>radium pistol</label>
-		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
+		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -747,7 +747,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>radium carbine</label>
-		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
