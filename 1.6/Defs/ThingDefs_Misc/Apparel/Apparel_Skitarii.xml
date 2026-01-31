@@ -63,7 +63,13 @@
 			<Insulation_Cold>14.4</Insulation_Cold>
 			<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
+		<equippedStatOffsets>    
+				<ToxicResistance>1.00</ToxicResistance>
+				<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 
+      			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+      			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+    	</equippedStatOffsets>
 		<costList>
 			<Hyperweave>30</Hyperweave>
 			<Seg_Ceramite>10</Seg_Ceramite>
@@ -118,6 +124,8 @@
 			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 			<MoveSpeed>0.55</MoveSpeed>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
