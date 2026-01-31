@@ -99,8 +99,10 @@
 			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
 		-->
+
 		<comps>
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
+			
 			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
         	<compClass>Core40k.Comp_AmmoChanger</compClass>
         	<availableProjectiles>
@@ -109,6 +111,7 @@
         	</availableProjectiles>
 			</li> -->
 		</comps>
+
 	</ThingDef>
 
 <!-- Arc weapons base -->
@@ -124,8 +127,8 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+		
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -345,8 +348,8 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+		 
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -518,8 +521,8 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+		 
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -647,8 +650,9 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+		 
+		
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -841,8 +845,8 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+		 
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -961,8 +965,11 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Biocodable"/>
+			
+   		 
+
+
+			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
