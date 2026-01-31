@@ -218,7 +218,7 @@
 	<!-- Purity seal 1 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal1</defName>
-		<label>Purity seal</label>
+		<label>Purity seal A</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal1</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal1</drawnTextureIconPath>
@@ -266,7 +266,7 @@
 	<!-- Purity seal 2 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal2</defName>
-		<label>Purity seal</label>
+		<label>Purity seal B</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal2</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal2</drawnTextureIconPath>
@@ -314,7 +314,7 @@
 	<!-- Purity seal 3 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal3</defName>
-		<label>Purity seal</label>
+		<label>Purity seal C</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal3</drawnTextureIconPath>

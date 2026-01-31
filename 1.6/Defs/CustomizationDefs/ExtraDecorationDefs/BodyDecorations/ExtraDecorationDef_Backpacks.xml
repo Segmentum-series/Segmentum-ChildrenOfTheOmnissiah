@@ -5,7 +5,7 @@
 	<!-- Antena 1 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena1</defName>
-		<label>Antenna</label>
+		<label>Antenna U</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena1</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena1</drawnTextureIconPath>
@@ -35,7 +35,7 @@
 	<!-- Antena 2 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena2</defName>
-		<label>Antenna</label>
+		<label>Antenna V</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena2</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena2</drawnTextureIconPath>
@@ -65,7 +65,7 @@
 	<!-- Antena 3 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena3</defName>
-		<label>Antenna</label>
+		<label>Antenna C</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena3</drawnTextureIconPath>
@@ -95,7 +95,7 @@
 	<!-- Antena 4 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena4</defName>
-		<label>Antenna</label>
+		<label>Antenna Y</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena4</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena4</drawnTextureIconPath>
