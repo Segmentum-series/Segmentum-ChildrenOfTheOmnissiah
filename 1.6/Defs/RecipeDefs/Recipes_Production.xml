@@ -219,16 +219,93 @@
         <filter>
           <categories>
        
-        <li>ApparelArmor</li>
-        <li>Seg_COTO_ArmorSkitarrii</li>
         
+        <li>Seg_COTO_ArmorSkitarrii</li>
+        <li>ApparelNoble</li>
         </categories>
 		<thingDefs>
-		<li>Apparel_PsyfocusHelmet</li>
-		<li>Apparel_PsyfocusRobe</li>
-		<li>Apparel_PsyfocusVest</li>
-		<li>Apparel_PsyfocusShirt</li>
-		<li>Apparel_EltexSkullcap</li>
+		 <li>Apparel_PsyfocusHelmet</li>
+    <li>Apparel_PsyfocusRobe</li>
+    <li>Apparel_PsyfocusVest</li>
+    <li>Apparel_PsyfocusShirt</li>
+    <li>Apparel_EltexSkullcap</li>
+	<li>Apparel_FlakVest</li>
+	<li>Apparel_FlakPants</li>
+	<li>Apparel_FlakJacket</li>
+	<li>Apparel_AdvancedHelmet</li>
+	<li>Apparel_ArmorHelmetRecon</li>
+	<li>Apparel_ArmorRecon</li>
+    <li>Apparel_PowerArmorHelmet</li>
+	<li>Apparel_PowerArmor</li>
+
+
+
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_GravisArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_IndomitusTerminatorArmor</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_A</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_B</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_C</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_D</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_E</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Studs</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Reinforced</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Studs</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Laurels</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_GravisHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TerminatorHelmet_Simple</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SisterOfSilence</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeOfChamp</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperor</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesWardenHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanPlateHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SagittarumHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_VenatariHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeChampHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperorHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetA</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetB</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_ShieldCaptianHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardHelmet</li>
+
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmor</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmor</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_IndomitusPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkVIIPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplain</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_LivingSaintArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmor</li>
+
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmorHelmet</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmorHelmet</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_IndomitusPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkVIIPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplainHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
 		</thingDefs>
         </filter>
         <count>1</count>
@@ -236,21 +313,94 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>ApparelArmor</li>
         <li>Seg_COTO_ArmorSkitarrii</li>
 		<li>ApparelNoble</li>
 
         </categories>
 		<thingDefs>
-		<li>Apparel_PsyfocusHelmet</li>
-		<li>Apparel_PsyfocusRobe</li>
-		<li>Apparel_PsyfocusVest</li>
-		<li>Apparel_PsyfocusShirt</li>
-		<li>Apparel_EltexSkullcap</li>
+		 <li>Apparel_PsyfocusHelmet</li>
+    <li>Apparel_PsyfocusRobe</li>
+    <li>Apparel_PsyfocusVest</li>
+    <li>Apparel_PsyfocusShirt</li>
+    <li>Apparel_EltexSkullcap</li>
+	<li>Apparel_FlakVest</li>
+	<li>Apparel_FlakPants</li>
+	<li>Apparel_FlakJacket</li>
+	<li>Apparel_AdvancedHelmet</li>
+	<li>Apparel_ArmorHelmetRecon</li>
+	<li>Apparel_ArmorRecon</li>
+    <li>Apparel_PowerArmorHelmet</li>
+	<li>Apparel_PowerArmor</li>
+
+
+
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_GravisArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_IndomitusTerminatorArmor</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_A</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_B</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_C</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_D</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ScoutHelmet_E</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverHelmet_Studs</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosHelmet_Reinforced</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Skull</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Studs</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusHelmet_Laurels</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_GravisHelmet_Simple</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_SM_TerminatorHelmet_Simple</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanArmor</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SisterOfSilence</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeOfChamp</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperor</li>
+
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesWardenHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanPlateHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SagittarumHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_VenatariHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeChampHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperorHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetA</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetB</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_ShieldCaptianHelmet</li>
+    <li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardHelmet</li>
+
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmor</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmor</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_IndomitusPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkVIIPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplain</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_LivingSaintArmor</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmor</li>
+
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmorHelmet</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmorHelmet</li>
+    <li MayRequire="portesel.rimdark.morepowerarmor">BEWH_IndomitusPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkVIIPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplainHelmet</li>
+    <li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
 		</thingDefs>
- 	<specialFiltersToDisallow>
-        <li>AllowSmeltable</li>
-    </specialFiltersToDisallow>
     </fixedIngredientFilter>
 	<products>
 			<Hyperweave>5</Hyperweave>
