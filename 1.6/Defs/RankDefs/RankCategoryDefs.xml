@@ -1,0 +1,66 @@
+<Defs>
+<!--    TechPriests-->
+    <Core40k.RankCategoryDef>
+        <defName>Seg_COTO_TechPriestRankCategory</defName>
+        <label>Tech Priest</label>
+        <description>Ranks of the Tech Priests of the Machine Cult.</description>
+        <ranks>
+            <li>
+                <rankDef>Seg_COTO_TechAcolytum</rankDef>
+                <displayPosition>(1, 3)</displayPosition>
+            </li>
+
+            <li>
+                <rankDef>Seg_COTO_AdeptProbatoris</rankDef>
+                <displayPosition>(3, 3)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_TechAcolytum>15</Seg_COTO_TechAcolytum>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_Enginseer</rankDef>
+                <displayPosition>(5, 1)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_Transmechanic</rankDef>
+                <displayPosition>(5, 2)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_Lexmechanic</rankDef>
+                <displayPosition>(5, 3)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_MagosBiologis</rankDef>
+                <displayPosition>(5, 4)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_Explorator</rankDef>
+                <displayPosition>(5, 5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_AuxiliusMyrmidon</rankDef>
+                <displayPosition>(5, 6)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+
+
+ </ranks>
+</Core40k.RankCategoryDef>            
+</Defs>
