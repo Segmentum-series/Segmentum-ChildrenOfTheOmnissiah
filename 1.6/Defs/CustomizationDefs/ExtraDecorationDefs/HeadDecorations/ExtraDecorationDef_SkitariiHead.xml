@@ -465,7 +465,7 @@
 	<!--Skitarii vanguard lenses-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</defName>
-		<label>Range finder</label>
+		<label>Rangefinder</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Lenses</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Lenses</drawnTextureIconPath>
