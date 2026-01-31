@@ -19,6 +19,10 @@
 		</thingCategories>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      		<workSkill>Crafting</workSkill>
+      		<effectWorking>Smith</effectWorking>
+      		<soundWorking>Recipe_Smith</soundWorking>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
@@ -32,6 +36,9 @@
 			<li>Seg_COTO_WeaponMelee</li>
 		</tradeTags>-->
 		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<inspectorTabs>
+      		<li>ITab_Art</li>
+    	</inspectorTabs>
 	</ThingDef>
 
 <!-- Arc Maul -->
@@ -146,6 +153,7 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
+			<workSkill>Crafting</workSkill>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
 		<tools>
