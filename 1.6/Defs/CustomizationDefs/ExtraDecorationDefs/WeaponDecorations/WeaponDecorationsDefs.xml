@@ -1,0 +1,31 @@
+<Defs>
+  <Core40k.WeaponDecorationTypeDef>
+    <defName>Seg_COTO_Upgrades</defName>
+    <label>TEST</label>
+  </Core40k.WeaponDecorationTypeDef>
+
+ <!-- <Core40k.WeaponDecorationDef>
+    <defName>Seg_COTO_Deco_Macrostubber</defName>
+    <label>macrostubber Shells</label>
+    <description>Some shells to increase the burst count of the macrostubber.</description>
+    <iconPath>Things/Decoration/Macrostubber/BEWH_wDecoShells</iconPath>
+    <drawnTextureIconPath>Things/Decoration/Macrostubber/BEWH_wDecoShells</drawnTextureIconPath>
+    <drawSize>(0.25, 0.25)</drawSize>
+    <sortOrder>1</sortOrder>
+    <appliesTo>
+     <li>Seg_COTO_Gun_Macrostubber</li>
+    </appliesTo>
+    <drawData>
+      <defaultData>
+        <offset>(0, 0, 0)</offset>
+      </defaultData>
+    </drawData>
+    <shaderType>Cutout</shaderType>
+    <colourable>true</colourable>
+    <defaultColour>(222,222,222)</defaultColour>
+    <decorationType>Seg_COTO_Upgrades</decorationType>
+    <verbModifier>
+      <additionalBurstShotCount>4</additionalBurstShotCount>
+        </verbModifier>
+  </Core40k.WeaponDecorationDef> -->
+</Defs>
