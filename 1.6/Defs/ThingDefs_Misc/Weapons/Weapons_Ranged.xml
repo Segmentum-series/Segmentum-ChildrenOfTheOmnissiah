@@ -99,8 +99,7 @@
 			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
 		-->
-<<<<<<< Updated upstream
-=======
+
 		<comps>
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
 			
@@ -112,7 +111,7 @@
         	</availableProjectiles>
 			</li> -->
 		</comps>
->>>>>>> Stashed changes
+
 	</ThingDef>
 
 <!-- Arc weapons base -->
