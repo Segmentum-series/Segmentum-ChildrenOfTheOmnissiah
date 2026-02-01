@@ -251,7 +251,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
 		<label>skitarii war plate</label>
-		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special techiniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>

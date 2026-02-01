@@ -245,7 +245,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing bolts of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
 		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
 		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
 		<graphicData>
