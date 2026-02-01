@@ -7,12 +7,12 @@
         <ranks>
             <li>
                 <rankDef>Seg_COTO_TechAcolytum</rankDef>
-                <displayPosition>(1, 3)</displayPosition>
+                <displayPosition>(1, 4)</displayPosition>
             </li>
 
             <li>
                 <rankDef>Seg_COTO_AdeptProbatoris</rankDef>
-                <displayPosition>(3, 3)</displayPosition>
+                <displayPosition>(3, 4)</displayPosition>
                 <rankRequirements>
                     <Seg_COTO_TechAcolytum>15</Seg_COTO_TechAcolytum>
                 </rankRequirements>
@@ -76,7 +76,7 @@
                 </rankRequirementsOneAmong>
             </li>
             <li>
-                <rankDef>Seg_COTO_MagosLogos</rankDef>
+                <rankDef>Seg_COTO_MagosLogis</rankDef>
                 <displayPosition>(6, 3)</displayPosition>
                 <rankRequirements>
                     <Seg_COTO_Lexmechanic>20</Seg_COTO_Lexmechanic>
@@ -117,6 +117,108 @@
                     <Seg_COTO_AuxiliusMyrmidon>10</Seg_COTO_AuxiliusMyrmidon>
                 </rankRequirements>
             </li>
+              <li>
+                <rankDef>Seg_COTO_MagosMetallurgicus</rankDef>
+                <displayPosition>(7, 2)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_FabricatorMinoris>20</Seg_COTO_FabricatorMinoris>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_CyberneticaDatasmith</rankDef>
+                <displayPosition>(8, 1)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_ServitorUnderseer>20</Seg_COTO_ServitorUnderseer>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_Artisan</rankDef>
+                <displayPosition>(8, 2)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosMetallurgicus>15</Seg_COTO_MagosMetallurgicus>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_LexicoArcanus</rankDef>
+                <displayPosition>(8, 3)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosLogis>15</Seg_COTO_MagosLogis>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_ArchmagosGenetor</rankDef>
+                <displayPosition>(8, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosGenetor>15</Seg_COTO_MagosGenetor>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_ArchmagosExplorator</rankDef>
+                <displayPosition>(8, 5)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosExplorator>15</Seg_COTO_MagosExplorator>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_MagosDominius</rankDef>
+                <displayPosition>(8, 6)</displayPosition>
+                 <rankRequirementsOneAmong>
+                    <Seg_COTO_MagosExplorator>20</Seg_COTO_MagosExplorator>
+                    <Seg_COTO_MagosBiologisextremis>20</Seg_COTO_MagosBiologisextremis>
+                    <Seg_COTO_MagosGenetor>20</Seg_COTO_MagosGenetor>
+                    <Seg_COTO_MagosLogis>20</Seg_COTO_MagosLogis>
+                    <Seg_COTO_MagosMetallurgicus>20</Seg_COTO_MagosMetallurgicus>
+                    <Seg_COTO_MagosMilitant>20</Seg_COTO_MagosMilitant>
+
+                </rankRequirementsOneAmong>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_ArchmagosDominius</rankDef>
+                <displayPosition>(10, 6)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosDominius>15</Seg_COTO_MagosDominius>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_MagosPrime</rankDef>
+                <displayPosition>(10, 4)</displayPosition>
+                 <rankRequirementsOneAmong>
+                    <Seg_COTO_ArchmagosDominius>20</Seg_COTO_ArchmagosDominius>
+                    <Seg_COTO_ArchmagosExplorator>20</Seg_COTO_ArchmagosExplorator>
+                    <Seg_COTO_ArchmagosGenetor>20</Seg_COTO_ArchmagosGenetor>
+                    <Seg_COTO_LexicoArcanus>20</Seg_COTO_LexicoArcanus>
+                    <Seg_COTO_Artisan>20</Seg_COTO_Artisan>
+
+                </rankRequirementsOneAmong>
+            </li>
+               <li>
+                <rankDef>Seg_COTO_FabricatorLocum</rankDef>
+                <displayPosition>(12, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosPrime>20</Seg_COTO_MagosPrime>
+
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosMyrmidax</rankDef>
+                <displayPosition>(12, 7)</displayPosition>
+                 <rankRequirements>
+                 <Seg_COTO_Securtor>20</Seg_COTO_Securtor>
+                
+
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_FabricatorGeneral</rankDef>
+                <displayPosition>(13, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_FabricatorLocum>30</Seg_COTO_FabricatorLocum>
+
+                </rankRequirements>
+            </li>
+
+
+     
 
 
 
