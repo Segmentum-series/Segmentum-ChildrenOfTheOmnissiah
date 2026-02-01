@@ -6,7 +6,7 @@
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<thingCategories>
-			<li>Seg_COTO_ArmorSkitarrii</li>
+			<li>Apparel</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Seg_COTO_Skitarii</li>
@@ -64,11 +64,12 @@
 			<Insulation_Heat>20</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>    
+				<ToxicResistance>1.00</ToxicResistance>
+				<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 
       			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
       			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
     	</equippedStatOffsets>
-
 		<costList>
 			<Hyperweave>30</Hyperweave>
 			<Seg_Ceramite>10</Seg_Ceramite>
@@ -105,9 +106,6 @@
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 				<!-- It has no extra decorations -->
 			</li>
-			 <li MayRequire="kentington.saveourship2">
-     			 <compClass>SaveOurShip2.CompEVA</compClass>
-    	</li>
 		</comps>
 	</ThingDef>
 
@@ -126,8 +124,8 @@
 			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 			<MoveSpeed>0.55</MoveSpeed>
-      		<DecompressionResistance MayRequire="kentington.saveourship2">0.10</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
@@ -204,10 +202,8 @@
       		<Insulation_Heat>2</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicResistance>1.00</ToxicResistance>
-			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-      		<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+		<ToxicResistance>1.00</ToxicResistance>
+		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 
 		<costList>
@@ -255,7 +251,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
 		<label>skitarii war plate</label>
-		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special techiniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
