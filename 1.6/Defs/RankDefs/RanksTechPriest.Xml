@@ -9,9 +9,12 @@
     
 
         <statOffsets>
-            <GlobalLearningFactor>0.01</GlobalLearningFactor>
+            
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
         </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.01</GlobalLearningFactor>
+        </statFactors>
     </Seg.RankDef>
     <Seg.RankDef>
         <defName>Seg_COTO_AdeptProbatoris</defName>
@@ -24,12 +27,15 @@
     
 
         <statOffsets>
-            <GlobalLearningFactor>0.02</GlobalLearningFactor>
+           
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
             <ResearchSpeed>0.05</ResearchSpeed>
 
         </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.02</GlobalLearningFactor>
+        </statFactors>
     </Seg.RankDef>
       <Seg.RankDef>
         <defName>Seg_COTO_Enginseer</defName>
@@ -116,10 +122,13 @@
         <statOffsets>
 
             <ResearchSpeed>0.10</ResearchSpeed>
-            <GlobalLearningFactor>.05</GlobalLearningFactor>
+            
             <ReadingSpeed>0.30</ReadingSpeed>
 
         </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
+        </statFactors>
     </Seg.RankDef>
      <Seg.RankDef>
         <defName>Seg_COTO_MagosBiologis</defName>
@@ -187,7 +196,6 @@
             <Social>4</Social>
         </requiredSkills>
         <statOffsets>
-            <GlobalLearningFactor>0.05</GlobalLearningFactor>
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
             <NegotiationAbility>0.20</NegotiationAbility>
             <PawnTrapSpringChance>-0.50</PawnTrapSpringChance>
@@ -198,6 +206,9 @@
 
 
         </statOffsets>
+        <statFactors>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
+        </statFactors>
     </Seg.RankDef>
     <Seg.RankDef>
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
@@ -219,10 +230,15 @@
             <Social>4</Social>
         </requiredSkills>
         <statOffsets>
-            <MeleeHitChance>0.01</MeleeHitChance>
+            
             <MeleeDodgeChance>0.5</MeleeDodgeChance>
-            <ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
+            
         </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+            <MeleeHitChance>1.01</MeleeHitChance>
+        </statFactors>
+
     </Seg.RankDef>
     <Seg.RankDef>
         <defName>Seg_COTO_FabricatorMinoris</defName>
@@ -282,15 +298,17 @@
             <HackingSpeed>0.10</HackingSpeed>
             <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
             <ConstructionSpeed>0.10</ConstructionSpeed>
-            <ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
             <ConstructSuccessChance>.30 </ConstructSuccessChance>
             <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 1</MechBandwidth>
             <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.10</MechRepairSpeed>
-            <ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+            
 
             
 
         </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+        </statFactors>
         <recreationFromSkills>
             <li>Crafting</li>
             <li>Construction</li>
@@ -305,5 +323,181 @@
         </givesPassions>
 
     </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosLogos</defName>
+        <label>Magos Logos</label>
+        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by the wider Cult Mechanicus..</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <requiredSkills>
+            <Intellectual>8</Intellectual>
+            <Social>6</Social>
+        </requiredSkills>
+        <statOffsets>
+            <ResearchSpeed>0.15</ResearchSpeed>
+            <ReadingSpeed>0.20</ReadingSpeed>
+            <SocialImpact>.30</SocialImpact>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+            <!-- <IdeoligionSpreadChance MayRequire="Ludeon.RimWorld.Ideology">.25</IdeoligionSpreadChance> -->
+
+            
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Intellectual</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosGenetor</defName>
+        <label>Magos Genetor</label>
+        <description>Genetors are particular experts in all things organic, and often dedicate themselves to gene therapies and other manipulations disdained by other branches who see the machine as primary.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <incompatibleRanks>
+            <li>Seg_COTO_MagosBiologisextremis</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Plants>8</Plants>
+            <Animals>5</Animals>
+            <Medicine>8</Medicine>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <MedicalTendQuality>0.10</MedicalTendQuality>
+            
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Intellectual</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef> 
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosBiologisextremis</defName>
+        <label>Magos Biologis Extremis</label>
+        <description>A particular expert on medical matters and surgery, often found serving as the master chirurgeon on a voidship.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>2</ImplantsRequired>
+        <incompatibleRanks>
+            <li>Seg_COTO_MagosGenetor</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Medicine>10</Medicine>
+        </requiredSkills>
+        <statOffsets>
+            <MedicalSurgerySuccessChance>0.30</MedicalSurgerySuccessChance>
+            <MedicalTendQuality>0.40</MedicalTendQuality>
+            <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+         <givesAbilities MayRequire="phonicmas.rimdark.mankindsfinest">
+            <li>BEWH_ApothecaryEmergencyAid</li>
+        </givesAbilities>
+        <givesPassions>
+             <li>
+            <skill>Medicine</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_MagosExplorator</defName>
+        <label>Magos Explorator</label>
+        <description>A Magos Explorator has gained great experience and tends to be seen as a pioneering frontier type by other techpriests. Some are known to work on behalf of the Adeptus Administratum to expand the borders of the Imperium.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <requiredSkills>
+            <Social>8</Social>
+        </requiredSkills>
+        <statOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+            <SocialImpact>0.10</SocialImpact>
+            <NegotiationAbility>0.20</NegotiationAbility>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.02</MeleeHitChance>
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef> 
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosMilitant</defName>
+        <label>Magos Militant</label>
+        <description>A Magos Militant has demonstrated their aptitude in the Omnissiah's arts of war, and may now be trusted to pursue hereteks while remaining steadfast against such temptations.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>2</ImplantsRequired>
+        <incompatibleRanks>
+            <li>Seg_COTO_Securtor</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Melee>4</Melee>
+            <Shooting>5</Shooting>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.2</MeleeDodgeChance>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.02</MeleeHitChance>
+           <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+         <!-- <GlobalCertaintyLossFactor MayRequire="Ludeon.RimWorld.Odyssey">0.60</GlobalCertaintyLossFactor> -->
+        </statFactors>
+    
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Securtor</defName>
+        <label>Securtor</label>
+        <description>Secutors are techpriests who have so dedicated themselves to combat that their very bodies have been modified extensively for that purpose. They condition themselves to meditate while fighting and see battle as a way to worship the Machine God.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>5</ImplantsRequired>
+        <incompatibleRanks>
+            <li>Seg_COTO_MagosMilitant</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Melee>8</Melee>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+            
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.05</MeleeHitChance>
+        <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+          <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+        <PainShockThreshold>1.05</PainShockThreshold>
+        </statFactors>
+    </Seg.RankDef>
+
+
 
     </Defs>

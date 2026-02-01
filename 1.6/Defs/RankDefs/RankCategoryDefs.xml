@@ -62,19 +62,62 @@
             <li>
                 <rankDef>Seg_COTO_ServitorUnderseer</rankDef>
                 <displayPosition>(7, 1)</displayPosition>
-                <rankRequirements>
+                <rankRequirementsOneAmong>
                     <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
                     <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
-                </rankRequirements>
+                </rankRequirementsOneAmong>
             </li>
             <li>
                 <rankDef>Seg_COTO_FabricatorMinoris</rankDef>
                 <displayPosition>(6, 2)</displayPosition>
-                <rankRequirements>
+                <rankRequirementsOneAmong>
                     <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
                     <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
+                </rankRequirementsOneAmong>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosLogos</rankDef>
+                <displayPosition>(6, 3)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Lexmechanic>20</Seg_COTO_Lexmechanic>
                 </rankRequirements>
             </li>
+            <li>
+                <rankDef>Seg_COTO_MagosGenetor</rankDef>
+                <displayPosition>(6, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosBiologis>15</Seg_COTO_MagosBiologis>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosBiologisextremis</rankDef>
+                <displayPosition>(7, 5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_MagosBiologis>20</Seg_COTO_MagosBiologis>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosExplorator</rankDef>
+                <displayPosition>(6, 5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Explorator>15</Seg_COTO_Explorator>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosMilitant</rankDef>
+                <displayPosition>(6, 6)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_AuxiliusMyrmidon>10</Seg_COTO_AuxiliusMyrmidon>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_Securtor</rankDef>
+                <displayPosition>(6, 7)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_AuxiliusMyrmidon>10</Seg_COTO_AuxiliusMyrmidon>
+                </rankRequirements>
+            </li>
+
 
 
 

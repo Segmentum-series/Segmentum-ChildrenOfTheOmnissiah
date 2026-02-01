@@ -25,7 +25,7 @@ namespace Seg
 
                 if (installed < ImplantsRequired)
                 {
-                    sb.AppendLine($"Requires at least {ImplantsRequired} devotions to the Omnissiah, known also as artificial implants (has {installed}).");
+                    sb.AppendLine($"Requires at least {ImplantsRequired} artificial parts (has {installed}).");
                 }
             }
 
@@ -34,10 +34,6 @@ namespace Seg
 
         public override string BuildRankBonusString(StringBuilder sb)
         {
-            if (ImplantsRequired > 0)
-            {
-                sb.AppendLine($"• Requires {ImplantsRequired} devotions to the Omnissiah to unlock.");
-            }
 
             return base.BuildRankBonusString(sb);
         }
