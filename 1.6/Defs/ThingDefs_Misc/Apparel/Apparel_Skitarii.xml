@@ -126,6 +126,8 @@
 			<MoveSpeed>0.55</MoveSpeed>
 			<ToxicResistance>1.00</ToxicResistance>
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.10</DecompressionResistance>
+      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
@@ -204,6 +206,8 @@
 		<equippedStatOffsets>
 		<ToxicResistance>1.00</ToxicResistance>
 		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+		<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</equippedStatOffsets>
 
 		<costList>
@@ -267,6 +271,8 @@
 			<ArmorRating_Heat>0.65</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
       		<Insulation_Heat>10</Insulation_Heat>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</statBases>
 
 		<costList>
