@@ -1,5 +1,5 @@
     <Defs>
-    <Core40k.RankDef>
+    <Seg.RankDef>
         <defName>Seg_COTO_TechAcolytum</defName>
         <label>Tech Acolytum</label>
         <description>An apprentice in the mysteries of the Machine Cult. Tech Acolyta are treated little better than menials, but may be destined for great things.</description>
@@ -12,8 +12,8 @@
             <GlobalLearningFactor>0.01</GlobalLearningFactor>
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
         </statOffsets>
-    </Core40k.RankDef>
-    <Core40k.RankDef>
+    </Seg.RankDef>
+    <Seg.RankDef>
         <defName>Seg_COTO_AdeptProbatoris</defName>
         <label>Adept Probatoris</label>
         <description>Having graduated beyond the acolyta, the Adept Probatoris is preparing to be ordained as a full tech-adept of the Machine Cult.</description>
@@ -30,8 +30,8 @@
             <ResearchSpeed>0.05</ResearchSpeed>
 
         </statOffsets>
-    </Core40k.RankDef>
-      <Core40k.RankDef>
+    </Seg.RankDef>
+      <Seg.RankDef>
         <defName>Seg_COTO_Enginseer</defName>
         <label>Enginseer</label>
         <description>One of the most commonly seen techpriests among the wider Imperial population, enginseers are skilled at maintaining and repairing the equipment and machinery the Imperium relies on, but are sometimes looked down on as mere tinkerers by more intellectually-minded magi.</description>
@@ -46,7 +46,7 @@
             <li>Seg_COTO_AuxiliusMyrmidon</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Crafting>6</Crafting>
         </requiredSkills>
@@ -59,8 +59,8 @@
 
 
         </statOffsets>
-    </Core40k.RankDef>
-     <Core40k.RankDef>
+    </Seg.RankDef>
+     <Seg.RankDef>
         <defName>Seg_COTO_Transmechanic</defName>
         <label>Transmechanic</label>
         <description>Transmechanics are communications and scanning technology specialists and are frequently seconded to Imperial Navy voidships to operate auspex and vox equipment.</description>
@@ -75,7 +75,7 @@
             <li>Seg_COTO_AuxiliusMyrmidon</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Crafting>4</Crafting>
             <Intellectual>6</Intellectual>
@@ -89,8 +89,8 @@
 
 
         </statOffsets>
-    </Core40k.RankDef>
-     <Core40k.RankDef>
+    </Seg.RankDef>
+     <Seg.RankDef>
         <defName>Seg_COTO_Lexmechanic</defName>
         <label>Lexmechanic</label>
         <description>One of the most numerous branches of the Cult, lexmechanics are analysts, researchers, compilers and administrators who are crucial to the running of any Mechanicus or Imperial facility.</description>
@@ -105,15 +105,13 @@
             <li>Seg_COTO_AuxiliusMyrmidon</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Crafting>6</Crafting>
         </requiredSkills>
-         <!--<modExtensions>
-            <li Class="VEF.Genes.GeneExtension">
-                <skillRecreation>Intellectual</skillRecreation>
-            </li>
-        </modExtensions> -->
+         <recreationFromSkills>
+            <li>Intellectual</li>
+        </recreationFromSkills>
 
         <statOffsets>
 
@@ -122,8 +120,8 @@
             <ReadingSpeed>0.30</ReadingSpeed>
 
         </statOffsets>
-    </Core40k.RankDef>
-     <Core40k.RankDef>
+    </Seg.RankDef>
+     <Seg.RankDef>
         <defName>Seg_COTO_MagosBiologis</defName>
         <label>Magos Biologis</label>
         <description>Expert in the fields of biology, anatomy, and xenofauna, a Magos Biologis has dedicated their life to the study of the organic.</description>
@@ -137,16 +135,23 @@
              <li>Seg_COTO_AuxiliusMyrmidon</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Plants>6</Plants>
             <Animals>3</Animals>
             <Medicine>6</Medicine>
         </requiredSkills>
-         <!-- <passionMod>
-            <skill>Shooting</skill>
-            <modType>AddOneLevel</modType>
-        </passionMod>-->
+         <givesPassions>
+            <li>
+            <skill>Plants</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Animals</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Medicine</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
         <statOffsets>
 
             <MedicalTendQuality>0.1</MedicalTendQuality>
@@ -161,8 +166,8 @@
                 <skillRecreation>Animals</skillRecreation>
             </li>
         </modExtensions> -->
-    </Core40k.RankDef>
-    <Core40k.RankDef>
+    </Seg.RankDef>
+    <Seg.RankDef>
         <defName>Seg_COTO_Explorator</defName>
         <label>Explorator</label>
         <description>The Quest for Knowledge is a core tenet for all priests of the Cult Mechanicus, but Explorators put it into action most practically by setting out to 'recover' undiscovered data, technology, and habitable worlds.</description>
@@ -175,17 +180,12 @@
             <li>Seg_COTO_MagosBiologis</li>
             <li>Seg_COTO_AuxiliusMyrmidon</li>
         </incompatibleRanks>
-        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Melee>4</Melee>
             <Shooting>4</Shooting>
             <Social>4</Social>
         </requiredSkills>
-         <!-- <passionMod>
-            <skill>Shooting</skill>
-            <modType>AddOneLevel</modType>
-        </passionMod>-->
         <statOffsets>
             <GlobalLearningFactor>0.05</GlobalLearningFactor>
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
@@ -198,14 +198,8 @@
 
 
         </statOffsets>
-        <!--<modExtensions>
-            <li Class="VEF.Genes.GeneExtension">
-                <skillRecreation>Plants</skillRecreation>
-                <skillRecreation>Animals</skillRecreation>
-            </li>
-        </modExtensions> -->
-    </Core40k.RankDef>
-    <Core40k.RankDef>
+    </Seg.RankDef>
+    <Seg.RankDef>
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
         <label>Auxilius Myrmidon</label>
         <description>While the Skitarii form the bulk of Mechanicus armies, the Auxilia Myrmidon are the Cult Militant, and a techpriest entering their ranks commits themselves to achieving the goals of the Mechanicus through war.</description>
@@ -218,29 +212,98 @@
             <li>Seg_COTO_MagosBiologis</li>
             <li>Seg_COTO_Explorator</li>
         </incompatibleRanks>
-        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
+        <ImplantsRequired>1</ImplantsRequired>
         <requiredSkills>
             <Melee>4</Melee>
             <Shooting>4</Shooting>
             <Social>4</Social>
         </requiredSkills>
-         <!-- <passionMod>
-            <skill>Shooting</skill>
-            <modType>AddOneLevel</modType>
-        </passionMod>-->
         <statOffsets>
             <MeleeHitChance>0.01</MeleeHitChance>
             <MeleeDodgeChance>0.5</MeleeDodgeChance>
             <ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
+        </statOffsets>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_FabricatorMinoris</defName>
+        <label>Fabricator Minoris</label>
+        <description>A Fabricator Minoris has authority over the manufacturing processes and workforce of significant parts of a forgeplex, carrying out the orders of higher magi but with a good amount of independence.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_ServitorUnderseer</li>
+        </incompatibleRanks>
+        <ImplantsRequired>4</ImplantsRequired>
+
+        <requiredSkills>
+            <Crafting>6</Crafting>
+            <Construction>6</Construction>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+            <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+
             
 
         </statOffsets>
-        <!--<modExtensions>
-            <li Class="VEF.Genes.GeneExtension">
-                <skillRecreation>Plants</skillRecreation>
-                <skillRecreation>Animals</skillRecreation>
-            </li>
-        </modExtensions> -->
-    </Core40k.RankDef>
+        <recreationFromSkills>
+            <li>Crafting</li>
+            <li>Construction</li>
+        </recreationFromSkills>
+        <givesPassions>
+            <li>
+            <skill>Crafting</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_ServitorUnderseer</defName>
+        <label>Servitor Underseer</label>
+        <description>These specialist techpriests are responsible for the maintenance and control of servitors in the field, particularly combat servitors. They are expected to be able to defend themselves if the situation calls for it.</description>
+        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankTier>4</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_FabricatorMinoris</li>
+        </incompatibleRanks>
+       <ImplantsRequired>2</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>6</Crafting>
+            <Intellectual>6</Intellectual>
+            <Shooting>6</Shooting>
+        </requiredSkills>
+        <statOffsets>
+            <HackingSpeed>0.10</HackingSpeed>
+            <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 1</MechBandwidth>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.10</MechRepairSpeed>
+            <ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+
+            
+
+        </statOffsets>
+        <recreationFromSkills>
+            <li>Crafting</li>
+            <li>Construction</li>
+        </recreationFromSkills>
+        <givesPassions>
+            <li>
+            <skill>Crafting</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+
     </Defs>

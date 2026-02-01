@@ -59,6 +59,23 @@
                     <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
                 </rankRequirements>
             </li>
+            <li>
+                <rankDef>Seg_COTO_ServitorUnderseer</rankDef>
+                <displayPosition>(7, 1)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
+                    <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_FabricatorMinoris</rankDef>
+                <displayPosition>(6, 2)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
+                    <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
+                </rankRequirements>
+            </li>
+
 
 
  </ranks>

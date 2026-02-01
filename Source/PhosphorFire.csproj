@@ -21,7 +21,12 @@
    <Reference Include="0Harmony">
     <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
   </Reference>
+ <Reference Include="Core40k">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3267464767\1.6\Assemblies\Core40k.dll</HintPath>
+</Reference>
+
   <Compile Include="Thing_PhosphorFire.cs" />
+  <Compile Include="RanksParts.cs" />
 
   </ItemGroup>
 </Project>
