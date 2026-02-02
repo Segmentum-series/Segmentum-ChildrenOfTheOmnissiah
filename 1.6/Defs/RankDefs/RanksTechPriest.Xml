@@ -664,7 +664,7 @@
         </requiredSkills>
         <statOffsets>
             <MeleeDodgeChance>0.2</MeleeDodgeChance>
-            <AimingDelayFactor>0.05</AimingDelayFactor>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
            
             
 
@@ -718,7 +718,7 @@
         <statOffsets>
             <MeleeDodgeChance>0.5</MeleeDodgeChance>
             <SocialImpact>0.10</SocialImpact>
-            <AimingDelayFactor>0.05</AimingDelayFactor>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
            
             
 
