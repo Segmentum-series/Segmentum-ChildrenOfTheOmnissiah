@@ -13,7 +13,7 @@
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
         </statOffsets>
          <statFactors>
-            <GlobalLearningFactor>.01</GlobalLearningFactor>
+            <GlobalLearningFactor>1.01</GlobalLearningFactor>
         </statFactors>
     </Seg.RankDef>
     <Seg.RankDef>
@@ -34,7 +34,7 @@
 
         </statOffsets>
          <statFactors>
-            <GlobalLearningFactor>.02</GlobalLearningFactor>
+            <GlobalLearningFactor>1.02</GlobalLearningFactor>
         </statFactors>
     </Seg.RankDef>
       <Seg.RankDef>
@@ -127,7 +127,7 @@
 
         </statOffsets>
          <statFactors>
-            <GlobalLearningFactor>.05</GlobalLearningFactor>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
         </statFactors>
     </Seg.RankDef>
      <Seg.RankDef>
@@ -207,7 +207,7 @@
 
         </statOffsets>
         <statFactors>
-            <GlobalLearningFactor>.05</GlobalLearningFactor>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
         </statFactors>
     </Seg.RankDef>
     <Seg.RankDef>
