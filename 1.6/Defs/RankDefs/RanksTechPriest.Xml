@@ -3,7 +3,7 @@
         <defName>Seg_COTO_TechAcolytum</defName>
         <label>Tech Acolytum</label>
         <description>An apprentice in the mysteries of the Machine Cult. Tech Acolyta are treated little better than menials, but may be destined for great things.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_TechAcolytum</rankIconPath>
         <rankTier>1</rankTier>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
     
@@ -20,7 +20,7 @@
         <defName>Seg_COTO_AdeptProbatoris</defName>
         <label>Adept Probatoris</label>
         <description>Having graduated beyond the acolyta, the Adept Probatoris is preparing to be ordained as a full tech-adept of the Machine Cult.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AdeptProbatoris</rankIconPath>
         <rankTier>2</rankTier>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
@@ -41,7 +41,7 @@
         <defName>Seg_COTO_Enginseer</defName>
         <label>Enginseer</label>
         <description>One of the most commonly seen techpriests among the wider Imperial population, enginseers are skilled at maintaining and repairing the equipment and machinery the Imperium relies on, but are sometimes looked down on as mere tinkerers by more intellectually-minded magi.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Enginseer</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Transmechanic</li>
@@ -70,7 +70,7 @@
         <defName>Seg_COTO_Transmechanic</defName>
         <label>Transmechanic</label>
         <description>Transmechanics are communications and scanning technology specialists and are frequently seconded to Imperial Navy voidships to operate auspex and vox equipment.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Transmechanic</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Enginseer</li>
@@ -100,7 +100,7 @@
         <defName>Seg_COTO_Lexmechanic</defName>
         <label>Lexmechanic</label>
         <description>One of the most numerous branches of the Cult, lexmechanics are analysts, researchers, compilers and administrators who are crucial to the running of any Mechanicus or Imperial facility.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Lexmechanic</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Transmechanic</li>
@@ -134,7 +134,7 @@
         <defName>Seg_COTO_MagosBiologis</defName>
         <label>Magos Biologis</label>
         <description>Expert in the fields of biology, anatomy, and xenofauna, a Magos Biologis has dedicated their life to the study of the organic.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologis</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Transmechanic</li>
@@ -180,7 +180,7 @@
         <defName>Seg_COTO_Explorator</defName>
         <label>Explorator</label>
         <description>The Quest for Knowledge is a core tenet for all priests of the Cult Mechanicus, but Explorators put it into action most practically by setting out to 'recover' undiscovered data, technology, and habitable worlds.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Explorator</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Transmechanic</li>
@@ -214,7 +214,7 @@
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
         <label>Auxilius Myrmidon</label>
         <description>While the Skitarii form the bulk of Mechanicus armies, the Auxilia Myrmidon are the Cult Militant, and a techpriest entering their ranks commits themselves to achieving the goals of the Mechanicus through war.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AuxiliusMyrmidon</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_Transmechanic</li>
@@ -244,7 +244,7 @@
         <defName>Seg_COTO_FabricatorMinoris</defName>
         <label>Fabricator Minoris</label>
         <description>A Fabricator Minoris has authority over the manufacturing processes and workforce of significant parts of a forgeplex, carrying out the orders of higher magi but with a good amount of independence.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorMinoris</rankIconPath>
         <rankTier>4</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_ServitorUnderseer</li>
@@ -283,7 +283,7 @@
         <defName>Seg_COTO_ServitorUnderseer</defName>
         <label>Servitor Underseer</label>
         <description>These specialist techpriests are responsible for the maintenance and control of servitors in the field, particularly combat servitors. They are expected to be able to defend themselves if the situation calls for it.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ServitorUnderseer</rankIconPath>
         <rankTier>4</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_FabricatorMinoris</li>
@@ -327,7 +327,7 @@
         <defName>Seg_COTO_MagosLogis</defName>
         <label>Magos Logis</label>
         <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by the wider Cult Mechanicus..</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosLogis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
@@ -358,7 +358,7 @@
         <defName>Seg_COTO_MagosGenetor</defName>
         <label>Magos Genetor</label>
         <description>Genetors are particular experts in all things organic, and often dedicate themselves to gene therapies and other manipulations disdained by other branches who see the machine as primary.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosGenetor</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
         <incompatibleRanks>
@@ -389,7 +389,7 @@
         <defName>Seg_COTO_MagosBiologisextremis</defName>
         <label>Magos Biologis Extremis</label>
         <description>A particular expert on medical matters and surgery, often found serving as the master chirurgeon on a voidship.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
         <incompatibleRanks>
@@ -421,7 +421,7 @@
         <defName>Seg_COTO_MagosExplorator</defName>
         <label>Magos Explorator</label>
         <description>A Magos Explorator has gained great experience and tends to be seen as a pioneering frontier type by other techpriests. Some are known to work on behalf of the Adeptus Administratum to expand the borders of the Imperium.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosExplorator</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
@@ -448,7 +448,7 @@
         <defName>Seg_COTO_MagosMilitant</defName>
         <label>Magos Militant</label>
         <description>A Magos Militant has demonstrated their aptitude in the Omnissiah's arts of war, and may now be trusted to pursue hereteks while remaining steadfast against such temptations.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMilitant</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
         <incompatibleRanks>
@@ -475,7 +475,7 @@
         <defName>Seg_COTO_Securtor</defName>
         <label>Securtor</label>
         <description>Secutors are techpriests who have so dedicated themselves to combat that their very bodies have been modified extensively for that purpose. They condition themselves to meditate while fighting and see battle as a way to worship the Machine God.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Secutor</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>5</ImplantsRequired>
         <incompatibleRanks>
@@ -502,7 +502,7 @@
         <defName>Seg_COTO_MagosMetallurgicus</defName>
         <label>Magos Metallurgicus</label>
         <description>A Magos Metallurgicus is a master of the metallurgical arts, skilled in the creation and modification of metal-based technologies within the Mechanicus.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMetallurgicus</rankIconPath>
         <rankTier>5</rankTier>
         <ImplantsRequired>4</ImplantsRequired>
          <incompatibleRanks>
@@ -528,7 +528,7 @@
         <defName>Seg_COTO_LexicoArcanus</defName>
         <label>Lexico Arcanus</label>
         <description>The highest rank of Logis, the Lexico Arcanus is held in high esteem and is able to process and evaluate situations at an unbelievable rate thanks to mental conditioning and augmetics.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_LexicoArcanus</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
@@ -558,7 +558,7 @@
         <defName>Seg_COTO_Artisan</defName>
         <label>Artisan</label>
         <description>Artisans are master machinists who can direct the population of entire forgeplexes to construct and assemble facilities, voidships, and military equipment that they design - as long as they follow sanctioned STC parameters.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Artisan</rankIconPath>
         <rankTier>6</rankTier>
         <ImplantsRequired>6</ImplantsRequired>
 
@@ -591,7 +591,7 @@
         <label>Archmagos Genetor</label>
         
         <description>Having dedicated their life to the genetor's arts, this techpriest is recognised as an Archmagos and a pre-eminent savant of their field.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosGenetor</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
@@ -625,7 +625,7 @@
         <defName>Seg_COTO_ArchmagosExplorator</defName>
         <label>Explorator Majoris</label>
         <description>Explorators Majoris have the authority to command entire fleets of Mechanicus vessels in the search for technology and knowledge.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ExploratorMajoris</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
@@ -656,7 +656,7 @@
         <defName>Seg_COTO_MagosDominius</defName>
         <label>Magos Dominius</label>
         <description>Any techpriest may take on the title of Magos Dominus temporarily to lead a military campaign or contribute otherwise to the wars of the Mechanicus.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosDominus</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>5</ImplantsRequired>
         <requiredSkills>
@@ -681,7 +681,7 @@
         <defName>Seg_COTO_CyberneticaDatasmith</defName>
         <label>Cybernetica Datasmith</label>
         <description>The mainstay of the Legio Cybernetica, Datasmiths command the robotic forces of the Mechanicus and are often found fighting alongside their charges, believing deeply that these valiant machine spirits must be supported and cared for.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_CyberneticaDatasmith</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
@@ -709,7 +709,7 @@
         <defName>Seg_COTO_ArchmagosDominius</defName>
         <label>Archmagos Dominius</label>
         <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the Machine Cult's armies and navies against the foe, often making use of their other specialisations in devising strategies.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosDominus</rankIconPath>
         <rankTier>7</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
         <requiredSkills>
@@ -735,7 +735,7 @@
         <defName>Seg_COTO_MagosMyrmidax</defName>
         <label>Magos Myrmidax</label>
         <description>These techpriests of war command the Auxilia Myrmidon and modify themselves heavily so that they can dominate the thickest fighting of any battle.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMyrmidax</rankIconPath>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
         <requiredSkills>
@@ -768,7 +768,7 @@
         <defName>Seg_COTO_MagosPrime</defName>
         <label>Magos Prime</label>
         <description>The upper echelons of Mechanicus society are ruled by the Magi Prime, who are certain to have attained their positions through merit and knowledge.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosPrime</rankIconPath>
         <colonyLimitOfRank>(4, 0)</colonyLimitOfRank>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
@@ -794,7 +794,7 @@
         <defName>Seg_COTO_FabricatorLocum</defName>
         <label>Fabricator Locum</label>
         <description>The Fabricator Locum is a deputy for the Fabricator General of a forge world or its equivalent. They are expected to take on the duties of their superior if the Fabricator General is away or indisposed.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorLocum</rankIconPath>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <rankTier>9</rankTier>
        <ImplantsRequired>8</ImplantsRequired>
@@ -816,7 +816,7 @@
         <defName>Seg_COTO_FabricatorGeneral</defName>
         <label>Fabricator General</label>
         <description>The highest ranking techpriest on a forgeworld or its equivalent is the Fabricator General. They wield supreme and unquestioned power and answer only to the Fabricator-General of Mars - and the other High Lords of Terra, in theory.</description>
-        <rankIconPath>UI/Decoration/Icons/MagosRobe/Seg_COTO_Deco_MagosRobe_GearStripe</rankIconPath>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorGeneral</rankIconPath>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
         <rankTier>10</rankTier>
        <ImplantsRequired>10</ImplantsRequired>
