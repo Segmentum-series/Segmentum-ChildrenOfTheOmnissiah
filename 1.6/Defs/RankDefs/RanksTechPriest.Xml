@@ -360,9 +360,6 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosGenetor</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
-        <incompatibleRanks>
-            <li>Seg_COTO_MagosBiologisextremis</li>
-        </incompatibleRanks>
         <requiredSkills>
             <Plants>8</Plants>
             <Animals>5</Animals>
@@ -391,9 +388,6 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
-        <incompatibleRanks>
-            <li>Seg_COTO_MagosGenetor</li>
-        </incompatibleRanks>
         <requiredSkills>
             <Medicine>10</Medicine>
         </requiredSkills>
