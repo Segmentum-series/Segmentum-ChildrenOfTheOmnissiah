@@ -146,7 +146,7 @@
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
-            <Plants>6</Plants>
+            <Plants>5</Plants>
             <Animals>3</Animals>
             <Medicine>6</Medicine>
         </requiredSkills>
@@ -225,9 +225,8 @@
         </incompatibleRanks>
         <ImplantsRequired>1</ImplantsRequired>
         <requiredSkills>
-            <Melee>4</Melee>
-            <Shooting>4</Shooting>
-            <Social>4</Social>
+            <Melee>2</Melee>
+            <Shooting>2</Shooting>
         </requiredSkills>
         <statOffsets>
             
@@ -425,7 +424,7 @@
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
-            <Social>8</Social>
+            <Social>6</Social>
         </requiredSkills>
         <statOffsets>
             <MoveSpeed>0.05</MoveSpeed>
@@ -536,8 +535,8 @@
         </incompatibleRanks>
 
         <requiredSkills>
-            <Intellectual>8</Intellectual>
-            <Social>6</Social>
+            <Intellectual>10</Intellectual>
+            <Social>8</Social>
         </requiredSkills>
         <statOffsets>
             <ResearchSpeed>0.20</ResearchSpeed>
