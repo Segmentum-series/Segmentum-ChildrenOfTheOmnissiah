@@ -113,7 +113,7 @@
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
-            <Crafting>6</Crafting>
+            <Intellectual>6</Intellectual>
         </requiredSkills>
          <recreationFromSkills>
             <li>Intellectual</li>
