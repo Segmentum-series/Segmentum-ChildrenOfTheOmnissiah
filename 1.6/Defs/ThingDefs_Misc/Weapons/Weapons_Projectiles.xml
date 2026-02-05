@@ -17,7 +17,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Transuranic</defName>
-		<label>stubber bullet</label>
+		<label>depleted transuranic slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -32,7 +32,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Galvanic</defName>
-		<label>stubber bullet</label>
+		<label>high-velocity servitor-bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
