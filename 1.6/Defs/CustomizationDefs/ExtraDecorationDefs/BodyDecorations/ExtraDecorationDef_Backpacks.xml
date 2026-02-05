@@ -16,14 +16,24 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</appliesTo>
 		<defaultShowRotation>
+			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
 				<offset>(-0.31, 0, 0.64)</offset>
 			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
 				<offset>(0.31, 0, 0.64)</offset>
@@ -46,14 +56,24 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</appliesTo>
 		<defaultShowRotation>
+			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
 				<offset>(-0.31, 0, 0.64)</offset>
 			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
 				<offset>(0.31, 0, 0.64)</offset>
@@ -76,14 +96,24 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</appliesTo>
 		<defaultShowRotation>
+			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
 				<offset>(-0.31, 0, 0.64)</offset>
 			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
 				<offset>(0.31, 0, 0.64)</offset>
@@ -106,14 +136,24 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</appliesTo>
 		<defaultShowRotation>
+			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
 				<offset>(-0.31, 0, 0.64)</offset>
 			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
 				<offset>(0.31, 0, 0.64)</offset>
