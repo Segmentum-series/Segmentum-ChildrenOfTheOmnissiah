@@ -22,8 +22,7 @@ namespace Seg
             if (ImplantsRequired > 0)
             {
                 int installed = pawn.health.hediffSet.hediffs
-                    .OfType<Hediff_AddedPart>()
-                    .Count();
+                    .Count(h => h is Hediff_AddedPart || h is Hediff_Implant);
 
                 if (installed < ImplantsRequired)
                 {
