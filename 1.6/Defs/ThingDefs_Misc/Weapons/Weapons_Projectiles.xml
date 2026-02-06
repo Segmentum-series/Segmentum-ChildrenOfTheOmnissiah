@@ -41,22 +41,23 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
-		<speed>70</speed>
+		<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>Seg_COTO_Bullet_GalvanicRapid</defName>
-		<label>high-velocity servitor-bullet fragment</label>
+		<defName>Seg_COTO_Bullet_GalvanicSeeker</defName>
+		<label>brain seeker servitor-bullet</label>
 		<description>A smaller, less potent fragment of the high-velocity servitor-bullet, designed for rapid-fire weaponry. While it lacks the full stopping power of its larger counterpart, it still delivers a significant punch and can shred through flesh and light armor with ease.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
-		<speed>90</speed>
+		<speed>460</speed>
 		</projectile>
 		 <recipeMaker>
             <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
@@ -67,10 +68,23 @@
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
-                <effectiveRange>15.9</effectiveRange>
-                <warmupTime>3</warmupTime>
-                <shotsPerBurst>10</shotsPerBurst>
+                <effectiveRange>55.9</effectiveRange>
+                <warmupTime>3.25</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
             </li>
+			<li Class="taranchuk_lasers.LaserProperties">  
+            	<damageTickRate>30</damageTickRate> 
+            	<lifetimeTicks>10</lifetimeTicks> 
+            	<beamWidth>.5</beamWidth> 
+            	<beamWidthDrawScale>2</beamWidthDrawScale>
+            	<sweepRatePerTick>0</sweepRatePerTick>
+            	<maxSweepAngle>0</maxSweepAngle>
+            	<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+            	<debugCells>false</debugCells> 
+            	<textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick> 
+            	<lockOnTarget>true</lockOnTarget>
+        	</li>
+
         </modExtensions>
 	</ThingDef>
 <!-- Arc -->

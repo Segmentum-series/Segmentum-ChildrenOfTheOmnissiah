@@ -1110,8 +1110,8 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.90</AccuracyMedium>
-			<AccuracyLong>0.8</AccuracyLong>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
 			<MarketValue>605</MarketValue>
 		</statBases>
@@ -1122,8 +1122,8 @@
 				<defaultProjectile>Seg_COTO_Bullet_Galvanic</defaultProjectile>
 				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
 				<warmupTime>2</warmupTime>
-				<range>34.9</range>
-				<burstShotCount>3</burstShotCount>
+				<range>44.9</range>
+				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
@@ -1162,15 +1162,15 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!--<comps>
+		<comps>
       		<li Class="Core40k.CompProperties_AmmoChanger">
         <compClass>Core40k.Comp_AmmoChanger</compClass>
         <availableProjectiles>
 		  <li>Seg_COTO_Bullet_Galvanic</li>
-		  <li>Seg_COTO_Bullet_GalvanicRapid</li>
+		  <li>Seg_COTO_Bullet_GalvanicSeeker</li>
 		</availableProjectiles>
 	  	</li>
-		</comps> -->
+		</comps> 
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>
