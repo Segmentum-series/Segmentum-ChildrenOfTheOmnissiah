@@ -1162,6 +1162,15 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
+		<!--<comps>
+      		<li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+		  <li>Seg_COTO_Bullet_Galvanic</li>
+		  <li>Seg_COTO_Bullet_GalvanicRapid</li>
+		</availableProjectiles>
+	  	</li>
+		</comps> -->
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
 			<li></li>

@@ -44,6 +44,35 @@
 		<speed>70</speed>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_GalvanicRapid</defName>
+		<label>high-velocity servitor-bullet fragment</label>
+		<description>A smaller, less potent fragment of the high-velocity servitor-bullet, designed for rapid-fire weaponry. While it lacks the full stopping power of its larger counterpart, it still delivers a significant punch and can shred through flesh and light armor with ease.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		 <recipeMaker>
+            <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+        </recipeMaker>
+		<costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+                <effectiveRange>15.9</effectiveRange>
+                <warmupTime>3</warmupTime>
+                <shotsPerBurst>10</shotsPerBurst>
+            </li>
+        </modExtensions>
+	</ThingDef>
 <!-- Arc -->
 	
 
