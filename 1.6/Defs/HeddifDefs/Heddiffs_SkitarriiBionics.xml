@@ -384,6 +384,71 @@
     <jobString>Removing Skitarrii Armor Plating.</jobString>
     <removesHediff>Seg_COTO_ArmorPlating_Hediff</removesHediff>
   </RecipeDef>
+  <!--Breath of Mars-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_BreathOfMars</defName>
+  <label>Breath of Mars</label>
+  <description>A lung that allows the user to breathe in harsh environments. Contains a canistier of air from the Holy Red Planet itself.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_BreathOfMars_Hediff</defName>
+  <label>The Breath of Mars</label>
+  <labelNoun>a lung</labelNoun>
+  <description>idk some leather bag shit or something</description>
+  <spawnThingOnRemoved>Seg_COTO_BreathOfMars</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <HypoxiaResistance MayRequire="kentington.saveourship2">.5</HypoxiaResistance>
+        <DecompressionResistance MayRequire="kentington.saveourship2">.5</DecompressionResistance>
+        <VacuumResistance MayRequire="ludeon.rimworld.odyssey">.5</VacuumResistance>
+        <ToxicEnvironmentResistance>.5</ToxicEnvironmentResistance>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_BreathOfMars</defName>
+  <label>install Breath of Mars</label>
+  <description>Installs the Breath of Mars.</description>
+  <jobString>Installing Breath of Mars.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_BreathOfMars</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_BreathOfMars</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_BreathOfMars_Hediff</addsHediff>
+</RecipeDef>
 
 
 </Defs>
