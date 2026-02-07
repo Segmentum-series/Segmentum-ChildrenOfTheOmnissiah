@@ -2,7 +2,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SkitariusLeg</defName>
-  <label>Skitarius leg</label>
+  <label>Skitarii leg</label>
   <description>A bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
@@ -70,7 +70,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_VanguardArm</defName>
-  <label>Skitarius Vanguard arm</label>
+  <label>Skitarii Vanguard arm</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
   </recipeMaker>
@@ -162,7 +162,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_RangerArm</defName>
-  <label>Skitarius Ranger arm</label>
+  <label>Skitarii Ranger arm</label>
   <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
     <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
@@ -182,7 +182,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_RangerArm_Hediff</defName>
-  <label>Skitarius Ranger Arm</label>
+  <label>Skitarii Ranger Arm</label>
   <labelNoun>a ranger arm</labelNoun>
   <description>idk some leather bag shit or something</description>
   <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
@@ -252,7 +252,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_EyeLens</defName>
-  <label>Skitarius eye lens</label>
+  <label>Skitarii eye lens</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
   </recipeMaker>
@@ -271,7 +271,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_EyeLens_Hediff</defName>
-  <label>Skitarius Eye Lens</label>
+  <label>Skitarii Eye Lens</label>
   <labelNoun>an eye lens</labelNoun>
   <description>a twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
   <spawnThingOnRemoved>Seg_COTO_EyeLens</spawnThingOnRemoved>
@@ -327,7 +327,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_ArmorPlating</defName>
-  <label>Skitarius armor plating</label>
+  <label>Skitarii armor plating</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
   </recipeMaker>
@@ -347,7 +347,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="ImplantHediffBase">
   <defName>Seg_COTO_ArmorPlating_Hediff</defName>
-  <label>Skitarius Armor Plating</label>
+  <label>Skitarii Armor Plating</label>
   <labelNoun>an armor plating</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
   <description>an armor plating for the Skitarrii</description>
