@@ -1,0 +1,389 @@
+<Defs>
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SkitariusLeg</defName>
+  <label>Skitarius Leg</label>
+  <description>A bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SkitariusLeg_Hediff</defName>
+  <label>Skitarius Leg</label>
+  <labelNoun>a leg</labelNoun>
+  <description>idk some leather bag shit or something</description>
+  <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MoveSpeed>1.5</MoveSpeed>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SkitariusLeg</defName>
+  <label>install Skitarrii Leg</label>
+  <description>Installs a bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <jobString>Installing Skitarrii Leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SkitariusLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SkitariusLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SkitariusLeg_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Vanguard Arm-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_VanguardArm</defName>
+  <label>Skitarius Vanguard Arm</label>
+  <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_VanguardArm_Hediff</defName>
+  <label>Skitarius Vanguard Arm</label>
+  <labelNoun>a vanguard arm</labelNoun>
+  <description>idk some leather bag shit or something</description>
+  <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Shooting</skill>
+                    <offset>6</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>6</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.35</MeleeDodgeChance>
+        <MeleeHitChance>.20</MeleeHitChance>
+        <ShootingSkillOffset>6</ShootingSkillOffset>
+        <MeleeSkillOffset>6</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_VanguardArm</defName>
+  <label>install Skitarrii Vanguard Arm</label>
+  <description>Installs a bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <jobString>Installing Skitarrii Vanguard Arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_VanguardArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_VanguardArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_VanguardArm_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Ranger Arm-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_RangerArm</defName>
+  <label>Skitarius Ranger Arm</label>
+  <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_RangerArm_Hediff</defName>
+  <label>Skitarius Ranger Arm</label>
+  <labelNoun>a ranger arm</labelNoun>
+  <description>idk some leather bag shit or something</description>
+  <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Shooting</skill>
+                    <offset>8</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>4</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingAccuracyPawn>.20</ShootingAccuracyPawn>
+        <ShootingSkillOffset>8</ShootingSkillOffset>
+        <MeleeSkillOffset>4</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_RangerArm</defName>
+  <label>install Skitarrii Ranger Arm</label>
+  <description>Installs a bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <jobString>Installing Skitarrii Ranger Arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_RangerArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_RangerArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_RangerArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Skitarius Eye Lens-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_EyeLens</defName>
+  <label>Skitarius Eye Lens</label>
+  <description>A twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_EyeLens_Hediff</defName>
+  <label>Skitarius Eye Lens</label>
+  <labelNoun>an eye lens</labelNoun>
+  <description>a twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
+  <spawnThingOnRemoved>Seg_COTO_EyeLens</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingAccuracyPawn>.20</ShootingAccuracyPawn>
+       <MeleeHitChance>.20</MeleeHitChance>
+       <MeleeDodgeChance>.20</MeleeDodgeChance>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_EyeLens</defName>
+  <label>install Skitarrii Eye Lens</label>
+  <description>Rip some eyelids.</description>
+  <jobString>doing the worst thing imaginable.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_EyeLens</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_EyeLens</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_EyeLens_Hediff</addsHediff>
+</RecipeDef>
+<!--Skitarius Armor Plating-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_ArmorPlating</defName>
+  <label>Skitarius Armor Plating</label>
+  <description>A bionic armor plating designed for the Skitarrii, providing enhanced protection and durability.</description>
+  <statBases>
+    <MarketValue>2800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_ArmorPlating_Hediff</defName>
+  <label>Skitarius Armor Plating</label>
+  <labelNoun>an armor plating</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>an armor plating for the Skitarrii</description>
+  <spawnThingOnRemoved>Seg_COTO_ArmorPlating</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <IncomingDamageFactor>-0.25</IncomingDamageFactor>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_ArmorPlating</defName>
+  <label>install Skitarrii Armor Plating</label>
+  <description>Installs a bionic armor plating designed for the Skitarrii, providing enhanced protection and durability.</description>
+  <jobString>Installing Skitarrii Armor Plating.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_ArmorPlating</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_ArmorPlating</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_ArmorPlating_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_ArmorPlating</defName>
+    <label>remove Skitarrii Armor Plating</label>
+    <description>Remove Skitarrii Armor Plating.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_ArmorPlating</ThingDef></descriptionHyperlinks>
+    <jobString>Removing Skitarrii Armor Plating.</jobString>
+    <removesHediff>Seg_COTO_ArmorPlating_Hediff</removesHediff>
+  </RecipeDef>
+
+
+</Defs>

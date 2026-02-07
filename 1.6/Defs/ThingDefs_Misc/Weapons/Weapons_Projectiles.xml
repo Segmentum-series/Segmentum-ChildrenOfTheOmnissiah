@@ -49,15 +49,14 @@
 		<label>brain seeker servitor-bullet</label>
 		<description>A smaller, less potent fragment of the high-velocity servitor-bullet, designed for rapid-fire weaponry. While it lacks the full stopping power of its larger counterpart, it still delivers a significant punch and can shred through flesh and light armor with ease.</description>
 		<graphicData>
-			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
+			<texPath>Things/Projectile/Seg_COTO_BrainBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
-		<speed>460</speed>
+		<speed>90</speed>
 		</projectile>
 		 <recipeMaker>
             <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
@@ -65,6 +64,17 @@
 		<costList>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
+		<comps>
+		<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+            	<tickRate>10</tickRate> <!--this changes the rate this updates-->
+            	<lifetimeTicks>30000</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
+            	<delayTurnInTicks>5</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
+            	<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
+            	<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
+            	<effectLifetime>30</effectLifetime> <!--the life of those motes-->
+            	<effectSize>1</effectSize> <!--the size of the motes-->
+				</li>
+		</comps>
         <modExtensions>
             <li Class="Core40k.DefModExtension_AmmoChanger">
                 <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
@@ -72,18 +82,8 @@
                 <warmupTime>3.25</warmupTime>
                 <shotsPerBurst>1</shotsPerBurst>
             </li>
-			<li Class="taranchuk_lasers.LaserProperties">  
-            	<damageTickRate>30</damageTickRate> 
-            	<lifetimeTicks>10</lifetimeTicks> 
-            	<beamWidth>.5</beamWidth> 
-            	<beamWidthDrawScale>2</beamWidthDrawScale>
-            	<sweepRatePerTick>0</sweepRatePerTick>
-            	<maxSweepAngle>0</maxSweepAngle>
-            	<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-            	<debugCells>false</debugCells> 
-            	<textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick> 
-            	<lockOnTarget>true</lockOnTarget>
-        	</li>
+			 	
+
 
         </modExtensions>
 	</ThingDef>
