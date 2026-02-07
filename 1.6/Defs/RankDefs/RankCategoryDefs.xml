@@ -216,6 +216,13 @@
 
                 </rankRequirements>
             </li>
+            <li>
+                <rankDef>Seg_COTO_MagosCybernetica</rankDef>
+                <displayPosition>(10, 1)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_CyberneticaDatasmith>20</Seg_COTO_CyberneticaDatasmith>
+                </rankRequirements>
+            </li>
 
 
      

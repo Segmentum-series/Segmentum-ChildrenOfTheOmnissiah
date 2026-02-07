@@ -397,12 +397,12 @@
             <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 
         </statOffsets>
+        <givesAbilities>
+            <li>Seg_COTO_MBEmergencyAid</li>
+        </givesAbilities>
          <statFactors>
            
         </statFactors>
-         <givesAbilities MayRequire="phonicmas.rimdark.mankindsfinest">
-            <li>BEWH_ApothecaryEmergencyAid</li>
-        </givesAbilities>
         <givesPassions>
              <li>
             <skill>Medicine</skill>
@@ -828,7 +828,32 @@
         </statFactors>
        
     </Seg.RankDef>
+ <Seg.RankDef>
+        <defName>Seg_COTO_MagosCybernetica</defName>
+        <label>Magos Cybernetica</label>
+        <description>If the Datasmiths are the backbone of the Legio, the Magi Cybernetica are its nervous system. Each Magos is a master of their holy craft, overseeing the assembly of countless robots and acting as disciple and mentor both to their martial machine spirits.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosCybernetica</rankIconPath>
+        <rankTier>6</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>12</Crafting>
+            <Intellectual>10</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 2</MechBandwidth>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.30</MechRepairSpeed>
+            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.30</MechFormingSpeed>
+            <HackingSpeed>0.20</HackingSpeed>
+            
 
+            
+
+        </statOffsets>
+         <statFactors>
+            <HackingSpeed>1.5</HackingSpeed>
+        </statFactors>
+    </Seg.RankDef>
 
 
 
