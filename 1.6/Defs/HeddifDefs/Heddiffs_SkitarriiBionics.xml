@@ -2,16 +2,18 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SkitariusLeg</defName>
-  <label>Skitarius Leg</label>
+  <label>Skitarius leg</label>
   <description>A bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
-  
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+  </recipeMaker>
 		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 </ThingDef>
 
@@ -40,7 +42,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_SkitariusLeg</defName>
-  <label>install Skitarrii Leg</label>
+  <label>install Skitarrius leg</label>
   <description>Installs a bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
   <jobString>Installing Skitarrii Leg.</jobString>
   <ingredients>
@@ -68,7 +70,10 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_VanguardArm</defName>
-  <label>Skitarius Vanguard Arm</label>
+  <label>Skitarius Vanguard arm</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+  </recipeMaker>
   <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
@@ -77,7 +82,8 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentSpacer>8</ComponentSpacer>
+      <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
 </ThingDef>
 
@@ -128,7 +134,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_VanguardArm</defName>
-  <label>install Skitarrii Vanguard Arm</label>
+  <label>install Skitarrii Vanguard arm</label>
   <description>Installs a bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
   <jobString>Installing Skitarrii Vanguard Arm.</jobString>
   <ingredients>
@@ -156,8 +162,11 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_RangerArm</defName>
-  <label>Skitarius Ranger Arm</label>
+  <label>Skitarius Ranger arm</label>
   <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+    <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+  </recipeMaker>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -165,7 +174,8 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentSpacer>8</ComponentSpacer>
+      <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
 </ThingDef>
 
@@ -242,7 +252,10 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_EyeLens</defName>
-  <label>Skitarius Eye Lens</label>
+  <label>Skitarius eye lens</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+  </recipeMaker>
   <description>A twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
@@ -314,7 +327,10 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_ArmorPlating</defName>
-  <label>Skitarius Armor Plating</label>
+  <label>Skitarius armor plating</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+  </recipeMaker>
   <description>A bionic armor plating designed for the Skitarrii, providing enhanced protection and durability.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
@@ -322,8 +338,9 @@
   </statBases>
   
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Plasteel>200</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
+      <Seg_Ceramite>250</Seg_Ceramite>
 		</costList>
 </ThingDef>
 
@@ -393,10 +410,13 @@
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+    <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+  </recipeMaker>
   
 		<costList>
-      <Plasteel>20</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
 		</costList>
 </ThingDef>
 
