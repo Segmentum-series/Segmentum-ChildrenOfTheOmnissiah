@@ -1,0 +1,95 @@
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Seg_COTO_CraftingTableChemfuel</defName>
+		<tickerType>Normal</tickerType>
+		<label>mechanicus forge altar (chemfuel powered)</label>
+		<description>A chemfuel powered workbench of the Cult Mechanicus, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<minifiedDef />
+		<thingCategories Inherit="false" />
+		<size>(6,2)</size>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<comps>
+            <li Class="PipeSystem.CompProperties_ResourceTrader">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <consumptionPerTick>1</consumptionPerTick>
+                <idleConsumptionPerTick>0</idleConsumptionPerTick>
+            </li>
+			 <li Class="CompProperties_Refuelable">
+                <fuelCapacity>75.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <initialFuelPercent>1</initialFuelPercent>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Flickable">
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(217,112,33,0)</glowColor>
+            </li>
+        </comps>
+		<graphicData>
+			<texPath>Things/Building/CraftingTableChemfuel/Seg_COTO_CraftingTableChemfuel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(8,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<inspectorTabs>
+		<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Seg_COTO_CultMechanicus</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AllowColoringOfThings">
+				<allowColoringOfApparel>true</allowColoringOfApparel>
+				<allowColoringOfEquipment>true</allowColoringOfEquipment>
+			</li>
+			<li Class="VEF.Buildings.RecipeInheritanceExtension">
+                <inheritRecipesFrom>
+                    <li>Seg_COTO_CraftingTable</li>
+                </inheritRecipesFrom>
+            </li>
+		</modExtensions>
+	</ThingDef>
+    </Defs>
