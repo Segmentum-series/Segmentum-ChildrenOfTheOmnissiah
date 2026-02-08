@@ -3,7 +3,7 @@
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SkitariusLeg</defName>
   <label>Skitarii leg</label>
-  <description>A bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <description>An augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -22,7 +22,7 @@
   <defName>Seg_COTO_SkitariusLeg_Hediff</defName>
   <label>Skitarius Leg</label>
   <labelNoun>a leg</labelNoun>
-  <description>idk some leather bag shit or something</description>
+  <description>An installed augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
@@ -42,9 +42,9 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_SkitariusLeg</defName>
-  <label>install Skitarrius leg</label>
-  <description>Installs a bionic leg designed for the Skitarrii, providing enhanced mobility and durability.</description>
-  <jobString>Installing Skitarrii Leg.</jobString>
+  <label>install Skitarii leg</label>
+  <description>Installs an augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii Leg.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -74,7 +74,7 @@
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
   </recipeMaker>
-  <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <description>An augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -90,9 +90,9 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_VanguardArm_Hediff</defName>
-  <label>Skitarius Vanguard Arm</label>
+  <label>Skitarii Vanguard Arm</label>
   <labelNoun>a vanguard arm</labelNoun>
-  <description>idk some leather bag shit or something</description>
+  <description>An installed augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
@@ -134,9 +134,9 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_VanguardArm</defName>
-  <label>install Skitarrii Vanguard arm</label>
-  <description>Installs a bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
-  <jobString>Installing Skitarrii Vanguard Arm.</jobString>
+  <label>install Skitarii Vanguard arm</label>
+  <description>Installs an augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii Vanguard Arm.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -163,7 +163,7 @@
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_RangerArm</defName>
   <label>Skitarii Ranger arm</label>
-  <description>A bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
+  <description>An augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
     <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
   </recipeMaker>
@@ -184,7 +184,7 @@
   <defName>Seg_COTO_RangerArm_Hediff</defName>
   <label>Skitarii Ranger Arm</label>
   <labelNoun>a ranger arm</labelNoun>
-  <description>idk some leather bag shit or something</description>
+  <description>An installed augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
   <addedPartProps>
@@ -225,9 +225,9 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_RangerArm</defName>
-  <label>install Skitarrii Ranger Arm</label>
-  <description>Installs a bionic arm designed for the Skitarrii, providing enhanced mobility and durability.</description>
-  <jobString>Installing Skitarrii Ranger Arm.</jobString>
+  <label>install Skitarii Ranger Arm</label>
+  <description>Installs an augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii Ranger Arm.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -256,7 +256,7 @@
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
   </recipeMaker>
-  <description>A twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
+  <description>Skitarii are augmetically modified to be maximally effective in combat, and part of that entails trimming unnecessary parts to allow them to perform their duties in the Machine God's service to the fullest. Removal of eyelids and replacing them with high-quality auspex-equipped optical lenses is naturally recommended.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -271,9 +271,9 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_EyeLens_Hediff</defName>
-  <label>Skitarii Eye Lens</label>
+  <label>Skitarii eye lens</label>
   <labelNoun>an eye lens</labelNoun>
-  <description>a twisted and cruel bionic, it removes the eyelid and replaces it with a auspex lens. also functions as a bionic eye.</description>
+  <description>Eyelids have been removed and replaced with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
   <spawnThingOnRemoved>Seg_COTO_EyeLens</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
@@ -300,9 +300,9 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_EyeLens</defName>
-  <label>install Skitarrii Eye Lens</label>
-  <description>Rip some eyelids.</description>
-  <jobString>doing the worst thing imaginable.</jobString>
+  <label>install Skitarii eye lens</label>
+  <description>Remove the eyelids and replace them with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
+  <jobString>removing eyelids and installing optical augmetics.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -327,11 +327,11 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_ArmorPlating</defName>
-  <label>Skitarii armor plating</label>
+  <label>Skitarii armour plating</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
   </recipeMaker>
-  <description>A bionic armor plating designed for the Skitarrii, providing enhanced protection and durability.</description>
+  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -347,10 +347,10 @@
 <!-- HediffDef -->
 <HediffDef ParentName="ImplantHediffBase">
   <defName>Seg_COTO_ArmorPlating_Hediff</defName>
-  <label>Skitarii Armor Plating</label>
-  <labelNoun>an armor plating</labelNoun>
+  <label>Skitarii armour plating</label>
+  <labelNoun>an armour plating implant</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
-  <description>an armor plating for the Skitarrii</description>
+  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
   <spawnThingOnRemoved>Seg_COTO_ArmorPlating</spawnThingOnRemoved>
  
 
@@ -370,8 +370,8 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_ArmorPlating</defName>
-  <label>install Skitarrii Armor Plating</label>
-  <description>Installs a bionic armor plating designed for the Skitarrii, providing enhanced protection and durability.</description>
+  <label>install Skitarii armour plating</label>
+  <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
   <jobString>Installing Skitarrii Armor Plating.</jobString>
   <ingredients>
     <li>
@@ -395,17 +395,17 @@
 </RecipeDef>
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>RemoveSeg_COTO_ArmorPlating</defName>
-    <label>remove Skitarrii Armor Plating</label>
-    <description>Remove Skitarrii Armor Plating.</description>
+    <label>remove Skitarii armour plating</label>
+    <description>Remove Skitarii armour plating.</description>
     <descriptionHyperlinks><ThingDef>Seg_COTO_ArmorPlating</ThingDef></descriptionHyperlinks>
-    <jobString>Removing Skitarrii Armor Plating.</jobString>
+    <jobString>Removing Skitarii armour plating.</jobString>
     <removesHediff>Seg_COTO_ArmorPlating_Hediff</removesHediff>
   </RecipeDef>
   <!--Breath of Mars-->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_BreathOfMars</defName>
   <label>Breath of Mars</label>
-  <description>A lung that allows the user to breathe in harsh environments. Contains a canistier of air from the Holy Red Planet itself.</description>
+  <description>An augmetic lung apparatus that allows the user to breathe in harsh environments. Contains a canister of purified and recyclable air from the Holy Red Planet itself.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
@@ -423,9 +423,9 @@
 
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_BreathOfMars_Hediff</defName>
-  <label>The Breath of Mars</label>
-  <labelNoun>a lung</labelNoun>
-  <description>idk some leather bag shit or something</description>
+  <label>Breath of Mars</label>
+  <labelNoun>an augmetic lung</labelNoun>
+  <description>An installed augmetic lung apparatus that allows the user to breathe in harsh environments. Contains a canister of purified and recyclable air from the Holy Red Planet itself.</description>
   <spawnThingOnRemoved>Seg_COTO_BreathOfMars</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
@@ -448,7 +448,7 @@
   <defName>InstallSeg_COTO_BreathOfMars</defName>
   <label>install Breath of Mars</label>
   <description>Installs the Breath of Mars.</description>
-  <jobString>Installing Breath of Mars.</jobString>
+  <jobString>Installing the Breath of Mars.</jobString>
   <ingredients>
     <li>
       <filter>

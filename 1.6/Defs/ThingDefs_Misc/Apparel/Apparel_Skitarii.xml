@@ -45,7 +45,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiFatigues</defName>
 		<label>skitarii bodysuit</label>
-		<description>A bodysuit utilized in the entire Skitarii range. It's designed to cover only the fleshy bits of the remaining body of the tech-guards, giving a degree of environmental protection, while being adaptable to their ever decreasing biomass.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A bodysuit utilized in the entire Skitarii range. It is designed to cover only the remaining flesh of the tech-guard's bodies, giving a degree of environmental protection while being adaptable to their ever decreasing biomass.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -255,7 +255,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
 		<label>skitarii war plate</label>
-		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are designed to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are intended to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>

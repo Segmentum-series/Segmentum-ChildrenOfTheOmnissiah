@@ -54,7 +54,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_ArcPermacapacitors</defName>
 		<label>arc permacapacitors</label>
-		<description>Be vested with the consecrated rites of arc permacapacitors, channeling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armour, and circuitry alike.</description>
+		<description>Be vested with the consecrated rites of arc permacapacitors, channelling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armour, and circuitry alike.</description>
 		<baseCost>1550</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>16.00</researchViewX>
@@ -168,7 +168,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuardAdvanced</defName>
 		<label>Tech-Guard advanced arsenal</label>
-		<description>Receive advanced schemata data, containing instruction on how to forge advanced Skitarii weaponry.</description>
+		<description>Receive advanced schemata data, containing instruction on how to forge advanced Skitarii weaponry and implants.</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>

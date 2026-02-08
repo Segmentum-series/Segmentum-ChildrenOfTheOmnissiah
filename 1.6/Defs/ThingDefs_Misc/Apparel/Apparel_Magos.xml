@@ -117,7 +117,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_MagosRobes</defName>
 		<label>magos robe</label>
-		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it's not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
@@ -188,7 +188,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_MagosCassock</defName>
 		<label>magos cassock</label>
-		<description>Regular uniforms utilized by the cultists of the Mechanicus. Usually a common sight around priests of forge worlds, higher ranking members may replace it with more distinct apparel, suited for their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>Standard clothing worn by the cultists of the Mechanicus. A common sight among priests of forge worlds, although higher ranking members may replace it with more distinct apparel suited to their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>

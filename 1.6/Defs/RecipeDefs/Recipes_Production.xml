@@ -4,7 +4,7 @@
 	<RecipeDef>
 		<defName>Seg_COTO_Make_CeramiteDevilstrand</defName>
 		<label>make ceramite with devilstrand</label>
-		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
+		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armour applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>1000</workAmount>
 		<workSkill>Crafting</workSkill>
@@ -54,7 +54,7 @@
 	<RecipeDef>
 		<defName>Seg_COTO_Make_CeramiteDevilstrandBulk</defName>
 		<label>make ceramite with devilstrand x4</label>
-		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
+		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armour applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>4000</workAmount>
 		<workSkill>Crafting</workSkill>
@@ -105,7 +105,7 @@
 	<RecipeDef>
 		<defName>Seg_COTO_Make_CeramiteHyperweave</defName>
 		<label>make ceramite with hyperweave</label>
-		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
+		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armour applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>1000</workAmount>
 		<workSkill>Crafting</workSkill>
@@ -155,7 +155,7 @@
 	<RecipeDef>
 		<defName>Seg_COTO_Make_CeramiteHyperweaveBulk</defName>
 		<label>make ceramite with hyperweave x4</label>
-		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armor applications.</description>
+		<description>Mix ceramite, a strong ceramic-metallic hyperalloy used in high-end armour applications.</description>
 		<jobString>manufacturing ceramite.</jobString>
 		<workAmount>4000</workAmount>
 		<workSkill>Crafting</workSkill>
@@ -205,7 +205,7 @@
     <defName>Seg_SmeltNonSmeltable</defName>
     <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
     <label>Scrap armor for hyperweave</label>
-    <description>Use heat and strong electromagnets to break down armor into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
+    <description>Use heat and strong electromagnets to break down armour into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
     <jobString>Smelting Armor.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
