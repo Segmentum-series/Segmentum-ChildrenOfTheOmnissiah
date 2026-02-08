@@ -2,7 +2,7 @@
 <ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CraftingTableHelixien</defName>
 		<label>mechanicus forge altar (gas powered)</label>
-		<description>A gas powered workbench of the Cult Mechanicus, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment.</description>
+		<description>A workbench of the Cult Mechanicus, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment. Uses helixien gas rather than generated Motive Force to power its workings.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -86,7 +86,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CeramiteFurnaceHelixien</defName>
 		<label>ceramite furnace (gas powered)</label>
-		<description>A small foundry, often used in settlements that require a constant but small supply of ceramite.</description>
+		<description>A small foundry, often used in settlements that require a constant but small supply of ceramite. Uses helixien gas rather than generated Motive Force to power its workings.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

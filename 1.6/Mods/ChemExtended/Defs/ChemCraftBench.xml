@@ -4,7 +4,7 @@
 		<defName>Seg_COTO_CraftingTableChemfuel</defName>
 		<tickerType>Normal</tickerType>
 		<label>mechanicus forge altar (chemfuel powered)</label>
-		<description>A chemfuel powered workbench of the Cult Mechanicus, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment.</description>
+		<description>A workbench of the Cult Mechanicus, equipped with advanced tools and monitoring devices for the production and maintenance of advanced equipment. Uses chemfuel rather than generated Motive Force to power its workings.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -96,7 +96,7 @@
 		<defName>Seg_COTO_CeramiteFurnaceChemfuel</defName>
 		<label>ceramite furnace (chemfuel powered)</label>
 		<tickerType>Normal</tickerType>
-		<description>A small foundry, often used in settlements that require a constant but small supply of ceramite.</description>
+		<description>A small foundry, often used in settlements that require a constant but small supply of ceramite. Uses chemfuel rather than generated Motive Force to power its workings.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
