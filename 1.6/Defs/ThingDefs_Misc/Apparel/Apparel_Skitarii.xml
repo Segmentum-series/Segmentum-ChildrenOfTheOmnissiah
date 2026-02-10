@@ -107,6 +107,14 @@
 				<!-- It has no extra decorations -->
 			</li>
 		</comps>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+			<tabDefs>
+				<li>BEWH_ArmorColoring</li>
+				<li>BEWH_ArmorDecoration</li>
+			</tabDefs>
+		</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Skitarii ranger hood -->
@@ -174,11 +182,16 @@
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
-				<tabDefs>
-					<li>BEWH_ExtraDecoration</li>
-				</tabDefs>
 			</li>
 		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
 	</ThingDef>
 	
 	<!-- Skitarii vanguard helmet -->
@@ -244,11 +257,16 @@
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
 				<defaultSecondaryColor>(234,130,56)</defaultSecondaryColor><!-- Adamantium -->
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
-				<tabDefs>
-					<li>BEWH_ExtraDecoration</li>
-				</tabDefs>
 			</li>
 		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<!-- Skitarii war plate -->
@@ -317,11 +335,16 @@
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
-				<tabDefs>
-					<li>BEWH_ExtraDecoration</li>
-				</tabDefs>
 			</li>
 		</comps>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 </Defs>
