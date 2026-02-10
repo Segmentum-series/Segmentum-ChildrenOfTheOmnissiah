@@ -26,13 +26,13 @@
   <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
-    <partEfficiency>1.2</partEfficiency>
+    <partEfficiency>1.15</partEfficiency>
     <betterThanNatural>true</betterThanNatural>
   </addedPartProps>
   <stages>
     <li>
       <statOffsets>
-        <MoveSpeed>1.5</MoveSpeed>
+        <MoveSpeed>0.5</MoveSpeed>
       </statOffsets>
       <painOffset>0.01</painOffset>
     </li>
@@ -122,7 +122,7 @@
       <statOffsets>
         <MeleeDodgeChance>.35</MeleeDodgeChance>
         <MeleeHitChance>.20</MeleeHitChance>
-        <ShootingSkillOffset>6</ShootingSkillOffset>
+        <ShootingSkillOffset>2</ShootingSkillOffset>
         <MeleeSkillOffset>6</MeleeSkillOffset>
 
       </statOffsets>
@@ -197,11 +197,11 @@
             <skills>
                 <li>
                     <skill>Shooting</skill>
-                    <offset>8</offset>
+                    <offset>6</offset>
                 </li>
                 <li>
                     <skill>Melee</skill>
-                    <offset>4</offset>
+                    <offset>2</offset>
                 </li>
             </skills>
         </li>
@@ -213,8 +213,8 @@
     <li>
       <statOffsets>
         <ShootingAccuracyPawn>.20</ShootingAccuracyPawn>
-        <ShootingSkillOffset>8</ShootingSkillOffset>
-        <MeleeSkillOffset>4</MeleeSkillOffset>
+        <ShootingSkillOffset>6</ShootingSkillOffset>
+        <MeleeSkillOffset>2</MeleeSkillOffset>
 
       </statOffsets>
       <painOffset>0.01</painOffset>
