@@ -125,5 +125,14 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
+
+  <RulePackDef>
+    <defName>LeaderTitleMaker_Omnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Magos Prime</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
  
 </Defs>
