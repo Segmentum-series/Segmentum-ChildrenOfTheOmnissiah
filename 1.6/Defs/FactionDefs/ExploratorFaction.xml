@@ -4,7 +4,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>Seg_COTO_HostileMechanicus</defName>
         <label>Mechanicus Explorators</label>
-        <description>A company of the Emperor's finest warriors, the Adeptus Astartes, charged with purging heresy from this backwater rimworld.</description>
+        <description>An expedition of the Adeptus Mechanicus Explorators, who have come to the rimworld to conquer in the name in the Cult of Mars and advance the Quest for Knowledge, searching for lost technology and fragments of the Machine God's wisdom.</description>
 
         <pawnSingular>explorator</pawnSingular>
         <pawnsPlural>explorators</pawnsPlural>
@@ -27,8 +27,8 @@
 
         <factionNameMaker>NamerFactionMechanicusHostile</factionNameMaker>
         <settlementNameMaker>Seg_COTO_NamerSettlementMechanicus</settlementNameMaker>
-        <factionIconPath>UI/Icons/Imperium/Seg_COTO_MechanicusOutpost</factionIconPath>
-        <settlementTexturePath>UI/Icons/Imperium/Seg_COTO_MechanicusOutpost</settlementTexturePath>
+        <factionIconPath>UI/Factions/Seg_COTO_MechanicusOutpost</factionIconPath>
+        <settlementTexturePath>UI/Factions/Seg_COTO_MechanicusOutpost</settlementTexturePath>
 
         <xenotypeSet Inherit="False">
             <xenotypeChances>
@@ -69,9 +69,9 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
         </styles>
         <forcedMemes>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">MachineImmortal</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Omnissian</li>
+            <!--li MayRequire="Ludeon.RimWorld.Ideology">MachineImmortal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li-->
         </forcedMemes>
         <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">false</requiredPreceptsOnly>
 
@@ -115,7 +115,7 @@
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
-                    <Seg_COTO_Myrmidon>5</Seg_COTO_Myrmidon>
+                    <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
                 </options>
             </li>
             <!-- Myrmidon squad -->
@@ -123,7 +123,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>20</commonality>
                 <options>
-                    <Seg_COTO_Myrmidon>5</Seg_COTO_Myrmidon>
+                    <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
                     <!--Seg_COTO_SicarianRuststalker>10</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>10</Seg_COTO_SicarianInfiltrator-->
                 </options>
@@ -135,8 +135,8 @@
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-                    <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator>
-                    <Seg_COTO_Myrmidon>5</Seg_COTO_Myrmidon-->
+                    <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
+                    <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
                 </options>
             </li>
         </pawnGroupMakers>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeGroupDef>
+    <defName>Theist_Abstract</defName>
+    <drawOffset>(0.25, 0)</drawOffset>
+  </MemeGroupDef>
+
+  <MemeDef>
+    <defName>Structure_Omnissian</defName>
+    <label>Omnissian</label>
+    <description>The universe is the Great Work of the Deus Mechanicus, whose greatest creations - humanity - were made with the weaknesses of flesh so that they might strive to achieve machine perfection like the Three-in-One.</description>
+    <category>Structure</category>
+    <groupDef>Theist_Abstract</groupDef>
+    <iconPath>UI/Structures/Seg_COTO_Omnissian</iconPath>
+    <impact>0</impact>
+    <worshipRoomLabel>machine temple</worshipRoomLabel>
+    <deityCount>3</deityCount>
+    <generalRules>
+      <rulesStrings>
+        <li>memeCreed->temple</li>
+        <li>memeCreed->sect</li>
+        <li>memeCreed->cult</li>
+        <li>memeCreed->faith</li>
+        <li>memeHyphenPrefix->theo</li>
+        <li>memeConcept->creation</li>
+        <li>memeConcept->life</li>
+        <li>memeLeaderNoun->Prime Hermeticon</li>
+        <li>memeLeaderAdjective->holy</li>
+        <li>memeLeaderAdjective->divine</li>
+        <li>memeMoralist->Missionarius</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>TheistMyth</def></li>
+        <li><def>TheistFounder</def></li>
+      </patterns>
+      <constants>
+        <li><key>structure_theist</key><value>true</value></li>
+        <li><key>structure_theistAbstract</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Machine Cult</ideoName>
+        <theme>knowledge</theme>
+        <adjective>Omnissian</adjective>
+        <member>Machine Cultist</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+</Defs>
