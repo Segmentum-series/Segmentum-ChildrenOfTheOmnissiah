@@ -82,6 +82,10 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_Taser</li>
+			<li>Seg_COTO_MagosMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -156,6 +160,9 @@
 			<workSkill>Crafting</workSkill>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_MagosMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -246,6 +253,10 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_PowerMelee</li>
+			<li>Seg_COTO_MagosMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -318,6 +329,10 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_Taser</li>
+			<li>Seg_COTO_MagosMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>

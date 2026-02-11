@@ -89,13 +89,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li>ShortShots</li>
-			<li>Gun</li>
-			<li>IndustrialGunAdvanced</li>
+			<li>Seg_COTO_MagosRanged</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
 		-->
@@ -231,11 +229,11 @@
 			<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Arc</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 		-->
@@ -325,11 +323,11 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Arc</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 		-->
@@ -430,11 +428,11 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
 	</ThingDef>
@@ -499,11 +497,11 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
 	</ThingDef>
@@ -628,11 +626,11 @@
 				<Intellectual>10</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Gamma</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedHighTier</li>
 		</tradeTags>-->
 	</ThingDef>
@@ -748,11 +746,11 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Rad</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li></li>
 		</tradeTags>-->
 	</ThingDef>
@@ -823,11 +821,11 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Rad</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li></li>
 		</tradeTags>-->
 	</ThingDef>
@@ -943,11 +941,11 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Plasma</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
 	</ThingDef>
@@ -1081,11 +1079,11 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Transuranic</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
 	</ThingDef>
@@ -1171,11 +1169,11 @@
 		</availableProjectiles>
 	  	</li>
 		</comps> 
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Galvanic</li>
 		</weaponTags>
-		<tradeTags>
+		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>-->
 	</ThingDef>

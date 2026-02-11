@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Human Base -->
+    <PawnKindDef Name="Seg_COTO_MechanicusBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>48</maxGenerationAge>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+    </PawnKindDef>
+
+</Defs>

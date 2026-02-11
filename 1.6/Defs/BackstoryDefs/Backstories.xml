@@ -1113,7 +1113,7 @@
 
 	<BackstoryDef>
 		<slot>Adulthood</slot>
-		<title>artisan</title>
+		<title>lay artisan</title>
 		<defName>SegCOTO_MechanicusArtisan</defName>
 		<titleShort>artisan</titleShort>
 		<baseDesc>While the Cult Mechanicus does not go in for the same ostentatious decoration as the rest of the Imperium, there is still a place in the Omnissiah's design for art. [PAWN_nameDef] was a skilled artisan who was skilled at carving circuit patterns and stamping out cog-and-skull emblems to adorn the halls and ships of the Cult.</baseDesc>
