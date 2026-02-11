@@ -59,7 +59,23 @@
             <li>
                 <nameType>
                     <name>The Machine God</name>
-                    <type>Three-in-One</type>
+                    <type>Prime Architect</type>
+                </nameType>
+                <gender>None</gender>
+                <iconPath>UI/Deities/DeityGeneric</iconPath>
+            </li>
+            <li>
+                <nameType>
+                    <name>The Omnissiah</name>
+                    <type>Machine Incarnate</type>
+                </nameType>
+                <gender>None</gender>
+                <iconPath>UI/Deities/DeityGeneric</iconPath>
+            </li>
+            <li>
+                <nameType>
+                    <name>The Motive Force</name>
+                    <type>Prime Mover</type>
                 </nameType>
                 <gender>None</gender>
                 <iconPath>UI/Deities/DeityGeneric</iconPath>

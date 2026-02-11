@@ -130,7 +130,16 @@
     <defName>LeaderTitleMaker_Omnissian</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_leaderTitle->Magos Prime</li>
+        <li>r_leaderTitle->Prime Hermeticon</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+ 
+  <RulePackDef>
+    <defName>MoralGuideTitleMaker_Omnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_moralguideTitle->Missionarius</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
