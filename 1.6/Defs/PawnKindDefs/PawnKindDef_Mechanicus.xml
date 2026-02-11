@@ -148,8 +148,8 @@
             <li>Violent</li>
         </requiredWorkTags>
         <weaponTags>
-            <li>Seg_COTO_MagosRanged</li>
-			<li>Seg_COTO_MagosMelee</li>
+            <li>Seg_COTO_MagosBasicRanged</li>
+			<li>Seg_COTO_MagosBasicMelee</li>
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>

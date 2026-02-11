@@ -84,7 +84,6 @@
 		</recipeMaker>
 		<weaponTags>
 			<li>Seg_COTO_Taser</li>
-			<li>Seg_COTO_MagosMelee</li>
 		</weaponTags>		
 		<tools>
 			<li>
@@ -161,7 +160,7 @@
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
 		<weaponTags>
-			<li>Seg_COTO_MagosMelee</li>
+			<li>Seg_COTO_MagosBasicMelee</li>
 		</weaponTags>		
 		<tools>
 			<li>
@@ -255,7 +254,7 @@
 		</recipeMaker>
 		<weaponTags>
 			<li>Seg_COTO_PowerMelee</li>
-			<li>Seg_COTO_MagosMelee</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
 		</weaponTags>		
 		<tools>
 			<li>
@@ -331,7 +330,7 @@
 		</recipeMaker>
 		<weaponTags>
 			<li>Seg_COTO_Taser</li>
-			<li>Seg_COTO_MagosMelee</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
 		</weaponTags>		
 		<tools>
 			<li>

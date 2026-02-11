@@ -91,7 +91,7 @@
 		</tools>
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li>Seg_COTO_MagosRanged</li>
+			<li>Seg_COTO_MagosBasicRanged</li>
 		</weaponTags>
 		<!--tradeTags>
 			<li>Seg_COTO_WeaponRangedLowTier</li>
