@@ -181,4 +181,48 @@
         </skills>
     </PawnKindDef>
 
+    <!-- Magos Myrmidon -->
+    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+        <defName>Seg_COTO_MagosMyrmidon</defName>
+        <combatPower>70</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_MagosBasicRanged</li>
+			<li>Seg_COTO_MagosBasicMelee</li>
+            <li>Seg_COTO_MagosAdvancedRanged</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_MechanicusAdept</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~3000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="False">
+            <li>Seg_COTO_Apparel_MagosHood</li>
+            <li>Seg_COTO_Apparel_MagosRobes</li>
+            <li>Seg_COTO_Apparel_MagosCassock</li>
+            <li>Seg_COTO_Apparel_MagosBackpack</li>
+        </apparelRequired>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~10</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
 </Defs>
