@@ -26,8 +26,6 @@
         <li>memeConcept->creation</li>
         <li>memeConcept->life</li>
         <li>memeLeaderNoun->Prime Hermeticon</li>
-        <li>memeLeaderAdjective->holy</li>
-        <li>memeLeaderAdjective->divine</li>
         <li>memeMoralist->Missionarius</li>
       </rulesStrings>
     </generalRules>

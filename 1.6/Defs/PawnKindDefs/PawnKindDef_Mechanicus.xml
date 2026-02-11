@@ -7,7 +7,7 @@
         <initialResistanceRange>15~24</initialResistanceRange>
         <combatPower>20</combatPower>
         <itemQuality>Normal</itemQuality>
-        <apparelRequired Inherit="True">
+        <apparelRequired Inherit="False">
             <li>Seg_COTO_Apparel_SkitariiFatigues</li>
             <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
@@ -55,7 +55,7 @@
 		</backstoryFiltersOverride>
         <weaponMoney>1100~2700</weaponMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
+        <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
         </apparelRequired>
         <skills>
@@ -90,7 +90,7 @@
 		</backstoryFiltersOverride>
         <weaponMoney>1100~2700</weaponMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
+        <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SkitariiRangerHood</li>
         </apparelRequired>
         <skills>
