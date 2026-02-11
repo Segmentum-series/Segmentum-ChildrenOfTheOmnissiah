@@ -48,9 +48,12 @@
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>
-				<categories>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>SegCOTO_SkitariiVanguard</li>
-				</categories>
+				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
         <weaponMoney>1100~2700</weaponMoney>
@@ -83,9 +86,12 @@
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>
-				<categories>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>SegCOTO_SkitariiRanger</li>
-				</categories>
+				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
         <weaponMoney>1100~2700</weaponMoney>
@@ -147,9 +153,12 @@
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>
-				<categories>
-					<li>SegCOTO_Techpriest</li>
-				</categories>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_MechanicusAdept</li>
+				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
         <weaponMoney>1100~2700</weaponMoney>

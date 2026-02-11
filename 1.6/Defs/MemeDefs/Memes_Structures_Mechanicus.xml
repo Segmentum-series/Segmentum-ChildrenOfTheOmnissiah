@@ -22,10 +22,11 @@
         <li>memeCreed->sect</li>
         <li>memeCreed->cult</li>
         <li>memeCreed->faith</li>
-        <li>memeHyphenPrefix->theo</li>
-        <li>memeConcept->creation</li>
-        <li>memeConcept->life</li>
+        <li>memeHyphenPrefix->techno</li>
+        <li>memeConcept->knowledge</li>
+        <li>memeConcept->technology</li>
         <li>memeLeaderNoun->Prime Hermeticon</li>
+        <li>memeLeaderAdjective->divine</li>
         <li>memeMoralist->Missionarius</li>
       </rulesStrings>
     </generalRules>

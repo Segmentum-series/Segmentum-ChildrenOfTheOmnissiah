@@ -58,7 +58,7 @@
         <deityPresets MayRequire="Ludeon.RimWorld.Ideology">
             <li>
                 <nameType>
-                    <name>The Machine God</name>
+                    <name>the Machine God</name>
                     <type>Prime Architect</type>
                 </nameType>
                 <gender>None</gender>
@@ -66,7 +66,7 @@
             </li>
             <li>
                 <nameType>
-                    <name>The Omnissiah</name>
+                    <name>the Omnissiah</name>
                     <type>Machine Incarnate</type>
                 </nameType>
                 <gender>None</gender>
@@ -74,7 +74,7 @@
             </li>
             <li>
                 <nameType>
-                    <name>The Motive Force</name>
+                    <name>the Motive Force</name>
                     <type>Prime Mover</type>
                 </nameType>
                 <gender>None</gender>
