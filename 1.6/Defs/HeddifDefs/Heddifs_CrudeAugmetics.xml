@@ -1,0 +1,908 @@
+<Defs>
+<!--Crude Arm-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeArm</defName>
+  <label>Crude augmetic arm</label>
+  <description>A crude augmetic replacement arm designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeArm_Hediff</defName>
+  <label>Crude augmetic arm</label>
+  <labelNoun>a crude augmeticarm</labelNoun>
+  <description>An installed crude augmetic replacement arm designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeArm</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeArm</defName>
+  <label>install crude augmetic arm</label>
+  <description>Installs a crude augmetic replacement arm designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Arm</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Crude Leg-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeLeg</defName>
+  <label>Crude augmetic leg</label>
+  <description>A crude augmetic replacement leg designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeLeg_Hediff</defName>
+  <label>Crude augmetic leg</label>
+  <labelNoun>a crude augmetic leg</labelNoun>
+  <description>An installed crude augmetic replacement leg designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeLeg</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeLeg</defName>
+  <label>install crude augmetic leg</label>
+  <description>Installs a crude augmetic replacement leg designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeLeg_Hediff</addsHediff>
+</RecipeDef>
+<!--Crude Eye-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeEye</defName>
+  <label>Crude augmetic eye</label>
+  <description>A crude augmetic replacement eye designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeEye_Hediff</defName>
+  <label>Crude augmetic eye</label>
+  <labelNoun>a crude augmetic eye</labelNoun>
+  <description>An installed crude augmetic replacement eye designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeEye</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>.85</partEfficiency>
+    <betterThanNatural>false</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeEye</defName>
+  <label>install crude augmetic eye</label>
+  <description>Installs a crude augmetic replacement eye designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Eye.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeEye</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeEye</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeEye_Hediff</addsHediff>
+</RecipeDef>
+<!--Heart-->
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeHeart</defName>
+  <label>install crude augmetic heart</label>
+  <description>Installs a crude augmetic replacement heart designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Heart.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeHeart</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeHeart</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Heart</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeHeart_Hediff</addsHediff>
+</RecipeDef>
+<!--thingDef-->
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeHeart</defName>
+  <label>Crude augmetic heart</label>
+  <description>A crude augmetic replacement heart designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Leather_Plain>20</Leather_Plain>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeHeart_Hediff</defName>
+  <label>Crude augmetic heart</label>
+  <labelNoun>a crude augmetic heart</labelNoun>
+  <description>An installed crude augmetic replacement heart designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeHeart</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>.85</partEfficiency>
+    <betterThanNatural>false</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!--Crude Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeLung</defName>
+  <label>Crude augmetic lung</label>
+  <description>A crude augmetic replacement lung designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Leather_Plain>20</Leather_Plain>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeLung_Hediff</defName>
+  <label>Crude augmetic lung</label>
+  <labelNoun>a crude augmetic lung</labelNoun>
+  <description>An installed crude augmetic replacement lung designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeLung</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>.85</partEfficiency>
+    <betterThanNatural>false</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeLung</defName>
+  <label>install crude augmetic lung</label>
+  <description>Installs a crude augmetic replacement lung designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Lung.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeLung</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeLung</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeLung_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Crude Spine-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeSpine</defName>
+  <label>Crude augmetic spine</label>
+  <description>A crude augmetic replacement spine designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeSpine_Hediff</defName>
+  <label>Crude augmetic spine</label>
+  <labelNoun>a crude augmetic spine</labelNoun>
+  <description>An installed crude augmetic replacement spine designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeSpine</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeSpine</defName>
+  <label>install crude augmetic spine</label>
+  <description>Installs a crude augmetic replacement spine designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Spine.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeSpine</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeSpine</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Spine</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeSpine_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Crude Jaw-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeJaw</defName>
+  <label>Crude augmetic jaw</label>
+  <description>A crude augmetic replacement jaw designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites Inherit="false">
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeJaw_Hediff</defName>
+  <label>Crude augmetic jaw</label>
+  <labelNoun>a crude augmetic jaw</labelNoun>
+  <description>An installed crude augmetic replacement jaw designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeJaw</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeJaw</defName>
+  <label>install crude augmetic jaw</label>
+  <description>Installs a crude augmetic replacement jaw designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Jaw.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeJaw</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeJaw</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Jaw</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeJaw_Hediff</addsHediff>
+</RecipeDef>
+<!--Crude Hand-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeHand</defName>
+  <label>Crude augmetic hand</label>
+  <description>A crude augmetic replacement hand designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeHand_Hediff</defName>
+  <label>Crude augmetic hand</label>
+  <labelNoun>a crude augmetic hand</labelNoun>
+  <description>An installed crude augmetic replacement hand designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeHand</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeHand</defName>
+  <label>install crude augmetic hand</label>
+  <description>Installs a crude augmetic replacement hand designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Hand.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeHand</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeHand</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Hand</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeHand_Hediff</addsHediff>
+</RecipeDef>
+<!--Crude Foot-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeFoot</defName>
+  <label>Crude augmetic foot</label>
+  <description>A crude augmetic replacement foot designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeFoot_Hediff</defName>
+  <label>Crude augmetic foot</label>
+  <labelNoun>a crude augmetic foot</labelNoun>
+  <description>An installed crude augmetic replacement foot designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeFoot</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeFoot</defName>
+  <label>install crude augmetic foot</label>
+  <description>Installs a crude augmetic replacement foot designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Crude Augmetic Foot.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeFoot</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeFoot</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Foot</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeFoot_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Crude Foot-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_CrudeEar</defName>
+  <label>Vox Receptor</label>
+  <description>A crude augmetic replacement ear designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <recipeMaker>
+<researchPrerequisites>
+    <li>Seg_COTO_CultMechanicus</li>
+    <li>Prosthetics</li>
+</researchPrerequisites>
+
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+    <MarketValue>400</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_CrudeEar_Hediff</defName>
+  <label>Vox Receptor</label>
+  <labelNoun>a vox receptor</labelNoun>
+  <description>An installed crude augmetic replacement ear designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_CrudeEar</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_CrudeEar</defName>
+  <label>install Vox Receptor</label>
+  <description>Installs a crude augmetic replacement ear designed for the Mechanicus when resources are limited. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Vox Receptor.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_CrudeEar</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_CrudeEar</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Ear</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_CrudeEar_Hediff</addsHediff>
+</RecipeDef>
+
+
+
+
+
+
+</Defs>
