@@ -114,7 +114,7 @@
             <!-- Skitarii Patrol -->
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>100</commonality>
+                <commonality>80</commonality>
                 <options>
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
@@ -125,13 +125,14 @@
             <!-- Skitarii/myrmidon force -->
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>30</commonality>
+                <commonality>40</commonality>
                 <options>
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
                     <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
+                    <Seg_COTO_MagosMyrmidon>5</Seg_COTO_MagosMyrmidon>
                 </options>
             </li>
             <!-- Myrmidon squad -->
@@ -140,6 +141,7 @@
                 <commonality>20</commonality>
                 <options>
                     <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
+                    <Seg_COTO_MagosMyrmidon>10</Seg_COTO_MagosMyrmidon>
                     <!--Seg_COTO_SicarianRuststalker>10</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>10</Seg_COTO_SicarianInfiltrator-->
                 </options>
@@ -153,6 +155,7 @@
                     <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
                     <Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
+                    <Seg_COTO_MagosMyrmidon>10</Seg_COTO_MagosMyrmidon>
                 </options>
             </li>
         </pawnGroupMakers>
