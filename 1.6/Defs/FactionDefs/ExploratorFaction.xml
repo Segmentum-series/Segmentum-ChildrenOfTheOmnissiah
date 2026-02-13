@@ -54,7 +54,7 @@
 
         <fixedIdeo MayRequire="Ludeon.RimWorld.Ideology">true</fixedIdeo>
         <ideoName MayRequire="Ludeon.RimWorld.Ideology">Machine Cult</ideoName>
-        <ideoDescription MayRequire="Ludeon.RimWorld.Ideology">The Machine Cult, or Cult Mechanicus, is the state religion of the Adeptus Mechanicus of Mars and its various forge worlds. Ruled by tech-priests who obsess over ancient knowledge and technology, the cult venerates a triune godhead in the form of the Machine God, the Motive Force, and the Omnissiah. The Emperor of Mankind is officially regarded as the physical incarnation of the Omnissiah in the material world.</ideoDescription>
+        <ideoDescription MayRequire="Ludeon.RimWorld.Ideology">The Machine Cult, or Cult Mechanicus, is the state religion of the Adeptus Mechanicus of Mars and its various forge worlds. Ruled by tech-priests who obsess over ancient knowledge and technology, the cult venerates a triune godhead in the form of the Machine God, the Motive Force, and the Omnissiah. The Emperor of Mankind is officially regarded as the physical incarnation of the Omnissiah in the material world.\n\nIt is the duty of all true followers of the Machine God to pursue the Quest for Knowledge and seek to bring about a technological paradise in the material world, following the example of the Omnissiah and the driving Motive Force that is the source of all energy in the universe.</ideoDescription>
         <deityPresets MayRequire="Ludeon.RimWorld.Ideology">
             <li>
                 <nameType>
