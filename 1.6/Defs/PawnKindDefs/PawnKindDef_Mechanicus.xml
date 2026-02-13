@@ -12,6 +12,13 @@
             <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
         </apparelRequired>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+		</techHediffsRequired>
         <inventoryOptions>
             <subOptionsChooseOne>
                 <li>
@@ -61,6 +68,9 @@
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
         </apparelRequired>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>1000~2500</techHediffsMoney>
+		<techHediffsMaxAmount>5</techHediffsMaxAmount>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -99,6 +109,9 @@
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SkitariiRangerHood</li>
         </apparelRequired>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>1000~2500</techHediffsMoney>
+		<techHediffsMaxAmount>5</techHediffsMaxAmount>
         <skills>
             <li>
                 <skill>Shooting</skill>
