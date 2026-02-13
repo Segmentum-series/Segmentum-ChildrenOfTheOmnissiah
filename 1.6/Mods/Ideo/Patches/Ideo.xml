@@ -1,0 +1,20 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="IdeoRole_ResearchSpecialist"]/requiredMemes</xpath>
+    <value>
+      <li>Seg_COTO_MachineImmortal</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+    <value>
+      <li>Seg_COTO_MachineImmortal</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+    <value>
+      <li>Seg_COTO_MachineImmortal</li>
+    </value>
+  </Operation>
+</Patch>
