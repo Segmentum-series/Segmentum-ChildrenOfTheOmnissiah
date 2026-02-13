@@ -12,7 +12,7 @@
     <description>The universe is the Great Work of the Deus Mechanicus, whose greatest creations - humanity - were made with the weaknesses of flesh so that they might strive to achieve machine perfection like the Three-in-One.</description>
     <category>Structure</category>
     <groupDef>Theist_Abstract</groupDef>
-    <iconPath>UI/Structures/Seg_COTO_Omnissian</iconPath>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineB</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>machine temple</worshipRoomLabel>
     <deityCount>3</deityCount>
