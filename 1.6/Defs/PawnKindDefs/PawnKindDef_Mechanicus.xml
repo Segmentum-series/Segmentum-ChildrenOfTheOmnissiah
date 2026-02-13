@@ -76,7 +76,7 @@
     <!-- Skitarii Ranger -->
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiRanger</defName>
-        <combatPower>80</combatPower>
+        <combatPower>100</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -115,7 +115,7 @@
     <PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_TechpriestPawnBase" Abstract="True">
         <initialWillRange>10~18</initialWillRange>
         <initialResistanceRange>10~18</initialResistanceRange>
-        <combatPower>20</combatPower>
+        <combatPower>30</combatPower>
         <itemQuality>Normal</itemQuality>
         <inventoryOptions>
             <subOptionsChooseOne>
@@ -142,7 +142,7 @@
     <!-- Auxilius Myrmidon -->
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
-        <combatPower>40</combatPower>
+        <combatPower>50</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -184,7 +184,7 @@
     <!-- Magos Myrmidon -->
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_MagosMyrmidon</defName>
-        <combatPower>70</combatPower>
+        <combatPower>80</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>

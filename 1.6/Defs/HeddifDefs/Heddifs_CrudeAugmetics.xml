@@ -29,6 +29,9 @@
       <color>(78,59,49)</color>
     </graphicData>
   <statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
@@ -123,6 +126,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<Steel>20</Steel>
@@ -214,6 +220,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<Steel>20</Steel>
@@ -327,6 +336,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<Leather_Plain>20</Leather_Plain>
@@ -391,6 +403,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -482,6 +497,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -572,6 +590,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -662,6 +683,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -752,6 +776,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -843,6 +870,9 @@
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
