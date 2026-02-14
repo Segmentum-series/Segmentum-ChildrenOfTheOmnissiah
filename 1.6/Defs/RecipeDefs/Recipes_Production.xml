@@ -220,7 +220,7 @@
           <categories>
        
         
-        <li>Seg_COTO_Armorskitarrii</li>
+        <li>Seg_COTO_ArmorSkitarii</li>
         <li>ApparelNoble</li>
         </categories>
 		<thingDefs>
@@ -313,7 +313,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <categories>
-        <li>Seg_COTO_ArmorSkitarrii</li>
+        <li>Seg_COTO_ArmorSkitarii</li>
 		<li>ApparelNoble</li>
 
         </categories>
