@@ -22,6 +22,12 @@
 		<apparelColor>(146,12,18)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
+		<techHediffsTags>
+			<li>Seg_COTO_CrudeAugmetics</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>1000~2500</techHediffsMoney>
+		<techHediffsMaxAmount>2</techHediffsMaxAmount>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<backstoryFiltersOverride>
