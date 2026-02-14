@@ -15,9 +15,12 @@
     <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineA</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>machine temple</worshipRoomLabel>
-    <deityCount>2</deityCount>
+    <deityCount>3</deityCount>
+    <deityNameMakerOverride>NamerDeityOmnissian</deityNameMakerOverride>
+    <deityTypeMakerOverride>DeityTypeMakerOmnissian</deityTypeMakerOverride>
     <generalRules>
       <rulesStrings>
+        <li>r_ideoName->Machine Cult</li>
         <li>memeCreed->cult</li>
         <li>memeHyphenPrefix->techno</li>
         <li>memeConcept->knowledge</li>
@@ -27,10 +30,10 @@
         <li>memeMoralist->Missionarius</li>
       </rulesStrings>
     </generalRules>
+    <requireAnyRitualSeat><li>Pew</li></requireAnyRitualSeat>
     <descriptionMaker>
       <patterns>
-        <li><def>TheistMyth</def></li>
-        <li><def>TheistFounder</def></li>
+        <li><def>MachineCultMyth</def></li>
       </patterns>
       <constants>
         <li><key>structure_theist</key><value>true</value></li>
@@ -45,7 +48,14 @@
         <member>Machine Cultist</member>
       </li>
     </symbolPacks>
+    <thingStyleCategories>
+      <li>
+        <category>Techist</category>
+        <priority>4</priority>
+      </li>
+    </thingStyleCategories>
   </MemeDef>
+  
 <MemeDef>
     <defName>Seg_COTO_MachineImmortal</defName>
     <label>Machine Immortal</label>
@@ -103,10 +113,6 @@
         <member>Machine Cultist</member>
       </li>
     </symbolPacks>
-    <preferredWeaponClasses>
-      <noble>Ultratech</noble>
-      <despised>Neolithic</despised>
-    </preferredWeaponClasses>
     <requireOne>
      <li>
         <li>Corpses_DontCare</li>

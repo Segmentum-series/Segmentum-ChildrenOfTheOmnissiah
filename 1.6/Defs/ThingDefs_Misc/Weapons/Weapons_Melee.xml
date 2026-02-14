@@ -213,7 +213,7 @@
 <!-- Power Sword -->
 	<ThingDef ParentName="MeleePowerWeapon_base">
 		<defName>Seg_COTO_MeleeWeapon_PowerSword</defName>
-		<label>martian power sword</label>
+		<label>Martian power sword</label>
 		<description>A high-status melee weapon that has its blade surrounded by a disruptive power field. While it looks like a regular sword, it is capable of slicing through armour and flesh with ease.</description>
 		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
 		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
