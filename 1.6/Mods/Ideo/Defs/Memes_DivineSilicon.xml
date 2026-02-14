@@ -5,7 +5,7 @@
     <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineF</iconPath>
 </IssueDef>
 <PreceptDef>
-    <defName>Seg_COTO_DivineSilicion</defName>
+    <defName>Seg_COTO_DivineSilicon</defName>
     <issue>MachineWorship</issue>
     <label>divine silicon</label>
     <description>Colonists feel spiritually connected to technology and believe that 'machine spirits' animate all machines.</description>
@@ -13,7 +13,7 @@
 
     <comps>
         <li Class="PreceptComp_SituationalThought">
-            <thought>Seg_COTO_DivineSilicion</thought>
+            <thought>Seg_COTO_DivineSilicon</thought>
             <thoughtStageDescriptions>
                 <li>No machinery</li>
                 <li>Little machinery</li>
@@ -24,8 +24,8 @@
     </comps>
 </PreceptDef>
 <ThoughtDef>
-    <defName>Seg_COTO_DivineSilicion</defName>
-    <workerClass>Seg.ThoughtWorker_DivineSilicion</workerClass>
+    <defName>Seg_COTO_DivineSilicon</defName>
+    <workerClass>Seg.ThoughtWorker_DivineSilicion</workerClass> <!-- MUST remain misspelled for now, i need to fix the spelling next time i mess with core C#-->
 
     <stages>
         <li>

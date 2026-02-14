@@ -4,7 +4,7 @@
         <label>Emergency Aid</label>
         <description>Provides emergency treatment to a downed or bedridden pawn, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
         <cooldownTicksRange>5000</cooldownTicksRange>
-        <iconPath>UI/Abilities/BEWH_AbilityApothecaryEAid</iconPath>
+        <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
@@ -34,7 +34,7 @@
             </li>
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>BEWH_ApothecaryStimulantsBuff</hediffDef>
+                <hediffDef>Seg_COTO_MBStimulantsBuff</hediffDef>
                 <replaceExisting>true</replaceExisting>
             </li>
         </comps>
@@ -52,7 +52,7 @@
 		</comps>
 	</HediffDef>
     <HediffDef ParentName="BEWH_StatAlteringHediffDef">
-		<defName>BEWH_ApothecaryStimulantsBuff</defName>
+		<defName>Seg_COTO_MBStimulantsBuff</defName>
 		<label>stimulants</label>
 		<description>This character is under the effects of emergency stimulants that relieve pain and increase healing speed. Their body is temporarily revitalized, reducing fatigue and speeding recovery, but the effects are short-lived and they may need further care.</description>
 		<stages>

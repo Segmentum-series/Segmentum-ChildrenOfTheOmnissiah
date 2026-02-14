@@ -388,7 +388,7 @@
   <defName>InstallSeg_COTO_ArmorPlating</defName>
   <label>install Skitarii armour plating</label>
   <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
-  <jobString>Installing Skitarrii Armor Plating.</jobString>
+  <jobString>Installing skitarii Armor Plating.</jobString>
   <ingredients>
     <li>
       <filter>
