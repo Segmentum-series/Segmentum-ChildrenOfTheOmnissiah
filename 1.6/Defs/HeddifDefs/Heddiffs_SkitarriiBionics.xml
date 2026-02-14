@@ -23,7 +23,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_SkitariusLeg_Hediff</defName>
-  <label>Skitarii Leg</label>
+  <label>Skitarii leg</label>
   <labelNoun>a leg</labelNoun>
   <description>An installed augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
