@@ -57,6 +57,14 @@
 		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+		</techHediffsRequired>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<backstoryFiltersOverride>
@@ -92,6 +100,14 @@
 		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+		</techHediffsRequired>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<backstoryFiltersOverride>

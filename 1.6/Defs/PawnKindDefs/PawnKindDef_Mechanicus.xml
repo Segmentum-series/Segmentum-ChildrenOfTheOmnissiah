@@ -38,6 +38,7 @@
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
+		<humanPregnancyChance>0</humanPregnancyChance>
         <trader>false</trader>
         <isFighter>false</isFighter>
     </PawnKindDef>
@@ -149,6 +150,7 @@
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
+		<humanPregnancyChance>0</humanPregnancyChance>
         <trader>false</trader>
         <isFighter>false</isFighter>
     </PawnKindDef>
