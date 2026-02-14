@@ -18,6 +18,7 @@
 		<techHediffsRequired>
 			<li>Seg_COTO_EyeLens</li>
 			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
 		</techHediffsRequired>
         <inventoryOptions>
             <subOptionsChooseOne>
