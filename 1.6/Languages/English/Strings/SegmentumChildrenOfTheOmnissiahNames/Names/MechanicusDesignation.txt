@@ -42,3 +42,8 @@ Kolix
 Omegus
 Sci
 Psilos
+Aleph
+Beth
+Null
+Gimel
+Daleth

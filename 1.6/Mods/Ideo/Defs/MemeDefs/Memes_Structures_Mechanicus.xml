@@ -49,17 +49,14 @@
 <MemeDef>
     <defName>Seg_COTO_MachineImmortal</defName>
     <label>Machine Immortal</label>
-    <description>Human progress means merging with technology.</description>
+    <description>Human progress entails merging with technology, perfecting the flesh body with sacred machine parts.</description>
     <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineB</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <generalRules>
       <rulesStrings>
-        <li>memeAdjective->omnisiasan</li>
-        <li>memeCreed->temple</li>
-        <li>memeCreed->sect</li>
+        <li>memeAdjective->omnissian</li>
         <li>memeCreed->cult</li>
-        <li>memeCreed->faith</li>
         <li>memeHyphenPrefix->techno</li>
         <li>memeConcept->knowledge</li>
         <li>memeConcept->technology</li>
