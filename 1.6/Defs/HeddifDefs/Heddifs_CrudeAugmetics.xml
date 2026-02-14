@@ -86,7 +86,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_CrudeArm_Hediff</addsHediff>
 </RecipeDef>
