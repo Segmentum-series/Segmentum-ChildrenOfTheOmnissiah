@@ -87,7 +87,7 @@
         <forcedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Omnissian</li>
             <!--li MayRequire="Ludeon.RimWorld.Ideology">MachineImmortal</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li-->
+            <li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li>-->
         </forcedMemes>
         <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">false</requiredPreceptsOnly>
 
@@ -118,7 +118,7 @@
                 <options>
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
-                    <Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
+                    <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
                 </options>
             </li>

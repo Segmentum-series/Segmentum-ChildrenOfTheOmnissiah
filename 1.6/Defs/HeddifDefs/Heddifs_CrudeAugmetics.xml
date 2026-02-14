@@ -29,13 +29,13 @@
       <color>(78,59,49)</color>
     </graphicData>
   <statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
+  
     <MarketValue>400</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
-  
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_CrudeAugmetics</li>
+  </techHediffsTags>
 		<costList>
 			<Steel>20</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>

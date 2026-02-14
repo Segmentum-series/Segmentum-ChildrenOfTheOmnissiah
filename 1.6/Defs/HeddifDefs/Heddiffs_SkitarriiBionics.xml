@@ -74,14 +74,15 @@
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_VanguardArm</defName>
   <label>Skitarii Vanguard arm</label>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
   </recipeMaker>
   <description>An augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </techHediffsTags>
+  
     <MarketValue>2800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
