@@ -160,7 +160,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_VanguardArm_Hediff</addsHediff>
 </RecipeDef>
@@ -254,7 +254,7 @@
     </thingDefs>
   </fixedIngredientFilter>
   <appliedOnFixedBodyParts>
-    <li>Arm</li>
+    <li>Shoulder</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_RangerArm_Hediff</addsHediff>
 </RecipeDef>
