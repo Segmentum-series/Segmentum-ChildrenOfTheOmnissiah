@@ -3,9 +3,6 @@
 
   <RulePackDef>
     <defName>NamerDeityOmnissian</defName>
-    <include>
-      <li>GlobalUtility</li>
-    </include>
     <rulePack>
       <rulesStrings>
         <li>r_deityName->The Machine God</li>
