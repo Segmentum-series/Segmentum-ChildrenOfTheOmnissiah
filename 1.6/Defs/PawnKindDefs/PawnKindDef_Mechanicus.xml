@@ -309,4 +309,55 @@
         </skills>
     </PawnKindDef>
 
+    <!-- Archmagos Dominus -->
+    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+        <defName>Seg_COTO_ArchmagosDominus</defName>
+		<label>Archmagos Dominus</label>
+        <combatPower>150</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_MagosAdvancedRanged</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
+			<li>Seg_COTO_Gamma</li>
+			<li>Seg_COTO_Plasma</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_Techpriest</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>3000~4000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="False">
+            <li>Seg_COTO_Apparel_MagosHood</li>
+            <li>Seg_COTO_Apparel_MagosRobes</li>
+            <li>Seg_COTO_Apparel_MagosCassock</li>
+            <li>Seg_COTO_Apparel_MagosBackpack</li>
+        </apparelRequired>
+		<techHediffsTags>
+			<li>Seg_COTO_StandardAugmetics</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>3000~5000</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~16</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+	
 </Defs>
