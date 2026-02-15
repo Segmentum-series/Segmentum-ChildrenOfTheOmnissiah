@@ -83,7 +83,9 @@
     <rulePack>
       <rulesStrings>
 		<li>r_name(p=6)->[mechanicustowntype] [mechanicustownfamousplace] [mechanicustowncode]</li>
-		<li>r_name(p=6)->[mechanicustownholyname]'s [mechanicustownholynamenoun] [Digit][Digit]-[mechanicustowncode]</li>
+		<li>r_name(p=6)->[mechanicustowntype] [mechanicustowncode]-[mechanicustownplacesuffix]</li>
+		<li>r_name(p=2)->[mechanicustownholyname]'s [mechanicustownholynamenoun] [Digit][Digit]</li>
+		<li>r_name(p=2)->[mechanicustownholyname]'s [mechanicustownholynamenoun] [mechanicustownplacesuffix]</li>
 		<li>r_name(p=4)->[mechanicustowntype] [Digit][Digit][Digit]-[mechanicustowncode]-[Digit]</li>
 		<li>r_name(p=4)->[mechanicustowntype] [mechanicustownfamousplace] [mechanicustownplacesuffix]-[mechanicustowncode]</li>
       </rulesStrings>

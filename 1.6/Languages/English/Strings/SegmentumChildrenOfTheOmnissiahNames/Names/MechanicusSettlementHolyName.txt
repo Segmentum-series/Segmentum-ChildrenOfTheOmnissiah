@@ -3,5 +3,3 @@ Machine God
 Motive Force
 Deus Mechanicus
 Prime Architect
-Fabricator General
-Fabricator Locum
