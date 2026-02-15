@@ -6,7 +6,7 @@
 		<description>A category describing the styles and practices of humankind's tech-adept groups.</description>
 		<pawnNameMaker>Seg_COTO_NamerPersonMechanicusMale</pawnNameMaker>
 		<pawnNameMakerFemale>Seg_COTO_NamerPersonMechanicusFemale</pawnNameMakerFemale>
-		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>	<!-- These makers for ideologies, will require eventual updates -->
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoOmnissian</ideoNameMaker>	<!-- These makers for ideologies, will require eventual updates -->
 		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityOmnissian</deityNameMaker>
 		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerOmnissian</deityTypeMaker>
 		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
