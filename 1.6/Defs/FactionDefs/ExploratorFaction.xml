@@ -89,7 +89,7 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">Seg_COTO_MachineImmortal</li>
             <!--li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li>-->
         </forcedMemes>
-        <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">false</requiredPreceptsOnly>
+        <requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">true</requiredPreceptsOnly>
 
 
         <earliestRaidDays>45</earliestRaidDays>
