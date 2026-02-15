@@ -23,6 +23,8 @@
         <li>r_ideoName->Machine Cult</li>
         <li>memeCreed->cult</li>
         <li>memeHyphenPrefix->techno</li>
+        <li>memeHyphenPrefix->mechani</li>
+        <li>memeAdjective->Mechanican</li>
         <li>memeConcept->knowledge</li>
         <li>memeConcept->technology</li>
         <li>memeLeaderNoun->Prime Hermeticon</li>

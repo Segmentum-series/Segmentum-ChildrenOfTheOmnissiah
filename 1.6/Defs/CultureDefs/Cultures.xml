@@ -9,8 +9,8 @@
 		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoOmnissian</ideoNameMaker>	<!-- These makers for ideologies, will require eventual updates -->
 		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityOmnissian</deityNameMaker>
 		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerOmnissian</deityTypeMaker>
-		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
-		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalOmnissian</festivalNameMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Omnissian</leaderTitleMaker>
 		<allowedPlaceTags>
 			<li>OriginSpacer</li>
 		</allowedPlaceTags>
