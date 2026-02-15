@@ -46,6 +46,7 @@
     <!-- Skitarii Vanguard -->
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiVanguard</defName>
+		<label>Skitarii Vanguard</label>
         <combatPower>80</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
@@ -85,9 +86,61 @@
         </skills>
     </PawnKindDef>
 
+    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+        <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
+		<label>Skitarii Vanguard Alpha</label>
+        <combatPower>120</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_Taser</li>
+			<li>Seg_COTO_Arc</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_SkitariiVanguard</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~2700</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="True">
+            <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+        </apparelRequired>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>2000~3500</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_ArmorPlating</li>
+		</techHediffsRequired>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+	
     <!-- Skitarii Ranger -->
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiRanger</defName>
+		<label>Skitarii Ranger</label>
         <combatPower>100</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
@@ -158,6 +211,7 @@
     <!-- Auxilius Myrmidon -->
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
+		<label>Auxilius Myrmidon</label>
         <combatPower>50</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
@@ -207,6 +261,7 @@
     <!-- Magos Myrmidon -->
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_MagosMyrmidon</defName>
+		<label>Magos Myrmidon</label>
         <combatPower>80</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
