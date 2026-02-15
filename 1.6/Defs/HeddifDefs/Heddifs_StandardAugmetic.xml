@@ -1,0 +1,940 @@
+<Defs>
+<!--Standard Arm-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardArm</defName>
+  <label>Standard augmetic arm</label>
+  <description>An augmetic replacement arm which is more far capable than the baseline limb.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardArm_Hediff</defName>
+  <label>Standard augmetic arm</label>
+  <labelNoun>a standard augmeticarm</labelNoun>
+  <description>An installed augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardArm</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardArm</defName>
+  <label>install standard augmetic arm</label>
+  <description>Installs an augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Leg-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardLeg</defName>
+  <label>Standard augmetic leg</label>
+  <description>An augmetic replacement leg which is more far capable than the baseline limb.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLeg_Hediff</defName>
+  <label>Standard augmetic leg</label>
+  <labelNoun>a standard augmeticleg</labelNoun>
+  <description>An installed augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLeg</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLeg</defName>
+  <label>install standard augmetic leg</label>
+  <description>Installs an augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLeg_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Eye-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardEye</defName>
+  <label>Standard augmetic eye</label>
+  <description>An augmetic replacement eye which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardEye_Hediff</defName>
+  <label>Standard augmetic eye</label>
+  <labelNoun>a standard augmeticeye</labelNoun>
+  <description>An installed augmetic replacement eye which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardEye</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardEye</defName>
+  <label>install standard augmetic eye</label>
+  <description>Installs an augmetic replacement eye which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic eye.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardEye</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardEye</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardEye_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Heart-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardHeart</defName>
+  <label>Standard augmetic heart</label>
+  <description>An augmetic replacement heart which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardHeart_Hediff</defName>
+  <label>Standard augmetic heart</label>
+  <labelNoun>a standard augmeticheart</labelNoun>
+  <description>An installed augmetic replacement heart which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardHeart</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardHeart</defName>
+  <label>install standard augmetic heart</label>
+  <description>Installs an augmetic replacement heart which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic heart.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardHeart</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardHeart</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Heart</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardHeart_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardLung</defName>
+  <label>Standard augmetic lung</label>
+  <description>An augmetic replacement lung which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLung_Hediff</defName>
+  <label>Standard augmetic lung</label>
+  <labelNoun>a standard augmeticlung</labelNoun>
+  <description>An installed augmetic replacement lung which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLung</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLung</defName>
+  <label>install standard augmetic lung</label>
+  <description>Installs an augmetic replacement lung which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic lung.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLung</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLung</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLung_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Spine-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardSpine</defName>
+  <label>Standard augmetic spine</label>
+  <description>An augmetic replacement spine which is more far capable than the baseline structure.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardSpine_Hediff</defName>
+  <label>Standard augmetic spine</label>
+  <labelNoun>a standard augmeticspine</labelNoun>
+  <description>An installed augmetic replacement spine which is more capable than the baseline structure but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardSpine</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.02</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardSpine</defName>
+  <label>install standard augmetic spine</label>
+  <description>Installs an augmetic replacement spine which is more capable than the baseline structure but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic spine.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardSpine</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardSpine</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Spine</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardSpine_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Liver-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardLiver</defName>
+  <label>standard augmetic liver</label>
+  <description>An augmetic replacement liver which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLiver_Hediff</defName>
+  <label>Standard augmetic liver</label>
+  <labelNoun>a standard augmeticliver</labelNoun>
+  <description>An installed augmetic replacement liver which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLiver</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLiver</defName>
+  <label>install standard augmetic liver</label>
+  <description>Installs an augmetic replacement liver which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic liver.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLiver</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLiver</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Liver</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLiver_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardKidney</defName>
+  <label>Standard augmetic kidney</label>
+  <description>An augmetic replacement kidney which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardKidney_Hediff</defName>
+  <label>Standard augmetic kidney</label>
+  <labelNoun>a standard augmetickidney</labelNoun>
+  <description>An installed augmetic replacement kidney which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardKidney</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardKidney</defName>
+  <label>install standard augmetic kidney</label>
+  <description>Installs an augmetic replacement kidney which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic kidney.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardKidney</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardKidney</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Kidney</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardKidney_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Jaw-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardJaw</defName>
+  <label>Standard augmetic jaw</label>
+  <description>An augmetic replacement jaw which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardJaw_Hediff</defName>
+  <label>Standard augmetic jaw</label>
+  <labelNoun>a standard augmeticjaw</labelNoun>
+  <description>An installed augmetic replacement jaw which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardJaw</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardJaw</defName>
+  <label>install standard augmetic jaw</label>
+  <description>Installs an augmetic replacement jaw which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic jaw.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardJaw</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardJaw</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Jaw</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardJaw_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard ear-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_StandardEar</defName>
+  <label>Improved vox receptor</label>
+  <description>An augmetic replacement ear which is more far capable than the baseline organ.</description>
+  <recipeMaker>
+<researchPrerequisite>
+ <li>Seg_COTO_TrueFlesh</li>
+</researchPrerequisite>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardEar_Hediff</defName>
+  <label>Improved vox receptor</label>
+  <labelNoun>an improved vox receptor</labelNoun>
+  <description>An installed augmetic replacement ear which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardEar</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardEar</defName>
+  <label>install standard augmetic ear</label>
+  <description>Installs an augmetic replacement ear which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic ear.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardEar</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardEar</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Ear</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardEar_Hediff</addsHediff>
+</RecipeDef>
+
+
+
+</Defs>

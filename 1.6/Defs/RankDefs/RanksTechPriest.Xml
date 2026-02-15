@@ -397,9 +397,9 @@
             <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
 
         </statOffsets>
-        <givesAbilities>
+        <!--<givesAbilities>
             <li>Seg_COTO_MBEmergencyAid</li>
-        </givesAbilities>
+        </givesAbilities>-->
          <statFactors>
            
         </statFactors>
