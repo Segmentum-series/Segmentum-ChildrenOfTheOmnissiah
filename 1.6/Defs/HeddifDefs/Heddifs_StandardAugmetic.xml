@@ -757,7 +757,6 @@
   <defName>Seg_COTO_StandardJaw</defName>
   <label>Standard augmetic jaw</label>
   <description>An augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
-  </description>
   <recipeMaker>
 <researchPrerequisite>
  <li>Seg_COTO_TrueFlesh</li>
