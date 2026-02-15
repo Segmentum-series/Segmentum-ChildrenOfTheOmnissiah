@@ -97,8 +97,8 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_VanguardArm_Hediff</defName>
-  <label>Skitarii Vanguard Arm</label>
-  <labelNoun>a vanguard arm</labelNoun>
+  <label>Skitarii Vanguard arm</label>
+  <labelNoun>a Vanguard arm</labelNoun>
   <description>An installed augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
@@ -143,7 +143,7 @@
   <defName>InstallSeg_COTO_VanguardArm</defName>
   <label>install Skitarii Vanguard arm</label>
   <description>Installs an augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
-  <jobString>Installing Skitarii Vanguard Arm.</jobString>
+  <jobString>Installing Skitarii Vanguard arm.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -192,8 +192,8 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_RangerArm_Hediff</defName>
-  <label>Skitarii Ranger Arm</label>
-  <labelNoun>a ranger arm</labelNoun>
+  <label>Skitarii Ranger arm</label>
+  <labelNoun>a Ranger arm</labelNoun>
   <description>An installed augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
@@ -235,9 +235,9 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_RangerArm</defName>
-  <label>install Skitarii Ranger Arm</label>
+  <label>install Skitarii Ranger arm</label>
   <description>Installs an augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
-  <jobString>Installing Skitarii Ranger Arm.</jobString>
+  <jobString>Installing Skitarii Ranger arm.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -364,7 +364,7 @@
 <HediffDef ParentName="ImplantHediffBase">
   <defName>Seg_COTO_ArmorPlating_Hediff</defName>
   <label>Skitarii armour plating</label>
-  <labelNoun>an armour plating implant</labelNoun>
+  <labelNoun>a set of armour plating implants</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
   <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
   <spawnThingOnRemoved>Seg_COTO_ArmorPlating</spawnThingOnRemoved>
@@ -388,7 +388,7 @@
   <defName>InstallSeg_COTO_ArmorPlating</defName>
   <label>install Skitarii armour plating</label>
   <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
-  <jobString>Installing skitarii Armor Plating.</jobString>
+  <jobString>Installing skitarii armour plating.</jobString>
   <ingredients>
     <li>
       <filter>
