@@ -4,7 +4,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>Seg_COTO_HostileMechanicus</defName>
         <label>Mechanicus Explorators</label>
-        <description>An expedition of the Adeptus Mechanicus Explorators, who have come to the rimworld to conquer in the name in the Cult of Mars and advance the Quest for Knowledge, searching for lost technology and fragments of the Machine God's wisdom.</description>
+        <description>An expedition of the Adeptus Mechanicus Explorators, who have come to the rimworld to conquer in the name in the Cult of Mars and advance the Quest for Knowledge, searching for lost technology and fragments of the Machine God's wisdom.\n\nThese Explorators are so committed to their assignment that they will not hesitate to deal violence on anyone they regard as obstacles to their search - or, Omnissiah forbid, competitors.</description>
 
         <pawnSingular>explorator</pawnSingular>
         <pawnsPlural>explorators</pawnsPlural>
