@@ -491,7 +491,7 @@
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardSpine</defName>
   <label>standard augmetic spine</label>
-  <description>An augmetic replacement spine. Quite a bit more resilient and efficient than the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+  <description>An augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
  <li>Seg_COTO_TrueFlesh</li>
@@ -522,6 +522,7 @@
 		<costList>
 			<Steel>80</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
             <Plasteel>20</Plasteel>
 		</costList>
 </ThingDef>
@@ -531,12 +532,12 @@
   <defName>Seg_COTO_StandardSpine_Hediff</defName>
   <label>standard augmetic spine</label>
   <labelNoun>a standard augmetic spine</labelNoun>
-  <description>An installed augmetic replacement spine. Quite a bit more resilient and efficient than the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+  <description>An installed augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardSpine</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
   <addedPartProps>
     <solid>true</solid>
-    <partEfficiency>1.15</partEfficiency>
+    <partEfficiency>1.00</partEfficiency>
     <betterThanNatural>true</betterThanNatural>
   </addedPartProps>
 
@@ -555,7 +556,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_StandardSpine</defName>
   <label>install standard augmetic spine</label>
-  <description>Installs an augmetic replacement spine. Quite a bit more resilient and efficient than the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+  <description>Installs an augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
   <jobString>Installing standard augmetic spine.</jobString>
   <ingredients>
     <li>

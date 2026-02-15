@@ -489,7 +489,7 @@
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeSpine</defName>
   <label>crude augmetic spine</label>
-  <description>An augmetic replacement spine. More resilient and efficient than the baseline body part, but is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
+  <description>An augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
     <li>Seg_COTO_CultMechanicus</li>
@@ -529,12 +529,12 @@
   <defName>Seg_COTO_CrudeSpine_Hediff</defName>
   <label>crude augmetic spine</label>
   <labelNoun>a crude augmetic spine</labelNoun>
-  <description>An installed augmetic replacement spine. More resilient and efficient than the baseline body part, but is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
+  <description>An installed augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeSpine</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
   <addedPartProps>
     <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
+    <partEfficiency>0.90</partEfficiency>
     <betterThanNatural>true</betterThanNatural>
   </addedPartProps>
 
@@ -552,7 +552,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_CrudeSpine</defName>
   <label>install crude augmetic spine</label>
-  <description>Installs an augmetic replacement spine. More resilient and efficient than the baseline body part, but is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
+  <description>Installs an augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
   <jobString>Installing crude augmetic spine.</jobString>
   <ingredients>
     <li>
