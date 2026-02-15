@@ -6,7 +6,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardArm</defName>
-  <label>Standard augmetic arm</label>
+  <label>standard augmetic arm</label>
   <description>An augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -44,7 +44,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardArm_Hediff</defName>
-  <label>Standard augmetic arm</label>
+  <label>standard augmetic arm</label>
   <labelNoun>a standard augmetic arm</labelNoun>
   <description>An installed augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardArm</spawnThingOnRemoved>
@@ -99,7 +99,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardLeg</defName>
-  <label>Standard augmetic leg</label>
+  <label>standard augmetic leg</label>
   <description>An augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -137,7 +137,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLeg_Hediff</defName>
-  <label>Standard augmetic leg</label>
+  <label>standard augmetic leg</label>
   <labelNoun>a standard augmetic leg</labelNoun>
   <description>An installed augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLeg</spawnThingOnRemoved>
@@ -192,7 +192,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardEye</defName>
-  <label>Standard augmetic eye</label>
+  <label>standard augmetic eye</label>
   <description>An augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -230,7 +230,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardEye_Hediff</defName>
-  <label>Standard augmetic eye</label>
+  <label>standard augmetic eye</label>
   <labelNoun>a standard augmetic eye</labelNoun>
   <description>An installed augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardEye</spawnThingOnRemoved>
@@ -302,7 +302,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardHeart</defName>
-  <label>Standard augmetic heart</label>
+  <label>standard augmetic heart</label>
   <description>An augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -340,7 +340,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardHeart_Hediff</defName>
-  <label>Standard augmetic heart</label>
+  <label>standard augmetic heart</label>
   <labelNoun>a standard augmetic heart</labelNoun>
   <description>An installed augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardHeart</spawnThingOnRemoved>
@@ -396,7 +396,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardLung</defName>
-  <label>Standard augmetic lung</label>
+  <label>standard augmetic lung</label>
   <description>An augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -434,7 +434,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLung_Hediff</defName>
-  <label>Standard augmetic lung</label>
+  <label>standard augmetic lung</label>
   <labelNoun>a standard augmetic lung</labelNoun>
   <description>An installed augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLung</spawnThingOnRemoved>
@@ -490,7 +490,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardSpine</defName>
-  <label>Standard augmetic spine</label>
+  <label>standard augmetic spine</label>
   <description>An augmetic replacement spine. Quite a bit more resilient and efficient than the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -529,7 +529,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardSpine_Hediff</defName>
-  <label>Standard augmetic spine</label>
+  <label>standard augmetic spine</label>
   <labelNoun>a standard augmetic spine</labelNoun>
   <description>An installed augmetic replacement spine. Quite a bit more resilient and efficient than the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardSpine</spawnThingOnRemoved>
@@ -546,7 +546,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.02</painOffset>
+      <painOffset>0.01</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -623,7 +623,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLiver_Hediff</defName>
-  <label>Standard augmetic liver</label>
+  <label>standard augmetic liver</label>
   <labelNoun>a standard augmetic liver</labelNoun>
   <description>An installed augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Quite a bit more efficient and resilient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLiver</spawnThingOnRemoved>
@@ -679,7 +679,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardKidney</defName>
-  <label>Standard augmetic kidney</label>
+  <label>standard augmetic kidney</label>
   <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -717,7 +717,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardKidney_Hediff</defName>
-  <label>Standard augmetic kidney</label>
+  <label>standard augmetic kidney</label>
   <labelNoun>a standard augmetic kidney</labelNoun>
   <description>An installed augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardKidney</spawnThingOnRemoved>
@@ -772,7 +772,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardJaw</defName>
-  <label>Standard augmetic jaw</label>
+  <label>standard augmetic jaw</label>
   <description>An augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -802,15 +802,15 @@
       <li>Seg_COTO_StandardAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>40</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardJaw_Hediff</defName>
-  <label>Standard augmetic jaw</label>
+  <label>standard augmetic jaw</label>
   <labelNoun>a standard augmetic jaw</labelNoun>
   <description>An installed augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardJaw</spawnThingOnRemoved>
@@ -865,7 +865,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_StandardEar</defName>
-  <label>Improved vox receptor</label>
+  <label>improved vox receptor</label>
   <description>An augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
   <recipeMaker>
 <researchPrerequisite>
@@ -895,15 +895,15 @@
       <li>Seg_COTO_StandardAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardEar_Hediff</defName>
-  <label>Improved vox receptor</label>
+  <label>improved vox receptor</label>
   <labelNoun>an improved vox receptor</labelNoun>
   <description>An installed augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardEar</spawnThingOnRemoved>

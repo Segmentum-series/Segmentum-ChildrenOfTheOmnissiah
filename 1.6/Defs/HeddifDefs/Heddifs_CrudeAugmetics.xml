@@ -37,8 +37,8 @@
       <li>Seg_COTO_CrudeAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
@@ -62,7 +62,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -131,8 +131,8 @@
   </techHediffsTags>
   
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
@@ -156,7 +156,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -250,7 +250,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
   <renderNodeProperties>
@@ -383,7 +383,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -450,7 +450,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -519,7 +519,7 @@
   </techHediffsTags>
   
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
             <Steel>40</Steel>
 		</costList>
 </ThingDef>
@@ -544,7 +544,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -613,7 +613,7 @@
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>40</Steel>
+            <Steel>20</Steel>
 		</costList>
 </ThingDef>
 
@@ -637,7 +637,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -706,7 +706,7 @@
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>40</Steel>
+            <Steel>20</Steel>
 		</costList>
 </ThingDef>
 
@@ -730,7 +730,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -799,7 +799,7 @@
   
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>40</Steel>
+            <Steel>20</Steel>
 		</costList>
 </ThingDef>
 
@@ -823,7 +823,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -892,8 +892,8 @@
   </techHediffsTags>
   
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>40</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>20</Steel>
 		</costList>
 </ThingDef>
 
@@ -916,7 +916,7 @@
     <li>
       <statOffsets>
       </statOffsets>
-      <painOffset>0.01</painOffset>
+      <painOffset>0.02</painOffset>
     </li>
   </stages>
 </HediffDef>
