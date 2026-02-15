@@ -45,7 +45,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardArm_Hediff</defName>
   <label>Standard augmetic arm</label>
-  <labelNoun>a standard augmeticarm</labelNoun>
+  <labelNoun>a standard augmetic arm</labelNoun>
   <description>An installed augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardArm</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -138,7 +138,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLeg_Hediff</defName>
   <label>Standard augmetic leg</label>
-  <labelNoun>a standard augmeticleg</labelNoun>
+  <labelNoun>a standard augmetic leg</labelNoun>
   <description>An installed augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLeg</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -231,7 +231,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardEye_Hediff</defName>
   <label>Standard augmetic eye</label>
-  <labelNoun>a standard augmeticeye</labelNoun>
+  <labelNoun>a standard augmetic eye</labelNoun>
   <description>An installed augmetic replacement eye which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardEye</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -324,7 +324,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardHeart_Hediff</defName>
   <label>Standard augmetic heart</label>
-  <labelNoun>a standard augmeticheart</labelNoun>
+  <labelNoun>a standard augmetic heart</labelNoun>
   <description>An installed augmetic replacement heart which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardHeart</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -418,7 +418,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLung_Hediff</defName>
   <label>Standard augmetic lung</label>
-  <labelNoun>a standard augmeticlung</labelNoun>
+  <labelNoun>a standard augmetic lung</labelNoun>
   <description>An installed augmetic replacement lung which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLung</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -513,7 +513,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardSpine_Hediff</defName>
   <label>Standard augmetic spine</label>
-  <labelNoun>a standard augmeticspine</labelNoun>
+  <labelNoun>a standard augmetic spine</labelNoun>
   <description>An installed augmetic replacement spine which is more capable than the baseline structure but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardSpine</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -607,7 +607,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardLiver_Hediff</defName>
   <label>Standard augmetic liver</label>
-  <labelNoun>a standard augmeticliver</labelNoun>
+  <labelNoun>a standard augmetic liver</labelNoun>
   <description>An installed augmetic replacement liver which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardLiver</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -701,7 +701,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardKidney_Hediff</defName>
   <label>Standard augmetic kidney</label>
-  <labelNoun>a standard augmetickidney</labelNoun>
+  <labelNoun>a standard augmetic kidney</labelNoun>
   <description>An installed augmetic replacement kidney which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardKidney</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
@@ -794,7 +794,7 @@
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardJaw_Hediff</defName>
   <label>Standard augmetic jaw</label>
-  <labelNoun>a standard augmeticjaw</labelNoun>
+  <labelNoun>a standard augmetic jaw</labelNoun>
   <description>An installed augmetic replacement jaw which is more capable than the baseline organ but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_StandardJaw</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
