@@ -119,6 +119,7 @@
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
+                    <Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
                     <!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
                 </options>
@@ -131,6 +132,7 @@
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
+                    <Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
                     <!--Seg_COTO_SkitariiMarshal>5</Seg_COTO_SkitariiMarshal>
                     <Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
@@ -158,6 +160,7 @@
                     <Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
                     <Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
                     <Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
+                    <Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
                     <!--Seg_COTO_SkitariiMarshal>5</Seg_COTO_SkitariiMarshal>
                     <Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
                     <Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->

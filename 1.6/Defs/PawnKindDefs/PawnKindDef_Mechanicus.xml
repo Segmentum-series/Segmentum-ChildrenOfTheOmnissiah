@@ -109,7 +109,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~2700</weaponMoney>
+        <weaponMoney>2000~3700</weaponMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
@@ -175,6 +175,59 @@
             <li>
                 <skill>Melee</skill>
                 <range>4~6</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+        <defName>Seg_COTO_SkitariiRangerAlpha</defName>
+		<label>Skitarii Ranger Alpha</label>
+        <combatPower>140</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_Galvanic</li>
+            <li>Seg_COTO_Transuranic</li>
+			<li>Seg_COTO_Taser</li>
+			<li>Seg_COTO_Gamma</li>
+			<li>Seg_COTO_Phosphor</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_SkitariiRanger</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~3700</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="True">
+            <li>Seg_COTO_Apparel_SkitariiRangerHood</li>
+        </apparelRequired>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>2000~3500</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_RangerArm</li>
+			<li>Seg_COTO_RangerArm</li>
+			<li>Seg_COTO_ArmorPlating</li>
+		</techHediffsRequired>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~16</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>6~10</range>
             </li>
         </skills>
     </PawnKindDef>
@@ -313,7 +366,7 @@
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_ArchmagosDominus</defName>
 		<label>Archmagos Dominus</label>
-        <combatPower>150</combatPower>
+        <combatPower>160</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
