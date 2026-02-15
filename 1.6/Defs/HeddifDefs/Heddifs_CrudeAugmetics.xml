@@ -6,7 +6,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeArm</defName>
-  <label>Crude augmetic arm</label>
+  <label>crude augmetic arm</label>
   <description>An augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -45,7 +45,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeArm_Hediff</defName>
-  <label>Crude augmetic arm</label>
+  <label>crude augmetic arm</label>
   <labelNoun>a crude augmeticarm</labelNoun>
   <description>An installed augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeArm</spawnThingOnRemoved>
@@ -100,7 +100,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeLeg</defName>
-  <label>Crude augmetic leg</label>
+  <label>crude augmetic leg</label>
   <description>An augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -139,7 +139,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeLeg_Hediff</defName>
-  <label>Crude augmetic leg</label>
+  <label>crude augmetic leg</label>
   <labelNoun>a crude augmetic leg</labelNoun>
   <description>An installed augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeLeg</spawnThingOnRemoved>
@@ -194,7 +194,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeEye</defName>
-  <label>Crude augmetic eye</label>
+  <label>crude augmetic eye</label>
   <description>A bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -233,7 +233,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeEye_Hediff</defName>
-  <label>Crude augmetic eye</label>
+  <label>crude augmetic eye</label>
   <labelNoun>a crude augmetic eye</labelNoun>
   <description>An installed bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeEye</spawnThingOnRemoved>
@@ -327,7 +327,7 @@
 <!--thingDef-->
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeHeart</defName>
-  <label>Crude augmetic heart</label>
+  <label>crude augmetic heart</label>
   <description>An augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -366,7 +366,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeHeart_Hediff</defName>
-  <label>Crude augmetic heart</label>
+  <label>crude augmetic heart</label>
   <labelNoun>a crude augmetic heart</labelNoun>
   <description>An installed augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeHeart</spawnThingOnRemoved>
@@ -394,7 +394,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeLung</defName>
-  <label>Crude augmetic lung</label>
+  <label>crude augmetic lung</label>
   <description>An augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -433,7 +433,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeLung_Hediff</defName>
-  <label>Crude augmetic lung</label>
+  <label>crude augmetic lung</label>
   <labelNoun>a crude augmetic lung</labelNoun>
   <description>An installed augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeLung</spawnThingOnRemoved>
@@ -488,7 +488,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeSpine</defName>
-  <label>Crude augmetic spine</label>
+  <label>crude augmetic spine</label>
   <description>An augmetic replacement spine. More resilient and efficient than the baseline body part, but is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -527,7 +527,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeSpine_Hediff</defName>
-  <label>Crude augmetic spine</label>
+  <label>crude augmetic spine</label>
   <labelNoun>a crude augmetic spine</labelNoun>
   <description>An installed augmetic replacement spine. More resilient and efficient than the baseline body part, but is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeSpine</spawnThingOnRemoved>
@@ -582,7 +582,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeJaw</defName>
-  <label>Crude augmetic jaw</label>
+  <label>crude augmetic jaw</label>
   <description>A bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
   <recipeMaker>
 <researchPrerequisites Inherit="false">
@@ -620,7 +620,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeJaw_Hediff</defName>
-  <label>Crude augmetic jaw</label>
+  <label>crude augmetic jaw</label>
   <labelNoun>a crude augmetic jaw</labelNoun>
   <description>An installed bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeJaw</spawnThingOnRemoved>
@@ -674,7 +674,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeHand</defName>
-  <label>Crude augmetic hand</label>
+  <label>crude augmetic hand</label>
   <description>An augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -713,7 +713,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeHand_Hediff</defName>
-  <label>Crude augmetic hand</label>
+  <label>crude augmetic hand</label>
   <labelNoun>a crude augmetic hand</labelNoun>
   <description>An installed augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeHand</spawnThingOnRemoved>
@@ -767,7 +767,7 @@
 
 <ThingDef ParentName="BodyPartProstheticBase">
   <defName>Seg_COTO_CrudeFoot</defName>
-  <label>Crude augmetic foot</label>
+  <label>crude augmetic foot</label>
   <description>An augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <recipeMaker>
 <researchPrerequisites>
@@ -806,7 +806,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_CrudeFoot_Hediff</defName>
-  <label>Crude augmetic foot</label>
+  <label>crude augmetic foot</label>
   <labelNoun>a crude augmetic foot</labelNoun>
   <description>An installed augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeFoot</spawnThingOnRemoved>

@@ -188,7 +188,7 @@
 <ResearchProjectDef>
 		<defName>Seg_COTO_TrueFlesh</defName>
 		<label>True Flesh</label>
-		<description>Be granted the secrets of true flesh manipulation, allowing for the creation of enhanced biological components.</description>
+		<description>Be granted the secrets of true flesh manipulation, allowing for the creation of enhanced augmetic components for the glorification of the Machine God.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>1</researchViewX>
