@@ -10,7 +10,7 @@
         <pawnsPlural>explorators</pawnsPlural>
         <fixedLeaderKinds>
             <li>Seg_COTO_ArchmagosDominus</li>
-        </fixedLeaderKinds-->
+        </fixedLeaderKinds>
         <leaderTitle>Explorator Majoris</leaderTitle>
 
         <settlementGenerationWeight>1</settlementGenerationWeight>
