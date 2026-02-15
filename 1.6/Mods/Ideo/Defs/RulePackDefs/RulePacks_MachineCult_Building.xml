@@ -21,7 +21,7 @@
   <!-- Building-specific base labels -->
 
   <RulePackDef>
-    <defName>NamerAltar</defName>
+    <defName>NamerAltarOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->tech-altar</li>
@@ -33,7 +33,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerIdeoSculpture</defName>
+    <defName>NamerIdeoSculptureOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->statue</li>
@@ -44,7 +44,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerIdeogram</defName>
+    <defName>NamerIdeogramOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->ideogram</li>
@@ -55,7 +55,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerChristmasTree</defName>
+    <defName>NamerChristmasTreeOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->picea abies</li>
@@ -65,7 +65,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerBurnTarget</defName>
+    <defName>NamerBurnTargetOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->effigy</li>
@@ -75,7 +75,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerSmoker</defName>
+    <defName>NamerSmokerOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->ambient intoxicator</li>
@@ -85,7 +85,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerCannibalPlatter</defName>
+    <defName>NamerCannibalPlatterOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>buildingName->platter</li>
