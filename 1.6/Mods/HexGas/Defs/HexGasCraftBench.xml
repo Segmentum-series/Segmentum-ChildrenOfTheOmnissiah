@@ -1,4 +1,38 @@
 <Defs>
+<WorkGiverDef><!-- Forge altar work giver-->
+		<defName>WorkGiver_CraftingTableChemfuelHelixien</defName>
+		<label>make things at forge altar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>75</priorityInType>
+		<verb>work at</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_COTO_CraftingTableHelixien</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef><!-- Ceramite furnace work giver-->
+		<defName>WorkGiver_CeramiteFurnaceHelixien</defName>
+		<label>operate ceramite furnace</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>80</priorityInType>
+		<verb>smelt</verb>
+		<gerund>smelting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_COTO_CeramiteFurnaceHelixien</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 <ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CraftingTableHelixien</defName>
 		<label>mechanicus forge altar (gas powered)</label>
