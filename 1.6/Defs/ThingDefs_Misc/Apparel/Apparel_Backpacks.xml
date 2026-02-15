@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!--Breaking change needed this comment is so the file is now different-->
 	<!-- Backpack base -->
 	<ThingDef Abstract="true" Name="Seg_COTO_BackpackBase" ParentName="ArmorMachineableBase">
 		<techLevel>Spacer</techLevel>
@@ -30,7 +31,7 @@
 			</layers>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 		</apparel>
-		<modExtensions>
+		<modExtensions>  
 			<li Class="VEF.Apparels.ApparelExtension">
 				<isUnifiedApparel>true</isUnifiedApparel>
 				<hideHead>false</hideHead>

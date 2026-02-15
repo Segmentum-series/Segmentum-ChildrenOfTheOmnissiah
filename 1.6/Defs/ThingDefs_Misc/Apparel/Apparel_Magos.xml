@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!--Breaking change needed this comment is so the file is now different-->
 	<ThingDef Abstract="true" Name="Seg_COTO_MagosBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
