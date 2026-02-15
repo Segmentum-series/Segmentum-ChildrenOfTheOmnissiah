@@ -22,6 +22,12 @@
         <description>Having graduated beyond the acolyta, the Adept Probatoris is preparing to be ordained as a full tech-adept of the Machine Cult.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AdeptProbatoris</rankIconPath>
         <rankTier>2</rankTier>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<!--li>Seg_COTO_Hypaspist</li-->
+        </incompatibleRanks>
+
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
     
@@ -647,8 +653,8 @@
 
     <Seg.RankDef>
         <defName>Seg_COTO_MagosDominius</defName>
-        <label>Magos Dominius</label>
-        <description>Any techpriest may take on the title of Magos Dominus temporarily to lead a military campaign or contribute otherwise to the wars of the Mechanicus.</description>
+        <label>Magos Dominus</label>
+        <description>Any techpriest of sufficient rank may take on the title of Magos Dominus temporarily to lead a military campaign or contribute otherwise to the wars of the Mechanicus.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosDominus</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>5</ImplantsRequired>
