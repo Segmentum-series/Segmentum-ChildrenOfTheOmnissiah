@@ -4,7 +4,7 @@
   <!-- Root -->
 
   <RulePackDef>
-    <defName>NamerIdeoBuilding</defName>
+    <defName>NamerIdeoBuildingOmnissian</defName>
     <rulePack>
       <rulesStrings>
         <li>r_ideoBuildingName(p=2)->[memeAdjective] [buildingName]</li>
@@ -24,10 +24,10 @@
     <defName>NamerAltar</defName>
     <rulePack>
       <rulesStrings>
-        <li>buildingName->altar</li>
-        <li>buildingName->shrine</li>
-        <li>buildingName->chancel</li>
-        <li>buildingName->platform</li>
+        <li>buildingName->tech-altar</li>
+        <li>buildingName->mechanoshrine</li>
+        <li>buildingName->technochancel</li>
+        <li>buildingName->mechaniplatform</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -38,10 +38,7 @@
       <rulesStrings>
         <li>buildingName->statue</li>
         <li>buildingName->sculpture</li>
-        <li>buildingName->carving</li>
         <li>buildingName->image</li>
-        <li>buildingName->form</li>
-        <li>buildingName->shape</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -53,11 +50,6 @@
         <li>buildingName->ideogram</li>
         <li>buildingName->symbol</li>
         <li>buildingName->mark</li>
-        <li>buildingName->shape</li>
-        <li>buildingName->emblem</li>
-        <li>buildingName->figure</li>
-        <li>buildingName->image</li>
-        <li>buildingName->logo</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -66,8 +58,8 @@
     <defName>NamerChristmasTree</defName>
     <rulePack>
       <rulesStrings>
-        <li>buildingName->tree</li>
-        <li>buildingName->pine</li>
+        <li>buildingName->picea abies</li>
+        <li>buildingName->abies fraseri</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -76,7 +68,6 @@
     <defName>NamerBurnTarget</defName>
     <rulePack>
       <rulesStrings>
-        <li>buildingName->totem</li>
         <li>buildingName->effigy</li>
         <li>buildingName->pyre</li>
       </rulesStrings>
@@ -87,10 +78,8 @@
     <defName>NamerSmoker</defName>
     <rulePack>
       <rulesStrings>
-        <li>buildingName->smoker</li>
-        <li>buildingName->gasser</li>
-        <li>buildingName->fumer</li>
-        <li>buildingName->smolderer</li>
+        <li>buildingName->ambient intoxicator</li>
+        <li>buildingName->intoxicator</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
