@@ -170,6 +170,13 @@
         <disallowedRaidAgeRestrictions>
             <li>Children</li>
         </disallowedRaidAgeRestrictions>
+        <!--<modExtensions>
+            <li Class="Core40k.DefModExtension_DefaultMultiColor">
+                <defaultColorSelection>
+                    <li>Seg_COTO_SkitariiWarPlate_ColorPreset_6</li>
+                 </defaultColorSelection>
+            </li>
+        </modExtensions>-->
     </FactionDef>
 	
 
