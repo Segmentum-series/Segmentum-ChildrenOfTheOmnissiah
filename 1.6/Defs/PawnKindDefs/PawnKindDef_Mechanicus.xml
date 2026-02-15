@@ -185,6 +185,13 @@
             <li>Seg_COTO_Apparel_MagosCassock</li>
             <li>Seg_COTO_Apparel_MagosBackpack</li>
         </apparelRequired>
+		<techHediffsTags>
+			<li>Seg_COTO_CrudeAugmetics</li>
+			<li>Seg_COTO_StandardAugmetics</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>1000~2500</techHediffsMoney>
+		<techHediffsMaxAmount>2</techHediffsMaxAmount>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -229,6 +236,12 @@
             <li>Seg_COTO_Apparel_MagosCassock</li>
             <li>Seg_COTO_Apparel_MagosBackpack</li>
         </apparelRequired>
+		<techHediffsTags>
+			<li>Seg_COTO_StandardAugmetics</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>1500~3500</techHediffsMoney>
+		<techHediffsMaxAmount>4</techHediffsMaxAmount>
         <skills>
             <li>
                 <skill>Shooting</skill>

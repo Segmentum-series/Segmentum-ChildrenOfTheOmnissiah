@@ -24,6 +24,7 @@
 		<apparelMoney>0~0</apparelMoney>
 		<techHediffsTags>
 			<li>Seg_COTO_CrudeAugmetics</li>
+			<li>Seg_COTO_StandardAugmetics</li>
 		</techHediffsTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>1000~2500</techHediffsMoney>
