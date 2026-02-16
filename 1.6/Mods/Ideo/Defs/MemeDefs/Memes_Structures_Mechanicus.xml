@@ -62,7 +62,7 @@
     <defName>Seg_COTO_MachineImmortal</defName>
     <label>Machine Immortal</label>
     <description>Human progress entails merging with technology, perfecting the flesh body with sacred machine parts.</description>
-    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineB</iconPath>
+    <iconPath>UI/Memes/Seg_COTO_Memes_MachineImmortal</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <generalRules>
