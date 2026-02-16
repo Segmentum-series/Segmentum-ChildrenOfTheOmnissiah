@@ -204,9 +204,9 @@
 	<RecipeDef>
     <defName>Seg_SmeltNonSmeltable</defName>
     <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
-    <label>Scrap armor for hyperweave</label>
-    <description>Use heat and strong electromagnets to break down armour into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armors.</description>
-    <jobString>Smelting Armor.</jobString>
+    <label>Scrap armour for hyperweave</label>
+    <description>Use heat and strong electromagnets to break down armour and complex apparel into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all armours.</description>
+    <jobString>Scrapping armour.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
@@ -423,7 +423,7 @@
     <workerClass>CVN_UnMakr.RecipeWorker_SmeltNonSmeltable</workerClass>
     <label>Scrap apparel for hyperweave</label>
     <description>Use heat and strong electromagnets to break down apparel into more useful resources, with a particular focus on recovering the small amounts of hyperweave used in all apparel.</description>
-    <jobString>Smelting Apparel.</jobString>
+    <jobString>Scrapping apparel.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
