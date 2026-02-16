@@ -465,6 +465,7 @@
   <stages>
     <li>
       <statOffsets>
+        <ToxicEnvironmentResistance>.2</ToxicEnvironmentResistance>
       </statOffsets>
       <painOffset>0.01</painOffset>
     </li>
