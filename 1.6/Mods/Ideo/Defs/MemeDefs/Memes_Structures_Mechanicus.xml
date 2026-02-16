@@ -65,6 +65,12 @@
     <iconPath>UI/Memes/Seg_COTO_Memes_MachineImmortal</iconPath>
     <groupDef>Misc</groupDef>
     <impact>2</impact>
+    <exclusionTags>
+      <li>NaturePrimacy</li>
+      <li>AnimalPersonhood</li>
+	  <li>FleshPurity</li>
+	  <li>TreeConnection</li>
+    </exclusionTags>
     <generalRules>
       <rulesStrings>
         <li>memeAdjective->omnissian</li>
