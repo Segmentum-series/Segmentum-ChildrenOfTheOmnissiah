@@ -22,6 +22,20 @@
 				</categories>
 			</li>
 		</backstoryFilters>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_DefaultMultiColor">
+			<defaultColorSelection>
+				<li>
+					<key>Seg_COTO_MagosBackpack_ColorPreset_1</key>
+					<value>TryMatch</value>
+				</li>
+				<li>
+					<key>Seg_COTO_MagosApparel_ColorPreset_1</key>
+					<value>Default</value>
+				</li>
+			</defaultColorSelection>
+			</li>
+		</modExtensions>
 		<factionIconPath>UI/Factions/Seg_COTO_MechanicusOutpost</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<startingResearchTags><!-- Requires update -->

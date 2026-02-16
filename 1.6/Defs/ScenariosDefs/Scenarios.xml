@@ -19,7 +19,6 @@
 			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<apparelColor>(146,12,18)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<techHediffsTags>
@@ -61,7 +60,6 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<techHediffsTags>
@@ -104,7 +102,6 @@
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<apparelColor>(166,166,166)</apparelColor>
 		<initialWillRange>0~0</initialWillRange>
 		<apparelMoney>0~0</apparelMoney>
 		<techHediffsTags>
