@@ -27,7 +27,7 @@
 	<ThingCategoryDef>
 		<defName>Seg_COTO_MechanicusArmor</defName>
 		<label>Mechanicus armor</label>
-		<parent>Apparel</parent>
+		<parent>ApparelArmor</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>

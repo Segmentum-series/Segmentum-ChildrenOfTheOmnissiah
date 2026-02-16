@@ -5,6 +5,7 @@
     <li IfModActive="VanillaExpanded.HelixienGas">1.6/Mods/HexGas</li>
     <li IfModActive="vanillaexpanded.vchemfuele">1.6/Mods/ChemExtended</li>
     <li IfModActive="ludeon.rimworld.ideology">1.6/Mods/Ideo</li>
+    <li IfModActive="ludeon.rimworld.royalty">1.6/Mods/Royalty</li>
     <li IfModActive="Phonicmas.RimDark.MankindsFinest">1.6/Mods/RimDarkRanks</li>
   </v1.6>
 </loadFolders>
