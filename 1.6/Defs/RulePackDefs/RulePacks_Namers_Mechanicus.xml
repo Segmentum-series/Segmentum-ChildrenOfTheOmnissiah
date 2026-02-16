@@ -118,7 +118,7 @@
     <defName>NamerFactionMechanicusHostile</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionHostileType]</li>
+        <li>r_name->[MechanicusFactionNumber] Lucian [MechanicusFactionHostileType]</li>
       </rulesStrings>
       <rulesFiles>
 		<li>MechanicusFactionNumber->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNumber</li>
@@ -128,6 +128,22 @@
     </rulePack>
   </RulePackDef>
 
+  <RulePackDef>
+    <defName>Seg_COTO_NamerFactionMechanicusPlayer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionNeutralType]</li>
+        <li>r_name->[MechanicusFactionNumber] [MechanicusFactionRegiment] [MechanicusFactionHostileType]</li>
+      </rulesStrings>
+      <rulesFiles>
+		<li>MechanicusFactionNumber->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNumber</li>
+        <li>MechanicusFactionRegiment->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionRegiment</li>
+		<li>MechanicusFactionNeutralType->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionNeutralType</li>
+		<li>MechanicusFactionHostileType->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusFactionHostileType</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
   <RulePackDef>
     <defName>LeaderTitleMaker_Omnissian</defName>
     <rulePack>
