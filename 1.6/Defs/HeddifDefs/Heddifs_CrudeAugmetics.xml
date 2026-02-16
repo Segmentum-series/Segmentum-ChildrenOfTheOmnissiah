@@ -40,6 +40,9 @@
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -134,6 +137,9 @@
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -228,6 +234,9 @@
 			<Steel>20</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -361,6 +370,9 @@
 			<Leather_Plain>20</Leather_Plain>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -428,6 +440,9 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Leather_Plain>20</Leather_Plain>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -522,6 +537,9 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
             <Steel>40</Steel>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -615,6 +633,9 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -708,6 +729,9 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -801,6 +825,9 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -895,6 +922,9 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->

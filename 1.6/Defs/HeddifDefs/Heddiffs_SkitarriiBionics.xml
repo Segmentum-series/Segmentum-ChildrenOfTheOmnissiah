@@ -11,6 +11,9 @@
   <techHediffsTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
   </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
     <recipeUsers Inherit="false">
@@ -18,8 +21,8 @@
       </recipeUsers>
   </recipeMaker>
 		<costList>
-			<Plasteel>75</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
 </ThingDef>
 
@@ -95,9 +98,12 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>6</ComponentSpacer>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -193,9 +199,12 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>8</ComponentSpacer>
+			<ComponentSpacer>6</ComponentSpacer>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -291,6 +300,9 @@
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -386,10 +398,13 @@
   </techHediffsTags>
   
 		<costList>
-			<Plasteel>200</Plasteel>
+			<Steel>200</Steel>
 			<ComponentSpacer>1</ComponentSpacer>
-      <Seg_Ceramite>250</Seg_Ceramite>
+      <Seg_Ceramite>100</Seg_Ceramite>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -469,9 +484,12 @@
   </recipeMaker>
   
 		<costList>
-      <Plasteel>40</Plasteel>
+      <Plasteel>20</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
 		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
 </ThingDef>
 
 
