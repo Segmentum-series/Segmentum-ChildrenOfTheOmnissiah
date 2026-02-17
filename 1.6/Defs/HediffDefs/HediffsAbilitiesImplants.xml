@@ -6,6 +6,7 @@
 	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
 	<abilityClass>Seg.Ability_StripWeapon</abilityClass>
 	<castTime>60</castTime>
+	<cooldownTime>3600</cooldownTime>
 	<range>14.9</range>
 	<targetMode>Pawn</targetMode>
 	<targetingParameters>
