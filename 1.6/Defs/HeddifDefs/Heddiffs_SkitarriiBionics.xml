@@ -2,7 +2,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SkitariusLeg</defName>
-  <label>Skitarii leg</label>
+  <label>skitarii leg</label>
   <description>An augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
     <MarketValue>2800</MarketValue>
@@ -29,8 +29,8 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_SkitariusLeg_Hediff</defName>
-  <label>Skitarii leg</label>
-  <labelNoun>a leg</labelNoun>
+  <label>skitarii leg</label>
+  <labelNoun>a skitarii leg</labelNoun>
   <description>An installed augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
   <addedPartProps>
@@ -51,7 +51,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_SkitariusLeg</defName>
-  <label>install Skitarii leg</label>
+  <label>install skitarii leg</label>
   <description>Installs an augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <jobString>Installing Skitarii Leg.</jobString>
   <ingredients>
@@ -79,7 +79,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_VanguardArm</defName>
-  <label>Skitarii Vanguard arm</label>
+  <label>skitarii vanguard arm</label>
   <techHediffsTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
   </techHediffsTags>
@@ -109,8 +109,8 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_VanguardArm_Hediff</defName>
-  <label>Skitarii Vanguard arm</label>
-  <labelNoun>a Vanguard arm</labelNoun>
+  <label>skitarii vanguard arm</label>
+  <labelNoun>a vanguard arm</labelNoun>
   <description>An installed augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
@@ -153,7 +153,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_VanguardArm</defName>
-  <label>install Skitarii Vanguard arm</label>
+  <label>install skitarii vanguard arm</label>
   <description>Installs an augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <jobString>Installing Skitarii Vanguard arm.</jobString>
   <ingredients>
@@ -181,7 +181,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_RangerArm</defName>
-  <label>Skitarii Ranger arm</label>
+  <label>skitarii ranger arm</label>
   <description>An augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
     <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
@@ -210,8 +210,8 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_RangerArm_Hediff</defName>
-  <label>Skitarii Ranger arm</label>
-  <labelNoun>a Ranger arm</labelNoun>
+  <label>skitarii ranger arm</label>
+  <labelNoun>a ranger arm</labelNoun>
   <description>An installed augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
   <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
@@ -253,7 +253,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_RangerArm</defName>
-  <label>install Skitarii Ranger arm</label>
+  <label>install skitarii ranger arm</label>
   <description>Installs an augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <jobString>Installing Skitarii Ranger arm.</jobString>
   <ingredients>
@@ -280,7 +280,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_EyeLens</defName>
-  <label>Skitarii eye lens</label>
+  <label>skitarii eye lens</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
     <recipeUsers Inherit="false">
@@ -308,7 +308,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_EyeLens_Hediff</defName>
-  <label>Skitarii eye lens</label>
+  <label>skitarii eye lens</label>
   <labelNoun>an eye lens</labelNoun>
   <description>Eyelids have been removed and replaced with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
   <spawnThingOnRemoved>Seg_COTO_EyeLens</spawnThingOnRemoved>
@@ -354,7 +354,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_EyeLens</defName>
-  <label>install Skitarii eye lens</label>
+  <label>install skitarii eye lens</label>
   <description>Remove the eyelids and replace them with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
   <jobString>removing eyelids and installing optical augmetics.</jobString>
   <ingredients>
@@ -381,7 +381,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_ArmorPlating</defName>
-  <label>Skitarii armour plating</label>
+  <label>skitarii armour plating</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
     <recipeUsers Inherit="false">
@@ -410,7 +410,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="ImplantHediffBase">
   <defName>Seg_COTO_ArmorPlating_Hediff</defName>
-  <label>Skitarii armour plating</label>
+  <label>skitarii armour plating</label>
   <labelNoun>a set of armour plating implants</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
   <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
@@ -433,7 +433,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallImplantBase">
   <defName>InstallSeg_COTO_ArmorPlating</defName>
-  <label>install Skitarii armour plating</label>
+  <label>install skitarii armour plating</label>
   <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
   <jobString>Installing skitarii armour plating.</jobString>
   <ingredients>
@@ -458,10 +458,10 @@
 </RecipeDef>
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>RemoveSeg_COTO_ArmorPlating</defName>
-    <label>remove Skitarii armour plating</label>
-    <description>Remove Skitarii armour plating.</description>
+    <label>remove skitarii armour plating</label>
+    <description>Remove skitarii armour plating.</description>
     <descriptionHyperlinks><ThingDef>Seg_COTO_ArmorPlating</ThingDef></descriptionHyperlinks>
-    <jobString>Removing Skitarii armour plating.</jobString>
+    <jobString>Removing skitarii armour plating.</jobString>
     <removesHediff>Seg_COTO_ArmorPlating_Hediff</removesHediff>
   </RecipeDef>
   <!--Breath of Mars-->
