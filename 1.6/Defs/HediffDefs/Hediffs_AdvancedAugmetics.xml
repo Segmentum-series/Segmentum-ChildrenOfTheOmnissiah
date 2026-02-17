@@ -1,0 +1,986 @@
+<Defs>
+<!--Advanced Arm-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedArm</defName>
+  <label>advanced augmetic arm</label>
+  <description>An augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedArm_Hediff</defName>
+  <label>advanced augmetic arm</label>
+  <labelNoun>a advanced augmetic arm</labelNoun>
+  <description>An installed augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedArm</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedArm</defName>
+  <label>install advanced augmetic arm</label>
+  <description>Installs an augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <jobString>Installing advanced augmetic arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced Leg-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedLeg</defName>
+  <label>advanced augmetic leg</label>
+  <description>An augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedLeg_Hediff</defName>
+  <label>advanced augmetic leg</label>
+  <labelNoun>a advanced augmetic leg</labelNoun>
+  <description>An installed augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedLeg</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedLeg</defName>
+  <label>install advanced augmetic leg</label>
+  <description>Installs an augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+  <jobString>Installing advanced augmetic leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedLeg_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced Eye-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedEye</defName>
+  <label>advanced augmetic eye</label>
+  <description>An augmetic replacement eye which can see in significantly wider spectra and in greater detail than the baseline eye. While these augmetics can be made almost imperceptible in appearance from organic eyes, Mechanicus members prefer the augmetic to be obvious as a sign of devotion to the Machine God.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedEye_Hediff</defName>
+  <label>advanced augmetic eye</label>
+  <labelNoun>a advanced augmetic eye</labelNoun>
+  <description>An installed augmetic replacement eye which can see in significantly wider spectra and in greater detail than the baseline eye. While these augmetics can be made almost imperceptible in appearance from organic eyes, Mechanicus members prefer the augmetic to be obvious as a sign of devotion to the Machine God..</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedEye</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+  <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Wounds/BionicEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedEye</defName>
+  <label>install advanced augmetic eye</label>
+  <description>Installs an augmetic replacement eye which can see in significantly wider spectra and in greater detail than the baseline eye. While these augmetics can be made almost imperceptible in appearance from organic eyes, Mechanicus members prefer the augmetic to be obvious as a sign of devotion to the Machine God.</description>
+  <jobString>Installing advanced augmetic eye.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedEye</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedEye</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedEye_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced Heart-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedHeart</defName>
+  <label>advanced augmetic heart</label>
+  <description>An augmetic replacement heart. Significantly stronger than the baseline organ. Techpriests consider themselves above the irrational concerns of the laity, but the symbolic power of replacing the weak organic heart with True Flesh is not lost on even the least sentimental among them.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedHeart_Hediff</defName>
+  <label>advanced augmetic heart</label>
+  <labelNoun>a advanced augmetic heart</labelNoun>
+  <description>An installed augmetic replacement heart. Significantly stronger than the baseline organ. Techpriests consider themselves above the irrational concerns of the laity, but the symbolic power of replacing the weak organic heart with True Flesh is not lost on even the least sentimental among them.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedHeart</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedHeart</defName>
+  <label>install advanced augmetic heart</label>
+  <description>Installs an augmetic replacement heart. Significantly stronger than the baseline organ. Techpriests consider themselves above the irrational concerns of the laity, but the symbolic power of replacing the weak organic heart with True Flesh is not lost on even the least sentimental among them.</description>
+  <jobString>Installing advanced augmetic heart.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedHeart</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedHeart</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Heart</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedHeart_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Advanced Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedLung</defName>
+  <label>advanced augmetic lung</label>
+  <description>An augmetic replacement lung. Significantly stronger than the baseline organ. Breathing the sacred air of the Omnissiah is seen as an act of worship when done with a respiratory system formed of True Flesh.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>80</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedLung_Hediff</defName>
+  <label>advanced augmetic lung</label>
+  <labelNoun>a advanced augmetic lung</labelNoun>
+  <description>An installed augmetic replacement lung. Significantly stronger than the baseline organ. Breathing the sacred air of the Omnissiah is seen as an act of worship when done with a respiratory system formed of True Flesh.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedLung</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ToxicEnvironmentResistance>.35</ToxicEnvironmentResistance>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedLung</defName>
+  <label>install advanced augmetic lung</label>
+  <description>Installs an augmetic replacement lung. Significantly stronger than the baseline organ. Breathing the sacred air of the Omnissiah is seen as an act of worship when done with a respiratory system formed of True Flesh.</description>
+  <jobString>Installing advanced augmetic lung.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedLung</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedLung</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedLung_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Advanced Spine-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedSpine</defName>
+  <label>advanced augmetic spine</label>
+  <description>An augmetic replacement spine. More resilient and efficient than the baseline body part. Replacing the failure-prone osseus spinal column with holy alloys and circuitry is something that many techpriests covet.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>12</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedSpine_Hediff</defName>
+  <label>advanced augmetic spine</label>
+  <labelNoun>a advanced augmetic spine</labelNoun>
+  <description>An installed augmetic replacement spine. More resilient and efficient than the baseline body part. Replacing the failure-prone osseus spinal column with holy alloys and circuitry is something that many techpriests covet.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedSpine</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.05</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedSpine</defName>
+  <label>install advanced augmetic spine</label>
+  <description>Installs an augmetic replacement spine. More resilient and efficient than the baseline body part. Replacing the failure-prone osseus spinal column with holy alloys and circuitry is something that many techpriests covet.</description>
+  <jobString>Installing advanced augmetic spine.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedSpine</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedSpine</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Spine</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedSpine_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced Liver-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedLiver</defName>
+  <label>advanced augmetic liver</label>
+  <description>An augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Significantly more efficient and resilient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedLiver_Hediff</defName>
+  <label>advanced augmetic liver</label>
+  <labelNoun>a advanced augmetic liver</labelNoun>
+  <description>An installed augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Significantly more efficient and resilient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedLiver</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedLiver</defName>
+  <label>install advanced augmetic liver</label>
+  <description>Installs an augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Significantly more efficient and resilient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <jobString>Installing advanced augmetic liver.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedLiver</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedLiver</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Liver</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedLiver_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Advanced Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedKidney</defName>
+  <label>advanced augmetic kidney</label>
+  <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Significantly more efficient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedKidney_Hediff</defName>
+  <label>advanced augmetic kidney</label>
+  <labelNoun>a advanced augmetic kidney</labelNoun>
+  <description>An installed augmetic replacement kidney to filter toxins and waste from various bodily fluids. Significantly more efficient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedKidney</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedKidney</defName>
+  <label>install advanced augmetic kidney</label>
+  <description>Installs an augmetic replacement kidney to filter toxins and waste from various bodily fluids. Significantly more efficient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
+  <jobString>Installing advanced augmetic kidney.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedKidney</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedKidney</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Kidney</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedKidney_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced Jaw-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedJaw</defName>
+  <label>advanced augmetic jaw</label>
+  <description>An augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedJaw_Hediff</defName>
+  <label>advanced augmetic jaw</label>
+  <labelNoun>a advanced augmetic jaw</labelNoun>
+  <description>An installed augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedJaw</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedJaw</defName>
+  <label>install advanced augmetic jaw</label>
+  <description>Installs an augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <jobString>Installing advanced augmetic jaw.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedJaw</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedJaw</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Jaw</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedJaw_Hediff</addsHediff>
+</RecipeDef>
+<!--Advanced ear-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartProstheticBase">
+  <defName>Seg_COTO_AdvancedEar</defName>
+  <label>advanced vox receptor</label>
+  <description>An augmetic ear implant following advanced vox receptor schematics from the Dark Age of Technology. It can detect and process a far wider range of sounds than the baseline human ear, as well as radio and electromagnetic waves through which information can be passed.</description>
+  <recipeMaker>
+<researchPrerequisites>
+ <li>Seg_COTO_TrueFlesh</li>
+ <li>Bionics</li>
+</researchPrerequisites>
+
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_CraftingTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>10</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(78,59,49)</color>
+    </graphicData>
+  <statBases>
+  
+    <MarketValue>500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_AdvancedAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedEar_Hediff</defName>
+  <label>advanced vox receptor</label>
+  <labelNoun>an advanced vox receptor</labelNoun>
+  <description>An installed augmetic ear implant following advanced vox receptor schematics from the Dark Age of Technology. It can detect and process a far wider range of sounds than the baseline human ear, as well as radio and electromagnetic waves through which information can be passed.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedEar</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedEar</defName>
+  <label>install advanced vox receptor</label>
+  <description>Installs an augmetic ear implant following advanced vox receptor schematics from the Dark Age of Technology. It can detect and process a far wider range of sounds than the baseline human ear, as well as radio and electromagnetic waves through which information can be passed.</description>
+  <jobString>Installing advanced vox receptor.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedEar</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedEar</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Ear</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedEar_Hediff</addsHediff>
+</RecipeDef>
+
+
+
+</Defs>

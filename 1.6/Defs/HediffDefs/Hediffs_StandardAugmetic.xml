@@ -961,7 +961,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_StandardEar</defName>
   <label>install improved vox receptor</label>
-  <description>Installs n augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
+  <description>Installs an augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
   <jobString>Installing improved vox receptor.</jobString>
   <ingredients>
     <li>
