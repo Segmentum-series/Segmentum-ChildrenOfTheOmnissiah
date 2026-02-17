@@ -32,7 +32,8 @@
   </techHediffsTags>
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_MechanciusAugmetics</li>
@@ -373,6 +374,11 @@
   <defName>Seg_COTO_AdvancedSpine</defName>
   <label>advanced augmetic spine</label>
   <description>An augmetic replacement spine. More resilient and efficient than the baseline body part. Replacing the failure-prone osseus spinal column with holy alloys and circuitry is something that many techpriests covet.</description>
+  <costList  Inherit="False">
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+      <ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -498,7 +504,8 @@
   <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Significantly more efficient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
   	<costList  Inherit="False">
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
@@ -563,7 +570,8 @@
   <description>An augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
   
 </ThingDef>
@@ -629,7 +637,8 @@
   <description>An augmetic ear implant following advanced vox receptor schematics from the Dark Age of Technology. It can detect and process a far wider range of sounds than the baseline human ear, as well as radio and electromagnetic waves through which information can be passed.</description>
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
@@ -683,6 +692,81 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_AdvancedEar_Hediff</addsHediff>
 </RecipeDef>
+
+
+
+
+<!--Thermoregulation Matrix-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
+  <defName>Seg_COTO_ThermoregulationMatrix</defName>
+  <label>Thermoregulation Matrix</label>
+  <description>This implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
+  
+		<costList Inherit="False">
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_ThermoregulationMatrix_Hediff</defName>
+  <label>thermoregulation matrix</label>
+  <labelNoun>a thermoregulation matrix</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
+  <spawnThingOnRemoved>Seg_COTO_ThermoregulationMatrix</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+       <statOffsets>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_ThermoregulationMatrix</defName>
+  <label>install thermoregulation matrix</label>
+  <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
+  <jobString>Installing thermoregulation matrix.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_ThermoregulationMatrix</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_ThermoregulationMatrix</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_ThermoregulationMatrix_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_ThermoregulationMatrix</defName>
+    <label>remove thermoregulation matrix</label>
+    <description>Remove thermoregulation matrix.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_ThermoregulationMatrix</ThingDef></descriptionHyperlinks>
+    <jobString>Removing thermoregulation matrix.</jobString>
+    <removesHediff>Seg_COTO_ThermoregulationMatrix_Hediff</removesHediff>
+  </RecipeDef>
 
 
 
