@@ -700,8 +700,8 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_ThermoregulationMatrix</defName>
-  <label>Thermoregulation Matrix</label>
-  <description>This implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
+  <label>thermoregulation matrix</label>
+  <description>An implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
   
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
@@ -716,7 +716,7 @@
   <label>thermoregulation matrix</label>
   <labelNoun>a thermoregulation matrix</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
-  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
+  <description>An installed implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
   <spawnThingOnRemoved>Seg_COTO_ThermoregulationMatrix</spawnThingOnRemoved>
  
 
@@ -737,7 +737,7 @@
 <RecipeDef ParentName="SurgeryInstallImplantBase">
   <defName>InstallSeg_COTO_ThermoregulationMatrix</defName>
   <label>install thermoregulation matrix</label>
-  <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
+  <description>Install an implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
   <jobString>Installing thermoregulation matrix.</jobString>
   <ingredients>
     <li>
@@ -771,8 +771,8 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_FerricLure</defName>
-  <label>Ferric Lure</label>
-  <description>This augmetic implant provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance.</description>
+  <label>ferric lure</label>
+  <description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance.</description>
   
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
@@ -787,7 +787,7 @@
   <label>ferric lure</label>
   <labelNoun>a ferric lure</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
-  <description>This augmetic implant provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance.</description>
+  <description>An installed augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance.</description>
   <spawnThingOnRemoved>Seg_COTO_FerricLure</spawnThingOnRemoved>
  
 
