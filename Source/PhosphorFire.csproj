@@ -22,11 +22,14 @@
     <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
   </Reference>
  <Reference Include="Core40k">
-    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3267464767\1.6\Assemblies\Core40k.dll</HintPath>
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40kFramework\1.6\Assemblies\Core40k.dll</HintPath>
 </Reference>
-
+ <Reference Include="VEF">
+    <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll </HintPath>
+</Reference>
   <Compile Include="Thing_PhosphorFire.cs" />
   <Compile Include="RanksParts.cs" />
+  <Compile Include="FerricLure.cs" />
 
   </ItemGroup>
 </Project>

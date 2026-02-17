@@ -4,6 +4,8 @@ using Verse.AI;
 using UnityEngine;
 using HarmonyLib;
 using System.Collections.Generic;
+using VEF;
+
 
 namespace Seg.COTO
 {
