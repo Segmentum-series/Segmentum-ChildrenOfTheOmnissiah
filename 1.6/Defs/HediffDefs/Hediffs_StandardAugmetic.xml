@@ -381,6 +381,11 @@
 			<ComponentSpacer>1</ComponentSpacer>
             <Plasteel>20</Plasteel>
 		</costList>
+		<recipeMaker>
+      	<skillRequirements Inherit="False">
+				<Crafting>8</Crafting>
+		</skillRequirements>
+		</recipeMaker>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -697,6 +702,82 @@
   <addsHediff>Seg_COTO_StandardEar_Hediff</addsHediff>
 </RecipeDef>
 
+  <!--Ferric Lurex-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_FerricLure</defName>
+  <label>ferric lure</label>
+  <description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+  
+		<costList Inherit="False">
+			<Plasteel>15</Plasteel>
+			<Steel>20</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+</ThingDef>
 
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_FerricLure_Hediff</defName>
+  <label>ferric lure</label>
+  <labelNoun>a ferric lure</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>An installed augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+  <spawnThingOnRemoved>Seg_COTO_FerricLure</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+       <statOffsets>
+           <WorkSpeedGlobal>.10</WorkSpeedGlobal>
+        </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+  <comps>
+      <li Class="Seg.HediffCompProperties_GivesAbility">
+        <vefAbility>Seg_COTO_FerricLureAbility</vefAbility>
+      </li>
+    </comps>
+
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_FerricLure</defName>
+  <label>install ferric lure</label>
+  <description>Install an augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+  <jobString>Installing ferric lure.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_FerricLure</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_FerricLure</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_FerricLure_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_FerricLure</defName>
+    <label>remove ferric lure</label>
+    <description>Remove ferric lure.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_FerricLure</ThingDef></descriptionHyperlinks>
+    <jobString>Removing ferric lure.</jobString>
+    <removesHediff>Seg_COTO_FerricLure_Hediff</removesHediff>
+  </RecipeDef>
 
 </Defs>

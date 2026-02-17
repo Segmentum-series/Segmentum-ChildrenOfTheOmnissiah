@@ -385,6 +385,11 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
             <Steel>40</Steel>
 		</costList>
+		<recipeMaker>
+      	<skillRequirements Inherit="False">
+				<Crafting>6</Crafting>
+		</skillRequirements>
+		</recipeMaker>
 </ThingDef>
 
 <!-- HediffDef -->

@@ -24,7 +24,7 @@
     </graphicData>
   <statBases>
     <WorkToMake>2000</WorkToMake>
-    <MarketValue>500</MarketValue>
+    <MarketValue>800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
@@ -379,6 +379,11 @@
 			<ComponentSpacer>3</ComponentSpacer>
       <ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
+		<recipeMaker>
+      	<skillRequirements Inherit="False">
+				<Crafting>12</Crafting>
+		</skillRequirements>
+		</recipeMaker>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -725,10 +730,9 @@
   <stages>
     <li>
        <statOffsets>
-            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <ComfyTemperatureMax>15</ComfyTemperatureMax>
         </statOffsets>
-      <painOffset>0.01</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -767,84 +771,6 @@
     <jobString>Removing thermoregulation matrix.</jobString>
     <removesHediff>Seg_COTO_ThermoregulationMatrix_Hediff</removesHediff>
   </RecipeDef>
-  <!--Ferric Lurex-->
-<!-- ThingDef -->
-<ThingDef ParentName="BodyPartAdvancedAugmetics">
-  <defName>Seg_COTO_FerricLure</defName>
-  <label>ferric lure</label>
-  <description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance.</description>
-  
-		<costList Inherit="False">
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-      <ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-</ThingDef>
-
-<!-- HediffDef -->
-<HediffDef ParentName="ImplantHediffBase">
-  <defName>Seg_COTO_FerricLure_Hediff</defName>
-  <label>ferric lure</label>
-  <labelNoun>a ferric lure</labelNoun>
-   <hediffClass>Hediff_Implant</hediffClass>
-  <description>An installed augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance.</description>
-  <spawnThingOnRemoved>Seg_COTO_FerricLure</spawnThingOnRemoved>
- 
-
-
-
-  <stages>
-    <li>
-       <statOffsets>
-           <WorkSpeedGlobal>.10</WorkSpeedGlobal>
-        </statOffsets>
-      <painOffset>0.01</painOffset>
-    </li>
-  </stages>
-  <comps>
-      <li Class="Seg.HediffCompProperties_GivesAbility">
-        <vefAbility>Seg_COTO_FerricLureAbility</vefAbility>
-      </li>
-    </comps>
-
-</HediffDef>
-
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallImplantBase">
-  <defName>InstallSeg_COTO_FerricLure</defName>
-  <label>install ferric lure</label>
-  <description>Install an augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance.</description>
-  <jobString>Installing ferric lure.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_FerricLure</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_FerricLure</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Torso</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_FerricLure_Hediff</addsHediff>
-</RecipeDef>
-  <RecipeDef ParentName="SurgeryRemoveImplantBase">
-    <defName>RemoveSeg_COTO_FerricLure</defName>
-    <label>remove ferric lure</label>
-    <description>Remove ferric lure.</description>
-    <descriptionHyperlinks><ThingDef>Seg_COTO_FerricLure</ThingDef></descriptionHyperlinks>
-    <jobString>Removing ferric lure.</jobString>
-    <removesHediff>Seg_COTO_FerricLure_Hediff</removesHediff>
-  </RecipeDef>
-
-
 
 
 </Defs>
