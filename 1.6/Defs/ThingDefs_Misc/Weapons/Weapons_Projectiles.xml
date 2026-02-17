@@ -110,7 +110,7 @@
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
 			<damageAmountBase>2</damageAmountBase>
-			<armorPenetrationBase>.45</armorPenetrationBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
 		</projectile>
