@@ -2,7 +2,7 @@
  <VEF.Abilities.AbilityDef>
 	<defName>Seg_COTO_FerricLureAbility</defName>
 	<label>Disarming Pull</label>
-	<description>Use the powerful magnetic field to pull the target's weapon towards you, causing them to drop it.</description>
+	<description>Channel the Motive Force to pull the target's weapon towards you, causing them to drop it.</description>
 	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
 	<abilityClass>Seg.Ability_StripWeapon</abilityClass>
 	<castTime>60</castTime>
