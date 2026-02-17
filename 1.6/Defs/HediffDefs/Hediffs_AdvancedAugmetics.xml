@@ -439,8 +439,8 @@
       <li>Seg_COTO_AdvancedAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Plasteel>80</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
@@ -731,7 +731,7 @@
   </techHediffsTags>
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
@@ -826,8 +826,8 @@
       <li>Seg_COTO_AdvancedAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
@@ -922,8 +922,8 @@
       <li>Seg_COTO_AdvancedAugmetics</li>
   </techHediffsTags>
 		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
