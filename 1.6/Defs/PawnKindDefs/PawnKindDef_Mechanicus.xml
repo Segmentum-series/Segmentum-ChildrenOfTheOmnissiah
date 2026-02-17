@@ -12,6 +12,7 @@
             <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
         </apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<techHediffsTags>
 			<li>Seg_COTO_SkitariiAugmetics</li>
 		</techHediffsTags>
@@ -256,6 +257,7 @@
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<humanPregnancyChance>0</humanPregnancyChance>
         <trader>false</trader>
         <isFighter>false</isFighter>
@@ -397,6 +399,7 @@
         </apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
+			<li>Seg_COTO_AdvancedAugmetics</li>
 		</techHediffsTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>3000~5000</techHediffsMoney>
