@@ -1,20 +1,13 @@
 <Defs>
-<!--Standard Arm-->
-<!-- ThingDef -->
+<ThingDef Abstract="True" Name="BodyPartStandardAugmetics" ParentName="BodyPartProstheticBase">
+ <recipeMaker>
+    <researchPrerequisites>
+    <li>Seg_COTO_TrueFlesh</li>
+    <li>Prosthetics</li>
+    </researchPrerequisites>
 
-
-
-<ThingDef ParentName="BodyPartProstheticBase">
-  <defName>Seg_COTO_StandardArm</defName>
-  <label>standard augmetic arm</label>
-  <description>An augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
+      <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
       </recipeUsers>
       	<skillRequirements>
 				<Crafting>6</Crafting>
@@ -25,10 +18,10 @@
       <texPath>Things/Item/Health/HealthItem</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
+      <color>(172, 83, 83)</color>
     </graphicData>
   <statBases>
-  
+    <WorkToMake>1500</WorkToMake>
     <MarketValue>500</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
@@ -40,8 +33,18 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
+      <li>Seg_COTO_MechanciusAugmetics</li>
   </tradeTags>
+</ThingDef>
+<!--Standard Arm-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardArm</defName>
+  <label>standard augmetic arm</label>
+  <description>An augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -100,44 +103,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardLeg</defName>
   <label>standard augmetic leg</label>
   <description>An augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -196,44 +165,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardEye</defName>
   <label>standard augmetic eye</label>
   <description>An augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -309,44 +244,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardHeart</defName>
   <label>standard augmetic heart</label>
   <description>An augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -406,44 +307,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardLung</defName>
   <label>standard augmetic lung</label>
   <description>An augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -504,46 +371,16 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardSpine</defName>
   <label>standard augmetic spine</label>
   <description>An augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>8</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Steel>80</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
             <Plasteel>20</Plasteel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -602,45 +439,16 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardLiver</defName>
   <label>standard augmetic liver</label>
   <description>An augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Quite a bit more efficient and resilient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Steel>80</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
-            <Plasteel>20</Plasteel>
+        <Plasteel>20</Plasteel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
+     
 </ThingDef>
 
 <!-- HediffDef -->
@@ -700,44 +508,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardKidney</defName>
   <label>standard augmetic kidney</label>
   <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -796,44 +570,14 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardJaw</defName>
   <label>standard augmetic jaw</label>
   <description>An augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Steel>40</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -892,46 +636,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardEar</defName>
   <label>improved vox receptor</label>
   <description>An augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
-  <recipeMaker>
-<researchPrerequisite>
- <li>Seg_COTO_TrueFlesh</li>
-</researchPrerequisite>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>6</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_StandardAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Steel>60</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
-
 <!-- HediffDef -->
 <HediffDef ParentName="AddedBodyPartBase">
   <defName>Seg_COTO_StandardEar_Hediff</defName>

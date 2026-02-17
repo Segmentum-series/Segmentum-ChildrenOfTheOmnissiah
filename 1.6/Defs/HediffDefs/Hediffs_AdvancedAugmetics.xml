@@ -1,21 +1,15 @@
 <Defs>
-<!--Advanced Arm-->
-<!-- ThingDef -->
 
+<!-- BaseDef -->
+<ThingDef Abstract="True" Name="BodyPartAdvancedAugmetics" ParentName="BodyPartProstheticBase">
+ <recipeMaker>
+    <researchPrerequisites>
+    <li>Seg_COTO_TrueFlesh</li>
+    <li>Bionics</li>
+    </researchPrerequisites>
 
-
-<ThingDef ParentName="BodyPartProstheticBase">
-  <defName>Seg_COTO_AdvancedArm</defName>
-  <label>advanced augmetic arm</label>
-  <description>An augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
+      <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
       </recipeUsers>
       	<skillRequirements>
 				<Crafting>10</Crafting>
@@ -26,10 +20,10 @@
       <texPath>Things/Item/Health/HealthItem</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
+      <color>(112, 160, 121)</color>
     </graphicData>
   <statBases>
-  
+    <WorkToMake>2000</WorkToMake>
     <MarketValue>500</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
@@ -41,8 +35,15 @@
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
      <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
+      <li>Seg_COTO_MechanciusAugmetics</li>
   </tradeTags>
+</ThingDef>
+<!--Advanced Arm-->
+
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
+  <defName>Seg_COTO_AdvancedArm</defName>
+  <label>advanced augmetic arm</label>
+  <description>An augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -100,45 +101,14 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedLeg</defName>
   <label>advanced augmetic leg</label>
   <description>An augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList  Inherit="False">
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -196,45 +166,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedEye</defName>
   <label>advanced augmetic eye</label>
   <description>An augmetic replacement eye which can see in significantly wider spectra and in greater detail than the baseline eye. While these augmetics can be made almost imperceptible in appearance from organic eyes, Mechanicus members prefer the augmetic to be obvious as a sign of devotion to the Machine God.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -309,45 +244,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedHeart</defName>
   <label>advanced augmetic heart</label>
   <description>An augmetic replacement heart. Significantly stronger than the baseline organ. Techpriests consider themselves above the irrational concerns of the laity, but the symbolic power of replacing the weak organic heart with True Flesh is not lost on even the least sentimental among them.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -406,45 +306,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedLung</defName>
   <label>advanced augmetic lung</label>
   <description>An augmetic replacement lung. Significantly stronger than the baseline organ. Breathing the sacred air of the Omnissiah is seen as an act of worship when done with a respiratory system formed of True Flesh.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -504,45 +369,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedSpine</defName>
   <label>advanced augmetic spine</label>
   <description>An augmetic replacement spine. More resilient and efficient than the baseline body part. Replacing the failure-prone osseus spinal column with holy alloys and circuitry is something that many techpriests covet.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>12</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Plasteel>30</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -600,45 +430,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedLiver</defName>
   <label>advanced augmetic liver</label>
   <description>An augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Significantly more efficient and resilient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
-			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -697,45 +492,14 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedKidney</defName>
   <label>advanced augmetic kidney</label>
   <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Significantly more efficient than the baseline organ. While techpriests sometimes prefer to do away entirely with unsavoury organic functions, others among them see it as a particularly devout act to use the Omnissiah's gifts to refine these functions as much as possible instead.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
+  	<costList  Inherit="False">
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -793,45 +557,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedJaw</defName>
   <label>advanced augmetic jaw</label>
   <description>An augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
+  
 </ThingDef>
 
 <!-- HediffDef -->
@@ -889,45 +623,14 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedEar</defName>
   <label>advanced vox receptor</label>
   <description>An augmetic ear implant following advanced vox receptor schematics from the Dark Age of Technology. It can detect and process a far wider range of sounds than the baseline human ear, as well as radio and electromagnetic waves through which information can be passed.</description>
-  <recipeMaker>
-<researchPrerequisites>
- <li>Seg_COTO_TrueFlesh</li>
- <li>Bionics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>10</Crafting>
-		</skillRequirements>
-        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>500</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_AdvancedAugmetics</li>
-  </techHediffsTags>
-		<costList>
+		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->

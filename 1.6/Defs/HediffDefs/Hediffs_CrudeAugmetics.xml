@@ -1,22 +1,16 @@
 <Defs>
 <!--Crude Arm-->
 <!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartProstheticBase">
-  <defName>Seg_COTO_CrudeArm</defName>
-  <label>crude augmetic arm</label>
-  <description>An augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+<ThingDef Abstract="True" Name="BodyPartCrudeAugmetics" ParentName="BodyPartProstheticBase">
   <recipeMaker>
-<researchPrerequisites>
+    <researchPrerequisites>
     <li>Seg_COTO_CultMechanicus</li>
     <li>Prosthetics</li>
-</researchPrerequisites>
+    </researchPrerequisites>
 
 
     <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
+        <li>Seg_COTO_AugmeticsTable</li>
       </recipeUsers>
       	<skillRequirements>
 				<Crafting>4</Crafting>
@@ -26,7 +20,7 @@
       <texPath>Things/Item/Health/HealthItem</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
+    <color>(138,143,153)</color>
     </graphicData>
   <statBases>
   
@@ -41,8 +35,15 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
+      <li>Seg_COTO_CrudeAugmetics</li>
   </tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="BodyPartCrudeAugmetics">
+  <defName>Seg_COTO_CrudeArm</defName>
+  <label>crude augmetic arm</label>
+  <description>An augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  
 </ThingDef>
 
 <!-- HediffDef -->
@@ -101,45 +102,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeLeg</defName>
   <label>crude augmetic leg</label>
   <description>An augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
-			<Steel>40</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -198,45 +164,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeEye</defName>
   <label>crude augmetic eye</label>
   <description>A bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+		<costList Inherit="False">
 			<Steel>20</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
+  
 </ThingDef>
 
 <!-- HediffDef -->
@@ -334,45 +270,14 @@
   <addsHediff>Seg_COTO_CrudeHeart_Hediff</addsHediff>
 </RecipeDef>
 <!--thingDef-->
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeHeart</defName>
   <label>crude augmetic heart</label>
   <description>An augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+		<costList Inherit="False">
 			<Leather_Plain>20</Leather_Plain>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -404,45 +309,14 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeLung</defName>
   <label>crude augmetic lung</label>
   <description>An augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Leather_Plain>20</Leather_Plain>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -502,45 +376,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeSpine</defName>
   <label>crude augmetic spine</label>
   <description>An augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
+ 
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
             <Steel>40</Steel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -599,44 +443,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeJaw</defName>
   <label>crude augmetic jaw</label>
   <description>A bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
-  <recipeMaker>
-<researchPrerequisites Inherit="false">
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+ 
+		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -694,45 +509,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeHand</defName>
   <label>crude augmetic hand</label>
   <description>An augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
+  
 </ThingDef>
 
 <!-- HediffDef -->
@@ -790,45 +575,15 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeFoot</defName>
   <label>crude augmetic foot</label>
   <description>An augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
+ 
+		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
             <Steel>20</Steel>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -887,45 +642,10 @@
 
 
 
-<ThingDef ParentName="BodyPartProstheticBase">
+<ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeEar</defName>
   <label>vox receptor</label>
   <description>An augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
-  <recipeMaker>
-<researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-</researchPrerequisites>
-
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_CraftingTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(78,59,49)</color>
-    </graphicData>
-  <statBases>
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
-  
-		<costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
-            <Steel>20</Steel>
-		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_SkitariiAugmetics</li>
-  </tradeTags>
 </ThingDef>
 
 <!-- HediffDef -->
