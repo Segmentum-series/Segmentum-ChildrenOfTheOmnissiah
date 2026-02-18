@@ -437,10 +437,25 @@
           <categories>
        
         <li>ApparelMisc</li>
-        <li>Headgear</li>
       	<li>Seg_COTO_ArmorMagos</li>
         
         </categories>
+		<thingDefs>
+		 <li>Apparel_CowboyHat</li>
+		 <li>Apparel_BowlerHat</li>
+		 <li>Apparel_TribalHeaddress</li>
+		 <li>Apparel_Tuque</li>
+		 <li>Apparel_WarVeil</li>
+		 <li>Apparel_HatHood</li>
+		 <li>Apparel_ClothMask</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Slicecap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_AuthorityCap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Tailcap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Shadecone</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
+		</thingDefs>
         </filter>
         <count>1</count>
       </li>
@@ -449,11 +464,26 @@
       <categories>
        
         <li>ApparelMisc</li>
-        <li>Headgear</li>
       	<li>Seg_COTO_ArmorMagos</li>
         
 
         </categories>
+		<thingDefs>
+		 <li>Apparel_CowboyHat</li>
+		 <li>Apparel_BowlerHat</li>
+		 <li>Apparel_TribalHeaddress</li>
+		 <li>Apparel_Tuque</li>
+		 <li>Apparel_WarVeil</li>
+		 <li>Apparel_HatHood</li>
+		 <li>Apparel_ClothMask</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Slicecap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_AuthorityCap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Tailcap</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Shadecone</li>
+		 <li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
+		</thingDefs>
       
     </fixedIngredientFilter>
 	<products>
