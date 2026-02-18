@@ -1,0 +1,29 @@
+<Defs>
+ <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>Seg_COTOSlab_Medium</defName>
+    <label>omnissian slab (medium)</label>
+    <description>A stone bas relief of Omnissian imagery for decorating a floor.</description>
+     <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+     <dominantStyleCategory>Techist</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/SlabsForgeWorlds</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <designationCategory>Floors</designationCategory>
+    <uiOrder>2000</uiOrder>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+
+  </ThingDef>
+</Defs>
