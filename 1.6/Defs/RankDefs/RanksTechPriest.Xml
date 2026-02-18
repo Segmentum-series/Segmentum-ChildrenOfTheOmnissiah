@@ -706,11 +706,18 @@
     </Seg.RankDef>
      <Seg.RankDef>
         <defName>Seg_COTO_ArchmagosDominius</defName>
-        <label>Archmagos Dominius</label>
+        <label>Archmagos Dominus</label>
         <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the Machine Cult's armies and navies against the foe, often making use of their other specialisations in devising strategies.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosDominus</rankIconPath>
         <rankTier>7</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+            <li>Seg_COTO_ArchmagosGenetor</li>
+            <li>Seg_COTO_Artisan</li>
+            <li>Seg_COTO_LexicoArcanus</li>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+        </incompatibleRanks>
         <requiredSkills>
             <Shooting>12</Shooting>
         </requiredSkills>
