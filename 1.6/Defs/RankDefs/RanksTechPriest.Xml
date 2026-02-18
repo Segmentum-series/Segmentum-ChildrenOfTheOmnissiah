@@ -504,9 +504,6 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMetallurgicus</rankIconPath>
         <rankTier>5</rankTier>
         <ImplantsRequired>4</ImplantsRequired>
-         <incompatibleRanks>
-            <li>Seg_COTO_MagosDominius</li>
-        </incompatibleRanks>
 
         <requiredSkills>
             <Crafting>8</Crafting>
@@ -531,7 +528,7 @@
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
-            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
         </incompatibleRanks>
 
         <requiredSkills>
@@ -560,6 +557,9 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Artisan</rankIconPath>
         <rankTier>6</rankTier>
         <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosDominius</li>
+        </incompatibleRanks>
 
         <requiredSkills>
             <Crafting>12</Crafting>
@@ -594,7 +594,7 @@
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
-            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
         </incompatibleRanks>
         <requiredSkills>
             <Plants>10</Plants>
@@ -628,7 +628,7 @@
         <rankTier>6</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
-            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
         </incompatibleRanks>
         <requiredSkills>
             <Social>8</Social>
