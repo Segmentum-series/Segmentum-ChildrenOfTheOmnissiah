@@ -248,8 +248,35 @@
                     <Seg_COTO_Skitarius>20</Seg_COTO_Skitarius>
                 </rankRequirements>
             </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiProvost</rankDef>
+                <displayPosition>(3, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiVanguardAlpha</rankDef>
+                <displayPosition>(6, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_SkitariiVanguard>25</Seg_COTO_SkitariiVanguard>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiRanger</rankDef>
+                <displayPosition>(5, 11)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>20</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
 
-
+            <li>
+                <rankDef>Seg_COTO_SkitariiRangerAlpha</rankDef>
+                <displayPosition>(6, 11)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_SkitariiRanger>25</Seg_COTO_SkitariiRanger>
+                </rankRequirements>
+            </li>
 
 
      

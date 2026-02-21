@@ -94,4 +94,122 @@
             <MeleeHitChance>1.05</MeleeHitChance>
         </statFactors>
     </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
+        <label>Skitarii Vanguard Alpha</label>
+        <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguardAlpha</rankIconPath>
+        <rankTier>4</rankTier>
+        <ImplantsRequired>5</ImplantsRequired>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <requiredSkills>
+            <Shooting>10</Shooting>
+            <Melee>8</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>1</MeleeDodgeChance>
+           <SocialImpact>.1</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.15</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiProvost</defName>
+        <label>Skitarii Provost</label>
+        <description>The internal security forces of the Adeptus Mechanicus, charged with keeping order and brutally repressing any worker unrest.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarii</rankIconPath>
+        <rankTier>4</rankTier>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Social>4</Social>
+            <Melee>6</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+        <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+          
+           <SocialImpact>.10</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.04</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiRanger</defName>
+        <label>Skitarii Ranger</label>
+        <description>The Rangers are the long-ranged line troops of the Skitarii, expert marksmen aided by cybernetic augmentation and tireless in their duties.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRanger</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>8</Shooting>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>.2</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
+            <TrapSpringChance>.8</TrapSpringChance>
+        </statFactors>
+    </Seg.RankDef>
+
+     <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiRangerAlpha</defName>
+        <label>Skitarii Ranger Alpha</label>
+        <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRangerAlpha</rankIconPath>
+        <rankTier>4</rankTier>
+        <ImplantsRequired>5</ImplantsRequired>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <requiredSkills>
+            <Shooting>12</Shooting>
+            <Melee>6</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <MeleeDodgeChance>.8</MeleeDodgeChance>
+           <SocialImpact>.1</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.05</MeleeHitChance>
+            <ShootingAccuracyPawn>1.15</ShootingAccuracyPawn>
+            <TrapSpringChance>.5</TrapSpringChance>
+        </statFactors>
+    </Seg.RankDef>
+    
 </Defs>
