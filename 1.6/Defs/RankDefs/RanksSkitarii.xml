@@ -5,6 +5,11 @@
         <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with a basic firearm and directed to engage the enemy.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_TechMilitia</rankIconPath>
         <rankTier>1</rankTier>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<li>Seg_COTO_TechAcolytum</li>
+        </incompatibleRanks>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
         <requiredSkills>
             <Shooting>2</Shooting>
@@ -26,11 +31,6 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Hypaspist</rankIconPath>
         <rankTier>2</rankTier>
         <ImplantsRequired>1</ImplantsRequired>
-		<incompatibleRanks>
-            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
-            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
-			<li>Seg_COTO_AdeptProbatoris</li>
-        </incompatibleRanks>
         <requiredSkills>
             <Melee>2</Melee>
             <Shooting>4</Shooting>
@@ -73,6 +73,11 @@
         <description>Often called 'rad-troopers' for the radioactive weapons they carry, the Vanguard are the close quarters ranged troops of the Skitarii legions.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguard</rankIconPath>
         <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiRanger</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
             <Shooting>6</Shooting>
@@ -131,6 +136,12 @@
         <description>The internal security forces of the Adeptus Mechanicus, charged with keeping order and brutally repressing any worker unrest.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiProvost</rankIconPath>
         <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiVanguard</li>
+			<li>Seg_COTO_SkitariiRanger</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
             <Social>4</Social>
@@ -160,6 +171,11 @@
         <description>The Rangers are the long-ranged line troops of the Skitarii, expert marksmen aided by cybernetic augmentation and tireless in their duties.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRanger</rankIconPath>
         <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiVanguard</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
             <Shooting>8</Shooting>
@@ -218,7 +234,10 @@
         <label>Sicarian Ruststalker</label>
         <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianRuststalker</rankIconPath>
-        <rankTier>3</rankTier>
+        <rankTier>6</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
         <requiredSkills>
             <Melee>8</Melee>
@@ -246,7 +265,10 @@
         <label>Sicarian Infiltrator</label>
         <description>Sicarian Infiltrators are cybernetic scout troops who are so heavily modified as to barely deserve the label of 'human' anymore. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianInfiltrator</rankIconPath>
-        <rankTier>3</rankTier>
+        <rankTier>6</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SicarianRuststalker</li>
+        </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
         <requiredSkills>
             <Melee>8</Melee>
@@ -280,7 +302,7 @@
         <label>Sicarian Princeps</label>
         <description>Squads of Sicarians are led by a Princeps, equivalent to the Alphas of the Vanguards and Rangers. Each Princeps is a terror on the battlefield and a holy expression of the Machine God's power.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
             <Melee>10</Melee>

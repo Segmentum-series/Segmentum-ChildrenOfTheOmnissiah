@@ -5,6 +5,11 @@
         <description>An apprentice in the mysteries of the Machine Cult. Tech Acolyta are treated little better than menials, but may be destined for great things.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_TechAcolytum</rankIconPath>
         <rankTier>1</rankTier>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<li>Seg_COTO_TechMilitia</li>
+        </incompatibleRanks>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
     
 
@@ -22,11 +27,6 @@
         <description>Having graduated beyond the acolyta, the Adept Probatoris is preparing to be ordained as a full tech-adept of the Machine Cult.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AdeptProbatoris</rankIconPath>
         <rankTier>2</rankTier>
-		<incompatibleRanks>
-            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
-            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
-			<li>Seg_COTO_Hypaspist</li>
-        </incompatibleRanks>
 
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
@@ -397,7 +397,7 @@
         <label>Magos Biologis Extremis</label>
         <description>A particular expert on medical matters and surgery, often found serving as the master chirurgeon on a voidship.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
-        <rankTier>4</rankTier>
+        <rankTier>5</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
             <Medicine>10</Medicine>
@@ -549,7 +549,7 @@
         <label>Lexico Arcanus</label>
         <description>The highest rank of Logis, the Lexico Arcanus is held in high esteem and is able to process and evaluate situations at an unbelievable rate thanks to mental conditioning and augmetics.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_LexicoArcanus</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
             <li>Seg_COTO_ArchmagosDominius</li>
@@ -579,7 +579,7 @@
         <label>Artisan</label>
         <description>Artisans are master machinists who can direct the population of entire forgeplexes to construct and assemble facilities, voidships, and military equipment that they design - as long as they follow sanctioned STC parameters.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Artisan</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>8</rankTier>
         <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
             <li>Seg_COTO_ArchmagosDominius</li>
@@ -615,7 +615,7 @@
         
         <description>Having dedicated their life to the genetor's arts, this techpriest is recognised as an Archmagos and a pre-eminent savant of their field.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosGenetor</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
             <li>Seg_COTO_ArchmagosDominius</li>
@@ -649,7 +649,7 @@
         <label>Explorator Majoris</label>
         <description>Explorators Majoris have the authority to command entire fleets of Mechanicus vessels in the search for technology and knowledge.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ExploratorMajoris</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
             <li>Seg_COTO_ArchmagosDominius</li>
@@ -680,7 +680,7 @@
         <label>Magos Dominus</label>
         <description>Any techpriest of sufficient rank may take on the title of Magos Dominus temporarily to lead a military campaign or contribute otherwise to the wars of the Mechanicus.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosDominus</rankIconPath>
-        <rankTier>6</rankTier>
+        <rankTier>7</rankTier>
        <ImplantsRequired>5</ImplantsRequired>
         <requiredSkills>
             <Shooting>8</Shooting>
@@ -733,7 +733,7 @@
         <label>Archmagos Dominus</label>
         <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the Machine Cult's armies and navies against the foe, often making use of their other specialisations in devising strategies.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosDominus</rankIconPath>
-        <rankTier>7</rankTier>
+        <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
        <incompatibleRanks>
             <li>Seg_COTO_ArchmagosExplorator</li>
@@ -800,7 +800,7 @@
         <description>The upper echelons of Mechanicus society are ruled by the Magi Prime, who are certain to have attained their positions through merit and knowledge.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosPrime</rankIconPath>
         <colonyLimitOfRank>(4, 0)</colonyLimitOfRank>
-        <rankTier>8</rankTier>
+        <rankTier>9</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
         <requiredSkills>
             <Intellectual>8</Intellectual>
@@ -826,7 +826,7 @@
         <description>The Fabricator Locum is a deputy for the Fabricator General of a forge world or its equivalent. They are expected to take on the duties of their superior if the Fabricator General is away or indisposed.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorLocum</rankIconPath>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
-        <rankTier>9</rankTier>
+        <rankTier>10</rankTier>
        <ImplantsRequired>8</ImplantsRequired>
         <requiredSkills>
             <Intellectual>10</Intellectual>
@@ -848,7 +848,7 @@
         <description>The highest ranking techpriest on a forgeworld or its equivalent is the Fabricator General. They wield supreme and unquestioned power and answer only to the Fabricator-General of Mars - and the other High Lords of Terra, in theory.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorGeneral</rankIconPath>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
-        <rankTier>10</rankTier>
+        <rankTier>11</rankTier>
        <ImplantsRequired>10</ImplantsRequired>
         <requiredSkills>
             <Intellectual>12</Intellectual>
