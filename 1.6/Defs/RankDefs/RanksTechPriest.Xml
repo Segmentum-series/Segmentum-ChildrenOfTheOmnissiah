@@ -175,6 +175,11 @@
 
 
         </statOffsets>
+        <recreationFromSkills>
+            <li>Plants</li>
+            <li>Animals</li>
+            <li>Medicine</li>
+        </recreationFromSkills>
         <!--<modExtensions>
             <li Class="VEF.Genes.GeneExtension">
                 <skillRecreation>Plants</skillRecreation>
@@ -468,6 +473,16 @@
            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
          <!-- <GlobalCertaintyLossFactor MayRequire="Ludeon.RimWorld.Odyssey">0.60</GlobalCertaintyLossFactor> -->
         </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+        </givesPassions>
     
     </Seg.RankDef>
     <Seg.RankDef>
@@ -495,6 +510,15 @@
           <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
         <PainShockThreshold>1.05</PainShockThreshold>
         </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+        </givesPassions>
+        <recreationFromSkills>
+            <li>Melee</li>
+        </recreationFromSkills>
     </Seg.RankDef>
 
     <Seg.RankDef>
