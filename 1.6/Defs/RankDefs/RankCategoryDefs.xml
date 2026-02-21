@@ -277,13 +277,36 @@
                     <Seg_COTO_SkitariiRanger>25</Seg_COTO_SkitariiRanger>
                 </rankRequirements>
             </li>
-
-
-     
-
-
-
-
+             <li>
+                <rankDef>Seg_COTO_SicarianRuststalker</rankDef>
+                <displayPosition>(5, 9)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_SicarianInfiltrator</rankDef>
+                <displayPosition>(5, 10)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SicarianPrinceps</rankDef>
+                <displayPosition>(6, 9.5)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_SicarianInfiltrator>10</Seg_COTO_SicarianInfiltrator>
+                    <Seg_COTO_SicarianRuststalker>10</Seg_COTO_SicarianRuststalker>
+                </rankRequirementsOneAmong>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_SkitariiMarshal</rankDef>
+                <displayPosition>(7, 9)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_SkitariiVanguardAlpha>25</Seg_COTO_SkitariiVanguardAlpha>
+                    <Seg_COTO_SkitariiRangerAlpha>25</Seg_COTO_SkitariiRangerAlpha>
+                </rankRequirementsOneAmong>
+            </li>
  </ranks>
 </Core40k.RankCategoryDef>            
 </Defs>

@@ -213,5 +213,124 @@
             <TrapSpringChance>.5</TrapSpringChance>
         </statFactors>
     </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianRuststalker</defName>
+        <label>Sicarian Ruststalker</label>
+        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianRuststalker</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>8</ImplantsRequired>
+        <requiredSkills>
+            <Melee>8</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
     
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+           <MeleeDodgeChance>.5</MeleeDodgeChance>
+           <MoveSpeed>.1</MoveSpeed>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.20</PainShockThreshold>
+             <MeleeHitChance>1.20</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianInfiltrator</defName>
+        <label>Sicarian Infiltrator</label>
+        <description>Sicarian Infiltrators are cybernetic scout troops who are so heavily modified as to barely deserve the label of 'human' anymore. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianInfiltrator</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>8</ImplantsRequired>
+        <requiredSkills>
+            <Melee>8</Melee>
+            <Shooting>5</Shooting>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+        <!--givesAbilities>
+            <li>Seg_COTO_WaveBurst</li>
+        </givesAbilities>-->
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.40</PainShockThreshold>
+            
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianPrinceps</defName>
+        <label>Sicarian Princeps</label>
+        <description>Squads of Sicarians are led by a Princeps, equivalent to the Alphas of the Vanguards and Rangers. Each Princeps is a terror on the battlefield and a holy expression of the Machine God's power.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
+        <rankTier>6</rankTier>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <requiredSkills>
+            <Melee>10</Melee>
+            <Shooting>8</Shooting>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.20</PainShockThreshold>
+             <MeleeHitChance>1.10</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiMarshal</defName>
+        <label>Skitarii Marshal</label>
+        <description>A Marshal is a leader of Skitarii cohorts, an experienced veteran of numerous battles and campaigns. They act as intermediates between the ordained techpriests and the ranks of the Skitarii Legions.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiMarshal</rankIconPath>
+        <rankTier>6</rankTier>
+        <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
+         <givesPassions>
+            <li>
+            <skill>Social</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.03</AimingDelayFactor>
+           <SocialImpact>.1</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
+             <MeleeHitChance>1.10</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
 </Defs>
