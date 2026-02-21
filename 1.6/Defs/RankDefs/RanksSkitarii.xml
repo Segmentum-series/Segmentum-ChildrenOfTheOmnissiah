@@ -118,6 +118,7 @@
            <AimingDelayFactor>-0.05</AimingDelayFactor>
            <MeleeDodgeChance>1</MeleeDodgeChance>
            <SocialImpact>.1</SocialImpact>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.4</CertaintyLossFactor>
         </statOffsets>
          <statFactors>
             <MeleeHitChance>1.15</MeleeHitChance>
@@ -144,7 +145,7 @@
     
 
         <statOffsets>
-        <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+        <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.3</CertaintyLossFactor>
         <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
           
            <SocialImpact>.10</SocialImpact>
@@ -204,6 +205,7 @@
         <statOffsets>
            <MeleeDodgeChance>.8</MeleeDodgeChance>
            <SocialImpact>.1</SocialImpact>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.4</CertaintyLossFactor>
         </statOffsets>
          <statFactors>
             <MeleeHitChance>1.05</MeleeHitChance>
