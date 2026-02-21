@@ -129,7 +129,7 @@
         <defName>Seg_COTO_SkitariiProvost</defName>
         <label>Skitarii Provost</label>
         <description>The internal security forces of the Adeptus Mechanicus, charged with keeping order and brutally repressing any worker unrest.</description>
-        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarii</rankIconPath>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiProvost</rankIconPath>
         <rankTier>4</rankTier>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
