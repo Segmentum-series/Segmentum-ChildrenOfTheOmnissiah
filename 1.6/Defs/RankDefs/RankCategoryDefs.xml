@@ -91,7 +91,7 @@
             </li>
             <li>
                 <rankDef>Seg_COTO_MagosBiologisextremis</rankDef>
-                <displayPosition>(7, 5)</displayPosition>
+                <displayPosition>(7, 4.5)</displayPosition>
                 <rankRequirements>
                     <Seg_COTO_MagosBiologis>20</Seg_COTO_MagosBiologis>
                 </rankRequirements>
@@ -161,7 +161,7 @@
             </li>
              <li>
                 <rankDef>Seg_COTO_MagosDominius</rankDef>
-                <displayPosition>(8, 6)</displayPosition>
+                <displayPosition>(7, 6)</displayPosition>
                  <rankRequirementsOneAmong>
                     <Seg_COTO_MagosExplorator>20</Seg_COTO_MagosExplorator>
                     <Seg_COTO_MagosBiologisextremis>20</Seg_COTO_MagosBiologisextremis>
@@ -174,7 +174,7 @@
             </li>
              <li>
                 <rankDef>Seg_COTO_ArchmagosDominius</rankDef>
-                <displayPosition>(10, 6)</displayPosition>
+                <displayPosition>(8, 6)</displayPosition>
                  <rankRequirements>
                     <Seg_COTO_MagosDominius>15</Seg_COTO_MagosDominius>
                 </rankRequirements>
