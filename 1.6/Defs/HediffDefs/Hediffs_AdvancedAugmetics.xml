@@ -464,10 +464,11 @@
 
 
   <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-    </li>
+      <li>
+        <makeImmuneTo>
+          <li>LungRotExposure</li>
+        </makeImmuneTo>
+      </li>
   </stages>
 </HediffDef>
 
@@ -698,6 +699,75 @@
   <addsHediff>Seg_COTO_AdvancedEar_Hediff</addsHediff>
 </RecipeDef>
 
+
+<!-- Advanced augmetic stomach -->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartAdvancedAugmetics">
+  <defName>Seg_COTO_AdvancedStomach</defName>
+  <label>advanced augmetic stomach</label>
+  <description>An augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients to a degree unknown in the natural world. Many techpriests regard the digestion of nutrients through the stomach to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+		<costList Inherit="False">
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+  
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_AdvancedStomach_Hediff</defName>
+  <label>advanced augmetic stomach</label>
+  <labelNoun>a advanced augmetic stomach</labelNoun>
+  <description>An installed augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <spawnThingOnRemoved>Seg_COTO_AdvancedStomach</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.30</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+      <li>
+        <makeImmuneTo>
+          <li>GutWorms</li>
+        </makeImmuneTo>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+      </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_AdvancedStomach</defName>
+  <label>install advanced augmetic stomach</label>
+  <description>Installs an augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act or worship in itself.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_AdvancedStomach</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_AdvancedStomach</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Stomach</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_AdvancedStomach_Hediff</addsHediff>
+</RecipeDef>
 
 
 

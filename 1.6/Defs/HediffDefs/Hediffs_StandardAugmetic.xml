@@ -636,6 +636,75 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_StandardJaw_Hediff</addsHediff>
 </RecipeDef>
+
+
+<!-- Standard augmetic stomach -->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardStomach</defName>
+  <label>standard augmetic stomach</label>
+  <description>An augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>
+  
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardStomach_Hediff</defName>
+  <label>standard augmetic stomach</label>
+  <labelNoun>a standard augmetic stomach</labelNoun>
+  <description>An installed augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardStomach</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+      <makeImmuneTo>
+         <li>GutWorms</li>
+      </makeImmuneTo>
+      <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardStomach</defName>
+  <label>install standard augmetic stomach</label>
+  <description>Installs an augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardStomach</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardStomach</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Stomach</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardStomach_Hediff</addsHediff>
+</RecipeDef>
+
 <!--Standard ear-->
 <!-- ThingDef -->
 
