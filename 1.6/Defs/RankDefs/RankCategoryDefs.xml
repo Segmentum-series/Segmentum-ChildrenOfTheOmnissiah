@@ -1,9 +1,9 @@
 <Defs>
 <!--    TechPriests-->
     <Core40k.RankCategoryDef>
-        <defName>Seg_COTO_TechPriestRankCategory</defName>
-        <label>Tech Priest</label>
-        <description>Ranks of the Tech Priests of the Machine Cult.</description>
+        <defName>Seg_COTO_CultMechanicusRankCategory</defName>
+        <label>Cult Mechanicus</label>
+        <description>Ranks of the Tech Priests and Skitarri of the Machine Cult.</description>
         <ranks>
             <li>
                 <rankDef>Seg_COTO_TechAcolytum</rankDef>
@@ -91,7 +91,7 @@
             </li>
             <li>
                 <rankDef>Seg_COTO_MagosBiologisextremis</rankDef>
-                <displayPosition>(7, 4.5)</displayPosition>
+                <displayPosition>(6.5, 4.5)</displayPosition>
                 <rankRequirements>
                     <Seg_COTO_MagosBiologis>20</Seg_COTO_MagosBiologis>
                 </rankRequirements>
@@ -223,6 +223,33 @@
                     <Seg_COTO_CyberneticaDatasmith>20</Seg_COTO_CyberneticaDatasmith>
                 </rankRequirements>
             </li>
+            <li>
+                <rankDef>Seg_COTO_TechMilita</rankDef>
+                <displayPosition>(1, 9)</displayPosition>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_Hypaspist</rankDef>
+                <displayPosition>(2, 9)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_TechMilita>5</Seg_COTO_TechMilita>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_Skitarius</rankDef>
+                <displayPosition>(3, 9)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_TechMilita>10</Seg_COTO_TechMilita>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiVanguard</rankDef>
+                <displayPosition>(5, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>20</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+
+
 
 
      

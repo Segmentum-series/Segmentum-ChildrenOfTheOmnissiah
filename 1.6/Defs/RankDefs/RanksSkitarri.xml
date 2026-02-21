@@ -1,2 +1,97 @@
 <Defs>
+<Seg.RankDef>
+        <defName>Seg_COTO_TechMilita</defName>
+        <label>Tech Milita</label>
+        <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with a basic firearm and directed to engage the enemy.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_TechMilitia</rankIconPath>
+        <rankTier>1</rankTier>
+        <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
+        <requiredSkills>
+            <Shooting>2</Shooting>
+        </requiredSkills>
+    
+
+        <statOffsets>
+            
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.01</GlobalLearningFactor>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Hypaspist</defName>
+        <label>Hypaspist</label>
+        <description>The hypaspist is a soldier equipped and trained to the standards of the average guardsman and intended to form the bulk of a forge's basic military, usually modified somewhat with combat implants.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Hypaspist</rankIconPath>
+        <rankTier>2</rankTier>
+        <ImplantsRequired>1</ImplantsRequired>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<li>Seg_COTO_AdeptProbatoris</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Melee>2</Melee>
+            <Shooting>4</Shooting>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.02</GlobalLearningFactor>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Skitarius</defName>
+        <label>Skitarius</label>
+        <description>Skitarii are augmetically-modified cybernetic warriors who retain free will in order to be more effective soldiers than the combat servitors or robots which also see use by the Mechanicus.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarius</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>2</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>5</Shooting>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.03</ShootingAccuracyPawn>
+        </statFactors>
+    </Seg.RankDef>
+      <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiVanguard</defName>
+        <label>Skitarii Vanguard</label>
+        <description>Often called 'rad-troopers' for the radioactive weapons they carry, the Vanguard are the close quarters ranged troops of the Skitarii legions.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguard</rankIconPath>
+        <rankTier>4</rankTier>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>6</Shooting>
+            <Melee>4</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.05</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
 </Defs>

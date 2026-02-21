@@ -25,7 +25,7 @@
 		<incompatibleRanks>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
-			<!--li>Seg_COTO_Hypaspist</li-->
+			<li>Seg_COTO_Hypaspist</li>
         </incompatibleRanks>
 
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
