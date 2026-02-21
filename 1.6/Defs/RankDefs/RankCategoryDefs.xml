@@ -1,7 +1,7 @@
 <Defs>
 <!--    TechPriests-->
     <Core40k.RankCategoryDef>
-        <defName>Seg_COTO_CultMechanicusRankCategory</defName>
+        <defName>Seg_COTO_TechPriestRankCategory</defName>
         <label>Cult Mechanicus</label>
         <description>Ranks of the Tech Priests and Skitarri of the Machine Cult.</description>
         <ranks>
