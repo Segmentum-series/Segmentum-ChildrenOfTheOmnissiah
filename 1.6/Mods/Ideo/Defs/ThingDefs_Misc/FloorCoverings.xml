@@ -10,6 +10,7 @@
       <texPath>Things/Building/SlabsForgeWorlds</texPath>
       <drawSize>(3,3)</drawSize>
     </graphicData>
+     <thingClass>Seg.Building_Seg_COTOFloorCover</thingClass>
     <drawStyleCategory>Floors</drawStyleCategory>
     <designationCategory>Floors</designationCategory>
     <uiOrder>2000</uiOrder>
@@ -33,6 +34,7 @@
     <description>A large embossed metallic tile of the sacred symbols of Mechanicus forgeworlds for decorating a floor.</description>
      <canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
      <dominantStyleCategory>Techist</dominantStyleCategory>
+     <thingClass>Seg.Building_Seg_COTOFloorCover</thingClass>
     <graphicData>
       <graphicClass>Graphic_Random</graphicClass>
       <texPath>Things/Building/SlabsForgeWorlds</texPath>
