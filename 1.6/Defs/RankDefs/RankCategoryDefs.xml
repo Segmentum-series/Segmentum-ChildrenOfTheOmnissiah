@@ -238,7 +238,7 @@
                 <rankDef>Seg_COTO_Skitarius</rankDef>
                 <displayPosition>(3, 9)</displayPosition>
                  <rankRequirements>
-                    <Seg_COTO_TechMilita>10</Seg_COTO_TechMilita>
+                    <Seg_COTO_Hypaspist>10</Seg_COTO_Hypaspist>
                 </rankRequirements>
             </li>
             <li>
