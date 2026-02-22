@@ -29,6 +29,10 @@
         <countRange>100~300</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>100~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
         <thingDef>WoodLog</thingDef>
         <countRange>50~200</countRange>
       </li>
