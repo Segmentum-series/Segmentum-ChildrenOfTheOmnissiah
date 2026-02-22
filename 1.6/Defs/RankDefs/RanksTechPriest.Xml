@@ -8,7 +8,7 @@
 		<incompatibleRanks>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
-			<li>Seg_COTO_TechMilitia</li>
+			<li>Seg_COTO_TechMilita</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
     
