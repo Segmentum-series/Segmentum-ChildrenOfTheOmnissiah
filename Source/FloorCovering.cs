@@ -65,7 +65,7 @@ namespace Seg
 
             if (cachedGraphicGizmo == null)
             {
-                Texture2D icon = ContentFinder<Texture2D>.Get("UI/Abilities/Seg_COTO_Ability_EmergencyAid", true);
+                Texture2D icon = ContentFinder<Texture2D>.Get("UI/Buttons/Seg_COTO_NextSelection", true);
                 cachedGraphicGizmo = new Command_Action
                 {
                     defaultLabel = "Change appearance",
