@@ -498,7 +498,7 @@
 		<weaponTags>
 			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
-		tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 	</ThingDef>

@@ -38,7 +38,7 @@
 		<!--relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 		<inspectorTabs>
       		<li>ITab_Art</li>
-    	</inspectorTabs>
+    	</inspectorTabs> -->
 	</ThingDef>
 
 <!-- Arc Maul -->
