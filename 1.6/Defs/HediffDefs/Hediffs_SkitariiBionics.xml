@@ -22,7 +22,8 @@
   </recipeMaker>
 		<costList>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
@@ -98,7 +99,8 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
      <tradeTags Inherit="False">
@@ -199,7 +201,8 @@
   
 		<costList>
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
       <Seg_Ceramite>25</Seg_Ceramite>
 		</costList>
      <tradeTags Inherit="False">
@@ -485,7 +488,8 @@
   
 		<costList>
       <Plasteel>20</Plasteel>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>

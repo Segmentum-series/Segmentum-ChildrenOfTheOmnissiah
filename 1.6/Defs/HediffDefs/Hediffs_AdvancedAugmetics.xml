@@ -108,7 +108,8 @@
   <description>An augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
 		<costList  Inherit="False">
 			<Plasteel>20</Plasteel>
-			<ComponentSpacer>5</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 </ThingDef>
 
