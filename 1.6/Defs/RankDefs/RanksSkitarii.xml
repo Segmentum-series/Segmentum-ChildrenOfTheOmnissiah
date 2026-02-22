@@ -1,7 +1,7 @@
 <Defs>
 <Seg.RankDef>
         <defName>Seg_COTO_TechMilita</defName>
-        <label>Tech Milita</label>
+        <label>Tech Militia</label>
         <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with a basic firearm and directed to engage the enemy.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_TechMilitia</rankIconPath>
         <rankTier>1</rankTier>
@@ -32,8 +32,8 @@
         <rankTier>2</rankTier>
         <ImplantsRequired>1</ImplantsRequired>
         <requiredSkills>
-            <Melee>2</Melee>
-            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Shooting>5</Shooting>
         </requiredSkills>
 
     
@@ -53,7 +53,7 @@
         <rankTier>3</rankTier>
         <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
-            <Shooting>5</Shooting>
+            <Shooting>6</Shooting>
         </requiredSkills>
 
     
@@ -80,7 +80,7 @@
         </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
-            <Shooting>6</Shooting>
+            <Shooting>7</Shooting>
             <Melee>4</Melee>
         </requiredSkills>
          <givesPassions>
@@ -108,7 +108,7 @@
         <ImplantsRequired>5</ImplantsRequired>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
-            <Shooting>10</Shooting>
+            <Shooting>12</Shooting>
             <Melee>8</Melee>
         </requiredSkills>
          <givesPassions>
@@ -207,7 +207,7 @@
         <ImplantsRequired>5</ImplantsRequired>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
-            <Shooting>12</Shooting>
+            <Shooting>14</Shooting>
             <Melee>6</Melee>
         </requiredSkills>
          <givesPassions>
@@ -240,7 +240,7 @@
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
         <requiredSkills>
-            <Melee>8</Melee>
+            <Melee>10</Melee>
         </requiredSkills>
          <givesPassions>
             <li>
@@ -305,7 +305,7 @@
         <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
-            <Melee>10</Melee>
+            <Melee>12</Melee>
             <Shooting>8</Shooting>
         </requiredSkills>
          <givesPassions>
@@ -336,6 +336,10 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiMarshal</rankIconPath>
         <rankTier>6</rankTier>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
+        <ImplantsRequired>8</ImplantsRequired>
+        <requiredSkills>
+            <Social>6</Social>
+        </requiredSkills>
          <givesPassions>
             <li>
             <skill>Social</skill>
