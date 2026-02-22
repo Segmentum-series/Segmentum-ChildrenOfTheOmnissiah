@@ -14,7 +14,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
-        <countRange>15~30</countRange>
+        <countRange>20~40</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
@@ -22,7 +22,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Steel</thingDef>
-        <countRange>500~800</countRange>
+        <countRange>800~1000</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Seg_Ceramite</thingDef>
@@ -42,7 +42,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
-        <countRange>20~30</countRange>
+        <countRange>25~35</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Gold</thingDef>
@@ -97,13 +97,6 @@
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>15~30</countRange>
       </li>
-      <li Class="StockGenerator_MultiDef">
-        <thingDefs>
-          <li>Kibble</li>
-          <li>Chocolate</li>
-          <li>Pemmican</li>
-        </thingDefs>
-      </li>
       
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
@@ -149,12 +142,12 @@
       <li Class="StockGenerator_Tag">
         <tradeTag>Seg_COTO_StandardAugmetics</tradeTag>
         <thingDefCountRange>0~2</thingDefCountRange>
-        <countRange>1~1</countRange>
+        <countRange>1~2</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>Seg_COTO_AdvancedAugmetics</tradeTag>
         <thingDefCountRange>0~1</thingDefCountRange>
-        <countRange>1~1</countRange>
+        <countRange>1~2</countRange>
       </li>
       
       <!-- Buildings -->

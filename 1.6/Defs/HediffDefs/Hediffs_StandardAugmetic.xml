@@ -22,7 +22,7 @@
     </graphicData>
   <statBases>
     <WorkToMake>1500</WorkToMake>
-    <MarketValue>500</MarketValue>
+    <MarketValue>800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">

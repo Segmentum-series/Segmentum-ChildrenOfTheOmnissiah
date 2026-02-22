@@ -5,7 +5,7 @@
   <label>skitarii leg</label>
   <description>An augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
@@ -92,7 +92,7 @@
   <description>An augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
   <statBases>
   
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   
@@ -190,7 +190,7 @@
       </recipeUsers>
   </recipeMaker>
   <statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
@@ -289,7 +289,7 @@
   </recipeMaker>
   <description>Skitarii are augmetically modified to be maximally effective in combat, and part of that entails trimming unnecessary parts to allow them to perform their duties in the Machine God's service to the fullest. Removal of eyelids and replacing them with high-quality auspex-equipped optical lenses is naturally recommended.</description>
   <statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
@@ -390,7 +390,7 @@
   </recipeMaker>
   <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
   <statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
@@ -470,7 +470,7 @@
   <label>Breath of Mars</label>
   <description>An augmetic lung apparatus that allows the user to breathe in harsh environments. Contains a canister of purified and recyclable air from the Holy Red Planet itself.</description>
   <statBases>
-    <MarketValue>2800</MarketValue>
+    <MarketValue>1000</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
   <techHediffsTags Inherit="False">
