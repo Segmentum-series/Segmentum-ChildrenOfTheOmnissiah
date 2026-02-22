@@ -8,9 +8,9 @@
 		<thingCategories>
 			<li>Seg_COTO_ArmorMagos</li>
 		</thingCategories>
-		<!-- <tradeTags>
-			<li>Seg_COTO_Robe</li>
-		</tradeTags> -->
+		<tradeTags>
+			<li>Seg_COTO_MechanicusArmor</li>
+		</tradeTags>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>

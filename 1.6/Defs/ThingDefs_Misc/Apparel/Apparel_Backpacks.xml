@@ -15,6 +15,9 @@
 		<thingCategories>
 			<li>Seg_COTO_MechanicusArmor</li>
 		</thingCategories>
+		<tradeTags>
+			<li>Seg_COTO_MechanicusArmor</li>
+		</tradeTags>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
