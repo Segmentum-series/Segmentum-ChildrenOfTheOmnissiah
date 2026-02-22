@@ -31,11 +31,11 @@
 		<weaponClasses>
 			<li>Melee</li>
 			<li>Ultratech</li>
-		</weaponClasses>
+		</weaponClasses-->
 		<tradeTags>
 			<li>Seg_COTO_WeaponMelee</li>
-		</tradeTags>-->
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		</tradeTags>
+		<!--relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 		<inspectorTabs>
       		<li>ITab_Art</li>
     	</inspectorTabs>

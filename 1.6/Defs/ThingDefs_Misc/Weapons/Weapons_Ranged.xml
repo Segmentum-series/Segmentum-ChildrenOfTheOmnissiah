@@ -93,10 +93,9 @@
 		<weaponTags>
 			<li>Seg_COTO_MagosBasicRanged</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
-		-->
 
 		<comps>
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
@@ -233,10 +232,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Arc</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
-		-->
 	</ThingDef>
 
 	<!-- Arc rifle -->
@@ -327,10 +325,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Arc</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
-		-->
 	</ThingDef>
 
 <!-- Phosphor weapons base -->
@@ -432,9 +429,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 	
 	<!-- Phosphor blast pistol -->
@@ -501,9 +498,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
-		<!--tradeTags>
+		tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Gamma weapons base -->
@@ -630,9 +627,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Gamma</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedHighTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Rad weapons base -->
@@ -750,9 +747,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Rad</li>
 		</weaponTags>
-		<!--tradeTags>
-			<li></li>
-		</tradeTags>-->
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- Radium carbine -->
@@ -825,9 +822,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Rad</li>
 		</weaponTags>
-		<!--tradeTags>
-			<li></li>
-		</tradeTags>-->
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
 	</ThingDef>
 
 <!-- Plasma weapons base -->
@@ -945,9 +942,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Plasma</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Transuranic arquebus base -->
@@ -1083,9 +1080,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Transuranic</li>
 		</weaponTags>
-		<!--tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- Galvanic rifle -->
@@ -1173,9 +1170,9 @@
 		<weaponTags>
 			<li>Seg_COTO_Galvanic</li>
 		</weaponTags>
-		<!--tradeTags>
+		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 </Defs>
