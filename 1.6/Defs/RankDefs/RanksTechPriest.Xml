@@ -220,6 +220,11 @@
         <statFactors>
             <GlobalLearningFactor>1.05</GlobalLearningFactor>
         </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Social</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
     </Seg.RankDef>
     <Seg.RankDef>
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
