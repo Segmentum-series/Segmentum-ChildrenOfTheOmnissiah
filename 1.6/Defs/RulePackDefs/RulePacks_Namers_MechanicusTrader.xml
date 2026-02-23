@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Seg_COTO_NamerTraderMechanicus</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MechanicusShipHolyName]'s [MechanicusShipNoun]</li>
+        <li>r_name->[MechanicusShipNoun] of the [MechanicusShipHolyName]</li>
+        <li>r_name->[MechanicusShipNoun] of [MechanicusShipFamousPlace]</li>
+        <li>r_name->[MechanicusShipFamousPlace] [MechanicusShipCode][MechanicusShipNumeral]</li>
+        <li>r_name->[MechanicusShipFamousPlaceAdjective] [MechanicusShipNoun]</li>
+        <li>r_name->[MechanicusShipFamousPlace]'s [MechanicusShipNoun]</li>
+        <li>r_name->[MechanicusShipFamousPlace] [MechanicusShipNumeral]</li>
+        <li>r_name->[MechanicusShipCode] [MechanicusShipNoun] of [MechanicusShipFamousPlace]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>MechanicusShipHolyName->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipHolyName</li>
+        <li>MechanicusShipNoun->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNoun</li>
+        <li>MechanicusShipFamousPlace->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlace</li>
+        <li>MechanicusShipCode->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipCode</li>
+        <li>MechanicusShipNumeral->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNumeral</li>
+        <li>MechanicusShipFamousPlaceAdjective->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlaceAdjective</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>
