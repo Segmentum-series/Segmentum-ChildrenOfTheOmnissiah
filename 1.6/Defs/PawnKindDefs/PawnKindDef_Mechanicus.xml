@@ -48,7 +48,7 @@
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiVanguard</defName>
 		<label>Skitarii Vanguard</label>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -90,7 +90,7 @@
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
 		<label>Skitarii Vanguard Alpha</label>
-        <combatPower>120</combatPower>
+        <combatPower>150</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -142,7 +142,7 @@
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiRanger</defName>
 		<label>Skitarii Ranger</label>
-        <combatPower>100</combatPower>
+        <combatPower>120</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -183,7 +183,7 @@
     <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
         <defName>Seg_COTO_SkitariiRangerAlpha</defName>
 		<label>Skitarii Ranger Alpha</label>
-        <combatPower>140</combatPower>
+        <combatPower>160</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -267,7 +267,7 @@
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_AuxiliusMyrmidon</defName>
 		<label>Auxilius Myrmidon</label>
-        <combatPower>50</combatPower>
+        <combatPower>60</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -317,7 +317,7 @@
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_MagosMyrmidon</defName>
 		<label>Magos Myrmidon</label>
-        <combatPower>80</combatPower>
+        <combatPower>90</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -368,7 +368,7 @@
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_ArchmagosDominus</defName>
 		<label>Archmagos Dominus</label>
-        <combatPower>160</combatPower>
+        <combatPower>180</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
