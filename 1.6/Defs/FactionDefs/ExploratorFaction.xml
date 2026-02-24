@@ -127,7 +127,6 @@
 
 
         <earliestRaidDays>45</earliestRaidDays>
-        <autoFlee>false</autoFlee>
         <raidCommonalityFromPointsCurve>
             <points>
                 <li>(0, 1)</li>
