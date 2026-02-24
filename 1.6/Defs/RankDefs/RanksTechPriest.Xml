@@ -139,7 +139,7 @@
      <Seg.RankDef>
         <defName>Seg_COTO_MagosBiologis</defName>
         <label>Magos Biologis</label>
-        <description>Expert in the fields of biology, anatomy, and xenofauna, a Magos Biologis has dedicated their life to the study of the organic.</description>
+        <description>Expert in the fields of biology, anatomy, and xenofauna, a Magos \nBiologis has dedicated their life to the study of the organic.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologis</rankIconPath>
         <rankTier>3</rankTier>
           <incompatibleRanks>
@@ -258,7 +258,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_FabricatorMinoris</defName>
         <label>Fabricator Minoris</label>
-        <description>A Fabricator Minoris has authority over the manufacturing processes and workforce of significant parts of a forgeplex, carrying out the orders of higher magi but with a good amount of independence.</description>
+        <description>A Fabricator Minoris has authority over the manufacturing processes \nand workforce of significant parts of a forgeplex, carrying out the orders \nof higher magi but with a good amount of independence.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorMinoris</rankIconPath>
         <rankTier>4</rankTier>
           <incompatibleRanks>
@@ -341,7 +341,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_MagosLogis</defName>
         <label>Magos Logis</label>
-        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by the wider Cult Mechanicus..</description>
+        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by \nthe wider Cult Mechanicus..</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosLogis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
@@ -456,7 +456,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_MagosMilitant</defName>
         <label>Magos Militant</label>
-        <description>A Magos Militant has demonstrated their aptitude in the Omnissiah's arts of war, and may now be trusted to pursue hereteks while remaining steadfast against such temptations.</description>
+        <description>A Magos Militant has demonstrated their aptitude in the Omnissiah's \narts of war, and may now be trusted to pursue hereteks while \nremaining steadfast against such temptations.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMilitant</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
@@ -552,7 +552,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_LexicoArcanus</defName>
         <label>Lexico Arcanus</label>
-        <description>The highest rank of Logis, the Lexico Arcanus is held in high esteem and is able to process and evaluate situations at an unbelievable rate thanks to mental conditioning and augmetics.</description>
+        <description>The highest rank of Logis, the Lexico Arcanus is held in high esteem \nand is able to process and evaluate situations at an unbelievable rate \nthanks to mental conditioning and augmetics.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_LexicoArcanus</rankIconPath>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
@@ -708,7 +708,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_CyberneticaDatasmith</defName>
         <label>Cybernetica Datasmith</label>
-        <description>The mainstay of the Legio Cybernetica, Datasmiths command the robotic forces of the Mechanicus and are often found fighting alongside their charges, believing deeply that these valiant machine spirits must be supported and cared for.</description>
+        <description>The mainstay of the Legio Cybernetica, Datasmiths command the \nrobotic forces of the Mechanicus and are often found fighting \nalongside their charges, believing deeply that these valiant machine spirits must be supported and cared for.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_CyberneticaDatasmith</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
@@ -736,7 +736,7 @@
      <Seg.RankDef>
         <defName>Seg_COTO_ArchmagosDominius</defName>
         <label>Archmagos Dominus</label>
-        <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the Machine Cult's armies and navies against the foe, often making use of their other specialisations in devising strategies.</description>
+        <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the \nMachine Cult's armies and navies against the foe, often making use of \ntheir other specialisations in devising strategies.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosDominus</rankIconPath>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
@@ -769,7 +769,7 @@
      <Seg.RankDef>
         <defName>Seg_COTO_MagosMyrmidax</defName>
         <label>Magos Myrmidax</label>
-        <description>These techpriests of war command the Auxilia Myrmidon and modify themselves heavily so that they can dominate the thickest fighting of any battle.</description>
+        <description>These techpriests of war command the Auxilia Myrmidon and modify themselves heavily so that they can dominate the thickest fighting of \nany battle.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMyrmidax</rankIconPath>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
@@ -850,7 +850,7 @@
        <Seg.RankDef>
         <defName>Seg_COTO_FabricatorGeneral</defName>
         <label>Fabricator General</label>
-        <description>The highest ranking techpriest on a forgeworld or its equivalent is the Fabricator General. They wield supreme and unquestioned power and answer only to the Fabricator-General of Mars - and the other High Lords of Terra, in theory.</description>
+        <description>The highest ranking techpriest on a forgeworld or its equivalent is the Fabricator General. They wield supreme and unquestioned power and answer only to the Fabricator-General of Mars - and the other High \nLords of Terra, in theory.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorGeneral</rankIconPath>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
         <rankTier>11</rankTier>

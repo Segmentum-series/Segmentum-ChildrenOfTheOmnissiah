@@ -2,7 +2,7 @@
 <Seg.RankDef>
         <defName>Seg_COTO_TechMilita</defName>
         <label>Tech Militia</label>
-        <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with a basic firearm and directed to engage the enemy.</description>
+        <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with \na basic firearm and directed to engage the enemy.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_TechMilitia</rankIconPath>
         <rankTier>1</rankTier>
 		<incompatibleRanks>
@@ -48,7 +48,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_Skitarius</defName>
         <label>Skitarius</label>
-        <description>Skitarii are augmetically-modified cybernetic warriors who retain free will in order to be more effective soldiers than the combat servitors or robots which also see use by the Mechanicus.</description>
+        <description>Skitarii are augmetically-modified cybernetic warriors who retain free will in order to be more effective soldiers than the combat servitors or \nrobots which also see use by the Mechanicus.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarius</rankIconPath>
         <rankTier>3</rankTier>
         <ImplantsRequired>2</ImplantsRequired>
@@ -300,7 +300,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_SicarianPrinceps</defName>
         <label>Sicarian Princeps</label>
-        <description>Squads of Sicarians are led by a Princeps, equivalent to the Alphas of the Vanguards and Rangers. Each Princeps is a terror on the battlefield and a holy expression of the Machine God's power.</description>
+        <description>Squads of Sicarians are led by a Princeps, equivalent to the Alphas of \nthe Vanguards and Rangers. Each Princeps is a terror on the battlefield \nand a holy expression of the Machine God's power.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
         <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
