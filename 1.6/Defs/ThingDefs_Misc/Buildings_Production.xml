@@ -231,7 +231,7 @@
 		<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<graphicData>
-			<texPath>Things/Building/Production/TableSculpting</texPath>
+			<texPath>Things/Building/CraftingTable/Seg_COTO_CraftingTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
