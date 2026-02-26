@@ -29,6 +29,10 @@
         <countRange>100~300</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
+        <thingDef>Seg_Adamantium</thingDef>
+        <countRange>20~100</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
         <thingDef>Uranium</thingDef>
         <countRange>100~400</countRange>
       </li>
@@ -49,6 +53,10 @@
         <countRange>25~35</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>5~15</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
         <thingDef>Gold</thingDef>
         <countRange>50~200</countRange>
       </li>
@@ -67,6 +75,9 @@
       <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Odyssey">
         <thingDef>GravlitePanel</thingDef>
         <countRange>-20~80</countRange>
+      </li>
+      <li Class="StockGenerator_ReinforcedBarrels">
+        <countRange>2~6</countRange>
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>Textiles</categoryDef>
@@ -179,7 +190,12 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_WeaponRangedMidTier</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_WeaponRangedHighTier</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_MechanicusArmor</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>GravshipUpgrade</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
       
     </stockGenerators>
   </TraderKindDef>
