@@ -280,4 +280,487 @@
             </li>
         </modExtensions>
 	</ThingDef>
+	<!-- Biologus hood -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_BiologusHood</defName>
+		<label>biologus hood</label>
+		<description>This hood is characteristic of the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/BiologusHood/Seg_COTO_BiologusHood</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+			<MedicalTendQuality>.15</MedicalTendQuality>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>70</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Hood</li>
+				<li>Seg_COTO_Biologus</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/BiologusHood/Seg_COTO_BiologusHood</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li> <!-- new research needed to be added-->
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+	<!-- Biologus cassock -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_BiologusCassock</defName>
+		<label>biologus cassock</label>
+		<description>This cassock denotes membership and status within the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms. Magi Biologis often outfit their robes with surgical tools, sample storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/BiologusCassock/Seg_COTO_BiologusCassock</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>10.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+			<MedicalTendQuality>.15</MedicalTendQuality>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosCassock</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/BiologusCassock/Seg_COTO_BiologusCassock</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	<!-- Explorator hood -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_ExploratorHood</defName>
+		<label>Explorator hood</label>
+		<description>A reinforced protective hood typically used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and are a breed apart from the more sedentary parts of the Cult to the extent that they have developed their own dialect of the binharic cant used for communication by techpriests..\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/ExploratorHood/Seg_COTO_ExploratorHood</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+			<costStuffCount>45</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_Hood</li>
+				<li>Seg_COTO_Explorator</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/ExploratorHood/Seg_COTO_ExploratorHood</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	<!-- Explorator robe -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_ExploratorRobe</defName>
+		<label>Explorator robe</label>
+		<description>A lightweight but tough robe characteristic of those used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and tend to adapt their clothing for the rough conditions they expect to encounter on uncharted or hostile worlds.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/ExploratorRobe/Seg_COTO_ExploratorRobe</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor> 
+			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+		</statBases>
+
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosRobes</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/ExploratorRobe/Seg_COTO_ExploratorRobe</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_FabricatorRobe</defName>
+		<label>Fabricator robe</label>
+		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks..\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/FabricatorRobe/Seg_COTO_FabricatorRobe</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
+			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+			<ConstructionSpeed>.20</ConstructionSpeed>
+			<ConstructSuccessChance>.20</ConstructSuccessChance>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosRobes</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/FabricatorRobe/Seg_COTO_FabricatorRobe</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_FabricatorCassock</defName>
+		<label>fabricator cassock</label>
+		<description>This cassock denotes membership and status within the Divisio Fabricatorum, one of the Holy Orders of the Mechanicus which focuses on the mechanical in all its forms. Fabricators often outfit their robes with tools for metalworking, component storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/FabricatorCassock/Seg_COTO_FabricatorCassock</texPath>
+		</graphicData>
+		
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>10.2</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+			<ConstructionSpeed>.20</ConstructionSpeed>
+			<ConstructSuccessChance>.20</ConstructSuccessChance>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosCassock</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/FabricatorCassock/Seg_COTO_FabricatorCassock</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+			<modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
+	</ThingDef>
 </Defs>

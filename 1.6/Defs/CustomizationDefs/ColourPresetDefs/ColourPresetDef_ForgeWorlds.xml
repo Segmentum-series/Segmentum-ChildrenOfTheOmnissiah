@@ -8,6 +8,14 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+			<li>Seg_COTO_Apparel_ExploratorRobes</li>
+			<li>Seg_COTO_Apparel_FabricatorCassock</li>
+			<li>Seg_COTO_Apparel_FabricatorRobe</li>
+			<li>Seg_COTO_Apparel_BiologisCassock</li>
+			<li>Seg_COTO_Apparel_BiologisHood</li>
+			
+
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
