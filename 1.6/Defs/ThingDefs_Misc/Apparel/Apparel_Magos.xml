@@ -280,16 +280,16 @@
             </li>
         </modExtensions>
 	</ThingDef>
-	<!-- Biologus hood -->
+	<!-- Biologis hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_Apparel_BiologusHood</defName>
-		<label>biologus hood</label>
+		<defName>Seg_COTO_Apparel_BiologisHood</defName>
+		<label>biologis hood</label>
 		<description>This hood is characteristic of the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/BiologusHood/Seg_COTO_BiologusHood</texPath>
+			<texPath>Things/Apparel/BiologisHood/Seg_COTO_BiologisHood</texPath>
 		</graphicData>
 
 		<statBases>
@@ -319,7 +319,7 @@
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>Seg_COTO_Hood</li>
-				<li>Seg_COTO_Biologus</li>
+				<li>Seg_COTO_Biologis</li>
 			</tags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -333,7 +333,7 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/BiologusHood/Seg_COTO_BiologusHood</li>
+				<li>Things/Apparel/BiologisHood/Seg_COTO_BiologisHood</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
@@ -360,16 +360,16 @@
         </modExtensions>
 	</ThingDef>
 
-	<!-- Biologus cassock -->
+	<!-- Biologis cassock -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_Apparel_BiologusCassock</defName>
-		<label>biologus cassock</label>
+		<defName>Seg_COTO_Apparel_BiologisCassock</defName>
+		<label>biologis cassock</label>
 		<description>This cassock denotes membership and status within the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms. Magi Biologis often outfit their robes with surgical tools, sample storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/BiologusCassock/Seg_COTO_BiologusCassock</texPath>
+			<texPath>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</texPath>
 		</graphicData>
 
 		<statBases>
@@ -422,7 +422,7 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<wornGraphicPaths>
-				<li>Things/Apparel/BiologusCassock/Seg_COTO_BiologusCassock</li>
+				<li>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</li>
 			</wornGraphicPaths>
 		</apparel>
 		<recipeMaker>
