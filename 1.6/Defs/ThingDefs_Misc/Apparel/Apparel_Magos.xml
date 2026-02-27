@@ -283,7 +283,7 @@
 	<!-- Biologis hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_BiologisHood</defName>
-		<label>biologis hood</label>
+		<label>Biologis hood</label>
 		<description>This peaked hood is characteristic of the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
@@ -297,8 +297,8 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
@@ -362,7 +362,7 @@
 	<!-- Biologis cassock -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_BiologisCassock</defName>
-		<label>biologis cassock</label>
+		<label>Biologis cassock</label>
 		<description>This cassock denotes membership and status within the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms. Magi Biologis often outfit their robes with surgical tools, sample storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
@@ -376,13 +376,13 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>10.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
 			<MedicalTendQuality>.15</MedicalTendQuality>
-			<PlantWorkSpeed>1.10</PlantWorkSpeed>
+			<PlantWorkSpeed>.20</PlantWorkSpeed>
 		</equippedStatOffsets>
 
 		<costList>
@@ -464,8 +464,8 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
@@ -540,8 +540,8 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor> 
-			<StuffEffectMultiplierInsulation_Heat>15</StuffEffectMultiplierInsulation_Heat>
-				<StuffEffectMultiplierInsulation_Cold>15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>.15</SocialImpact>
@@ -617,8 +617,8 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
-			<StuffEffectMultiplierInsulation_Heat>20</StuffEffectMultiplierInsulation_Heat>
-				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 				<!--Flammability reduction? Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
@@ -684,7 +684,7 @@
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_FabricatorCassock</defName>
-		<label>fabricator cassock</label>
+		<label>Fabricator cassock</label>
 		<description>This cassock denotes membership and status within the Divisio Fabricatorum, one of the Holy Orders of the Mechanicus which focuses on the mechanical in all its forms. Fabricators often outfit their robes with tools for metalworking, component storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
@@ -698,8 +698,9 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>10.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
+				<!--Flammability reduction? Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
