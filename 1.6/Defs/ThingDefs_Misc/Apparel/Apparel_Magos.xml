@@ -67,14 +67,14 @@
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>20</Steel>
+			<Steel>10</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 			<stuffCategories>
 				<li>Fabric</li>
 				<li>Leathery</li>
 			</stuffCategories>
-			<costStuffCount>40</costStuffCount>
+			<costStuffCount>30</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -305,14 +305,14 @@
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>30</Steel>
+			<Steel>10</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 			<stuffCategories>
 				<li>Fabric</li>
 				<li>Leathery</li>
 			</stuffCategories>
-			<costStuffCount>70</costStuffCount>
+			<costStuffCount>60</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -382,6 +382,7 @@
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
 			<MedicalTendQuality>.15</MedicalTendQuality>
+			<PlantWorkSpeed>1.10</PlantWorkSpeed>
 		</equippedStatOffsets>
 
 		<costList>
@@ -539,11 +540,12 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor> 
-			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
-				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>15</StuffEffectMultiplierInsulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>15</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>.15</SocialImpact>
+			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
 
 		<costList>
@@ -701,7 +703,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
-			<ConstructionSpeed>.20</ConstructionSpeed>
+			<ConstructionSpeed>.25</ConstructionSpeed>
 			<ConstructSuccessChance>.20</ConstructSuccessChance>
 		</equippedStatOffsets>
 
