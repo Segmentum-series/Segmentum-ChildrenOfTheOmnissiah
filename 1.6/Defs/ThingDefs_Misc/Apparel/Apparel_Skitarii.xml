@@ -369,8 +369,6 @@
       		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicResistance>1.00</ToxicResistance>
-			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<SocialImpact>0.20</SocialImpact>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
