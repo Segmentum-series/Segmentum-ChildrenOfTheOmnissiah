@@ -377,7 +377,7 @@
 			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.30</CertaintyLossFactor>
 		</equippedStatOffsets>
 		<recipeMaker>
-			<researchPrerequisites>
+			<researchPrerequisites Inherit="False">
 				<li>Seg_COTO_ManipleTactics</li>
 			</researchPrerequisites>
 		</recipeMaker>
@@ -463,6 +463,11 @@
 		<AimingDelayFactor>-0.05</AimingDelayFactor>
 		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
 		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_ManipleTactics</li>
+			</researchPrerequisites>
+		</recipeMaker>
 
 		<costList>
 			<Plasteel>30</Plasteel>
