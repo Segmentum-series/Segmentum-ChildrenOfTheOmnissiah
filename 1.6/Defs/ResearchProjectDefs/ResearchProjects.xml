@@ -55,7 +55,7 @@
 		<defName>Seg_COTO_ArcPermacapacitors</defName>
 		<label>arc permacapacitors</label>
 		<description>Be vested with the consecrated rites of arc permacapacitors, channelling bound machine-spirits to unleash searing arcs of sanctified energy that scour flesh, armour, and circuitry alike.</description>
-		<baseCost>1550</baseCost>
+		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>16.00</researchViewX>
 		<researchViewY>4.90</researchViewY>
@@ -152,7 +152,7 @@
 		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>0.7</researchViewY>
+		<researchViewY>0.6</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_CultMechanicus</li>
 			<li>ComplexClothing</li>
@@ -172,7 +172,7 @@
 		<baseCost>2500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>
-		<researchViewY>0.7</researchViewY>
+		<researchViewY>0.6</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_TechGuard</li>
 		</prerequisites>
@@ -184,6 +184,23 @@
 	</ResearchProjectDef>
 
 <!-- Maniple tactics || Left out for 1.0 -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_ManipleTactics</defName>
+		<label>Maniple tactics</label>
+		<description>Be instructed in the advanced organization and equipment of the Tech-Guard, including the highest-ranking officers necessary for the prosecution of war in the name of the Omnissiah.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>Seg_COTO_TechGuard</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_SegmentumTab</tab>
+	</ResearchProjectDef>
 <!-- True Flesh-->
 <ResearchProjectDef>
 		<defName>Seg_COTO_TrueFlesh</defName>
@@ -192,7 +209,7 @@
 		<baseCost>1400</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>1.3</researchViewY>
+		<researchViewY>1.2</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_CultMechanicus</li>
 			<li>Prosthetics</li>

@@ -296,7 +296,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuard</li>
+				<li>Seg_COTO_ManipleTactics</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -1048,7 +1048,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuardAdvanced</li>
+				<li>Seg_COTO_ManipleTactics</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
