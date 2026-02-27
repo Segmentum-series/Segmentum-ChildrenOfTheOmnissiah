@@ -463,9 +463,9 @@
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
@@ -539,7 +539,7 @@
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
-			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor> 
+			<StuffEffectMultiplierArmor>.85</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
@@ -619,7 +619,8 @@
 			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-				<!--Flammability reduction? Electricity reduction?-->
+			<Flammability>0.20</Flammability>
+				<!--Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>.10</SocialImpact>
@@ -700,7 +701,8 @@
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
-				<!--Flammability reduction? Electricity reduction?-->
+			<Flammability>0.20</Flammability>
+				<!-- Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
