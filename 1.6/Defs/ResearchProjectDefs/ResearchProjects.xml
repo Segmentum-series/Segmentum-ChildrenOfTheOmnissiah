@@ -188,7 +188,7 @@
 		<defName>Seg_COTO_ManipleTactics</defName>
 		<label>Maniple tactics</label>
 		<description>Be instructed in the advanced organization and equipment of the Tech-Guard, including the highest-ranking officers necessary for the prosecution of war in the name of the Omnissiah.</description>
-		<baseCost>1200</baseCost>
+		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
