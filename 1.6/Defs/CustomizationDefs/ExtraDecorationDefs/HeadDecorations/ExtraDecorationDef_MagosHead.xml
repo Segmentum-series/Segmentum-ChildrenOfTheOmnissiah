@@ -46,4 +46,277 @@
 		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
+	<!-- Hood stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologisHoodGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusHood/Seg_COTO_Deco_BiologusHood_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologisHoodGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusHood/Seg_COTO_Deco_BiologusHood_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_GearTeeth</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologisHoodThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusHood/Seg_COTO_Deco_BiologusHood_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_ThinStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<!-- Explorator-->
+	<!-- Hood stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorHoodGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorHood/Seg_COTO_Deco_ExploratorHood_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorHoodGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorHood/Seg_COTO_Deco_ExploratorHood_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_GearTeeth</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorHoodThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorHood/Seg_COTO_Deco_ExploratorHood_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_ThinStripe</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>West</li>
+			<li>South</li>
+			<li>East</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataNorth>
+				<layer>77</layer>
+				<flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+				<layer>81</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>75</layer>
+			</dataEast>
+			<dataWest>
+				<layer>75</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
 </Defs>

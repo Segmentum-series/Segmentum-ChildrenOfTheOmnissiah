@@ -9,7 +9,7 @@
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
-			<li>Seg_COTO_Apparel_ExploratorRobes</li>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
 			<li>Seg_COTO_Apparel_FabricatorCassock</li>
 			<li>Seg_COTO_Apparel_FabricatorRobe</li>
 			<li>Seg_COTO_Apparel_BiologisCassock</li>
@@ -37,6 +37,8 @@
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiVanguardHelmet" Abstract="True">
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -44,6 +46,7 @@
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiWarPlate" Abstract="True">
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -58,6 +61,7 @@
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiBackpack" Abstract="True">
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 

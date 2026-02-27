@@ -550,5 +550,147 @@
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
+	<!--Marshall helmet crest -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetCrest</defName>
+		<label>Crest</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Crest</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Crest</drawnTextureIconPath>
+		<drawSize>(0.56, 0.56)</drawSize>
+		<sortOrder>3</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>80</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>80</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>70</layer>
+			</dataEast>
+			<dataWest>
+				<layer>70</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+	<!--Skitarii Marshal lenses-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetLenses</defName>
+		<label>Rangefinder</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Lenses</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Lenses</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>5</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>85</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>85</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+	<!--Skitarii Marshal Spikes-->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetSpikes</defName>
+		<label>Spikes</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Spikes</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Spikes</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>5</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>85</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>85</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+
 
 </Defs>

@@ -161,4 +161,162 @@
 		</drawData>
 		<colourable>false</colourable>
 	</Core40k.ExtraDecorationDef>
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalBackpack_Antena1</defName>
+		<label>Antenna U</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena1</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena1</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>1</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.64)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.64)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Antena 2 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalBackpack_Antena2</defName>
+		<label>Antenna V</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena2</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena2</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>2</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.64)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.64)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Antena 3 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalBackpack_Antena3</defName>
+		<label>Antenna C</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena3</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena3</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>3</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.64)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.64)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Antena 4 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalBackpack_Antena4</defName>
+		<label>Antenna Y</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena4</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena4</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>4</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.23, 0, 0.61)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.64)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.23, 0, 0.61)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.64)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+	</Core40k.ExtraDecorationDef>
 </Defs>
