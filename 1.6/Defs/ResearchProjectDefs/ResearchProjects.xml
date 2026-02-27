@@ -135,7 +135,7 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>0.6</researchViewY>
 		<prerequisites>
 			<li>Machining</li>
 			<li>MicroelectronicsBasics</li>
