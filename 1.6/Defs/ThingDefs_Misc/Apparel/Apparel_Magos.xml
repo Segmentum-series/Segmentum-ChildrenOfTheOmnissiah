@@ -221,8 +221,8 @@
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<ConstructionSpeed>.20</ConstructionSpeed>
-			<ConstructSuccessChance>.20</ConstructSuccessChance>
+			<ConstructionSpeed>.10</ConstructionSpeed>
+			<ConstructSuccessChance>.10</ConstructSuccessChance>
 		</equippedStatOffsets>
 		<costList>
 			<Steel>20</Steel>
@@ -284,7 +284,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_BiologisHood</defName>
 		<label>biologis hood</label>
-		<description>This hood is characteristic of the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>This peaked hood is characteristic of the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -302,7 +302,6 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
-			<MedicalTendQuality>.15</MedicalTendQuality>
 		</equippedStatOffsets>
 
 		<costList>
@@ -543,6 +542,9 @@
 			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<costList>
 			<Steel>80</Steel>
@@ -613,13 +615,15 @@
 			<MaxHitPoints>350</MaxHitPoints>
 			<Mass>2.2</Mass>
 			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
-			<StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>20</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierInsulation_Cold>10</StuffEffectMultiplierInsulation_Cold>
+				<!--Flammability reduction? Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
+			<SocialImpact>.10</SocialImpact>
 			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
-			<ConstructionSpeed>.20</ConstructionSpeed>
-			<ConstructSuccessChance>.20</ConstructSuccessChance>
+			<ConstructionSpeed>.10</ConstructionSpeed>
+			<ConstructSuccessChance>.10</ConstructSuccessChance>
 		</equippedStatOffsets>
 
 		<costList>
