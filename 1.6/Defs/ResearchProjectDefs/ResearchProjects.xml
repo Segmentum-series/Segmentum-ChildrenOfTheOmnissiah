@@ -149,7 +149,7 @@
 		<defName>Seg_COTO_TechGuard</defName>
 		<label>Tech-Guard</label>
 		<description>Be granted basic Skitarii fabrication data sheets, containing the data for the making of special equipment, including implants, weapons and apparel.</description>
-		<baseCost>1000</baseCost>
+		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0.7</researchViewY>
@@ -169,7 +169,7 @@
 		<defName>Seg_COTO_TechGuardAdvanced</defName>
 		<label>Tech-Guard advanced arsenal</label>
 		<description>Receive advanced schemata data, containing instruction on how to forge advanced Skitarii weaponry and implants.</description>
-		<baseCost>1200</baseCost>
+		<baseCost>2500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0.7</researchViewY>
@@ -189,7 +189,7 @@
 		<defName>Seg_COTO_TrueFlesh</defName>
 		<label>True Flesh</label>
 		<description>Be granted the secrets of true flesh manipulation, allowing for the creation of enhanced augmetic components for the glorification of the Machine God.</description>
-		<baseCost>1500</baseCost>
+		<baseCost>1400</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>1</researchViewX>
 		<researchViewY>1.3</researchViewY>
@@ -203,4 +203,25 @@
 		</requiredResearchFacilities>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
+	
+<!-- Holy order vestments -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_HolyOrderVestments</defName>
+		<label>holy order vestments</label>
+		<description>Be granted the right to clothe the ordained tech-clergy in garb appropriate to their particular devotions..</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>Seg_COTO_CultMechanicus</li>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_SegmentumTab</tab>
+	</ResearchProjectDef>
+	
 </Defs>

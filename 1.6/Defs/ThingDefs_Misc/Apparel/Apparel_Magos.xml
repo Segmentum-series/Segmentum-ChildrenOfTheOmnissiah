@@ -337,7 +337,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li> <!-- new research needed to be added-->
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -427,7 +427,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -503,7 +503,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -581,7 +581,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -661,7 +661,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -750,7 +750,7 @@
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
+				<li>Seg_COTO_HolyOrderVestments</li>
 			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>6</Crafting>
