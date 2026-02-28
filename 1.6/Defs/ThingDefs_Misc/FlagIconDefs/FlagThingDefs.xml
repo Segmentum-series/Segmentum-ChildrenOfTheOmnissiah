@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Seg_COTO_DecorativeForgerBanner</defName>
     <label>decorative Forge Standard</label>
-    <description>A beautifully crafted banner adorned with the forge's symbols and colors. It stands as a proud testament to the forge's history and glory.</description>
+    <description>A banner adorned with the symbol of a Mechanicus forgeworld. While the Adeptus Mechanicus tends less towards gothic majesty than the rest of the Imperium, they still know the value of a good banner in declaring ownership over a building, forgeplex, or even planet.</description>
     <thingClass>Genes40k.Building_DecorativeFlag</thingClass>
     <graphicData>
       <texPath>Things/Building/ForgeBanner/BEWH_DecorationForgeBanner</texPath>
