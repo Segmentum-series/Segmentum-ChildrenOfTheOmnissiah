@@ -358,16 +358,17 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
-	<!--Marshal-->
-		<!-- Vertical stripe -->
+
+<!--Marshal-->
+	<!-- Vertical stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateVerticalStripe</defName>
 		<label>Vertical stripe</label>
 		<description>...</description>
-		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_VerticalGearStripe</iconPath>
-		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_VerticalGearStripe</drawnTextureIconPath>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_VerticalStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_VerticalStripe</drawnTextureIconPath>
 		<sortOrder>4</sortOrder>
-		<drawSize>(0.66,0.66)</drawSize>
+		<drawSize>(0.7, 0.7)</drawSize>
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -381,16 +382,16 @@
 
 		<drawData>
 			<dataSouth>
-				<layer>75</layer>
-				<offset>(0, 0, -0.25)</offset>
+				<layer>65</layer>
+				<offset>(0, 0, -0.18)</offset>
 			</dataSouth>
 			<dataEast>
 				<layer>65</layer>
-				<offset>(0, 0, -0.25)</offset>
+				<offset>(0, 0, -0.18)</offset>
 			</dataEast>
 			<dataWest>
 				<layer>65</layer>
-				<offset>(0, 0, -0.25)</offset>
+				<offset>(0, 0, -0.18)</offset>
 			</dataWest>
 		</drawData>
 
@@ -468,7 +469,7 @@
 		<label>Purity seal B</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_PuritySeal2</iconPath>
-		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal2</drawnTextureIconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal3</drawnTextureIconPath>
 		<sortOrder>6</sortOrder>
 		<drawSize>(0.75,0.75)</drawSize>
 
@@ -509,6 +510,7 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
+
 	<!-- Horizontal Gear stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateHorizontalGearStripe</defName>
@@ -569,6 +571,7 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
+
 	<!-- Horizontal Spiked stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateHorizontalSpikedStripe</defName>
@@ -629,6 +632,7 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
+
 	<!-- Buttons -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateButtons</defName>
@@ -637,12 +641,12 @@
 		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_Buttons</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_Buttons</drawnTextureIconPath>
 		<sortOrder>6</sortOrder>
-		<drawSize>(0.75,0.75)</drawSize>
+		<drawSize>(0.5,0.5)</drawSize>
 
 		<defaultShowRotation>
 			<li>East</li>
 			<li>South</li>
-			<li>North</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -653,20 +657,27 @@
 			<dataEast>
 				<layer>67</layer>
 			</dataEast>
-			<dataNorth>
-				<layer>65</layer>
-			</dataNorth>
 			<dataSouth>
 				<layer>77</layer>
 			</dataSouth>
 			<dataWest>
 				<layer>67</layer>
-				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
-		<flipable>true</flipable>
-		<colourable>false</colourable>
+		<flipable>false</flipable>
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -676,6 +687,7 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
+
 	<!-- Sensor -->
 	 <Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateSensor</defName>
@@ -684,12 +696,10 @@
 		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_Sensor</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_Sensor</drawnTextureIconPath>
 		<sortOrder>6</sortOrder>
-		<drawSize>(0.75,0.75)</drawSize>
+		<drawSize>(0.4,0.4)</drawSize>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>South</li>
-			<li>North</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -697,24 +707,30 @@
 		</appliesTo>
 
 		<drawData>
-			<dataEast>
-				<layer>67</layer>
-			</dataEast>
-			<dataNorth>
-				<layer>65</layer>
-			</dataNorth>
 			<dataSouth>
-				<layer>77</layer>
+				<layer>70</layer>
+				<offset>(0, 0, -0.45)</offset>
 			</dataSouth>
-			<dataWest>
-				<layer>67</layer>
-				<flip>true</flip>
-			</dataWest>
 		</drawData>
 
-		<flipable>true</flipable>
-		<colourable>false</colourable>
-		
+		<flipable>false</flipable>
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+		<colorAmount>2</colorAmount>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<defaultColour>(234,130,56)</defaultColour>
+		<defaultColourTwo>(120,82,66)</defaultColourTwo>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+			<li>Seg_COTO_DecoPalette_Leather</li>
+		</availablePresets>
+
 		<appliesToBodyTypes>
 			<li>Male</li>
 			<li>Female</li>

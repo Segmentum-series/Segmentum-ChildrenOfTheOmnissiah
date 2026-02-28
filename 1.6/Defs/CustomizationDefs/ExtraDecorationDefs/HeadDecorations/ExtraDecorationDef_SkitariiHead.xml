@@ -550,15 +550,17 @@
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
-	<!--Marshall helmet crest -->
+
+<!-- Skitarii Marshal -->
+	<!-- Marshal crest -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalHelmetCrest</defName>
 		<label>Crest</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Crest</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Crest</drawnTextureIconPath>
-		<drawSize>(0.56, 0.56)</drawSize>
-		<sortOrder>3</sortOrder>
+		<drawSize>(0.94, 0.94)</drawSize>
+		<sortOrder>1</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -574,15 +576,19 @@
 		<drawData>
 			<dataSouth>
 				<layer>80</layer>
+				<offset>(0, 0, 0.16)</offset>
 			</dataSouth>
 			<dataNorth>
 				<layer>80</layer>
+				<offset>(0, 0, 0.16)</offset>
 			</dataNorth>
 			<dataEast>
-				<layer>70</layer>
+				<layer>73</layer>
+				<offset>(0, 0, 0.16)</offset>
 			</dataEast>
 			<dataWest>
-				<layer>70</layer>
+				<layer>73</layer>
+				<offset>(0, 0, 0.16)</offset>
 			</dataWest>
 		</drawData>
 
@@ -599,7 +605,8 @@
 
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
-	<!--Skitarii Marshal lenses-->
+
+	<!-- Marshal lenses -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalHelmetLenses</defName>
 		<label>Rangefinder</label>
@@ -645,7 +652,8 @@
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-	<!--Skitarii Marshal Spikes-->
+
+	<!-- Marshal Spikes -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalHelmetSpikes</defName>
 		<label>Spikes</label>
@@ -660,6 +668,7 @@
 			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -682,15 +691,9 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<flipable>true</flipable>
-		<useMask>true</useMask>
 
-		<shaderType>CutoutComplex</shaderType>
-		<defaultColour>(26,148,200)</defaultColour>
-
+		<shaderType>Cutout</shaderType>
 		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
-
-
 </Defs>
