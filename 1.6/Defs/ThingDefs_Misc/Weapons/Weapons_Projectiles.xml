@@ -17,22 +17,22 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Transuranic</defName>
-		<label>depleted transuranic slug</label>
+		<label>stubber bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>32</damageAmountBase>
-			<armorPenetrationBase>.93</armorPenetrationBase>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>.85</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 		<speed>900</speed>
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Galvanic</defName>
-		<label>high-velocity servitor-bullet</label>
+		<label>stubber bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -41,51 +41,8 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
-		<speed>300</speed>
+		<speed>70</speed>
 		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>Seg_COTO_Bullet_GalvanicSeeker</defName>
-		<label>brain seeker servitor-bullet</label>
-		<description>A smaller, less potent fragment of the high-velocity servitor-bullet, designed for rapid-fire weaponry. While it lacks the full stopping power of its larger counterpart, it still delivers a significant punch and can shred through flesh and light armor with ease.</description>
-		<graphicData>
-			<texPath>Things/Projectile/Seg_COTO_BrainBullet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<stoppingPower>.5</stoppingPower>
-		<speed>90</speed>
-		</projectile>
-		 <recipeMaker>
-            <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
-        </recipeMaker>
-		<costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-		<comps>
-		<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-            	<tickRate>10</tickRate> <!--this changes the rate this updates-->
-            	<lifetimeTicks>30000</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
-            	<delayTurnInTicks>5</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
-            	<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
-            	<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
-            	<effectLifetime>30</effectLifetime> <!--the life of those motes-->
-            	<effectSize>1</effectSize> <!--the size of the motes-->
-				</li>
-		</comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_AmmoChanger">
-                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
-                <effectiveRange>55.9</effectiveRange>
-                <warmupTime>3.25</warmupTime>
-                <shotsPerBurst>1</shotsPerBurst>
-            </li>
-			 	
-
-
-        </modExtensions>
 	</ThingDef>
 <!-- Arc -->
 	
@@ -110,7 +67,7 @@
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
 			<damageAmountBase>2</damageAmountBase>
-			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<armorPenetrationBase>.45</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
 		</projectile>
@@ -152,7 +109,7 @@
 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Projectile/Seg_COTO_Gamma2</texPath>
+			<texPath>Things/Projectile/Seg_COTO_Gamma</texPath>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -168,11 +125,11 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>18</damageTickRate>
-				<lifetimeTicks>70</lifetimeTicks>
+				<damageTickRate>11</damageTickRate>
+				<lifetimeTicks>10</lifetimeTicks>
 				<beamWidth>0.55</beamWidth>
 				<beamWidthDrawScale>3</beamWidthDrawScale>
-				<sweepRatePerTick>0.06</sweepRatePerTick>
+				<sweepRatePerTick>0.5</sweepRatePerTick>
 				<maxSweepAngle>1</maxSweepAngle>
 				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
