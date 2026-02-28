@@ -89,16 +89,13 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li>ShortShots</li>
-			<li>Gun</li>
-			<li>IndustrialGunAdvanced</li>
+			<li>Seg_COTO_MagosBasicRanged</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedLowTier</li>
 		</tradeTags>
-		-->
 
 		<comps>
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
@@ -231,14 +228,13 @@
 			<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Arc</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
-		-->
 	</ThingDef>
 
 	<!-- Arc rifle -->
@@ -300,7 +296,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuard</li>
+				<li>Seg_COTO_ManipleTactics</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -325,14 +321,13 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Arc</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
-		-->
 	</ThingDef>
 
 <!-- Phosphor weapons base -->
@@ -430,13 +425,13 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 	
 	<!-- Phosphor blast pistol -->
@@ -499,13 +494,13 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Phosphor</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Gamma weapons base -->
@@ -604,7 +599,7 @@
 				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
 				<soundCast>Seg_COTO_GammaSound</soundCast>
 				<warmupTime>1.0</warmupTime>
-				<range>17.9</range>
+				<range>12.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -628,13 +623,13 @@
 				<Intellectual>10</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Gamma</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedHighTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Rad weapons base -->
@@ -696,7 +691,7 @@
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadPistol</defName>
 		<label>radium pistol</label>
-		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
+		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -748,20 +743,20 @@
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Rad</li>
 		</weaponTags>
 		<tradeTags>
-			<li></li>
-		</tradeTags>-->
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- Radium carbine -->
 	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
 		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
 		<label>radium carbine</label>
-		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in it's user.</description>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
@@ -774,10 +769,10 @@
 			<Mass>4</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.30</AccuracyShort>
-			<AccuracyMedium>0.60</AccuracyMedium>
-			<AccuracyLong>0.10</AccuracyLong>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
 			<MarketValue>585</MarketValue>
 		</statBases>
@@ -823,13 +818,13 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Rad</li>
 		</weaponTags>
 		<tradeTags>
-			<li></li>
-		</tradeTags>-->
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
 	</ThingDef>
 
 <!-- Plasma weapons base -->
@@ -901,7 +896,7 @@
 				<range>22.0</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<forcedMissRadius>1.0</forcedMissRadius>
+				<forcedMissRadius>0.3</forcedMissRadius>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -943,13 +938,13 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Plasma</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 <!-- Transuranic arquebus base -->
@@ -1026,11 +1021,11 @@
 		<statBases>
 			<Mass>9</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.20</AccuracyTouch>
 			<AccuracyShort>0.40</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.9</AccuracyLong>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
 			<WorkToMake>80000</WorkToMake>
 			<MarketValue>1830</MarketValue>
 		</statBases>
@@ -1039,9 +1034,10 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_Bullet_Transuranic</defaultProjectile>
-				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
+				<soundCast>ChargeLance_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>2</warmupTime>
-				<range>44.9</range>
+				<range>58.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -1053,7 +1049,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuardAdvanced</li>
+				<li>Seg_COTO_ManipleTactics</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -1081,13 +1077,13 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Transuranic</li>
 		</weaponTags>
 		<tradeTags>
-			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>
 	</ThingDef>
 
 	<!-- Galvanic rifle -->
@@ -1110,8 +1106,8 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.80</AccuracyShort>
-			<AccuracyMedium>0.90</AccuracyMedium>
-			<AccuracyLong>0.8</AccuracyLong>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
 			<MarketValue>605</MarketValue>
 		</statBases>
@@ -1122,16 +1118,17 @@
 				<defaultProjectile>Seg_COTO_Bullet_Galvanic</defaultProjectile>
 				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
 				<warmupTime>2</warmupTime>
-				<range>34.9</range>
-				<burstShotCount>3</burstShotCount>
+				<range>44.9</range>
+				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
 		<costList>
-			<Steel>60</Steel>
+			<Steel>45</Steel>
+			<Plasteel>25</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -1162,13 +1159,22 @@
 				</weaponCarryDrawOffsets>
 			</li>
 		</modExtensions>
-		<!-- Tags for trading and categorization for later
+		<comps>
+      		<li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+		  <li>Seg_COTO_Bullet_Galvanic</li>
+		  <li>Seg_COTO_Bullet_GalvanicSeeker</li>
+		</availableProjectiles>
+	  	</li>
+		</comps> 
+		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li></li>
+			<li>Seg_COTO_Galvanic</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
-		</tradeTags>-->
+		</tradeTags>
 	</ThingDef>
 
 </Defs>
