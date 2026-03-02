@@ -24,7 +24,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
@@ -66,7 +66,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MagosCassock/Seg_COTO_Deco_MagosCassock_GearTeeth</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosCassock/Seg_COTO_MagosCassock_GearTeeth</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>2</sortOrder>
 
 		<defaultShowRotation>
@@ -123,7 +122,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/MagosCassock/Seg_COTO_Deco_MagosCassock_ThinStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/MagosCassock/Seg_COTO_MagosCassock_ThinStripe</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>3</sortOrder>
 
 		<defaultShowRotation>
@@ -344,9 +342,9 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
-
 	</Core40k.ExtraDecorationDef>
-	<!-- Biologus cassock decorations -->
+	
+<!-- Biologus cassock decorations -->
 	<!-- Gear stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_BiologusCassockGearStripe</defName>
@@ -369,7 +367,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
@@ -411,7 +409,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/BiologusCassock/Seg_COTO_Deco_BiologusCassock_GearTeeth</iconPath>
 		<drawnTextureIconPath>Things/Decoration/BiologusCassock/Seg_COTO_BiologusCassock_GearTeeth</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>2</sortOrder>
 
 		<defaultShowRotation>
@@ -433,10 +430,10 @@
 				<layer>76</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>66</layer>
+				<layer>65</layer>
 			</dataEast>
 			<dataWest>
-				<layer>71</layer>
+				<layer>65</layer>
 			</dataWest>
 		</drawData>
 
@@ -468,7 +465,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/BiologusCassock/Seg_COTO_Deco_BiologusCassock_ThinStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/BiologusCassock/Seg_COTO_BiologusCassock_ThinStripe</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>3</sortOrder>
 
 		<defaultShowRotation>
@@ -484,7 +480,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
@@ -516,9 +512,9 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
-
 	</Core40k.ExtraDecorationDef>
-	<!-- Explorator robe decorations -->
+
+<!-- Explorator robe decorations -->
 	<!-- Gear stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_ExploratorRobeGearStripe</defName>
@@ -716,7 +712,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
@@ -758,7 +754,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/FabricatorCassock/Seg_COTO_Deco_FabricatorCassock_GearTeeth</iconPath>
 		<drawnTextureIconPath>Things/Decoration/FabricatorCassock/Seg_COTO_FabricatorCassock_GearTeeth</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>2</sortOrder>
 
 		<defaultShowRotation>
@@ -783,7 +778,7 @@
 				<layer>66</layer>
 			</dataEast>
 			<dataWest>
-				<layer>71</layer>
+				<layer>66</layer>
 			</dataWest>
 		</drawData>
 
@@ -815,7 +810,6 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/FabricatorCassock/Seg_COTO_Deco_FabricatorCassock_ThinStripe</iconPath>
 		<drawnTextureIconPath>Things/Decoration/FabricatorCassock/Seg_COTO_FabricatorCassock_ThinStripe</drawnTextureIconPath>
-		<drawSize>(0.75,0.75)</drawSize>
 		<sortOrder>3</sortOrder>
 
 		<defaultShowRotation>
@@ -831,7 +825,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
