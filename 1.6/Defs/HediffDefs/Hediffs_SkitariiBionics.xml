@@ -546,5 +546,83 @@
   <addsHediff>Seg_COTO_BreathOfMars_Hediff</addsHediff>
 </RecipeDef>
 
+<!--SicarianAugmetics>
+<ThingDef-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianLeg</defName>
+  <label>Sicarian leg</label>
+  <description>An augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
+  <statBases>
+    <MarketValue>1500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SicarianAugmetics</li>
+  </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_ManipleTactics</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
 
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SicarianLeg_Hediff</defName>
+  <label>Sicarian leg</label>
+  <labelNoun>a Sicarian leg</labelNoun>
+  <description>An installed augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianLeg</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MoveSpeed>0.7</MoveSpeed>
+        <MeleeDodgeChance>.25</MeleeDodgeChance>
+      </statOffsets>
+      <painOffset>0.02</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SicarianLeg</defName>
+  <label>install Sicarian leg</label>
+  <description>Installs an augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
+  <jobString>Installing Sicarian Leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianLeg_Hediff</addsHediff>
+</RecipeDef>
 </Defs>
