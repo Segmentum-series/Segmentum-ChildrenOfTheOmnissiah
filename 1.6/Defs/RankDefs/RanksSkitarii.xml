@@ -52,6 +52,11 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarius</rankIconPath>
         <rankTier>3</rankTier>
         <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediffs>
+            <li>Seg_COTO_SkitariusLeg_Hediff</li>
+            <li>Seg_COTO_EyeLens_Hediff</li>
+        </RequiredHediffs>
+
         <requiredSkills>
             <Shooting>6</Shooting>
         </requiredSkills>

@@ -4,15 +4,14 @@ using System.Text;
 using System.Linq;
 using Core40k;
 using System.Collections.Generic;
-using RimWorld.Planet;
-
-
 
 namespace Seg
 {
     public class RankDef : Core40k.RankDef
     {
         public int ImplantsRequired = 0;
+        public HediffDef RequiredHediff;
+        public List<HediffDef> RequiredHediffs = new List<HediffDef>();
 
         public override bool RequirementMet(
             StringBuilder sb,
@@ -35,6 +34,28 @@ namespace Seg
                 }
             }
 
+            if (RequiredHediff != null)
+            {
+                if (!pawn.health.hediffSet.HasHediff(RequiredHediff))
+                {
+                    valid = false;
+                    sb.AppendLine($"Requires Implant: {RequiredHediff.label.CapitalizeFirst()}.");
+                }
+            }
+
+            if (RequiredHediffs != null && RequiredHediffs.Count > 0)
+            {
+                foreach (var req in RequiredHediffs)
+                {
+                    if (req == null) continue;
+                    if (!pawn.health.hediffSet.HasHediff(req))
+                    {
+                        valid = false;
+                        sb.AppendLine($"Requires Implant: {req.label.CapitalizeFirst()}.");
+                    }
+                }
+            }
+
             bool baseResult = base.RequirementMet(sb, pawn, rankComp, currentCategory, out reason);
             return valid && baseResult;
         }
@@ -54,9 +75,4 @@ namespace Seg
             base.RemoveRank(rankComp);
         }
     }
-
 }
-
-
-
-
