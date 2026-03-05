@@ -115,6 +115,10 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguardAlpha</rankIconPath>
         <rankTier>5</rankTier>
         <ImplantsRequired>5</ImplantsRequired>
+        <RequiredHediffs>
+			<li>Seg_COTO_VanguardArm_Hediff</li>
+			<li>Seg_COTO_ArmorPlating_Hediff</li>
+		</RequiredHediffs>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
             <Shooting>12</Shooting>
@@ -214,6 +218,10 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRangerAlpha</rankIconPath>
         <rankTier>5</rankTier>
         <ImplantsRequired>5</ImplantsRequired>
+        <RequiredHediffs>
+			<li>Seg_COTO_RangerArm_Hediff</li>
+			<li>Seg_COTO_ArmorPlating_Hediff</li>
+		</RequiredHediffs>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <requiredSkills>
             <Shooting>14</Shooting>
@@ -248,6 +256,7 @@
 			<li>Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_SicarianLeg_Hediff</RequiredHediff-->
         <requiredSkills>
             <Melee>10</Melee>
         </requiredSkills>
@@ -279,6 +288,10 @@
 			<li>Seg_COTO_SicarianRuststalker</li>
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
+        <!--RequiredHediffs>
+			<li>Seg_COTO_SicarianLeg_Hediff</li>
+			<li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li>
+		</RequiredHediffs-->
         <requiredSkills>
             <Melee>8</Melee>
             <Shooting>5</Shooting>
@@ -313,6 +326,10 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
         <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <!--RequiredHediffs>
+			<li>Seg_COTO_DataUplink_Hediff</li>
+			<li>Seg_COTO_TransonicClaws_Hediff</li>
+		</RequiredHediffs-->
         <requiredSkills>
             <Melee>12</Melee>
             <Shooting>8</Shooting>
@@ -346,6 +363,7 @@
         <rankTier>6</rankTier>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
         <ImplantsRequired>8</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_DataUplink_Hediff</RequiredHediff-->
         <requiredSkills>
             <Social>6</Social>
         </requiredSkills>

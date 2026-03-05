@@ -59,6 +59,7 @@
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Crafting>6</Crafting>
         </requiredSkills>
@@ -88,6 +89,7 @@
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Crafting>4</Crafting>
             <Intellectual>6</Intellectual>
@@ -118,6 +120,7 @@
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Intellectual>6</Intellectual>
         </requiredSkills>
@@ -151,6 +154,7 @@
         </incompatibleRanks>
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
         <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Plants>5</Plants>
             <Animals>3</Animals>
@@ -265,6 +269,7 @@
             <li>Seg_COTO_ServitorUnderseer</li>
         </incompatibleRanks>
         <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_ManipulatorMechadendrite_Hediff</RequiredHediff-->
 
         <requiredSkills>
             <Crafting>6</Crafting>
@@ -345,6 +350,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosLogis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_CalculusLogi_Hediff</RequiredHediff-->
         <requiredSkills>
             <Intellectual>8</Intellectual>
             <Social>6</Social>
@@ -404,6 +410,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
         <rankTier>5</rankTier>
        <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_MedicaeMechadendrite_Hediff</RequiredHediff-->
         <requiredSkills>
             <Medicine>10</Medicine>
         </requiredSkills>
@@ -433,6 +440,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosExplorator</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Social>6</Social>
         </requiredSkills>
@@ -687,6 +695,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosDominus</rankIconPath>
         <rankTier>7</rankTier>
        <ImplantsRequired>5</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Shooting>8</Shooting>
         </requiredSkills>
@@ -712,6 +721,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_CyberneticaDatasmith</rankIconPath>
         <rankTier>6</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_ManipulatorMechadendrite_Hediff</RequiredHediff-->
         <requiredSkills>
             <Crafting>10</Crafting>
             <Intellectual>8</Intellectual>
@@ -773,6 +783,7 @@
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMyrmidax</rankIconPath>
         <rankTier>8</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff-->
         <requiredSkills>
             <Melee>12</Melee>
         </requiredSkills>
