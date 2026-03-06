@@ -183,7 +183,26 @@
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
-<!-- Maniple tactics || Left out for 1.0 -->
+<!-- Sicarian Killclades -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_SicarianKillclades</defName>
+		<label>Sicarian killclades</label>
+		<description>Be vested with the authority and data to form, equip, and command the lethal cybernetic scouts and assassins of the Sicarian killclades.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>Seg_COTO_TechGuardAdvanced</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_SegmentumTab</tab>
+	</ResearchProjectDef>
+	
+<!-- Maniple tactics -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_ManipleTactics</defName>
 		<label>Maniple tactics</label>

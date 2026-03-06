@@ -563,7 +563,7 @@
       <li>Seg_COTO_SkitariiAugmetics</li>
   </tradeTags>
   <recipeMaker>
-    <researchPrerequisite>Seg_COTO_ManipleTactics</researchPrerequisite>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
     <recipeUsers Inherit="false">
         <li>Seg_COTO_AugmeticsTable</li>
       </recipeUsers>
