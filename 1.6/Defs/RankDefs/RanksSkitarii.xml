@@ -157,8 +157,8 @@
         </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
-            <Social>4</Social>
             <Melee>6</Melee>
+            <Social>4</Social>
         </requiredSkills>
          <givesPassions>
             <li>
@@ -293,8 +293,8 @@
 			<li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li>
 		</RequiredHediffs-->
         <requiredSkills>
-            <Melee>8</Melee>
             <Shooting>5</Shooting>
+            <Melee>8</Melee>
         </requiredSkills>
          <givesPassions>
             <li>
@@ -331,8 +331,8 @@
 			<li>Seg_COTO_TransonicClaws_Hediff</li>
 		</RequiredHediffs-->
         <requiredSkills>
-            <Melee>12</Melee>
             <Shooting>8</Shooting>
+            <Melee>12</Melee>
         </requiredSkills>
          <givesPassions>
             <li>

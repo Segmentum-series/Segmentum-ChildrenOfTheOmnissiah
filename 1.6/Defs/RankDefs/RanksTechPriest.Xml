@@ -206,8 +206,8 @@
         </incompatibleRanks>
         <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
-            <Melee>4</Melee>
             <Shooting>4</Shooting>
+            <Melee>4</Melee>
             <Social>4</Social>
         </requiredSkills>
         <statOffsets>
@@ -245,8 +245,8 @@
         </incompatibleRanks>
         <ImplantsRequired>1</ImplantsRequired>
         <requiredSkills>
-            <Melee>2</Melee>
             <Shooting>2</Shooting>
+            <Melee>2</Melee>
         </requiredSkills>
         <statOffsets>
             
@@ -285,15 +285,15 @@
 
         </statOffsets>
         <recreationFromSkills>
-            <li>Crafting</li>
             <li>Construction</li>
+            <li>Crafting</li>
         </recreationFromSkills>
         <givesPassions>
-            <li>
-            <skill>Crafting</skill>
-            <modType>AddOneLevel</modType> </li>
              <li>
             <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Crafting</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
 
@@ -310,9 +310,9 @@
         </incompatibleRanks>
        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
+            <Shooting>6</Shooting>
             <Crafting>6</Crafting>
             <Intellectual>6</Intellectual>
-            <Shooting>6</Shooting>
         </requiredSkills>
         <statOffsets>
             <HackingSpeed>0.10</HackingSpeed>
@@ -330,15 +330,15 @@
             <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
         </statFactors>
         <recreationFromSkills>
-            <li>Crafting</li>
             <li>Construction</li>
+            <li>Crafting</li>
         </recreationFromSkills>
         <givesPassions>
-            <li>
-            <skill>Crafting</skill>
-            <modType>AddOneLevel</modType> </li>
              <li>
             <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Crafting</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
 
@@ -352,8 +352,8 @@
        <ImplantsRequired>4</ImplantsRequired>
         <!--RequiredHediff>Seg_COTO_CalculusLogi_Hediff</RequiredHediff-->
         <requiredSkills>
-            <Intellectual>8</Intellectual>
             <Social>6</Social>
+            <Intellectual>8</Intellectual>
         </requiredSkills>
         <statOffsets>
             <ResearchSpeed>0.15</ResearchSpeed>
@@ -472,8 +472,8 @@
             <li>Seg_COTO_Securtor</li>
         </incompatibleRanks>
         <requiredSkills>
-            <Melee>4</Melee>
             <Shooting>5</Shooting>
+            <Melee>4</Melee>
         </requiredSkills>
         <statOffsets>
             <MeleeDodgeChance>0.2</MeleeDodgeChance>
@@ -543,8 +543,8 @@
         <ImplantsRequired>4</ImplantsRequired>
 
         <requiredSkills>
-            <Crafting>8</Crafting>
             <Construction>8</Construction>
+            <Crafting>8</Crafting>
         </requiredSkills>
         <statOffsets>
             <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
@@ -569,8 +569,8 @@
         </incompatibleRanks>
 
         <requiredSkills>
-            <Intellectual>10</Intellectual>
             <Social>8</Social>
+            <Intellectual>10</Intellectual>
         </requiredSkills>
         <statOffsets>
             <ResearchSpeed>0.20</ResearchSpeed>
@@ -599,8 +599,8 @@
         </incompatibleRanks>
 
         <requiredSkills>
-            <Crafting>12</Crafting>
             <Construction>10</Construction>
+            <Crafting>12</Crafting>
         </requiredSkills>
         <statOffsets>
             <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
@@ -668,8 +668,8 @@
             <li>Seg_COTO_ArchmagosDominius</li>
         </incompatibleRanks>
         <requiredSkills>
-            <Social>8</Social>
             <Melee>6</Melee>
+            <Social>8</Social>
         </requiredSkills>
         <statOffsets>
             <MoveSpeed>0.05</MoveSpeed>
@@ -803,10 +803,10 @@
         </statFactors>
         <givesPassions>
             <li>
-            <skill>Melee</skill>
-            <modType>AddOneLevel</modType> </li>
-             <li>
             <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Melee</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
     </Seg.RankDef>
@@ -819,9 +819,9 @@
         <rankTier>9</rankTier>
        <ImplantsRequired>6</ImplantsRequired>
         <requiredSkills>
-            <Intellectual>8</Intellectual>
-            <Social>6</Social>
             <Crafting>6</Crafting>
+            <Social>6</Social>
+            <Intellectual>8</Intellectual>
         </requiredSkills>
         <statOffsets>
             <SocialImpact>0.10</SocialImpact>
@@ -845,9 +845,9 @@
         <rankTier>10</rankTier>
        <ImplantsRequired>8</ImplantsRequired>
         <requiredSkills>
-            <Intellectual>10</Intellectual>
-            <Social>8</Social>
             <Crafting>8</Crafting>
+            <Social>8</Social>
+            <Intellectual>10</Intellectual>
         </requiredSkills>
         <statOffsets>
             <SocialImpact>0.20</SocialImpact>
@@ -867,9 +867,9 @@
         <rankTier>11</rankTier>
        <ImplantsRequired>10</ImplantsRequired>
         <requiredSkills>
-            <Intellectual>12</Intellectual>
-            <Social>10</Social>
             <Crafting>10</Crafting>
+            <Social>10</Social>
+            <Intellectual>12</Intellectual>
         </requiredSkills>
         <statOffsets>
            <SocialImpact>0.30</SocialImpact>
