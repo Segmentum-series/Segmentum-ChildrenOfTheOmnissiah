@@ -395,13 +395,6 @@
 			</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 
-
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
-
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -719,13 +712,6 @@
 				<li>Leathery</li>
 			</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
-
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
 
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
