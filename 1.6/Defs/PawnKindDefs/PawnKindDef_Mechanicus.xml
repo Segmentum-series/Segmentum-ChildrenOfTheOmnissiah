@@ -18,6 +18,7 @@
 		</techHediffsTags>
 		<techHediffsRequired>
 			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_EyeLens</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 		</techHediffsRequired>
@@ -120,6 +121,7 @@
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
 		<techHediffsRequired Inherit="False">
 			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_EyeLens</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_VanguardArm</li>
@@ -190,9 +192,7 @@
         </requiredWorkTags>
         <weaponTags>
             <li>Seg_COTO_Galvanic</li>
-            <li>Seg_COTO_Transuranic</li>
 			<li>Seg_COTO_Taser</li>
-			<li>Seg_COTO_Gamma</li>
 			<li>Seg_COTO_Phosphor</li>
         </weaponTags>
 		<backstoryFiltersOverride>
@@ -214,6 +214,7 @@
 		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
 		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_EyeLens</li>
 			<li>Seg_COTO_EyeLens</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_SkitariusLeg</li>
