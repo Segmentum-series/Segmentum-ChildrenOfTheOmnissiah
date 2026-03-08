@@ -953,7 +953,7 @@
 		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
 		<techLevel>Spacer</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
