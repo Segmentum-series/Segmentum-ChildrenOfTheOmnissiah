@@ -583,7 +583,7 @@
 <ThingDef ParentName="BodyPartCrudeAugmetics">
   <defName>Seg_COTO_CrudeFoot</defName>
   <label>crude augmetic foot</label>
-  <description>An augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <description>An augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
  
 		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -596,7 +596,7 @@
   <defName>Seg_COTO_CrudeFoot_Hediff</defName>
   <label>crude augmetic foot</label>
   <labelNoun>a crude augmetic foot</labelNoun>
-  <description>An installed augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <description>An installed augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <spawnThingOnRemoved>Seg_COTO_CrudeFoot</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
   <addedPartProps>
@@ -619,7 +619,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_CrudeFoot</defName>
   <label>install crude augmetic foot</label>
-  <description>Installs an augmetic replacement leg which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+  <description>Installs an augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
   <jobString>Installing crude augmetic foot.</jobString>
   <ingredients>
     <li>
