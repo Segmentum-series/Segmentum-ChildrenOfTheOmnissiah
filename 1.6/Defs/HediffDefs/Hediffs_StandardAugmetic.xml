@@ -860,7 +860,7 @@
     <defName>Seg_COTO_NoosphericCortex</defName>
     <label>noospheric cortex</label>
     <description>The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
-    <costList>
+    <costList Inherit="False">
       <Plasteel>10</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
       <ComponentIndustrial>1</ComponentIndustrial>
