@@ -21,7 +21,7 @@
       <color>(172, 83, 83)</color>
     </graphicData>
   <statBases>
-    <WorkToMake>1500</WorkToMake>
+    <WorkToMake>22800</WorkToMake>
     <MarketValue>800</MarketValue>
     <Mass>0.3</Mass>
   </statBases>
@@ -784,7 +784,7 @@
       <ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<statBases Inherit="False">
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>36000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 			<Mass>0.3</Mass>
 		</statBases>
@@ -853,4 +853,82 @@
     <removesHediff>Seg_COTO_FerricLure_Hediff</removesHediff>
   </RecipeDef>
 
+  
+<!--Noospheric Cortex-->
+<!-- ThingDef -->
+  <ThingDef ParentName="BodyPartStandardAugmetics">
+    <defName>Seg_COTO_NoosphericCortex</defName>
+    <label>noospheric cortex</label>
+    <description>The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Seg_COTO_CultMechanicus</researchPrerequisite>
+      <skillRequirements Inherit="False">
+		 <Crafting>6</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Seg_COTO_NoosphericCortex_Hediff</defName>
+    <label>noospheric cortex</label>
+    <labelNoun>a noospheric cortex</labelNoun>
+    <description>An installed noospheric cortex implant. The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <spawnThingOnRemoved>Seg_COTO_NoosphericCortex</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+           <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+		   <SocialImpact>.05</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!-- RecipeDef -->
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSeg_COTO_NoosphericCortex</defName>
+    <label>install noospheric cortex</label>
+    <description>Install a noospheric cortex implant. The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_NoosphericCortex</ThingDef>
+      <HediffDef>Seg_COTO_NoosphericCortex_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing noospheric cortex.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Seg_COTO_NoosphericCortex</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Seg_COTO_NoosphericCortex</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Seg_COTO_NoosphericCortex_Hediff</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_NoosphericCortex</defName>
+    <label>remove noospheric cortex</label>
+    <description>Remove noospheric cortex.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_NoosphericCortex</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Removing noospheric cortex.</jobString>
+    <removesHediff>Seg_COTO_NoosphericCortex_Hediff</removesHediff>
+  </RecipeDef>
 </Defs>
