@@ -36,7 +36,7 @@
       <ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
-      <li>Seg_COTO_MechanciusAugmetics</li>
+      <li>Seg_COTO_AdvancedAugmetics</li>
   </tradeTags>
 </ThingDef>
 <!--Advanced Arm-->
@@ -871,8 +871,7 @@
         <statOffsets>
           <ResearchSpeed>0.25</ResearchSpeed>
           <GlobalLearningFactor>0.1</GlobalLearningFactor>
-		  <RestFallRateFactor>1.2</RestFallRateFactor>
-          <RestRateMultiplier>1.20</RestRateMultiplier>
+          <RestRateMultiplier>-0.20</RestRateMultiplier>
         </statOffsets>
       </li>
     </stages>
@@ -924,7 +923,7 @@
 <!-- ThingDef -->
   <ThingDef ParentName="BodyPartAdvancedAugmetics">
     <defName>Seg_COTO_NoosphericCortex</defName>
-    <label>Noospheric Cortex</label>
+    <label>noospheric cortex</label>
     <description>The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
     <costList>
       <Plasteel>10</Plasteel>
@@ -993,5 +992,84 @@
     </descriptionHyperlinks>
     <jobString>Removing noospheric cortex.</jobString>
     <removesHediff>Seg_COTO_NoosphericCortex_Hediff</removesHediff>
+  </RecipeDef>
+  
+<!--Autosanguine-->
+<!-- ThingDef -->
+  <ThingDef ParentName="BodyPartAdvancedAugmetics">
+    <defName>Seg_COTO_Autosanguine</defName>
+    <label>autosanguine</label>
+    <description>The autosanguine injects millions of microscopic automata into the cardiovascular system, tasking them with aiding the body's natural healing processes and repair of damaged tissues. While most adherents of the Machine Cult prefer to replace the organic tissues with holy machinery if possible, some see the value of boosting the capabilities of the flesh without replacing it entirely.</description>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Seg_COTO_TrueFlesh</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Seg_COTO_Autosanguine_Hediff</defName>
+    <label>autosanguine</label>
+    <labelNoun>an autosanguine</labelNoun>
+    <description>An installed autosanguine implant. The autosanguine injects millions of microscopic automata into the cardiovascular system, tasking them with aiding the body's natural healing processes and repair of damaged tissues. While most adherents of the Machine Cult prefer to replace the organic tissues with holy machinery if possible, some see the value of boosting the capabilities of the flesh without replacing it entirely.</description>
+    <spawnThingOnRemoved>Seg_COTO_Autosanguine</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <naturalHealingFactor>1.3</naturalHealingFactor>
+      </li>
+    </stages>
+	<!--stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+	</stages-->	
+  </HediffDef>
+
+<!-- RecipeDef -->
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSeg_COTO_Autosanguine</defName>
+    <label>install autosanguine</label>
+    <description>Install an autosanguine implant. The autosanguine injects millions of microscopic automata into the cardiovascular system, tasking them with aiding the body's natural healing processes and repair of damaged tissues. While most adherents of the Machine Cult prefer to replace the organic tissues with holy machinery if possible, some see the value of boosting the capabilities of the flesh without replacing it entirely.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_Autosanguine</ThingDef>
+      <HediffDef>Seg_COTO_Autosanguine_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing autosanguine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Seg_COTO_Autosanguine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Seg_COTO_Autosanguine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Seg_COTO_Autosanguine_Hediff</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_Autosanguine</defName>
+    <label>remove autosanguine</label>
+    <description>Remove autosanguine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_Autosanguine</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Removing autosanguine.</jobString>
+    <removesHediff>Seg_COTO_Autosanguine_Hediff</removesHediff>
   </RecipeDef>
 </Defs>

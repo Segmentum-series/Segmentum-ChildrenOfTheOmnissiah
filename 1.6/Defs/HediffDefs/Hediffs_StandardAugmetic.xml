@@ -33,7 +33,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
-      <li>Seg_COTO_MechanciusAugmetics</li>
+      <li>Seg_COTO_StandardAugmetics</li>
   </tradeTags>
 </ThingDef>
 <!--Standard Arm-->
@@ -452,8 +452,7 @@
 			<Steel>80</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
         <Plasteel>20</Plasteel>
-		</costList>
-     
+		</costList>     
 </ThingDef>
 
 <!-- HediffDef -->
@@ -646,8 +645,7 @@
 <ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_StandardStomach</defName>
   <label>standard augmetic stomach</label>
-  <description>An augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>
-  
+  <description>An augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>  
 </ThingDef>
 
 <!-- HediffDef -->
