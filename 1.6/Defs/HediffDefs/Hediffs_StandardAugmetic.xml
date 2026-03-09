@@ -866,7 +866,9 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>Seg_COTO_CultMechanicus</researchPrerequisite>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_CultMechanicus</li>
+      </researchPrerequisites>
       <skillRequirements Inherit="False">
 		 <Crafting>6</Crafting>
 	  </skillRequirements>
