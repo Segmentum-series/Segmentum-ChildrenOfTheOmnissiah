@@ -209,10 +209,10 @@
 		<description>Be instructed in the advanced organization and equipment of the Tech-Guard, including the highest-ranking officers necessary for the prosecution of war in the name of the Omnissiah.</description>
 		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 		<prerequisites>
-			<li>Seg_COTO_TechGuard</li>
+			<li>Seg_COTO_TechGuardAdvanced</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -220,6 +220,7 @@
 		</requiredResearchFacilities>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
+	
 <!-- True Flesh-->
 <ResearchProjectDef>
 		<defName>Seg_COTO_TrueFlesh</defName>
