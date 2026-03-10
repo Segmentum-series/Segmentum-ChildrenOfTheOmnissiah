@@ -93,7 +93,7 @@
 	<!-- Arc pistol beam -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
-  		<label>arc pistol beam</label>
+  		<label>arc beam</label>
   		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
@@ -136,6 +136,64 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
+  		<label>arc rifle overcharged beam</label>
+  		<description>A more powerful variant of the arc rifle beam, capable of delivering a devastating sustained energy blast.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_ArcDamage</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>120</lifetimeTicks>
+
+				<beamWidth>0.45</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.05</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+
+				<trailSoundDef>Power_OnSmall</trailSoundDef>
+			</li>
+
+		</modExtensions>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+                <effectiveRange>35.9</effectiveRange>
+                <warmupTime>3</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+			 	
+
+
+        </modExtensions>
+	</ThingDef>
+	 
 
 <!-- Gamma -->
 	

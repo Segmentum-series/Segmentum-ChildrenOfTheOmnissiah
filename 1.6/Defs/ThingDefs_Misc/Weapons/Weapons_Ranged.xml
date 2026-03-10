@@ -304,6 +304,15 @@
 			<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<comps>
+      		<li Class="Core40k.CompProperties_AmmoChanger">
+        <compClass>Core40k.Comp_AmmoChanger</compClass>
+        <availableProjectiles>
+		  <li>Seg_COTO_ArcPistol_Beam</li>
+		  <li>Seg_COTO_ArcRifleOverCharged_Beam</li>
+		</availableProjectiles>
+	  	</li>
+		</comps> 
 
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension">
