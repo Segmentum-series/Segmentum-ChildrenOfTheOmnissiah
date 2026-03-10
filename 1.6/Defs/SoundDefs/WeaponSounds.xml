@@ -30,11 +30,49 @@
 						<clipPath>Seg_COTO_Sound_Arc</clipPath>
 					</li>
 				</grains>
-				<volumeRange>30~40</volumeRange>
+				<volumeRange>3~4</volumeRange>
 				<pitchRange>.8~1.4</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
+	<SoundDef>
+  <defName>Seg_COTO_ElectricArc</defName>
+  <sustain>true</sustain>
+  <context>MapOnly</context>
+  <maxSimultaneous>20</maxSimultaneous>
+  <sustainStopSound>Seg_COTO_ElectricArcEnd</sustainStopSound>
+  <subSounds>
+    <li>
+      <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      <grains>
+        <li Class="AudioGrain_Clip">
+          <clipPath>Seg_COTO_ElectricArcLoop</clipPath>
+        </li>
+      </grains>
+      <pitchRange>0.89~1.2</pitchRange>
+      <volumeRange>30</volumeRange>
+      <sustainRelease>0.02</sustainRelease>
+    </li>
+  </subSounds>
+</SoundDef>
+
+<SoundDef>
+  <defName>Seg_COTO_ElectricArcEnd</defName>
+  <context>MapOnly</context>
+  <maxSimultaneous>20</maxSimultaneous>
+  <subSounds>
+    <li>
+      <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      <grains>
+        <li Class="AudioGrain_Clip">
+          <clipPath>Seg_COTO_ElectricArcEnd</clipPath>
+        </li>
+      </grains>
+      <pitchRange>0.89~1.2</pitchRange>
+      <volumeRange>60</volumeRange>
+    </li>
+  </subSounds>
+</SoundDef>
 
 	<!-- Phosphor sounds -->	
 	<SoundDef>

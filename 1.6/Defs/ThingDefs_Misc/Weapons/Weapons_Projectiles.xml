@@ -132,7 +132,8 @@
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 
-				<trailSoundDef>Power_OnSmall</trailSoundDef>
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -177,7 +178,8 @@
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 
-				<trailSoundDef>Power_OnSmall</trailSoundDef>
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 
 		</modExtensions>
