@@ -574,7 +574,7 @@
 <ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedJaw</defName>
   <label>advanced augmetic jaw</label>
-  <description>An augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>An augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -588,7 +588,7 @@
   <defName>Seg_COTO_AdvancedJaw_Hediff</defName>
   <label>advanced augmetic jaw</label>
   <labelNoun>a advanced augmetic jaw</labelNoun>
-  <description>An installed augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>An installed augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
   <spawnThingOnRemoved>Seg_COTO_AdvancedJaw</spawnThingOnRemoved>
   <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
   <addedPartProps>
@@ -611,7 +611,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_AdvancedJaw</defName>
   <label>install advanced augmetic jaw</label>
-  <description>Installs an augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>Installs an augmetic replacement jaw. Substantially more efficient than the baseline body part and seamlessly integrated with the rest of the cranium, it is able to modify its grip, bite, and chewing function at thought commands from the user. Many techpriests regard the ingestion of nutrients through the mouth to be inefficient, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
   <jobString>Installing advanced augmetic jaw.</jobString>
   <ingredients>
     <li>
@@ -709,7 +709,7 @@
 <ThingDef ParentName="BodyPartAdvancedAugmetics">
   <defName>Seg_COTO_AdvancedStomach</defName>
   <label>advanced augmetic stomach</label>
-  <description>An augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients to a degree unknown in the natural world. Many techpriests regard the digestion of nutrients through the stomach to be inefficient, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>An augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients to a degree unknown in the natural world. Many techpriests regard the digestion of nutrients through the stomach to be inefficient, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -723,7 +723,7 @@
   <defName>Seg_COTO_AdvancedStomach_Hediff</defName>
   <label>advanced augmetic stomach</label>
   <labelNoun>a advanced augmetic stomach</labelNoun>
-  <description>An installed augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>An installed augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
   <spawnThingOnRemoved>Seg_COTO_AdvancedStomach</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
@@ -747,7 +747,7 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_AdvancedStomach</defName>
   <label>install advanced augmetic stomach</label>
-  <description>Installs an augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act or worship in itself.</description>
+  <description>Installs an augmetic replacement stomach. Substantially more efficient than the baseline organ and seamlessly integrated with the rest of the digestive system, it is able to break down and process nutrients and neutralise potentially harmful materials. Many techpriests regard the digestion of nutrients through the stomach to be inefficient or even distasteful, but perfecting the organic body with machine parts can be an act of worship in itself.</description>
   <jobString>Installing advanced augmetic stomach.</jobString>
   <ingredients>
     <li>
