@@ -576,6 +576,7 @@
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
   </tradeTags>
+
 </ThingDef>
 
 <!-- HediffDef -->
@@ -583,7 +584,7 @@
   <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
   <label>data uplink</label>
   <labelNoun>a data uplink implant</labelNoun>
-   <hediffClass>Hediff_Implant</hediffClass>
+  <hediffClass>HediffWithComps</hediffClass>
   <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
   <spawnThingOnRemoved>Seg_COTO_SkitariiDataUplink</spawnThingOnRemoved>
  
@@ -600,7 +601,42 @@
 	  <!--Command aura boosting allied pawns' combat stats slightly-->
     </li>
   </stages>
+  <!--<comps>
+  <li Class="DoggoAura.HediffCompProperties_HediffAura">
+  <range>9.9</range>
+  <targetingParameters>
+    <canTargetPawns>True</canTargetPawns>
+    <canTargetBuildings>False</canTargetBuildings>
+  </targetingParameters>
+  <hediff>Seg_COTO_SkitariiDataUplinkAura_Hediff</hediff>
+  <mote>Seg_COTO_SkitariiDataUplink_Aura</mote>
+  <hideMoteWhenNotDrafted>True</hideMoteWhenNotDrafted>
+  <initialSeverity>1.00</initialSeverity>
+  <onlyPawnsInSameFaction>True</onlyPawnsInSameFaction>
+  </li>
+  </comps>-->
 </HediffDef>
+<!--<HediffDef>
+  <defName>Seg_COTO_SkitariiDataUplinkAura_Hediff</defName>
+  <label>data uplink Aura</label>
+  <labelNoun>a data uplink being received</labelNoun>
+  <description>Anndra Heeeeelppppppp.</description>
+ <hediffClass>HediffWithComps</hediffClass>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.05</MeleeDodgeChance>
+        <MoveSpeed>0.3</MoveSpeed>
+				<PainShockThreshold>0.75</PainShockThreshold>
+        <VEF_RangedCooldownFactor>-0.1</VEF_RangedCooldownFactor>
+				<AimingDelayFactor>-0.1</AimingDelayFactor>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef> -->
 
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallImplantBase">
