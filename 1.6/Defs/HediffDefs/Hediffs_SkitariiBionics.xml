@@ -546,6 +546,97 @@
   <addsHediff>Seg_COTO_BreathOfMars_Hediff</addsHediff>
 </RecipeDef>
 
+
+<!--Data Uplink-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SkitariiDataUplink</defName>
+  <label>data uplink implant</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>This cranial implant adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <statBases>
+    <MarketValue>1200</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
+  <label>data uplink implant</label>
+  <labelNoun>a data uplink implant</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <spawnThingOnRemoved>Seg_COTO_SkitariiDataUplink</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+	     <SocialImpact>.05</SocialImpact>
+         <MeleeDodgeChance>.05</MeleeDodgeChance>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+	  <!--Command aura boosting allied pawns' combat stats slightly-->
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_SkitariiDataUplink</defName>
+  <label>install data uplink implant</label>
+  <description>Install a cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <jobString>Installing data uplink implant.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SkitariiDataUplink</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SkitariiDataUplink</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Brain</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SkitariiDataUplink_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SkitariiDataUplink</defName>
+    <label>remove data uplink implant</label>
+    <description>Remove data uplink implant.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_SkitariiDataUplink</ThingDef></descriptionHyperlinks>
+    <jobString>Removing data uplink implant.</jobString>
+    <removesHediff>Seg_COTO_SkitariiDataUplink</removesHediff>
+  </RecipeDef>
+
 <!--SicarianAugmetics>
 <ThingDef-->
 <ThingDef ParentName="BodyPartBionicBase">

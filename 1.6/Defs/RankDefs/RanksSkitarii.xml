@@ -327,7 +327,7 @@
         <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <!--RequiredHediffs>
-			<li>Seg_COTO_DataUplink_Hediff</li>
+			<li>Seg_COTO_SkitariiDataUplink_Hediff</li>
 			<li>Seg_COTO_TransonicClaws_Hediff</li>
 		</RequiredHediffs-->
         <requiredSkills>
@@ -363,7 +363,7 @@
         <rankTier>6</rankTier>
         <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
         <ImplantsRequired>8</ImplantsRequired>
-        <!--RequiredHediff>Seg_COTO_DataUplink_Hediff</RequiredHediff-->
+        <RequiredHediff>Seg_COTO_SkitariiDataUplink_Hediff</RequiredHediff>
         <requiredSkills>
             <Social>6</Social>
         </requiredSkills>

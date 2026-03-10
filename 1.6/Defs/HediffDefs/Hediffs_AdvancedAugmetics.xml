@@ -874,6 +874,7 @@
         <statOffsets>
           <ResearchSpeed>0.25</ResearchSpeed>
           <GlobalLearningFactor>0.1</GlobalLearningFactor>
+          <ReadingSpeed>0.4</ReadingSpeed>
           <RestRateMultiplier>-0.20</RestRateMultiplier>
         </statOffsets>
       </li>

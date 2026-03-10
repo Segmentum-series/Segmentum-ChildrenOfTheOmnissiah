@@ -29,7 +29,6 @@
         <rankTier>2</rankTier>
 
         <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
-        <!-- <impantRequirements>1</impantRequirements> truly a fuckin GUESS, waiting for conformation from pho on this-->
     
 
         <statOffsets>
@@ -68,7 +67,7 @@
 
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
-            <!-- <ConstructionSuccessChance>0.5</ConstructionSuccessChance> -->
+            <ConstructSuccessChance>0.5</ConstructSuccessChance>
 
 
         </statOffsets>
@@ -131,7 +130,6 @@
         <statOffsets>
 
             <ResearchSpeed>0.10</ResearchSpeed>
-            
             <ReadingSpeed>0.30</ReadingSpeed>
 
         </statOffsets>
@@ -184,12 +182,6 @@
             <li>Animals</li>
             <li>Medicine</li>
         </recreationFromSkills>
-        <!--<modExtensions>
-            <li Class="VEF.Genes.GeneExtension">
-                <skillRecreation>Plants</skillRecreation>
-                <skillRecreation>Animals</skillRecreation>
-            </li>
-        </modExtensions> -->
     </Seg.RankDef>
     <Seg.RankDef>
         <defName>Seg_COTO_Explorator</defName>
@@ -360,7 +352,6 @@
             <ReadingSpeed>0.20</ReadingSpeed>
             <SocialImpact>.30</SocialImpact>
             <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
-            <!-- <IdeoligionSpreadChance MayRequire="Ludeon.RimWorld.Ideology">.25</IdeoligionSpreadChance> -->
 
             
 
@@ -581,7 +572,6 @@
         </statOffsets>
          <statFactors>
          <ReadingSpeed>2.0</ReadingSpeed>
-        <!-- <IdeoligionSpreadChance MayRequire="Ludeon.RimWorld.Ideology">1.25</IdeoligionSpreadChance> -->
         </statFactors>
         <givesPassions>
         </givesPassions>
