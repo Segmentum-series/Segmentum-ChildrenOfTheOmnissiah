@@ -601,7 +601,7 @@
 	  <!--Command aura boosting allied pawns' combat stats slightly-->
     </li>
   </stages>
-  <!--<comps>
+  <comps>
   <li Class="DoggoAura.HediffCompProperties_HediffAura">
   <range>9.9</range>
   <targetingParameters>
@@ -614,30 +614,26 @@
   <initialSeverity>1.00</initialSeverity>
   <onlyPawnsInSameFaction>True</onlyPawnsInSameFaction>
   </li>
-  </comps>-->
+  </comps>
 </HediffDef>
-<!--<HediffDef>
+<HediffDef>
   <defName>Seg_COTO_SkitariiDataUplinkAura_Hediff</defName>
-  <label>data uplink Aura</label>
+  <label>data uplink active</label>
   <labelNoun>a data uplink being received</labelNoun>
-  <description>Anndra Heeeeelppppppp.</description>
+  <description>a data uplink being received.</description>
  <hediffClass>HediffWithComps</hediffClass>
-
-
-
   <stages>
     <li>
       <statOffsets>
         <MeleeDodgeChance>.05</MeleeDodgeChance>
         <MoveSpeed>0.3</MoveSpeed>
-				<PainShockThreshold>0.75</PainShockThreshold>
+				<PainShockThreshold>-.25</PainShockThreshold>
         <VEF_RangedCooldownFactor>-0.1</VEF_RangedCooldownFactor>
 				<AimingDelayFactor>-0.1</AimingDelayFactor>
       </statOffsets>
     </li>
   </stages>
-</HediffDef> -->
-
+</HediffDef>
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallImplantBase">
   <defName>InstallSeg_COTO_SkitariiDataUplink</defName>
