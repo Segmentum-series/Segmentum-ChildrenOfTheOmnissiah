@@ -571,7 +571,7 @@
 			<Steel>20</Steel>
 			<Plasteel>10</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
-			<ComponentIndustrial>2</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
      <tradeTags Inherit="False">
       <li>Seg_COTO_SkitariiAugmetics</li>
@@ -634,7 +634,7 @@
     <description>Remove data uplink implant.</description>
     <descriptionHyperlinks><ThingDef>Seg_COTO_SkitariiDataUplink</ThingDef></descriptionHyperlinks>
     <jobString>Removing data uplink implant.</jobString>
-    <removesHediff>Seg_COTO_SkitariiDataUplink</removesHediff>
+    <removesHediff>Seg_COTO_SkitariiDataUplink_Hediff</removesHediff>
   </RecipeDef>
 
 <!--SicarianAugmetics>
