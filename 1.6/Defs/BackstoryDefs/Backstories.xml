@@ -298,6 +298,36 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>skitarii marshal</title>
+		<defName>SegCOTO_MechanicusSkitariiMarshal</defName>
+		<titleShort>skitarius</titleShort>
+		<baseDesc>[PAWN_nameDef] was a member of the rangers in a forgeworld's skitarii clades, trained and honed for war in the name of the Omnissiah. [PAWN_pronoun] has seen and survived combat against xenos, hereteks, and the Archenemy.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_SkitariiMarshal</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Social>3</Social>
+		</skillGains>
+		<forcedTraits>
+		<Transhumanist />
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+
 <!-- Techpriest Backstories -->
 
 	<BackstoryDef>

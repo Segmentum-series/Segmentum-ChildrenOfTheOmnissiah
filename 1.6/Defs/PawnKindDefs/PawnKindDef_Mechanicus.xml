@@ -233,6 +233,62 @@
             </li>
         </skills>
     </PawnKindDef>
+	
+	<!--Skitarii Marshal-->
+    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+        <defName>Seg_COTO_SkitariiMarshal</defName>
+		<label>Skitarii Marshal</label>
+        <combatPower>200</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+			<li>Seg_COTO_Phosphor</li>
+			<li>Seg_COTO_PowerMelee</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_SkitariiMarshal</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~3700</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="False">
+            <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+            <li>Seg_COTO_Apparel_MarshalHelmet</li>
+            <li>Seg_COTO_Apparel_SkitariiFatigues</li>
+			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+        </apparelRequired>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>2000~3500</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_ArmorPlating</li>
+			<li>Seg_COTO_SkitariiDataUplink</li>
+		</techHediffsRequired>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~15</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
 
     <!-- Techpriest Base -->
     <PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_TechpriestPawnBase" Abstract="True">
@@ -365,6 +421,59 @@
         </skills>
     </PawnKindDef>
 
+    <!-- Magos Explorator -->
+    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+        <defName>Seg_COTO_MagosExplorator</defName>
+		<label>Magos Explorator</label>
+        <combatPower>80</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_MagosBasicRanged</li>
+			<li>Seg_COTO_MagosBasicMelee</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_MechanicusAdept</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~3000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="False">
+            <li>Seg_COTO_Apparel_ExploratorHood</li>
+            <li>Seg_COTO_Apparel_ExploratorRobe</li>
+            <li>Seg_COTO_Apparel_MagosCassock</li>
+            <li>Seg_COTO_Apparel_MagosBackpack</li>
+        </apparelRequired>
+		<techHediffsTags>
+			<li>Seg_COTO_StandardAugmetics</li>
+			<li>Seg_COTO_AdvancedAugmetics</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsMaxAmount>5</techHediffsMaxAmount>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~7</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>4~7</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>6~8</range>
+            </li>
+        </skills>
+    </PawnKindDef>
     <!-- Archmagos Dominus -->
     <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
         <defName>Seg_COTO_ArchmagosDominus</defName>
