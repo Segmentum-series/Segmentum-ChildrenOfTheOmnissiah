@@ -459,6 +459,9 @@
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3000</techHediffsMoney>
 		<techHediffsMaxAmount>5</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_NoosphericCortex</li>
+		</techHediffsRequired>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -512,8 +515,11 @@
 			<li>Seg_COTO_AdvancedAugmetics</li>
 		</techHediffsTags>
 		<techHediffsChance>1</techHediffsChance>
-		<techHediffsMoney>3000~5000</techHediffsMoney>
+		<techHediffsMoney>3000~5500</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_NoosphericCortex</li>
+		</techHediffsRequired>
         <skills>
             <li>
                 <skill>Shooting</skill>
