@@ -281,7 +281,7 @@
 				<range>35.9</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<soundCast>Seg_COTO_Sound_Arc</soundCast>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
