@@ -551,7 +551,7 @@
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SkitariiDataUplink</defName>
-  <label>data uplink implant</label>
+  <label>data uplink</label>
   <recipeMaker>
     <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
     <recipeUsers Inherit="false">
@@ -581,7 +581,7 @@
 <!-- HediffDef -->
 <HediffDef ParentName="ImplantHediffBase">
   <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
-  <label>data uplink implant</label>
+  <label>data uplink</label>
   <labelNoun>a data uplink implant</labelNoun>
    <hediffClass>Hediff_Implant</hediffClass>
   <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
@@ -605,7 +605,7 @@
 <!-- RecipeDef -->
 <RecipeDef ParentName="SurgeryInstallImplantBase">
   <defName>InstallSeg_COTO_SkitariiDataUplink</defName>
-  <label>install data uplink implant</label>
+  <label>install data uplink</label>
   <description>Install a cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
   <jobString>Installing data uplink implant.</jobString>
   <ingredients>
@@ -630,10 +630,10 @@
 </RecipeDef>
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>RemoveSeg_COTO_SkitariiDataUplink</defName>
-    <label>remove data uplink implant</label>
-    <description>Remove data uplink implant.</description>
+    <label>remove data uplink</label>
+    <description>Remove data uplink.</description>
     <descriptionHyperlinks><ThingDef>Seg_COTO_SkitariiDataUplink</ThingDef></descriptionHyperlinks>
-    <jobString>Removing data uplink implant.</jobString>
+    <jobString>Removing data uplink.</jobString>
     <removesHediff>Seg_COTO_SkitariiDataUplink_Hediff</removesHediff>
   </RecipeDef>
 
