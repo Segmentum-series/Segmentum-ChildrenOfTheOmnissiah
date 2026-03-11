@@ -49,6 +49,10 @@
         <countRange>200~600</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
+        <thingDef>Hyperweave</thingDef>
+        <countRange>60~180</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
         <countRange>25~35</countRange>
       </li>
