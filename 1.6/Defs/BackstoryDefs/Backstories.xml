@@ -328,6 +328,38 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 	</BackstoryDef>
 
+<!-- Sicarian backstories -->
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
+		<title>Sicarian</title>
+		<defName>SegCOTO_MechanicusSicarian</defName>
+		<titleShort>Sicarian</titleShort>
+		<baseDesc>[PAWN_nameDef] was enlisted into the Skitarii forces of [PAWN_possessive] forgeplex but was grievously wounded in battle. In order to still be of use to the Mechanicus, the magi selected [PAWN_possessive] ruined body for Sicarian conversion. Now more machine than human, [PAWN_pronoun] still fights for the Machine God.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Sicarian</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>4</Melee>
+			<Social>-5</Social>
+		</skillGains>
+		<forcedTraits>
+			<Transhumanist />
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp />
+		</disallowedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+	</BackstoryDef>
+	
 <!-- Techpriest Backstories -->
 
 	<BackstoryDef>

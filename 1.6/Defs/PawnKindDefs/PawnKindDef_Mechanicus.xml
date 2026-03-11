@@ -534,8 +534,8 @@
 
     <!-- Sicarian Base -->
     <!--PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SicarianPawnBase" Abstract="True">
-        <initialWillRange>15~24</initialWillRange>
-        <initialResistanceRange>15~24</initialResistanceRange>
+        <initialWillRange>30~36</initialWillRange>
+        <initialResistanceRange>30~36</initialResistanceRange>
         <combatPower>40</combatPower>
         <itemQuality>Normal</itemQuality>
         <apparelRequired Inherit="False">
@@ -543,7 +543,7 @@
         </apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<techHediffsTags>
-			<li>Seg_COTO_SkitariiAugmetics</li>
+			<li>Seg_COTO_SicarianAugmetics</li>
 		</techHediffsTags>
 		<techHediffsRequired>
 			<li>Seg_COTO_SicarianHead</li>
@@ -605,8 +605,8 @@
             <li>Seg_COTO_Apparel_InfiltratorHelmet</li>
         </apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
-		<techHediffsMoney>1000~2500</techHediffsMoney>
-		<techHediffsMaxAmount>5</techHediffsMaxAmount>
+		<techHediffsMoney>1500~2500</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -619,4 +619,87 @@
         </skills>
     </PawnKindDef-->
 	
+    <!-- Sicarian Ruststalker -->
+    <!--PawnKindDef ParentName="Seg_COTO_SicarianPawnBase">
+        <defName>Seg_COTO_SicarianRuststalker</defName>
+		<label>Sicarian Ruststalker</label>
+        <combatPower>220</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_Transonic</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_Sicarian</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>1500~3000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="True">
+            <li>Seg_COTO_Apparel_RuststalkerHelmet</li>
+        </apparelRequired>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>1500~2500</techHediffsMoney>
+		<techHediffsMaxAmount>8</techHediffsMaxAmount>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~9</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>8~11</range>
+            </li>
+        </skills>
+    </PawnKindDef-->
+	
+    <!-- Sicarian Princeps -->
+    <!--PawnKindDef ParentName="Seg_COTO_SicarianPawnBase">
+        <defName>Seg_COTO_SicarianPrinceps</defName>
+		<label>Sicarian Princeps</label>
+        <combatPower>280</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_Transonic</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_Sicarian</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>2000~3000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="True">
+            <li>Seg_COTO_Apparel_PrincepsHelmet</li>
+        </apparelRequired>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>2000~3500</techHediffsMoney>
+		<techHediffsMaxAmount>10</techHediffsMaxAmount>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~11</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>9~14</range>
+            </li>
+        </skills>
+    </PawnKindDef-->
 </Defs>
