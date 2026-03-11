@@ -3,7 +3,7 @@
         <defName>Seg_COTO_MBEmergencyAid</defName>
         <label>Emergency Aid</label>
         <description>Provides emergency treatment to a downed or bedridden pawn, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
-        <cooldownTicksRange>5000</cooldownTicksRange>
+        <cooldownTicksRange>60000</cooldownTicksRange>
         <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
         <jobDef>CastAbilityOnThingMelee</jobDef>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
@@ -17,7 +17,7 @@
         <verbProperties>
             <verbClass>Verb_CastAbilityTouch</verbClass>
             <range>-1</range>
-            <warmupTime>1</warmupTime>
+            <warmupTime>5</warmupTime>
             <soundCast>Seg_COTO_ArcSound</soundCast>
             <targetParams>
                 <canTargetPawns>true</canTargetPawns>
