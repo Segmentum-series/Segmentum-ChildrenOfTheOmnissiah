@@ -263,7 +263,7 @@
             <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
             <li>Seg_COTO_Apparel_MarshalHelmet</li>
             <li>Seg_COTO_Apparel_SkitariiFatigues</li>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+			<li>Seg_COTO_Apparel_MarshalBackpack</li>
         </apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
@@ -531,5 +531,92 @@
             </li>
         </skills>
     </PawnKindDef>
+
+    <!-- Sicarian Base -->
+    <!--PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SicarianPawnBase" Abstract="True">
+        <initialWillRange>15~24</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <combatPower>40</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <apparelRequired Inherit="False">
+            <li>Seg_COTO_Apparel_SkitariiFatigues</li>
+        </apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_SicarianHead</li>
+			<li>Seg_COTO_SicarianArm</li>
+			<li>Seg_COTO_SicarianArm</li>
+			<li>Seg_COTO_SicarianLeg</li>
+			<li>Seg_COTO_SicarianLeg</li>
+		</techHediffsRequired>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+		<humanPregnancyChance>0</humanPregnancyChance>
+        <trader>false</trader>
+        <isFighter>false</isFighter>
+    </PawnKindDef-->
+
+    <!-- Sicarian Infiltrator -->
+    <!--PawnKindDef ParentName="Seg_COTO_SicarianPawnBase">
+        <defName>Seg_COTO_SicarianInfiltrator</defName>
+		<label>Sicarian Infiltrator</label>
+        <combatPower>200</combatPower>
+        <isFighter>true</isFighter>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <weaponTags>
+            <li>Seg_COTO_Transonic</li>
+			<li>Seg_COTO_Flechette</li>
+			<li>Seg_COTO_Stubcarbine</li>
+        </weaponTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_Sicarian</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <weaponMoney>1500~3000</weaponMoney>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired Inherit="True">
+            <li>Seg_COTO_Apparel_InfiltratorHelmet</li>
+        </apparelRequired>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>1000~2500</techHediffsMoney>
+		<techHediffsMaxAmount>5</techHediffsMaxAmount>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~11</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>4~11</range>
+            </li>
+        </skills>
+    </PawnKindDef-->
 	
 </Defs>
