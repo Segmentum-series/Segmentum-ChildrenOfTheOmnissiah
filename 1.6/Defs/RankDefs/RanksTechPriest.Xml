@@ -745,7 +745,6 @@
             <li>Seg_COTO_ArchmagosGenetor</li>
             <li>Seg_COTO_Artisan</li>
             <li>Seg_COTO_LexicoArcanus</li>
-            <li>Seg_COTO_ArchmagosExplorator</li>
         </incompatibleRanks>
         <requiredSkills>
             <Shooting>12</Shooting>
