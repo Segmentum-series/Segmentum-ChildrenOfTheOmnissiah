@@ -626,8 +626,8 @@
     <li>
       <statOffsets>
         <MeleeDodgeChance>.05</MeleeDodgeChance>
-        <MoveSpeed>0.3</MoveSpeed>
-				<PainShockThreshold>-.25</PainShockThreshold>
+        <MoveSpeed>0.1</MoveSpeed>
+				<PainShockThreshold>-.20</PainShockThreshold>
         <VEF_RangedCooldownFactor>-0.1</VEF_RangedCooldownFactor>
 				<AimingDelayFactor>-0.1</AimingDelayFactor>
       </statOffsets>

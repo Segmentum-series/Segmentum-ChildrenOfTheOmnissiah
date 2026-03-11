@@ -33,6 +33,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Galvanic</defName>
 		<label>high-velocity servitor-bullet</label>
+		<description>Fires a two-round burst of the standard servitor-bullet designed for use with the galvanic rifle, capable of shredding through flesh and armour alike.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -47,7 +48,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_GalvanicSeeker</defName>
 		<label>brain seeker servitor-bullet</label>
-		<description>A smaller, less potent fragment of the high-velocity servitor-bullet, designed for rapid-fire weaponry. While it lacks the full stopping power of its larger counterpart, it still delivers a significant punch and can shred through flesh and light armor with ease.</description>
+		<description>Fires a single advanced version of the high-velocity servitor-bullet. The machine spirit of the round is capable of altering its trajectory mid-flight to ensure it hits its target where it hurts.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_BrainBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -94,7 +95,7 @@
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
   		<label>arc beam</label>
-  		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+  		<description>The standard arc weaponry beam which projects the Motive Force at a target and anything along the way.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
