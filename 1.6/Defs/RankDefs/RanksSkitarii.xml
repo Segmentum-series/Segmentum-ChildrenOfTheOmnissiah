@@ -326,10 +326,10 @@
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
         <rankTier>7</rankTier>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
-        <!--RequiredHediffs>
+        <RequiredHediffs>
 			<li>Seg_COTO_SkitariiDataUplink_Hediff</li>
-			<li>Seg_COTO_TransonicClaws_Hediff</li>
-		</RequiredHediffs-->
+			<li>Seg_COTO_SicarianChordclaws_Hediff</li>
+		</RequiredHediffs>
         <requiredSkills>
             <Shooting>8</Shooting>
             <Melee>12</Melee>
