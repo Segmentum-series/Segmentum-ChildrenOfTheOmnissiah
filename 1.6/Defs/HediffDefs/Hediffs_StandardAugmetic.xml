@@ -968,6 +968,8 @@
 		<statOffsets>
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
 			<MentalBreakThreshold>0.20</MentalBreakThreshold>
+			<MeleeSkillOffset>4</MeleeSkillOffset>
+			<SocialSkillOffset>-4</SocialSkillOffset>
 		</statOffsets>
 		<statFactors>
 			<MeleeHitChance>1.10</MeleeHitChance>
