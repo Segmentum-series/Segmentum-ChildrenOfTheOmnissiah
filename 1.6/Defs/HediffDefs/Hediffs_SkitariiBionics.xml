@@ -54,7 +54,7 @@
   <defName>InstallSeg_COTO_SkitariusLeg</defName>
   <label>install skitarii leg</label>
   <description>Installs an augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
-  <jobString>Installing Skitarii Leg.</jobString>
+  <jobString>Installing Skitarii leg.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -669,12 +669,13 @@
     <removesHediff>Seg_COTO_SkitariiDataUplink_Hediff</removesHediff>
   </RecipeDef>
 
-<!--SicarianAugmetics>
+<!--SicarianAugmetics
+<SicarianLeg>
 <ThingDef-->
 <ThingDef ParentName="BodyPartBionicBase">
   <defName>Seg_COTO_SicarianLeg</defName>
   <label>Sicarian leg</label>
-  <description>An augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
+  <description>An augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
   <statBases>
     <MarketValue>1500</MarketValue>
     <Mass>0.3</Mass>
@@ -704,7 +705,7 @@
   <defName>Seg_COTO_SicarianLeg_Hediff</defName>
   <label>Sicarian leg</label>
   <labelNoun>a Sicarian leg</labelNoun>
-  <description>An installed augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
+  <description>An installed augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
   <spawnThingOnRemoved>Seg_COTO_SicarianLeg</spawnThingOnRemoved>
   <addedPartProps>
     <solid>true</solid>
@@ -717,7 +718,7 @@
         <MoveSpeed>0.7</MoveSpeed>
         <MeleeDodgeChance>.25</MeleeDodgeChance>
       </statOffsets>
-      <painOffset>0.02</painOffset>
+      <painOffset>0.20</painOffset>
     </li>
   </stages>
 </HediffDef>
@@ -726,8 +727,8 @@
 <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
   <defName>InstallSeg_COTO_SicarianLeg</defName>
   <label>install Sicarian leg</label>
-  <description>Installs an augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions.</description>
-  <jobString>Installing Sicarian Leg.</jobString>
+  <description>Installs an augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing Sicarian leg.</jobString>
   <ingredients>
     <li>
       <filter>
@@ -747,5 +748,88 @@
     <li>Leg</li>
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_SicarianLeg_Hediff</addsHediff>
+</RecipeDef>
+
+<!--SicarianArm>
+<ThingDef-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianArm</defName>
+  <label>Sicarian arm</label>
+  <description>An augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <statBases>
+    <MarketValue>1500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SicarianAugmetics</li>
+  </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SicarianArm_Hediff</defName>
+  <label>Sicarian arm</label>
+  <labelNoun>a Sicarian arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianArm</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.05</MeleeDodgeChance>
+      </statOffsets>
+	  <statFactors>
+		<MeleeHitChance>1.05</MeleeHitChance>
+		<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+	  </statFactors>
+      <painOffset>0.20</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SicarianArm</defName>
+  <label>install Sicarian arm</label>
+  <description>Installs an augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing Sicarian arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianArm_Hediff</addsHediff>
 </RecipeDef>
 </Defs>
