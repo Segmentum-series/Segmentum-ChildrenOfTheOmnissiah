@@ -787,6 +787,22 @@
   <labelNoun>a Sicarian arm</labelNoun>
   <description>An installed augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
   <spawnThingOnRemoved>Seg_COTO_SicarianArm</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>augmetic arm</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>14</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
   <addedPartProps>
     <solid>true</solid>
     <partEfficiency>1.20</partEfficiency>
@@ -796,10 +812,12 @@
     <li>
       <statOffsets>
         <MeleeDodgeChance>.05</MeleeDodgeChance>
+        <AimingDelayFactor>-0.01</AimingDelayFactor>
       </statOffsets>
 	  <statFactors>
 		<MeleeHitChance>1.05</MeleeHitChance>
 		<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+        <ShootingAccuracyPawn>1.01</ShootingAccuracyPawn>
 	  </statFactors>
       <painOffset>0.20</painOffset>
     </li>
@@ -832,4 +850,103 @@
   </appliedOnFixedBodyParts>
   <addsHediff>Seg_COTO_SicarianArm_Hediff</addsHediff>
 </RecipeDef>
+
+<!--Chordclaws>
+<ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianChordclaws</defName>
+  <label>chordclaws</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>An extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <statBases>
+    <MarketValue>2000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_SicarianChordclaws_Hediff</defName>
+  <label>chordclaws</label>
+  <labelNoun>a chordclaw arm</labelNoun>
+  <hediffClass>HediffWithComps</hediffClass>
+  <description>An installed extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianChordclaws</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>chordclaws</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>26</power>
+			<armorPenetration>0.9</armorPenetration>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit> <!--Needs sound-->
+            <soundMeleeMiss>Seg_COTO_PoweredMeleeWeaponImpactSound</soundMeleeMiss> <!--Needs sound-->
+          </li>
+        </tools>
+      </li>
+    </comps>
+  <stages>
+    <li>
+      <painOffset>0.20</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_SicarianChordclaws</defName>
+  <label>install chordclaws</label>
+  <description>Install an extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing chordclaws.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianChordclaws</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianChordclaws</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianChordclaws_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SicarianChordclaws</defName>
+    <label>remove chordclaws</label>
+    <description>Remove chordclaws.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_SicarianChordclaws</ThingDef></descriptionHyperlinks>
+    <jobString>Removing chordclaws.</jobString>
+    <removesHediff>Seg_COTO_SicarianChordclaws_Hediff</removesHediff>
+  </RecipeDef>
+  
 </Defs>

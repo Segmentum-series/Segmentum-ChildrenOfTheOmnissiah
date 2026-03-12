@@ -788,6 +788,11 @@
 			<MarketValue>2000</MarketValue>
 			<Mass>0.3</Mass>
 		</statBases>
+    <recipeMaker>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_TrueFlesh</li>
+      </researchPrerequisites>
+    </recipeMaker>
 </ThingDef>
 
 <!-- HediffDef -->

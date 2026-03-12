@@ -784,6 +784,11 @@
 			<ComponentSpacer>2</ComponentSpacer>
       <ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
+    <recipeMaker>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_TrueFlesh</li>
+      </researchPrerequisites>
+    </recipeMaker>
 </ThingDef>
 
 <!-- HediffDef -->
@@ -855,7 +860,7 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>Seg_COTO_TrueFlesh</researchPrerequisite>
+      <researchPrerequisites Inherit="False">Seg_COTO_TrueFlesh</researchPrerequisites>
       <skillRequirements Inherit="False">
 		 <Crafting>8</Crafting>
 	  </skillRequirements>
@@ -935,7 +940,9 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>Seg_COTO_TrueFlesh</researchPrerequisite>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_TrueFlesh</li>
+      </researchPrerequisites>
     </recipeMaker>
   </ThingDef>
 

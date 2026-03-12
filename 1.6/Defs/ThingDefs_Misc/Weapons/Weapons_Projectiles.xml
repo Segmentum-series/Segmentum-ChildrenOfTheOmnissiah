@@ -140,7 +140,7 @@
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
-  		<label>arc rifle overcharged beam</label>
+  		<label>overcharged arc beam</label>
   		<description>A more powerful variant of the arc rifle beam, capable of delivering a devastating sustained energy blast.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
@@ -204,7 +204,7 @@
 	<!-- Gamma projectile -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_GammaBeam</defName>
-		<label>Gamma beam</label>
+		<label>gamma beam</label>
 		<description>this should never been seen. if it is seen in game report to KitchenSink</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
