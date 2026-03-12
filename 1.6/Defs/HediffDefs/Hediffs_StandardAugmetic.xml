@@ -933,4 +933,107 @@
     <jobString>Removing noospheric cortex.</jobString>
     <removesHediff>Seg_COTO_NoosphericCortex_Hediff</removesHediff>
   </RecipeDef>
+  
+<!--Secutor Augmetics-->
+<!-- ThingDef -->
+  <ThingDef ParentName="BodyPartStandardAugmetics">
+    <defName>Seg_COTO_SecutorAugmetics</defName>
+    <label>secutor augmetics</label>
+    <description>The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <costList Inherit="False">
+      <Plasteel>30</Plasteel>
+	  <Steel>40</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_TrueFlesh</li>
+      </researchPrerequisites>
+      <skillRequirements Inherit="False">
+		 <Crafting>6</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Seg_COTO_SecutorAugmetics_Hediff</defName>
+    <label>secutor augmetics</label>
+    <labelNoun>a set of secutor augmetics</labelNoun>
+    <description>An installed set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <spawnThingOnRemoved>Seg_COTO_SecutorAugmetics</spawnThingOnRemoved>
+	<stages>
+		<li>
+		<statOffsets>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+			<MentalBreakThreshold>0.20</MentalBreakThreshold>
+		</statOffsets>
+		<statFactors>
+			<MeleeHitChance>1.10</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.90</MeleeWeapon_CooldownMultiplier>
+			<PainShockThreshold>1.10</PainShockThreshold>
+		</statFactors>
+		<!--socialFightChanceFactor>2</socialFightChanceFactor>
+		<aggroMentalBreakSelectionChanceFactor>2</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>0.6</prisonBreakMTBFactor-->
+		</li>
+	</stages>
+	<comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>4</offset>
+                </li>
+                 <li>
+                    <skill>Social</skill>
+                    <offset>-4</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+  </HediffDef>
+
+<!-- RecipeDef -->
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSeg_COTO_SecutorAugmetics</defName>
+    <label>install secutor augmetics</label>
+    <description>Install a set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_SecutorAugmetics</ThingDef>
+      <HediffDef>Seg_COTO_SecutorAugmetics_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing secutor augmetics.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Seg_COTO_SecutorAugmetics</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Seg_COTO_SecutorAugmetics</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Seg_COTO_SecutorAugmetics_Hediff</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SecutorAugmetics</defName>
+    <label>remove secutor augmetics</label>
+    <description>Remove secutor augmetics.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_SecutorAugmetics</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Removing secutor augmetics.</jobString>
+    <removesHediff>Seg_COTO_SecutorAugmetics_Hediff</removesHediff>
+  </RecipeDef>
 </Defs>

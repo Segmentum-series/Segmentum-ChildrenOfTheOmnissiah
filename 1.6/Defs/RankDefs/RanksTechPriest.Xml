@@ -495,7 +495,8 @@
         <description>Secutors are techpriests who have so dedicated themselves to combat that their very bodies have been modified extensively for that purpose. They condition themselves to meditate while fighting and see battle as a way to worship the Machine God.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Secutor</rankIconPath>
         <rankTier>4</rankTier>
-       <ImplantsRequired>5</ImplantsRequired>
+       <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_SecutorAugmetics_Hediff</RequiredHediff>
         <incompatibleRanks>
             <li>Seg_COTO_MagosMilitant</li>
         </incompatibleRanks>
@@ -511,8 +512,8 @@
          <statFactors>
            <MeleeHitChance>1.05</MeleeHitChance>
         <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
-          <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
-        <PainShockThreshold>1.05</PainShockThreshold>
+          <MeleeWeapon_CooldownMultiplier>0.90</MeleeWeapon_CooldownMultiplier>
+        <PainShockThreshold>1.10</PainShockThreshold>
         </statFactors>
         <givesPassions>
             <li>
