@@ -944,7 +944,7 @@
   <ThingDef ParentName="BodyPartStandardAugmetics">
     <defName>Seg_COTO_SecutorAugmetics</defName>
     <label>secutor augmetics</label>
-    <description>The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <description>The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability even when it adversely affects their other abilities. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
     <costList Inherit="False">
       <Plasteel>30</Plasteel>
 	  <Steel>40</Steel>
@@ -966,7 +966,7 @@
     <defName>Seg_COTO_SecutorAugmetics_Hediff</defName>
     <label>secutor augmetics</label>
     <labelNoun>a set of secutor augmetics</labelNoun>
-    <description>An installed set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <description>An installed set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability even when it adversely affects their other abilities. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
     <spawnThingOnRemoved>Seg_COTO_SecutorAugmetics</spawnThingOnRemoved>
 	<stages>
 		<li>
@@ -1006,7 +1006,7 @@
   <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>InstallSeg_COTO_SecutorAugmetics</defName>
     <label>install secutor augmetics</label>
-    <description>Install a set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
+    <description>Install a set of secutor augmetics. The secutors of the Cult Mechanicus are so devoted to combat in the Machine God's name that they modify their bodies in particular ways to enhance their combat capability even when it adversely affects their other abilities. This mental and physical reshaping results in significantly increased aggression, which is a boon in combat but less so when there are no enemies in the vicinity.</description>
     <descriptionHyperlinks>
       <ThingDef>Seg_COTO_SecutorAugmetics</ThingDef>
       <HediffDef>Seg_COTO_SecutorAugmetics_Hediff</HediffDef>
