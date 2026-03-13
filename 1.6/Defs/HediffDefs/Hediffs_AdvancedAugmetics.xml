@@ -860,7 +860,9 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker>
-      <researchPrerequisites Inherit="False">Seg_COTO_TrueFlesh</researchPrerequisites>
+      <researchPrerequisites Inherit="False">
+		<li>Seg_COTO_TrueFlesh</li>
+	  </researchPrerequisites>
       <skillRequirements Inherit="False">
 		 <Crafting>8</Crafting>
 	  </skillRequirements>

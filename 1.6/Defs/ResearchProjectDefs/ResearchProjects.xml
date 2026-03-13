@@ -142,6 +142,8 @@
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Seg_SegmentumTab</tab>
+		<discoveredLetterTitle>About: Scrapping for hyperweave</discoveredLetterTitle>
+		<discoveredLetterText>Many pieces of Mechanicus apparel and armour require hyperweave, a tough and hard-to-acquire fabric. Hyperweave can be found through quests, trade, and exploration, but can also be refined by scrapping apparel and armour at the Mechanicus forge altar.\n\nRecycling low-durability and low-quality clothing for hyperweave is a great way to provide materials for your own production.</discoveredLetterText>
 	</ResearchProjectDef>
 
 <!-- Tech-Guard -->
@@ -239,6 +241,8 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>Seg_SegmentumTab</tab>
+		<discoveredLetterTitle>About: Ranks and implants</discoveredLetterTitle>
+		<discoveredLetterText>The rank system of Mechanicus techpriests and their armed forces, the skitarii, is largely tied to artificial implants or augmetics. Augmetics can be manufactured at the Mechanicus augmetic microforge, and many ranks require a certain number of augmetic implants for a priest or skitarius to advance to the next rank.\n\nSome ranks ask for specific implants. For instance, the noospheric cortex is required by most techpriest rank paths at some point, and skitarii require the skitarii leg and skitarii eye lens implants.</discoveredLetterText>
 	</ResearchProjectDef>
 	
 <!-- Holy order vestments -->
