@@ -516,6 +516,9 @@
         <VacuumResistance MayRequire="ludeon.rimworld.odyssey">.5</VacuumResistance>
         <ToxicEnvironmentResistance>.5</ToxicEnvironmentResistance>
       </statOffsets>
+      <makeImmuneTo>
+         <li>LungRotExposure</li>
+      </makeImmuneTo>
       <painOffset>0.01</painOffset>
     </li>
   </stages>

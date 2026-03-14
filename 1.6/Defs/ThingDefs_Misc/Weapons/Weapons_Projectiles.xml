@@ -170,8 +170,8 @@
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.05</sweepRatePerTick>
-				<maxSweepAngle>1</maxSweepAngle>
+				<sweepRatePerTick>0.01</sweepRatePerTick>
+				<maxSweepAngle>0.5</maxSweepAngle>
 
 				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
