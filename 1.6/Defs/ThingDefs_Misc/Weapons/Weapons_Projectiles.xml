@@ -118,7 +118,7 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>2</damageTickRate>
+				<damageTickRate>1</damageTickRate>
 				<lifetimeTicks>10</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
@@ -156,7 +156,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>4</damageAmountBase>
+			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
