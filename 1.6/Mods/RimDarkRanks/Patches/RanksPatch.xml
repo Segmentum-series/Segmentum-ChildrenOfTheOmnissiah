@@ -6,7 +6,7 @@
 		<value>
 			<incompatibleRanks>
 				<li>Seg_COTO_AdeptProbatoris</li>
-				<!--li>Seg_COTO_Hypaspist</li-->
+				<li>Seg_COTO_Hypaspist</li>
 			</incompatibleRanks>
 		</value>
   </Operation>
@@ -15,7 +15,7 @@
 		<value>
 			<incompatibleRanks>
 				<li>Seg_COTO_AdeptProbatoris</li>
-				<!--li>Seg_COTO_Hypaspist</li-->
+				<li>Seg_COTO_Hypaspist</li>
 			</incompatibleRanks>
 		</value>
   </Operation>
