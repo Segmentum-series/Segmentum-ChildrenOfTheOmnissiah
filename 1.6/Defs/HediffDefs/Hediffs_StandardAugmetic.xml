@@ -507,7 +507,7 @@
   <addsHediff>Seg_COTO_StandardLiver_Hediff</addsHediff>
 </RecipeDef>
 
-<!--Standard Lung-->
+<!--Standard Kidney-->
 <!-- ThingDef -->
 
 
@@ -770,7 +770,7 @@
   <addsHediff>Seg_COTO_StandardEar_Hediff</addsHediff>
 </RecipeDef>
 
-  <!--Ferric Lurex-->
+  <!-- Ferric Lure -->
 <!-- ThingDef -->
 <ThingDef ParentName="BodyPartStandardAugmetics">
   <defName>Seg_COTO_FerricLure</defName>

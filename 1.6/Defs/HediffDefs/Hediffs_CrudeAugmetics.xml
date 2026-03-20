@@ -1,711 +1,662 @@
 <Defs>
-<!--Crude Arm-->
-<!-- ThingDef -->
-<ThingDef Abstract="True" Name="BodyPartCrudeAugmetics" ParentName="BodyPartProstheticBase">
-  <recipeMaker>
-    <researchPrerequisites>
-    <li>Seg_COTO_CultMechanicus</li>
-    <li>Prosthetics</li>
-    </researchPrerequisites>
 
-
-    <recipeUsers Inherit="false">
-        <li>Seg_COTO_AugmeticsTable</li>
-      </recipeUsers>
-      	<skillRequirements>
-				<Crafting>4</Crafting>
-		</skillRequirements>
-  </recipeMaker>
-  <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-    <color>(138,143,153)</color>
-    </graphicData>
-  <statBases>
-  
-    <MarketValue>400</MarketValue>
-    <Mass>0.3</Mass>
-  </statBases>
-  <techHediffsTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </techHediffsTags>
+<!-- ThingDef Base-->
+	<ThingDef Abstract="True" Name="BodyPartCrudeAugmetics" ParentName="BodyPartProstheticBase">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+				<li>Prosthetics</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="false">
+				<li>Seg_COTO_AugmeticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+					<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<color>(138,143,153)</color>
+			</graphicData>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<techHediffsTags Inherit="False">
+			<li>Seg_COTO_CrudeAugmetics</li>
+		</techHediffsTags>
 		<costList>
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-     <tradeTags Inherit="False">
-      <li>Seg_COTO_CrudeAugmetics</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeArm</defName>
-  <label>crude augmetic arm</label>
-  <description>An augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  
-</ThingDef>
-
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeArm_Hediff</defName>
-  <label>crude augmetic arm</label>
-  <labelNoun>a crude augmeticarm</labelNoun>
-  <description>An installed augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeArm</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+		<tradeTags Inherit="False">
+			<li>Seg_COTO_CrudeAugmetics</li>
+		</tradeTags>
+	</ThingDef>
 
 
+<!-- Crude Arm -->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeArm</defName>
+		<label>crude augmetic arm</label>
+		<description>An augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+	</ThingDef>
 
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeArm_Hediff</defName>
+		<label>crude augmetic arm</label>
+		<labelNoun>a crude augmeticarm</labelNoun>
+		<description>An installed augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeArm</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeArm</defName>
-  <label>install crude augmetic arm</label>
-  <description>Installs an augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <jobString>Installing crude augmetic arm.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeArm</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeArm</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Shoulder</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeArm_Hediff</addsHediff>
-</RecipeDef>
-<!--Crude Leg-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeLeg</defName>
-  <label>crude augmetic leg</label>
-  <description>An augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-</ThingDef>
-
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeLeg_Hediff</defName>
-  <label>crude augmetic leg</label>
-  <labelNoun>a crude augmetic leg</labelNoun>
-  <description>An installed augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeLeg</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeArm</defName>
+		<label>install crude augmetic arm</label>
+		<description>Installs an augmetic replacement arm which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<jobString>Installing crude augmetic arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Seg_COTO_CrudeArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeArm_Hediff</addsHediff>
+	</RecipeDef>
 
 
+<!-- Crude Leg -->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeLeg</defName>
+		<label>crude augmetic leg</label>
+		<description>An augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+	</ThingDef>
 
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeLeg_Hediff</defName>
+		<label>crude augmetic leg</label>
+		<labelNoun>a crude augmetic leg</labelNoun>
+		<description>An installed augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeLeg</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+				</statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeLeg</defName>
-  <label>install crude augmetic leg</label>
-  <description>Installs an augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <jobString>Installing crude augmetic leg.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeLeg</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeLeg</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Leg</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeLeg_Hediff</addsHediff>
-</RecipeDef>
-<!--Crude Eye-->
-<!-- ThingDef -->
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeLeg</defName>
+		<label>install crude augmetic leg</label>
+		<description>Installs an augmetic replacement leg which is more capable than the baseline limb but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<jobString>Installing crude augmetic leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Seg_COTO_CrudeLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeLeg_Hediff</addsHediff>
+	</RecipeDef>
 
 
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeEye</defName>
-  <label>crude augmetic eye</label>
-  <description>A bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
+<!-- Crude Eye -->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeEye</defName>
+		<label>crude augmetic eye</label>
+		<description>A bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
 		<costList Inherit="False">
 			<Steel>20</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-  
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeEye_Hediff</defName>
-  <label>crude augmetic eye</label>
-  <labelNoun>a crude augmetic eye</labelNoun>
-  <description>An installed bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeEye</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>false</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeEye_Hediff</defName>
+		<label>crude augmetic eye</label>
+		<labelNoun>a crude augmetic eye</labelNoun>
+		<description>An installed bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeEye</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Eye">
+				<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+				<texPath>Things/Pawn/Wounds/Seg_COTO_CrudeEye</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>0.15</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>56</layer>
+						<offset>(0, 0, -0.25)</offset>
+					</defaultData>
+					<dataWest>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeEye</defName>
+		<label>install crude augmetic eye</label>
+		<description>Installs a bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
+		<jobString>Installing crude augmetic eye.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_CrudeEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeEye_Hediff</addsHediff>
+	</RecipeDef>
 
 
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-  <renderNodeProperties>
-      <li Class="PawnRenderNodeProperties_Eye">
-        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-        <texPath>Things/Pawn/Wounds/SEG_COTO_CrudeEye</texPath>
-        <parentTagDef>Head</parentTagDef>
-        <drawSize>0.15</drawSize>
-        <drawData>
-          <defaultData>
-            <layer>56</layer>
-            <offset>(0, 0, -0.25)</offset>
-          </defaultData>
-          <dataWest>
-            <flip>true</flip>
-          </dataWest>
-        </drawData>
-      </li>
-    </renderNodeProperties>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeEye</defName>
-  <label>install crude augmetic eye</label>
-  <description>Installs a bulky augmetic replacement eye which can see in wider spectra than the baseline eye, but is uncomfortably integrated with the optic nerve and can cause aching pain for the user.</description>
-  <jobString>Installing crude augmetic eye.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeEye</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeEye</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Eye</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeEye_Hediff</addsHediff>
-</RecipeDef>
-<!--Heart-->
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeHeart</defName>
-  <label>install crude augmetic heart</label>
-  <description>Install an augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
-  <jobString>Installing crude augmetic heart.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeHeart</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeHeart</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Heart</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeHeart_Hediff</addsHediff>
-</RecipeDef>
-<!--thingDef-->
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeHeart</defName>
-  <label>crude augmetic heart</label>
-  <description>An augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
+<!-- Crude Heart -->
+	<!--thingDef-->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeHeart</defName> 
+		<label>crude augmetic heart</label>
+		<description>An augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
 		<costList Inherit="False">
 			<Leather_Plain>20</Leather_Plain>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeHeart_Hediff</defName>
-  <label>crude augmetic heart</label>
-  <labelNoun>a crude augmetic heart</labelNoun>
-  <description>An installed augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeHeart</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>false</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeHeart_Hediff</defName>
+		<label>crude augmetic heart</label>
+		<labelNoun>a crude augmetic heart</labelNoun>
+		<description>An installed augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeHeart</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeHeart</defName>
+		<label>install crude augmetic heart</label>
+		<description>Install an augmetic replacement heart. Stronger than the baseline organ, but roughly integrated with the cardiovascular system and can sometimes cause aching pain for the user.</description>
+		<jobString>Installing crude augmetic heart.</jobString>
+		<ingredients>
+			<li>
+			<filter>
+				<thingDefs>
+					<li>Seg_COTO_CrudeHeart</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeHeart_Hediff</addsHediff>
+	</RecipeDef>
 
 
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
 <!--Crude Lung-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeLung</defName>
-  <label>crude augmetic lung</label>
-  <description>An augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeLung</defName>
+		<label>crude augmetic lung</label>
+		<description>An augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
 		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Leather_Plain>20</Leather_Plain>
+			<Leather_Plain>20</Leather_Plain>
 		</costList>
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeLung_Hediff</defName>
-  <label>crude augmetic lung</label>
-  <labelNoun>a crude augmetic lung</labelNoun>
-  <description>An installed augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeLung</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>false</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeLung_Hediff</defName>
+		<label>crude augmetic lung</label>
+		<labelNoun>a crude augmetic lung</labelNoun>
+		<description>An installed augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeLung</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicEnvironmentResistance>.1</ToxicEnvironmentResistance>
+				</statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeLung</defName>
+		<label>install crude augmetic lung</label>
+		<description>Installs an augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
+		<jobString>Installing crude augmetic lung.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Seg_COTO_CrudeLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeLung_Hediff</addsHediff>
+	</RecipeDef>
 
-
-  <stages>
-    <li>
-      <statOffsets>
-        <ToxicEnvironmentResistance>.1</ToxicEnvironmentResistance>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeLung</defName>
-  <label>install crude augmetic lung</label>
-  <description>Installs an augmetic replacement lung. Stronger than the baseline organ, but awkwardly situated with the rest of the body and can sometimes cause pain for the user.</description>
-  <jobString>Installing crude augmetic lung.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeLung</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeLung</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Lung</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeLung_Hediff</addsHediff>
-</RecipeDef>
 
 <!--Crude Spine-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeSpine</defName>
-  <label>crude augmetic spine</label>
-  <description>An augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
- 
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeSpine</defName>
+		<label>crude augmetic spine</label>
+		<description>An augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
-            <Steel>40</Steel>
+			<Steel>40</Steel>
 		</costList>
 		<recipeMaker>
-      	<skillRequirements Inherit="False">
-				<Crafting>6</Crafting>
-		</skillRequirements>
+			<skillRequirements Inherit="False">
+					<Crafting>6</Crafting>
+			</skillRequirements>
 		</recipeMaker>
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeSpine_Hediff</defName>
-  <label>crude augmetic spine</label>
-  <labelNoun>a crude augmetic spine</labelNoun>
-  <description>An installed augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeSpine</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>0.90</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeSpine_Hediff</defName>
+		<label>crude augmetic spine</label>
+		<labelNoun>a crude augmetic spine</labelNoun>
+		<description>An installed augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeSpine</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.90</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeSpine</defName>
+		<label>install crude augmetic spine</label>
+		<description>Installs an augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
+		<jobString>Installing crude augmetic spine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+					<li>Seg_COTO_CrudeSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeSpine_Hediff</addsHediff>
+	</RecipeDef>
 
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeSpine</defName>
-  <label>install crude augmetic spine</label>
-  <description>Installs an augmetic replacement spine. Not quite as resilient and efficient as the baseline body part, it is roughly integrated with the brain stem and can sometimes cause buzzing pain and pins and needle sensations for the user.</description>
-  <jobString>Installing crude augmetic spine.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeSpine</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeSpine</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Spine</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeSpine_Hediff</addsHediff>
-</RecipeDef>
 
 <!--Crude Jaw-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeJaw</defName>
-  <label>crude augmetic jaw</label>
-  <description>A bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
- 
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeJaw</defName>
+		<label>crude augmetic jaw</label>
+		<description>A bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
 		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>20</Steel>
+			<Steel>20</Steel>
 		</costList>
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeJaw_Hediff</defName>
-  <label>crude augmetic jaw</label>
-  <labelNoun>a crude augmetic jaw</labelNoun>
-  <description>An installed bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeJaw</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeJaw_Hediff</defName>
+		<label>crude augmetic jaw</label>
+		<labelNoun>a crude augmetic jaw</labelNoun>
+		<description>An installed bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeJaw</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeJaw</defName>
+		<label>install crude augmetic jaw</label>
+		<description>Installs a bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
+		<jobString>Installing crude augmetic jaw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_CrudeJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeJaw_Hediff</addsHediff>
+	</RecipeDef>
 
 
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeJaw</defName>
-  <label>install crude augmetic jaw</label>
-  <description>Installs a bulky and angular augmetic replacement jaw. While generally more efficient than the baseline body part, it has a tendency to grind and create a sort of phantom toothache sensation for the user.</description>
-  <jobString>Installing crude augmetic jaw.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeJaw</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeJaw</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Jaw</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeJaw_Hediff</addsHediff>
-</RecipeDef>
 <!--Crude Hand-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeHand</defName>
-  <label>crude augmetic hand</label>
-  <description>An augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeHand</defName>
+		<label>crude augmetic hand</label>
+		<description>An augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
 		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>20</Steel>
+			<Steel>20</Steel>
 		</costList>
-  
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeHand_Hediff</defName>
-  <label>crude augmetic hand</label>
-  <labelNoun>a crude augmetic hand</labelNoun>
-  <description>An installed augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeHand</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeHand_Hediff</defName>
+		<label>crude augmetic hand</label>
+		<labelNoun>a crude augmetic hand</labelNoun>
+		<description>An installed augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeHand</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+				</statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeHand</defName>
+		<label>install crude augmetic hand</label>
+		<description>Installs an augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<jobString>Installing crude augmetic hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_CrudeHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+			<li>Seg_COTO_CrudeHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeHand_Hediff</addsHediff>
+	</RecipeDef>
 
 
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeHand</defName>
-  <label>install crude augmetic hand</label>
-  <description>Installs an augmetic replacement hand which is stronger than the baseline organic hand but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <jobString>Installing crude augmetic hand.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeHand</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeHand</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Hand</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeHand_Hediff</addsHediff>
-</RecipeDef>
 <!--Crude Foot-->
-<!-- ThingDef -->
-
-
-
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeFoot</defName>
-  <label>crude augmetic foot</label>
-  <description>An augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
- 
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeFoot</defName>
+		<label>crude augmetic foot</label>
+		<description>An augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
 		<costList Inherit="False">
 			<ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>20</Steel>
+			<Steel>20</Steel>
 		</costList>
-</ThingDef>
+	</ThingDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeFoot_Hediff</defName>
-  <label>crude augmetic foot</label>
-  <labelNoun>a crude augmetic foot</labelNoun>
-  <description>An installed augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeFoot</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1.05</partEfficiency>
-    <betterThanNatural>true</betterThanNatural>
-  </addedPartProps>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeFoot_Hediff</defName>
+		<label>crude augmetic foot</label>
+		<labelNoun>a crude augmetic foot</labelNoun>
+		<description>An installed augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeFoot</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.05</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
-
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeFoot</defName>
-  <label>install crude augmetic foot</label>
-  <description>Installs an augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
-  <jobString>Installing crude augmetic foot.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeFoot</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeFoot</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Foot</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeFoot_Hediff</addsHediff>
-</RecipeDef>
-
-<!--Crude Foot-->
-<!-- ThingDef -->
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeFoot</defName>
+		<label>install crude augmetic foot</label>
+		<description>Installs an augmetic replacement foot which is sturdier and stronger than the baseline organic foot but is roughly integrated with the remaining nerve endings and can sometimes cause stabbing or buzzing pains for the user.</description>
+		<jobString>Installing crude augmetic foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_CrudeFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeFoot_Hediff</addsHediff>
+	</RecipeDef>
 
 
+<!--Crude Ear-->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartCrudeAugmetics">
+		<defName>Seg_COTO_CrudeEar</defName>
+		<label>vox receptor</label>
+		<description>An augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
+	</ThingDef>
 
-<ThingDef ParentName="BodyPartCrudeAugmetics">
-  <defName>Seg_COTO_CrudeEar</defName>
-  <label>vox receptor</label>
-  <description>An augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
-</ThingDef>
+	<!-- HediffDef -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Seg_COTO_CrudeEar_Hediff</defName>
+		<label>vox receptor</label>
+		<labelNoun>a vox receptor</labelNoun>
+		<description>An installed augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
+		<spawnThingOnRemoved>Seg_COTO_CrudeEar</spawnThingOnRemoved>
+		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets></statOffsets>
+				<painOffset>0.02</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
 
-<!-- HediffDef -->
-<HediffDef ParentName="AddedBodyPartBase">
-  <defName>Seg_COTO_CrudeEar_Hediff</defName>
-  <label>vox receptor</label>
-  <labelNoun>a vox receptor</labelNoun>
-  <description>An installed augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
-  <spawnThingOnRemoved>Seg_COTO_CrudeEar</spawnThingOnRemoved>
-  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
-  <addedPartProps>
-    <solid>true</solid>
-    <partEfficiency>1</partEfficiency>
-  </addedPartProps>
-
-
-
-  <stages>
-    <li>
-      <statOffsets>
-      </statOffsets>
-      <painOffset>0.02</painOffset>
-    </li>
-  </stages>
-</HediffDef>
-<!-- RecipeDef -->
-<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-  <defName>InstallSeg_COTO_CrudeEar</defName>
-  <label>install vox receptor</label>
-  <description>Installs an augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
-  <jobString>Installing vox receptor.</jobString>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>Seg_COTO_CrudeEar</li>
-        </thingDefs>
-      </filter>
-      <count>1</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>Seg_COTO_CrudeEar</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <appliedOnFixedBodyParts>
-    <li>Ear</li>
-  </appliedOnFixedBodyParts>
-  <addsHediff>Seg_COTO_CrudeEar_Hediff</addsHediff>
-</RecipeDef>
-
-
-
-
-
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallSeg_COTO_CrudeEar</defName>
+		<label>install vox receptor</label>
+		<description>Installs an augmetic ear implant patterned after vox receptor equipment. It can pick up a slightly wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause discomfort for the user.</description>
+		<jobString>Installing vox receptor.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_CrudeEar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_CrudeEar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_CrudeEar_Hediff</addsHediff>
+	</RecipeDef>
 
 </Defs>
