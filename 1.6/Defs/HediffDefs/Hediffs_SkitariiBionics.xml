@@ -904,8 +904,8 @@
             <power>26</power>
 			<armorPenetration>0.9</armorPenetration>
             <cooldownTime>2</cooldownTime>
-            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit> <!--Needs sound-->
-            <soundMeleeMiss>Seg_COTO_PoweredMeleeWeaponImpactSound</soundMeleeMiss> <!--Needs sound-->
+            <soundMeleeHit>Seg_COTO_PoweredMeleeWeaponImpactSound</soundMeleeHit> <!--Needs sound-->
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss> <!--Needs sound-->
           </li>
         </tools>
       </li>

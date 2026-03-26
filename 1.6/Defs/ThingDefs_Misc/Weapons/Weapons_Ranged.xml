@@ -111,6 +111,96 @@
 
 	</ThingDef>
 
+	<!-- Stubcarbine -->
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
+		<defName>Seg_COTO_Gun_Stubcarbine</defName>
+		<label>stubcarbine</label>
+		<description>Stubcarbines may be small, but they can fire a devastating barrage of stubber bullets at targets at close range - a tactic often employed by Sicarian Infiltrators when ambushing lightly armoured targets.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_Stubcarbines</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_SicarianKillclades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>2.0</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<MarketValue>420</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Stubber</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>14.9</range>
+				<burstShotCount>7</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_StubberSound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicRanged</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedLowTier</li>
+		</tradeTags>
+
+		<comps>
+			<li Class="Core40k.CompProperties_WeaponDecoration" />
+			
+			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
+        	<compClass>Core40k.Comp_AmmoChanger</compClass>
+        	<availableProjectiles>
+			<li>Seg_COTO_Bullet_Stubber</li>
+			<li>SEG_COTO_RadBullet</li>
+        	</availableProjectiles>
+			</li> -->
+		</comps>
+
+	</ThingDef>
+	
 <!-- Arc weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_ArcWeaponBase" Abstract="True">
 		<label>arc weapon (base)</label>
