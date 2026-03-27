@@ -1278,8 +1278,7 @@
 	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
 		<defName>Seg_COTO_Gun_FlechetteBlaster</defName>
 		<label>flechette blaster</label>
-		<description>An exquisitely hand crafted rifle that fires a barrage of adamantium flechettes that have a holy machine spirit allowing basic homing abilities.</description>
-
+		<description>A lightweight but potent weapon which fires clouds of holy adamantium darts, each with their own homing machine spirit, which can shred targets at medium range.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_FlechetteBlasters</texPath>
 			<shaderType>Cutout</shaderType>
@@ -1306,7 +1305,7 @@
 				<defaultProjectile>Seg_COTO_Bullet_Flechette</defaultProjectile>
 				<soundCast>Seg_COTO_StubberSound</soundCast>
 				<warmupTime>2</warmupTime>
-				<range>37.9</range>
+				<range>24.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
