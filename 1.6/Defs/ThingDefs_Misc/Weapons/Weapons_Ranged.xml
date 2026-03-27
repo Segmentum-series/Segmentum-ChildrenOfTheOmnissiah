@@ -340,8 +340,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.3</drawSize>
 		</graphicData>
-		<uiIconScale>0.9</uiIconScale>
-		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<uiIconScale>1</uiIconScale>
 		<statBases>
 			<Mass>4.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
@@ -364,7 +363,7 @@
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
@@ -1212,7 +1211,7 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_Bullet_Galvanic</defaultProjectile>
 				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
@@ -1267,6 +1266,86 @@
 		</availableProjectiles>
 	  	</li>
 		</comps> 
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Galvanic</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
+		<defName>Seg_COTO_Gun_FlechetteBlaster</defName>
+		<label>flechette blaster</label>
+		<description>An exquisitely hand crafted rifle that fires a barrage of adamantium flechettes that have a holy machine spirit allowing basic homing abilities.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_FlechetteBlasters</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>2</Mass>
+			<EquipDelay>.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>1259</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Flechette</defaultProjectile>
+				<soundCast>Seg_COTO_StubberSound</soundCast>
+				<warmupTime>2</warmupTime>
+				<range>37.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Seg_Adamantium>10</Seg_Adamantium>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_COTO_Galvanic</li>

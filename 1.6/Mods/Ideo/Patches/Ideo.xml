@@ -5,6 +5,12 @@
       <li>Seg_COTO_MachineImmortal</li>
     </value>
   </Operation>
+   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="IdeoRole_ProductionSpecialist"]/requiredMemes</xpath>
+    <value>
+      <li>Seg_COTO_Techno-Animism</li>
+    </value>
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
     <value>

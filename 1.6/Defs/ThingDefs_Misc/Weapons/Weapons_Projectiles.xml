@@ -88,6 +88,78 @@
 
         </modExtensions>
 	</ThingDef>
+
+	<!-- fancy flechette work on later <ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Flechette</defName>
+		<thingClass>VEF.Weapons.Projectile_Shrapnel</thingClass>
+		<label>flechette dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="VEF.Weapons.ProjectileProperties_Shrapnel">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+		<speed>70</speed>
+            <shrapnelProjectile>Seg_COTO_Bullet_FlechetteShrapnel</shrapnelProjectile>
+            <shrapnelCount>3</shrapnelCount>
+            <shrapnelRange>4</shrapnelRange>
+            <angleVariance>15</angleVariance>
+		</projectile>
+			
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_Bullet_FlechetteShrapnel</defName>
+        <label>Metal Storm Shrapnel</label>
+        <description>...</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.7, 0.7)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <armorPenetrationBase>0.48</armorPenetrationBase>
+            <soundExplode>MortarBomb_Explode</soundExplode>
+            <speed>75</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <comps>
+        	<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+            	<tickRate>10</tickRate>
+            	<lifetimeTicks>30000</lifetimeTicks> 
+            	<delayTurnInTicks>20</delayTurnInTicks> 
+            	<initialSpreadAngle>16</initialSpreadAngle> 
+        	</li>
+    	</comps>
+    </ThingDef> -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Flechette</defName>
+		<label>flechette dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>-.25</armorPenetrationBase>
+		<speed>70</speed>
+		</projectile>
+		 <comps>
+        	<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+            	<tickRate>10</tickRate>
+            	<lifetimeTicks>30000</lifetimeTicks> 
+            	<delayTurnInTicks>20</delayTurnInTicks> 
+            	<initialSpreadAngle>0</initialSpreadAngle> 
+        	</li>
+    	</comps>	
+	</ThingDef>
 <!-- Arc -->
 	
 
