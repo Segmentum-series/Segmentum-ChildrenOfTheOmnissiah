@@ -338,7 +338,7 @@
   <renderNodeProperties>
       <li Class="PawnRenderNodeProperties_Eye">
         <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-        <texPath>Things/Pawn/Wounds/BionicEye</texPath>
+        <texPath>Things/Pawn/Wounds/Seg_COTO_SkitariiEye</texPath>
         <parentTagDef>Head</parentTagDef>
         <drawSize>0.15</drawSize>
         <drawData>
