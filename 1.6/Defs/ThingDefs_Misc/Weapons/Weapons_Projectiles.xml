@@ -15,6 +15,7 @@
 		<speed>70</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Transuranic</defName>
 		<label>depleted transuranic slug</label>
@@ -30,6 +31,7 @@
 		<speed>900</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Galvanic</defName>
 		<label>high-velocity servitor-bullet</label>
@@ -45,6 +47,7 @@
 		<speed>300</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_GalvanicSeeker</defName>
 		<label>brain seeker servitor-bullet</label>
@@ -59,34 +62,31 @@
 			<stoppingPower>.5</stoppingPower>
 		<speed>90</speed>
 		</projectile>
-		 <recipeMaker>
-            <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+		</recipeMaker>
 		<costList>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
 		<comps>
 		<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-            	<tickRate>10</tickRate> <!--this changes the rate this updates-->
-            	<lifetimeTicks>30000</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
-            	<delayTurnInTicks>5</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
-            	<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
-            	<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
-            	<effectLifetime>30</effectLifetime> <!--the life of those motes-->
-            	<effectSize>1</effectSize> <!--the size of the motes-->
+				<tickRate>10</tickRate> <!--this changes the rate this updates-->
+				<lifetimeTicks>30000</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
+				<delayTurnInTicks>5</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
+				<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
+				<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
+				<effectLifetime>30</effectLifetime> <!--the life of those motes-->
+				<effectSize>1</effectSize> <!--the size of the motes-->
 				</li>
 		</comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_AmmoChanger">
-                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
-                <effectiveRange>55.9</effectiveRange>
-                <warmupTime>3.25</warmupTime>
-                <shotsPerBurst>1</shotsPerBurst>
-            </li>
-			 	
-
-
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>3.25</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- fancy flechette work on later <ThingDef ParentName="BaseBullet">
@@ -138,31 +138,31 @@
     	</comps>
     </ThingDef> -->
 
+	<!-- Flechette dart -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Flechette</defName>
 		<label>flechette dart</label>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>22</damageAmountBase>
 			<armorPenetrationBase>-.25</armorPenetrationBase>
-		<speed>70</speed>
+		<speed>80</speed>
 		</projectile>
-		 <comps>
-        	<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-            	<tickRate>10</tickRate>
-            	<lifetimeTicks>30000</lifetimeTicks> 
-            	<delayTurnInTicks>20</delayTurnInTicks> 
-            	<initialSpreadAngle>0</initialSpreadAngle> 
-        	</li>
-    	</comps>	
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks> 
+				<delayTurnInTicks>20</delayTurnInTicks> 
+				<initialSpreadAngle>0</initialSpreadAngle> 
+			</li>
+		</comps>	
 	</ThingDef>
-<!-- Arc -->
-	
 
+<!-- Arc -->
 	<!-- Arc pistol beam -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
@@ -341,6 +341,7 @@
 		</projectile>
 
 	</ThingDef>
+
 <!-- Radium -->
 	<ThingDef ParentName="BaseBullet">
     	<defName>SEG_COTO_RadBullet</defName>
@@ -358,6 +359,7 @@
         	<speed>70</speed>
     	</projectile>
 </ThingDef>
+
 <!-- Plasma -->
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>

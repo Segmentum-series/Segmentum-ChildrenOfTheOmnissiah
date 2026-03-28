@@ -1058,11 +1058,6 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			
-   		 
-
-
-			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -1258,13 +1253,13 @@
 			</li>
 		</modExtensions>
 		<comps>
-      		<li Class="Core40k.CompProperties_AmmoChanger">
-        <compClass>Core40k.Comp_AmmoChanger</compClass>
-        <availableProjectiles>
-		  <li>Seg_COTO_Bullet_Galvanic</li>
-		  <li>Seg_COTO_Bullet_GalvanicSeeker</li>
-		</availableProjectiles>
-	  	</li>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+				<li>Seg_COTO_Bullet_Galvanic</li>
+				<li>Seg_COTO_Bullet_GalvanicSeeker</li>
+			</availableProjectiles>
+			</li>
 		</comps> 
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
@@ -1275,7 +1270,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
 		<defName>Seg_COTO_Gun_FlechetteBlaster</defName>
 		<label>flechette blaster</label>
 		<description>A lightweight but potent weapon which fires clouds of holy adamantium darts, each with their own homing machine spirit, which can shred targets at medium range.</description>
@@ -1283,10 +1278,9 @@
 			<texPath>Things/Weapon/Seg_COTO_Ranged_FlechetteBlasters</texPath>
 			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.4</drawSize>
 		</graphicData>
-		<uiIconScale>0.9</uiIconScale>
-		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<uiIconScale>1.1</uiIconScale>
 		<statBases>
 			<Mass>2</Mass>
 			<EquipDelay>.5</EquipDelay>
@@ -1294,7 +1288,7 @@
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.98</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
+			<AccuracyLong>0.46</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
 			<MarketValue>1259</MarketValue>
 		</statBases>
@@ -1303,12 +1297,12 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_Bullet_Flechette</defaultProjectile>
-				<soundCast>Seg_COTO_StubberSound</soundCast>
+				<soundCast>Seg_COTO_FlechetteSound</soundCast>
 				<warmupTime>2</warmupTime>
-				<range>24.9</range>
-				<burstShotCount>3</burstShotCount>
-				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<muzzleFlashScale>10</muzzleFlashScale>
+				<range>16.9</range>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<muzzleFlashScale>8</muzzleFlashScale>
 			</li>
 		</verbs>
 		<costList>
@@ -1318,7 +1312,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>Seg_COTO_TechGuard</li>
+				<li>Seg_COTO_SicarianKillclades</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -1347,7 +1341,7 @@
 		</modExtensions>
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
-			<li>Seg_COTO_Galvanic</li>
+			<li>Seg_COTO_Flechette</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
