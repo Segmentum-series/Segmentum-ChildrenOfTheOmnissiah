@@ -112,13 +112,13 @@
 			</li> -->
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Skitarii backpack -->
