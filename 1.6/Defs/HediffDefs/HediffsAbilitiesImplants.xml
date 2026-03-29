@@ -23,8 +23,8 @@
 </VEF.Abilities.AbilityDef>
  <VEF.Abilities.AbilityDef>
 	<defName>Seg_COTO_WaveburstAbility</defName>
-	<label>Waveburst</label>
-	<description>A powerful burst of energy that stuns nearby pawns.</description>
+	<label>waveburst</label>
+	<description>An intense burst of signals on all audiovisual spectra that can stun and disorient anyone nearby.</description>
 	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
 	<abilityClass>Seg.Ability_Waveburst</abilityClass>
 	<castTime>10</castTime>
@@ -46,8 +46,8 @@
 </VEF.Abilities.AbilityDef>
 <VEF.Abilities.AbilityDef>
 	<defName>Seg_COTO_GeneExtractionAbility</defName>
-	<label>Gene Extraction</label>
-	<description>Extract a gene from the target pawn.</description>
+	<label>gene extraction</label>
+	<description>Identify and isolate genetic material to extract specific traits or attributes from a target for implantation elsewhere.</description>
 	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
 	<abilityClass>Seg.Ability_ExtractGene</abilityClass>
 	<castTime>60</castTime>
@@ -64,7 +64,7 @@
 		<canTargetMechs>false</canTargetMechs>
 	</targetingParameters>
 	<needsTicking>true</needsTicking>
-	<castSound>Seg_COTO_ArcSound</castSound>
+	<castSound>Seg_COTO_Sound_PoweredMeleeWeapon_Equip</castSound>
 </VEF.Abilities.AbilityDef>
 
 
