@@ -21,7 +21,29 @@
 	<needsTicking>true</needsTicking>
 	<castSound>Seg_COTO_ArcSound</castSound>
 </VEF.Abilities.AbilityDef>
-
+ <VEF.Abilities.AbilityDef>
+	<defName>Seg_COTO_WaveburstAbility</defName>
+	<label>Waveburst</label>
+	<description>A powerful burst of energy that stuns nearby pawns.</description>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<abilityClass>Seg.Ability_Waveburst</abilityClass>
+	<castTime>10</castTime>
+	<cooldownTime>1800</cooldownTime>
+	<radius>5.9</radius>
+    <range>9.9</range>
+    <targetMode>Location</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetItems>true</canTargetItems>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<needsTicking>true</needsTicking>
+	<castSound>Seg_COTO_ArcSound</castSound>
+</VEF.Abilities.AbilityDef>
 
 
 

@@ -288,10 +288,10 @@
 			<li>Seg_COTO_SicarianRuststalker</li>
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
-        <!--RequiredHediffs>
+        <RequiredHediffs>
 			<li>Seg_COTO_SicarianLeg_Hediff</li>
-			<li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li>
-		</RequiredHediffs-->
+			<!-- <li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li> -->
+		</RequiredHediffs>
         <requiredSkills>
             <Shooting>5</Shooting>
             <Melee>8</Melee>
@@ -301,10 +301,9 @@
             <skill>Melee</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
-
-        <!--givesAbilities>
-            <li>Seg_COTO_WaveBurst</li>
-        </givesAbilities>-->
+        <givesVFEAbilities>
+        <li>Seg_COTO_WaveburstAbility</li> 
+        </givesVFEAbilities>
 
     
 

@@ -31,6 +31,7 @@
   <Compile Include="RanksParts.cs" />
   <Compile Include="FerricLure.cs" />
   <Compile Include="FloorCovering.cs" />
+  <Compile Include="Waveburst.cs" />
 
   </ItemGroup>
 </Project>
