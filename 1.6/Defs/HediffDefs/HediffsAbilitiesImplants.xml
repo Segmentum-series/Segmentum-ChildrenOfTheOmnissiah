@@ -44,6 +44,28 @@
 	<needsTicking>true</needsTicking>
 	<castSound>Seg_COTO_ArcSound</castSound>
 </VEF.Abilities.AbilityDef>
+<VEF.Abilities.AbilityDef>
+	<defName>Seg_COTO_GeneExtractionAbility</defName>
+	<label>Gene Extraction</label>
+	<description>Extract a gene from the target pawn.</description>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<abilityClass>Seg.Ability_ExtractGene</abilityClass>
+	<castTime>60</castTime>
+	<cooldownTime>120000</cooldownTime>
+	<range>1.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetItems>false</canTargetItems>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<needsTicking>true</needsTicking>
+	<castSound>Seg_COTO_ArcSound</castSound>
+</VEF.Abilities.AbilityDef>
 
 
 

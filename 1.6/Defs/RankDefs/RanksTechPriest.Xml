@@ -392,6 +392,10 @@
             <skill>Intellectual</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
+        <givesVFEAbilities>
+        <li>Seg_COTO_GeneExtractionAbility</li> 
+        </givesVFEAbilities>
+
 
     </Seg.RankDef> 
     <Seg.RankDef>

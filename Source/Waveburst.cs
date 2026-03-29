@@ -36,4 +36,44 @@ namespace Seg
             }
         }
     }
+     public class Ability_ExtractGene : VEF.Abilities.Ability
+    {
+        public override void Cast(params GlobalTargetInfo[] targets)
+        {
+            base.Cast(targets);
+            if (targets == null || targets.Length == 0) return;
+            Pawn targetPawn = targets[0].Thing as Pawn;
+            if (targetPawn == null || targetPawn.genes == null) return;
+
+            var availableGenes = targetPawn.genes.GenesListForReading
+                .Where(g => g.def.biostatArc == 0)
+                .Select(g => g.def)
+                .Distinct()
+                .ToList();
+
+            if (!availableGenes.Any())
+            {
+                Messages.Message("PawnHasNoNonArchiteGenes".Translate(targetPawn.Named("PAWN")), MessageTypeDefOf.RejectInput);
+                return;
+            }
+
+            List<FloatMenuOption> options = new List<FloatMenuOption>();
+            foreach (var geneDef in availableGenes)
+            {
+                var label = geneDef.label.CapitalizeFirst();
+                options.Add(new FloatMenuOption(label, () =>
+                {
+                    Genepack genepack = (Genepack)ThingMaker.MakeThing(ThingDefOf.Genepack);
+                    genepack.Initialize(new List<GeneDef> { geneDef });
+                    IntVec3 dropCell = this.CasterPawn.Position;
+                    GenPlace.TryPlaceThing((Thing)genepack, dropCell, this.CasterPawn.Map, ThingPlaceMode.Near);
+                    GeneUtility.ExtractXenogerm(targetPawn, Mathf.RoundToInt(60000f * GeneTuning.GeneExtractorRegrowingDurationDaysRange.RandomInRange));
+                    Messages.Message("GeneExtractionComplete".Translate(targetPawn.Named("PAWN")) + ": " + geneDef.label, MessageTypeDefOf.PositiveEvent);
+                }));
+            }
+
+            Find.WindowStack.Add(new FloatMenu(options));
+        }
+    }
+
 }
