@@ -19,9 +19,10 @@ namespace Seg
                 return;
             IntVec3 cell = targets[0].Cell;
             SoundDef.Named("Seg_COTO_ArcSound").PlayOneShot(new TargetInfo(cell, map));
+            HediffDef waveburstHediff = DefDatabase<HediffDef>.GetNamed("Seg_COTO_WaveburstEffect");
             int ticks = 240;
             float radius = this.def.radius;
-            foreach (IntVec3 c in GenRadial.RadialCellsAround(cell, radius, true))
+             foreach (IntVec3 c in GenRadial.RadialCellsAround(cell, radius, true))
             {
                 if (!c.InBounds(map))
                     continue;
@@ -29,13 +30,21 @@ namespace Seg
                 {
                     if (pawn == this.CasterPawn)
                         continue;
+
+                    if (waveburstHediff != null)
+                    {
+                        Hediff h = pawn.health.AddHediff(waveburstHediff);
+                        if (h != null && h.Severity <= 0f)
+                            h.Severity = 1f;
+                    }
+
                     if (pawn.stances?.stunner != null)
                         pawn.stances.stunner.StunFor(ticks, (Thing)this.CasterPawn);
                 }
-
             }
         }
     }
+
      public class Ability_ExtractGene : VEF.Abilities.Ability
     {
         public override void Cast(params GlobalTargetInfo[] targets)

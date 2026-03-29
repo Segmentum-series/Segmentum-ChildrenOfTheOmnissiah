@@ -30,14 +30,13 @@
 	<castTime>10</castTime>
 	<cooldownTime>1800</cooldownTime>
 	<radius>5.9</radius>
-    <range>9.9</range>
-    <targetMode>Location</targetMode>
+    <targetMode>Self</targetMode>
 	<targetingParameters>
 		<canTargetLocations>true</canTargetLocations>
-		<canTargetSelf>false</canTargetSelf>
+		<canTargetSelf>true</canTargetSelf>
 		<canTargetAnimals>true</canTargetAnimals>
 		<canTargetPawns>true</canTargetPawns>
-		<canTargetHumans>true</canTargetHumans>
+		<canTargetHumans>false</canTargetHumans>
 		<canTargetItems>true</canTargetItems>
 		<canTargetMechs>true</canTargetMechs>
 	</targetingParameters>
@@ -66,7 +65,33 @@
 	<needsTicking>true</needsTicking>
 	<castSound>Seg_COTO_Sound_PoweredMeleeWeapon_Equip</castSound>
 </VEF.Abilities.AbilityDef>
-
+<HediffDef>
+    <defName>Seg_COTO_WaveburstEffect</defName>
+    <label>Sicarian Waveburst</label>
+    <labelNoun>a stun effect</labelNoun>
+    <description>After-effects of a waveburst to the non Sicarian brain.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1800~3600</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	   <statOffsets>
+        <MoveSpeed>-0.5</MoveSpeed>
+		<AimingDelayFactor>1</AimingDelayFactor>
+		<MeleeDodgeChance>-10</MeleeDodgeChance>
+      </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.80</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
 
 </Defs>
