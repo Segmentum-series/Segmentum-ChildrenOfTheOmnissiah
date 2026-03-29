@@ -67,9 +67,9 @@
 </VEF.Abilities.AbilityDef>
 <HediffDef>
     <defName>Seg_COTO_WaveburstEffect</defName>
-    <label>Sicarian Waveburst</label>
+    <label>Sicarian waveburst</label>
     <labelNoun>a stun effect</labelNoun>
-    <description>After-effects of a waveburst to the non Sicarian brain.</description>
+    <description>The after-effects of a full-spectrum waveburst on an unprotected brain.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <comps>
       <li Class="HediffCompProperties_Disappears">
