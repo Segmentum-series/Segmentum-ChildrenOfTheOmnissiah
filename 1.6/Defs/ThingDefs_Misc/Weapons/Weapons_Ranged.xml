@@ -1311,7 +1311,7 @@
 			<Seg_Adamantium>10</Seg_Adamantium>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
+			<researchPrerequisites Inherit="False">
 				<li>Seg_COTO_SicarianKillclades</li>
 			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
