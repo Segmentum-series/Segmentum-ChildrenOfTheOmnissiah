@@ -36,7 +36,9 @@
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
 			<li>Seg_COTO_Apparel_MarshalHelmet</li>
-		
+			<li>Seg_COTO_Apparel_SicarianRuststakerMask</li>
+			<li>Seg_COTO_Apparel_SicarianRuststalkerMask</li>
+			<!--<li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>-->
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -45,6 +47,7 @@
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
 			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+			<li>Seg_COTO_Apparel_SicarianBattleArmour</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
