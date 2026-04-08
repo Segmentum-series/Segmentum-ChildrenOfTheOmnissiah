@@ -337,14 +337,16 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
+
 	<!-- Marshall command plate -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_MarshalCommandPlate</defName>
@@ -432,6 +434,7 @@
             </li>
         </modExtensions>
 	</ThingDef>
+	
 	<!-- Skitarii Marshal helmet -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_MarshalHelmet</defName>
@@ -504,16 +507,16 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
-	<!-- sicarian battle armour -->
+	<!-- Sicarian battle armour -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianBattleArmour</defName>
 		<label>sicarian battle armour</label>
@@ -586,9 +589,9 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
-				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
-				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
+				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor><!-- Mars red -->
+				<defaultSecondaryColor>(166,166,166)</defaultSecondaryColor><!-- Grey -->
+				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
 			</li>
 		</comps>
 		<modExtensions>
@@ -600,16 +603,16 @@
             </li>
     		<li Class="taranchuk_apparelgraphics.ApparelExtension">
       			<hideBody>False</hideBody>
-      			<femaleBody>Male</femaleBody>							
+      			<femaleBody>Male</femaleBody>
     		</li>
         </modExtensions>
 	</ThingDef>
-   <!-- sicarian ruststaker helmet-->
 
-   <ThingDef ParentName="Seg_COTO_SkitariiBase">
-		<defName>Seg_COTO_Apparel_SicarianRuststakerMask</defName>
-		<label>sicarian ruststaker mask</label>
-		<description>Skitarii Marshals wear heavy helmets outfitted with advanced optics and vox equipment. These helmets allow enhanced integration with the Mechanicus noospheric networks, feeding critical information to the commanders of the Tech-Guard.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+	<!-- Sicarian ruststalker helmet-->
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask</defName>
+		<label>sicarian ruststalker mask</label>
+		<description>Missing description.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -673,18 +676,18 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
-				<defaultSecondaryColor>(234,130,56)</defaultSecondaryColor><!-- Adamantium -->
-				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
+				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor><!-- Mars red -->
+				<defaultSecondaryColor>(166,166,166)</defaultSecondaryColor><!-- Grey -->
+				<defaultTertiaryColor>(80,94,104)</defaultTertiaryColor><!-- Bodysuit grey-blue -->
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

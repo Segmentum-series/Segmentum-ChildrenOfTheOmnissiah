@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!-- Marshal lenses -->
+<!-- Ruststalker -->
+	<!-- Gas cannister -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_GasCannister</defName>
-		<label>Rangefinder</label>
+		<label>Gas cannister</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_GasCannister</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_GasCannister</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<drawSize>(0.65, 0.65)</drawSize>
+		<sortOrder>1</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -25,35 +26,30 @@
 				<layer>50</layer>
 			</dataSouth>
 			<dataNorth>
-				<layer>50</layer>
+				<layer>0</layer>
 			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
+				<flip>true</flip>
 			</dataEast>
 			<dataWest>
 				<layer>72</layer>
-				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
-		<colourable>true</colourable>
+		<colourable>false</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
-
-		<shaderType>CutoutComplex</shaderType>
-		<defaultColour>(26,148,200)</defaultColour>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-    	<Core40k.ExtraDecorationDef>
+
+	<!-- Ruststalker lens single L -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensSingleL</defName>
-		<label>Rangefinder</label>
+		<label>Single lense L</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesSingleL</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesSingleL</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<sortOrder>2</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -67,44 +63,38 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>50</layer>
+				<layer>85</layer>
 			</dataSouth>
-			<dataNorth>
-				<layer>50</layer>
-			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
 			</dataEast>
 			<dataWest>
 				<layer>72</layer>
-				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
 		<colourable>true</colourable>
-		<flipable>true</flipable>
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-    <Core40k.ExtraDecorationDef>
+
+	<!-- Ruststalker lens single R -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensSingleR</defName>
-		<label>Rangefinder</label>
+		<label>Single lense R</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesSingleR</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesSingleR</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<sortOrder>3</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -112,38 +102,32 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>50</layer>
+				<layer>85</layer>
 			</dataSouth>
-			<dataNorth>
-				<layer>50</layer>
-			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
 			</dataEast>
 			<dataWest>
 				<layer>72</layer>
-				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
 		<colourable>true</colourable>
-		<flipable>true</flipable>
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-<Core40k.ExtraDecorationDef>
+
+	<!-- Ruststalker Tri lenses -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensesTri</defName>
-		<label>Rangefinder</label>
+		<label>Tri lenses</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesTri</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesTri</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<sortOrder>4</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -157,11 +141,8 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>50</layer>
+				<layer>85</layer>
 			</dataSouth>
-			<dataNorth>
-				<layer>50</layer>
-			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
 			</dataEast>
@@ -177,13 +158,12 @@
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-    <Core40k.ExtraDecorationDef>
+
+	<!-- Ruststalker Quad lenses -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensesQuad</defName>
-		<label>Rangefinder</label>
+		<label>Quad lenses</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesQuad</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesQuad</drawnTextureIconPath>
@@ -202,11 +182,8 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>50</layer>
+				<layer>85</layer>
 			</dataSouth>
-			<dataNorth>
-				<layer>50</layer>
-			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
 			</dataEast>
@@ -223,62 +200,18 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-    <Core40k.ExtraDecorationDef>
-		<defName>Seg_COTO_SicarianRuststalkerMask_PrincepsHood</defName>
-		<label>Princeps Hood</label>
-		<description>...</description>
-		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_PrincepsHood</iconPath>
-		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_PrincepsHood</drawnTextureIconPath>
-		<drawSize>(1, 1)</drawSize>
-		<sortOrder>5</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
 
-		<defaultShowRotation>
-			<li>East</li>
-			<li>North</li>
-			<li>South</li>
-		</defaultShowRotation>
-
-		<appliesTo>
-			<li>Seg_COTO_Apparel_SicarianRuststakerMask</li>
-		</appliesTo>
-		<drawData>
-			<dataSouth>
-				<layer>99</layer>
-			</dataSouth>
-			<dataNorth>
-				<layer>99</layer>
-			</dataNorth>
-			<dataEast>
-				<layer>72</layer>
-			</dataEast>
-			<dataWest>
-				<layer>72</layer>
-				<flip>true</flip>
-			</dataWest>
-		</drawData>
-
-		<colourable>true</colourable>
-		<flipable>true</flipable>
-		<useMask>true</useMask>
-
-		<shaderType>CutoutComplex</shaderType>
-		<defaultColour>(26,148,200)</defaultColour>
-
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
-	</Core40k.ExtraDecorationDef>
-        <Core40k.ExtraDecorationDef>
+	<!-- Side Visor -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_SideVisor</defName>
 		<label>Side Visor</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_SideVisor</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_SideVisor</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<sortOrder>6</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -298,10 +231,10 @@
 				<layer>85</layer>
 			</dataNorth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>73</layer>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
+				<layer>73</layer>
 				<flip>true</flip>
 			</dataWest>
 		</drawData>
@@ -313,17 +246,18 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
-     <Core40k.ExtraDecorationDef>
+
+	<!-- Upper Visor -->
+	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_UpperVisor</defName>
 		<label>Upper Visor</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_UpperVisor</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_UpperVisor</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
-		<sortOrder>5</sortOrder>
+		<sortOrder>7</sortOrder>
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
@@ -343,10 +277,10 @@
 				<layer>85</layer>
 			</dataNorth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>73</layer>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
+				<layer>73</layer>
 				<flip>true</flip>
 			</dataWest>
 		</drawData>
@@ -358,7 +292,52 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
 		<useArmorColourAsDefault>false</useArmorColourAsDefault>
 	</Core40k.ExtraDecorationDef>
+	
+	<!-- Ruststalker Princeps Hood -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_SicarianRuststalkerMask_PrincepsHood</defName>
+		<label>Princeps Hood</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_PrincepsHood</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_PrincepsHood</drawnTextureIconPath>
+		<drawSize>(1, 1)</drawSize>
+		<sortOrder>8</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianRuststakerMask</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>99</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>99</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(146,12,18)</defaultColour>
+
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+
 </Defs>
