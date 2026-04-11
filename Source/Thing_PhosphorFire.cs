@@ -5,6 +5,8 @@ using UnityEngine;
 using HarmonyLib;
 using System.Collections.Generic;
 using VEF;
+using System.Linq;
+
 
 
 namespace Seg.COTO
@@ -107,7 +109,7 @@ namespace Seg.COTO
                 {
                     if (Map.thingGrid.ThingAt<PhosphorFire>(pawn.Position) == null)
                     {
-                        var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("Seg_COTO_PhosphorFire"));
+                        var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("PhosphorFire"));
                         GenSpawn.Spawn(fire, pawn.Position, Map);
                     }
                 }
@@ -126,27 +128,41 @@ namespace Seg.COTO
             if (Map.thingGrid.ThingAt<PhosphorFire>(c) != null)
                 return;
 
-            var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("Seg_COTO_PhosphorFire"));
+            var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("PhosphorFire"));
             GenSpawn.Spawn(fire, c, Map);
         }
     }
 
-    public class Projectile_Phosphor : Bullet
+public class Projectile_Phosphor : Bullet
     {
-        protected override void Impact(Thing hitThing, bool blockedByShield = false)
+     protected override void Impact(Thing hitThing, bool blockedByShield = false)
+{
+    base.Impact(hitThing, blockedByShield);
+    Map map = hitThing?.Map ?? this.Map ?? Find.CurrentMap;
+    if (map == null)
+        return;
+    IntVec3 center = hitThing?.Position ?? this.Position;
+    Thing instigator = launcher;
+    Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(center, map, 0.5f, instigator);
+    List<IntVec3> adj = GenAdj.CellsAdjacent8Way(new TargetInfo(center, map)).ToList();
+    adj.Shuffle();
+    int count = Rand.RangeInclusive(6, 7);
+    for (int i = 0; i < count; i++)
+    {
+         IntVec3 cell = adj[i];
+
+        if (cell.InBounds(map))
         {
-            Map map = Map;
-            IntVec3 pos = Position;
-
-            base.Impact(hitThing, blockedByShield);
-
-            if (map == null)
-                return;
-
-            var fire = (PhosphorFire)ThingMaker.MakeThing(ThingDef.Named("Seg_COTO_PhosphorFire"));
-            GenSpawn.Spawn(fire, pos, map);
+        Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(cell, map, 0.5f, instigator);
         }
     }
+
+}
+
+
+    }
+
+
 
     [HarmonyPatch(typeof(JobDriver_BeatFire), "MakeNewToils")]
     public static class Patch_ExtinguishFire_MakeNewToils
@@ -155,7 +171,7 @@ namespace Seg.COTO
         {
             Thing target = __instance.job.targetA.Thing;
 
-            if (target != null && target.def.defName == "Seg_COTO_PhosphorFire")
+            if (target != null && target.def.defName == "PhosphorFire")
             {
                 foreach (var t in __result)
                     yield return t;
@@ -181,7 +197,7 @@ namespace Seg.COTO
     {
         static bool Prefix(Fire __instance)
         {
-            return __instance.def.defName != "Seg_COTO_PhosphorFire";
+            return __instance.def.defName != "PhosphorFire";
         }
     }
 
@@ -233,7 +249,7 @@ public static class Patch_Fire_TryAttachFire
 {
     static bool Prefix(Fire __instance, Thing t, ref bool __result)
     {
-        if (__instance.def.defName != "Seg_COTO_PhosphorFire")
+        if (__instance.def.defName != "PhosphorFire")
             return true;
 
         if (t == null)
@@ -262,7 +278,7 @@ public static class Patch_Fire_FireSpreadAndBurn
 {
     static bool Prefix(Fire __instance)
     {
-        if (__instance.def.defName == "Seg_COTO_PhosphorFire")
+        if (__instance.def.defName == "PhosphorFire")
             return false; // noooo dont kill my fire owo
 
         return true;

@@ -547,7 +547,7 @@
 
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
-				<li>Seg_COTO_ManipleTactics</li>
+				<li>Seg_COTO_SicarianKillclades</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
@@ -610,6 +610,88 @@
 
 	<!-- Sicarian ruststalker helmet-->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet</defName>
+		<label>sicarian infiltrator helmet</label>
+		<description>Missing description.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
+			<texPath>Things/Apparel/SicarianInfiltratorHelmet/Seg_COTO_SicarianInfiltratorHelmet</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>31000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2.2</Mass>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+			<ArmorRating_Heat>.9</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+      		<Insulation_Heat>3</Insulation_Heat>
+			<SocialImpact>-1</SocialImpact>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<AimingDelayFactor>-0.50</AimingDelayFactor>
+			<ShootingAccuracyPawn>0.30</ShootingAccuracyPawn>
+			<SocialImpact>-1</SocialImpact>
+		  <PainShockThreshold>0.5</PainShockThreshold>
+		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_SicarianKillclades</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Seg_Ceramite>20</Seg_Ceramite>
+		</costList>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_SkitariiMarshalHelmet</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/SicarianInfiltratorHelmet/Seg_COTO_SicarianInfiltratorHelmet</li>
+			</wornGraphicPaths>
+		</apparel>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Head</decorativeType>
+			</li>
+			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
+				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor><!-- Mars red -->
+				<defaultSecondaryColor>(166,166,166)</defaultSecondaryColor><!-- Grey -->
+				<defaultTertiaryColor>(80,94,104)</defaultTertiaryColor><!-- Bodysuit grey-blue -->
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask</defName>
 		<label>sicarian ruststalker mask</label>
 		<description>Missing description.</description>
@@ -641,7 +723,7 @@
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
-				<li>Seg_COTO_ManipleTactics</li>
+				<li>Seg_COTO_SicarianKillclades</li>
 			</researchPrerequisites>
 		</recipeMaker>
 

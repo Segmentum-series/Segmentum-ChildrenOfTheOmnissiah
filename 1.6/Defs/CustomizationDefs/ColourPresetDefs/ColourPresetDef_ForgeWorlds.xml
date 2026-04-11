@@ -21,6 +21,7 @@
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_MagosBackpack" Abstract="True">
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosBackpack</li>
+			<li>Seg_COTO_Apparel_SicarianBackpack</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -36,7 +37,7 @@
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
 			<li>Seg_COTO_Apparel_MarshalHelmet</li>
-			<!--<li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>-->
+			<li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 

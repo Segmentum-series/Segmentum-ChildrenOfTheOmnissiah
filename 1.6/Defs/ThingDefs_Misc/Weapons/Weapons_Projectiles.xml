@@ -335,7 +335,7 @@
 
 			<explosionRadius>0.5</explosionRadius>
 
-			<preExplosionSpawnThingDef>Seg_COTO_PhosphorFire</preExplosionSpawnThingDef>
+			<preExplosionSpawnThingDef>PhosphorFire</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
 		</projectile>
