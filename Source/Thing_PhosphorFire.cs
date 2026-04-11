@@ -143,7 +143,7 @@ public class Projectile_Phosphor : Bullet
         return;
     IntVec3 center = hitThing?.Position ?? this.Position;
     Thing instigator = launcher;
-    Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(center, map, 0.5f, instigator);
+    Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(center, map, 4f, instigator);
     List<IntVec3> adj = GenAdj.CellsAdjacent8Way(new TargetInfo(center, map)).ToList();
     adj.Shuffle();
     int count = Rand.RangeInclusive(6, 7);
@@ -153,7 +153,7 @@ public class Projectile_Phosphor : Bullet
 
         if (cell.InBounds(map))
         {
-        Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(cell, map, 0.5f, instigator);
+        Seg.PhosphorFireUtility.SpawnOrAttachPhosphorFire(cell, map, 4f, instigator);
         }
     }
 
