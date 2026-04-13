@@ -398,7 +398,6 @@
 		<costList>
 			<Steel>20</Steel>
 			<Plasteel>120</Plasteel>
-			<ComponentIndustrial>3</ComponentIndustrial>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<recipeMaker>
@@ -423,7 +422,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
+				<power>10</power>
 				<cooldownTime>1.6</cooldownTime>
 			</li>
 			<li>
@@ -431,9 +430,9 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>27</power>
-				<cooldownTime>2.4</cooldownTime>
-				<armorPenetration>0.9</armorPenetration>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>2</armorPenetration>
 			</li>
 		</tools>
 	</ThingDef>
