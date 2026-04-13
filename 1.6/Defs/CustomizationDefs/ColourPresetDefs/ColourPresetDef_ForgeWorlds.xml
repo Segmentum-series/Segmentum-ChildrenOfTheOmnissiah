@@ -678,6 +678,102 @@
 		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
 	</Core40k.ColourPresetDef>
 
-<!-- Lucius palette -->
 
+<!-- Lucius palette -->
+	<!-- Magos hood, robe & cassock -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
+		<defName>Seg_COTO_MagosApparel_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(122,14,16)</primaryColour><!-- Lucius red -->
+		<secondaryColour>(122,14,16)</secondaryColour><!-- Lucius red -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Magos backpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosBackpack">
+		<defName>Seg_COTO_MagosBackpack_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(234,130,56)</primaryColour><!-- Adamantium -->
+		<secondaryColour>(25,146,198)</secondaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii ranger hood -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiRangerHood">
+		<defName>Seg_COTO_SkitariiRangerHood_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour><!-- Lucius dark grey -->
+		<secondaryColour>(122,14,16)</secondaryColour><!-- Lucius red -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii vanguard helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiVanguardHelmet">
+		<defName>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(155,155,155)</primaryColour><!-- Grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii war plate -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiWarPlate">
+		<defName>Seg_COTO_SkitariiWarPlate_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour><!-- Lucius dark grey -->
+		<secondaryColour>(122,14,16)</secondaryColour><!-- Lucius red -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii bodysuit -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiFatigues">
+		<defName>Seg_COTO_SkitariiFatigues_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>2</colorAmount>
+		<primaryColour>(235,210,180)</primaryColour><!-- Beige -->
+		<secondaryColour>(62,66,72)</secondaryColour><!-- Lucius dark grey -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Skitarii powerpack -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack">
+		<defName>Seg_COTO_SkitariiBackpack_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(120,82,66)</primaryColour><!-- Leather -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Sicarian battle armour -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianBattleArmour">
+		<defName>Seg_COTO_Apparel_SicarianBattleArmour_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour><!-- Lucius dark grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Sicarian ruststalker mask -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianRuststalkerMask">
+		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour><!-- Lucius dark grey -->
+		<secondaryColour>(155,155,155)</secondaryColour><!-- Grey -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_7</defName>
+		<label>Lucius</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(62,66,72)</primaryColour><!-- Lucius dark grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
 </Defs>
