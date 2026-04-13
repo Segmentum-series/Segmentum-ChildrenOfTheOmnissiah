@@ -21,7 +21,6 @@
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_MagosBackpack" Abstract="True">
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosBackpack</li>
-			<li>Seg_COTO_Apparel_SicarianBackpack</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -37,7 +36,6 @@
 		<appliesTo>
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
 			<li>Seg_COTO_Apparel_MarshalHelmet</li>
-			<li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -63,6 +61,13 @@
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet" Abstract="True">
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>
+		</appliesTo>
+	</Core40k.ColourPresetDef>
+
 	<!-- Skitarii bodysuit -->
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiFatigues" Abstract="True">
 		<appliesTo>
@@ -73,8 +78,9 @@
 	<!-- Skitarii powerpack -->
 	<Core40k.ColourPresetDef Name="Seg_COTO_ColorPreset_SkitariiBackpack" Abstract="True">
 		<appliesTo>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 			<li>Seg_COTO_Apparel_MarshalBackpack</li>
+			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+			<li>Seg_COTO_Apparel_SicarianBackpack</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
@@ -167,6 +173,16 @@
 		<tertiaryColour>(80,94,104)</tertiaryColour><!-- Bodysuit grey-blue -->
 	</Core40k.ColourPresetDef>
 
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_1</defName>
+		<label>Mars</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
 
 <!-- Agrippina palette -->
 	<!-- Magos hood, robe & cassock -->
@@ -255,7 +271,17 @@
 		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
 		<tertiaryColour>(146,12,18)</tertiaryColour><!-- Mars red -->
 	</Core40k.ColourPresetDef>
-	
+
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_2</defName>
+		<label>Agrippina</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
 
 <!-- Stygies VIII palette -->
 	<!-- Magos hood, robe & cassock -->
@@ -343,6 +369,16 @@
 		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
 		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
 		<tertiaryColour>(80,94,104)</tertiaryColour><!-- Bodysuit grey-blue -->
+	</Core40k.ColourPresetDef>
+
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_3</defName>
+		<label>Stygies VIII</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
 	</Core40k.ColourPresetDef>
 
 
@@ -434,6 +470,16 @@
 		<tertiaryColour>(80,94,104)</tertiaryColour><!-- Bodysuit grey-blue -->
 	</Core40k.ColourPresetDef>
 
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_4</defName>
+		<label>Metalica</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(255,255,255)</primaryColour><!-- Metalica white -->
+		<secondaryColour>(234,130,56)</secondaryColour><!-- Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
 
 <!-- Triplex Phall palette -->
 	<!-- Magos hood, robe & cassock -->
@@ -523,6 +569,16 @@
 		<tertiaryColour>(200,178,110)</tertiaryColour><!-- Bodysuit yellow -->
 	</Core40k.ColourPresetDef>
 
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_5</defName>
+		<label>Triplex Phall</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
+		<secondaryColour>(240,176,29)</secondaryColour><!-- Golden Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
 
 <!-- Deimos palette -->
 	<!-- Magos hood, robe & cassock -->
@@ -595,7 +651,7 @@
 	<!-- Sicarian battle armour -->
 	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianBattleArmour">
 		<defName>Seg_COTO_Apparel_SicarianBattleArmour_ColorPreset_6</defName>
-		<label>Triplex Phall</label>
+		<label>Deimos</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
 		<secondaryColour>(144,75,46)</secondaryColour><!-- Bronze -->
@@ -605,10 +661,23 @@
 	<!-- Sicarian ruststalker mask -->
 	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianRuststalkerMask">
 		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask_ColorPreset_6</defName>
-		<label>Triplex Phall</label>
+		<label>Deimos</label>
 		<colorAmount>3</colorAmount>
 		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
 		<secondaryColour>(144,75,46)</secondaryColour><!-- Bronze -->
 		<tertiaryColour>(146,12,18)</tertiaryColour><!-- Mars red -->
 	</Core40k.ColourPresetDef>
-	</Defs>
+
+	<!-- Sicarian infiltrator helmet -->
+	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SicarianInfiltratorHelmet">
+		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet_ColorPreset_6</defName>
+		<label>Deimos</label>
+		<colorAmount>3</colorAmount>
+		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
+		<secondaryColour>(240,176,29)</secondaryColour><!-- Golden Adamantium -->
+		<tertiaryColour>(25,146,198)</tertiaryColour><!-- Lenses blue -->
+	</Core40k.ColourPresetDef>
+
+<!-- Lucius palette -->
+
+</Defs>

@@ -1,4 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- Princeps cape -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SicarianBattleArmour_PrincepsCape</defName>
+		<label>Princeps cape</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SicarianBattleArmour/Seg_COTO_Deco_SicarianBattleArmour_PrincepsCape</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_PrincepsCape</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+		<drawSize>(1,1)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>North</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianBattleArmour</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>23</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>22</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>25</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>23</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>BEWH_CutoutThreeColor</shaderType>	
+		<useMask>true</useMask>
+		<colourable>true</colourable>
+		<colorAmount>3</colorAmount>
+		<defaultColour>(146,12,18)</defaultColour>
+		<defaultColourTwo>(146,12,18)</defaultColourTwo>
+		<defaultColourThree>(234,130,56)</defaultColourThree>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+
+	<!-- Horizontal gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SicarianBattleArmour_HorizontalGearStripe</defName>
+		<label>Princeps horizontal gear stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SicarianBattleArmour/Seg_COTO_Deco_SicarianBattleArmour_PrincepsHorizontalGearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_PrincepsHorizontalGearStripe</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+		<drawSize>(0.66,0.66)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianBattleArmour</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>23</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>26</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Vertical gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SicarianBattleArmour_VerticalGearStripe</defName>
+		<label>Princeps vertical gear stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SicarianBattleArmour/Seg_COTO_Deco_SicarianBattleArmour_PrincepsVerticalGearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_PrincepsVerticalGearStripe</drawnTextureIconPath>
+		<sortOrder>3</sortOrder>
+		<drawSize>(0.66,0.66)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianBattleArmour</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataSouth>
+				<layer>26</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Vertical stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SicarianBattleArmourVerticalStripe</defName>
+		<label>Princeps vertical stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SicarianBattleArmour/Seg_COTO_Deco_SicarianBattleArmour_PrincepsVerticalStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_PrincepsVerticalStripe</drawnTextureIconPath>
+		<sortOrder>4</sortOrder>
+		<drawSize>(0.66,0.66)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SicarianBattleArmour</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>25</layer>
+			</dataEast>
+			<dataSouth>
+				<layer>26</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>25</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
 
 </Defs>

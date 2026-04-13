@@ -115,7 +115,6 @@
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
 				<tabDefs>
 					<li>BEWH_ArmorColoring</li>
-					<li>BEWH_ArmorDecoration</li>
 				</tabDefs>
 			</li>
 		</modExtensions>
@@ -288,6 +287,8 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+	<!-- Sicarian backpack -->
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_SicarianBackpack</defName>
 		<label>Sicarian backpack</label>

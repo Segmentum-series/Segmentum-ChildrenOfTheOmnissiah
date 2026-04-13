@@ -185,13 +185,13 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!-- Skitarii vanguard helmet -->
@@ -260,14 +260,16 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
+
 	<!-- Skitarii war plate -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
@@ -287,9 +289,9 @@
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.65</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
-      		<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</statBases>
 
 		<costList>
@@ -366,9 +368,9 @@
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.85</ArmorRating_Heat>
 			<Insulation_Cold>7</Insulation_Cold>
-      		<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.20</SocialImpact>
@@ -426,13 +428,13 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!-- Skitarii Marshal helmet -->
@@ -455,7 +457,7 @@
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
-      		<Insulation_Heat>3</Insulation_Heat>
+			<Insulation_Heat>3</Insulation_Heat>
 			<SocialImpact>0.20</SocialImpact>
 		</statBases>
 		<equippedStatOffsets>
@@ -595,20 +597,20 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-    		<li Class="taranchuk_apparelgraphics.ApparelExtension">
-      			<hideBody>False</hideBody>
-      			<femaleBody>Male</femaleBody>
-    		</li>
-        </modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+			<li Class="taranchuk_apparelgraphics.ApparelExtension">
+				<hideBody>False</hideBody>
+				<femaleBody>Male</femaleBody>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
-	<!-- Sicarian ruststalker helmet-->
+	<!-- Sicarian infiltrator helmet-->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet</defName>
 		<label>sicarian infiltrator helmet</label>
@@ -691,6 +693,9 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+
+	<!-- Sicarian ruststalker helmet-->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask</defName>
 		<label>sicarian ruststalker mask</label>
@@ -710,16 +715,16 @@
 			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
 			<ArmorRating_Heat>1</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
-      		<Insulation_Heat>3</Insulation_Heat>
+			<Insulation_Heat>3</Insulation_Heat>
 			<SocialImpact>0.20</SocialImpact>
 		</statBases>
 		<equippedStatOffsets>
-		<ToxicResistance>1.00</ToxicResistance>
-		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-		<AimingDelayFactor>-0.05</AimingDelayFactor>
-		  <MeleeDodgeChance>0.5</MeleeDodgeChance>
-		  <PainShockThreshold>0.5</PainShockThreshold>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+			<PainShockThreshold>0.5</PainShockThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
