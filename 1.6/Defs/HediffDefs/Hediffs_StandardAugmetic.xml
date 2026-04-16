@@ -770,30 +770,30 @@
   <addsHediff>Seg_COTO_StandardEar_Hediff</addsHediff>
 </RecipeDef>
 
-  <!-- Ferric Lure -->
-<!-- ThingDef -->
-<ThingDef ParentName="BodyPartStandardAugmetics">
-  <defName>Seg_COTO_FerricLure</defName>
-  <label>ferric lure</label>
-  <description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
-  
+<!-- Ferric Lure -->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartStandardAugmetics">
+		<defName>Seg_COTO_FerricLure</defName>
+		<label>ferric lure</label>
+		<description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<Steel>20</Steel>
 			<ComponentSpacer>1</ComponentSpacer>
-      <ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<statBases Inherit="False">
 			<WorkToMake>36000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 			<Mass>0.3</Mass>
 		</statBases>
-    <recipeMaker>
-      <researchPrerequisites Inherit="False">
-        <li>Seg_COTO_TrueFlesh</li>
-      </researchPrerequisites>
-    </recipeMaker>
-</ThingDef>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_TrueFlesh</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
 
 <!-- HediffDef -->
 <HediffDef ParentName="ImplantHediffBase">
