@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!-- Skitarii Base -->
-    <PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SkitariiPawnBase" Abstract="True">
-        <initialWillRange>15~24</initialWillRange>
-        <initialResistanceRange>15~24</initialResistanceRange>
-        <combatPower>20</combatPower>
-        <itemQuality>Normal</itemQuality>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_SkitariiFatigues</li>
-            <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+	<!-- Skitarii Base -->
+	<PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SkitariiPawnBase" Abstract="True">
+		<initialWillRange>15~24</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<combatPower>20</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-        </apparelRequired>
+		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<techHediffsTags>
 			<li>Seg_COTO_SkitariiAugmetics</li>
@@ -22,42 +22,42 @@
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_SkitariusLeg</li>
 		</techHediffsRequired>
-        <inventoryOptions>
-            <subOptionsChooseOne>
-                <li>
-                    <thingDef>MealSurvivalPack</thingDef>
-                    <countRange>
-                        <min>1</min>
-                        <max>2</max>
-                    </countRange>
-                </li>
-                <li>
-                    <thingDef>MedicineIndustrial</thingDef>
-                    <countRange>
-                        <min>1</min>
-                        <max>2</max>
-                    </countRange>
-                </li>
-            </subOptionsChooseOne>
-        </inventoryOptions>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MealSurvivalPack</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 		<humanPregnancyChance>0</humanPregnancyChance>
-        <trader>false</trader>
-        <isFighter>false</isFighter>
-    </PawnKindDef>
+		<trader>false</trader>
+		<isFighter>false</isFighter>
+	</PawnKindDef>
 
-    <!-- Skitarii Vanguard -->
-    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
-        <defName>Seg_COTO_SkitariiVanguard</defName>
+	<!-- Skitarii Vanguard -->
+	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+		<defName>Seg_COTO_SkitariiVanguard</defName>
 		<label>Skitarii Vanguard</label>
-        <combatPower>110</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_Rad</li>
+		<combatPower>110</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_Rad</li>
 			<li>Seg_COTO_Taser</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -68,39 +68,39 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>1100~2700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="True">
-            <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
-        </apparelRequired>
+		<weaponMoney>1100~2700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="True">
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>1000~2500</techHediffsMoney>
 		<techHediffsMaxAmount>5</techHediffsMaxAmount>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>6~10</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>4~10</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~10</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
-        <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
+	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+		<defName>Seg_COTO_SkitariiVanguardAlpha</defName>
 		<label>Skitarii Vanguard Alpha</label>
-        <combatPower>150</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_Rad</li>
+		<combatPower>150</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_Rad</li>
 			<li>Seg_COTO_Taser</li>
 			<li>Seg_COTO_Arc</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -111,11 +111,11 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~3700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="True">
-            <li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
-        </apparelRequired>
+		<weaponMoney>2000~3700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="True">
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
@@ -128,30 +128,30 @@
 			<li>Seg_COTO_VanguardArm</li>
 			<li>Seg_COTO_ArmorPlating</li>
 		</techHediffsRequired>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>8~14</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>6~12</range>
-            </li>
-        </skills>
-    </PawnKindDef>
-	
-    <!-- Skitarii Ranger -->
-    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
-        <defName>Seg_COTO_SkitariiRanger</defName>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- Skitarii Ranger -->
+	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+		<defName>Seg_COTO_SkitariiRanger</defName>
 		<label>Skitarii Ranger</label>
-        <combatPower>120</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_Galvanic</li>
-        </weaponTags>
+		<combatPower>120</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_Galvanic</li>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -162,39 +162,39 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>1100~2700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="True">
-            <li>Seg_COTO_Apparel_SkitariiRangerHood</li>
-        </apparelRequired>
+		<weaponMoney>1100~2700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="True">
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
+		</apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>1000~2500</techHediffsMoney>
 		<techHediffsMaxAmount>5</techHediffsMaxAmount>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>6~12</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>4~6</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~6</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
-        <defName>Seg_COTO_SkitariiRangerAlpha</defName>
+	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+		<defName>Seg_COTO_SkitariiRangerAlpha</defName>
 		<label>Skitarii Ranger Alpha</label>
-        <combatPower>160</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_Galvanic</li>
+		<combatPower>160</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_Galvanic</li>
 			<li>Seg_COTO_Taser</li>
 			<li>Seg_COTO_Phosphor</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -205,11 +205,11 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~3700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="True">
-            <li>Seg_COTO_Apparel_SkitariiRangerHood</li>
-        </apparelRequired>
+		<weaponMoney>2000~3700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="True">
+			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
+		</apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
@@ -222,31 +222,31 @@
 			<li>Seg_COTO_RangerArm</li>
 			<li>Seg_COTO_ArmorPlating</li>
 		</techHediffsRequired>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>10~16</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>6~10</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 	
 	<!--Skitarii Marshal-->
-    <PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
-        <defName>Seg_COTO_SkitariiMarshal</defName>
+	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
+		<defName>Seg_COTO_SkitariiMarshal</defName>
 		<label>Skitarii Marshal</label>
-        <combatPower>200</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
+		<combatPower>200</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
 			<li>Seg_COTO_Phosphor</li>
 			<li>Seg_COTO_PowerMelee</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -257,14 +257,14 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~3700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
-            <li>Seg_COTO_Apparel_MarshalHelmet</li>
-            <li>Seg_COTO_Apparel_SkitariiFatigues</li>
+		<weaponMoney>2000~3700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
 			<li>Seg_COTO_Apparel_MarshalBackpack</li>
-        </apparelRequired>
+		</apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
@@ -278,61 +278,61 @@
 			<li>Seg_COTO_ArmorPlating</li>
 			<li>Seg_COTO_SkitariiDataUplink</li>
 		</techHediffsRequired>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>10~15</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>8~14</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~15</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
-    <!-- Techpriest Base -->
-    <PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_TechpriestPawnBase" Abstract="True">
-        <initialWillRange>10~18</initialWillRange>
-        <initialResistanceRange>10~18</initialResistanceRange>
-        <combatPower>30</combatPower>
-        <itemQuality>Normal</itemQuality>
-        <inventoryOptions>
-            <subOptionsChooseOne>
-                <li>
-                    <thingDef>MealSurvivalPack</thingDef>
-                    <countRange>
-                        <min>1</min>
-                        <max>2</max>
-                    </countRange>
-                </li>
-                <li>
-                    <thingDef>MedicineIndustrial</thingDef>
-                    <countRange>
-                        <min>1</min>
-                        <max>3</max>
-                    </countRange>
-                </li>
-            </subOptionsChooseOne>
-        </inventoryOptions>
+	<!-- Techpriest Base -->
+	<PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_TechpriestPawnBase" Abstract="True">
+		<initialWillRange>10~18</initialWillRange>
+		<initialResistanceRange>10~18</initialResistanceRange>
+		<combatPower>30</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MealSurvivalPack</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>3</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<humanPregnancyChance>0</humanPregnancyChance>
-        <trader>false</trader>
-        <isFighter>false</isFighter>
-    </PawnKindDef>
+		<trader>false</trader>
+		<isFighter>false</isFighter>
+	</PawnKindDef>
 
-    <!-- Auxilius Myrmidon -->
-    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
-        <defName>Seg_COTO_AuxiliusMyrmidon</defName>
+	<!-- Auxilius Myrmidon -->
+	<PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+		<defName>Seg_COTO_AuxiliusMyrmidon</defName>
 		<label>Auxilius Myrmidon</label>
-        <combatPower>60</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_MagosBasicRanged</li>
+		<combatPower>60</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicRanged</li>
 			<li>Seg_COTO_MagosBasicMelee</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -343,14 +343,14 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>1100~2700</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_MagosHood</li>
-            <li>Seg_COTO_Apparel_MagosRobes</li>
-            <li>Seg_COTO_Apparel_MagosCassock</li>
-            <li>Seg_COTO_Apparel_MagosBackpack</li>
-        </apparelRequired>
+		<weaponMoney>1100~2700</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_COTO_Apparel_MagosBackpack</li>
+		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_CrudeAugmetics</li>
 			<li>Seg_COTO_StandardAugmetics</li>
@@ -358,33 +358,33 @@
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>1000~2500</techHediffsMoney>
 		<techHediffsMaxAmount>2</techHediffsMaxAmount>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>4~8</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>4~8</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
-    <!-- Magos Myrmidon -->
-    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
-        <defName>Seg_COTO_MagosMyrmidon</defName>
+	<!-- Magos Myrmidon -->
+	<PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+		<defName>Seg_COTO_MagosMyrmidon</defName>
 		<label>Magos Myrmidon</label>
-        <combatPower>90</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_MagosBasicRanged</li>
+		<combatPower>90</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicRanged</li>
 			<li>Seg_COTO_MagosBasicMelee</li>
-            <li>Seg_COTO_MagosAdvancedRanged</li>
+			<li>Seg_COTO_MagosAdvancedRanged</li>
 			<li>Seg_COTO_MagosAdvancedMelee</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -395,45 +395,45 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~3000</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_MagosHood</li>
-            <li>Seg_COTO_Apparel_MagosRobes</li>
-            <li>Seg_COTO_Apparel_MagosCassock</li>
-            <li>Seg_COTO_Apparel_MagosBackpack</li>
-        </apparelRequired>
+		<weaponMoney>2000~3000</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_COTO_Apparel_MagosBackpack</li>
+		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
 		</techHediffsTags>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>1500~3500</techHediffsMoney>
 		<techHediffsMaxAmount>4</techHediffsMaxAmount>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>6~10</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>6~10</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~10</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
-    <!-- Magos Explorator -->
-    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
-        <defName>Seg_COTO_MagosExplorator</defName>
+	<!-- Magos Explorator -->
+	<PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+		<defName>Seg_COTO_MagosExplorator</defName>
 		<label>Magos Explorator</label>
-        <combatPower>80</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_MagosBasicRanged</li>
+		<combatPower>80</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicRanged</li>
 			<li>Seg_COTO_MagosBasicMelee</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -444,14 +444,14 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>2000~3000</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_ExploratorHood</li>
-            <li>Seg_COTO_Apparel_ExploratorRobe</li>
-            <li>Seg_COTO_Apparel_MagosCassock</li>
-            <li>Seg_COTO_Apparel_MagosBackpack</li>
-        </apparelRequired>
+		<weaponMoney>2000~3000</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_COTO_Apparel_MagosBackpack</li>
+		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
 			<li>Seg_COTO_AdvancedAugmetics</li>
@@ -462,36 +462,37 @@
 		<techHediffsRequired Inherit="False">
 			<li>Seg_COTO_NoosphericCortex</li>
 		</techHediffsRequired>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>4~7</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>4~7</range>
-            </li>
-            <li>
-                <skill>Social</skill>
-                <range>6~8</range>
-            </li>
-        </skills>
-    </PawnKindDef>
-    <!-- Archmagos Dominus -->
-    <PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
-        <defName>Seg_COTO_ArchmagosDominus</defName>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~7</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~7</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>6~8</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- Archmagos Dominus -->
+	<PawnKindDef ParentName="Seg_COTO_TechpriestPawnBase">
+		<defName>Seg_COTO_ArchmagosDominus</defName>
 		<label>Archmagos Dominus</label>
-        <combatPower>180</combatPower>
-        <isFighter>true</isFighter>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-        <weaponTags>
-            <li>Seg_COTO_MagosAdvancedRanged</li>
+		<combatPower>180</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponTags>
+			<li>Seg_COTO_MagosAdvancedRanged</li>
 			<li>Seg_COTO_MagosAdvancedMelee</li>
 			<li>Seg_COTO_Gamma</li>
 			<li>Seg_COTO_Plasma</li>
-        </weaponTags>
+		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -502,14 +503,14 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>3000~4000</weaponMoney>
-        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-        <apparelRequired Inherit="False">
-            <li>Seg_COTO_Apparel_MagosHood</li>
-            <li>Seg_COTO_Apparel_MagosRobes</li>
-            <li>Seg_COTO_Apparel_MagosCassock</li>
-            <li>Seg_COTO_Apparel_MagosBackpack</li>
-        </apparelRequired>
+		<weaponMoney>3000~4000</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_COTO_Apparel_MagosBackpack</li>
+		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
 			<li>Seg_COTO_AdvancedAugmetics</li>
@@ -520,17 +521,17 @@
 		<techHediffsRequired Inherit="False">
 			<li>Seg_COTO_NoosphericCortex</li>
 		</techHediffsRequired>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>10~16</range>
-            </li>
-            <li>
-                <skill>Melee</skill>
-                <range>8~12</range>
-            </li>
-        </skills>
-    </PawnKindDef>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
 
     <!-- Sicarian Base -->
     <!--PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SicarianPawnBase" Abstract="True">
