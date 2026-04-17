@@ -190,14 +190,14 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Magos cassock -->
@@ -271,15 +271,16 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<!-- Biologis hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_BiologisHood</defName>
@@ -349,14 +350,14 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Biologis cassock -->
@@ -431,20 +432,21 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<!-- Explorator hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_ExploratorHood</defName>
 		<label>Explorator hood</label>
-		<description>A reinforced protective hood typically used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and are a breed apart from the more sedentary parts of the Cult to the extent that they have developed their own dialect of the binharic cant used for communication by techpriests..\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A reinforced protective hood typically used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and are a breed apart from the more sedentary parts of the Cult to the extent that they have developed their own dialect of the binharic cant used for communication by techpriests.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -508,15 +510,16 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 	<!-- Explorator robe -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_ExploratorRobe</defName>
@@ -586,19 +589,21 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
+	<!-- Fabricator robe -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_FabricatorRobe</defName>
 		<label>Fabricator robe</label>
-		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks..\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
@@ -667,15 +672,17 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
+	<!-- Fabricator cassock -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_FabricatorCassock</defName>
 		<label>Fabricator cassock</label>
@@ -749,13 +756,14 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
 	</ThingDef>
+
 </Defs>

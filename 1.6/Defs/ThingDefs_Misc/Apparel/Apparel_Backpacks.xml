@@ -45,9 +45,7 @@
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_MagosBackpack</defName>
 		<label>magos powerpack</label>
-		<description>A standard modular powered backpack, designed to power and manipulate a multitude of tools required in the general operations of any Magos.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-		<!-- Removed for now to avoid confusion with powerpack mention, replace above once the system is back in place
-		<description>A standard modular powered backpacks, designed to power and manipulate a multitude of tools required in the general operations of any Magos.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A standard modular powered backpacks, designed to power and manipulate a multitude of tools required in the general operations of any Magos.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refueld with Uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MagosBackpack/Seg_COTO_MagosBackpack</texPath>
 			<drawSize>(1.20,1.20)</drawSize>
@@ -59,6 +57,7 @@
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Cloth>20</Cloth>
+			<Uranium>10</Uranium>
 		</costList>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -98,15 +97,14 @@
 				<defaultPrimaryColor>(234,130,56)</defaultPrimaryColor>
 				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
 			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420 -->
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>500</maxCharges>
+				<maxCharges>400</maxCharges>
 				<ammoDef>Uranium</ammoDef>
-				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
+				<chargeNoun>powercell</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
 			</li>
@@ -124,9 +122,7 @@
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_SkitariiBackpack</defName>
 		<label>skitarii powerpack</label>
-		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-		<!-- Removed for now to avoid confusion with powerpack mention, replace above once the system is back in place
-		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refueld with Uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</texPath>
 		</graphicData>
@@ -137,6 +133,7 @@
 			<Steel>40</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Cloth>20</Cloth>
+			<Uranium>15</Uranium>
 		</costList>
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
@@ -178,21 +175,17 @@
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
 				
 			</li>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
-			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
-				<ammoDef>Ammunition_Spacer</ammoDef>
-				<ammoCountPerCharge>1</ammoCountPerCharge>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>60</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
+				<chargeNoun>powercell</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li> -->
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
@@ -208,9 +201,7 @@
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_MarshalBackpack</defName>
 		<label>Marshal backpack</label>
-		<description>Skitarii Marshals make use of particularly advanced command and control equipment, with noospheric data-tethers, servo-skull uplinks, and portable cogitators all carried into the field to maximize efficacy.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-		<!-- Removed for now to avoid confusion with powerpack mention, replace above once the system is back in place
-		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description> -->
+		<description>Marshals make use of particularly advanced command and control equipment, with noospheric data-tethers, servo-skull uplinks, and portable cogitators all carried into the field to maximize efficacy.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refueld with Uranium&lt;/color&gt;.</description> 
 		<graphicData>
 			<texPath>Things/Apparel/MarshalBackpack/Seg_COTO_MarshalBackpack</texPath>
 		</graphicData>
@@ -221,6 +212,7 @@
 			<Plasteel>30</Plasteel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<Cloth>20</Cloth>
+			<Uranium>20</Uranium>
 		</costList>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -266,18 +258,17 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>500</maxCharges>
-				<ammoDef>Ammunition_Spacer</ammoDef>
-				<ammoCountPerCharge>1</ammoCountPerCharge>
-				<baseReloadTicks>60</baseReloadTicks>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>14</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
+				<baseReloadTicks>40</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
+				<chargeNoun>powercell</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li> -->
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
@@ -292,9 +283,7 @@
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_SicarianBackpack</defName>
 		<label>Sicarian backpack</label>
-		<description>Sic Backpack.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-		<!-- Removed for now to avoid confusion with powerpack mention, replace above once the system is back in place
-		<description>A powered backpack, designed for the usage of the Mechanicus arsenal by the Skitarii forces.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source&lt;/color&gt;.</description> -->
+		<description>Sicarian troops have little need to carry supplies or equipment like the baseline soldiers of the Militarum do, but their backpacks are still useful for the integral interface systems that boost the operation of their augmetic bodies.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refueld with Uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</texPath>
 		</graphicData>
@@ -305,6 +294,7 @@
 			<Plasteel>30</Plasteel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<Cloth>20</Cloth>
+			<Uranium>6</Uranium>
 		</costList>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -350,18 +340,17 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
-			<!-- Currently disabled to avoid conflicts with laser content + requires actual customziation, as this is the raw example provided by BlackMarket420
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>500</maxCharges>
-				<ammoDef>Ammunition_Spacer</ammoDef>
-				<ammoCountPerCharge>1</ammoCountPerCharge>
-				<baseReloadTicks>60</baseReloadTicks>
+				<maxCharges>250</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>10</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
+				<baseReloadTicks>40</baseReloadTicks>
 				<soundReload>Standard_Reload</soundReload>
 				<hotKey>Misc4</hotKey>
-				<chargeNoun>smokepop</chargeNoun>
+				<chargeNoun>powercell</chargeNoun>
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li> -->
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">

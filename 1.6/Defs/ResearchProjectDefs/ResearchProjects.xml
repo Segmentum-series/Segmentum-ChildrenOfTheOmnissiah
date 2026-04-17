@@ -249,7 +249,7 @@
 	<ResearchProjectDef>
 		<defName>Seg_COTO_HolyOrderVestments</defName>
 		<label>holy order vestments</label>
-		<description>Be granted the right to clothe the ordained tech-clergy in garb appropriate to their particular devotions..</description>
+		<description>Be granted the right to clothe the ordained tech-clergy in garb appropriate to their particular devotions.</description>
 		<baseCost>2000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1</researchViewX>

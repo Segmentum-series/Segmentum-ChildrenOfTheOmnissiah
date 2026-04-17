@@ -101,11 +101,11 @@
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
 			
 			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
-        	<compClass>Core40k.Comp_AmmoChanger</compClass>
-        	<availableProjectiles>
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
 			<li>Seg_COTO_Bullet_Stubber</li>
 			<li>SEG_COTO_RadBullet</li>
-        	</availableProjectiles>
+			</availableProjectiles>
 			</li> -->
 		</comps>
 
@@ -191,16 +191,16 @@
 			<li Class="Core40k.CompProperties_WeaponDecoration" />
 			
 			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
-        	<compClass>Core40k.Comp_AmmoChanger</compClass>
-        	<availableProjectiles>
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
 			<li>Seg_COTO_Bullet_Stubber</li>
 			<li>SEG_COTO_RadBullet</li>
-        	</availableProjectiles>
+			</availableProjectiles>
 			</li> -->
 		</comps>
-
 	</ThingDef>
-	
+
+
 <!-- Arc weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_ArcWeaponBase" Abstract="True">
 		<label>arc weapon (base)</label>
@@ -214,8 +214,6 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-		
-			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -258,9 +256,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
-		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
-		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -282,16 +278,15 @@
 		</statBases>
 
 		<verbs>
-			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
-					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
+					<li>Seg_COTO_Apparel_MarshalBackpack</li>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
-				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<soundCast>Seg_COTO_ArcSound</soundCast>
@@ -331,9 +326,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing bolts of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.</description>
-		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
@@ -359,8 +352,10 @@
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
-					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
+					<li>Seg_COTO_Apparel_MarshalBackpack</li>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -393,13 +388,13 @@
 			</skillRequirements>
 		</recipeMaker>
 		<comps>
-      		<li Class="Core40k.CompProperties_AmmoChanger">
-        <compClass>Core40k.Comp_AmmoChanger</compClass>
-        <availableProjectiles>
-		  <li>Seg_COTO_ArcPistol_Beam</li>
-		  <li>Seg_COTO_ArcRifleOverCharged_Beam</li>
-		</availableProjectiles>
-	  	</li>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+				<compClass>Core40k.Comp_AmmoChanger</compClass>
+				<availableProjectiles>
+				<li>Seg_COTO_ArcPistol_Beam</li>
+				<li>Seg_COTO_ArcRifleOverCharged_Beam</li>
+				</availableProjectiles>
+			</li>
 		</comps> 
 
 		<modExtensions>
@@ -427,6 +422,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 <!-- Phosphor weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
 		<label>phosphor weapon (base)</label>
@@ -440,8 +436,6 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-		 
-			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -600,6 +594,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 <!-- Gamma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_GammaWeaponBase" Abstract="True">
 		<label>GammaBase</label>
@@ -658,9 +653,7 @@
 	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
 		<defName>Seg_COTO_Gun_GammaPistol</defName>
 		<label>gamma pistol</label>
-		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.</description>
-		<!-- Removed for now to avoid confusion with power source mention, replace above once the system is back in place
-		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description> -->
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -682,16 +675,15 @@
 		</statBases>
 
 		<verbs>
-			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced
 			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
 				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
 				<apparelList>
-					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
+					<li>Seg_COTO_Apparel_MarshalBackpack</li>
+					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+					<li>Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
-				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>-->
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
 				<soundCast>Seg_COTO_GammaSound</soundCast>
@@ -729,6 +721,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 <!-- Rad weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
 		<label>RadBase</label>
@@ -742,9 +735,6 @@
 		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-		 
-		
-			 
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
@@ -924,6 +914,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 <!-- Plasma weapons base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PlasmaWeaponBase" Abstract="True">
 		<label>PlasmaWeaponBase</label>
@@ -1044,6 +1035,7 @@
 		</tradeTags>
 	</ThingDef>
 
+
 <!-- Transuranic arquebus base -->
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_TUABWeaponBase" Abstract="True">
 		<label>TransuranicArquebusWeaponBase</label>
@@ -1127,7 +1119,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_Bullet_Transuranic</defaultProjectile>
 				<soundCast>ChargeLance_Fire</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<warmupTime>2</warmupTime>
 				<range>58.9</range>
 				<burstShotCount>1</burstShotCount>
