@@ -364,6 +364,7 @@
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>
         <label>plasma shot</label>
+		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
         <graphicData>
             <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -379,6 +380,33 @@
             <speed>60</speed>
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
         </projectile>
+    </ThingDef>
+	<ThingDef ParentName="BaseBullet">
+        <defName>SEG_COTO_Bullet_PlasmaOvercharge</defName>
+        <label>overcharged plasma shot</label>
+		<uiIconPath>UI/Buttons/BEWH_Icon_ModeCharged</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Seg_COTO_PlasDamage</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+            <stoppingPower>2.0</stoppingPower>
+            <armorPenetrationBase>1.7</armorPenetrationBase>
+            <explosionRadius>1.1</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
+        </projectile>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <effectiveRange>16.9</effectiveRange>
+                <warmupTime>2.1</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>

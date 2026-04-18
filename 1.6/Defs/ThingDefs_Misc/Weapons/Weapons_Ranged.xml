@@ -151,7 +151,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Seg_COTO_Bullet_Stubber</defaultProjectile>
-				<warmupTime>0.5</warmupTime>
+				<warmupTime>0.33</warmupTime>
 				<range>14.9</range>
 				<burstShotCount>7</burstShotCount>
 				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
@@ -976,7 +976,7 @@
 		</statBases>
 		<verbs>
 			<li>
-				<verbClass>Verb_LaunchProjectile</verbClass>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
@@ -1007,6 +1007,15 @@
 				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<comps>
+      		<li Class="Core40k.CompProperties_AmmoChanger">
+       			 <compClass>Core40k.Comp_AmmoChanger</compClass>
+        			<availableProjectiles>
+          			<li>SEG_COTO_Bullet_Plasma</li>
+          			<li>SEG_COTO_Bullet_PlasmaOvercharge</li>
+        		</availableProjectiles>
+      		</li>
+		</comps>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension">
 				<weaponCarryDrawOffsets>
