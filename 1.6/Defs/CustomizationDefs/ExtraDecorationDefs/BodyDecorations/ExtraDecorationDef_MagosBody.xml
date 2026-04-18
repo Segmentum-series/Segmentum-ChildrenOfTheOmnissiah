@@ -24,7 +24,7 @@
 
 		<drawData>
 			<dataNorth>
-				<layer>90</layer>
+				<layer>71</layer>
 			</dataNorth>
 			<dataSouth>
 				<layer>75</layer>
@@ -57,6 +57,118 @@
 			<li>Fat</li>
 		</appliesToBodyTypes>
 
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Gear teeth -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosCassockGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MagosCassock/Seg_COTO_Deco_MagosCassock_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosCassock/Seg_COTO_MagosCassock_GearTeeth</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>76</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>66</layer>
+			</dataEast>
+			<dataWest>
+				<layer>71</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MagosCassockThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MagosCassock/Seg_COTO_Deco_MagosCassock_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MagosCassock/Seg_COTO_MagosCassock_ThinStripe</drawnTextureIconPath>
+		<sortOrder>3</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
 	</Core40k.ExtraDecorationDef>
 	
 <!-- Magos robe decorations -->
@@ -194,6 +306,694 @@
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+	
+<!-- Biologus cassock decorations -->
+	<!-- Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologusCassockGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusCassock/Seg_COTO_Deco_BiologusCassock_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusCassock/Seg_COTO_BiologusCassock_GearStripe</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+	
+	<!-- Gear teeth -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologusCassockGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusCassock/Seg_COTO_Deco_BiologusCassock_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusCassock/Seg_COTO_BiologusCassock_GearTeeth</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>76</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_BiologusCassockThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/BiologusCassock/Seg_COTO_Deco_BiologusCassock_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/BiologusCassock/Seg_COTO_BiologusCassock_ThinStripe</drawnTextureIconPath>
+		<sortOrder>3</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_BiologisCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+<!-- Explorator robe decorations -->
+	<!-- Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorRobeGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorRobe/Seg_COTO_Deco_ExploratorRobe_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorRobe/Seg_COTO_ExploratorRobe_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>1</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<colourable>true</colourable>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Gear teeth -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorRobeGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorRobe/Seg_COTO_Deco_ExploratorRobe_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorRobe/Seg_COTO_ExploratorRobe_GearTeeth</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>2</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>76</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>66</layer>
+			</dataEast>
+			<dataWest>
+				<layer>71</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_ExploratorRobeThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/ExploratorRobe/Seg_COTO_Deco_ExploratorRobe_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/ExploratorRobe/Seg_COTO_ExploratorRobe_ThinStripe</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>3</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+
+
+<!-- Fabricator cassock decorations -->
+	<!-- Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorCassockGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorCassock/Seg_COTO_Deco_FabricatorCassock_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorCassock/Seg_COTO_FabricatorCassock_GearStripe</drawnTextureIconPath>
+		<sortOrder>1</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+	
+	<!-- Gear teeth -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorCassockGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorCassock/Seg_COTO_Deco_FabricatorCassock_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorCassock/Seg_COTO_FabricatorCassock_GearTeeth</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>76</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>66</layer>
+			</dataEast>
+			<dataWest>
+				<layer>66</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorCassockThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorCassock/Seg_COTO_Deco_FabricatorCassock_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorCassock/Seg_COTO_FabricatorCassock_ThinStripe</drawnTextureIconPath>
+		<sortOrder>3</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorCassock</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+<!-- Fabricator robe decorations -->
+	<!-- Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorRobeGearStripe</defName>
+		<label>Cog-edged stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorRobe/Seg_COTO_Deco_FabricatorRobe_GearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorRobe/Seg_COTO_FabricatorRobe_GearStripe</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>1</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorRobe</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>90</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<colourable>true</colourable>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Gear teeth -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorRobeGearTeeth</defName>
+		<label>Cog teeth</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorRobe/Seg_COTO_Deco_FabricatorRobe_GearTeeth</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorRobe/Seg_COTO_FabricatorRobe_GearTeeth</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>2</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorRobe</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>
+				<layer>71</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>76</layer>
+			</dataSouth>
+			<dataEast>
+				<layer>66</layer>
+			</dataEast>
+			<dataWest>
+				<layer>71</layer>
+			</dataWest>
+		</drawData>
+
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<colourable>true</colourable>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Thin stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_FabricatorRobeThinStripe</defName>
+		<label>Thin stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/FabricatorRobe/Seg_COTO_Deco_FabricatorRobe_ThinStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/FabricatorRobe/Seg_COTO_FabricatorRobe_ThinStripe</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+		<sortOrder>3</sortOrder>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_FabricatorRobe</li>
 		</appliesTo>
 
 		<drawData>

@@ -1,0 +1,908 @@
+    <Defs>
+    <Seg.RankDef>
+        <defName>Seg_COTO_TechAcolytum</defName>
+        <label>Tech Acolytum</label>
+        <description>An apprentice in the mysteries of the Machine Cult. Tech Acolyta are treated little better than menials, but may be destined for great things.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_TechAcolytum</rankIconPath>
+        <rankTier>1</rankTier>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<li>Seg_COTO_TechMilita</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
+    
+
+        <statOffsets>
+            
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.01</GlobalLearningFactor>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_AdeptProbatoris</defName>
+        <label>Adept Probatoris</label>
+        <description>Having graduated beyond the acolyta, the Adept Probatoris is preparing to be ordained as a full tech-adept of the Machine Cult.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AdeptProbatoris</rankIconPath>
+        <rankTier>2</rankTier>
+
+        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
+    
+
+        <statOffsets>
+           
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <ResearchSpeed>0.05</ResearchSpeed>
+
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.02</GlobalLearningFactor>
+        </statFactors>
+    </Seg.RankDef>
+      <Seg.RankDef>
+        <defName>Seg_COTO_Enginseer</defName>
+        <label>Enginseer</label>
+        <description>One of the most commonly seen techpriests among the wider Imperial population, enginseers are skilled at maintaining and repairing the equipment and machinery the Imperium relies on, but are sometimes looked down on as mere tinkerers by more intellectually-minded magi.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Enginseer</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
+        <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Crafting>6</Crafting>
+        </requiredSkills>
+
+        <statOffsets>
+
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <ConstructSuccessChance>0.5</ConstructSuccessChance>
+
+
+        </statOffsets>
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_Transmechanic</defName>
+        <label>Transmechanic</label>
+        <description>Transmechanics are communications and scanning technology specialists and are frequently seconded to Imperial Navy voidships to operate auspex and vox equipment.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Transmechanic</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
+        <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Crafting>4</Crafting>
+            <Intellectual>6</Intellectual>
+        </requiredSkills>
+
+        <statOffsets>
+
+            <HackingSpeed>0.20</HackingSpeed>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey"> 0.5</PilotingAbility>
+
+
+        </statOffsets>
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_Lexmechanic</defName>
+        <label>Lexmechanic</label>
+        <description>One of the most numerous branches of the Cult, lexmechanics are analysts, researchers, compilers and administrators who are crucial to the running of any Mechanicus or Imperial facility.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Lexmechanic</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
+        <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Intellectual>6</Intellectual>
+        </requiredSkills>
+         <recreationFromSkills>
+            <li>Intellectual</li>
+        </recreationFromSkills>
+
+        <statOffsets>
+
+            <ResearchSpeed>0.10</ResearchSpeed>
+            <ReadingSpeed>0.30</ReadingSpeed>
+
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
+        </statFactors>
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_MagosBiologis</defName>
+        <label>Magos Biologis</label>
+        <description>Expert in the fields of biology, anatomy, and xenofauna, a Magos \nBiologis has dedicated their life to the study of the organic.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologis</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_Explorator</li>
+             <li>Seg_COTO_AuxiliusMyrmidon</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(13, 99999)</requiredAgeRange> -->
+        <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Plants>5</Plants>
+            <Animals>3</Animals>
+            <Medicine>6</Medicine>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Plants</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Animals</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Medicine</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+        <statOffsets>
+
+            <MedicalTendQuality>0.1</MedicalTendQuality>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <PlantWorkSpeed>0.20</PlantWorkSpeed>
+
+
+        </statOffsets>
+        <recreationFromSkills>
+            <li>Plants</li>
+            <li>Animals</li>
+            <li>Medicine</li>
+        </recreationFromSkills>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Explorator</defName>
+        <label>Explorator</label>
+        <description>The Quest for Knowledge is a core tenet for all priests of the Cult Mechanicus, but Explorators put it into action most practically by setting out to 'recover' undiscovered data, technology, and habitable worlds.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Explorator</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+        </incompatibleRanks>
+        <ImplantsRequired>2</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>4</Shooting>
+            <Melee>4</Melee>
+            <Social>4</Social>
+        </requiredSkills>
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+            <NegotiationAbility>0.20</NegotiationAbility>
+            <PawnTrapSpringChance>-0.50</PawnTrapSpringChance>
+
+
+
+            
+
+
+        </statOffsets>
+        <statFactors>
+            <GlobalLearningFactor>1.05</GlobalLearningFactor>
+        </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Social</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_AuxiliusMyrmidon</defName>
+        <label>Auxilius Myrmidon</label>
+        <description>While the Skitarii form the bulk of Mechanicus armies, the Auxilia Myrmidon are the Cult Militant, and a techpriest entering their ranks commits themselves to achieving the goals of the Mechanicus through war.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_AuxiliusMyrmidon</rankIconPath>
+        <rankTier>3</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+        </incompatibleRanks>
+        <ImplantsRequired>1</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>2</Shooting>
+            <Melee>2</Melee>
+        </requiredSkills>
+        <statOffsets>
+            
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+            
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+            <MeleeHitChance>1.01</MeleeHitChance>
+        </statFactors>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_FabricatorMinoris</defName>
+        <label>Fabricator Minoris</label>
+        <description>A Fabricator Minoris has authority over the manufacturing processes \nand workforce of significant parts of a forgeplex, carrying out the orders \nof higher magi but with a good amount of independence.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorMinoris</rankIconPath>
+        <rankTier>4</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_ServitorUnderseer</li>
+        </incompatibleRanks>
+        <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_ManipulatorMechadendrite_Hediff</RequiredHediff-->
+
+        <requiredSkills>
+            <Crafting>6</Crafting>
+            <Construction>6</Construction>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+            <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+
+            
+
+        </statOffsets>
+        <recreationFromSkills>
+            <li>Construction</li>
+            <li>Crafting</li>
+        </recreationFromSkills>
+        <givesPassions>
+             <li>
+            <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Crafting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_ServitorUnderseer</defName>
+        <label>Servitor Underseer</label>
+        <description>These specialist techpriests are responsible for the maintenance and control of servitors in the field, particularly combat servitors. They are expected to be able to defend themselves if the situation calls for it.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ServitorUnderseer</rankIconPath>
+        <rankTier>4</rankTier>
+          <incompatibleRanks>
+            <li>Seg_COTO_FabricatorMinoris</li>
+        </incompatibleRanks>
+       <ImplantsRequired>2</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>6</Shooting>
+            <Crafting>6</Crafting>
+            <Intellectual>6</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <HackingSpeed>0.10</HackingSpeed>
+            <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 1</MechBandwidth>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.10</MechRepairSpeed>
+            
+
+            
+
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+        </statFactors>
+        <recreationFromSkills>
+            <li>Construction</li>
+            <li>Crafting</li>
+        </recreationFromSkills>
+        <givesPassions>
+             <li>
+            <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Crafting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosLogis</defName>
+        <label>Magos Logis</label>
+        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by \nthe wider Cult Mechanicus..</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosLogis</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_CalculusLogi_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Social>6</Social>
+            <Intellectual>8</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <ResearchSpeed>0.15</ResearchSpeed>
+            <ReadingSpeed>0.20</ReadingSpeed>
+            <SocialImpact>.30</SocialImpact>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+
+            
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Intellectual</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosGenetor</defName>
+        <label>Magos Genetor</label>
+        <description>Genetors are particular experts in all things organic, and often dedicate themselves to gene therapies and other manipulations disdained by other branches who see the machine as primary.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosGenetor</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <requiredSkills>
+            <Plants>8</Plants>
+            <Animals>5</Animals>
+            <Medicine>8</Medicine>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
+            <MedicalTendQuality>0.10</MedicalTendQuality>
+            
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Intellectual</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+        <givesVFEAbilities>
+        <li>Seg_COTO_GeneExtractionAbility</li> 
+        </givesVFEAbilities>
+
+
+    </Seg.RankDef> 
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosBiologisextremis</defName>
+        <label>Magos Biologis Extremis</label>
+        <description>A particular expert on medical matters and surgery, often found serving as the master chirurgeon on a voidship.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
+        <rankTier>5</rankTier>
+       <ImplantsRequired>2</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_MedicaeMechadendrite_Hediff</RequiredHediff-->
+        <requiredSkills>
+            <Medicine>10</Medicine>
+        </requiredSkills>
+        <statOffsets>
+            <MedicalSurgerySuccessChance>0.30</MedicalSurgerySuccessChance>
+            <MedicalTendQuality>0.40</MedicalTendQuality>
+            <MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+
+        </statOffsets>
+        <givesAbilities>
+            <li>Seg_COTO_MBEmergencyAid</li>
+        </givesAbilities>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Medicine</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_MagosExplorator</defName>
+        <label>Magos Explorator</label>
+        <description>A Magos Explorator has gained great experience and tends to be seen as a pioneering frontier type by other techpriests. Some are known to work on behalf of the Adeptus Administratum to expand the borders of the Imperium.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosExplorator</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Social>6</Social>
+        </requiredSkills>
+        <statOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+            <SocialImpact>0.10</SocialImpact>
+            <NegotiationAbility>0.20</NegotiationAbility>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.02</MeleeHitChance>
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef> 
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosMilitant</defName>
+        <label>Magos Militant</label>
+        <description>A Magos Militant has demonstrated their aptitude in the Omnissiah's \narts of war, and may now be trusted to pursue hereteks while \nremaining steadfast against such temptations.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMilitant</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>2</ImplantsRequired>
+        <incompatibleRanks>
+            <li>Seg_COTO_Securtor</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Shooting>5</Shooting>
+            <Melee>4</Melee>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.2</MeleeDodgeChance>
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.02</MeleeHitChance>
+           <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+	       <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.60</CertaintyLossFactor>
+        </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+        </givesPassions>
+    
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Securtor</defName>
+        <label>Secutor</label>
+        <description>Secutors are techpriests who have so dedicated themselves to combat that their very bodies have been modified extensively for that purpose. They condition themselves to meditate while fighting and see battle as a way to worship the Machine God.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Secutor</rankIconPath>
+        <rankTier>4</rankTier>
+       <ImplantsRequired>2</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_SecutorAugmetics_Hediff</RequiredHediff>
+        <incompatibleRanks>
+            <li>Seg_COTO_MagosMilitant</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Melee>8</Melee>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+            
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.05</MeleeHitChance>
+        <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+          <MeleeWeapon_CooldownMultiplier>0.90</MeleeWeapon_CooldownMultiplier>
+        <PainShockThreshold>1.10</PainShockThreshold>
+        </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType>
+			</li>
+        </givesPassions>
+        <recreationFromSkills>
+            <li>Melee</li>
+        </recreationFromSkills>
+    </Seg.RankDef>
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosMetallurgicus</defName>
+        <label>Magos Metallurgicus</label>
+        <description>A Magos Metallurgicus is a master of the metallurgical arts, skilled in the creation and modification of metal-based technologies within the Mechanicus.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMetallurgicus</rankIconPath>
+        <rankTier>5</rankTier>
+        <ImplantsRequired>4</ImplantsRequired>
+
+        <requiredSkills>
+            <Construction>8</Construction>
+            <Crafting>8</Crafting>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.20</MechRepairSpeed>
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <DeepDrillingSpeed>0.20</DeepDrillingSpeed>
+
+            
+
+        </statOffsets>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_LexicoArcanus</defName>
+        <label>Lexico Arcanus</label>
+        <description>The highest rank of Logis, the Lexico Arcanus is held in high esteem \nand is able to process and evaluate situations at an unbelievable rate \nthanks to mental conditioning and augmetics.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_LexicoArcanus</rankIconPath>
+        <rankTier>8</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosDominius</li>
+        </incompatibleRanks>
+
+        <requiredSkills>
+            <Social>8</Social>
+            <Intellectual>10</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <ResearchSpeed>0.20</ResearchSpeed>
+            
+            <SocialImpact>.30</SocialImpact>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+                 
+        </statOffsets>
+         <statFactors>
+         <ReadingSpeed>2.0</ReadingSpeed>
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Artisan</defName>
+        <label>Artisan</label>
+        <description>Artisans are master machinists who can direct the population of entire forgeplexes to construct and assemble facilities, voidships, and military equipment that they design - as long as they follow sanctioned STC parameters.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_Artisan</rankIconPath>
+        <rankTier>8</rankTier>
+        <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosDominius</li>
+        </incompatibleRanks>
+
+        <requiredSkills>
+            <Construction>10</Construction>
+            <Crafting>12</Crafting>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.20</MechRepairSpeed>
+            <ConstructionSpeed>0.15</ConstructionSpeed>
+            <DeepDrillingSpeed>0.20</DeepDrillingSpeed>
+            <ConstructSuccessChance>0.20</ConstructSuccessChance>
+
+            
+
+        </statOffsets>
+        <givesPassions>
+            <li>
+            <skill>Crafting</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Construction</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_ArchmagosGenetor</defName>
+        <label>Archmagos Genetor</label>
+        
+        <description>Having dedicated their life to the genetor's arts, this techpriest is recognised as an Archmagos and a pre-eminent savant of their field.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosGenetor</rankIconPath>
+        <rankTier>8</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosDominius</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Plants>10</Plants>
+            <Animals>8</Animals>
+            <Medicine>10</Medicine>
+        </requiredSkills>
+        <statOffsets>
+            <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+            <MedicalTendQuality>0.10</MedicalTendQuality>
+            
+
+        </statOffsets>
+         <statFactors>
+           
+        </statFactors>
+        <givesPassions>
+             <li>
+            <skill>Plants</skill>
+            <modType>AddOneLevel</modType> </li>
+             <li>
+            <skill>Animals</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_ArchmagosExplorator</defName>
+        <label>Explorator Majoris</label>
+        <description>Explorators Majoris have the authority to command entire fleets of Mechanicus vessels in the search for technology and knowledge.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ExploratorMajoris</rankIconPath>
+        <rankTier>8</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosDominius</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Melee>6</Melee>
+            <Social>8</Social>
+        </requiredSkills>
+        <statOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+            <SocialImpact>0.20</SocialImpact>
+            <MeleeCooldownFactor>0.03</MeleeCooldownFactor>
+           
+            
+
+        </statOffsets>
+         <statFactors>
+           <NegotiationAbility>1.5</NegotiationAbility>
+           
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef> 
+
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosDominius</defName>
+        <label>Magos Dominus</label>
+        <description>Any techpriest of sufficient rank may take on the title of Magos Dominus temporarily to lead a military campaign or contribute otherwise to the wars of the Mechanicus.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosDominus</rankIconPath>
+        <rankTier>7</rankTier>
+       <ImplantsRequired>5</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Shooting>8</Shooting>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.2</MeleeDodgeChance>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
+           
+            
+
+        </statOffsets>
+         <statFactors>
+           <ShootingAccuracyPawn>1.05</ShootingAccuracyPawn>
+           
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef> 
+    <Seg.RankDef>
+        <defName>Seg_COTO_CyberneticaDatasmith</defName>
+        <label>Cybernetica Datasmith</label>
+        <description>The mainstay of the Legio Cybernetica, Datasmiths command the \nrobotic forces of the Mechanicus and are often found fighting \nalongside their charges, believing deeply that these valiant machine spirits must be supported and cared for.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_CyberneticaDatasmith</rankIconPath>
+        <rankTier>6</rankTier>
+       <ImplantsRequired>4</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_ManipulatorMechadendrite_Hediff</RequiredHediff-->
+        <requiredSkills>
+            <Crafting>10</Crafting>
+            <Intellectual>8</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+            <!-- <TailoringSpeed>0.10</TailoringSpeed> -->
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 2</MechBandwidth>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.20</MechRepairSpeed>
+            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.20</MechFormingSpeed>
+            
+
+            
+
+        </statOffsets>
+         <statFactors>
+            <HackingSpeed>1.5</HackingSpeed>
+        </statFactors>
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_ArchmagosDominius</defName>
+        <label>Archmagos Dominus</label>
+        <description>If a techpriest demonstrates particular aptitude in the role of Magos Dominus they may choose to stay in the role and command the \nMachine Cult's armies and navies against the foe, often making use of \ntheir other specialisations in devising strategies.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ArchmagosDominus</rankIconPath>
+        <rankTier>8</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+       <incompatibleRanks>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+            <li>Seg_COTO_ArchmagosGenetor</li>
+            <li>Seg_COTO_Artisan</li>
+            <li>Seg_COTO_LexicoArcanus</li>
+        </incompatibleRanks>
+        <requiredSkills>
+            <Shooting>12</Shooting>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+            <SocialImpact>0.10</SocialImpact>
+            <AimingDelayFactor>-0.05</AimingDelayFactor>
+           
+            
+
+        </statOffsets>
+         <statFactors>
+           <ShootingAccuracyPawn>1.05</ShootingAccuracyPawn>
+           
+        </statFactors>
+        <givesPassions>
+        </givesPassions>
+
+    </Seg.RankDef> 
+     <Seg.RankDef>
+        <defName>Seg_COTO_MagosMyrmidax</defName>
+        <label>Magos Myrmidax</label>
+        <description>These techpriests of war command the Auxilia Myrmidon and modify themselves heavily so that they can dominate the thickest fighting of \nany battle.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosMyrmidax</rankIconPath>
+        <rankTier>8</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_NoosphericCortex_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Melee>12</Melee>
+        </requiredSkills>
+        <statOffsets>
+            <MeleeDodgeChance>1.5</MeleeDodgeChance>
+            <MeleeWeapon_CooldownMultiplier>-.05</MeleeWeapon_CooldownMultiplier>
+            <SocialImpact>0.40</SocialImpact>
+
+            
+            
+
+        </statOffsets>
+         <statFactors>
+           <MeleeHitChance>1.15</MeleeHitChance>
+        <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+        <PainShockThreshold>1.1</PainShockThreshold>
+        </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_MagosPrime</defName>
+        <label>Magos Prime</label>
+        <description>The upper echelons of Mechanicus society are ruled by the Magi Prime, who are certain to have attained their positions through merit and knowledge.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosPrime</rankIconPath>
+        <colonyLimitOfRank>(4, 0)</colonyLimitOfRank>
+        <rankTier>9</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>6</Crafting>
+            <Social>6</Social>
+            <Intellectual>8</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <SocialImpact>0.10</SocialImpact>
+            <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-.05</CertaintyLossFactor>
+        </statOffsets>
+         <statFactors>
+           <GlobalLearningFactor>1.10</GlobalLearningFactor>
+        </statFactors>
+        <givesPassions>
+            <li>
+            <skill>Social</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+    </Seg.RankDef>
+     <Seg.RankDef>
+        <defName>Seg_COTO_FabricatorLocum</defName>
+        <label>Fabricator Locum</label>
+        <description>The Fabricator Locum is a deputy for the Fabricator General of a forge world or its equivalent. They are expected to take on the duties of their superior if the Fabricator General is away or indisposed.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorLocum</rankIconPath>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <rankTier>10</rankTier>
+       <ImplantsRequired>8</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>8</Crafting>
+            <Social>8</Social>
+            <Intellectual>10</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <SocialImpact>0.20</SocialImpact>
+            <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-.1</CertaintyLossFactor>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">.15</ConversionPower>
+        </statOffsets>
+         <statFactors>
+        </statFactors>
+       
+    </Seg.RankDef>
+       <Seg.RankDef>
+        <defName>Seg_COTO_FabricatorGeneral</defName>
+        <label>Fabricator General</label>
+        <description>The highest ranking techpriest on a forgeworld or its equivalent is the Fabricator General. They wield supreme and unquestioned power and answer only to the Fabricator-General of Mars - and the other High \nLords of Terra, in theory.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorGeneral</rankIconPath>
+        <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
+        <rankTier>11</rankTier>
+       <ImplantsRequired>10</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>10</Crafting>
+            <Social>10</Social>
+            <Intellectual>12</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+           <SocialImpact>0.30</SocialImpact>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-.1</CertaintyLossFactor>
+           <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+        </statOffsets>
+         <statFactors>
+         <GlobalLearningFactor>1.2</GlobalLearningFactor>
+        </statFactors>
+       
+    </Seg.RankDef>
+ <Seg.RankDef>
+        <defName>Seg_COTO_MagosCybernetica</defName>
+        <label>Magos Cybernetica</label>
+        <description>If the Datasmiths are the backbone of the Legio, the Magi Cybernetica are its nervous system. Each Magos is a master of their holy craft, overseeing the assembly of countless robots and acting as disciple and mentor both to their martial machine spirits.</description>
+        <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosCybernetica</rankIconPath>
+        <rankTier>6</rankTier>
+       <ImplantsRequired>6</ImplantsRequired>
+        <requiredSkills>
+            <Crafting>12</Crafting>
+            <Intellectual>10</Intellectual>
+        </requiredSkills>
+        <statOffsets>
+            <ConstructSuccessChance>.30 </ConstructSuccessChance>
+            <MechBandwidth MayRequire="Ludeon.RimWorld.Biotech"> 2</MechBandwidth>
+            <MechRepairSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.30</MechRepairSpeed>
+            <MechFormingSpeed MayRequire="Ludeon.RimWorld.Biotech"> 0.30</MechFormingSpeed>
+            <HackingSpeed>0.20</HackingSpeed>
+            
+
+            
+
+        </statOffsets>
+         <statFactors>
+            <HackingSpeed>1.5</HackingSpeed>
+        </statFactors>
+    </Seg.RankDef>
+
+
+
+
+    </Defs>

@@ -1,0 +1,971 @@
+<Defs>
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SkitariusLeg</defName>
+  <label>skitarii leg</label>
+  <description>An augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <statBases>
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SkitariusLeg_Hediff</defName>
+  <label>skitarii leg</label>
+  <labelNoun>a skitarii leg</labelNoun>
+  <description>An installed augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_SkitariusLeg</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.15</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MoveSpeed>0.5</MoveSpeed>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SkitariusLeg</defName>
+  <label>install skitarii leg</label>
+  <description>Installs an augmetic replacement leg designed for the exigencies and necessities of battle. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SkitariusLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SkitariusLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SkitariusLeg_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Vanguard Arm-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_VanguardArm</defName>
+  <label>skitarii vanguard arm</label>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>An augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <statBases>
+  
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+      <Seg_Ceramite>25</Seg_Ceramite>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_VanguardArm_Hediff</defName>
+  <label>skitarii vanguard arm</label>
+  <labelNoun>a vanguard arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Shooting</skill>
+                    <offset>2</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>6</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.35</MeleeDodgeChance>
+        <MeleeHitChance>.20</MeleeHitChance>
+        <ShootingSkillOffset>2</ShootingSkillOffset>
+        <MeleeSkillOffset>6</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_VanguardArm</defName>
+  <label>install skitarii vanguard arm</label>
+  <description>Installs an augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii Vanguard arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_VanguardArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_VanguardArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_VanguardArm_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Ranger Arm-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_RangerArm</defName>
+  <label>skitarii ranger arm</label>
+  <description>An augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+    <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <statBases>
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+      <Seg_Ceramite>25</Seg_Ceramite>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_RangerArm_Hediff</defName>
+  <label>skitarii ranger arm</label>
+  <labelNoun>a ranger arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
+  <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Shooting</skill>
+                    <offset>6</offset>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>2</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingAccuracyPawn>.20</ShootingAccuracyPawn>
+        <ShootingSkillOffset>6</ShootingSkillOffset>
+        <MeleeSkillOffset>2</MeleeSkillOffset>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_RangerArm</defName>
+  <label>install skitarii ranger arm</label>
+  <description>Installs an augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+  <jobString>Installing Skitarii Ranger arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_RangerArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_RangerArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_RangerArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Skitarius Eye Lens-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_EyeLens</defName>
+  <label>skitarii eye lens</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>Skitarii are augmetically modified to be maximally effective in combat, and part of that entails trimming unnecessary parts to allow them to perform their duties in the Machine God's service to the fullest. Removal of eyelids and replacing them with high-quality auspex-equipped optical lenses is naturally recommended.</description>
+  <statBases>
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_EyeLens_Hediff</defName>
+  <label>skitarii eye lens</label>
+  <labelNoun>an eye lens</labelNoun>
+  <description>Eyelids have been removed and replaced with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
+  <spawnThingOnRemoved>Seg_COTO_EyeLens</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ShootingAccuracyPawn>.20</ShootingAccuracyPawn>
+       <MeleeHitChance>.20</MeleeHitChance>
+       <MeleeDodgeChance>.20</MeleeDodgeChance>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+  <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Wounds/Seg_COTO_SkitariiEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_EyeLens</defName>
+  <label>install skitarii eye lens</label>
+  <description>Remove the eyelids and replace them with high-quality auspex-equipped optical lenses for maximum combat effectiveness.</description>
+  <jobString>removing eyelids and installing optical augmetics.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_EyeLens</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_EyeLens</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_EyeLens_Hediff</addsHediff>
+</RecipeDef>
+<!--Skitarius Armor Plating-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_ArmorPlating</defName>
+  <label>skitarii armour plating</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
+  <statBases>
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Steel>200</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+      <Seg_Ceramite>100</Seg_Ceramite>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_ArmorPlating_Hediff</defName>
+  <label>skitarii armour plating</label>
+  <labelNoun>a set of armour plating implants</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
+  <spawnThingOnRemoved>Seg_COTO_ArmorPlating</spawnThingOnRemoved>
+<!--<renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_Hediff</workerClass>
+        <texPath>Things/Pawn/Wounds/SkitariusArmourPlating/Seg_COTO_SkitariusArmourPlating</texPath>
+        <parentTagDef>Body</parentTagDef>
+        <drawSize>1</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0,0)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties> -->
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <IncomingDamageFactor>-0.25</IncomingDamageFactor>
+
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_ArmorPlating</defName>
+  <label>install skitarii armour plating</label>
+  <description>Reinforce the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves.</description>
+  <jobString>Installing skitarii armour plating.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_ArmorPlating</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_ArmorPlating</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_ArmorPlating_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_ArmorPlating</defName>
+    <label>remove skitarii armour plating</label>
+    <description>Remove skitarii armour plating.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_ArmorPlating</ThingDef></descriptionHyperlinks>
+    <jobString>Removing skitarii armour plating.</jobString>
+    <removesHediff>Seg_COTO_ArmorPlating_Hediff</removesHediff>
+  </RecipeDef>
+  <!--Breath of Mars-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_BreathOfMars</defName>
+  <label>Breath of Mars</label>
+  <description>An augmetic lung apparatus that allows the user to breathe in harsh environments. Contains a canister of purified and recyclable air from the Holy Red Planet itself.</description>
+  <statBases>
+    <MarketValue>1000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_MechanicusAugmetics</li>
+  </techHediffsTags>
+    <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  
+		<costList>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_BreathOfMars_Hediff</defName>
+  <label>Breath of Mars</label>
+  <labelNoun>an augmetic lung</labelNoun>
+  <description>An installed augmetic lung apparatus that allows the user to breathe in harsh environments. Contains a canister of purified and recyclable air from the Holy Red Planet itself.</description>
+  <spawnThingOnRemoved>Seg_COTO_BreathOfMars</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>2</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <HypoxiaResistance MayRequire="kentington.saveourship2">.5</HypoxiaResistance>
+        <DecompressionResistance MayRequire="kentington.saveourship2">.5</DecompressionResistance>
+        <VacuumResistance MayRequire="ludeon.rimworld.odyssey">.5</VacuumResistance>
+        <ToxicEnvironmentResistance>.5</ToxicEnvironmentResistance>
+      </statOffsets>
+      <makeImmuneTo>
+         <li>LungRotExposure</li>
+      </makeImmuneTo>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_BreathOfMars</defName>
+  <label>install Breath of Mars</label>
+  <description>Installs the Breath of Mars.</description>
+  <jobString>Installing the Breath of Mars.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_BreathOfMars</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_BreathOfMars</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_BreathOfMars_Hediff</addsHediff>
+</RecipeDef>
+
+
+<!--Data Uplink-->
+<!-- ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SkitariiDataUplink</defName>
+  <label>data uplink</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_TechGuard</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>This cranial implant adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <statBases>
+    <MarketValue>1200</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
+  <label>data uplink</label>
+  <labelNoun>a data uplink implant</labelNoun>
+  <hediffClass>HediffWithComps</hediffClass>
+  <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <spawnThingOnRemoved>Seg_COTO_SkitariiDataUplink</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+	     <SocialImpact>.05</SocialImpact>
+         <MeleeDodgeChance>.05</MeleeDodgeChance>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+	  <!--Command aura boosting allied pawns' combat stats slightly-->
+    </li>
+  </stages>
+  <comps>
+  <li Class="DoggoAura.HediffCompProperties_HediffAura">
+  <range>9.9</range>
+  <targetingParameters>
+    <canTargetPawns>True</canTargetPawns>
+    <canTargetBuildings>False</canTargetBuildings>
+  </targetingParameters>
+  <hediff>Seg_COTO_SkitariiDataUplinkAura_Hediff</hediff>
+  <mote>Seg_COTO_SkitariiDataUplink_Aura</mote>
+  <hideMoteWhenNotDrafted>True</hideMoteWhenNotDrafted>
+  <initialSeverity>1.00</initialSeverity>
+  <onlyPawnsInSameFaction>True</onlyPawnsInSameFaction>
+  </li>
+  </comps>
+</HediffDef>
+<HediffDef>
+  <defName>Seg_COTO_SkitariiDataUplinkAura_Hediff</defName>
+  <label>Data uplink active</label>
+  <labelNoun>A data uplink being received</labelNoun>
+  <description>Combat data and analysis from a nearby uplink implant is being received by this unit.</description>
+ <hediffClass>HediffWithComps</hediffClass>
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.05</MeleeDodgeChance>
+        <MoveSpeed>0.1</MoveSpeed>
+				<PainShockThreshold>-.20</PainShockThreshold>
+        <VEF_RangedCooldownFactor>-0.1</VEF_RangedCooldownFactor>
+				<AimingDelayFactor>-0.1</AimingDelayFactor>
+      </statOffsets>
+    </li>
+  </stages>
+</HediffDef>
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_SkitariiDataUplink</defName>
+  <label>install data uplink</label>
+  <description>Install a cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
+  <jobString>Installing data uplink implant.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SkitariiDataUplink</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SkitariiDataUplink</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Brain</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SkitariiDataUplink_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SkitariiDataUplink</defName>
+    <label>remove data uplink</label>
+    <description>Remove data uplink.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_SkitariiDataUplink</ThingDef></descriptionHyperlinks>
+    <jobString>Removing data uplink.</jobString>
+    <removesHediff>Seg_COTO_SkitariiDataUplink_Hediff</removesHediff>
+  </RecipeDef>
+
+<!--SicarianAugmetics
+<SicarianLeg>
+<ThingDef-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianLeg</defName>
+  <label>Sicarian leg</label>
+  <description>An augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <statBases>
+    <MarketValue>1500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SicarianAugmetics</li>
+  </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SicarianLeg_Hediff</defName>
+  <label>Sicarian leg</label>
+  <labelNoun>a Sicarian leg</labelNoun>
+  <description>An installed augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianLeg</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MoveSpeed>0.7</MoveSpeed>
+        <MeleeDodgeChance>.25</MeleeDodgeChance>
+      </statOffsets>
+      <painOffset>0.20</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SicarianLeg</defName>
+  <label>install Sicarian leg</label>
+  <description>Installs an augmetic replacement leg designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed legs are powerful and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing Sicarian leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianLeg_Hediff</addsHediff>
+</RecipeDef>
+
+<!--SicarianArm>
+<ThingDef-->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianArm</defName>
+  <label>Sicarian arm</label>
+  <description>An augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <statBases>
+    <MarketValue>1500</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SicarianAugmetics</li>
+  </techHediffsTags>
+  <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_SicarianArm_Hediff</defName>
+  <label>Sicarian arm</label>
+  <labelNoun>a Sicarian arm</labelNoun>
+  <description>An installed augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianArm</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>augmetic arm</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>14</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+  <stages>
+    <li>
+      <statOffsets>
+        <MeleeDodgeChance>.05</MeleeDodgeChance>
+        <AimingDelayFactor>-0.01</AimingDelayFactor>
+      </statOffsets>
+	  <statFactors>
+		<MeleeHitChance>1.05</MeleeHitChance>
+		<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+        <ShootingAccuracyPawn>1.01</ShootingAccuracyPawn>
+	  </statFactors>
+      <painOffset>0.20</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_SicarianArm</defName>
+  <label>install Sicarian arm</label>
+  <description>Installs an augmetic replacement arm designed for the Sicarian corps of Infiltrators and Ruststalkers. These unnerving multiply-jointed arms are resilient and capable, and designed for the most intense battles in harsh conditions, but are unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing Sicarian arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianArm_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Chordclaws>
+<ThingDef -->
+<ThingDef ParentName="BodyPartBionicBase">
+  <defName>Seg_COTO_SicarianChordclaws</defName>
+  <label>chordclaws</label>
+  <recipeMaker>
+    <researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
+    <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+  </recipeMaker>
+  <description>An extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <statBases>
+    <MarketValue>2000</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </techHediffsTags>
+  
+		<costList>
+			<Plasteel>15</Plasteel>
+			<Steel>40</Steel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_SkitariiAugmetics</li>
+  </tradeTags>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_SicarianChordclaws_Hediff</defName>
+  <label>chordclaws</label>
+  <labelNoun>a chordclaw arm</labelNoun>
+  <hediffClass>HediffWithComps</hediffClass>
+  <description>An installed extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <spawnThingOnRemoved>Seg_COTO_SicarianChordclaws</spawnThingOnRemoved>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>chordclaws</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>26</power>
+			<armorPenetration>0.9</armorPenetration>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>Seg_COTO_PoweredMeleeWeaponImpactSound</soundMeleeHit> <!--Needs sound-->
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss> <!--Needs sound-->
+          </li>
+        </tools>
+      </li>
+    </comps>
+  <stages>
+    <li>
+      <painOffset>0.20</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_SicarianChordclaws</defName>
+  <label>install chordclaws</label>
+  <description>Install an extra augmetic arm designed for the Sicarian corps. This battle claw is usually attached to the torso and has an array of transonic razors capable of annihilating flesh and bone. The arm is unsuitable for use on less extensively modified humans.</description>
+  <jobString>Installing chordclaws.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_SicarianChordclaws</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_SicarianChordclaws</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_SicarianChordclaws_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SicarianChordclaws</defName>
+    <label>remove chordclaws</label>
+    <description>Remove chordclaws.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_SicarianChordclaws</ThingDef></descriptionHyperlinks>
+    <jobString>Removing chordclaws.</jobString>
+    <removesHediff>Seg_COTO_SicarianChordclaws_Hediff</removesHediff>
+  </RecipeDef>
+  
+</Defs>

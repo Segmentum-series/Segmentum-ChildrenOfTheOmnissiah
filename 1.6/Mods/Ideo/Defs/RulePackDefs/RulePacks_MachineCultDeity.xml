@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerDeityOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->The Machine God</li>
+        <li>r_deityName->The Omnissiah</li>
+        <li>r_deityName->The Motive Force</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>DeityTypeMakerOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Three-in-One</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,74 @@
+<Defs>
+ <AbilityDef>
+        <defName>Seg_COTO_MBEmergencyAid</defName>
+        <label>Emergency Aid</label>
+        <description>Provides emergency treatment to a downed or bedridden pawn, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <targetRequired>true</targetRequired>
+        <showWhenDrafted>true</showWhenDrafted>
+        <hostile>false</hostile>
+        <statBases>
+            <Ability_Duration>50</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <range>-1</range>
+            <warmupTime>5</warmupTime>
+            <soundCast>Seg_COTO_ArcSound</soundCast>
+            <targetParams>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <canTargetCorpses>false</canTargetCorpses>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Core40k.CompProperties_AbilityHealAndTend">
+                <healAmount>1~2</healAmount>
+            </li>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Seg_COTO_MBStimulantsBuff</hediffDef>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+    <HediffDef Name="BEWH_StatAlteringHediffDef" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<everCurableByItem>false</everCurableByItem>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+    <HediffDef ParentName="BEWH_StatAlteringHediffDef">
+		<defName>Seg_COTO_MBStimulantsBuff</defName>
+		<label>stimulants</label>
+		<description>This character is under the effects of emergency stimulants that relieve pain and increase healing speed. Their body is temporarily revitalized, reducing fatigue and speeding recovery, but the effects are short-lived and they may need further care.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<InjuryHealingFactor>0.8</InjuryHealingFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<painFactor>0.33</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+    </Defs>

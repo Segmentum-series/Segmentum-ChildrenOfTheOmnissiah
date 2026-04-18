@@ -1,33 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!--    <thingClass>FireFlamework.FireFrame</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <graphicData>
+      <texPath>Things/Special/PhosphorFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(78, 226, 229, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>-->
 
-    <ThingDef>
-        <defName>Seg_COTO_PhosphorFire</defName>
-        <label>phosphor fire</label>
-        <thingClass>Seg.COTO.PhosphorFire</thingClass>
 
-        <category>Attachment</category>
-        <altitudeLayer>PawnState</altitudeLayer>
-        <tickerType>Normal</tickerType>
-        <selectable>true</selectable>
-        <useHitPoints>false</useHitPoints>
+    <ThingDef ParentName="FF_FireBase">
+    <defName>PhosphorFire</defName>
+    <label>phosphor fire</label>
+    <thingClass>Seg.PhosphorFire</thingClass>
 
-        <graphicData>
-            <graphicClass>Graphic_Flicker</graphicClass>
-            <texPath>Things/Special/PhosphorFire</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1.5</drawSize>
-        </graphicData>
+    <graphicData>
+        <graphicClass>Graphic_Flicker</graphicClass>
+        <texPath>Things/Special/PhosphorFire</texPath>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>1.5</drawSize>
+    </graphicData>
 
-        <comps>
-            <li Class="CompProperties_Glower">
-                <glowRadius>4.0</glowRadius>
-                <glowColor>(255,255,255)</glowColor>
-            </li>
-            <li Class="Seg.COTO.CompProperties_PhosphorFire" />
-            <li Class="Seg.COTO.CompProperties_Targetable" />
-        </comps>
 
-    </ThingDef>
+    <comps>
+        <li Class="CompProperties_Glower">
+            <glowRadius>4.0</glowRadius>
+            <glowColor>(255,255,255)</glowColor>
+        </li>
+    </comps>
+    <modExtensions>
+      <li Class="FireFlamework.FireDefExtension">
+        <SmokeFleckDef>Smoke</SmokeFleckDef>
+        <MicroSparksFleckDef>PhosphorMicroSparks</MicroSparksFleckDef>
+        <FireGlowFleckDef>PhosphorFireGlow</FireGlowFleckDef>
+        <extinguishDamageDef>PhosphorExtinguish</extinguishDamageDef>
+        <FireIconPath>Things/Special/PhosphorFire/PhosphorFire</FireIconPath>
+        <FireAdjective>Phosphor</FireAdjective>
+        <CanBePutOutNormally>true</CanBePutOutNormally> <!-- we should make a way to put it out with a special extinguisher, then ill set this to false.-->
+      </li>
+    </modExtensions>
+</ThingDef>
+
 
 </Defs>

@@ -167,7 +167,7 @@
 	<!--Skitarii hood lenses 3-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiRangerHoodLenses3</defName>
-		<label>Targetting lenses</label>
+		<label>Targeting lenses</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiRangerHood/Seg_COTO_Deco_SkitariiRangerHood_Lenses3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses3</drawnTextureIconPath>
@@ -262,7 +262,7 @@
 	<!--Skitarii helmet antena-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetAntena</defName>
-		<label>Antena</label>
+		<label>Antenna</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Antena</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Antena</drawnTextureIconPath>
@@ -465,7 +465,7 @@
 	<!--Skitarii vanguard lenses-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</defName>
-		<label>Range finder</label>
+		<label>Rangefinder</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiVanguardHelmet/Seg_COTO_Deco_SkitariiVanguardHelmet_Lenses</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Lenses</drawnTextureIconPath>
@@ -551,4 +551,149 @@
 		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
 
+<!-- Skitarii Marshal -->
+	<!-- Marshal crest -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetCrest</defName>
+		<label>Crest</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Crest</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Crest</drawnTextureIconPath>
+		<drawSize>(0.94, 0.94)</drawSize>
+		<sortOrder>1</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>80</layer>
+				<offset>(0, 0, 0.16)</offset>
+			</dataSouth>
+			<dataNorth>
+				<layer>80</layer>
+				<offset>(0, 0, 0.16)</offset>
+			</dataNorth>
+			<dataEast>
+				<layer>73</layer>
+				<offset>(0, 0, 0.16)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>73</layer>
+				<offset>(0, 0, 0.16)</offset>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Marshal lenses -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetLenses</defName>
+		<label>Rangefinder</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Lenses</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Lenses</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>5</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>85</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>85</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<flipable>true</flipable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(26,148,200)</defaultColour>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Marshal Spikes -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalHelmetSpikes</defName>
+		<label>Spikes</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalHelmet/Seg_COTO_Deco_MarshalHelmet_Spikes</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Spikes</drawnTextureIconPath>
+		<drawSize>(0.5, 0.5)</drawSize>
+		<sortOrder>5</sortOrder>
+		<isHelmetDecoration>true</isHelmetDecoration>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalHelmet</li>
+		</appliesTo>
+		<drawData>
+			<dataSouth>
+				<layer>85</layer>
+			</dataSouth>
+			<dataNorth>
+				<layer>85</layer>
+			</dataNorth>
+			<dataEast>
+				<layer>72</layer>
+			</dataEast>
+			<dataWest>
+				<layer>72</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+
+		<shaderType>Cutout</shaderType>
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
+	</Core40k.ExtraDecorationDef>
 </Defs>

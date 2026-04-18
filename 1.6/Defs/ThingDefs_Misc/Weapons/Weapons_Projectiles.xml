@@ -15,24 +15,27 @@
 		<speed>70</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Transuranic</defName>
-		<label>stubber bullet</label>
+		<label>depleted transuranic slug</label>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>.85</armorPenetrationBase>
+			<damageAmountBase>32</damageAmountBase>
+			<armorPenetrationBase>.93</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 		<speed>900</speed>
 		</projectile>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Bullet_Galvanic</defName>
-		<label>stubber bullet</label>
+		<label>high-velocity servitor-bullet</label>
+		<description>Fires a two-round burst of the standard servitor-bullet designed for use with the galvanic rifle, capable of shredding through flesh and armour alike.</description>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -41,17 +44,130 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>.5</stoppingPower>
-		<speed>70</speed>
+		<speed>300</speed>
 		</projectile>
 	</ThingDef>
-<!-- Arc -->
-	
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_GalvanicSeeker</defName>
+		<label>brain seeker servitor-bullet</label>
+		<description>Fires a single advanced version of the high-velocity servitor-bullet. The machine spirit of the round is capable of altering its trajectory mid-flight to ensure it hits its target where it hurts.</description>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_BrainBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>.5</stoppingPower>
+		<speed>90</speed>
+		</projectile>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_TechGuardAdvanced</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+		<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate> <!--this changes the rate this updates-->
+				<lifetimeTicks>30000</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
+				<delayTurnInTicks>5</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
+				<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
+				<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
+				<effectLifetime>30</effectLifetime> <!--the life of those motes-->
+				<effectSize>1</effectSize> <!--the size of the motes-->
+				</li>
+		</comps>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+				<effectiveRange>55.9</effectiveRange>
+				<warmupTime>3.25</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- fancy flechette work on later <ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Flechette</defName>
+		<thingClass>VEF.Weapons.Projectile_Shrapnel</thingClass>
+		<label>flechette dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="VEF.Weapons.ProjectileProperties_Shrapnel">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+		<speed>70</speed>
+            <shrapnelProjectile>Seg_COTO_Bullet_FlechetteShrapnel</shrapnelProjectile>
+            <shrapnelCount>3</shrapnelCount>
+            <shrapnelRange>4</shrapnelRange>
+            <angleVariance>15</angleVariance>
+		</projectile>
+			
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_Bullet_FlechetteShrapnel</defName>
+        <label>Metal Storm Shrapnel</label>
+        <description>...</description>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.7, 0.7)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <armorPenetrationBase>0.48</armorPenetrationBase>
+            <soundExplode>MortarBomb_Explode</soundExplode>
+            <speed>75</speed>
+        </projectile>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <comps>
+        	<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+            	<tickRate>10</tickRate>
+            	<lifetimeTicks>30000</lifetimeTicks> 
+            	<delayTurnInTicks>20</delayTurnInTicks> 
+            	<initialSpreadAngle>16</initialSpreadAngle> 
+        	</li>
+    	</comps>
+    </ThingDef> -->
+
+	<!-- Flechette dart -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Bullet_Flechette</defName>
+		<label>flechette dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>-.25</armorPenetrationBase>
+		<speed>80</speed>
+		</projectile>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks> 
+				<delayTurnInTicks>20</delayTurnInTicks> 
+				<initialSpreadAngle>0</initialSpreadAngle> 
+			</li>
+		</comps>	
+	</ThingDef>
+
+<!-- Arc -->
 	<!-- Arc pistol beam -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
-  		<label>arc pistol beam</label>
-  		<description>A smaller, lighter, and more portable variant of the arc weaponry. Despite its size, it will still fry more than a motherboard.</description>
+  		<label>arc beam</label>
+  		<description>The standard arc weaponry beam which projects the Motive Force at a target and anything along the way.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -67,14 +183,14 @@
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
 			<damageAmountBase>2</damageAmountBase>
-			<armorPenetrationBase>.45</armorPenetrationBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
 		</projectile>
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>2</damageTickRate>
+				<damageTickRate>1</damageTickRate>
 				<lifetimeTicks>10</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
@@ -89,10 +205,70 @@
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 
-				<trailSoundDef>Power_OnSmall</trailSoundDef>
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
+  		<label>overcharged arc beam</label>
+  		<description>A more powerful variant of the arc rifle beam, capable of delivering a devastating sustained energy blast.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_ArcDamage</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>120</lifetimeTicks>
+
+				<beamWidth>0.45</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.01</sweepRatePerTick>
+				<maxSweepAngle>0.5</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
+			</li>
+
+		</modExtensions>
+		<modExtensions>
+            <li Class="Core40k.DefModExtension_AmmoChanger">
+                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+                <effectiveRange>35.9</effectiveRange>
+                <warmupTime>3</warmupTime>
+                <shotsPerBurst>1</shotsPerBurst>
+            </li>
+			 	
+
+
+        </modExtensions>
+	</ThingDef>
+	 
 
 <!-- Gamma -->
 	
@@ -100,7 +276,7 @@
 	<!-- Gamma projectile -->
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_GammaBeam</defName>
-		<label>Gamma beam</label>
+		<label>gamma beam</label>
 		<description>this should never been seen. if it is seen in game report to KitchenSink</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
@@ -109,7 +285,7 @@
 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Projectile/Seg_COTO_Gamma</texPath>
+			<texPath>Things/Projectile/Seg_COTO_Gamma2</texPath>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -125,11 +301,11 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>11</damageTickRate>
-				<lifetimeTicks>10</lifetimeTicks>
+				<damageTickRate>18</damageTickRate>
+				<lifetimeTicks>70</lifetimeTicks>
 				<beamWidth>0.55</beamWidth>
 				<beamWidthDrawScale>3</beamWidthDrawScale>
-				<sweepRatePerTick>0.5</sweepRatePerTick>
+				<sweepRatePerTick>0.06</sweepRatePerTick>
 				<maxSweepAngle>1</maxSweepAngle>
 				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
@@ -159,12 +335,13 @@
 
 			<explosionRadius>0.5</explosionRadius>
 
-			<preExplosionSpawnThingDef>Seg_COTO_PhosphorFire</preExplosionSpawnThingDef>
+			<preExplosionSpawnThingDef>PhosphorFire</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
 		</projectile>
 
 	</ThingDef>
+
 <!-- Radium -->
 	<ThingDef ParentName="BaseBullet">
     	<defName>SEG_COTO_RadBullet</defName>
@@ -182,6 +359,7 @@
         	<speed>70</speed>
     	</projectile>
 </ThingDef>
+
 <!-- Plasma -->
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>

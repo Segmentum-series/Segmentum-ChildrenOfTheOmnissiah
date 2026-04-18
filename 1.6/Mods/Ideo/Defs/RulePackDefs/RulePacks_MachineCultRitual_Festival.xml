@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Re-used content -->
+
+  <RulePackDef>
+    <defName>NamerFestivalOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>festivalName(p=2)->[memeAdjective] [festival]</li>
+        <li>festivalName->[keyDeity]'s [festival]</li>
+        <li>festivalName->[festival] of [keyDeity]</li>
+        <li>festivalName->[festival] of [memeConcept]</li>
+        <li>festivalName->[festival] of the [IdeoName]</li>
+
+        <li>festival->convocation</li>
+        <li>festival->congregation</li>
+        <li>festival->symposium</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

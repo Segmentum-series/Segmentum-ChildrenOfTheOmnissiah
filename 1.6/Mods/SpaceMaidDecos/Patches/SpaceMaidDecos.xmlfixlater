@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/Core40k.ExtraDecorationDef[defName='BEWH_Deco_Apron']/appliesTo</xpath>
+    <value>
+    <li>Seg_COTO_Apparel_MagosCassock</li>
+    <li>Seg_COTO_Apparel_BiologisCassock</li>
+    <li>Seg_COTO_Apparel_FabricatorCassock</li>
+    <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+    <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/Core40k.ExtraDecorationDef[defName='BEWH_Deco_Skirt']/appliesTo</xpath>
+    <value>
+    <li>Seg_COTO_Apparel_MagosCassock</li>
+    <li>Seg_COTO_Apparel_BiologisCassock</li>
+    <li>Seg_COTO_Apparel_FabricatorCassock</li>
+    <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+    <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/Core40k.ExtraDecorationDef[defName='BEWH_Deco_BeltBow_Common']/appliesTo</xpath>
+    <value>
+    <li>Seg_COTO_Apparel_MagosCassock</li>
+    <li>Seg_COTO_Apparel_BiologisCassock</li>
+    <li>Seg_COTO_Apparel_FabricatorCassock</li>
+    <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+    <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/Core40k.ExtraDecorationDef[defName='BEWH_Deco_ChestNeko']/appliesTo</xpath>
+    <value>
+    <li>Seg_COTO_Apparel_MagosCassock</li>
+    <li>Seg_COTO_Apparel_BiologisCassock</li>
+    <li>Seg_COTO_Apparel_FabricatorCassock</li>
+    <li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+    <li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+    </value>
+  </Operation>
+</Patch> -->

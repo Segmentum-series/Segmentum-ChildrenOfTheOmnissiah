@@ -218,7 +218,7 @@
 	<!-- Purity seal 1 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal1</defName>
-		<label>Purity seal</label>
+		<label>Purity seal A</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal1</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal1</drawnTextureIconPath>
@@ -266,7 +266,7 @@
 	<!-- Purity seal 2 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal2</defName>
-		<label>Purity seal</label>
+		<label>Purity seal B</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal2</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal2</drawnTextureIconPath>
@@ -314,7 +314,7 @@
 	<!-- Purity seal 3 -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlatePuritySeal3</defName>
-		<label>Purity seal</label>
+		<label>Purity seal C</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiWarPlate/Seg_COTO_Deco_SkitariiWarPlate_PuritySeal3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal3</drawnTextureIconPath>
@@ -350,6 +350,387 @@
 		<flipable>true</flipable>
 		<colourable>false</colourable>
 		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+<!--Marshal-->
+	<!-- Vertical stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlateVerticalStripe</defName>
+		<label>Vertical stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_VerticalStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_VerticalStripe</drawnTextureIconPath>
+		<sortOrder>4</sortOrder>
+		<drawSize>(0.7, 0.7)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataSouth>
+				<layer>65</layer>
+				<offset>(0, 0, -0.18)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+				<offset>(0, 0, -0.18)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+				<offset>(0, 0, -0.18)</offset>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+	
+	<!-- Purity seal 1 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlatePuritySeal1</defName>
+		<label>Purity seal A</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_PuritySeal1</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal1</drawnTextureIconPath>
+		<drawSize>(0.75,0.75)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>65</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>65</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>65</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Purity seal 2 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlatePuritySeal2</defName>
+		<label>Purity seal B</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_PuritySeal2</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiWarPlate/Seg_COTO_SkitariiWarPlate_PuritySeal3</drawnTextureIconPath>
+		<sortOrder>6</sortOrder>
+		<drawSize>(0.75,0.75)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>North</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>67</layer>
+			</dataEast>
+			<dataNorth>
+				<layer>65</layer>
+			</dataNorth>
+			<dataSouth>
+				<layer>77</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>67</layer>
+				<flip>true</flip>
+			</dataWest>
+		</drawData>
+
+		<flipable>true</flipable>
+		<colourable>false</colourable>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Horizontal Gear stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlateHorizontalGearStripe</defName>
+		<label>Horizontal gear stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_HorizontalGearStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_HorizontalGearStripe</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+		<drawSize>(0.66,0.66)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>	
+				<layer>90</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Horizontal Spiked stripe -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlateHorizontalSpikedStripe</defName>
+		<label>Horizontal spiked stripe</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_HorizontalSpikedStripe</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_HorizontalSpikedStripe</drawnTextureIconPath>
+		<sortOrder>2</sortOrder>
+		<drawSize>(0.66,0.66)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataNorth>	
+				<layer>90</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataNorth>
+			<dataSouth>
+				<layer>75</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataSouth>
+			<dataEast>
+				<layer>65</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataEast>
+			<dataWest>
+				<layer>65</layer>
+				<offset>(0, 0, -0.25)</offset>
+			</dataWest>
+		</drawData>
+
+		<colourable>true</colourable>
+		<shaderType>Cutout</shaderType>
+		<defaultColour>(255,255,255)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_MarsRed</li>
+			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
+			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Buttons -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlateButtons</defName>
+		<label>Button</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_Buttons</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_Buttons</drawnTextureIconPath>
+		<sortOrder>6</sortOrder>
+		<drawSize>(0.5,0.5)</drawSize>
+
+		<defaultShowRotation>
+			<li>East</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataEast>
+				<layer>67</layer>
+			</dataEast>
+			<dataSouth>
+				<layer>77</layer>
+			</dataSouth>
+			<dataWest>
+				<layer>67</layer>
+			</dataWest>
+		</drawData>
+
+		<flipable>false</flipable>
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+
+		<shaderType>CutoutComplex</shaderType>
+		<defaultColour>(233,129,55)</defaultColour>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+		</availablePresets>
+
+		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		
+		<appliesToBodyTypes>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Thin</li>
+			<li>Hulk</li>
+			<li>Fat</li>
+		</appliesToBodyTypes>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Sensor -->
+	 <Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_MarshalCommandPlateSensor</defName>
+		<label>Purity sensor</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/MarshalCommandPlate/Seg_COTO_Deco_MarshalCommandPlate_Sensor</iconPath>
+		<drawnTextureIconPath>Things/Decoration/MarshalCommandPlate/Seg_COTO_MarshalCommandPlate_Sensor</drawnTextureIconPath>
+		<sortOrder>6</sortOrder>
+		<drawSize>(0.4,0.4)</drawSize>
+
+		<defaultShowRotation>
+			<li>South</li>
+		</defaultShowRotation>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+		</appliesTo>
+
+		<drawData>
+			<dataSouth>
+				<layer>70</layer>
+				<offset>(0, 0, -0.45)</offset>
+			</dataSouth>
+		</drawData>
+
+		<flipable>false</flipable>
+		<colourable>true</colourable>
+		<useMask>true</useMask>
+		<colorAmount>2</colorAmount>
+		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+
+		<shaderType>BEWH_CutoutThreeColor</shaderType>
+		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+
+		<defaultColour>(234,130,56)</defaultColour>
+		<defaultColourTwo>(120,82,66)</defaultColourTwo>
+		<availablePresets>
+			<li>Seg_COTO_DecoPalette_Adamantium</li>
+			<li>Seg_COTO_DecoPalette_GoldenAdamantium</li>
+			<li>Seg_COTO_DecoPalette_Silver</li>
+			<li>Seg_COTO_DecoPalette_Leather</li>
+		</availablePresets>
+
 		<appliesToBodyTypes>
 			<li>Male</li>
 			<li>Female</li>

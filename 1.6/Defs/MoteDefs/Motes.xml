@@ -46,4 +46,46 @@
       <drawSize>(2, 2)</drawSize>
     </graphicData>
   </FleckDef>
+
+  <ThingDef ParentName="MoteBase">
+		<defName>Seg_COTO_SkitariiDataUplink_Aura</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+		<solidTime>9999999</solidTime>
+		<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+		<graphicClass>Graphic_Mote</graphicClass>
+		<texPath>Effects/Aura</texPath>
+		<shaderType>MoteGlow</shaderType>
+		<color>(32, 17, 0)</color>
+		<drawSize>12</drawSize>
+		</graphicData>
+	</ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+        <defName>PhosphorFireGlow</defName>
+        <graphicData>
+        <texPath>Things/Mote/PhosphorFireGlow</texPath>
+        <shaderType>Mote</shaderType>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.75</fadeInTime>
+        <solidTime>1.08</solidTime>
+        <fadeOutTime>0.8</fadeOutTime>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>PhosphorMicroSparks</defName>
+        <graphicData>
+        <texPath>Things/Mote/PhosphorMicroSparks</texPath>
+        <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.75</fadeInTime>
+        <solidTime>0.5</solidTime>
+        <fadeOutTime>0.65</fadeOutTime>
+    </FleckDef>
 </Defs>

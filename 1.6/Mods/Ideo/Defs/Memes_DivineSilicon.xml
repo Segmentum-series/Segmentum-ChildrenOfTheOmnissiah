@@ -1,0 +1,53 @@
+<Defs>
+<IssueDef>
+    <defName>MachineWorship</defName>
+    <label>Machine worship</label>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineF</iconPath>
+</IssueDef>
+<PreceptDef>
+    <defName>Seg_COTO_DivineSilicon</defName>
+    <issue>MachineWorship</issue>
+    <label>divine silicon</label>
+    <description>Colonists feel spiritually connected to technology and believe that 'machine spirits' animate all machines.</description>
+    <impact>Medium</impact>
+
+    <comps>
+        <li Class="PreceptComp_SituationalThought">
+            <thought>Seg_COTO_DivineSilicon</thought>
+            <thoughtStageDescriptions>
+                <li>No machinery</li>
+                <li>Little machinery</li>
+                <li>Some machinery</li>
+                <li>Abundant machinery</li>
+            </thoughtStageDescriptions>
+        </li>
+    </comps>
+</PreceptDef>
+<ThoughtDef>
+    <defName>Seg_COTO_DivineSilicon</defName>
+    <workerClass>Seg.ThoughtWorker_DivineSilicion</workerClass> <!-- MUST remain misspelled for now, i need to fix the spelling next time i mess with core C#-->
+
+    <stages>
+        <li>
+            <label>no machinery</label>
+            <description>There is no sacred machinery nearby. We languish without the touch of the machine spirits.</description>
+            <baseMoodEffect>-4</baseMoodEffect>
+        </li>
+        <li>
+            <label>Little machinery</label>
+            <description>There is only a little machinery nearby. We are not nurturing the machine spirits enough!</description>
+            <baseMoodEffect>-1</baseMoodEffect>
+        </li>
+        <li>
+            <label>Some machinery</label>
+            <description>There is a decent amount of sacred machinery nearby, as there should be.</description>
+            <baseMoodEffect>0</baseMoodEffect>
+        </li>
+        <li>
+            <label>Abundant machinery</label>
+            <description>It is comforting to be around the living machine spirits in such numbers.</description>
+            <baseMoodEffect>4</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+</Defs>

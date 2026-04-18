@@ -1,0 +1,312 @@
+<Defs>
+<!--    TechPriests-->
+    <Core40k.RankCategoryDef>
+        <defName>Seg_COTO_TechPriestRankCategory</defName>
+        <label>Cult Mechanicus</label>
+        <description>Ranks of the Tech Priests and Skitarri of the Machine Cult.</description>
+        <ranks>
+            <li>
+                <rankDef>Seg_COTO_TechAcolytum</rankDef>
+                <displayPosition>(1, 4)</displayPosition>
+            </li>
+
+            <li>
+                <rankDef>Seg_COTO_AdeptProbatoris</rankDef>
+                <displayPosition>(3, 4)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_TechAcolytum>15</Seg_COTO_TechAcolytum>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_Enginseer</rankDef>
+                <displayPosition>(5, 1)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_Transmechanic</rankDef>
+                <displayPosition>(5, 2)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_Lexmechanic</rankDef>
+                <displayPosition>(5, 3)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+                <li>
+                <rankDef>Seg_COTO_MagosBiologis</rankDef>
+                <displayPosition>(5, 4)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_Explorator</rankDef>
+                <displayPosition>(5, 5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_AuxiliusMyrmidon</rankDef>
+                <displayPosition>(5, 6)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_AdeptProbatoris>10</Seg_COTO_AdeptProbatoris>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_ServitorUnderseer</rankDef>
+                <displayPosition>(7, 1)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
+                    <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
+                </rankRequirementsOneAmong>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_FabricatorMinoris</rankDef>
+                <displayPosition>(6, 2)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_Transmechanic>15</Seg_COTO_Transmechanic>
+                    <Seg_COTO_Enginseer>15</Seg_COTO_Enginseer>
+                </rankRequirementsOneAmong>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosLogis</rankDef>
+                <displayPosition>(6, 3)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Lexmechanic>20</Seg_COTO_Lexmechanic>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosGenetor</rankDef>
+                <displayPosition>(6, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosBiologis>15</Seg_COTO_MagosBiologis>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosBiologisextremis</rankDef>
+                <displayPosition>(6.5, 4.5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_MagosBiologis>20</Seg_COTO_MagosBiologis>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosExplorator</rankDef>
+                <displayPosition>(6, 5)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_Explorator>15</Seg_COTO_Explorator>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosMilitant</rankDef>
+                <displayPosition>(6, 6)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_AuxiliusMyrmidon>10</Seg_COTO_AuxiliusMyrmidon>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_Securtor</rankDef>
+                <displayPosition>(6, 7)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_AuxiliusMyrmidon>10</Seg_COTO_AuxiliusMyrmidon>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_MagosMetallurgicus</rankDef>
+                <displayPosition>(7, 2)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_FabricatorMinoris>20</Seg_COTO_FabricatorMinoris>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_CyberneticaDatasmith</rankDef>
+                <displayPosition>(8, 1)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_ServitorUnderseer>20</Seg_COTO_ServitorUnderseer>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_Artisan</rankDef>
+                <displayPosition>(8, 2)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosMetallurgicus>15</Seg_COTO_MagosMetallurgicus>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_LexicoArcanus</rankDef>
+                <displayPosition>(8, 3)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosLogis>15</Seg_COTO_MagosLogis>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_ArchmagosGenetor</rankDef>
+                <displayPosition>(8, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosGenetor>15</Seg_COTO_MagosGenetor>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_ArchmagosExplorator</rankDef>
+                <displayPosition>(8, 5)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosExplorator>15</Seg_COTO_MagosExplorator>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_MagosDominius</rankDef>
+                <displayPosition>(7, 6)</displayPosition>
+                 <rankRequirementsOneAmong>
+                    <Seg_COTO_MagosExplorator>20</Seg_COTO_MagosExplorator>
+                    <Seg_COTO_MagosBiologisextremis>20</Seg_COTO_MagosBiologisextremis>
+                    <Seg_COTO_MagosGenetor>20</Seg_COTO_MagosGenetor>
+                    <Seg_COTO_MagosLogis>20</Seg_COTO_MagosLogis>
+                    <Seg_COTO_MagosMetallurgicus>20</Seg_COTO_MagosMetallurgicus>
+                    <Seg_COTO_MagosMilitant>20</Seg_COTO_MagosMilitant>
+
+                </rankRequirementsOneAmong>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_ArchmagosDominius</rankDef>
+                <displayPosition>(8, 6)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosDominius>15</Seg_COTO_MagosDominius>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_MagosPrime</rankDef>
+                <displayPosition>(10, 4)</displayPosition>
+                 <rankRequirementsOneAmong>
+                    <Seg_COTO_ArchmagosDominius>20</Seg_COTO_ArchmagosDominius>
+                    <Seg_COTO_ArchmagosExplorator>20</Seg_COTO_ArchmagosExplorator>
+                    <Seg_COTO_ArchmagosGenetor>20</Seg_COTO_ArchmagosGenetor>
+                    <Seg_COTO_LexicoArcanus>20</Seg_COTO_LexicoArcanus>
+                    <Seg_COTO_Artisan>20</Seg_COTO_Artisan>
+
+                </rankRequirementsOneAmong>
+            </li>
+               <li>
+                <rankDef>Seg_COTO_FabricatorLocum</rankDef>
+                <displayPosition>(12, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_MagosPrime>20</Seg_COTO_MagosPrime>
+
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosMyrmidax</rankDef>
+                <displayPosition>(12, 7)</displayPosition>
+                 <rankRequirements>
+                 <Seg_COTO_Securtor>20</Seg_COTO_Securtor>
+                
+
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_FabricatorGeneral</rankDef>
+                <displayPosition>(13, 4)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_FabricatorLocum>30</Seg_COTO_FabricatorLocum>
+
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_MagosCybernetica</rankDef>
+                <displayPosition>(10, 1)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_CyberneticaDatasmith>20</Seg_COTO_CyberneticaDatasmith>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_TechMilita</rankDef>
+                <displayPosition>(1, 9)</displayPosition>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_Hypaspist</rankDef>
+                <displayPosition>(2, 9)</displayPosition>
+                <rankRequirements>
+                    <Seg_COTO_TechMilita>5</Seg_COTO_TechMilita>
+                </rankRequirements>
+            </li>
+              <li>
+                <rankDef>Seg_COTO_Skitarius</rankDef>
+                <displayPosition>(3, 9)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Hypaspist>10</Seg_COTO_Hypaspist>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiVanguard</rankDef>
+                <displayPosition>(5, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>20</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiProvost</rankDef>
+                <displayPosition>(3, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiVanguardAlpha</rankDef>
+                <displayPosition>(6, 8)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_SkitariiVanguard>25</Seg_COTO_SkitariiVanguard>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SkitariiRanger</rankDef>
+                <displayPosition>(5, 11)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>20</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+
+            <li>
+                <rankDef>Seg_COTO_SkitariiRangerAlpha</rankDef>
+                <displayPosition>(6, 11)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_SkitariiRanger>25</Seg_COTO_SkitariiRanger>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_SicarianRuststalker</rankDef>
+                <displayPosition>(5, 9)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_SicarianInfiltrator</rankDef>
+                <displayPosition>(5, 10)</displayPosition>
+                 <rankRequirements>
+                    <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
+                </rankRequirements>
+            </li>
+            <li>
+                <rankDef>Seg_COTO_SicarianPrinceps</rankDef>
+                <displayPosition>(6, 9.5)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_SicarianInfiltrator>10</Seg_COTO_SicarianInfiltrator>
+                    <Seg_COTO_SicarianRuststalker>10</Seg_COTO_SicarianRuststalker>
+                </rankRequirementsOneAmong>
+            </li>
+             <li>
+                <rankDef>Seg_COTO_SkitariiMarshal</rankDef>
+                <displayPosition>(7, 9)</displayPosition>
+                <rankRequirementsOneAmong>
+                    <Seg_COTO_SkitariiVanguardAlpha>25</Seg_COTO_SkitariiVanguardAlpha>
+                    <Seg_COTO_SkitariiRangerAlpha>25</Seg_COTO_SkitariiRangerAlpha>
+                </rankRequirementsOneAmong>
+            </li>
+ </ranks>
+</Core40k.RankCategoryDef>            
+</Defs>

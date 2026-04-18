@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerIdeoOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->Machine Cult</li>
+
+        <li>r_ideoAdjective->Omnissian</li>
+
+        <li>r_memberName->Machine Cultist</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -20,9 +20,9 @@
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      		<workSkill>Crafting</workSkill>
-      		<effectWorking>Smith</effectWorking>
-      		<soundWorking>Recipe_Smith</soundWorking>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later
 		<weaponTags>
@@ -31,14 +31,14 @@
 		<weaponClasses>
 			<li>Melee</li>
 			<li>Ultratech</li>
-		</weaponClasses>
+		</weaponClasses-->
 		<tradeTags>
 			<li>Seg_COTO_WeaponMelee</li>
-		</tradeTags>-->
-		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		</tradeTags>
+		<!--relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
 		<inspectorTabs>
-      		<li>ITab_Art</li>
-    	</inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs> -->
 	</ThingDef>
 
 <!-- Arc Maul -->
@@ -82,6 +82,9 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_Taser</li>
+		</weaponTags>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -156,6 +159,9 @@
 			<workSkill>Crafting</workSkill>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -207,7 +213,7 @@
 <!-- Power Sword -->
 	<ThingDef ParentName="MeleePowerWeapon_base">
 		<defName>Seg_COTO_MeleeWeapon_PowerSword</defName>
-		<label>martian power sword</label>
+		<label>Martian power sword</label>
 		<description>A high-status melee weapon that has its blade surrounded by a disruptive power field. While it looks like a regular sword, it is capable of slicing through armour and flesh with ease.</description>
 		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
 		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
@@ -246,6 +252,10 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_PowerMelee</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -318,6 +328,10 @@
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_Taser</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
+		</weaponTags>		
 		<tools>
 			<li>
 				<label>handle</label>
@@ -358,4 +372,149 @@
 
 		</tools>
 	</ThingDef>
+
+<!-- Transonic Blade -->
+	<ThingDef ParentName="MeleePowerWeapon_base">
+		<defName>Seg_COTO_MeleeWeapon_TransonicBlade</defName>
+		<label>transonic blade</label>
+		<description>Transonic weaponry use sonic fields to vibrate at the resonant frequency of any material they encounter, slicing through flesh, bone, and armour with equal ease. These blades are most often used by the terrifying Sicarian corps of the Mechanicus.</description>
+		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Melee_TransonicBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>4</Mass>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>120</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_SicarianKillclades</li>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>400</displayPriority>
+		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_TransonicMelee</li>
+		</weaponTags>		
+		<tools>
+			<li>
+				<label>hilt</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>2</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+
+<!-- Control Stave -->
+	<ThingDef ParentName="MeleePowerWeapon_base">
+		<defName>Seg_COTO_MeleeWeapon_ControlStave</defName>
+		<label>control stave</label>
+		<description>A staff of office combining command authority, control systems, and a weapon, used by Skitarii Marshals to enforce discipline and exert enhanced control over their Skitarii forces.</description>
+		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Explosion_EMP</meleeHitSound>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Melee_ControlStave</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>6</Mass>
+			<MarketValue>485</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>15</Steel>
+			<Plasteel>30</Plasteel>
+			<Seg_Adamantium>5</Seg_Adamantium>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>Seg_COTO_ArcPermacapacitors</li>
+				<li>Seg_COTO_ManipleTactics</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>400</displayPriority>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>Seg_COTO_Taser</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.1</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Seg_COTO_MeleeElectricBurn</def>
+						<amount>1</amount>
+					</li>
+					<li>
+						<def>EMP</def>
+						<amount>2</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
 </Defs>

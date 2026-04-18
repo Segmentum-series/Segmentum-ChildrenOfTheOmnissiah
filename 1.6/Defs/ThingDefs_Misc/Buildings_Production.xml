@@ -34,6 +34,23 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
+	<WorkGiverDef><!-- Ceramite furnace work giver-->
+		<defName>WorkGiver_AugmeticsTable</defName>
+		<label>operate augmetics table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Smithing</workType>
+		<priorityInType>80</priorityInType>
+		<verb>smelt</verb>
+		<gerund>smelting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<fixedBillGiverDefs>
+			<li>Seg_COTO_AugmeticsTable</li>
+		</fixedBillGiverDefs>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Seg_COTO_CraftingTable</defName>
 		<label>mechanicus forge altar</label>
@@ -61,6 +78,8 @@
 			<li>SmeltApparel</li>
 			<li>DestroyWeapon</li>
 			<li>DestroyApparel</li>
+			<li>Seg_SmeltNonSmeltable</li>
+			<li>Seg_SmeltNonSmeltableLowTier</li>
 		</recipes>
 		<comps>
 		<li Class="CompProperties_Power">
@@ -178,5 +197,79 @@
 		<researchPrerequisites>
 			<li>Seg_CeramiteProduction</li>
 		</researchPrerequisites>
+	</ThingDef>
+		<ThingDef ParentName="BenchBase">
+		<defName>Seg_COTO_AugmeticsTable</defName>
+		<label>mechanicus augmetic microforge</label>
+		<description>A specialised workbench of the Cult Mechanicus, equipped with delicate tools, high-powered monitoring devices, and small but powerful forge apparatus for the production of augmetic implants.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<minifiedDef />
+		<thingCategories Inherit="false" />
+		<size>(2,2)</size>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipes><!-- Apparels and weapon recipes are set on their respective defs -->
+		</recipes>
+		<comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>500</basePowerConsumption>
+			<shortCircuitInRain>true</shortCircuitInRain>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/AugmentsTable/Seg_COTO_AugmentsTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<inspectorTabs>
+		<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Seg_COTO_CultMechanicus</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AllowColoringOfThings">
+				<allowColoringOfApparel>true</allowColoringOfApparel>
+				<allowColoringOfEquipment>true</allowColoringOfEquipment>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

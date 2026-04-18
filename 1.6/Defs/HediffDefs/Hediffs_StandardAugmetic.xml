@@ -1,0 +1,1046 @@
+<Defs>
+<ThingDef Abstract="True" Name="BodyPartStandardAugmetics" ParentName="BodyPartProstheticBase">
+ <recipeMaker>
+    <researchPrerequisites>
+    <li>Seg_COTO_TrueFlesh</li>
+    <li>Prosthetics</li>
+    </researchPrerequisites>
+
+      <recipeUsers Inherit="false">
+        <li>Seg_COTO_AugmeticsTable</li>
+      </recipeUsers>
+      	<skillRequirements>
+				<Crafting>6</Crafting>
+		</skillRequirements>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+  </recipeMaker>
+  <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(172, 83, 83)</color>
+    </graphicData>
+  <statBases>
+    <WorkToMake>22800</WorkToMake>
+    <MarketValue>800</MarketValue>
+    <Mass>0.3</Mass>
+  </statBases>
+  <techHediffsTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </techHediffsTags>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+     <tradeTags Inherit="False">
+      <li>Seg_COTO_StandardAugmetics</li>
+  </tradeTags>
+</ThingDef>
+<!--Standard Arm-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardArm</defName>
+  <label>standard augmetic arm</label>
+  <description>An augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardArm_Hediff</defName>
+  <label>standard augmetic arm</label>
+  <labelNoun>a standard augmetic arm</labelNoun>
+  <description>An installed augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardArm</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardArm</defName>
+  <label>install standard augmetic arm</label>
+  <description>Installs an augmetic replacement arm which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic arm.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardArm</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardArm</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Shoulder</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardArm_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Leg-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardLeg</defName>
+  <label>standard augmetic leg</label>
+  <description>An augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLeg_Hediff</defName>
+  <label>standard augmetic leg</label>
+  <labelNoun>a standard augmetic leg</labelNoun>
+  <description>An installed augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLeg</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLeg</defName>
+  <label>install standard augmetic leg</label>
+  <description>Installs an augmetic replacement leg which is quite a bit more capable than the baseline limb, but is somewhat roughly integrated with the remaining nerve endings and can sometimes cause minor stabbing or buzzing pains for the user.</description>
+  <jobString>Installing standard augmetic leg.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLeg</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLeg</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Leg</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLeg_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Eye-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardEye</defName>
+  <label>standard augmetic eye</label>
+  <description>An augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardEye_Hediff</defName>
+  <label>standard augmetic eye</label>
+  <labelNoun>a standard augmetic eye</labelNoun>
+  <description>An installed augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardEye</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+  <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+		<texPath>Things/Pawn/Wounds/Seg_COTO_StandardEye</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardEye</defName>
+  <label>install standard augmetic eye</label>
+  <description>Installs an augmetic replacement eye which can see in wider spectra than the baseline eye, but is somewhat uncomfortably integrated with the optic nerve and can cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic eye.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardEye</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardEye</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Eye</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardEye_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Heart-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardHeart</defName>
+  <label>standard augmetic heart</label>
+  <description>An augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardHeart_Hediff</defName>
+  <label>standard augmetic heart</label>
+  <labelNoun>a standard augmetic heart</labelNoun>
+  <description>An installed augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardHeart</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardHeart</defName>
+  <label>install standard augmetic heart</label>
+  <description>Installs an augmetic replacement heart. Quite a bit stronger than the baseline organ, but somewhat roughly integrated with the cardiovascular system and can sometimes cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic heart.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardHeart</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardHeart</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Heart</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardHeart_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Lung-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardLung</defName>
+  <label>standard augmetic lung</label>
+  <description>An augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLung_Hediff</defName>
+  <label>standard augmetic lung</label>
+  <labelNoun>a standard augmetic lung</labelNoun>
+  <description>An installed augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLung</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+        <ToxicEnvironmentResistance>.2</ToxicEnvironmentResistance>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLung</defName>
+  <label>install standard augmetic lung</label>
+  <description>Installs an augmetic replacement lung. Quite a bit stronger than the baseline organ, but somewhat  awkwardly situated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic lung.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLung</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLung</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Lung</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLung_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Spine-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardSpine</defName>
+  <label>standard augmetic spine</label>
+  <description>An augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+		<costList Inherit="False">
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>20</Plasteel>
+		</costList>
+		<recipeMaker>
+      	<skillRequirements Inherit="False">
+				<Crafting>8</Crafting>
+		</skillRequirements>
+		</recipeMaker>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardSpine_Hediff</defName>
+  <label>standard augmetic spine</label>
+  <labelNoun>a standard augmetic spine</labelNoun>
+  <description>An installed augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardSpine</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.00</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardSpine</defName>
+  <label>install standard augmetic spine</label>
+  <description>Installs an augmetic replacement spine. Just as resilient and efficient as the baseline body part, but is somewhat roughly integrated with the brain stem and can sometimes cause minor pain and pins and needle sensations for the user.</description>
+  <jobString>Installing standard augmetic spine.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardSpine</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardSpine</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Spine</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardSpine_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Liver-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardLiver</defName>
+  <label>standard augmetic liver</label>
+  <description>An augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Quite a bit more efficient and resilient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+		<costList Inherit="False">
+			<Steel>80</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+        <Plasteel>20</Plasteel>
+		</costList>     
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardLiver_Hediff</defName>
+  <label>standard augmetic liver</label>
+  <labelNoun>a standard augmetic liver</labelNoun>
+  <description>An installed augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Quite a bit more efficient and resilient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardLiver</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardLiver</defName>
+  <label>install standard augmetic liver</label>
+  <description>Installs an augmetic replacement liver which scrubs biotoxins from the hepatobiliary system. Quite a bit more efficient and resilient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic liver.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardLiver</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardLiver</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Liver</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardLiver_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard Kidney-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardKidney</defName>
+  <label>standard augmetic kidney</label>
+  <description>An augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardKidney_Hediff</defName>
+  <label>standard augmetic kidney</label>
+  <labelNoun>a standard augmetic kidney</labelNoun>
+  <description>An installed augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardKidney</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardKidney</defName>
+  <label>install standard augmetic kidney</label>
+  <description>Installs an augmetic replacement kidney to filter toxins and waste from various bodily fluids. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the body and can sometimes cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic kidney.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardKidney</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardKidney</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Kidney</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardKidney_Hediff</addsHediff>
+</RecipeDef>
+<!--Standard Jaw-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardJaw</defName>
+  <label>standard augmetic jaw</label>
+  <description>An augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
+		<costList Inherit="False">
+			<Steel>40</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardJaw_Hediff</defName>
+  <label>standard augmetic jaw</label>
+  <labelNoun>a standard augmetic jaw</labelNoun>
+  <description>An installed augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardJaw</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardJaw</defName>
+  <label>install standard augmetic jaw</label>
+  <description>Installs an augmetic replacement jaw. While more efficient than the baseline body part, it will occasionally grind and create a sort of phantom toothache sensation for the user.</description>
+  <jobString>Installing standard augmetic jaw.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardJaw</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardJaw</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Jaw</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardJaw_Hediff</addsHediff>
+</RecipeDef>
+
+
+<!-- Standard augmetic stomach -->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardStomach</defName>
+  <label>standard augmetic stomach</label>
+  <description>An augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>  
+</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardStomach_Hediff</defName>
+  <label>standard augmetic stomach</label>
+  <labelNoun>a standard augmetic stomach</labelNoun>
+  <description>An installed augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardStomach</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+      <makeImmuneTo>
+         <li>GutWorms</li>
+      </makeImmuneTo>
+      <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardStomach</defName>
+  <label>install standard augmetic stomach</label>
+  <description>Installs an augmetic replacement stomach. Quite a bit more efficient than the baseline organ, but somewhat uncomfortably integrated with the rest of the digestive system and can sometimes cause minor pain for the user.</description>
+  <jobString>Installing standard augmetic stomach.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardStomach</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardStomach</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Stomach</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardStomach_Hediff</addsHediff>
+</RecipeDef>
+
+<!--Standard ear-->
+<!-- ThingDef -->
+
+
+
+<ThingDef ParentName="BodyPartStandardAugmetics">
+  <defName>Seg_COTO_StandardEar</defName>
+  <label>improved vox receptor</label>
+  <description>An augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
+		<costList Inherit="False">
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+</ThingDef>
+<!-- HediffDef -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>Seg_COTO_StandardEar_Hediff</defName>
+  <label>improved vox receptor</label>
+  <labelNoun>an improved vox receptor</labelNoun>
+  <description>An installed augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
+  <spawnThingOnRemoved>Seg_COTO_StandardEar</spawnThingOnRemoved>
+  <!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.20</partEfficiency>
+    <betterThanNatural>true</betterThanNatural>
+  </addedPartProps>
+
+
+
+  <stages>
+    <li>
+      <statOffsets>
+      </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <defName>InstallSeg_COTO_StandardEar</defName>
+  <label>install improved vox receptor</label>
+  <description>Installs an augmetic ear implant patterned after high quality vox receptor equipment. It can pick up a wider range of sounds than the baseline human ear, but occasional buzzing and vibrations can cause slight discomfort for the user.</description>
+  <jobString>Installing improved vox receptor.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_StandardEar</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_StandardEar</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Ear</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_StandardEar_Hediff</addsHediff>
+</RecipeDef>
+
+<!-- Ferric Lure -->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartStandardAugmetics">
+		<defName>Seg_COTO_FerricLure</defName>
+		<label>ferric lure</label>
+		<description>An augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder hands from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+
+		<costList Inherit="False">
+			<Plasteel>15</Plasteel>
+			<Steel>20</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases Inherit="False">
+			<WorkToMake>36000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_TrueFlesh</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+
+<!-- HediffDef -->
+<HediffDef ParentName="ImplantHediffBase">
+  <defName>Seg_COTO_FerricLure_Hediff</defName>
+  <label>ferric lure</label>
+  <labelNoun>a ferric lure</labelNoun>
+   <hediffClass>Hediff_Implant</hediffClass>
+  <description>An installed augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+  <spawnThingOnRemoved>Seg_COTO_FerricLure</spawnThingOnRemoved>
+ 
+
+
+
+  <stages>
+    <li>
+       <statOffsets>
+           <WorkSpeedGlobal>.10</WorkSpeedGlobal>
+        </statOffsets>
+      <painOffset>0.01</painOffset>
+    </li>
+  </stages>
+  <comps>
+      <li Class="Seg.HediffCompProperties_GivesAbility">
+        <vefAbility>Seg_COTO_FerricLureAbility</vefAbility>
+      </li>
+    </comps>
+
+</HediffDef>
+
+<!-- RecipeDef -->
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+  <defName>InstallSeg_COTO_FerricLure</defName>
+  <label>install ferric lure</label>
+  <description>Install an augmetic implant which provides the user with powerful electromagnetic manipulation capabilities by channelling the Motive Force, to the extent of allowing metallic objects to be attracted and pulled towards the wielder from a distance. The Motive Force charge of the lure can cause buzzing pain on occasion.</description>
+  <jobString>Installing ferric lure.</jobString>
+  <ingredients>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Seg_COTO_FerricLure</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <fixedIngredientFilter>
+    <thingDefs>
+      <li>Seg_COTO_FerricLure</li>
+    </thingDefs>
+  </fixedIngredientFilter>
+  <appliedOnFixedBodyParts>
+    <li>Torso</li>
+  </appliedOnFixedBodyParts>
+  <addsHediff>Seg_COTO_FerricLure_Hediff</addsHediff>
+</RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_FerricLure</defName>
+    <label>remove ferric lure</label>
+    <description>Remove ferric lure.</description>
+    <descriptionHyperlinks><ThingDef>Seg_COTO_FerricLure</ThingDef></descriptionHyperlinks>
+    <jobString>Removing ferric lure.</jobString>
+    <removesHediff>Seg_COTO_FerricLure_Hediff</removesHediff>
+  </RecipeDef>
+
+  
+<!--Noospheric Cortex-->
+<!-- ThingDef -->
+  <ThingDef ParentName="BodyPartStandardAugmetics">
+    <defName>Seg_COTO_NoosphericCortex</defName>
+    <label>noospheric cortex</label>
+    <description>The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <costList Inherit="False">
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_CultMechanicus</li>
+      </researchPrerequisites>
+      <skillRequirements Inherit="False">
+		 <Crafting>6</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Seg_COTO_NoosphericCortex_Hediff</defName>
+    <label>noospheric cortex</label>
+    <labelNoun>a noospheric cortex</labelNoun>
+    <description>An installed noospheric cortex implant. The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <spawnThingOnRemoved>Seg_COTO_NoosphericCortex</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+           <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+		   <SocialImpact>.05</SocialImpact>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+<!-- RecipeDef -->
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSeg_COTO_NoosphericCortex</defName>
+    <label>install noospheric cortex</label>
+    <description>Install a noospheric cortex implant. The Adeptus Mechanicus noosphere is a near-instantaneous communications and information network, but also serves as a consensual union of minds for the ordained members of the Machine Cult. While the noosphere can be accessed in more traditional ways such as through terminals or cogitators, the true network is formed by cortical implants and data-tethers such as this, which allow for networked communication at the speed of thought and a way of achieving closer communion with the Machine God.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_NoosphericCortex</ThingDef>
+      <HediffDef>Seg_COTO_NoosphericCortex_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing noospheric cortex.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Seg_COTO_NoosphericCortex</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Seg_COTO_NoosphericCortex</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Seg_COTO_NoosphericCortex_Hediff</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_NoosphericCortex</defName>
+    <label>remove noospheric cortex</label>
+    <description>Remove noospheric cortex.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_NoosphericCortex</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Removing noospheric cortex.</jobString>
+    <removesHediff>Seg_COTO_NoosphericCortex_Hediff</removesHediff>
+  </RecipeDef>
+  
+<!--Secutor Augmetics-->
+<!-- ThingDef -->
+  <ThingDef ParentName="BodyPartStandardAugmetics">
+    <defName>Seg_COTO_SecutorAugmetics</defName>
+    <label>secutor augmetics</label>
+    <description>Secutors of the Cult Mechanicus are devoted to combat in the Machine God's name to the exclusion of all other considerations, and modify their bodies accordingly. The mental and physical transformation results in significantly increased aggression, which is a boon in combat but can be an issue when there is no righteous violence to enact.</description>
+    <costList Inherit="False">
+      <Plasteel>30</Plasteel>
+	  <Steel>40</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisites Inherit="False">
+        <li>Seg_COTO_TrueFlesh</li>
+      </researchPrerequisites>
+      <skillRequirements Inherit="False">
+		 <Crafting>6</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- HediffDef -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Seg_COTO_SecutorAugmetics_Hediff</defName>
+    <label>secutor augmetics</label>
+    <labelNoun>a set of secutor augmetics</labelNoun>
+    <description>An installed set of secutor augmetics. Secutors of the Cult Mechanicus are devoted to combat in the Machine God's name to the exclusion of all other considerations, and modify their bodies accordingly. The mental and physical transformation results in significantly increased aggression, which is a boon in combat but can be an issue when there is no righteous violence to enact.</description>
+    <spawnThingOnRemoved>Seg_COTO_SecutorAugmetics</spawnThingOnRemoved>
+	<stages>
+		<li>
+		<statOffsets>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+			<MentalBreakThreshold>0.20</MentalBreakThreshold>
+			<MeleeSkillOffset>4</MeleeSkillOffset>
+			<SocialSkillOffset>-4</SocialSkillOffset>
+		</statOffsets>
+		<statFactors>
+			<MeleeHitChance>1.10</MeleeHitChance>
+			<MeleeWeapon_CooldownMultiplier>0.90</MeleeWeapon_CooldownMultiplier>
+			<PainShockThreshold>1.10</PainShockThreshold>
+		</statFactors>
+		<!--socialFightChanceFactor>2</socialFightChanceFactor>
+		<aggroMentalBreakSelectionChanceFactor>2</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>0.6</prisonBreakMTBFactor-->
+		</li>
+	</stages>
+	<comps>
+        <li Class="Seg.HediffCompProperties_SkillOffset">
+            <skills>
+                <li>
+                    <skill>Melee</skill>
+                    <offset>4</offset>
+                </li>
+                 <li>
+                    <skill>Social</skill>
+                    <offset>-4</offset>
+                </li>
+            </skills>
+        </li>
+    </comps>
+  </HediffDef>
+
+<!-- RecipeDef -->
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSeg_COTO_SecutorAugmetics</defName>
+    <label>install secutor augmetics</label>
+    <description>Install a set of secutor augmetics. Secutors of the Cult Mechanicus are devoted to combat in the Machine God's name to the exclusion of all other considerations, and modify their bodies accordingly. The mental and physical transformation results in significantly increased aggression, which is a boon in combat but can be an issue when there is no righteous violence to enact.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_SecutorAugmetics</ThingDef>
+      <HediffDef>Seg_COTO_SecutorAugmetics_Hediff</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing secutor augmetics.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Seg_COTO_SecutorAugmetics</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Seg_COTO_SecutorAugmetics</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Seg_COTO_SecutorAugmetics_Hediff</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveSeg_COTO_SecutorAugmetics</defName>
+    <label>remove secutor augmetics</label>
+    <description>Remove secutor augmetics.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Seg_COTO_SecutorAugmetics</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Removing secutor augmetics.</jobString>
+    <removesHediff>Seg_COTO_SecutorAugmetics_Hediff</removesHediff>
+  </RecipeDef>
+</Defs>

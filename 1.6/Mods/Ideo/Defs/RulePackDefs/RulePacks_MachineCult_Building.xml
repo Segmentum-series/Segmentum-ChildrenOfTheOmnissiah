@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Root -->
+
+  <RulePackDef>
+    <defName>NamerIdeoBuildingOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoBuildingName(p=2)->[memeAdjective] [buildingName]</li>
+        <li>r_ideoBuildingName->[buildingName] of [chosenTheme]</li>
+        <li>r_ideoBuildingName->[chosenAdjective] [buildingName]</li>
+        <li>r_ideoBuildingName->[keyDeity]'s [buildingName]</li>
+        <li>r_ideoBuildingName->[buildingName] of [keyDeity]</li>
+        <li>r_ideoBuildingName->[buildingName] of [memeConcept]</li>
+        <li>r_ideoBuildingName->[buildingName] of [chosenIdeoName]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Building-specific base labels -->
+
+  <RulePackDef>
+    <defName>NamerAltarOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->tech-altar</li>
+        <li>buildingName->mechanoshrine</li>
+        <li>buildingName->technochancel</li>
+        <li>buildingName->mechaniplatform</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerIdeoSculptureOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->statue</li>
+        <li>buildingName->sculpture</li>
+        <li>buildingName->image</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerIdeogramOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->ideogram</li>
+        <li>buildingName->symbol</li>
+        <li>buildingName->mark</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerChristmasTreeOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->picea abies</li>
+        <li>buildingName->abies fraseri</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerBurnTargetOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->effigy</li>
+        <li>buildingName->pyre</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerSmokerOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->ambient intoxicator</li>
+        <li>buildingName->intoxicator</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerCannibalPlatterOmnissian</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>buildingName->platter</li>
+        <li>buildingName->dish</li>
+        <li>buildingName->feast</li>
+        <li>buildingName->manpork</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

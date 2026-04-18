@@ -1,0 +1,388 @@
+<Defs>
+<Seg.RankDef>
+        <defName>Seg_COTO_TechMilita</defName>
+        <label>Tech Militia</label>
+        <description>In times of need, any member of a Forgeplex may be pressed into service as part of Activated Defence or Tech-Militia units, provided with \na basic firearm and directed to engage the enemy.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_TechMilitia</rankIconPath>
+        <rankTier>1</rankTier>
+		<incompatibleRanks>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
+			<li>Seg_COTO_TechAcolytum</li>
+        </incompatibleRanks>
+        <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
+        <requiredSkills>
+            <Shooting>2</Shooting>
+        </requiredSkills>
+    
+
+        <statOffsets>
+            
+            <AimingDelayFactor>-0.02</AimingDelayFactor>
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.01</GlobalLearningFactor>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Hypaspist</defName>
+        <label>Hypaspist</label>
+        <description>The hypaspist is a soldier equipped and trained to the standards of the average guardsman and intended to form the bulk of a forge's basic military, usually modified somewhat with combat implants.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Hypaspist</rankIconPath>
+        <rankTier>2</rankTier>
+        <ImplantsRequired>1</ImplantsRequired>
+        <requiredSkills>
+            <Melee>3</Melee>
+            <Shooting>5</Shooting>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+        </statOffsets>
+         <statFactors>
+            <GlobalLearningFactor>1.02</GlobalLearningFactor>
+            <ShootingAccuracyPawn>1.02</ShootingAccuracyPawn>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Skitarius</defName>
+        <label>Skitarius</label>
+        <description>Skitarii are augmetically-modified cybernetic warriors who retain free will in order to be more effective soldiers than the combat servitors or \nrobots which also see use by the Mechanicus.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Skitarius</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>2</ImplantsRequired>
+        <!--- EXAMPLE
+        <RequiredHediff>Seg_COTO_EyeLens_Hediff</RequiredHediff>
+        -->
+        <RequiredHediffs>
+            <li>Seg_COTO_SkitariusLeg_Hediff</li>
+            <li>Seg_COTO_EyeLens_Hediff</li>
+        </RequiredHediffs>
+
+
+        <requiredSkills>
+            <Shooting>6</Shooting>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.03</ShootingAccuracyPawn>
+        </statFactors>
+    </Seg.RankDef>
+      <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiVanguard</defName>
+        <label>Skitarii Vanguard</label>
+        <description>Often called 'rad-troopers' for the radioactive weapons they carry, the Vanguard are the close quarters ranged troops of the Skitarii legions.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguard</rankIconPath>
+        <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiRanger</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>7</Shooting>
+            <Melee>4</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.05</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
+        <label>Skitarii Vanguard Alpha</label>
+        <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguardAlpha</rankIconPath>
+        <rankTier>5</rankTier>
+        <ImplantsRequired>5</ImplantsRequired>
+        <RequiredHediffs>
+			<li>Seg_COTO_VanguardArm_Hediff</li>
+			<li>Seg_COTO_ArmorPlating_Hediff</li>
+		</RequiredHediffs>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <requiredSkills>
+            <Shooting>12</Shooting>
+            <Melee>8</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>1</MeleeDodgeChance>
+           <SocialImpact>.1</SocialImpact>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.4</CertaintyLossFactor>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.15</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiProvost</defName>
+        <label>Skitarii Provost</label>
+        <description>The internal security forces of the Adeptus Mechanicus, charged with keeping order and brutally repressing any worker unrest.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiProvost</rankIconPath>
+        <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiVanguard</li>
+			<li>Seg_COTO_SkitariiRanger</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Melee>6</Melee>
+            <Social>4</Social>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+        <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.3</CertaintyLossFactor>
+        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+          
+           <SocialImpact>.10</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.04</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiRanger</defName>
+        <label>Skitarii Ranger</label>
+        <description>The Rangers are the long-ranged line troops of the Skitarii, expert marksmen aided by cybernetic augmentation and tireless in their duties.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRanger</rankIconPath>
+        <rankTier>4</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SkitariiVanguard</li>
+			<li>Seg_COTO_SicarianRuststalker</li>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
+        <ImplantsRequired>3</ImplantsRequired>
+        <requiredSkills>
+            <Shooting>8</Shooting>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <AimingDelayFactor>-0.05</AimingDelayFactor>
+           <MeleeDodgeChance>.2</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.1</ShootingAccuracyPawn>
+            <TrapSpringChance>.8</TrapSpringChance>
+        </statFactors>
+    </Seg.RankDef>
+
+     <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiRangerAlpha</defName>
+        <label>Skitarii Ranger Alpha</label>
+        <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRangerAlpha</rankIconPath>
+        <rankTier>5</rankTier>
+        <ImplantsRequired>5</ImplantsRequired>
+        <RequiredHediffs>
+			<li>Seg_COTO_RangerArm_Hediff</li>
+			<li>Seg_COTO_ArmorPlating_Hediff</li>
+		</RequiredHediffs>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <requiredSkills>
+            <Shooting>14</Shooting>
+            <Melee>6</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Shooting</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+           <MeleeDodgeChance>.8</MeleeDodgeChance>
+           <SocialImpact>.1</SocialImpact>
+           <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.4</CertaintyLossFactor>
+        </statOffsets>
+         <statFactors>
+            <MeleeHitChance>1.05</MeleeHitChance>
+            <ShootingAccuracyPawn>1.15</ShootingAccuracyPawn>
+            <TrapSpringChance>.5</TrapSpringChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianRuststalker</defName>
+        <label>Sicarian Ruststalker</label>
+        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianRuststalker</rankIconPath>
+        <rankTier>6</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SicarianInfiltrator</li>
+        </incompatibleRanks>
+        <ImplantsRequired>8</ImplantsRequired>
+        <!--RequiredHediff>Seg_COTO_SicarianLeg_Hediff</RequiredHediff-->
+        <requiredSkills>
+            <Melee>10</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+           <MeleeDodgeChance>.5</MeleeDodgeChance>
+           <MoveSpeed>.1</MoveSpeed>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.20</PainShockThreshold>
+             <MeleeHitChance>1.20</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianInfiltrator</defName>
+        <label>Sicarian Infiltrator</label>
+        <description>Sicarian Infiltrators are cybernetic scout troops who are so heavily modified as to barely deserve the label of 'human' anymore. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianInfiltrator</rankIconPath>
+        <rankTier>6</rankTier>
+		<incompatibleRanks>
+			<li>Seg_COTO_SicarianRuststalker</li>
+        </incompatibleRanks>
+        <ImplantsRequired>8</ImplantsRequired>
+        <RequiredHediffs>
+			<li>Seg_COTO_SicarianLeg_Hediff</li>
+			<!-- <li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li> -->
+		</RequiredHediffs>
+        <requiredSkills>
+            <Shooting>5</Shooting>
+            <Melee>8</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+        <givesVFEAbilities>
+        <li>Seg_COTO_WaveburstAbility</li> 
+        </givesVFEAbilities>
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.40</PainShockThreshold>
+            
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SicarianPrinceps</defName>
+        <label>Sicarian Princeps</label>
+        <description>Squads of Sicarians are led by a Princeps, equivalent to the Alphas of \nthe Vanguards and Rangers. Each Princeps is a terror on the battlefield \nand a holy expression of the Machine God's power.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianPrinceps</rankIconPath>
+        <rankTier>7</rankTier>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <RequiredHediffs>
+			<li>Seg_COTO_SkitariiDataUplink_Hediff</li>
+			<li>Seg_COTO_SicarianChordclaws_Hediff</li>
+		</RequiredHediffs>
+        <requiredSkills>
+            <Shooting>8</Shooting>
+            <Melee>12</Melee>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Melee</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.10</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.02</AimingDelayFactor>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>10</ComfyTemperatureMax>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </statOffsets>
+         <statFactors>
+            <PainShockThreshold>1.20</PainShockThreshold>
+             <MeleeHitChance>1.10</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_SkitariiMarshal</defName>
+        <label>Skitarii Marshal</label>
+        <description>A Marshal is a leader of Skitarii cohorts, an experienced veteran of numerous battles and campaigns. They act as intermediates between the ordained techpriests and the ranks of the Skitarii Legions.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiMarshal</rankIconPath>
+        <rankTier>6</rankTier>
+        <colonyLimitOfRank>(1, 0)</colonyLimitOfRank>
+        <ImplantsRequired>8</ImplantsRequired>
+        <RequiredHediff>Seg_COTO_SkitariiDataUplink_Hediff</RequiredHediff>
+        <requiredSkills>
+            <Social>6</Social>
+        </requiredSkills>
+         <givesPassions>
+            <li>
+            <skill>Social</skill>
+            <modType>AddOneLevel</modType> </li>
+        </givesPassions>
+
+
+    
+
+        <statOffsets>
+            <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
+           <AimingDelayFactor>-0.03</AimingDelayFactor>
+           <SocialImpact>.1</SocialImpact>
+        </statOffsets>
+         <statFactors>
+            <ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
+             <MeleeHitChance>1.10</MeleeHitChance>
+        </statFactors>
+    </Seg.RankDef>
+</Defs>

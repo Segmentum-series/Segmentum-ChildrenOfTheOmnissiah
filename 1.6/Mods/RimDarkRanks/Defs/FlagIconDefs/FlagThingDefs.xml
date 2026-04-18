@@ -1,0 +1,60 @@
+<Defs>
+<!-- Banner "lifted" from Mankind's Finest. -->
+	<!-- Decorative banner -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>Seg_COTO_DecorativeForgerBanner</defName>
+		<label>decorative Forge Standard</label>
+		<description>A banner adorned with the symbol of a Mechanicus forgeworld. While the Adeptus Mechanicus tends less towards gothic majesty than the rest of the Imperium, they still know the value of a good banner in declaring ownership over a building, forgeplex, or even planet.</description>
+		<thingClass>Genes40k.Building_DecorativeFlag</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ForgeBanner/BEWH_DecorationForgeBanner</texPath>
+			<maskPath>Things/Building/ForgeBanner/BEWH_DecorationForgeBannerm</maskPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5, 2.5)</drawSize>
+			<drawOffset>(0, 0, 0.7)</drawOffset>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.3 ,0.3)</volume>
+				<offset>(0, 0, -0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<passability>PassThroughOnly</passability>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<pathCost>42</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.25</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>60</Beauty>
+			<Flammability>1</Flammability>
+		</statBases>
+
+	<costList>
+		<WoodLog>25</WoodLog>
+		<Cloth>30</Cloth>
+		<Gold>1</Gold>
+	</costList>
+
+	<tickerType>Normal</tickerType>
+
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Furniture</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+</Defs>

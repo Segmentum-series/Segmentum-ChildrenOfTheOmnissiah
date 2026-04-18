@@ -1,0 +1,174 @@
+<Defs>
+<!-- Mars -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconMars</defName>
+        <label>Mars</label>
+        <description>Forge insignia of Mars.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Mars</iconPath>
+        <sortOrder>1</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- Agripinaa -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconAgripinaa</defName>
+        <label>Agripinaa</label>
+        <description>Forge insignia of Agripinaa.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Agripinaa</iconPath>
+        <sortOrder>2</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- StygiesVIII -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconStygiesVIII</defName>
+        <label>Stygies VIII</label>
+        <description>Forge insignia of StygiesVIII.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_StygiesVIII</iconPath>
+        <sortOrder>3</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- Metalica -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconMetalica</defName>
+        <label>Metalica</label>
+        <description>Forge insignia of Metalica.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Metalica</iconPath>
+        <sortOrder>4</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- TriplexPhall -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconTriplexPhall</defName>
+        <label>Triplex Phall</label>
+        <description>Forge insignia of TriplexPhall.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_TriplexPhall</iconPath>
+        <sortOrder>5</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- Deimos -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconDeimos</defName>
+        <label>Deimos</label>
+        <description>Forge insignia of Deimos.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Deimos</iconPath>
+        <sortOrder>6</sortOrder>
+    </Genes40k.FlagIconDef>
+    <!-- Lucius -->
+    <Genes40k.FlagIconDef>
+        <defName>Seg_COTO_FlagIconLucius</defName>
+        <label>Lucius</label>
+        <description>Forge insignia of Lucius.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Lucius</iconPath>
+        <sortOrder>7</sortOrder>
+    </Genes40k.FlagIconDef>
+     <!-- Mars -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconMars</defName>
+        <label>Mars</label>
+        <description>Forge icon of the Mars.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Mars</iconPath>
+        <sortOrder>1</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Mars</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- Agripinaa -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconAgripinaa</defName>
+        <label>Agripinaa</label>
+        <description>Forge icon of the Agripinaa.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Agripinaa</iconPath>
+        <sortOrder>2</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Agripinaa</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- StygiesVIII -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconStygiesVIII</defName>
+        <label>Stygies VIII</label>
+        <description>Forge icon of the StygiesVIII.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_StygiesVIII</iconPath>
+        <sortOrder>3</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_StygiesVIII</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- Metalica -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconMetalica</defName>
+        <label>Metalica</label>
+        <description>Forge icon of the Metalica.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Metalica</iconPath>
+        <sortOrder>4</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Metalica</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- TriplexPhall -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconTriplexPhall</defName>
+        <label>Triplex Phall</label>
+        <description>Forge icon of the TriplexPhall.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_TriplexPhall</iconPath>
+        <sortOrder>5</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_TriplexPhall</drawnTextureIconPath>
+
+    </Genes40k.ShoulderIconDef>
+    <!-- Deimos -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconDeimos</defName>
+        <label>Deimos</label>
+        <description>Forge icon of the Deimos.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Deimos</iconPath>
+        <sortOrder>6</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Deimos</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- Lucius -->
+    <Genes40k.ShoulderIconDef ParentName="BEWH_ChapterShoulderIcon">
+        <defName>Seg_COTO_ForgeIconLucius</defName>
+        <label>Lucius</label>
+        <description>Forge icon of the Lucius.</description>
+        <iconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Lucius</iconPath>
+        <sortOrder>7</sortOrder>
+        <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Lucius</drawnTextureIconPath>
+    </Genes40k.ShoulderIconDef>
+    <!-- Forge Colors for Flag Icons -->
+	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+        <defName>Seg_COTO_ForgeColorMarsFlag</defName>
+        <label>Mars</label>
+        <primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+        <relatedChapterIcon>Seg_COTO_ForgeIconMars</relatedChapterIcon>
+    </Genes40k.ChapterColourDef>
+	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorAgrippinaFlag</defName>
+		<label>Agrippinaa</label>
+		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
+		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconAgripinaa</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorStygiesVIIIFlag</defName>
+		<label>Stygies VIII</label>
+		<primaryColour>(38,38,38)</primaryColour><!-- Stygies black -->
+		<secondaryColour>(38,38,38)</secondaryColour><!-- Stygies black -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconStygiesVIII</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorMetalicaFlag</defName>
+		<label>Metalica</label>
+		<primaryColour>(255,255,255)</primaryColour><!-- Metalica white -->
+		<secondaryColour>(255,255,255)</secondaryColour><!-- Metalica white -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconMetalica</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorTriplexPhallFlag</defName>
+		<label>Triplex Phall</label>
+		<primaryColour>(220,160,45)</primaryColour><!-- Triplex yellow -->
+		<secondaryColour>(220,160,45)</secondaryColour><!-- Triplex yellow -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconTriplexPhall</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+	
+	<Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorDeimosFlag</defName>
+		<label>Deimos</label>
+		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
+		<secondaryColour>(90,138,140)</secondaryColour><!-- Deimos cyan -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconDeimos</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+	<Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+		<defName>Seg_COTO_ForgeColorLuciusFlag</defName>
+		<label>Lucius</label>
+		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
+		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
+		<relatedChapterIcon>Seg_COTO_ForgeIconLucius</relatedChapterIcon>
+	</Genes40k.ChapterColourDef>
+    
+    </Defs>

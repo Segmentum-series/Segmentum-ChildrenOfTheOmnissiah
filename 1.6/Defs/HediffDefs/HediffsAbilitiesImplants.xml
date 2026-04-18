@@ -1,0 +1,97 @@
+<Defs> 
+ <VEF.Abilities.AbilityDef>
+	<defName>Seg_COTO_FerricLureAbility</defName>
+	<label>Disarming Pull</label>
+	<description>Channel the Motive Force to pull the target's weapon towards you, causing them to drop it.</description>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<abilityClass>Seg.Ability_StripWeapon</abilityClass>
+	<castTime>60</castTime>
+	<cooldownTime>3600</cooldownTime>
+	<range>14.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetItems>true</canTargetItems>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<needsTicking>true</needsTicking>
+	<castSound>Seg_COTO_ArcSound</castSound>
+</VEF.Abilities.AbilityDef>
+ <VEF.Abilities.AbilityDef>
+	<defName>Seg_COTO_WaveburstAbility</defName>
+	<label>waveburst</label>
+	<description>An intense burst of signals on all audiovisual spectra that can stun and disorient anyone nearby.</description>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<abilityClass>Seg.Ability_Waveburst</abilityClass>
+	<castTime>10</castTime>
+	<cooldownTime>1800</cooldownTime>
+	<radius>5.9</radius>
+    <targetMode>Self</targetMode>
+	<targetingParameters>
+		<canTargetLocations>true</canTargetLocations>
+		<canTargetSelf>true</canTargetSelf>
+		<canTargetAnimals>true</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>false</canTargetHumans>
+		<canTargetItems>true</canTargetItems>
+		<canTargetMechs>true</canTargetMechs>
+	</targetingParameters>
+	<needsTicking>true</needsTicking>
+	<castSound>Seg_COTO_ArcSound</castSound>
+</VEF.Abilities.AbilityDef>
+<VEF.Abilities.AbilityDef>
+	<defName>Seg_COTO_GeneExtractionAbility</defName>
+	<label>gene extraction</label>
+	<description>Identify and isolate genetic material to extract specific traits or attributes from a target for implantation elsewhere.</description>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<abilityClass>Seg.Ability_ExtractGene</abilityClass>
+	<castTime>60</castTime>
+	<cooldownTime>120000</cooldownTime>
+	<range>1.9</range>
+	<targetMode>Pawn</targetMode>
+	<targetingParameters>
+		<canTargetLocations>false</canTargetLocations>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetAnimals>false</canTargetAnimals>
+		<canTargetPawns>true</canTargetPawns>
+		<canTargetHumans>true</canTargetHumans>
+		<canTargetItems>false</canTargetItems>
+		<canTargetMechs>false</canTargetMechs>
+	</targetingParameters>
+	<needsTicking>true</needsTicking>
+	<castSound>Seg_COTO_Sound_PoweredMeleeWeapon_Equip</castSound>
+</VEF.Abilities.AbilityDef>
+<HediffDef>
+    <defName>Seg_COTO_WaveburstEffect</defName>
+    <label>Sicarian waveburst</label>
+    <labelNoun>a stun effect</labelNoun>
+    <description>The after-effects of a full-spectrum waveburst on an unprotected brain.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1800~3600</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	   <statOffsets>
+        <MoveSpeed>-0.5</MoveSpeed>
+		<AimingDelayFactor>1</AimingDelayFactor>
+		<MeleeDodgeChance>-10</MeleeDodgeChance>
+      </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.80</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+</Defs>
