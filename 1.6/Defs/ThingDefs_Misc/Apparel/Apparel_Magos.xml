@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!--Breaking change needed this comment is so the file is now different-->
 	<ThingDef Abstract="true" Name="Seg_COTO_MagosBase" ParentName="ArmorMachineableBase">
 		<thingClass>Apparel</thingClass>
 		<graphicData>
@@ -111,7 +112,7 @@
 				<decorativeType>Head</decorativeType>
 			</li>
 		</comps>
-			<modExtensions>
+		<modExtensions>
             <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
                 <tabDefs>
                     <li>BEWH_ArmorColoring</li>
@@ -191,13 +192,13 @@
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-				<tabDefs>
-					<li>BEWH_ArmorColoring</li>
-					<li>BEWH_ArmorDecoration</li>
-				</tabDefs>
-			</li>
-		</modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<!-- Magos cassock -->
@@ -272,13 +273,13 @@
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-				<tabDefs>
-					<li>BEWH_ArmorColoring</li>
-					<li>BEWH_ArmorDecoration</li>
-				</tabDefs>
-			</li>
-		</modExtensions>
+            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+                <tabDefs>
+                    <li>BEWH_ArmorColoring</li>
+                    <li>BEWH_ArmorDecoration</li>
+                </tabDefs>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<!-- Biologis hood -->
