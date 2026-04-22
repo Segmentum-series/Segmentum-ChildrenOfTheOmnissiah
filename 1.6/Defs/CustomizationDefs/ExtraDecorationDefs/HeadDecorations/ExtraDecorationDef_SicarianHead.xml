@@ -13,9 +13,9 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -23,17 +23,17 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>50</layer>
+				<layer>92</layer>
 			</dataSouth>
 			<dataNorth>
 				<layer>0</layer>
 			</dataNorth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>78</layer>
 				<flip>true</flip>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
+				<layer>78</layer>
 			</dataWest>
 		</drawData>
 
@@ -53,9 +53,9 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -92,9 +92,9 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
+			<li>East</li>
 			<li>North</li>
 			<li>South</li>
-			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -107,9 +107,6 @@
 			<dataEast>
 				<layer>72</layer>
 			</dataEast>
-			<dataWest>
-				<layer>72</layer>
-			</dataWest>
 		</drawData>
 
 		<colourable>true</colourable>
@@ -131,9 +128,9 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -144,11 +141,11 @@
 				<layer>85</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>73</layer>
+				<flip>true</flip>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
-				<flip>true</flip>
+				<layer>73</layer>
 			</dataWest>
 		</drawData>
 
@@ -172,9 +169,9 @@
 		<isHelmetDecoration>true</isHelmetDecoration>
 
 		<defaultShowRotation>
-			<li>East</li>
 			<li>North</li>
 			<li>South</li>
+			<li>West</li>
 		</defaultShowRotation>
 
 		<appliesTo>
@@ -185,11 +182,11 @@
 				<layer>85</layer>
 			</dataSouth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>73</layer>
+				<flip>true</flip>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
-				<flip>true</flip>
+				<layer>73</layer>
 			</dataWest>
 		</drawData>
 
@@ -318,16 +315,16 @@
 		</appliesTo>
 		<drawData>
 			<dataSouth>
-				<layer>99</layer>
+				<layer>90</layer>
 			</dataSouth>
 			<dataNorth>
 				<layer>99</layer>
 			</dataNorth>
 			<dataEast>
-				<layer>72</layer>
+				<layer>76</layer>
 			</dataEast>
 			<dataWest>
-				<layer>72</layer>
+				<layer>76</layer>
 			</dataWest>
 		</drawData>
 
@@ -399,10 +396,10 @@
 			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
-				<flip>true</flip>
 			</dataEast>
 			<dataWest>
 				<layer>72</layer>
+				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
@@ -446,10 +443,10 @@
 			</dataNorth>
 			<dataEast>
 				<layer>72</layer>
-				<flip>true</flip>
 			</dataEast>
 			<dataWest>
 				<layer>72</layer>
+				<flip>true</flip>
 			</dataWest>
 		</drawData>
 
