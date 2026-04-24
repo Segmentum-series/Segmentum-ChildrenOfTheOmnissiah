@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneCategoryDef><!-- Currently, unsure if this thing is needed -Abom -->
+		<defName>SICARIAN</defName>
+		<label>SICARIAN</label>
+		<displayPriorityInXenotype>100000</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<XenotypeDef>
+		<defName>Seg_COTO_Sicarian</defName>
+		<label>Sicarian</label>
+		<description>Missing long description.</description>
+		<descriptionShort>Forged by the Adeptus Mechanicus, Sicarians are not born but rebuilt into cybernetic instruments of the Omnissiah.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Sicarian</iconPath>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>Beard_NoBeardOnly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Aggression_Aggressive</li>
+			<li>Body_Standard</li>
+			<li>Seg_COTO_Gene_Sicarian</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef Name="SicarianGenes" Abstract="True">
+		<displayCategory>SICARIAN</displayCategory>
+	</GeneDef>
+
+	<GeneDef ParentName="SicarianGenes">
+		<defName>Seg_COTO_Gene_Sicarian</defName>
+		<label>Sicarian conversion</label>
+		<description>Missing long description.</description>
+		<iconPath>UI/Icons/G_Clonerot</iconPath> <!-- MISSING -->
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+		<biostatCpx>5</biostatCpx>
+		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+		<forcedHeadTypes>
+			<li>Male_Sicarian1</li>
+			<li>Male_Sicarian2</li>
+			<li>Male_Sicarian3</li>
+			<li>Female_Sicarian1</li>
+			<li>Female_Sicarian2</li>
+			<li>Female_Sicarian3</li>
+		</forcedHeadTypes>
+		<renderNodeProperties Inherit="False">
+			<li Class="BigAndSmall.PawnComplexRenderingProps">
+				<useSkinShader>true</useSkinShader>
+			</li>
+		</renderNodeProperties>
+		<statOffsets>
+			<PawnBeauty>-1.5</PawnBeauty>
+		</statOffsets>
+		<statFactors>
+			<LifespanFactor>0.65</LifespanFactor>
+			<CancerRate>1.5</CancerRate>
+			<ImmunityGainSpeed>0.85</ImmunityGainSpeed>
+			<Fertility>0</Fertility>
+			<SM_BodySizeMultiplier>0.94</SM_BodySizeMultiplier>
+		</statFactors>
+		<makeImmuneTo>
+			<li>SleepingSickness</li>
+			<li>OrganDecay</li>
+		</makeImmuneTo>
+		<disablesNeeds>
+			<li>Comfort</li>
+			<li>Outdoors</li>
+		</disablesNeeds>
+		<skinIsHairColor>false</skinIsHairColor>
+	<!-- Body definitions -->
+		<exclusionTags>
+			<li>Bodies</li>
+			<li>Body</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<bodyType>Standard</bodyType>
+		<tattoosVisible>false</tattoosVisible>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<bodyPaths>
+					<Body_Female>Things/Pawn/Humanlike/Bodies/Naked_SicarianFemale</Body_Female>
+					<Body_Male>Things/Pawn/Humanlike/Bodies/Naked_SicarianMale</Body_Male>
+				</bodyPaths>
+				<disableFacialAnimations>true</disableFacialAnimations>
+
+				<headMaterial>
+					<shader>CutoutComplex</shader>
+					<overrideDesiccated>true</overrideDesiccated>
+					<colorA>
+						<hairColor>true</hairColor>
+						<altDefs><li>BS_CustomGlobalA</li></altDefs>
+						<altsLate>
+							<li>
+								<triggers><li>HasForcedSkinColorGene</li></triggers>
+								<skinColor>true</skinColor>
+							</li>
+						</altsLate>
+					</colorA>
+					<colorB>
+						<color>(255, 255, 255, 220)</color>
+					</colorB>
+				</headMaterial>
+
+				<apparelRestrictions>
+					<bodyPartGroups>
+						<blacklist>
+							<li>FullHead</li>
+						</blacklist>
+					</bodyPartGroups>
+				</apparelRestrictions>
+			</li>
+			<!-- <surgeryRecipes> How to later ban other conversions that may be done for the Magos
+				<blacklist>
+					<li>Banned other conversion</li>
+				</blacklist>
+			</surgeryRecipes> -->
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

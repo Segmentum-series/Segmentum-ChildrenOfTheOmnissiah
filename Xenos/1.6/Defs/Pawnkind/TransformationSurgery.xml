@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Conversion -->
+	<RecipeDef ParentName="BS_TransformSurgery">
+		<defName>Seg_COTO_SicarianConversion</defName>
+		<label>convert to sicarian</label>
+		<description>Missing conversion description</description>
+		<uiIconPath>UI/Icons/BS_CommandoHead</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
+		<jobString>Bestow Sicarian conversion</jobString>
+		<uiIconPath>UI/Icons/BS_AndroidFaction</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
+		<skillRequirements>
+			<Medicine>10</Medicine>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+		</recipeUsers>
+		<researchPrerequisite>
+			<li>Seg_COTO_SicarianKillclades</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_Adamantium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+				<li>Seg_Adamantium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Seg_COTO_Sicarian_Morph</addsHediff>
+	</RecipeDef>
+
+	<HediffDef>
+		<defName>Seg_COTO_Sicarian_Morph</defName>
+		<label>Seg_COTO_Sicarian_Morph</label><description>blank</description>
+		<hediffClass>BigAndSmall.InstantEffect</hediffClass>
+		<comps>
+			<li Class="BigAndSmall.SwapRaceHediffCompProperties">
+				<!-- <swapTarget>Seg_COTO_Sicarian</swapTarget> -->
+				<xenotype MayRequire="Ludeon.RimWorld.Biotech">Seg_COTO_Sicarian</xenotype>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>
