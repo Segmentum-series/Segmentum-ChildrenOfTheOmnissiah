@@ -32,9 +32,25 @@
 			<layers>
 				<li>Backpack</li>
 			</layers>
+			<drawData>
+				<dataSouth>
+					<layer>-10</layer>
+				</dataSouth>
+				<dataWest>
+					<layer>80</layer>
+				</dataWest>
+				<dataEast>
+					<layer>80</layer>
+				</dataEast>
+				<dataNorth>
+					<layer>100</layer>
+				</dataNorth>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
 		</apparel>
-		<modExtensions>  
+		<modExtensions>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<isUnifiedApparel>true</isUnifiedApparel>
 				<hideHead>false</hideHead>
@@ -75,20 +91,6 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/MagosBackpack/Seg_COTO_MagosBackpack</wornGraphicPath>
-			<drawData>
-				<dataSouth>
-					<layer>15</layer>
-				</dataSouth>
-				<dataWest>
-					<layer>80</layer>
-				</dataWest>
-				<dataEast>
-					<layer>80</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>100</layer>
-				</dataNorth>
-			</drawData>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
@@ -151,20 +153,6 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/SkitariiBackpack/Seg_COTO_SkitariiBackpack</wornGraphicPath>
-			<drawData>
-				<dataSouth>
-					<layer>15</layer>
-				</dataSouth>
-				<dataWest>
-					<layer>80</layer>
-				</dataWest>
-				<dataEast>
-					<layer>80</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>100</layer>
-				</dataNorth>
-			</drawData>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -231,20 +219,6 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/MarshalBackpack/Seg_COTO_MarshalBackpack</wornGraphicPath>
-			<drawData>
-				<dataSouth>
-					<layer>15</layer>
-				</dataSouth>
-				<dataWest>
-					<layer>80</layer>
-				</dataWest>
-				<dataEast>
-					<layer>80</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>100</layer>
-				</dataNorth>
-			</drawData>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -313,20 +287,6 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</wornGraphicPath>
-			<drawData>
-				<dataSouth>
-					<layer>15</layer>
-				</dataSouth>
-				<dataWest>
-					<layer>80</layer>
-				</dataWest>
-				<dataEast>
-					<layer>80</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>100</layer>
-				</dataNorth>
-			</drawData>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
