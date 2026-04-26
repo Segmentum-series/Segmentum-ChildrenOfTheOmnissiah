@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<GeneCategoryDef><!-- Currently, unsure if this thing is needed -Abom -->
+	<GeneCategoryDef>
 		<defName>SICARIAN</defName>
 		<label>SICARIAN</label>
-		<displayPriorityInXenotype>100000</displayPriorityInXenotype>
+		<displayPriorityInXenotype>1001101</displayPriorityInXenotype>
 	</GeneCategoryDef>
 
 	<XenotypeDef>
@@ -37,6 +37,14 @@
 		<biostatMet>3</biostatMet>
 		<biostatCpx>5</biostatCpx>
 		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+		<disabledWorkTags>
+         <li>Caring</li>
+		 <li>Animals</li>
+		 <li>Cooking</li>
+		 <li>PlantWork</li>
+		 <li>Crafting</li>
+		 <li>Artistic</li>
+        </disabledWorkTags>
 		<forcedHeadTypes>
 			<li>Male_Sicarian1</li>
 			<li>Male_Sicarian2</li>
@@ -50,8 +58,12 @@
 				<useSkinShader>true</useSkinShader>
 			</li>
 		</renderNodeProperties>
+		<painFactor>0.1</painFactor>
 		<statOffsets>
 			<PawnBeauty>-1.5</PawnBeauty>
+			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+			<CleaningSpeed>-0.20</CleaningSpeed>
+			<MiningYield>-0.20</MiningYield>
 		</statOffsets>
 		<statFactors>
 			<LifespanFactor>0.65</LifespanFactor>
@@ -79,37 +91,30 @@
 		<tattoosVisible>false</tattoosVisible>
 		<modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
+				<headPaths>
+					<Female>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal_Sicarian</Female>
+						<Female>Things/Pawn/Humanlike/Heads/Female/Female_Average_Pointy_Sicarian</Female>
+							<Female>Things/Pawn/Humanlike/Heads/Female/Female_Average_Wide_Sicarian</Female>
+					<Male>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal_Sicarian</Male>
+						<Male>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy_Sicarian</Male>
+							<Male>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide_Sicarian</Male>
+				</headPaths>
 				<bodyPaths>
 					<Body_Female>Things/Pawn/Humanlike/Bodies/Naked_SicarianFemale</Body_Female>
 					<Body_Male>Things/Pawn/Humanlike/Bodies/Naked_SicarianMale</Body_Male>
 				</bodyPaths>
 				<disableFacialAnimations>true</disableFacialAnimations>
-
 				<headMaterial>
 					<shader>CutoutComplex</shader>
 					<overrideDesiccated>true</overrideDesiccated>
-					<colorA>
-						<hairColor>true</hairColor>
-						<altDefs><li>BS_CustomGlobalA</li></altDefs>
-						<altsLate>
-							<li>
-								<triggers><li>HasForcedSkinColorGene</li></triggers>
-								<skinColor>true</skinColor>
-							</li>
-						</altsLate>
-					</colorA>
-					<colorB>
-						<color>(255, 255, 255, 220)</color>
-					</colorB>
 				</headMaterial>
-
-				<apparelRestrictions>
+				<!--apparelRestrictions>
 					<bodyPartGroups>
 						<blacklist>
 							<li>FullHead</li>
 						</blacklist>
 					</bodyPartGroups>
-				</apparelRestrictions>
+				</apparelRestrictions-->
 			</li>
 			<!-- <surgeryRecipes> How to later ban other conversions that may be done for the Magos
 				<blacklist>

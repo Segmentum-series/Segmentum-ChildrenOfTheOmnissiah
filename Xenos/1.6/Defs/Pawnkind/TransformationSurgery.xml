@@ -13,6 +13,7 @@
 			<Medicine>10</Medicine>
 			<Crafting>10</Crafting>
 		</skillRequirements>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<recipeUsers Inherit="False">
 			<li>Human</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
@@ -64,17 +65,36 @@
 		</fixedIngredientFilter>
 		<addsHediff>Seg_COTO_Sicarian_Morph</addsHediff>
 	</RecipeDef>
-
+	
 	<HediffDef>
 		<defName>Seg_COTO_Sicarian_Morph</defName>
-		<label>Seg_COTO_Sicarian_Morph</label><description>blank</description>
-		<hediffClass>BigAndSmall.InstantEffect</hediffClass>
+		<label>Sicarian Transformation</label>
+		<description>blank</description>
+		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			<li Class="BigAndSmall.SwapRaceHediffCompProperties">
-				<!-- <swapTarget>Seg_COTO_Sicarian</swapTarget> -->
-				<xenotype MayRequire="Ludeon.RimWorld.Biotech">Seg_COTO_Sicarian</xenotype>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>1000</min>
+					<max>2000</max>
+				</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
 			</li>
 		</comps>
+    <modExtensions>
+    <li Class="BigAndSmall.PawnExtension">
+      <morphSettings>
+        <morphOverAge>3</morphOverAge>
+      </morphSettings>
+      <morphTargets>
+        <li>
+          <xenotype>Seg_COTO_Sicarian</xenotype>
+          <removeHediffs>
+            <li></li>
+          </removeHediffs>
+        </li>
+      </morphTargets>
+    </li>
+  </modExtensions>
 	</HediffDef>
 
 </Defs>
