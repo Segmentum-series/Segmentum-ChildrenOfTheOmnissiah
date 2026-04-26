@@ -10,7 +10,7 @@
 	<XenotypeDef>
 		<defName>Seg_COTO_Sicarian</defName>
 		<label>Sicarian</label>
-		<description>Missing long description.</description>
+		<description>The Adeptus Mechanicus sees every human as a resource, and even the most seriously wounded can be put to good use in the skitarii legions. Sicarians are living beings transformed into superbly efficient cybernetic killing machines, unsuited for anything besides holy warfare in the Omnissiah's name.</description>
 		<descriptionShort>Forged by the Adeptus Mechanicus, Sicarians are not born but rebuilt into cybernetic instruments of the Omnissiah.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Sicarian</iconPath>
 		<inheritable>true</inheritable>
@@ -30,8 +30,8 @@
 
 	<GeneDef ParentName="SicarianGenes">
 		<defName>Seg_COTO_Gene_Sicarian</defName>
-		<label>Sicarian conversion</label>
-		<description>Missing long description.</description>
+		<label>Sicarian adaptation</label>
+		<description>Sicarians are living beings transformed into superbly efficient cybernetic killing machines, unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts, organs, and brain tissue are removed, and the body is prepared for martial augmetics in their place.</description>
 		<iconPath>UI/Icons/G_Clonerot</iconPath> <!-- MISSING -->
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<biostatMet>3</biostatMet>

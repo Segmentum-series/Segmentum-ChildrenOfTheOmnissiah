@@ -4,8 +4,8 @@
 	<!-- Conversion -->
 	<RecipeDef ParentName="BS_TransformSurgery">
 		<defName>Seg_COTO_SicarianConversion</defName>
-		<label>convert to sicarian</label>
-		<description>Missing conversion description</description>
+		<label>convert to Sicarian</label>
+		<description>The Adeptus Mechanicus sees every human as a resource, and even the most seriously wounded can be put to good use in the skitarii legions. Converting a living being into a Sicarian involves making them into efficient killing machines - but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts, organs, and brain tissue are removed, and the body is prepared for specialised martial augmetics in their place.</description>
 		<uiIconPath>UI/Icons/BS_CommandoHead</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
 		<jobString>Bestow Sicarian conversion</jobString>
 		<uiIconPath>UI/Icons/BS_AndroidFaction</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
@@ -68,8 +68,8 @@
 	
 	<HediffDef>
 		<defName>Seg_COTO_Sicarian_Morph</defName>
-		<label>Sicarian Transformation</label>
-		<description>blank</description>
+		<label>Sicarian adaptation</label>
+		<description>This person has undergone surgical and augmetic adaptation into a Sicarian - a superbly efficient killing machine, but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts, organs, and brain tissue have been removed, and the body is now ready to accept and operate martial augmetics in their place.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
