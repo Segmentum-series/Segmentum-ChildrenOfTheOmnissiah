@@ -89,7 +89,7 @@
         <li>
           <xenotype>Seg_COTO_Sicarian</xenotype>
           <removeHediffs>
-            <li></li>
+            <!-- <li></li> -->
           </removeHediffs>
         </li>
       </morphTargets>
