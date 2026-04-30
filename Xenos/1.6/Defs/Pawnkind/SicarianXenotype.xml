@@ -38,13 +38,13 @@
 		<biostatCpx>5</biostatCpx>
 		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
 		<disabledWorkTags>
-         <li>Caring</li>
-		 <li>Animals</li>
-		 <li>Cooking</li>
-		 <li>PlantWork</li>
-		 <li>Crafting</li>
-		 <li>Artistic</li>
-        </disabledWorkTags>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Crafting</li>
+			<li>Artistic</li>
+		</disabledWorkTags>
 		<forcedHeadTypes>
 			<li>Male_Sicarian1</li>
 			<li>Male_Sicarian2</li>
@@ -108,13 +108,13 @@
 					<shader>CutoutComplex</shader>
 					<overrideDesiccated>true</overrideDesiccated>
 				</headMaterial>
-				<!--apparelRestrictions>
-					<bodyPartGroups>
-						<blacklist>
-							<li>FullHead</li>
-						</blacklist>
-					</bodyPartGroups>
-				</apparelRestrictions-->
+				<apparelRestrictions>
+					<tags>
+						<acceptlist>
+							<li>Seg_COTO_SicarianTag</li>
+						</acceptlist>
+					</tags>
+				</apparelRestrictions>
 			</li>
 			<!-- <surgeryRecipes> How to later ban other conversions that may be done for the Magos
 				<blacklist>
