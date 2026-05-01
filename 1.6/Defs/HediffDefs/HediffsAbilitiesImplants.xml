@@ -63,7 +63,7 @@
 		<canTargetMechs>false</canTargetMechs>
 	</targetingParameters>
 	<needsTicking>true</needsTicking>
-	<castSound>Seg_COTO_Sound_PoweredMeleeWeapon_Equip</castSound>
+	<castSound>Seg_COTO_PoweredMeleeWeaponEquipSound</castSound>
 </VEF.Abilities.AbilityDef>
 <HediffDef>
     <defName>Seg_COTO_WaveburstEffect</defName>

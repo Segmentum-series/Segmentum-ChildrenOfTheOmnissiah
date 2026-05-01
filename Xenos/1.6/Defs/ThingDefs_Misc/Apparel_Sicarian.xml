@@ -2,7 +2,7 @@
 
 <Defs>
 	<BigAndSmall.ItemRestrictionDef>
-		<defName>Seg_COTO_SicarianRestriction</defName>
+		<defName>Seg_COTO_SicarianRestriction</defName><!-- Blocks non-Sicarians from using tagged apparels -->
 		<restrictedTags>
 			<li>Seg_COTO_SicarianTag</li>
 		</restrictedTags>
@@ -295,6 +295,9 @@
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</wornGraphicPath>
+			<tags>
+				<li>Seg_COTO_SicarianTag</li>
+			</tags>
 			<drawData>
 				<dataSouth>
 					<layer>15</layer>
