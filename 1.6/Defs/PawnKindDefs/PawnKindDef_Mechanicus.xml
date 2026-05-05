@@ -149,7 +149,7 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
-		<weaponTags>
+		<weaponTags Inherit="False">
 			<li>Seg_COTO_Galvanic</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
@@ -193,7 +193,7 @@
 		<weaponTags>
 			<li>Seg_COTO_Galvanic</li>
 			<li>Seg_COTO_Taser</li>
-			<li>Seg_COTO_Phosphor</li>
+			<li>Seg_COTO_PhosphorBlast</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -246,6 +246,7 @@
 		<weaponTags>
 			<li>Seg_COTO_Phosphor</li>
 			<li>Seg_COTO_PowerMelee</li>
+			<li>Seg_COTO_SkitariiMarshal</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
