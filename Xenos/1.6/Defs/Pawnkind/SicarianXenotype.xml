@@ -32,7 +32,7 @@
 		<defName>Seg_COTO_Gene_Sicarian</defName>
 		<label>Sicarian adaptation</label>
 		<description>Sicarians are living beings transformed into superbly efficient cybernetic killing machines, unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts, organs, and brain tissue are removed, and the body is prepared for martial augmetics in their place.</description>
-		<iconPath>UI/Icons/G_Clonerot</iconPath> <!-- MISSING -->
+		<iconPath>UI/Icons/Seg_COTO_Icon_SicarianGene</iconPath>
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<biostatMet>3</biostatMet>
 		<biostatCpx>5</biostatCpx>

@@ -6,9 +6,9 @@
 		<defName>Seg_COTO_SicarianConversion</defName>
 		<label>convert to Sicarian</label>
 		<description>The Adeptus Mechanicus sees every human as a resource, and even the most seriously wounded can be put to good use in the skitarii legions. Converting a living being into a Sicarian involves making them into efficient killing machines - but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts, organs, and brain tissue are removed, and the body is prepared for specialised martial augmetics in their place.</description>
-		<uiIconPath>UI/Icons/BS_CommandoHead</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
+		<uiIconPath>UI/Icons/Seg_COTO_Icon_SicarianImplant</uiIconPath>
 		<jobString>Bestow Sicarian conversion</jobString>
-		<uiIconPath>UI/Icons/BS_AndroidFaction</uiIconPath> <!-- REMEMBER TO CHANGE THE ICON LATER -->
+		<uiIconPath>UI/Icons/Seg_COTO_Icon_SicarianImplant</uiIconPath>
 		<skillRequirements>
 			<Medicine>10</Medicine>
 			<Crafting>10</Crafting>
