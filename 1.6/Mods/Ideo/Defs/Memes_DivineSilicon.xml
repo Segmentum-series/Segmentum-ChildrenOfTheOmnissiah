@@ -50,4 +50,194 @@
         </li>
     </stages>
 </ThoughtDef>
+<HistoryEventDef>
+    <defName>RD_HistoryEvent_RankDead</defName>
+    <label>pawn with rank died</label>
+</HistoryEventDef>
+<IssueDef>
+    <defName>RD_RankedHumanlikeDeath</defName>
+    <label>ranked humanlike death</label>
+    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
+</IssueDef>
+<PreceptDef>
+    <defName>RD_RankDied_VeryCare</defName>
+    <issue>RD_RankedHumanlikeDeath</issue>
+    <label>troubling</label>
+    <description>The sight of a dead person is nothing to be concerned about.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <selectionWeight>0</selectionWeight>
+    <comps>
+        <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
+        <eventDef>RD_HistoryEvent_RankDead</eventDef>
+        <!--  this precept will fired if any colonist with match rankDef died  -->
+        <rankDefs>
+            <li>BEWH_AstartesRankNeophyte</li>
+        </rankDefs>
+            <!--  these colonist with the following rank will be affected  -->
+        <affectedRanks>
+            <li>BEWH_AstartesRankNeophyte</li>
+        </affectedRanks>
+        <!--  mood thought to self   -->
+        <thoughtDef>RD_RankDead_Troubling</thoughtDef>
+        <!--  opinion toward killer.  -->
+        <thoughtTowardKiller>RD_KilledOurRank</thoughtTowardKiller>
+        </li>
+        </comps>
+</PreceptDef>
+<ThoughtDef>
+    <defName>RD_RankDead_Troubling</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+        <li>
+            <label>ranked member dead</label>
+            <description>my fellow comrade die.</description>
+            <baseMoodEffect>-10</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+<ThoughtDef>
+    <defName>RD_KilledOurRank</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+    <li>
+        <label>killed my comrade</label>
+        <description>he dead jim.</description>
+        <baseOpinionOffset>-25</baseOpinionOffset>
+    </li>
+    </stages>
+</ThoughtDef>
+<PreceptDef>
+    <defName>RD_RankDied_NoCare</defName>
+    <issue>RD_RankedHumanlikeDeath</issue>
+    <label>satisfied</label>
+    <description>The sight of a dead person is nothing to be concerned about.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <selectionWeight>0</selectionWeight>
+    <comps>
+        <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
+        <eventDef>RD_HistoryEvent_RankDead</eventDef>
+        <rankDefs>
+            <li>BEWH_AstartesRankNeophyte</li>
+        </rankDefs>
+        <affectedRanks>
+            <li>BEWH_AstartesRankNeophyte</li>
+        </affectedRanks>
+        <thoughtDef>RD_RankDead_Satisfied</thoughtDef>
+        </li>
+    </comps>
+</PreceptDef>
+<ThoughtDef>
+    <defName>RD_RankDead_Satisfied</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>5</stackLimit>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+        <li>
+            <label>ranked member dead</label>
+            <description>my fellow comrade die.</description>
+            <baseMoodEffect>10</baseMoodEffect>
+        </li>
+    </stages>
+</ThoughtDef>
+<IssueDef>
+    <defName>RD_MachineryLikeness</defName>
+    <label>machinery</label>
+    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
+</IssueDef>
+<!--  precept defName need to be exactly this for performance reason when looking if ideo have the needed precept, if the defName need changed let me know  -->
+<PreceptDef>
+    <defName>RD_Precept_MachineryPreferred</defName>
+    <issue>RD_MachineryLikeness</issue>
+    <label>Machinery Preferred</label>
+    <description>me like machine.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <selectionWeight>0</selectionWeight>
+    <comps>
+        <li Class="PreceptComp_SituationalThought">
+            <thought>RD_Precept_MachineryPreferred</thought>
+            <thoughtStageDescriptions>
+                <li>No machine</li>
+                <li>Few pieces of machine (1 nearby)</li>
+                <li>Few pieces of machine (2 nearby)</li>
+                <li>Few pieces of machine (3 nearby)</li>
+                <li>Few pieces of machine (4 nearby)</li>
+                <li>very little machine (5 nearby)</li>
+                <li>Small machine</li>
+                <li>many machine</li>
+                <li>many many machine</li>
+            </thoughtStageDescriptions>
+        </li>
+    </comps>
+    <modExtensions>
+        <li Class="RimDarkRankPrecept.DefModExtension_PreceptMachinery">
+        <!--  what count as machinery anyway?  -->
+        <categories>
+            <li>BuildingsProduction</li>
+        </categories>
+        <comps>
+            <li>CompPowerTrader</li>
+        </comps>
+        </li>
+    </modExtensions>
+</PreceptDef>
+<ThoughtDef>
+    <defName>RD_Precept_MachineryPreferred</defName>
+    <minExpectation>VeryLow</minExpectation>
+    <workerClass>RimDarkRankPrecept.ThoughtWorker_Precept_Machinery</workerClass>
+    <stages>
+    <li>
+        <label>no machine</label>
+        <description>It has been too long since I’ve seen machine.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+    </li>
+    <li>
+        <label>few pieces of machine (1 nearby)</label>
+        <description>This area is way too sparse, I miss seeing the machine.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+    </li>
+    <li>
+        <label>few pieces of machine (2 nearby)</label>
+        <description>This area has very few machine technology.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+    </li>
+    <li>
+        <label>few pieces of machine (3 nearby)</label>
+        <description>We need to gather more pieces of machine.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+    </li>
+    <li>
+        <label>few pieces of machine (4 nearby)</label>
+        <description>We have too few pieces of machine lying around.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+    </li>
+    <li>
+        <label>very little machine (5 nearby)</label>
+        <description>We should gather at least a few more pieces. Our machine is lacking.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+    </li>
+    <li>
+        <label>several machine</label>
+        <description>I recently saw a small pile of machine.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+    </li>
+    <li>
+        <label>many machine</label>
+        <description>I recently saw a small pile of machine.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+    </li>
+    <li>
+        <label>many many machine</label>
+        <description>I recently saw a small pile of machine.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+    </li>
+    </stages>
+    </ThoughtDef>
 </Defs>
