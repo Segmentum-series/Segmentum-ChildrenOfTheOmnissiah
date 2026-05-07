@@ -78,10 +78,59 @@
             <li>Seg_COTO_MagosBiologis</li>
             <li>Seg_COTO_Explorator</li>
             <li>Seg_COTO_AuxiliusMyrmidon</li>
+            <li>Seg_COTO_ServitorUnderseer</li>
+            <li>Seg_COTO_FabricatorMinoris</li>
+            <li>Seg_COTO_MagosLogis</li>
+            <li>Seg_COTO_MagosGenetor</li>
+            <li>Seg_COTO_MagosBiologisextremis</li>
+            <li>Seg_COTO_MagosExplorator</li>
+            <li>Seg_COTO_MagosMilitant</li>
+            <li>Seg_COTO_Securtor</li>
+            <li>Seg_COTO_MagosMetallurgicus</li>
+            <li>Seg_COTO_CyberneticaDatasmith</li>
+            <li>Seg_COTO_Artisan</li>
+            <li>Seg_COTO_LexicoArcanus</li>
+            <li>Seg_COTO_ArchmagosGenetor</li>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
+            <li>Seg_COTO_MagosPrime</li>
+            <li>Seg_COTO_FabricatorLocum</li>
+            <li>Seg_COTO_MagosMyrmidax</li>
+            <li>Seg_COTO_FabricatorGeneral</li>
+            <li>Seg_COTO_MagosCybernetica</li>
         </rankDefs>
             <!--  these colonist with the following rank will be affected  -->
         <affectedRanks>
-            <li>BEWH_AstartesRankNeophyte</li>
+            <li>Seg_COTO_TechAcolytum</li>
+            <li>Seg_COTO_AdeptProbatoris</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+            <li>Seg_COTO_ServitorUnderseer</li>
+            <li>Seg_COTO_FabricatorMinoris</li>
+            <li>Seg_COTO_MagosLogis</li>
+            <li>Seg_COTO_MagosGenetor</li>
+            <li>Seg_COTO_MagosBiologisextremis</li>
+            <li>Seg_COTO_MagosExplorator</li>
+            <li>Seg_COTO_MagosMilitant</li>
+            <li>Seg_COTO_Securtor</li>
+            <li>Seg_COTO_MagosMetallurgicus</li>
+            <li>Seg_COTO_CyberneticaDatasmith</li>
+            <li>Seg_COTO_Artisan</li>
+            <li>Seg_COTO_LexicoArcanus</li>
+            <li>Seg_COTO_ArchmagosGenetor</li>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
+            <li>Seg_COTO_MagosPrime</li>
+            <li>Seg_COTO_FabricatorLocum</li>
+            <li>Seg_COTO_MagosMyrmidax</li>
+            <li>Seg_COTO_FabricatorGeneral</li>
+            <li>Seg_COTO_MagosCybernetica</li>
         </affectedRanks>
         <!--  mood thought to self   -->
         <thoughtDef>RD_RankDead_Troubling</thoughtDef>
@@ -134,6 +183,34 @@
         </rankDefs>
         <affectedRanks>
             <li>Seg_COTO_TechAcolytum</li>
+            <li>Seg_COTO_AdeptProbatoris</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
+            <li>Seg_COTO_ServitorUnderseer</li>
+            <li>Seg_COTO_FabricatorMinoris</li>
+            <li>Seg_COTO_MagosLogis</li>
+            <li>Seg_COTO_MagosGenetor</li>
+            <li>Seg_COTO_MagosBiologisextremis</li>
+            <li>Seg_COTO_MagosExplorator</li>
+            <li>Seg_COTO_MagosMilitant</li>
+            <li>Seg_COTO_Securtor</li>
+            <li>Seg_COTO_MagosMetallurgicus</li>
+            <li>Seg_COTO_CyberneticaDatasmith</li>
+            <li>Seg_COTO_Artisan</li>
+            <li>Seg_COTO_LexicoArcanus</li>
+            <li>Seg_COTO_ArchmagosGenetor</li>
+            <li>Seg_COTO_ArchmagosExplorator</li>
+            <li>Seg_COTO_MagosDominius</li>
+            <li>Seg_COTO_ArchmagosDominius</li>
+            <li>Seg_COTO_MagosPrime</li>
+            <li>Seg_COTO_FabricatorLocum</li>
+            <li>Seg_COTO_MagosMyrmidax</li>
+            <li>Seg_COTO_FabricatorGeneral</li>
+            <li>Seg_COTO_MagosCybernetica</li>
         </affectedRanks>
         <thoughtDef>RD_RankDead_Satisfied</thoughtDef>
         </li>
