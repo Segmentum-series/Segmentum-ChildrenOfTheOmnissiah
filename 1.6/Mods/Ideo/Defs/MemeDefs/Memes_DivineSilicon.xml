@@ -8,7 +8,7 @@
     <defName>Seg_COTO_DivineSilicon</defName>
     <issue>MachineWorship</issue>
     <label>divine silicon</label>
-    <description>Colonists feel spiritually connected to technology and believe that 'machine spirits' animate all machines.</description>
+    <description>Colonists feel spiritually connected to technology and believe that 'machine spirits' animate all machines. The deaths of .</description>
     <impact>Medium</impact>
 
     <comps>
@@ -29,7 +29,7 @@
 
     <stages>
         <li>
-            <label>no machinery</label>
+            <label>No machinery</label>
             <description>There is no sacred machinery nearby. We languish without the touch of the machine spirits.</description>
             <baseMoodEffect>-4</baseMoodEffect>
         </li>
@@ -52,11 +52,11 @@
 </ThoughtDef>
 <HistoryEventDef>
     <defName>RD_HistoryEvent_RankDead</defName>
-    <label>pawn with rank died</label>
+    <label>Tech-priest died</label>
 </HistoryEventDef>
 <IssueDef>
     <defName>RD_RankedHumanlikeDeath</defName>
-    <label>ranked humanlike death</label>
+    <label>Tech-priest death</label>
     <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
 </IssueDef>
 <PreceptDef>
@@ -72,7 +72,12 @@
         <eventDef>RD_HistoryEvent_RankDead</eventDef>
         <!--  this precept will fired if any colonist with match rankDef died  -->
         <rankDefs>
-            <li>BEWH_AstartesRankNeophyte</li>
+            <li>Seg_COTO_Enginseer</li>
+            <li>Seg_COTO_Transmechanic</li>
+            <li>Seg_COTO_Lexmechanic</li>
+            <li>Seg_COTO_MagosBiologis</li>
+            <li>Seg_COTO_Explorator</li>
+            <li>Seg_COTO_AuxiliusMyrmidon</li>
         </rankDefs>
             <!--  these colonist with the following rank will be affected  -->
         <affectedRanks>
@@ -92,8 +97,8 @@
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
         <li>
-            <label>ranked member dead</label>
-            <description>my fellow comrade die.</description>
+            <label>Tech-priest died</label>
+            <description>An ordained priest of the Cult Mechanicus has died! This is a blow for the forge.</description>
             <baseMoodEffect>-10</baseMoodEffect>
         </li>
     </stages>
@@ -101,13 +106,13 @@
 <ThoughtDef>
     <defName>RD_KilledOurRank</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
-    <durationDays>3</durationDays>
+    <durationDays>30</durationDays>
     <stackLimit>5</stackLimit>
     <stackedEffectMultiplier>1</stackedEffectMultiplier>
     <stages>
     <li>
-        <label>killed my comrade</label>
-        <description>he dead jim.</description>
+        <label>Killed one of our tech-priests</label>
+        <description>This waste of organic material killed an ordained tech-priest of the Machine Cult!</description>
         <baseOpinionOffset>-25</baseOpinionOffset>
     </li>
     </stages>
@@ -124,10 +129,11 @@
         <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
         <eventDef>RD_HistoryEvent_RankDead</eventDef>
         <rankDefs>
-            <li>BEWH_AstartesRankNeophyte</li>
+            <li>Seg_COTO_TechAcolytum</li>
+            <li>Seg_COTO_AdeptProbatoris</li>
         </rankDefs>
         <affectedRanks>
-            <li>BEWH_AstartesRankNeophyte</li>
+            <li>Seg_COTO_TechAcolytum</li>
         </affectedRanks>
         <thoughtDef>RD_RankDead_Satisfied</thoughtDef>
         </li>
@@ -140,9 +146,9 @@
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
         <li>
-            <label>ranked member dead</label>
-            <description>my fellow comrade die.</description>
-            <baseMoodEffect>10</baseMoodEffect>
+            <label>Low-ranking Cultist died</label>
+            <description>A low-ranking member of the Cult died. This is no cause for concern.</description>
+            <baseMoodEffect>0</baseMoodEffect>
         </li>
     </stages>
 </ThoughtDef>
