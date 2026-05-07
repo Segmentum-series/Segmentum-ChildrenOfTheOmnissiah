@@ -5,8 +5,8 @@
 		<xpath>Defs/Genes40k.ChapterRankDef[defName="BEWH_AstartesRankNeophyte"]</xpath>
 		<value>
 			<incompatibleRanks>
-				<li>Seg_COTO_AdeptProbatoris</li>
-				<li>Seg_COTO_Hypaspist</li>
+				<li>Seg_COTO_TechAcolytum</li>
+				<li>Seg_COTO_TechMilita</li>
 			</incompatibleRanks>
 		</value>
   </Operation>
@@ -14,8 +14,8 @@
 		<xpath>Defs/Core40k.RankDef[defName="BEWH_ThunderWarriorRankInitiate"]</xpath>
 		<value>
 			<incompatibleRanks>
-				<li>Seg_COTO_AdeptProbatoris</li>
-				<li>Seg_COTO_Hypaspist</li>
+				<li>Seg_COTO_TechAcolytum</li>
+				<li>Seg_COTO_TechMilita</li>
 			</incompatibleRanks>
 		</value>
   </Operation>
