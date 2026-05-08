@@ -157,8 +157,16 @@
 					<Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
 					<Seg_COTO_SkitariiVanguardAlpha>4</Seg_COTO_SkitariiVanguardAlpha>
 					<Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
-					<!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
+				</options>
+			</li>
+			<!-- Sicarian Killclade -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<Seg_COTO_SicarianRuststalker>6</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator>6</Seg_COTO_SicarianInfiltrator>
+					<Seg_COTO_SicarianPrinceps>1</Seg_COTO_SicarianPrinceps>
 				</options>
 			</li>
 			<!-- Skitarii/myrmidon force -->
@@ -171,10 +179,10 @@
 					<Seg_COTO_SkitariiVanguardAlpha>4</Seg_COTO_SkitariiVanguardAlpha>
 					<Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
 					<Seg_COTO_SkitariiMarshal>1</Seg_COTO_SkitariiMarshal>
-					<!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
+					<Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator>
 					<Seg_COTO_AuxiliusMyrmidon>4</Seg_COTO_AuxiliusMyrmidon>
-					<Seg_COTO_MagosMyrmidon>3</Seg_COTO_MagosMyrmidon>
+					<Seg_COTO_MagosMyrmidon>2</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
 					<Seg_COTO_ArchmagosDominus>1</Seg_COTO_ArchmagosDominus>
 				</options>
@@ -188,8 +196,6 @@
 					<Seg_COTO_MagosMyrmidon>10</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
 					<Seg_COTO_ArchmagosDominus>1</Seg_COTO_ArchmagosDominus>
-					<!--Seg_COTO_SicarianRuststalker>10</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>10</Seg_COTO_SicarianInfiltrator-->
 				</options>
 			</li>
 			<!-- Base defence -->
@@ -201,8 +207,9 @@
 					<Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
 					<Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
 					<Seg_COTO_SkitariiMarshal>1</Seg_COTO_SkitariiMarshal>
-					<!--Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator-->
+					<Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator>
+					<Seg_COTO_SicarianPrinceps>2</Seg_COTO_SicarianPrinceps>
 					<Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
 					<Seg_COTO_MagosMyrmidon>10</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>

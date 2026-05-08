@@ -40,10 +40,10 @@
 		<disabledWorkTags>
 			<li>Caring</li>
 			<li>Animals</li>
-			<li>Cooking</li>
-			<li>PlantWork</li>
-			<li>Crafting</li>
+			<li>ManualSkilled</li>
 			<li>Artistic</li>
+			<li>Intellectual</li>
+			<li>Social</li>
 		</disabledWorkTags>
 		<forcedHeadTypes>
 			<li>Male_Sicarian1</li>
