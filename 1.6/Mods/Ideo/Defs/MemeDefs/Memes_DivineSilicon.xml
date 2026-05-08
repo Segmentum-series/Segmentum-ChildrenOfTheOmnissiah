@@ -23,7 +23,7 @@
     <defName>RD_RankDied_VeryCare</defName>
     <issue>RD_RankedHumanlikeDeath</issue>
     <label>troubling</label>
-    <description>The sight of a dead person is nothing to be concerned about.</description>
+    <description>The wasteful death of the Machine God's ordained tech-clergy is to be avoided if possible.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>0</selectionWeight>
@@ -108,7 +108,7 @@
         <li>
             <label>Tech-priest died</label>
             <description>An ordained priest of the Cult Mechanicus has died! This is a blow for the forge.</description>
-            <baseMoodEffect>-10</baseMoodEffect>
+            <baseMoodEffect>-5</baseMoodEffect>
         </li>
     </stages>
 </ThoughtDef>

@@ -125,7 +125,7 @@
 		<forcedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Omnissian</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Seg_COTO_MachineImmortal</li>
-			<!--li MayRequire="Ludeon.RimWorld.Ideology">TechnoAnimism</li>-->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Seg_COTO_Techno-Animism</li>
 		</forcedMemes>
 		<requiredPreceptsOnly MayRequire="Ludeon.RimWorld.Ideology">true</requiredPreceptsOnly>
 

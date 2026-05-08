@@ -344,7 +344,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>1100~2700</weaponMoney>
+		<weaponMoney>1100~2200</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -458,7 +458,7 @@
 			<li>Seg_COTO_AdvancedAugmetics</li>
 		</techHediffsTags>
 		<techHediffsChance>1</techHediffsChance>
-		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>5</techHediffsMaxAmount>
 		<techHediffsRequired Inherit="False">
 			<li>Seg_COTO_NoosphericCortex</li>

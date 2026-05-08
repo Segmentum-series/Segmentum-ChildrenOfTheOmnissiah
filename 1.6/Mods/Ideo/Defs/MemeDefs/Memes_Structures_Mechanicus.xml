@@ -235,26 +235,26 @@
         <li>Lovin_FreeApproved</li>
       </li>
       <li>
-          <li>Nudity_Male_NoRules</li>
+        <li>Nudity_Male_NoRules</li>
       </li>
       <li>
-          <li>Nudity_Female_NoRules</li>
+        <li>Nudity_Female_NoRules</li>
       </li>
        <li>
-          <li>Comfort_Ignored</li>
+        <li>Comfort_Ignored</li>
       </li>
       <li>
         <li>OrganUse_Acceptable</li>
       </li>
-        <li>
-            <li>RD_RankDied_VeryCare</li>
-        </li>
-        <li>
-            <li>RD_RankDied_NoCare</li>
-        </li>
-        <li>
-            <li>RD_Precept_MachineryPreferred</li>
-        </li>
+      <li>
+        <li>RD_RankDied_VeryCare</li>
+      </li>
+      <li>
+        <li>RD_RankDied_NoCare</li>
+      </li>
+      <li>
+        <li>RD_Precept_MachineryPreferred</li>
+      </li>
     </requireOne>
   
     <thingStyleCategories>
