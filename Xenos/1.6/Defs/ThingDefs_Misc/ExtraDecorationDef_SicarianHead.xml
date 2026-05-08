@@ -4,7 +4,7 @@
 	<!-- Gas cannister -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_GasCannister</defName>
-		<label>Gas cannister</label>
+		<label>Gas canister</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_GasCannister</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_GasCannister</drawnTextureIconPath>
@@ -44,7 +44,7 @@
 	<!-- Ruststalker lens single L -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensSingleL</defName>
-		<label>Single lense L</label>
+		<label>Single lens L</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesSingleL</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesSingleL</drawnTextureIconPath>
@@ -83,7 +83,7 @@
 	<!-- Ruststalker lens single R -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_LensSingleR</defName>
-		<label>Single lense R</label>
+		<label>Single lens R</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_LensesSingleR</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_LensesSingleR</drawnTextureIconPath>
@@ -203,7 +203,7 @@
 	<!-- Side Visor -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_SideVisor</defName>
-		<label>Side Visor</label>
+		<label>Side visor</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_SideVisor</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_SideVisor</drawnTextureIconPath>
@@ -249,7 +249,7 @@
 	<!-- Upper Visor -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_UpperVisor</defName>
-		<label>Upper Visor</label>
+		<label>Upper visor</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_UpperVisor</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_UpperVisor</drawnTextureIconPath>
@@ -295,7 +295,7 @@
 	<!-- Ruststalker Princeps Hood -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianRuststalkerMask_PrincepsHood</defName>
-		<label>Princeps Hood</label>
+		<label>Princeps hood</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianRuststalkerMask/Seg_COTO_Deco_SicarianRuststalkerMask_PrincepsHood</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask_PrincepsHood</drawnTextureIconPath>
@@ -416,7 +416,7 @@
 	<!--Single Antenna-->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_SicarianInfiltratorHelmet_SingleAntenna</defName>
-		<label>Single Antenna</label>
+		<label>Single antenna</label>
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SicarianInfiltratorHelmet/Seg_COTO_Deco_SicarianInfiltratorHelmet_SingleAntenna</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SicarianInfiltratorHelmet/Seg_COTO_SicarianInfiltratorHelmet_SingleAntenna</drawnTextureIconPath>

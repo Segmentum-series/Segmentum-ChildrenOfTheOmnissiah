@@ -102,8 +102,8 @@
 	<!-- Sicarian infiltrator helmet-->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet</defName>
-		<label>sicarian infiltrator helmet</label>
-		<description>Missing description.</description>
+		<label>Sicarian infiltrator helmet</label>
+		<description>Sicarian infiltrators have distinctive circular dome shaped heads housing various sensors, optical aids, and auspex equipment to enable their skirmishing and infiltration attacks to a level far above standard skitarii. Where the Sicarian's cranium ends and the 'helmet' begins is often unclear.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -184,8 +184,8 @@
 	<!-- Sicarian ruststalker mask -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask</defName>
-		<label>sicarian ruststalker mask</label>
-		<description>Missing description.</description>
+		<label>Sicarian ruststalker mask</label>
+		<description>Ruststalkers were originally a caste of Martian assassins charged with hunting down heretical exiles from the Machine Cult and the feral servitors that roam the Red Planet's wastes. Their distinctive masks give complete immunity to toxic environs like those of the cradle of the Machine Cult, as well as including optical enhancements to aid their combat abilities.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -207,7 +207,6 @@
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<AimingDelayFactor>-0.05</AimingDelayFactor>
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
-			<PainShockThreshold>0.5</PainShockThreshold>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<recipeMaker>
@@ -266,7 +265,7 @@
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_SicarianBackpack</defName>
 		<label>Sicarian backpack</label>
-		<description>Sicarian troops have little need to carry supplies or equipment like the baseline soldiers of the Militarum do, but their backpacks are still useful for the integral interface systems that boost the operation of their augmetic bodies.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refueld with Uranium&lt;/color&gt;.</description>
+		<description>Sicarian troops have little need to carry supplies or equipment like the baseline soldiers of the Militarum do, but their backpacks are still useful for the integral interface systems that boost the operation of their augmetic bodies.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refuelled with Uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</texPath>
 		</graphicData>
