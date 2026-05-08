@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs><!-- Barebones doc -->
+<Defs>
 
 <!-- Stubber guns base -->
 	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
@@ -284,7 +284,7 @@
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 					<li>Seg_COTO_Apparel_MarshalBackpack</li>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-					<li>Seg_COTO_Apparel_SicarianBackpack</li>
+					<li MayRequire="RedMattis.BetterPrerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -356,7 +356,7 @@
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 					<li>Seg_COTO_Apparel_MarshalBackpack</li>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-					<li>Seg_COTO_Apparel_SicarianBackpack</li>
+					<li MayRequire="RedMattis.BetterPrerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
@@ -683,7 +683,7 @@
 					<li>Seg_COTO_Apparel_MagosBackpack</li>
 					<li>Seg_COTO_Apparel_MarshalBackpack</li>
 					<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-					<li>Seg_COTO_Apparel_SicarianBackpack</li>
+					<li MayRequire="RedMattis.BetterPrerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 				</apparelList>
 				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
 				<hasStandardCommand>true</hasStandardCommand>
