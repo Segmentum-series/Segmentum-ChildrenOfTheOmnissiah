@@ -101,7 +101,7 @@
 </PreceptDef>
 <ThoughtDef>
     <defName>RD_RankDead_Troubling</defName>
-    <durationDays>3</durationDays>
+    <durationDays>5</durationDays>
     <stackLimit>5</stackLimit>
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
@@ -130,7 +130,7 @@
     <defName>RD_RankDied_NoCare</defName>
     <issue>RD_RankedHumanlikeDeathLowRanking</issue>
     <label>Don't Mind</label>
-    <description>The sight of a dead person of a lower rank is nothing to be concerned about.</description>
+    <description>The death of lower ranking members of the Cult Mechanicus is nothing to be concerned about.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>1</selectionWeight>
@@ -194,7 +194,7 @@
     <defName>RD_Precept_MachineryPreferred</defName>
     <issue>MachineWorship</issue>
     <label>Divine Silicon</label>
-    <description>The most holy sight of machinery.</description>
+    <description>The presence of sacred machine spirits pleases the Machine God and his adherents, while their absence is an offence.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>1</selectionWeight>
@@ -202,15 +202,15 @@
         <li Class="PreceptComp_SituationalThought">
             <thought>RD_Precept_MachineryPreferred</thought>
             <thoughtStageDescriptions>
-                <li>No machine</li>
-                <li>Few pieces of machine (1 nearby)</li>
-                <li>Few pieces of machine (2 nearby)</li>
-                <li>Few pieces of machine (3 nearby)</li>
-                <li>Few pieces of machine (4 nearby)</li>
-                <li>very little machine (5 nearby)</li>
-                <li>Small machine</li>
-                <li>many machine</li>
-                <li>many many machine</li>
+                <li>No machinery nearby</li>
+                <li>Far too little machinery nearby</li>
+                <li>Too little machinery nearby</li>
+                <li>Little machinery nearby</li>
+                <li>Not enough machinery nearby</li>
+                <li>Machine spirits present</li>
+                <li>Machine spirits honoured</li>
+                <li>Machine spirits thriving</li>
+                <li>Honouring the Omnissiah</li>
             </thoughtStageDescriptions>
         </li>
     </comps>
@@ -232,48 +232,48 @@
     <workerClass>RimDarkRankPrecept.ThoughtWorker_Precept_Machinery</workerClass>
     <stages>
     <li>
-        <label>no machine</label>
+        <label>No machinery</label>
         <description>There is no sacred machinery nearby. We languish without the touch of the machine spirits.</description>
-        <baseMoodEffect>-15</baseMoodEffect>
-    </li>
-    <li>
-        <label>few pieces of machine (1 nearby)</label>
-        <description>This area is way too sparse, I miss seeing the machine.</description>
         <baseMoodEffect>-10</baseMoodEffect>
     </li>
     <li>
-        <label>few pieces of machine (2 nearby)</label>
-        <description>There is only a little machinery nearby. We are not nurturing the machine spirits enough!</description>
-        <baseMoodEffect>-8</baseMoodEffect>
-    </li>
-    <li>
-        <label>few pieces of machine (3 nearby)</label>
-        <description>We need to gather more pieces of machine.</description>
+        <label>Far too little machinery nearby</label>
+        <description>There is only one piece of machinery with a living machine spirit nearby. This is far too few!</description>
         <baseMoodEffect>-6</baseMoodEffect>
     </li>
     <li>
-        <label>few pieces of machine (4 nearby)</label>
-        <description>We have too few pieces of machine lying around.</description>
+        <label>Too little machinery nearby</label>
+        <description>There is only a small amount of machinery nearby. We are not nurturing the machine spirits enough!</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+    </li>
+    <li>
+        <label>Little machinery nearby</label>
+        <description>We have some machinery nearby, but still not enough to provide honour to their spirits and the Omnissiah.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+    </li>
+    <li>
+        <label>Not enough machinery nearby</label>
+        <description>While there are some spirit-animated machines nearby, there are too few to bring honour to the Omnissiah or our forge.</description>
         <baseMoodEffect>-1</baseMoodEffect>
     </li>
     <li>
-        <label>very little machine (5 nearby)</label>
+        <label>Machine spirits present</label>
         <description>There is a decent amount of sacred machinery nearby, as there should be.</description>
-        <baseMoodEffect>1</baseMoodEffect>
-    </li>
-    <li>
-        <label>several machine</label>
-        <description>I recently saw a small pile of machine.</description>
         <baseMoodEffect>2</baseMoodEffect>
     </li>
     <li>
-        <label>many machine 7 nearby</label>
-        <description>I recently saw a small pile of machine.</description>
+        <label>Machine spirits honoured</label>
+        <description>We are making good use of sacred machinery and ensuring that we take care of its animating spirits. This honours them, and us.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+    </li>
+    <li>
+        <label>Machine spirits thriving</label>
+        <description>There are many sacred machines nearby, both used and cared for. It is comforting to be around the spirits in such numbers.</description>
         <baseMoodEffect>5</baseMoodEffect>
     </li>
     <li>
-        <label>many many machine 6 nearby</label>
-        <description>It is comforting to be around the living machine spirits in such numbers.</description>
+        <label>Honouring the Omnissiah</label>
+        <description>It is comforting to be around the living machine spirits in such numbers, and to know that we honour the Omnissiah and his works to such an extent.</description>
         <baseMoodEffect>10</baseMoodEffect>
     </li>
     </stages>
