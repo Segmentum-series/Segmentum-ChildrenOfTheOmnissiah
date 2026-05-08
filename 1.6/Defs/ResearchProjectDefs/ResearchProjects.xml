@@ -202,6 +202,8 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>Seg_SegmentumTab</tab>
+		<discoveredLetterTitle>About: Sicarians</discoveredLetterTitle>
+		<discoveredLetterText>Grievously wounded skitarii can still be of use to the Adeptus Mechanicus. A skilled surgeon and crafter can operate and convert anybody to a Sicarian - removing many higher brain functions and any capabilities besides violence, but minimising their capacity to feel pain and making them perfect candidates for extreme martially-focused augmetics.\n\nOnly those who have undergone this conversion can make use of Sicarian equipment.</discoveredLetterText>
 	</ResearchProjectDef>
 	
 <!-- Maniple tactics -->
