@@ -170,11 +170,6 @@
     <groupDef>Misc</groupDef>
     <impact>2</impact>
     <exclusionTags>
-      <li>NaturePrimacy</li>
-      <li>HumanPrimacy</li>
-      <li>AnimalPersonhood</li>
-	  <li>FleshPurity</li>
-	  <li>TreeConnection</li>
     </exclusionTags>
     <generalRules>
       <rulesStrings>
@@ -251,6 +246,15 @@
       <li>
         <li>OrganUse_Acceptable</li>
       </li>
+        <li>
+            <li>RD_RankDied_VeryCare</li>
+        </li>
+        <li>
+            <li>RD_RankDied_NoCare</li>
+        </li>
+        <li>
+            <li>RD_Precept_MachineryPreferred</li>
+        </li>
     </requireOne>
   
     <thingStyleCategories>

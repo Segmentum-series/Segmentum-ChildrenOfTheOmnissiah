@@ -59,6 +59,12 @@
     <label>Tech-priest death</label>
     <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
 </IssueDef>
+<IssueDef>
+    <defName>RD_RankedHumanlikeDeathLowRanking</defName>
+    <label>Low ranking member death</label>
+    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
+</IssueDef>
+
 <PreceptDef>
     <defName>RD_RankDied_VeryCare</defName>
     <issue>RD_RankedHumanlikeDeath</issue>
@@ -168,9 +174,9 @@
 </ThoughtDef>
 <PreceptDef>
     <defName>RD_RankDied_NoCare</defName>
-    <issue>RD_RankedHumanlikeDeath</issue>
-    <label>satisfied</label>
-    <description>The sight of a dead person is nothing to be concerned about.</description>
+    <issue>RD_RankedHumanlikeDeathLowRanking</issue>
+    <label>Don't Mind</label>
+    <description>The sight of a dead person of a lower rank is nothing to be concerned about.</description>
     <impact>Low</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>0</selectionWeight>
@@ -232,14 +238,14 @@
 <IssueDef>
     <defName>RD_MachineryLikeness</defName>
     <label>machinery</label>
-    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
+    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Memes/Seg_COTO_Memes_Techno-Animism</iconPath>
 </IssueDef>
 <!--  precept defName need to be exactly this for performance reason when looking if ideo have the needed precept, if the defName need changed let me know  -->
 <PreceptDef>
     <defName>RD_Precept_MachineryPreferred</defName>
     <issue>RD_MachineryLikeness</issue>
     <label>Machinery Preferred</label>
-    <description>me like machine.</description>
+    <description>The most holy sight of machinery.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>0</selectionWeight>
@@ -312,12 +318,12 @@
         <baseMoodEffect>2</baseMoodEffect>
     </li>
     <li>
-        <label>many machine</label>
+        <label>many machine 7 nearby</label>
         <description>I recently saw a small pile of machine.</description>
         <baseMoodEffect>5</baseMoodEffect>
     </li>
     <li>
-        <label>many many machine</label>
+        <label>many many machine 6 nearby</label>
         <description>I recently saw a small pile of machine.</description>
         <baseMoodEffect>10</baseMoodEffect>
     </li>
