@@ -4,52 +4,6 @@
     <label>Machine worship</label>
     <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineF</iconPath>
 </IssueDef>
-<PreceptDef>
-    <defName>Seg_COTO_DivineSilicon</defName>
-    <issue>MachineWorship</issue>
-    <label>divine silicon</label>
-    <description>Colonists feel spiritually connected to technology and believe that 'machine spirits' animate all machines. The deaths of .</description>
-    <impact>Medium</impact>
-
-    <comps>
-        <li Class="PreceptComp_SituationalThought">
-            <thought>Seg_COTO_DivineSilicon</thought>
-            <thoughtStageDescriptions>
-                <li>No machinery</li>
-                <li>Little machinery</li>
-                <li>Some machinery</li>
-                <li>Abundant machinery</li>
-            </thoughtStageDescriptions>
-        </li>
-    </comps>
-</PreceptDef>
-<ThoughtDef>
-    <defName>Seg_COTO_DivineSilicon</defName>
-    <workerClass>Seg.ThoughtWorker_DivineSilicion</workerClass> <!-- MUST remain misspelled for now, i need to fix the spelling next time i mess with core C#-->
-
-    <stages>
-        <li>
-            <label>No machinery</label>
-            <description>There is no sacred machinery nearby. We languish without the touch of the machine spirits.</description>
-            <baseMoodEffect>-4</baseMoodEffect>
-        </li>
-        <li>
-            <label>Little machinery</label>
-            <description>There is only a little machinery nearby. We are not nurturing the machine spirits enough!</description>
-            <baseMoodEffect>-1</baseMoodEffect>
-        </li>
-        <li>
-            <label>Some machinery</label>
-            <description>There is a decent amount of sacred machinery nearby, as there should be.</description>
-            <baseMoodEffect>0</baseMoodEffect>
-        </li>
-        <li>
-            <label>Abundant machinery</label>
-            <description>It is comforting to be around the living machine spirits in such numbers.</description>
-            <baseMoodEffect>4</baseMoodEffect>
-        </li>
-    </stages>
-</ThoughtDef>
 <HistoryEventDef>
     <defName>RD_HistoryEvent_RankDead</defName>
     <label>Tech-priest died</label>
@@ -177,9 +131,9 @@
     <issue>RD_RankedHumanlikeDeathLowRanking</issue>
     <label>Don't Mind</label>
     <description>The sight of a dead person of a lower rank is nothing to be concerned about.</description>
-    <impact>Low</impact>
+    <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>1</selectionWeight>
     <comps>
         <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
         <eventDef>RD_HistoryEvent_RankDead</eventDef>
@@ -235,20 +189,15 @@
         </li>
     </stages>
 </ThoughtDef>
-<IssueDef>
-    <defName>RD_MachineryLikeness</defName>
-    <label>machinery</label>
-    <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Memes/Seg_COTO_Memes_Techno-Animism</iconPath>
-</IssueDef>
 <!--  precept defName need to be exactly this for performance reason when looking if ideo have the needed precept, if the defName need changed let me know  -->
 <PreceptDef>
     <defName>RD_Precept_MachineryPreferred</defName>
-    <issue>RD_MachineryLikeness</issue>
-    <label>Machinery Preferred</label>
+    <issue>MachineWorship</issue>
+    <label>Divine Silicon</label>
     <description>The most holy sight of machinery.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>1</selectionWeight>
     <comps>
         <li Class="PreceptComp_SituationalThought">
             <thought>RD_Precept_MachineryPreferred</thought>
@@ -284,7 +233,7 @@
     <stages>
     <li>
         <label>no machine</label>
-        <description>It has been too long since I’ve seen machine.</description>
+        <description>There is no sacred machinery nearby. We languish without the touch of the machine spirits.</description>
         <baseMoodEffect>-15</baseMoodEffect>
     </li>
     <li>
@@ -294,7 +243,7 @@
     </li>
     <li>
         <label>few pieces of machine (2 nearby)</label>
-        <description>This area has very few machine technology.</description>
+        <description>There is only a little machinery nearby. We are not nurturing the machine spirits enough!</description>
         <baseMoodEffect>-8</baseMoodEffect>
     </li>
     <li>
@@ -309,7 +258,7 @@
     </li>
     <li>
         <label>very little machine (5 nearby)</label>
-        <description>We should gather at least a few more pieces. Our machine is lacking.</description>
+        <description>There is a decent amount of sacred machinery nearby, as there should be.</description>
         <baseMoodEffect>1</baseMoodEffect>
     </li>
     <li>
@@ -324,7 +273,7 @@
     </li>
     <li>
         <label>many many machine 6 nearby</label>
-        <description>I recently saw a small pile of machine.</description>
+        <description>It is comforting to be around the living machine spirits in such numbers.</description>
         <baseMoodEffect>10</baseMoodEffect>
     </li>
     </stages>
