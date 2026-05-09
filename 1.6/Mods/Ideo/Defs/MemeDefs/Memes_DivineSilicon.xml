@@ -15,7 +15,7 @@
 </IssueDef>
 <IssueDef>
     <defName>RD_RankedHumanlikeDeathLowRanking</defName>
-    <label>Low ranking member death</label>
+    <label>Skitarii death</label>
     <iconPath MayRequire="Ludeon.RimWorld.Ideology">UI/Issues/Corpses</iconPath>
 </IssueDef>
 
@@ -91,6 +91,18 @@
             <li>Seg_COTO_MagosMyrmidax</li>
             <li>Seg_COTO_FabricatorGeneral</li>
             <li>Seg_COTO_MagosCybernetica</li>
+            <li>Seg_COTO_TechMilita</li>
+            <li>Seg_COTO_Hypaspist</li>
+            <li>Seg_COTO_Skitarius</li>
+            <li>Seg_COTO_SkitariiVanguard</li>
+            <li>Seg_COTO_SkitariiProvost</li>
+            <li>Seg_COTO_SkitariiVanguardAlpha</li>
+            <li>Seg_COTO_SkitariiRanger</li>
+            <li>Seg_COTO_SkitariiRangerAlpha</li>
+            <li>Seg_COTO_SicarianRuststalker</li>
+            <li>Seg_COTO_SicarianInfiltrator</li>
+            <li>Seg_COTO_SicarianPrinceps</li>
+            <li>Seg_COTO_SkitariiMarshal</li>
         </affectedRanks>
         <!--  mood thought to self   -->
         <thoughtDef>RD_RankDead_Troubling</thoughtDef>
@@ -129,8 +141,8 @@
 <PreceptDef>
     <defName>RD_RankDied_NoCare</defName>
     <issue>RD_RankedHumanlikeDeathLowRanking</issue>
-    <label>Don't Mind</label>
-    <description>The death of lower ranking members of the Cult Mechanicus is nothing to be concerned about.</description>
+    <label>Expected</label>
+    <description>The death of the Omnissiah's Tech-Guard in defence of the forge is right and proper.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <selectionWeight>1</selectionWeight>
@@ -138,8 +150,18 @@
         <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
         <eventDef>RD_HistoryEvent_RankDead</eventDef>
         <rankDefs>
-            <li>Seg_COTO_TechAcolytum</li>
-            <li>Seg_COTO_AdeptProbatoris</li>
+            <li>Seg_COTO_TechMilita</li>
+            <li>Seg_COTO_Hypaspist</li>
+            <li>Seg_COTO_Skitarius</li>
+            <li>Seg_COTO_SkitariiVanguard</li>
+            <li>Seg_COTO_SkitariiProvost</li>
+            <li>Seg_COTO_SkitariiVanguardAlpha</li>
+            <li>Seg_COTO_SkitariiRanger</li>
+            <li>Seg_COTO_SkitariiRangerAlpha</li>
+            <li>Seg_COTO_SicarianRuststalker</li>
+            <li>Seg_COTO_SicarianInfiltrator</li>
+            <li>Seg_COTO_SicarianPrinceps</li>
+            <li>Seg_COTO_SkitariiMarshal</li>
         </rankDefs>
         <affectedRanks>
             <li>Seg_COTO_TechAcolytum</li>
@@ -171,6 +193,18 @@
             <li>Seg_COTO_MagosMyrmidax</li>
             <li>Seg_COTO_FabricatorGeneral</li>
             <li>Seg_COTO_MagosCybernetica</li>
+            <li>Seg_COTO_TechMilita</li>
+            <li>Seg_COTO_Hypaspist</li>
+            <li>Seg_COTO_Skitarius</li>
+            <li>Seg_COTO_SkitariiVanguard</li>
+            <li>Seg_COTO_SkitariiProvost</li>
+            <li>Seg_COTO_SkitariiVanguardAlpha</li>
+            <li>Seg_COTO_SkitariiRanger</li>
+            <li>Seg_COTO_SkitariiRangerAlpha</li>
+            <li>Seg_COTO_SicarianRuststalker</li>
+            <li>Seg_COTO_SicarianInfiltrator</li>
+            <li>Seg_COTO_SicarianPrinceps</li>
+            <li>Seg_COTO_SkitariiMarshal</li>
         </affectedRanks>
         <thoughtDef>RD_RankDead_Satisfied</thoughtDef>
         </li>
@@ -183,9 +217,9 @@
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
     <stages>
         <li>
-            <label>Low-ranking Cultist died</label>
-            <description>A low-ranking member of the Cult died. This is no cause for concern.</description>
-            <baseMoodEffect>0</baseMoodEffect>
+            <label>Skitarius died</label>
+            <description>One of our Skitarii died in the Omnissiah's holy service. This is right and proper.</description>
+            <baseMoodEffect>2</baseMoodEffect>
         </li>
     </stages>
 </ThoughtDef>
