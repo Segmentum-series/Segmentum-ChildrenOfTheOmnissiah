@@ -101,7 +101,7 @@
 				<defaultSecondaryColor>(25,146,198)</defaultSecondaryColor>
 			</li>
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>400</maxCharges>
+				<maxCharges>150</maxCharges>
 				<ammoDef>Uranium</ammoDef>
 				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>60</baseReloadTicks>
@@ -165,7 +165,7 @@
 				
 			</li>
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>500</maxCharges>
+				<maxCharges>100</maxCharges>
 				<ammoDef>Uranium</ammoDef>
 				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>60</baseReloadTicks>
@@ -234,7 +234,7 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>500</maxCharges>
+				<maxCharges>150</maxCharges>
 				<ammoDef>Uranium</ammoDef>
 				<ammoCountToRefill>14</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
 				<baseReloadTicks>40</baseReloadTicks>

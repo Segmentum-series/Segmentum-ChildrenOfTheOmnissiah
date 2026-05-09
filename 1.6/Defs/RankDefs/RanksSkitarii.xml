@@ -249,17 +249,19 @@
     <Seg.RankDef>
         <defName>Seg_COTO_SicarianRuststalker</defName>
         <label>Sicarian Ruststalker</label>
-        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics.</description>
+        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianRuststalker</rankIconPath>
         <rankTier>6</rankTier>
 		<incompatibleRanks>
 			<li>Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
-        <!--RequiredHediff>Seg_COTO_SicarianLeg_Hediff</RequiredHediff-->
         <requiredSkills>
             <Melee>10</Melee>
         </requiredSkills>
+        <requiredGenesAll>
+            <li>Seg_COTO_Gene_Sicarian</li>
+        </requiredGenesAll>
          <givesPassions>
             <li>
             <skill>Melee</skill>
@@ -288,14 +290,13 @@
 			<li>Seg_COTO_SicarianRuststalker</li>
         </incompatibleRanks>
         <ImplantsRequired>8</ImplantsRequired>
-        <RequiredHediffs>
-			<li>Seg_COTO_SicarianLeg_Hediff</li>
-			<!-- <li>Seg_COTO_SicarianInfiltratorCranium_Hediff</li> -->
-		</RequiredHediffs>
         <requiredSkills>
             <Shooting>5</Shooting>
             <Melee>8</Melee>
         </requiredSkills>
+        <requiredGenesAll>
+            <li>Seg_COTO_Gene_Sicarian</li>
+        </requiredGenesAll>
          <givesPassions>
             <li>
             <skill>Melee</skill>
@@ -333,6 +334,9 @@
             <Shooting>8</Shooting>
             <Melee>12</Melee>
         </requiredSkills>
+        <requiredGenesAll>
+            <li>Seg_COTO_Gene_Sicarian</li>
+        </requiredGenesAll>
          <givesPassions>
             <li>
             <skill>Melee</skill>

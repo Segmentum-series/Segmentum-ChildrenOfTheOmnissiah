@@ -384,7 +384,6 @@
 			<li>Seg_COTO_MagosBasicRanged</li>
 			<li>Seg_COTO_MagosBasicMelee</li>
 			<li>Seg_COTO_MagosAdvancedRanged</li>
-			<li>Seg_COTO_MagosAdvancedMelee</li>
 		</weaponTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -699,6 +698,14 @@
 		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
 		<techHediffsMaxAmount>10</techHediffsMaxAmount>
+		<techHediffsRequired Inherit="False">
+			<li>Seg_COTO_SicarianArm</li>
+			<li>Seg_COTO_SicarianArm</li>
+			<li>Seg_COTO_SicarianLeg</li>
+			<li>Seg_COTO_SicarianLeg</li>
+			<li>Seg_COTO_SkitariiDataUplink</li>
+			<li>Seg_COTO_SicarianChordclaws</li>
+		</techHediffsRequired>
         <skills>
             <li>
                 <skill>Shooting</skill>
