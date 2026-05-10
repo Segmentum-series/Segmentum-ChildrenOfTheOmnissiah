@@ -1302,7 +1302,7 @@
 				<soundCast>Seg_COTO_FlechetteSound</soundCast>
 				<warmupTime>2</warmupTime>
 				<range>16.9</range>
-				<burstShotCount>10</burstShotCount>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<muzzleFlashScale>8</muzzleFlashScale>
 			</li>

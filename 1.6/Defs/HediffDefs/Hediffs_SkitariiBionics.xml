@@ -928,7 +928,7 @@
     </comps>
   <stages>
     <li>
-      <painOffset>0.20</painOffset>
+      <painOffset>0.30</painOffset>
     </li>
   </stages>
 </HediffDef>

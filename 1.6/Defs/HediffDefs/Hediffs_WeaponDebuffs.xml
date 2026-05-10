@@ -193,4 +193,19 @@
       </categories>
     </fixedIngredientFilter>
   </RecipeDef>
+   <HediffDef ParentName="BEWH_StatAlteringHediffDef">
+		<defName>Seg_COTO_FlechetteHiddenDamageAdd</defName>
+		<label>Hidden: Report if you see this without dev mode.</label>
+		<description>internal hidden heddif to make the flechette deal more damage on concecutive hits.</description>
+		<stages>
+			<li>
+            <becomeVisible>false</becomeVisible>
+				<statFactors>
+                    <IncomingDamageFactor>1.5</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+            
 </Defs>

@@ -267,6 +267,9 @@
             <skill>Melee</skill>
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
+        <givesAbilities>
+            <li>Seg_COTO_RuststalkerCacophonicCylcone</li>
+        </givesAbilities>
 
     
 

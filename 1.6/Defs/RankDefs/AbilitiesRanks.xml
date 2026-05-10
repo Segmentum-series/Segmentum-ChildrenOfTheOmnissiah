@@ -70,5 +70,65 @@
 			</li>
 		</stages>
 	</HediffDef>
+     <!-- Ruststalker: Cacophonic Cylcone -->
+    <AbilityDef>
+        <defName>Seg_COTO_RuststalkerCacophonicCylcone</defName>
+        <label>Cacophonic Cylcone</label>
+        <description>Become a frenzy of sound and blades, overwhelming your enemies with a cacophony of blades and vibrational energy.</description>
+        <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+        <cooldownTicksRange>90000</cooldownTicksRange>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <statBases>
+            <Ability_Duration>125</Ability_Duration>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Seg_COTO_CacophonicCylconeBuff</hediffDef>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+    <HediffDef ParentName="BEWH_StatAlteringHediffDef">
+		<defName>Seg_COTO_CacophonicCylconeBuff</defName>
+		<label>Cacophonic Cylcone</label>
+		<description>moving as quickly as the speed of sound, {PAWN_nameDef} is in a frenzy. They will strike with increased speed and grace, but have a harder time defending against blows.</description>
+		<stages>
+			<li>
+				<statFactors>
+					<MoveSpeed>1.3</MoveSpeed>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+                    <IncomingDamageFactor>1.2</IncomingDamageFactor>
+
+				</statFactors>
+				<statOffsets>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
 
     </Defs>

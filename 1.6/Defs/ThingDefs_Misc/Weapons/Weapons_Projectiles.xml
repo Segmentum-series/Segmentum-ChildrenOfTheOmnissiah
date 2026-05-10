@@ -147,8 +147,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>22</damageAmountBase>
+			<damageDef>Seg_COTO_FlechetteDamage</damageDef>
+			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationBase>-.25</armorPenetrationBase>
 		<speed>80</speed>
 		</projectile>
@@ -254,19 +254,13 @@
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
-
+			<li Class="Core40k.DefModExtension_AmmoChanger">
+				<unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
+				<effectiveRange>35.9</effectiveRange>
+				<warmupTime>3</warmupTime>
+				<shotsPerBurst>1</shotsPerBurst>
+			</li>
 		</modExtensions>
-		<modExtensions>
-            <li Class="Core40k.DefModExtension_AmmoChanger">
-                <unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
-                <effectiveRange>35.9</effectiveRange>
-                <warmupTime>3</warmupTime>
-                <shotsPerBurst>1</shotsPerBurst>
-            </li>
-			 	
-
-
-        </modExtensions>
 	</ThingDef>
 	 
 

@@ -73,4 +73,14 @@
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been shown the power of the sun.</deathMessage>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>Seg_COTO_FlechetteDamage</defName>
+		<label>flechette dart lacerations</label>
+		<additionalHediffs>
+       		<li>
+            	<hediff>Seg_COTO_FlechetteHiddenDamageAdd</hediff>
+            	<severityPerDamageDealt>1</severityPerDamageDealt>
+			</li>
+    	</additionalHediffs>
+	</DamageDef>
 </Defs>
