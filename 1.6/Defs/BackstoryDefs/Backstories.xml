@@ -343,12 +343,14 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 		<workDisables>
-			<li>Artistic</li>
+			<li>ManualSkilled</li>
+			<li>ManualDumb</li>
+			<li>Social</li>
+			<li>Intellectual</li>
 		</workDisables>
 		<skillGains>
 			<Shooting>2</Shooting>
 			<Melee>4</Melee>
-			<Social>-5</Social>
 		</skillGains>
 		<forcedTraits>
 			<Transhumanist />
