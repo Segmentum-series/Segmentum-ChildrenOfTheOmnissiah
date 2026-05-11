@@ -249,7 +249,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_SicarianRuststalker</defName>
         <label>Sicarian Ruststalker</label>
-        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
+        <description>Ruststalkers are the elite of the Sicarian killclades, forming agile commando squads who excel at terrifying shock tactics. Some Militarum personnel nickname them 'shivs' for the shivering of their transonic weapons and the ferocity with which they gut their enemies. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianRuststalker</rankIconPath>
         <rankTier>6</rankTier>
 		<incompatibleRanks>
@@ -268,7 +268,7 @@
             <modType>AddOneLevel</modType> </li>
         </givesPassions>
         <givesAbilities>
-            <li>Seg_COTO_RuststalkerCacophonicCylcone</li>
+            <li>Seg_COTO_RuststalkerShiveringFrenzy</li>
         </givesAbilities>
 
     
@@ -286,7 +286,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_SicarianInfiltrator</defName>
         <label>Sicarian Infiltrator</label>
-        <description>Sicarian Infiltrators are cybernetic scout troops who are so heavily modified as to barely deserve the label of 'human' anymore. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
+        <description>Sicarian Infiltrators are cybernetic scout troops who are so heavily modified as to barely deserve the label of 'human' anymore. They act as skirmishers and reconnaissance assault troops for the Skitarii Clades. Grievously wounded skitarii are often converted into Sicarians so that they can still be of use to the Machine Cult.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SicarianInfiltrator</rankIconPath>
         <rankTier>6</rankTier>
 		<incompatibleRanks>

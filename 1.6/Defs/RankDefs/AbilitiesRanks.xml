@@ -1,7 +1,7 @@
 <Defs>
  <AbilityDef>
         <defName>Seg_COTO_MBEmergencyAid</defName>
-        <label>Emergency Aid</label>
+        <label>Emergency aid</label>
         <description>Provides emergency treatment to a downed or bedridden pawn, administering stimulants to ease pain and speed healing. The quick, precise care tends to all the pawn's wounds, providing a slight but immediate recovery.</description>
         <cooldownTicksRange>60000</cooldownTicksRange>
         <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
@@ -72,9 +72,9 @@
 	</HediffDef>
      <!-- Ruststalker: Cacophonic Cylcone -->
     <AbilityDef>
-        <defName>Seg_COTO_RuststalkerCacophonicCylcone</defName>
-        <label>Cacophonic Cylcone</label>
-        <description>Become a frenzy of sound and blades, overwhelming your enemies with a cacophony of blades and vibrational energy.</description>
+        <defName>Seg_COTO_RuststalkerShiveringFrenzy</defName>
+        <label>Shivering frenzy</label>
+        <description>The Ruststalker stimulates its neural pathways and synthetic muscles and nerves to move and strike with great speed, though at the cost of devoting less bio-computational power to avoiding incoming blows.</description>
         <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
         <cooldownTicksRange>90000</cooldownTicksRange>
         <jobDef>CastAbilityOnThing</jobDef>
@@ -105,16 +105,16 @@
         <comps>
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
-                <hediffDef>Seg_COTO_CacophonicCylconeBuff</hediffDef>
+                <hediffDef>Seg_COTO_RuststalkerShiveringFrenzyBuff</hediffDef>
                 <onlyApplyToSelf>True</onlyApplyToSelf>
                 <replaceExisting>true</replaceExisting>
             </li>
         </comps>
     </AbilityDef>
     <HediffDef ParentName="BEWH_StatAlteringHediffDef">
-		<defName>Seg_COTO_CacophonicCylconeBuff</defName>
-		<label>Cacophonic Cylcone</label>
-		<description>moving as quickly as the speed of sound, {PAWN_nameDef} is in a frenzy. They will strike with increased speed and grace, but have a harder time defending against blows.</description>
+		<defName>Seg_COTO_RuststalkerShiveringFrenzyBuff</defName>
+		<label>Shivering frenzy</label>
+		<description>{PAWN_nameDef} is in a frenzy. They move and strike with great speed, but devote less bio-computational power than usual to avoiding incoming blow.</description>
 		<stages>
 			<li>
 				<statFactors>
