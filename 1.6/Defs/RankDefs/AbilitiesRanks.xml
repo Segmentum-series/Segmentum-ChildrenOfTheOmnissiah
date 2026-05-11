@@ -124,7 +124,7 @@
 
 				</statFactors>
 				<statOffsets>
-					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
