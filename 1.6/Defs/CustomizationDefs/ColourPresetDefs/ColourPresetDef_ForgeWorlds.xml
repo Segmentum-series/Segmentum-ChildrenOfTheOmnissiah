@@ -59,6 +59,7 @@
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MarshalBackpack</li>
 			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
+			<li MayRequire="RedMattis.BetterPrerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 

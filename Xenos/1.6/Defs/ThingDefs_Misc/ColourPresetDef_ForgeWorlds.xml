@@ -23,13 +23,6 @@
 		</appliesTo>
 	</Core40k.ColourPresetDef>
 
-	<!-- Skitarii powerpack -->
-	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_SkitariiBackpack" Abstract="True">
-		<appliesTo>
-			<li>Seg_COTO_Apparel_SicarianBackpack</li>
-		</appliesTo>
-	</Core40k.ColourPresetDef>
-
 
 <!-- Mars palette -->
 	<!-- Sicarian battle armour -->
