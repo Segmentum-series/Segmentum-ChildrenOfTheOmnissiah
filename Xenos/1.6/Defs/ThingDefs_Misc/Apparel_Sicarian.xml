@@ -297,20 +297,6 @@
 			<tags>
 				<li>Seg_COTO_SicarianTag</li>
 			</tags>
-			<drawData>
-				<dataSouth>
-					<layer>15</layer>
-				</dataSouth>
-				<dataWest>
-					<layer>80</layer>
-				</dataWest>
-				<dataEast>
-					<layer>80</layer>
-				</dataEast>
-				<dataNorth>
-					<layer>100</layer>
-				</dataNorth>
-			</drawData>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
