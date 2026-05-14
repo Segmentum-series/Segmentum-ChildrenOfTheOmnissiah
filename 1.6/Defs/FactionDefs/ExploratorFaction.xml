@@ -160,7 +160,7 @@
 				</options>
 			</li>
 			<!-- Sicarian Killclade -->
-			<li>
+			<li MayRequire="redmattis.betterprerequisites">
 				<kindDef>Combat</kindDef>
 				<commonality>20</commonality>
 				<options>
@@ -179,8 +179,8 @@
 					<Seg_COTO_SkitariiVanguardAlpha>4</Seg_COTO_SkitariiVanguardAlpha>
 					<Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
 					<Seg_COTO_SkitariiMarshal>1</Seg_COTO_SkitariiMarshal>
-					<Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator>
+					<Seg_COTO_SicarianRuststalker MayRequire="redmattis.betterprerequisites">8</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator MayRequire="redmattis.betterprerequisites">8</Seg_COTO_SicarianInfiltrator>
 					<Seg_COTO_AuxiliusMyrmidon>4</Seg_COTO_AuxiliusMyrmidon>
 					<Seg_COTO_MagosMyrmidon>2</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
@@ -207,9 +207,9 @@
 					<Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
 					<Seg_COTO_SkitariiRangerAlpha>3</Seg_COTO_SkitariiRangerAlpha>
 					<Seg_COTO_SkitariiMarshal>1</Seg_COTO_SkitariiMarshal>
-					<Seg_COTO_SicarianRuststalker>8</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>8</Seg_COTO_SicarianInfiltrator>
-					<Seg_COTO_SicarianPrinceps>2</Seg_COTO_SicarianPrinceps>
+					<Seg_COTO_SicarianRuststalker MayRequire="redmattis.betterprerequisites">8</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator MayRequire="redmattis.betterprerequisites">8</Seg_COTO_SicarianInfiltrator>
+					<Seg_COTO_SicarianPrinceps MayRequire="redmattis.betterprerequisites">2</Seg_COTO_SicarianPrinceps>
 					<Seg_COTO_AuxiliusMyrmidon>8</Seg_COTO_AuxiliusMyrmidon>
 					<Seg_COTO_MagosMyrmidon>10</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
