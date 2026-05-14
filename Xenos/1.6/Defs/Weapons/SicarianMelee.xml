@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Transonic Blade -->
+	<ThingDef ParentName="MeleePowerWeapon_base">
+		<defName>Seg_COTO_MeleeWeapon_TransonicBlade</defName>
+		<label>transonic blade</label>
+		<description>Transonic weaponry use sonic fields to vibrate at the resonant frequency of any material they encounter, slicing through flesh, bone, and armour with equal ease. These blades are most often used by the terrifying Sicarian corps of the Mechanicus.</description>
+		<soundInteract>Seg_COTO_PoweredMeleeWeaponEquipSound</soundInteract>
+		<meleeHitSound>Seg_COTO_PoweredMeleeWeaponImpactSound</meleeHitSound>
+		<equippedAngleOffset>-60</equippedAngleOffset>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Melee_TransonicBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<Mass>4</Mass>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>120</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_SicarianKillclades</li>
+				<li>LongBlades</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>400</displayPriority>
+		</recipeMaker>
+		<weaponTags>
+			<li>Seg_COTO_TransonicMelee</li>
+		</weaponTags>		
+		<tools>
+			<li>
+				<label>hilt</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>2</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

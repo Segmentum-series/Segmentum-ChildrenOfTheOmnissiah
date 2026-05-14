@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Stubcarbine -->
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
+		<defName>Seg_COTO_Gun_Stubcarbine</defName>
+		<label>stubcarbine</label>
+		<description>Stubcarbines may be small, but they can fire a devastating barrage of stubber bullets at targets at close range - a tactic often employed by Sicarian Infiltrators when ambushing lightly armoured targets.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_Stubcarbines</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_SicarianKillclades</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>2.0</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<MarketValue>420</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Stubber</defaultProjectile>
+				<warmupTime>0.33</warmupTime>
+				<range>14.9</range>
+				<burstShotCount>7</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_StubberSound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Stubcarbine</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+
+		<comps>
+			<li Class="Core40k.CompProperties_WeaponDecoration" />
+			
+			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+			<li>Seg_COTO_Bullet_Stubber</li>
+			<li>SEG_COTO_RadBullet</li>
+			</availableProjectiles>
+			</li> -->
+		</comps>
+	</ThingDef>
+
+	<!-- Flechette Blaster -->
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
+		<defName>Seg_COTO_Gun_FlechetteBlaster</defName>
+		<label>flechette blaster</label>
+		<description>A lightweight but potent weapon which fires clouds of holy adamantium darts, each with their own homing machine spirit, which can shred targets at medium range.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_FlechetteBlasters</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<statBases>
+			<Mass>2</Mass>
+			<EquipDelay>.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.46</AccuracyLong>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>1259</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Flechette</defaultProjectile>
+				<soundCast>Seg_COTO_FlechetteSound</soundCast>
+				<warmupTime>2</warmupTime>
+				<range>16.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Seg_Adamantium>10</Seg_Adamantium>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_SicarianKillclades</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Flechette</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
+
+
