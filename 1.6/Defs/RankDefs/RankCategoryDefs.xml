@@ -3,7 +3,7 @@
     <Core40k.RankCategoryDef>
         <defName>Seg_COTO_TechPriestRankCategory</defName>
         <label>Cult Mechanicus</label>
-        <description>Ranks of the Tech Priests and Skitarri of the Machine Cult.</description>
+        <description>Ranks of the techpriests and skitarii of the Machine Cult.</description>
         <ranks>
             <li>
                 <rankDef>Seg_COTO_TechAcolytum</rankDef>
