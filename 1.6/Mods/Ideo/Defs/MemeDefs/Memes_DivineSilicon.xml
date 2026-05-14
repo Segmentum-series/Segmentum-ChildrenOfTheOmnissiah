@@ -99,10 +99,10 @@
             <li>Seg_COTO_SkitariiVanguardAlpha</li>
             <li>Seg_COTO_SkitariiRanger</li>
             <li>Seg_COTO_SkitariiRangerAlpha</li>
-            <li>Seg_COTO_SicarianRuststalker</li>
-            <li>Seg_COTO_SicarianInfiltrator</li>
-            <li>Seg_COTO_SicarianPrinceps</li>
-            <li>Seg_COTO_SkitariiMarshal</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianPrinceps</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SkitariiMarshal</li>
         </affectedRanks>
         <!--  mood thought to self   -->
         <thoughtDef>RD_RankDead_Troubling</thoughtDef>
@@ -158,9 +158,9 @@
             <li>Seg_COTO_SkitariiVanguardAlpha</li>
             <li>Seg_COTO_SkitariiRanger</li>
             <li>Seg_COTO_SkitariiRangerAlpha</li>
-            <li>Seg_COTO_SicarianRuststalker</li>
-            <li>Seg_COTO_SicarianInfiltrator</li>
-            <li>Seg_COTO_SicarianPrinceps</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianPrinceps</li>
             <li>Seg_COTO_SkitariiMarshal</li>
         </rankDefs>
         <affectedRanks>
@@ -201,10 +201,10 @@
             <li>Seg_COTO_SkitariiVanguardAlpha</li>
             <li>Seg_COTO_SkitariiRanger</li>
             <li>Seg_COTO_SkitariiRangerAlpha</li>
-            <li>Seg_COTO_SicarianRuststalker</li>
-            <li>Seg_COTO_SicarianInfiltrator</li>
-            <li>Seg_COTO_SicarianPrinceps</li>
-            <li>Seg_COTO_SkitariiMarshal</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianPrinceps</li>
+            <li MayRequire="redmattis.betterprerequisites">Seg_COTO_SkitariiMarshal</li>
         </affectedRanks>
         <thoughtDef>RD_RankDead_Satisfied</thoughtDef>
         </li>

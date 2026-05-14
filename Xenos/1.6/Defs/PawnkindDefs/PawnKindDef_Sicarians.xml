@@ -4,6 +4,7 @@
     <!--Sicarian Base -->
     <PawnKindDef ParentName="Seg_COTO_MechanicusBase" Name="Seg_COTO_SicarianPawnBase" Abstract="True">
 		<race>Human</race>
+        <defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
 		<xenotypeSet>
 		<xenotypeChances>
 			<Seg_COTO_Sicarian>999</Seg_COTO_Sicarian>
@@ -16,6 +17,7 @@
         <apparelRequired Inherit="False">
             <li>Seg_COTO_Apparel_SicarianBattleArmour</li>
             <li>Seg_COTO_Apparel_SicarianBackpack</li>
+            <li>Seg_COTO_Apparel_SkitariiFatigues</li>
         </apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<techHediffsTags>
@@ -98,6 +100,7 @@
     <PawnKindDef ParentName="Seg_COTO_SicarianPawnBase">
         <defName>Seg_COTO_SicarianRuststalker</defName>
 		<label>Sicarian Ruststalker</label>
+          <defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
         <combatPower>220</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
@@ -140,6 +143,7 @@
     <PawnKindDef ParentName="Seg_COTO_SicarianPawnBase">
         <defName>Seg_COTO_SicarianPrinceps</defName>
 		<label>Sicarian Princeps</label>
+        <defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
         <combatPower>280</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
@@ -162,6 +166,7 @@
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SicarianRuststalkerMask</li>
+            
         </apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>

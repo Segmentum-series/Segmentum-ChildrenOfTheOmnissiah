@@ -110,6 +110,14 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
+				<extraDecorationsByPawnKindDef>
+					 <li>
+						<key>Seg_COTO_ArchmagosDominus</key>
+						<value>
+							<li>Seg_COTO_Deco_MagosHoodGearTeeth</li>
+						</value>
+                    </li>
+                </extraDecorationsByPawnKindDef>
 			</li>
 		</comps>
 		<modExtensions>
@@ -189,6 +197,20 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
+				<extraDecorationsByPawnKindDef>
+                    <li>
+                        <key>Seg_COTO_MagosMyrmidon</key>
+                        <value>
+                            <li>Seg_COTO_Deco_MagosRobeGearStripe</li>
+                        </value>
+                    </li>
+					 <li>
+						<key>Seg_COTO_ArchmagosDominus</key>
+						<value>
+							<li>Seg_COTO_Deco_MagosRobeGearTeeth</li>
+						</value>
+                    </li>
+                </extraDecorationsByPawnKindDef>
 			</li>
 		</comps>
 		<modExtensions>
@@ -270,6 +292,20 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
+				<extraDecorationsByPawnKindDef>
+                    <li>
+                        <key>Seg_COTO_MagosMyrmidon</key>
+                        <value>
+                            <li>Seg_COTO_Deco_MagosCassockGearStripe</li>
+                        </value>
+                    </li>
+					 <li>
+						<key>Seg_COTO_ArchmagosDominus</key>
+						<value>
+							<li>Seg_COTO_Deco_MagosCassockGearTeeth</li>
+						</value>
+                    </li>
+                </extraDecorationsByPawnKindDef>
 			</li>
 		</comps>
 		<modExtensions>
@@ -509,6 +545,14 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
+				<extraDecorationsByPawnKindDef>
+                    <li>
+                        <key>Seg_COTO_MagosExplorator</key>
+                        <value>
+                            <li>Seg_COTO_Deco_ExploratorHoodGearTeeth</li>
+                        </value>
+                    </li>
+                </extraDecorationsByPawnKindDef>
 			</li>
 		</comps>
 		<modExtensions>
@@ -588,6 +632,14 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
+				<extraDecorationsByPawnKindDef>
+                    <li>
+                        <key>Seg_COTO_MagosExplorator</key>
+                        <value>
+                            <li>Seg_COTO_Deco_ExploratorRobeGearTeeth</li>
+                        </value>
+                    </li>
+                </extraDecorationsByPawnKindDef>
 			</li>
 		</comps>
 		<modExtensions>

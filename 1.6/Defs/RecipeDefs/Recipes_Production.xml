@@ -338,7 +338,7 @@
 				<li>Seg_COTO_Apparel_MagosBackpack</li>
 				<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 				<li>Seg_COTO_Apparel_MarshalBackpack</li>
-				<li>Seg_COTO_Apparel_SicarianBackpack</li>
+				<li MayRequire="redmattis.betterprerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>

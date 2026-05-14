@@ -84,8 +84,8 @@
         <rankTier>4</rankTier>
 		<incompatibleRanks>
 			<li>Seg_COTO_SkitariiRanger</li>
-			<li>Seg_COTO_SicarianRuststalker</li>
-			<li>Seg_COTO_SicarianInfiltrator</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
@@ -152,8 +152,8 @@
 		<incompatibleRanks>
 			<li>Seg_COTO_SkitariiVanguard</li>
 			<li>Seg_COTO_SkitariiRanger</li>
-			<li>Seg_COTO_SicarianRuststalker</li>
-			<li>Seg_COTO_SicarianInfiltrator</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>
@@ -186,8 +186,8 @@
         <rankTier>4</rankTier>
 		<incompatibleRanks>
 			<li>Seg_COTO_SkitariiVanguard</li>
-			<li>Seg_COTO_SicarianRuststalker</li>
-			<li>Seg_COTO_SicarianInfiltrator</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+			<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
         <ImplantsRequired>3</ImplantsRequired>
         <requiredSkills>

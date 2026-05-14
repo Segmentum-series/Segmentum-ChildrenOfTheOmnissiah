@@ -1,0 +1,46 @@
+<Patch>
+    <!--i dont remember if this has this already-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="PlayerColony"]</xpath>
+        <value>
+            <modExtensions/>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="PlayerColony"]/modExtensions</xpath>
+        <value>
+            <li Class="Core40k.DefModExtension_DefaultMultiColor">
+                <defaultColorSelection>
+                    <li>
+                        <key>Seg_COTO_MagosBackpack_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_SkitariiRangerHood_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_SkitariiVanguardHelmet_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_SkitariiWarPlate_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_SkitariiFatigues_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_SkitariiBackpack_ColorPreset_1</key>
+                        <value>TryMatch</value>
+                    </li>
+                    <li>
+                        <key>Seg_COTO_MagosApparel_ColorPreset_1</key>
+                        <value>Default</value>
+                    </li>
+                </defaultColorSelection>
+            </li>
+        </value>
+    </Operation>
+</Patch>

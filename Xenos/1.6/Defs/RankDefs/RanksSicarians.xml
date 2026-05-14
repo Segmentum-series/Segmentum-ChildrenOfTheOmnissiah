@@ -23,6 +23,17 @@
         <givesAbilities>
             <li>Seg_COTO_RuststalkerShiveringFrenzy</li>
         </givesAbilities>
+        <removeRanksOnUnlock>
+            <li>Seg_COTO_TechMilita</li>
+            <li>Seg_COTO_Hypaspist</li>
+            <li>Seg_COTO_Skitarius</li>
+            <li>Seg_COTO_SkitariiVanguard</li>
+            <li>Seg_COTO_SkitariiVanguardAlpha</li>
+            <li>Seg_COTO_SkitariiProvost</li>
+            <li>Seg_COTO_SkitariiRanger</li>
+            <li>Seg_COTO_SkitariiRangerAlpha</li>
+            <li>Seg_COTO_SkitariiMarshal</li>
+        </removeRanksOnUnlock>
 
     
 
@@ -61,6 +72,17 @@
         <givesVFEAbilities>
         <li>Seg_COTO_WaveburstAbility</li> 
         </givesVFEAbilities>
+        <removeRanksOnUnlock>
+            <li>Seg_COTO_TechMilita</li>
+            <li>Seg_COTO_Hypaspist</li>
+            <li>Seg_COTO_Skitarius</li>
+            <li>Seg_COTO_SkitariiVanguard</li>
+            <li>Seg_COTO_SkitariiVanguardAlpha</li>
+            <li>Seg_COTO_SkitariiProvost</li>
+            <li>Seg_COTO_SkitariiRanger</li>
+            <li>Seg_COTO_SkitariiRangerAlpha</li>
+            <li>Seg_COTO_SkitariiMarshal</li>
+        </removeRanksOnUnlock>
 
     
 

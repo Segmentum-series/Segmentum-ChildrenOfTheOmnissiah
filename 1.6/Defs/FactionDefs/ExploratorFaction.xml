@@ -164,9 +164,9 @@
 				<kindDef>Combat</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<Seg_COTO_SicarianRuststalker>6</Seg_COTO_SicarianRuststalker>
-					<Seg_COTO_SicarianInfiltrator>6</Seg_COTO_SicarianInfiltrator>
-					<Seg_COTO_SicarianPrinceps>1</Seg_COTO_SicarianPrinceps>
+					<Seg_COTO_SicarianRuststalker MayRequire="redmattis.betterprerequisites">6</Seg_COTO_SicarianRuststalker>
+					<Seg_COTO_SicarianInfiltrator MayRequire="redmattis.betterprerequisites">6</Seg_COTO_SicarianInfiltrator>
+					<Seg_COTO_SicarianPrinceps MayRequire="redmattis.betterprerequisites">1</Seg_COTO_SicarianPrinceps>
 				</options>
 			</li>
 			<!-- Skitarii/myrmidon force -->
