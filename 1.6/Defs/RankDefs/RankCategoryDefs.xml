@@ -277,21 +277,21 @@
                     <Seg_COTO_SkitariiRanger>25</Seg_COTO_SkitariiRanger>
                 </rankRequirements>
             </li>
-             <li>
+             <li MayRequire="redmattis.betterprerequisites">
                 <rankDef>Seg_COTO_SicarianRuststalker</rankDef>
                 <displayPosition>(5, 9)</displayPosition>
                  <rankRequirements>
                     <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
                 </rankRequirements>
             </li>
-             <li>
+             <li MayRequire="redmattis.betterprerequisites">
                 <rankDef>Seg_COTO_SicarianInfiltrator</rankDef>
                 <displayPosition>(5, 10)</displayPosition>
                  <rankRequirements>
                     <Seg_COTO_Skitarius>10</Seg_COTO_Skitarius>
                 </rankRequirements>
             </li>
-            <li>
+            <li MayRequire="redmattis.betterprerequisites">
                 <rankDef>Seg_COTO_SicarianPrinceps</rankDef>
                 <displayPosition>(6, 9.5)</displayPosition>
                 <rankRequirementsOneAmong>
