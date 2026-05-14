@@ -4,7 +4,7 @@
         <defName>Seg_COTO_RuststalkerShiveringFrenzy</defName>
         <label>Shivering frenzy</label>
         <description>The Ruststalker stimulates its neural pathways and synthetic muscles and nerves to move and strike with great speed, though at the cost of devoting less bio-computational power to avoiding incoming blows.</description>
-        <iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+        <iconPath>UI/Abilities/Seg_COTO_Ability_ShiveringFrenzy</iconPath>
         <cooldownTicksRange>90000</cooldownTicksRange>
         <jobDef>CastAbilityOnThing</jobDef>
         <casterMustBeCapableOfViolence>False</casterMustBeCapableOfViolence>
