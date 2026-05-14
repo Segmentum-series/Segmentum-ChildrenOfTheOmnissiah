@@ -65,18 +65,18 @@
 		</graphicData>
 	</ThingDef>
 
-  <FleckDef ParentName="FleckBase_Thrown">
-        <defName>PhosphorFireGlow</defName>
-        <graphicData>
+ <FleckDef ParentName="FleckBase_Thrown">
+    <defName>PhosphorFireGlow</defName>
+    <graphicData>
         <texPath>Things/Mote/PhosphorFireGlow</texPath>
         <shaderType>Mote</shaderType>
-        </graphicData>
-        <altitudeLayer>MoteOverhead</altitudeLayer>
-        <fadeInTime>0.75</fadeInTime>
-        <solidTime>1.08</solidTime>
-        <fadeOutTime>0.8</fadeOutTime>
-    </FleckDef>
-
+        <color>(1,1,1,0.1)</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.5</fadeInTime>
+    <solidTime>1</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+</FleckDef>
     <FleckDef ParentName="FleckBase_Thrown">
         <defName>PhosphorMicroSparks</defName>
         <graphicData>
