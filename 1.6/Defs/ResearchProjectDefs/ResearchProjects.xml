@@ -88,26 +88,6 @@
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
-<!-- Plasma induction -->
-	<ResearchProjectDef>
-		<defName>Seg_PlasmaInduction</defName><!-- To be moved later -->
-		<label>plasma induction</label>
-		<description>Be granted the consecrated rites of plasma induction, allowing the containment and manipulation of extreme thermal energies for use in weapon systems, power generation, and advanced industrial applications.</description>
-		<baseCost>2500</baseCost>
-		<techLevel>Spacer</techLevel>
-			<researchViewX>19.00</researchViewX>
-			<researchViewY>1.80</researchViewY>
-		<prerequisites>
-			<li>AdvancedFabrication</li>
-			<li>Batteries</li>
-			<li>Seg_COTO_ArcPermacapacitors</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-	</ResearchProjectDef>
-
 <!-- Matter destabilization -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_MatterDestabilization</defName>

@@ -1,0 +1,8 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="Seg_PlasmaInduction"]/prerequisites</xpath>
+    <value>
+      <li>Seg_COTO_ArcPermacapacitors</li>
+    </value>
+  </Operation>
+  </Patch>
