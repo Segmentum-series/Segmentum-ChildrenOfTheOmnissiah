@@ -3,11 +3,28 @@
 
   <RulePackDef>
     <defName>NamerDeityOmnissian</defName>
+    <include>
+      <li>NamerOmnissianOptions</li>
+    </include>
     <rulePack>
       <rulesStrings>
-        <li>r_deityName->The Machine God</li>
-        <li>r_deityName->The Omnissiah</li>
-        <li>r_deityName->The Motive Force</li>
+        <li>r_deityName->[omnissiandeity]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>NamerOmnissianOptions</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>omnissiandeity->The Machine God</li>
+        <li>omnissiandeity->The Omnissiah</li>
+        <li>omnissiandeity->The Motive Force</li>
+        <li>omnissiandeity->The Prime Architect</li>
+        <li>omnissiandeity->The God-Machine</li>
+        <li>omnissiandeity->The Deus Mechanicus</li>
+        <li>omnissiandeity->The Triple God</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
