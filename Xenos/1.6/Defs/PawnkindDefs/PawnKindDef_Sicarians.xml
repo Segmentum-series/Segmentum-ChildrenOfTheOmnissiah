@@ -189,6 +189,24 @@
                 <range>9~14</range>
             </li>
         </skills>
+        <modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_SicarianRuststalkerMask</key>
+            <value>
+                <li>Seg_COTO_SicarianRuststalkerMask_PrincepsHood</li>
+            </value>
+        </li>
+        <li>
+            <key>Seg_COTO_Apparel_SicarianBattleArmour</key>
+            <value>
+                <li>Seg_COTO_Deco_SicarianBattleArmour_PrincepsCape</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+</modExtensions>
     </PawnKindDef>
 	
 </Defs>

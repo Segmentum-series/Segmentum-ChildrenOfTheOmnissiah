@@ -1,15 +1,15 @@
 <Patch>
-    <!--i dont remember if this has this already-->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/FactionDef[defName="PlayerColony"]</xpath>
         <value>
             <modExtensions/>
         </value>
     </Operation>
+
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/FactionDef[defName="PlayerColony"]/modExtensions</xpath>
         <value>
-            <li Class="Core40k.DefModExtension_DefaultMultiColor">
+            <li Class="Core40k.DefModExtension_PawnKindCustomization">
                 <defaultColorSelection>
                     <li>
                         <key>Seg_COTO_MagosBackpack_ColorPreset_1</key>

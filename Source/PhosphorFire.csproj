@@ -34,12 +34,21 @@
 <Reference Include="FireFlamework">
     <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Assemblies\FireFlamework.dll</HintPath>
 </Reference>
+<Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+
   <Compile Include="Thing_PhosphorFire.cs" />
   <Compile Include="RanksParts.cs" />
   <Compile Include="FerricLure.cs" />
   <Compile Include="FloorCovering.cs" />
   <Compile Include="Waveburst.cs" />
-
   </ItemGroup>
 </Project>
 

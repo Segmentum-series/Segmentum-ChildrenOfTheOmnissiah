@@ -51,7 +51,7 @@
 			</li>
 		</backstoryFilters>
 		<modExtensions>
-			<li Class="Core40k.DefModExtension_DefaultMultiColor">
+			<li Class="Core40k.DefModExtension_PawnKindCustomization">
 			<defaultColorSelection>
 				<li>
 					<key>Seg_COTO_MagosBackpack_ColorPreset_7</key>
@@ -220,13 +220,6 @@
 		<disallowedRaidAgeRestrictions>
 			<li>Children</li>
 		</disallowedRaidAgeRestrictions>
-		<!--<modExtensions>
-			<li Class="Core40k.DefModExtension_DefaultMultiColor">
-				<defaultColorSelection>
-					<li>Seg_COTO_SkitariiWarPlate_ColorPreset_6</li>
-				</defaultColorSelection>
-			</li>
-		</modExtensions>-->
 	</FactionDef>
 	
 
