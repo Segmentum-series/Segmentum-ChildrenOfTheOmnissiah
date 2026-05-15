@@ -7,73 +7,77 @@
     <defName>NamerIdeoRelicOmnissian</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_ideoRelicName(p=2)->[first][second]</li>
-        <li>r_ideoRelicName->[thingLabel] of [memeConcept]</li>
-        <li>r_ideoRelicName->[memeAdjective] [thingLabel]</li>
-        <li>r_ideoRelicName->[memeHyphenPrefix]-[thingLabel]</li>
-        <li>r_ideoRelicName->[memeAdjective] [relic]</li>
-        <li>r_ideoRelicName->[relic] of [memeConcept]</li>
-        <li>r_ideoRelicName->[memeHyphenPrefix]-[relic]</li>
+        <li>r_ideoRelicName->[holiness] [omnissianrelic] of [forgeworld]</li>
+        <li>r_ideoRelicName->[forgeworldadjective] [omnissianrelic]</li>
+        <li>r_ideoRelicName->[omnissianHyphenPrefix]-[omnissianrelic]</li>
+        <li>r_ideoRelicName->[holiness] [omnissianHyphenPrefix]-[omnissianrelic]</li>
+        <li>r_ideoRelicName->[forgeworldadjective] [OmnissianHyphenPrefix]-[omnissianrelic]</li>
+        <li>r_ideoRelicName->[omnissianrelic] of [forgeworld]</li>
+        <li>r_ideoRelicName->[omnissianrelic] of [omnissianconcept]</li>
 
-        <li>relic->relic</li>
-        <li>relic->artifact</li>
-        <li>relic->keepsake</li>
-        <li>relic->memento</li>
-        <li>relic->remnant</li>
-        <li>relic->heirloom</li>
-        <li>relic->remembrance</li>
+        <li>omnissianrelic->relic</li>
+        <li>omnissianrelic->artefact</li>
+        <li>omnissianrelic->technology</li>
+        <li>omnissianrelic->inheritance</li>
+        <li>omnissianrelic->legacy</li>
 
-        <li>first(p=5)->[memeHyphenPrefix]</li>
-        <li>first->long</li>
-        <li>first->sky</li>
-        <li>first->star</li>
-        <li>first->deep</li>
-        <li>first->far</li>
+        <li>holiness->holy</li>
+        <li>holiness->hallowed</li>
+        <li>holiness->revered</li>
+        <li>holiness->star</li>
+        <li>holiness->deep</li>
+        <li>holiness->far</li>
 
-        <li>first->dead</li>
-        <li>first->life</li>
-        <li>first->light</li>
-        <li>first->dark</li>
-        <li>first->end</li>
+        <li>forgeworld->Mars</li>
+        <li>forgeworld->Agripinaa</li>
+        <li>forgeworld->Angstrom</li>
+        <li>forgeworld->Accatran</li>
+        <li>forgeworld->Columnus</li>
+        <li>forgeworld->Deimos</li>
+        <li>forgeworld->Demios Binary</li>
+        <li>forgeworld->Eufrates II</li>
+        <li>forgeworld->Graia</li>
+        <li>forgeworld->Kantrael</li>
+        <li>forgeworld->Lucius</li>
+        <li>forgeworld->Magnax</li>
+        <li>forgeworld->Phaeton</li>
+        <li>forgeworld->Stygies VIII</li>
+        <li>forgeworld->Thrax</li>
+        <li>forgeworld->Triplex Phall</li>
+        <li>forgeworld->Voss</li>
+        <li>forgeworld->Zhao-Arkkad</li>
 
-        <li>first->hor</li>
-        <li>first->an</li>
-        <li>first->ex</li>
-        <li>first->ton</li>
-        <li>first->dow</li>
-        <li>first->bor</li>
-        <li>first->ven</li>
-        <li>first->xan</li>
-        <li>first->arl</li>
-        <li>first->hex</li>
-        <li>first->bax</li>
-        <li>first->cel</li>
-        <li>first->loc</li>
-        <li>first->pole</li>
-        <li>first->lode</li>
+        <li>forgeworldadjective->Martian</li>
+        <li>forgeworldadjective->Agripinaan</li>
+        <li>forgeworldadjective->Angstromite</li>
+        <li>forgeworldadjective->Accatran</li>
+        <li>forgeworldadjective->Columnan</li>
+        <li>forgeworldadjective->Deimosian</li>
+        <li>forgeworldadjective->Demios Binarian</li>
+        <li>forgeworldadjective->Eufratean</li>
+        <li>forgeworldadjective->Graian</li>
+        <li>forgeworldadjective->Kantraeli</li>
+        <li>forgeworldadjective->Lucian</li>
+        <li>forgeworldadjective->Magnaxi</li>
+        <li>forgeworldadjective->Phaetic</li>
+        <li>forgeworldadjective->Stygian</li>
+        <li>forgeworldadjective->Thraxian</li>
+        <li>forgeworldadjective->Triplexian</li>
+        <li>forgeworldadjective->Vossian</li>
+        <li>forgeworldadjective->Zhao-Arkkadian</li>
 
-        <li>second->caller</li>
-        <li>second->bringer</li>
-        <li>second->speaker</li>
-        <li>second->lier</li>
-        <li>second->link</li>
-        <li>second->bond</li>
-        <li>second->loop</li>
-        <li>second->nexus</li>
-        <li>second->core</li>
-        <li>second->crux</li>
-        <li>second->mass</li>
-        <li>second->corpus</li>
-        <li>second->focus</li>
-        <li>second->lens</li>
-        <li>second->light</li>
-        <li>second->shadow</li>
-        <li>second->sure</li>
-        <li>second->locus</li>
-        <li>second->form</li>
-        <li>second->finger</li>
-        <li>second->lash</li>
-        <li>second->krome</li>
+        <li>omnissianHyphenPrefix->archaeo-</li>
+        <li>omnissianHyphenPrefix->techno-</li>
+        <li>omnissianHyphenPrefix->mechani-</li>
+        <li>omnissianHyphenPrefix->data-</li>
+        <li>omnissianHyphenPrefix->tech-</li>
+        <li>omnissianHyphenPrefix->machine-</li>
+
+        <li>omnissianconcept->holiness</li>
+        <li>omnissianconcept->data</li>
+        <li>omnissianconcept->knowledge</li>
+        <li>omnissianconcept->industry</li>
+        <li>omnissianconcept->force</li>
 
       </rulesStrings>
     </rulePack>

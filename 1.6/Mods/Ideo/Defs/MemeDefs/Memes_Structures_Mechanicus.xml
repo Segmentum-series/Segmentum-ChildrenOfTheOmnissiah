@@ -18,6 +18,7 @@
     <deityCount>3</deityCount>
     <deityNameMakerOverride>NamerDeityOmnissian</deityNameMakerOverride>
     <deityTypeMakerOverride>DeityTypeMakerOmnissian</deityTypeMakerOverride>
+    <!--relicNameMakerOverride>NamerIdeoRelicOmnissian</relicNameMakerOverride-->
     <generalRules>
       <rulesStrings>
         <li>r_ideoName->Machine Cult</li>
