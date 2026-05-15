@@ -107,7 +107,7 @@
             <li>Violent</li>
         </requiredWorkTags>
         <weaponTags>
-            <li>Seg_COTO_Transonic</li>
+            <li>Seg_COTO_TransonicMelee</li>
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>
@@ -150,7 +150,7 @@
             <li>Violent</li>
         </requiredWorkTags>
         <weaponTags>
-            <li>Seg_COTO_Transonic</li>
+            <li>Seg_COTO_TransonicMelee</li>
         </weaponTags>
 		<backstoryFiltersOverride>
 			<li>
