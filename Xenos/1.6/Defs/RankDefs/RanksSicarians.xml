@@ -8,7 +8,7 @@
 		<incompatibleRanks>
 			<li>Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
-        <ImplantsRequired>8</ImplantsRequired>
+        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
             <Melee>10</Melee>
         </requiredSkills>
@@ -53,7 +53,7 @@
 		<incompatibleRanks>
 			<li>Seg_COTO_SicarianRuststalker</li>
         </incompatibleRanks>
-        <ImplantsRequired>8</ImplantsRequired>
+        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
             <Shooting>5</Shooting>
             <Melee>8</Melee>
