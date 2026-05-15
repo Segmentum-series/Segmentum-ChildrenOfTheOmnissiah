@@ -12,7 +12,7 @@
 		</xenotypeSet>
         <initialWillRange>30~36</initialWillRange>
         <initialResistanceRange>30~36</initialResistanceRange>
-        <combatPower>120</combatPower>
+        <combatPower>300</combatPower>
         <itemQuality>Normal</itemQuality>
         <apparelRequired Inherit="False">
             <li>Seg_COTO_Apparel_SicarianBattleArmour</li>
@@ -82,7 +82,7 @@
             <li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>
         </apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
-		<techHediffsMoney>1500~2500</techHediffsMoney>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
 		<techHediffsMaxAmount>8</techHediffsMaxAmount>
         <skills>
             <li>
@@ -119,7 +119,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>1500~3000</weaponMoney>
+        <weaponMoney>2000~3000</weaponMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SicarianRuststalkerMask</li>
