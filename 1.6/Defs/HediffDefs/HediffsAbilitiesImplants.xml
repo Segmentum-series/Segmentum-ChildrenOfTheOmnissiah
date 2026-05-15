@@ -25,7 +25,7 @@
 	<defName>Seg_COTO_WaveburstAbility</defName>
 	<label>waveburst</label>
 	<description>An intense burst of signals on all audiovisual spectra that can stun and disorient anyone nearby.</description>
-	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_Waveburst</iconPath>
 	<abilityClass>Seg.Ability_Waveburst</abilityClass>
 	<castTime>10</castTime>
 	<cooldownTime>1800</cooldownTime>
