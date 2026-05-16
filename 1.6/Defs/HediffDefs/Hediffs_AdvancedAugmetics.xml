@@ -820,6 +820,24 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Wounds/CalculusLogi/Seg_COTO_CalculusLogi</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(-0.01, 0.1, 0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+      </renderNodeProperties>
 	</HediffDef>
 
 	<!-- RecipeDef -->

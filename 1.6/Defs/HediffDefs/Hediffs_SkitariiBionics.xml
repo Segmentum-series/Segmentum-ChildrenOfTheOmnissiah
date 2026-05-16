@@ -409,27 +409,26 @@
     <hediffClass>Hediff_Implant</hediffClass>
     <description>Reinforces the insufficient baseline skin with subdermal and supradermal armour plating and fabric-alloy weaves. Some humans may find this to be off-putting, but it is undeniably effective in keeping the augmented skitarius functional and effective in battle for longer.</description>
     <spawnThingOnRemoved>Seg_COTO_ArmorPlating</spawnThingOnRemoved>
-    <!--<renderNodeProperties>
-      <li Class="PawnRenderNodeProperties_Eye">
+    <renderNodeProperties>
+    <li>
+        <nodeClass>PawnRenderNode_Body</nodeClass>
         <workerClass>PawnRenderNodeWorker_Hediff</workerClass>
         <texPath>Things/Pawn/Wounds/SkitariusArmourPlating/Seg_COTO_SkitariusArmourPlating</texPath>
         <parentTagDef>Body</parentTagDef>
         <drawSize>1</drawSize>
         <drawData>
           <defaultData>
-            <layer>56</layer>
-            <offset>(0, 0,0)</offset>
+            <layer>1</layer>
+            <offset>(0,0,0)</offset>
           </defaultData>
           <dataWest>
             <flip>true</flip>
           </dataWest>
         </drawData>
       </li>
-    </renderNodeProperties> -->
-
-
+    </renderNodeProperties>
     <stages>
-      <li>
+      <li>  
         <statOffsets>
           <IncomingDamageFactor>-0.25</IncomingDamageFactor>
 
@@ -610,6 +609,24 @@
         <!--Command aura boosting allied pawns' combat stats slightly-->
       </li>
     </stages>
+    <renderNodeProperties>
+			<li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Wounds/DataUplink/Seg_COTO_DataUplink</texPath>
+			<drawSize>1</drawSize>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>false</useSkinShader>
+			<useRottenColor>false</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			<defaultData>
+				<layer>69</layer>
+				<offset>(-0.01, 0.1, 0)</offset>
+			</defaultData>
+			</drawData>
+		</li>
+      </renderNodeProperties>
     <comps>
       <li Class="DoggoAura.HediffCompProperties_HediffAura">
         <range>9.9</range>
