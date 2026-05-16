@@ -178,14 +178,6 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
-				<extraDecorationsByPawnKindDef>
-                    <li>
-                        <key>Seg_COTO_SkitariiRangerAlpha</key>
-                        <value>
-                            <li>Seg_COTO_Deco_SkitariiRangerHoodGearStripe</li>
-                        </value>
-                    </li>
-                </extraDecorationsByPawnKindDef>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
@@ -261,14 +253,6 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
-				<extraDecorationsByPawnKindDef>
-                    <li>
-                        <key>Seg_COTO_SkitariiVanguardAlpha</key>
-                        <value>
-                            <li>Seg_COTO_Deco_SkitariiVanguardHelmetCrest</li>
-                        </value>
-                    </li>
-                </extraDecorationsByPawnKindDef>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->
@@ -518,14 +502,6 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
-				<extraDecorationsByPawnKindDef>
-                    <li>
-                        <key>Seg_COTO_SkitariiMarshal</key>
-                        <value>
-                            <li>Seg_COTO_Deco_MarshalHelmetCrest</li>
-                        </value>
-                    </li>
-                </extraDecorationsByPawnKindDef>
 			</li>
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(166,166,166)</defaultPrimaryColor><!-- Grey -->

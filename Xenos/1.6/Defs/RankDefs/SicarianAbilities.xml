@@ -48,7 +48,7 @@
 			<li>
 				<statFactors>
 					<MoveSpeed>1.3</MoveSpeed>
-					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+					<MeleeCooldownFactor>0.25</MeleeCooldownFactor>
                     <IncomingDamageFactor>1.2</IncomingDamageFactor>
 
 				</statFactors>

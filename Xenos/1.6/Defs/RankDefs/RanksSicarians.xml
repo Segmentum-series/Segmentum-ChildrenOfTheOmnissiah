@@ -8,7 +8,7 @@
 		<incompatibleRanks>
 			<li>Seg_COTO_SicarianInfiltrator</li>
         </incompatibleRanks>
-        <ImplantsRequired>8</ImplantsRequired>
+        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
             <Melee>10</Melee>
         </requiredSkills>
@@ -24,9 +24,6 @@
             <li>Seg_COTO_RuststalkerShiveringFrenzy</li>
         </givesAbilities>
         <removeRanksOnUnlock>
-            <li>Seg_COTO_TechMilita</li>
-            <li>Seg_COTO_Hypaspist</li>
-            <li>Seg_COTO_Skitarius</li>
             <li>Seg_COTO_SkitariiVanguard</li>
             <li>Seg_COTO_SkitariiVanguardAlpha</li>
             <li>Seg_COTO_SkitariiProvost</li>
@@ -56,7 +53,7 @@
 		<incompatibleRanks>
 			<li>Seg_COTO_SicarianRuststalker</li>
         </incompatibleRanks>
-        <ImplantsRequired>8</ImplantsRequired>
+        <ImplantsRequired>4</ImplantsRequired>
         <requiredSkills>
             <Shooting>5</Shooting>
             <Melee>8</Melee>
@@ -73,9 +70,6 @@
         <li>Seg_COTO_WaveburstAbility</li> 
         </givesVFEAbilities>
         <removeRanksOnUnlock>
-            <li>Seg_COTO_TechMilita</li>
-            <li>Seg_COTO_Hypaspist</li>
-            <li>Seg_COTO_Skitarius</li>
             <li>Seg_COTO_SkitariiVanguard</li>
             <li>Seg_COTO_SkitariiVanguardAlpha</li>
             <li>Seg_COTO_SkitariiProvost</li>

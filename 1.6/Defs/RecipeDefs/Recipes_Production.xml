@@ -230,14 +230,14 @@
 						<li>ApparelNoble</li>
 					</categories>
 					<thingDefs>
-						<li>Apparel_PsyfocusHelmet</li>
-						<li>Apparel_PsyfocusRobe</li>
-						<li>Apparel_PsyfocusVest</li>
-						<li>Apparel_PsyfocusShirt</li>
-						<li>Apparel_EltexSkullcap</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusRobe</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusVest</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusShirt</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
 						<li>Apparel_FlakVest</li>
-						<li>Apparel_FlakPants</li>
-						<li>Apparel_FlakJacket</li>
+						<li >Apparel_FlakPants</li>
+						<li >Apparel_FlakJacket</li>
 						<li>Apparel_AdvancedHelmet</li>
 						<li>Apparel_ArmorHelmetRecon</li>
 						<li>Apparel_ArmorRecon</li>
@@ -321,11 +321,11 @@
 				<li>ApparelNoble</li>
 			</categories>
 			<thingDefs>
-				<li>Apparel_PsyfocusHelmet</li>
-				<li>Apparel_PsyfocusRobe</li>
-				<li>Apparel_PsyfocusVest</li>
-				<li>Apparel_PsyfocusShirt</li>
-				<li>Apparel_EltexSkullcap</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusRobe</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusVest</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusShirt</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
 				<li>Apparel_FlakVest</li>
 				<li>Apparel_FlakPants</li>
 				<li>Apparel_FlakJacket</li>

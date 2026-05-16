@@ -138,6 +138,18 @@
 				<range>6~12</range>
 			</li>
 		</skills>
+		<modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_SkitariiVanguardHelmet</key>
+            <value>
+                <li>Seg_COTO_Deco_SkitariiVanguardHelmetCrest</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+</modExtensions>
 	</PawnKindDef>
 
 	<!-- Skitarii Ranger -->
@@ -232,6 +244,24 @@
 				<range>6~10</range>
 			</li>
 		</skills>
+	<modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+        <defaultColorSelection>
+            <li>
+                <key>Seg_COTO_SkitariiRangerHood_ColorPreset_7</key>
+                <value>TryMatch</value>
+            </li>
+        </defaultColorSelection>
+        <extraDecorations>
+            <li>
+                <key>Seg_COTO_Apparel_SkitariiRangerHood</key>
+                <value>
+                    <li>Seg_COTO_Deco_SkitariiRangerHoodGearStripe</li>
+                </value>
+            </li>
+        </extraDecorations>
+    </li>
+</modExtensions>
 	</PawnKindDef>
 	
 	<!--Skitarii Marshal-->
@@ -289,6 +319,19 @@
 				<range>8~14</range>
 			</li>
 		</skills>
+			<modExtensions>
+	<li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_MarshalHelmet</key>
+            <value>
+                <li>Seg_COTO_Deco_MarshalHelmetCrest</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+	</modExtensions>
+		
 	</PawnKindDef>
 
 	<!-- Techpriest Base -->
@@ -419,6 +462,24 @@
 				<range>6~10</range>
 			</li>
 		</skills>
+			<modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_MagosRobes</key>
+            <value>
+                <li>Seg_COTO_Deco_MagosRobeGearStripe</li>
+            </value>
+        </li>
+        <li>
+            <key>Seg_COTO_Apparel_MagosCassock</key>
+            <value>
+                <li>Seg_COTO_Deco_MagosCassockGearStripe</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+</modExtensions>
 	</PawnKindDef>
 
 	<!-- Magos Explorator -->
@@ -476,6 +537,24 @@
 				<range>6~8</range>
 			</li>
 		</skills>
+			<modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_ExploratorHood</key>
+            <value>
+                <li>Seg_COTO_Deco_ExploratorHoodGearTeeth</li>
+            </value>
+        </li>
+        <li>
+            <key>Seg_COTO_Apparel_ExploratorRobe</key>
+            <value>
+                <li>Seg_COTO_Deco_ExploratorRobeGearTeeth</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+</modExtensions>
 	</PawnKindDef>
 
 	<!-- Archmagos Dominus -->
@@ -531,6 +610,30 @@
 				<range>8~12</range>
 			</li>
 		</skills>
+<modExtensions>
+    <li Class="Core40k.DefModExtension_PawnKindCustomization">
+    <extraDecorations>
+        <li>
+            <key>Seg_COTO_Apparel_MagosHood</key>
+            <value>
+                <li>Seg_COTO_Deco_MagosHoodGearTeeth</li>
+            </value>
+        </li>
+        <li>
+            <key>Seg_COTO_Apparel_MagosRobes</key>
+            <value>
+                <li>Seg_COTO_Deco_MagosRobeGearTeeth</li>
+            </value>
+        </li>
+        <li>
+            <key>Seg_COTO_Apparel_MagosCassock</key>
+            <value>
+                <li>Seg_COTO_Deco_MagosCassockGearTeeth</li>
+            </value>
+        </li>
+    </extraDecorations>
+    </li>
+</modExtensions>
 	</PawnKindDef>
 
 </Defs>

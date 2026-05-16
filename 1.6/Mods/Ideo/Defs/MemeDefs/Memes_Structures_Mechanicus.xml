@@ -18,6 +18,7 @@
     <deityCount>3</deityCount>
     <deityNameMakerOverride>NamerDeityOmnissian</deityNameMakerOverride>
     <deityTypeMakerOverride>DeityTypeMakerOmnissian</deityTypeMakerOverride>
+    <!--relicNameMakerOverride>NamerIdeoRelicOmnissian</relicNameMakerOverride-->
     <generalRules>
       <rulesStrings>
         <li>r_ideoName->Machine Cult</li>
@@ -164,7 +165,7 @@
 
   <MemeDef>
     <defName>Seg_COTO_Techno-Animism</defName>
-    <label>Techno-Animism</label>
+    <label>Techno Animism</label>
     <description>Machines are animated by spirits who must be respected and appeased, and take primacy over weak creatures of flesh and blood.</description>
     <iconPath>UI/Memes/Seg_COTO_Memes_Techno-Animism</iconPath>
     <groupDef>Misc</groupDef>
@@ -226,7 +227,7 @@
         <li>VME_TaintedApparel_DontCare</li>
       </li>
       <li>
-        <li>Execution_DontCare</li>
+        <li>Execution_RespectedIfGuilty</li>
       </li>
       <li>
         <li>Slavery_Acceptable</li>
