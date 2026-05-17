@@ -640,6 +640,7 @@
         <initialSeverity>1.00</initialSeverity>
         <onlyPawnsInSameFaction>True</onlyPawnsInSameFaction>
       </li>
+			<li Class="seg.HediffCompProperties_ImplantShave" />
     </comps>
   </HediffDef>
   <HediffDef>

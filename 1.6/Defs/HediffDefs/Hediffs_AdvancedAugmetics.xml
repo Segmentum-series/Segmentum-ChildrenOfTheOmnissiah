@@ -838,6 +838,9 @@
 			</drawData>
 		</li>
       </renderNodeProperties>
+	  <comps>
+			<li Class="seg.HediffCompProperties_ImplantShave" />
+		</comps>
 	</HediffDef>
 
 	<!-- RecipeDef -->
