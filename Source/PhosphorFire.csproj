@@ -43,12 +43,18 @@
     <Reference Include="UnityEngine.TextRenderingModule">
         <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
+    <Reference Include="Genes40k">
+        <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40kMankindsFinest\1.6\Assemblies\Genes40k.dll</HintPath>
+    </Reference>
 
   <Compile Include="Thing_PhosphorFire.cs" />
   <Compile Include="RanksParts.cs" />
   <Compile Include="FerricLure.cs" />
   <Compile Include="FloorCovering.cs" />
   <Compile Include="Waveburst.cs" />
+  <Compile Include="Building_DecorativeForgeWorldFlag.cs" />
+  <Compile Include="ForgeWorldColorDef.cs" />
+  <Compile Include="FlagWindow.cs" />
   </ItemGroup>
 </Project>
 

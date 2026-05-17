@@ -120,55 +120,152 @@
         <drawnTextureIconPath>UI/Decoration/ForgeBadges/Seg_COTO_iconUI_Forge_Lucius</drawnTextureIconPath>
     </Genes40k.ShoulderIconDef>
     <!-- Forge Colors for Flag Icons -->
-	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+	 <Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
         <defName>Seg_COTO_ForgeColorMarsFlag</defName>
         <label>Mars</label>
         <primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
 		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
         <relatedChapterIcon>Seg_COTO_ForgeIconMars</relatedChapterIcon>
-    </Genes40k.ChapterColourDef>
-	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+        <relatedChapterGene>Seg_COTO_DummyGeneMars</relatedChapterGene>
+    </Seg.ForgeWorldColorDef>
+    <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneMars</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>Mars</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
+	 <Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorAgrippinaFlag</defName>
 		<label>Agrippinaa</label>
 		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
 		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconAgripinaa</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
-	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+        <relatedChapterGene>Seg_COTO_DummyGeneAgrippina</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+    <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneAgrippina</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>Agrippina</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
+	 <Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorStygiesVIIIFlag</defName>
 		<label>Stygies VIII</label>
 		<primaryColour>(38,38,38)</primaryColour><!-- Stygies black -->
 		<secondaryColour>(38,38,38)</secondaryColour><!-- Stygies black -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconStygiesVIII</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
-	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+         <relatedChapterGene>Seg_COTO_DummyGeneStygiesVIII</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+    <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneStygiesVIII</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>StygiesVIII</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
+	 <Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorMetalicaFlag</defName>
 		<label>Metalica</label>
 		<primaryColour>(255,255,255)</primaryColour><!-- Metalica white -->
 		<secondaryColour>(255,255,255)</secondaryColour><!-- Metalica white -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconMetalica</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
-	 <Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+         <relatedChapterGene>Seg_COTO_DummyGeneMetalica</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+       <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneMetalica</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>Metalica</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
+	 <Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorTriplexPhallFlag</defName>
 		<label>Triplex Phall</label>
 		<primaryColour>(220,160,45)</primaryColour><!-- Triplex yellow -->
 		<secondaryColour>(220,160,45)</secondaryColour><!-- Triplex yellow -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconTriplexPhall</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
+         <relatedChapterGene>Seg_COTO_DummyGeneTriplexPhall</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+      <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneTriplexPhall</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>TriplexPhall</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
 	
-	<Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+	<Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorDeimosFlag</defName>
 		<label>Deimos</label>
 		<primaryColour>(90,138,140)</primaryColour><!-- Deimos cyan -->
 		<secondaryColour>(90,138,140)</secondaryColour><!-- Deimos cyan -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconDeimos</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
-	<Genes40k.ChapterColourDef ParentName="BEWH_ChapterColourPresets">
+         <relatedChapterGene>Seg_COTO_DummyGeneDeimos</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+     <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneDeimos</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>Deimos</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
+	<Seg.ForgeWorldColorDef ParentName="BEWH_ChapterColourPresets">
 		<defName>Seg_COTO_ForgeColorLuciusFlag</defName>
 		<label>Lucius</label>
 		<primaryColour>(146,12,18)</primaryColour><!-- Mars red -->
 		<secondaryColour>(146,12,18)</secondaryColour><!-- Mars red -->
 		<relatedChapterIcon>Seg_COTO_ForgeIconLucius</relatedChapterIcon>
-	</Genes40k.ChapterColourDef>
-    
+         <relatedChapterGene>Seg_COTO_DummyGeneLucius</relatedChapterGene>
+	</Seg.ForgeWorldColorDef>
+     <GeneDef ParentName="BEWH_ChapterGeneParent">
+        <defName>Seg_COTO_DummyGeneLucius</defName>
+        <label>debug you should never see this</label>
+        <description>Your gene-seed comes from Lion El'Jonson and is relatively pure, allowing for more successful and less deadly implantation.</description>
+        <iconPath>UI/Genes/ChapterSpecific/BEWH_ChapterIDarkAngels</iconPath>
+        <selectionWeight>0</selectionWeight>
+        <displayOrderInCategory>100000</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Genes40k.DefModExtension_ChapterGene">
+                <chapterName>Lucius</chapterName>
+            </li>
+        </modExtensions>
+    </GeneDef>
     </Defs>
