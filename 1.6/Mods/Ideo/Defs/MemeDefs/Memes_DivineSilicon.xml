@@ -26,7 +26,7 @@
     <description>The wasteful death of the Machine God's ordained tech-clergy is to be avoided if possible.</description>
     <impact>High</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
-    <selectionWeight>0</selectionWeight>
+    <selectionWeight>1</selectionWeight>
     <comps>
         <li Class="RimDarkRankPrecept.PreceptComp_RankDie">
         <eventDef>RD_HistoryEvent_RankDead</eventDef>
