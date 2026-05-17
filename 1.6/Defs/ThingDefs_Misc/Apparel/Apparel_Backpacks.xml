@@ -158,11 +158,11 @@
 			</defaultOutfitTags>
 		</apparel>
 		<comps>
+			<li Class="Core40k.CompProperties_Decorative" />
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(120,82,66)</defaultPrimaryColor>
 				<defaultSecondaryColor>(255,255,255)</defaultSecondaryColor>
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
-				
 			</li>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>100</maxCharges>
@@ -229,9 +229,6 @@
 				<defaultSecondaryColor>(255,255,255)</defaultSecondaryColor>
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
 				
-			</li>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>150</maxCharges>
