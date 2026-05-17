@@ -52,9 +52,6 @@
   <Compile Include="FerricLure.cs" />
   <Compile Include="FloorCovering.cs" />
   <Compile Include="Waveburst.cs" />
-  <Compile Include="Building_DecorativeForgeWorldFlag.cs" />
-  <Compile Include="ForgeWorldColorDef.cs" />
-  <Compile Include="FlagWindow.cs" />
   </ItemGroup>
 </Project>
 
