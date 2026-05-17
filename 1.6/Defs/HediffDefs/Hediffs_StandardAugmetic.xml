@@ -861,15 +861,27 @@
 			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
 			<texPath>Things/Pawn/Wounds/NoosphericCortex/Seg_COTO_NoosphericCortex</texPath>
 			<drawSize>1</drawSize>
-			<parentTagDef>Head</parentTagDef>
+			<parentTagDef>Body</parentTagDef>
 			<useSkinShader>false</useSkinShader>
 			<useRottenColor>false</useRottenColor>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<drawData>
-			<defaultData>
-				<layer>69</layer>
-				<offset>(-0.01, 0.1, 0)</offset>
-			</defaultData>
+			<dataSouth>
+				<layer>60</layer>
+				<offset>(-0.01,0,.4)</offset>
+			</dataSouth>
+      <dataWest>
+        <layer>60</layer>
+        <offset>(-.13,0,.35)</offset>
+      </dataWest>
+      <dataEast>
+        <layer>60</layer>
+        <offset>(.15,0,.4)</offset>
+      </dataEast>
+      <dataNorth>
+        <layer>60</layer>
+        <offset>(-0.01,0,.35)</offset>
+      </dataNorth>
       </drawData>
 		  </li>
     </renderNodeProperties>

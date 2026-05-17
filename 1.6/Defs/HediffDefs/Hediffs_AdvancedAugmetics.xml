@@ -832,9 +832,18 @@
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<drawData>
 			<defaultData>
-				<layer>69</layer>
-				<offset>(-0.01, 0.1, 0)</offset>
+				<layer>1</layer>
+				<offset>(-0.01, 0, -.2)</offset>
 			</defaultData>
+			<dataWest>
+				<offset>(-.05,0.1,-.015)</offset>
+      		</dataWest>
+			<dataSouth>
+				<offset>(0,.5,.015)</offset>
+      		</dataSouth>
+			<dataNorth>
+				<offset>(0,0.1,0.015)</offset>
+      		</dataNorth>
 			</drawData>
 		</li>
       </renderNodeProperties>

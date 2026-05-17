@@ -621,7 +621,7 @@
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<drawData>
 			<defaultData>
-				<layer>69</layer>
+				<layer>39</layer>
 				<offset>(-0.01, 0.1, 0)</offset>
 			</defaultData>
 			</drawData>
