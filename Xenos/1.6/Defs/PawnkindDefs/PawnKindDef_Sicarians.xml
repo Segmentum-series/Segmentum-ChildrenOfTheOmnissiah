@@ -76,7 +76,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-        <weaponMoney>1500~3000</weaponMoney>
+        <weaponMoney>1500~2300</weaponMoney>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <apparelRequired Inherit="True">
             <li>Seg_COTO_Apparel_SicarianInfiltratorHelmet</li>
@@ -144,7 +144,7 @@
         <defName>Seg_COTO_SicarianPrinceps</defName>
 		<label>Sicarian Princeps</label>
         <defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
-        <combatPower>280</combatPower>
+        <combatPower>350</combatPower>
         <isFighter>true</isFighter>
         <requiredWorkTags>
             <li>Violent</li>
@@ -169,7 +169,7 @@
             
         </apparelRequired>
 		<techHediffsChance>0.75</techHediffsChance>
-		<techHediffsMoney>2000~3500</techHediffsMoney>
+		<techHediffsMoney>2500~3700</techHediffsMoney>
 		<techHediffsMaxAmount>10</techHediffsMaxAmount>
 		<techHediffsRequired Inherit="False">
 			<li>Seg_COTO_SicarianArm</li>

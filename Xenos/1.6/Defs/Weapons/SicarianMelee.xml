@@ -46,14 +46,6 @@
 		</weaponTags>		
 		<tools>
 			<li>
-				<label>hilt</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.6</cooldownTime>
-			</li>
-			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>

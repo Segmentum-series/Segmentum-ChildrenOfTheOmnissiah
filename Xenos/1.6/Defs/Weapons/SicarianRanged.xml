@@ -30,7 +30,7 @@
 			<AccuracyMedium>0.30</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<MarketValue>420</MarketValue>
+			<MarketValue>900</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>70</Steel>
@@ -111,7 +111,7 @@
 			<AccuracyMedium>0.98</AccuracyMedium>
 			<AccuracyLong>0.46</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
-			<MarketValue>1259</MarketValue>
+			<MarketValue>1250</MarketValue>
 		</statBases>
 		<verbs>
 			<li>

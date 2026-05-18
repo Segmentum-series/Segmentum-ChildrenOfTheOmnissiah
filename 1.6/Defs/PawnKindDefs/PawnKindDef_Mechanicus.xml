@@ -68,7 +68,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>1100~2700</weaponMoney>
+		<weaponMoney>1100~1500</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="True">
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
@@ -91,7 +91,7 @@
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
 		<defName>Seg_COTO_SkitariiVanguardAlpha</defName>
 		<label>Skitarii Vanguard Alpha</label>
-		<combatPower>150</combatPower>
+		<combatPower>175</combatPower>
 		<isFighter>true</isFighter>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -111,7 +111,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>2000~3700</weaponMoney>
+		<weaponMoney>1500~3000</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="True">
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
@@ -156,7 +156,7 @@
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
 		<defName>Seg_COTO_SkitariiRanger</defName>
 		<label>Skitarii Ranger</label>
-		<combatPower>120</combatPower>
+		<combatPower>130</combatPower>
 		<isFighter>true</isFighter>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -174,7 +174,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>1100~2700</weaponMoney>
+		<weaponMoney>1100~2200</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="True">
 			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
@@ -197,7 +197,7 @@
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
 		<defName>Seg_COTO_SkitariiRangerAlpha</defName>
 		<label>Skitarii Ranger Alpha</label>
-		<combatPower>160</combatPower>
+		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -217,7 +217,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>2000~3700</weaponMoney>
+		<weaponMoney>2000~3200</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="True">
 			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
@@ -268,7 +268,7 @@
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
 		<defName>Seg_COTO_SkitariiMarshal</defName>
 		<label>Skitarii Marshal</label>
-		<combatPower>200</combatPower>
+		<combatPower>250</combatPower>
 		<isFighter>true</isFighter>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -288,7 +288,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>2000~3700</weaponMoney>
+		<weaponMoney>2500~3700</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
@@ -387,7 +387,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>1100~2200</weaponMoney>
+		<weaponMoney>800~1800</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -438,7 +438,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>2000~3000</weaponMoney>
+		<weaponMoney>1100~2200</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -505,7 +505,7 @@
 				</categoriesAdulthood>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>2000~3000</weaponMoney>
+		<weaponMoney>1500~2600</weaponMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_ExploratorHood</li>

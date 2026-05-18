@@ -50,7 +50,7 @@
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-			<MarketValue>420</MarketValue>
+			<MarketValue>500</MarketValue>
 		</statBases>
 		<costList>
 			<Steel>60</Steel>
@@ -184,7 +184,7 @@
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>24000</WorkToMake>
-			<MarketValue>480</MarketValue>
+			<MarketValue>1100</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -255,7 +255,7 @@
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.20</AccuracyLong>
 			<WorkToMake>36000</WorkToMake>
-			<MarketValue>645</MarketValue>
+			<MarketValue>2000</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -389,7 +389,7 @@
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
 			<WorkToMake>34000</WorkToMake>
-			<MarketValue>1050</MarketValue>
+			<MarketValue>1800</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -458,7 +458,7 @@
 			<AccuracyMedium>0.3</AccuracyMedium>
 			<AccuracyLong>0.15</AccuracyLong>
 			<WorkToMake>34000</WorkToMake>
-			<MarketValue>800</MarketValue>
+			<MarketValue>1200</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -583,7 +583,7 @@
 			<AccuracyMedium>0.40</AccuracyMedium>
 			<AccuracyLong>0.10</AccuracyLong>
 			<WorkToMake>48000</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -708,7 +708,7 @@
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.40</AccuracyLong>
 			<WorkToMake>13000</WorkToMake>
-			<MarketValue>480</MarketValue>
+			<MarketValue>700</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -773,7 +773,7 @@
 			<AccuracyMedium>0.50</AccuracyMedium>
 			<AccuracyLong>0.30</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
-			<MarketValue>585</MarketValue>
+			<MarketValue>1150</MarketValue>
 		</statBases>
 
 		<verbs>
@@ -884,7 +884,7 @@
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
 			<WorkToMake>48000</WorkToMake>
-			<MarketValue>1805</MarketValue>
+			<MarketValue>2205</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -1032,7 +1032,7 @@
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.95</AccuracyLong>
 			<WorkToMake>80000</WorkToMake>
-			<MarketValue>1830</MarketValue>
+			<MarketValue>2530</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -1114,7 +1114,7 @@
 			<AccuracyMedium>0.98</AccuracyMedium>
 			<AccuracyLong>0.88</AccuracyLong>
 			<WorkToMake>32000</WorkToMake>
-			<MarketValue>605</MarketValue>
+			<MarketValue>1200</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
