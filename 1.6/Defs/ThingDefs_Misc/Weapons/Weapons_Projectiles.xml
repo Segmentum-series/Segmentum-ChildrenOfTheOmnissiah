@@ -370,7 +370,7 @@
             <damageAmountBase>30</damageAmountBase>
             <stoppingPower>1.0</stoppingPower>
             <armorPenetrationBase>0.5</armorPenetrationBase>
-            <explosionRadius>.3</explosionRadius>
+            <explosionRadius>.6</explosionRadius>
             <speed>60</speed>
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
         </projectile>
