@@ -264,7 +264,7 @@
 	<!-- Sicarian backpack -->
 	<ThingDef ParentName="Seg_COTO_BackpackBase">
 		<defName>Seg_COTO_Apparel_SicarianBackpack</defName>
-		<label>Sicarian backpack</label>
+		<label>Sicarian powerpack</label>
 		<description>Sicarian troops have little need to carry supplies or equipment like the baseline soldiers of the Militarum do, but their backpacks are still useful for the integral interface systems that boost the operation of their augmetic bodies.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refuelled with Uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</texPath>
