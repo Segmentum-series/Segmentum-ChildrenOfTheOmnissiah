@@ -9,7 +9,7 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena1</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena1</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
+		<drawSize>(0.32, 0.32)</drawSize>
 		<sortOrder>1</sortOrder>
 
 		<appliesTo>
@@ -24,19 +24,19 @@
 		<drawData>
 			<dataEast>
 				<layer>20</layer>
-				<offset>(-0.23, 0, 0.61)</offset>
+				<offset>(-0.25, 0, 0.52)</offset>
 			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
-				<offset>(-0.31, 0, 0.64)</offset>
+				<offset>(-0.31, 0, 0.55)</offset>
 			</dataNorth>
 			<dataWest>
 				<layer>225</layer>
-				<offset>(0.23, 0, 0.61)</offset>
+				<offset>(0.25, 0, 0.52)</offset>
 			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
-				<offset>(0.31, 0, 0.64)</offset>
+				<offset>(0.31, 0, 0.55)</offset>
 			</dataSouth>
 		</drawData>
 		<colourable>false</colourable>
@@ -49,7 +49,7 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena2</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena2</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
+		<drawSize>(0.32, 0.32)</drawSize>
 		<sortOrder>2</sortOrder>
 
 		<appliesTo>
@@ -64,19 +64,19 @@
 		<drawData>
 			<dataEast>
 				<layer>20</layer>
-				<offset>(-0.23, 0, 0.61)</offset>
+				<offset>(-0.25, 0, 0.52)</offset>
 			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
-				<offset>(-0.31, 0, 0.64)</offset>
+				<offset>(-0.31, 0, 0.55)</offset>
 			</dataNorth>
 			<dataWest>
 				<layer>225</layer>
-				<offset>(0.23, 0, 0.61)</offset>
+				<offset>(0.25, 0, 0.52)</offset>
 			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
-				<offset>(0.31, 0, 0.64)</offset>
+				<offset>(0.31, 0, 0.55)</offset>
 			</dataSouth>
 		</drawData>
 		<colourable>false</colourable>
@@ -89,7 +89,7 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena3</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena3</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
+		<drawSize>(0.32, 0.32)</drawSize>
 		<sortOrder>3</sortOrder>
 
 		<appliesTo>
@@ -104,19 +104,19 @@
 		<drawData>
 			<dataEast>
 				<layer>20</layer>
-				<offset>(-0.23, 0, 0.61)</offset>
+				<offset>(-0.25, 0, 0.52)</offset>
 			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
-				<offset>(-0.31, 0, 0.64)</offset>
+				<offset>(-0.31, 0, 0.55)</offset>
 			</dataNorth>
 			<dataWest>
 				<layer>225</layer>
-				<offset>(0.23, 0, 0.61)</offset>
+				<offset>(0.25, 0, 0.52)</offset>
 			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
-				<offset>(0.31, 0, 0.64)</offset>
+				<offset>(0.31, 0, 0.55)</offset>
 			</dataSouth>
 		</drawData>
 		<colourable>false</colourable>
@@ -129,7 +129,7 @@
 		<description>...</description>
 		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena4</iconPath>
 		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena4</drawnTextureIconPath>
-		<drawSize>(0.5, 0.5)</drawSize>
+		<drawSize>(0.32, 0.32)</drawSize>
 		<sortOrder>4</sortOrder>
 
 		<appliesTo>
@@ -144,19 +144,19 @@
 		<drawData>
 			<dataEast>
 				<layer>20</layer>
-				<offset>(-0.23, 0, 0.61)</offset>
+				<offset>(-0.25, 0, 0.52)</offset>
 			</dataEast>
 			<dataNorth>
 				<layer>225</layer>
-				<offset>(-0.31, 0, 0.64)</offset>
+				<offset>(-0.31, 0, 0.55)</offset>
 			</dataNorth>
 			<dataWest>
 				<layer>225</layer>
-				<offset>(0.23, 0, 0.61)</offset>
+				<offset>(0.25, 0, 0.52)</offset>
 			</dataWest>
 			<dataSouth>
 				<layer>20</layer>
-				<offset>(0.31, 0, 0.64)</offset>
+				<offset>(0.31, 0, 0.55)</offset>
 			</dataSouth>
 		</drawData>
 		<colourable>false</colourable>
