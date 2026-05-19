@@ -725,6 +725,9 @@
 				<li>Seg_COTO_TrueFlesh</li>
 			</researchPrerequisites>
 		</recipeMaker>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<!-- HediffDef -->
@@ -801,6 +804,9 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<!-- HediffDef -->
@@ -911,6 +917,9 @@
 				<li>Seg_COTO_TrueFlesh</li>
 			</researchPrerequisites>
 		</recipeMaker>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+		</statBases>
 	</ThingDef>
 
 	<!-- HediffDef -->

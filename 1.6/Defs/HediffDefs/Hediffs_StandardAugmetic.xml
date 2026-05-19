@@ -753,7 +753,7 @@
     </costList>
     <statBases Inherit="False">
       <WorkToMake>36000</WorkToMake>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.3</Mass>
     </statBases>
     <recipeMaker>
@@ -846,6 +846,9 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	<statBases>
+		<MarketValue>1200</MarketValue>
+	</statBases>
   </ThingDef>
 
   <!-- HediffDef -->
@@ -960,6 +963,9 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	<statBases>
+		<MarketValue>1600</MarketValue>
+	</statBases>
   </ThingDef>
 
   <!-- HediffDef -->
