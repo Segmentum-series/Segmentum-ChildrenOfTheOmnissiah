@@ -310,6 +310,8 @@
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorHelmet</li>
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplainHelmet</li>
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
+						
+						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_Undersuit</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -406,6 +408,8 @@
 				<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorHelmet</li>
 				<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplainHelmet</li>
 				<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
+				
+				<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_Undersuit</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
