@@ -205,6 +205,9 @@
 				<range>15.9</range>
 				<burstShotCount>1</burstShotCount>
 				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 
