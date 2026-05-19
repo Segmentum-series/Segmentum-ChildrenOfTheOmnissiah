@@ -311,7 +311,7 @@
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkXPowerArmorChaplainHelmet</li>
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
 						
-						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_Undersuit</li>
+						<li MayRequire="Phonicmas.RimDark.MankindsFinest.Armory">BEWH_Undersuit</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
