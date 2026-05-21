@@ -1204,6 +1204,304 @@
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_VolkWeaponBase" Abstract="True">
+		<label>Seg_COTO_VolkWeaponBase</label>
+		<description>to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">.8</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkCaliver</defName>
+		<label>Volkite caliver</label>
+		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkCaliver</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>1.35</warmupTime>
+				<range>22.0</range>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>21</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkBlaster</defName>
+		<label>Volkite Blaster</label>
+		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkBlast</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>96000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBlastBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>1</warmupTime>
+				<range>16.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_PlasmaInduction</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>19</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+			<li>Seg_COTO_VolkCraftable</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkSerpenta</defName>
+		<label>Volkite Serpenta</label>
+		<description>A compact plasma weapon designed for rapid deployment and high mobility.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkSerpenta</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>96000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBlastBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>.35</warmupTime>
+				<range>9.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_PlasmaInduction</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>19</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+			<li>Seg_COTO_VolkCraftable</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkCulverin</defName>
+		<label>Volkite culverin</label>
+		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkCulverin</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkCulverinBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>2</warmupTime>
+				<range>22.0</range>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>21</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+	</ThingDef>
+
 
 </Defs>
 

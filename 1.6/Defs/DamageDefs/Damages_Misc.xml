@@ -83,4 +83,29 @@
 			</li>
     	</additionalHediffs>
 	</DamageDef>
+		<DamageDef>
+		<defName>Seg_COTO_VolkDamage</defName>
+		<label>Volkite burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
+		<additionalHediffs>
+       		<li>
+            	<hediff>Blindness</hediff>
+            	<severityPerDamageDealt>0.01</severityPerDamageDealt>
+        	</li>
+		</additionalHediffs>
+		<buildingDamageFactor>2</buildingDamageFactor>
+		<buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
+		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<ignoreShields>true</ignoreShields>
+		<igniteCellChance>0.35</igniteCellChance>
+		<isExplosive>true</isExplosive>
+		<explosionColorCenter>(0.80, 0.05, 0.05, 0.80)</explosionColorCenter>
+		<explosionColorEdge>(0.95, 0.70, 0.70, 0.80)</explosionColorEdge>
+		
+	</DamageDef>
 </Defs>

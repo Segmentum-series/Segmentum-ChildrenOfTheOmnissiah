@@ -402,5 +402,166 @@
             </li>
         </modExtensions>
     </ThingDef>
+<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_VolkBeam</defName>
+  		<label>voltkite beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>seg.LaserProjectile_WithFilth</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_VolkBeam</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_VolkDamage</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>999</speed>
+			<explosionRadius>0.2</explosionRadius>
+			<filth>Filth_Ash</filth>
+			<filthChance>.1</filthChance>
+			<filthCount>0~1</filthCount>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>20</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>1</beamWidth>
+				<beamWidthDrawScale>1</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>10</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_VolkBlastBeam</defName>
+  		<label>voltkite beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>seg.LaserProjectile_WithFilth</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_VolkBeam</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_VolkDamage</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>999</speed>
+			<explosionRadius>0.1</explosionRadius>
+			<filth>Filth_Ash</filth>
+			<filthChance>.1</filthChance>
+			<filthCount>0~1</filthCount>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>6</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>1</beamWidth>
+				<beamWidthDrawScale>.75</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_VolkCulverinBeam</defName>
+  		<label>voltkite beam</label>
+  		<description>a sustained beam of heat. good for melting armour.</description>
+		<thingClass>seg.LaserProjectile_WithFilth</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_VolkBeam</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_VolkDamage</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>999</speed>
+			<explosionRadius>0.1</explosionRadius>
+			<filth>Filth_Ash</filth>
+			<filthChance>.1</filthChance>
+			<filthCount>0~1</filthCount>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>45</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>2</beamWidth>
+				<beamWidthDrawScale>2</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 
 </Defs>
