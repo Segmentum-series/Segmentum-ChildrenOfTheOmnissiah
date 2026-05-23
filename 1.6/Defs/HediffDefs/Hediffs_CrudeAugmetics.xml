@@ -622,7 +622,7 @@
 		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1</partEfficiency>
+			<partEfficiency>1.05</partEfficiency>
 		</addedPartProps>
 		<stages>
 			<li>
