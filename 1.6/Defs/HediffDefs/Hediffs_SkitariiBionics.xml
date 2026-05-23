@@ -114,6 +114,22 @@
     <label>skitarii vanguard arm</label>
     <labelNoun>a vanguard arm</labelNoun>
     <description>An installed augmetic replacement arm designed for the specific role of the close-range skirmishing Skitarii Vanguards. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
     <spawnThingOnRemoved>Seg_COTO_VanguardArm</spawnThingOnRemoved>
     <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
     <addedPartProps>
@@ -213,8 +229,25 @@
     <label>skitarii ranger arm</label>
     <labelNoun>a ranger arm</labelNoun>
     <description>An installed augmetic replacement arm designed for the specific role of the long-range sharpshooting Skitarii Rangers. Comfort is not a concern for the cybernetic soldiers of the Mechanicus, so the fact that the limb stresses the user's pain receptors is considered an irrelevance.</description>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
     <spawnThingOnRemoved>Seg_COTO_RangerArm</spawnThingOnRemoved>
     <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.2</partEfficiency>
@@ -273,7 +306,8 @@
     </appliedOnFixedBodyParts>
     <addsHediff>Seg_COTO_RangerArm_Hediff</addsHediff>
   </RecipeDef>
-  <!--Skitarius Eye Lens-->
+
+<!--Skitarius Eye Lens-->
   <!-- ThingDef -->
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>Seg_COTO_EyeLens</defName>

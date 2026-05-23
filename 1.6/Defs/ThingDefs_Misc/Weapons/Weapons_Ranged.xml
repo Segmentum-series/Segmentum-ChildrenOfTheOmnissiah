@@ -1204,6 +1204,7 @@
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
 	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_VolkWeaponBase" Abstract="True">
 		<label>Seg_COTO_VolkWeaponBase</label>
 		<description>to KitchenSink.</description>
