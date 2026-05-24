@@ -1269,7 +1269,7 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
 			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -1303,7 +1303,7 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker>
+		</recipeMaker-->
 		<!-- Tags for trading and categorization for later-->
 		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
@@ -1328,7 +1328,7 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
 			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -1367,7 +1367,7 @@
 			<skillRequirements>
 				<Crafting>19</Crafting>
 			</skillRequirements>
-		</recipeMaker>
+		</recipeMaker-->
 		<!-- Tags for trading and categorization for later-->
 		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
@@ -1392,7 +1392,7 @@
 		<statBases>
 			<Mass>2</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
 			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -1431,7 +1431,7 @@
 			<skillRequirements>
 				<Crafting>19</Crafting>
 			</skillRequirements>
-		</recipeMaker>
+		</recipeMaker-->
 		<!-- Tags for trading and categorization for later-->
 		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
@@ -1458,7 +1458,7 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
 			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
@@ -1492,7 +1492,7 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker>
+		</recipeMaker-->
 		<!-- Tags for trading and categorization for later-->
 		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
