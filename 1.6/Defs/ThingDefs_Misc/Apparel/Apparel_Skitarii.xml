@@ -53,6 +53,7 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SkitariiFatigues/Seg_COTO_SkitariiFatigues</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/SkitariiFatigues/Seg_COTO_SkitariiFatigues</uiIconPath>
 
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -109,12 +110,12 @@
 			</li>
 		</comps>
 		<modExtensions>
-		<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-			<tabDefs>
-				<li>BEWH_ArmorColoring</li>
-				<li>BEWH_ArmorDecoration</li>
-			</tabDefs>
-		</li>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -139,7 +140,7 @@
 			<ToxicResistance>1.00</ToxicResistance>
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.10</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.10</VacuumResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>14000</WorkToMake>
@@ -195,7 +196,7 @@
 					<li>BEWH_ArmorDecoration</li>
 				</tabDefs>
 			</li>
-        </modExtensions>
+		</modExtensions>
 	</ThingDef>
 	
 	<!-- Skitarii vanguard helmet -->
@@ -211,6 +212,12 @@
 		</graphicData>
 		<uiIconPath>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</uiIconPath>
 
+		<equippedStatOffsets>
+			<ToxicResistance>1.00</ToxicResistance>
+			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>17000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -219,14 +226,8 @@
 			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
 			<Insulation_Cold>4</Insulation_Cold>
-      		<Insulation_Heat>2</Insulation_Heat>
+			<Insulation_Heat>2</Insulation_Heat>
 		</statBases>
-		<equippedStatOffsets>
-		<ToxicResistance>1.00</ToxicResistance>
-		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-		<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
-      		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
-		</equippedStatOffsets>
 
 		<costList>
 			<Plasteel>20</Plasteel>
