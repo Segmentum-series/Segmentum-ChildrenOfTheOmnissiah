@@ -236,8 +236,8 @@
 						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusShirt</li>
 						<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
 						<li>Apparel_FlakVest</li>
-						<li >Apparel_FlakPants</li>
-						<li >Apparel_FlakJacket</li>
+						<li>Apparel_FlakPants</li>
+						<li>Apparel_FlakJacket</li>
 						<li>Apparel_AdvancedHelmet</li>
 						<li>Apparel_ArmorHelmetRecon</li>
 						<li>Apparel_ArmorRecon</li>
@@ -245,13 +245,13 @@
 						<li>Apparel_PowerArmor</li>
 
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
+						<li MayRequire="happypurging.ageofdarkness">GW_SM_FibroVest</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusArmor</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_GravisArmor</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_IndomitusTerminatorArmor</li>
 
@@ -276,23 +276,25 @@
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_GravisHelmet_Simple</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_TerminatorHelmet_Simple</li>
 
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardArmor</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanArmor</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_SisterOfSilence</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeOfChamp</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperor</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_AllarusArmor</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesGuardArmor</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesWardenArmor</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CastellanArmor</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SisterOfSilence</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_BladeOfChamp</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_EyeOfTheEmperor</li>
 
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesWardenHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanPlateHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_SagittarumHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_VenatariHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeChampHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperorHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetA</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetB</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_ShieldCaptianHelmet</li>
-						<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesWardenHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CastellanPlateHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SagittarumHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_VenatariHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_AllarusHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_BladeChampHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_EyeOfTheEmperorHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SoSHelmetA</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SoSHelmetB</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_ShieldCaptianHelmet</li>
+						<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesGuardHelmet</li>
 
 						<li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmor</li>
 						<li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmor</li>
@@ -343,13 +345,13 @@
 				<li MayRequire="redmattis.betterprerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
 
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
+				<li MayRequire="happypurging.ageofdarkness">GW_SM_FibroVest</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_PhobosArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_MaximusArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_CorvusArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_AquillaArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_TacticusArmor</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_GravisArmor</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_IndomitusTerminatorArmor</li>
 
@@ -374,23 +376,25 @@
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_GravisHelmet_Simple</li>
 				<li MayRequire="happypurging.ageofdarkness">GW_SM_TerminatorHelmet_Simple</li>
 
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardArmor</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanArmor</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_SisterOfSilence</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeOfChamp</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperor</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_AllarusArmor</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesGuardArmor</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesWardenArmor</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CastellanArmor</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SisterOfSilence</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_BladeOfChamp</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_EyeOfTheEmperor</li>
 
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesWardenHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_CastellanPlateHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_SagittarumHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_VenatariHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_AllarusHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_BladeChampHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_EyeOfTheEmperorHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetA</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_SoSHelmetB</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_ShieldCaptianHelmet</li>
-				<li MayRequire="happypurging.ageofdarkness">GW_TotE_CustodesGuardHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesWardenHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CastellanPlateHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SagittarumHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_VenatariHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_AllarusHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_BladeChampHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_EyeOfTheEmperorHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SoSHelmetA</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_SoSHelmetB</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_ShieldCaptianHelmet</li>
+				<li MayRequire="grimworld.talonOfTheEmperor">GW_TotE_CustodesGuardHelmet</li>
 
 				<li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXPhobosPowerArmor</li>
 				<li MayRequire="portesel.rimdark.morepowerarmor">BEWH_MkXGravisPowerArmor</li>
@@ -458,6 +462,7 @@
 						<li>Apparel_WarVeil</li>
 						<li>Apparel_HatHood</li>
 						<li>Apparel_ClothMask</li>
+						<li MayRequire="ludeon.rimworld.biotech">Apparel_GasMask</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Slicecap</li>
@@ -465,6 +470,7 @@
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Tailcap</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Shadecone</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
+						<li MayRequire="ludeon.rimworld.ideology">Apparel_VisageMask</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -483,6 +489,7 @@
 				<li>Apparel_WarVeil</li>
 				<li>Apparel_HatHood</li>
 				<li>Apparel_ClothMask</li>
+				<li MayRequire="ludeon.rimworld.biotech">Apparel_GasMask</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Slicecap</li>
@@ -490,6 +497,7 @@
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Tailcap</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Shadecone</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
+				<li MayRequire="ludeon.rimworld.ideology">Apparel_VisageMask</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
