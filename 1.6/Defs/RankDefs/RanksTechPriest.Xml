@@ -338,7 +338,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_MagosLogis</defName>
         <label>Magos Logis</label>
-        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by \nthe wider Cult Mechanicus..</description>
+        <description>An expert analyst with a mastery of statistics, probabilities, and extrapolation of events. A Logis is often seen as a kind of prophet by \nthe wider Cult Mechanicus.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosLogis</rankIconPath>
         <rankTier>4</rankTier>
        <ImplantsRequired>4</ImplantsRequired>
