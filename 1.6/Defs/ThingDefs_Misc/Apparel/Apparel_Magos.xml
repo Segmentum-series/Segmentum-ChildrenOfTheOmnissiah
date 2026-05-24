@@ -54,6 +54,7 @@
 			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/MagosHood/Seg_COTO_MagosHood</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/MagosHood/Seg_COTO_MagosHood</uiIconPath>
 
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
@@ -98,6 +99,7 @@
 				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
 			</wornGraphicPaths>
 		</apparel>
+
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_CultMechanicus</li>
@@ -293,6 +295,7 @@
 			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/BiologisHood/Seg_COTO_BiologisHood</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/BiologisHood/Seg_COTO_BiologisHood</uiIconPath>
 
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
@@ -454,6 +457,7 @@
 			<shaderType>Cutout</shaderType>
 			<texPath>Things/Apparel/ExploratorHood/Seg_COTO_ExploratorHood</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/ExploratorHood/Seg_COTO_ExploratorHood</uiIconPath>
 
 		<statBases>
 			<WorkToMake>10000</WorkToMake>

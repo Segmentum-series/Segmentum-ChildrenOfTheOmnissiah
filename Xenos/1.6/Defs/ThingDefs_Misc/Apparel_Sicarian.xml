@@ -104,11 +104,14 @@
 		<defName>Seg_COTO_Apparel_SicarianInfiltratorHelmet</defName>
 		<label>Sicarian infiltrator helmet</label>
 		<description>Sicarian infiltrators have distinctive circular dome shaped heads housing various sensors, optical aids, and auspex equipment to enable their skirmishing and infiltration attacks to a level far above standard skitarii. Where the Sicarian's cranium ends and the 'helmet' begins is often unclear.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SicarianInfiltratorHelmet/Seg_COTO_SicarianInfiltratorHelmet</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/SicarianInfiltratorHelmet/Seg_COTO_SicarianInfiltratorHelmet</uiIconPath>
+
 		<statBases>
 			<WorkToMake>31000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
@@ -186,11 +189,14 @@
 		<defName>Seg_COTO_Apparel_SicarianRuststalkerMask</defName>
 		<label>Sicarian ruststalker mask</label>
 		<description>Ruststalkers were originally a caste of Martian assassins charged with hunting down heretical exiles from the Machine Cult and the feral servitors that roam the Red Planet's wastes. Their distinctive masks give complete immunity to toxic environs like those of the cradle of the Machine Cult, as well as including optical enhancements to aid their combat abilities.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/SicarianRuststalkerMask/Seg_COTO_SicarianRuststalkerMask</uiIconPath>
+
 		<statBases>
 			<WorkToMake>31000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>

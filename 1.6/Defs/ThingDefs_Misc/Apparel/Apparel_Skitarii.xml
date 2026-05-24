@@ -129,6 +129,8 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</uiIconPath>
+		
 		<equippedStatOffsets>
 			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
 			<MaxHitPoints>280</MaxHitPoints>
@@ -207,6 +209,7 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</uiIconPath>
 
 		<statBases>
 			<WorkToMake>17000</WorkToMake>
@@ -450,6 +453,7 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/MarshalHelmet/Seg_COTO_MarshalHelmet</texPath>
 		</graphicData>
+		<uiIconPath>Things/Apparel/MarshalHelmet/Seg_COTO_MarshalHelmet</uiIconPath>
 
 		<statBases>
 			<WorkToMake>17000</WorkToMake>
