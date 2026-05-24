@@ -1255,10 +1255,10 @@
 		<tradeTags Inherit="False" />
 	</ThingDef>
 
-	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+	<!--ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCaliver</defName>
 		<label>Volkite caliver</label>
-		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCaliver</texPath>
@@ -1270,7 +1270,7 @@
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1305,7 +1305,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<weaponTags>
+		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
@@ -1316,8 +1316,8 @@
 
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkBlaster</defName>
-		<label>Volkite Blaster</label>
-		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+		<label>Volkite blaster</label>
+		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkBlast</texPath>
@@ -1329,7 +1329,7 @@
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
 			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1369,7 +1369,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<weaponTags>
+		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1380,8 +1380,8 @@
 	</ThingDef>
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkSerpenta</defName>
-		<label>Volkite Serpenta</label>
-		<description>A compact plasma weapon designed for rapid deployment and high mobility.</description>
+		<label>Volkite serpenta</label>
+		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkSerpenta</texPath>
@@ -1393,7 +1393,7 @@
 			<Mass>2</Mass>
 			<EquipDelay>1.2</EquipDelay>
 			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1433,7 +1433,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<weaponTags>
+		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1447,8 +1447,8 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCulverin</defName>
 		<label>Volkite culverin</label>
-		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
-
+		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
+		
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCulverin</texPath>
 			<shaderType>Cutout</shaderType>
@@ -1459,7 +1459,7 @@
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<!--AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1494,14 +1494,14 @@
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<weaponTags>
+		<!--weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedRelicTier</li>
 		</tradeTags>
-	</ThingDef>
+	</ThingDef-->
 
 
 </Defs>
