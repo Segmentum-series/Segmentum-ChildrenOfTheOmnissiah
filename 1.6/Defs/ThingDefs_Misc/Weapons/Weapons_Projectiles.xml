@@ -40,6 +40,7 @@
 			<texPath>Things/Projectile/Seg_COTO_Radium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>UI/Projectile/Seg_COTO_UI_GalvanicBullet</uiIconPath>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
@@ -56,6 +57,7 @@
 			<texPath>Things/Projectile/Seg_COTO_BrainBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<uiIconPath>UI/Projectile/Seg_COTO_UI_BrainBullet</uiIconPath>
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>20</damageAmountBase>
