@@ -446,7 +446,7 @@
 	<!-- Skitarii Marshal helmet -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_MarshalHelmet</defName>
-		<label>skitarii marshal helmet</label>
+		<label>marshal helmet</label>
 		<description>Skitarii Marshals wear heavy helmets outfitted with advanced optics and vox equipment. These helmets allow enhanced integration with the Mechanicus noospheric networks, feeding critical information to the commanders of the Tech-Guard.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 
 		<graphicData>

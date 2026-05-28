@@ -12,7 +12,7 @@
 	<!-- Sicarian battle armour -->
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SicarianBattleArmour</defName>
-		<label>sicarian battle armour</label>
+		<label>Sicarian battle armour</label>
 		<description>Grievously wounded Skitarii are sometimes modified with particularly extensive augmetics and deployed in the Sicarian killclades. This armour is specially designed to work with the Sicarian augmetics while protecting the vestiges of organic flesh that remain.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
