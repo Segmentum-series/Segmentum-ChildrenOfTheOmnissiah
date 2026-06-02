@@ -71,6 +71,12 @@
 		<label>Sicarian adaptation</label>
 		<description>This person has undergone surgical and augmetic adaptation into a Sicarian - a superbly efficient killing machine, but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts and brain tissue have been removed, and the body is now ready to accept and operate martial augmetics in their place.</description>
 		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+        <li>
+            <label>initial</label>
+            <becomeVisible>false</becomeVisible>
+        </li>
+		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>

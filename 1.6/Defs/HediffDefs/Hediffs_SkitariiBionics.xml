@@ -628,7 +628,7 @@
     <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
     <label>data uplink</label>
     <labelNoun>a data uplink implant</labelNoun>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
     <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
     <spawnThingOnRemoved>Seg_COTO_SkitariiDataUplink</spawnThingOnRemoved>
 
@@ -661,19 +661,18 @@
 			</drawData>
 		</li>
       </renderNodeProperties>
-    <comps>
-      <li Class="DoggoAura.HediffCompProperties_HediffAura">
-        <range>9.9</range>
-        <targetingParameters>
-          <canTargetPawns>True</canTargetPawns>
-          <canTargetBuildings>False</canTargetBuildings>
-        </targetingParameters>
-        <hediff>Seg_COTO_SkitariiDataUplinkAura_Hediff</hediff>
-        <mote>Seg_COTO_SkitariiDataUplink_Aura</mote>
-        <hideMoteWhenNotDrafted>True</hideMoteWhenNotDrafted>
-        <initialSeverity>1.00</initialSeverity>
-        <onlyPawnsInSameFaction>True</onlyPawnsInSameFaction>
-      </li>
+     <comps>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>11.9</range>
+				<mote>Seg_COTO_SkitariiDataUplink_Aura</mote>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>Seg_COTO_SkitariiDataUplinkAura_Hediff</hediff>
+			</li>
 			<li Class="seg.HediffCompProperties_ImplantShave" />
     </comps>
   </HediffDef>
@@ -694,6 +693,15 @@
         </statOffsets>
       </li>
     </stages>
+    <comps>
+    <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>30000</min>
+					<max>60000</max>
+				</disappearsAfterTicks>
+				<showRemainingTime>False</showRemainingTime>
+			</li>
+    </comps>
   </HediffDef>
   <!-- RecipeDef -->
   <RecipeDef ParentName="SurgeryInstallImplantBase">

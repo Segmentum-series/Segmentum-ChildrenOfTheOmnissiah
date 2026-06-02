@@ -60,8 +60,8 @@
 		<graphicClass>Graphic_Mote</graphicClass>
 		<texPath>Effects/Aura</texPath>
 		<shaderType>MoteGlow</shaderType>
-		<color>(32, 17, 0)</color>
-		<drawSize>12</drawSize>
+		<color>(.15,.45,1, 0.1)</color>
+		<drawSize>26</drawSize>
 		</graphicData>
 	</ThingDef>
 
