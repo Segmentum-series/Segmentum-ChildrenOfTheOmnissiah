@@ -310,6 +310,12 @@
 				<li>Seg_COTO_ArcRifleOverCharged_Beam</li>
 				</availableProjectiles>
 			</li>
+		<li Class="WeaponOverlayTex.CompProperties_WeaponOverlay">
+            <TexturePath>Things/Weapon/Seg_LEND_ArcRifle_e</TexturePath>
+            <ShaderTypeDefName>TransparentPostLight</ShaderTypeDefName>
+            <OnlyDuringWarmup>true</OnlyDuringWarmup>
+            <WarmupFadeInTicks>5</WarmupFadeInTicks>
+      </li>
 		</comps> 
 
 		<modExtensions>
