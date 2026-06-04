@@ -44,7 +44,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAugmetics">
 		<defName>Seg_COTO_AdvancedArm</defName>
 		<label>advanced augmetic arm</label>
-		<description>An augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>An augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 	</ThingDef>
 
 	<!-- HediffDef -->
@@ -52,7 +52,7 @@
 		<defName>Seg_COTO_AdvancedArm_Hediff</defName>
 		<label>advanced augmetic arm</label>
 		<labelNoun>a advanced augmetic arm</labelNoun>
-		<description>An installed augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>An installed augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 		<spawnThingOnRemoved>Seg_COTO_AdvancedArm</spawnThingOnRemoved>
 		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
 		<addedPartProps>
@@ -71,7 +71,7 @@
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallSeg_COTO_AdvancedArm</defName>
 		<label>install advanced augmetic arm</label>
-		<description>Installs an augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>Installs an augmetic replacement arm which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 		<jobString>Installing advanced augmetic arm.</jobString>
 		<ingredients>
 			<li>
@@ -100,7 +100,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAugmetics">
 		<defName>Seg_COTO_AdvancedLeg</defName>
 		<label>advanced augmetic leg</label>
-		<description>An augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>An augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 		<costList  Inherit="False">
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -113,7 +113,7 @@
 		<defName>Seg_COTO_AdvancedLeg_Hediff</defName>
 		<label>advanced augmetic leg</label>
 		<labelNoun>a advanced augmetic leg</labelNoun>
-		<description>An installed augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>An installed augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 		<spawnThingOnRemoved>Seg_COTO_AdvancedLeg</spawnThingOnRemoved>
 		<!-- <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass> -->
 		<addedPartProps>
@@ -133,7 +133,7 @@
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallSeg_COTO_AdvancedLeg</defName>
 		<label>install advanced augmetic leg</label>
-		<description>Installs an augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synskin if they can afford it.</description>
+		<description>Installs an augmetic replacement leg which is significantly more capable than the baseline limb and seamlessly integrates with the rest of the body. Adherents of the Machine Cult regard augmetics as True Flesh and will leave them unadorned, but people in the rest of the Imperium will often outfit their augmetics with synthskin if they can afford it.</description>
 		<jobString>Installing advanced augmetic leg.</jobString>
 		<ingredients>
 			<li>
