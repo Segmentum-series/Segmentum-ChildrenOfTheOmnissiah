@@ -235,6 +235,14 @@
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
 		</tradeTags>
+		<comps>
+		<li Class="WeaponOverlayTex.CompProperties_WeaponOverlay">
+            <TexturePath>Things/Weapon/Seg_LEND_ArcPistol_e</TexturePath>
+            <ShaderTypeDefName>TransparentPostLight</ShaderTypeDefName>
+            <OnlyDuringWarmup>true</OnlyDuringWarmup>
+            <WarmupFadeInTicks>5</WarmupFadeInTicks>
+		</li>
+		</comps>
 	</ThingDef>
 
 	<!-- Arc rifle -->

@@ -3,12 +3,14 @@
 	<defName>Seg_COTO_FerricLureAbility</defName>
 	<label>Disarming Pull</label>
 	<description>Channel the Motive Force to pull the target's weapon towards you, causing them to drop it.</description>
-	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
+	<iconPath>UI/Abilities/Seg_COTO_Ability_FerricLure</iconPath>
 	<abilityClass>Seg.Ability_StripWeapon</abilityClass>
 	<castTime>60</castTime>
 	<cooldownTime>3600</cooldownTime>
 	<range>14.9</range>
 	<targetMode>Pawn</targetMode>
+	<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+	<castFleck>PsycastPsychicEffect</castFleck>
 	<targetingParameters>
 		<canTargetLocations>false</canTargetLocations>
 		<canTargetSelf>true</canTargetSelf>
@@ -50,6 +52,8 @@
 	<iconPath>UI/Abilities/Seg_COTO_Ability_EmergencyAid</iconPath>
 	<abilityClass>Seg.Ability_ExtractGene</abilityClass>
 	<castTime>60</castTime>
+	<showUndrafted>true</showUndrafted>
+	<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
 	<cooldownTime>120000</cooldownTime>
 	<range>1.9</range>
 	<targetMode>Pawn</targetMode>
