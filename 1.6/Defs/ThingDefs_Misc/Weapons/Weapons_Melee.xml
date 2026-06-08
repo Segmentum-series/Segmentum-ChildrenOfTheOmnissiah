@@ -411,7 +411,7 @@
 				<li>Seg_COTO_CraftingTable</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>

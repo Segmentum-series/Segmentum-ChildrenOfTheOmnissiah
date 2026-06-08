@@ -224,7 +224,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-			<Crafting>6</Crafting>
+			<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
@@ -261,7 +261,7 @@
 		<statBases>
 			<Mass>4.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.90</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
@@ -307,7 +307,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-			<Crafting>4</Crafting>
+			<Crafting>10</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<comps>
@@ -461,7 +461,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
@@ -530,7 +530,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>7</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
@@ -840,7 +840,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>8</Crafting>
 				<Intellectual>6</Intellectual>
 			</skillRequirements>
 		</recipeMaker>
@@ -953,7 +953,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>14</Crafting>
+				<Crafting>12</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<comps>
@@ -1096,7 +1096,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>14</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<modExtensions>
@@ -1179,7 +1179,7 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>12</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<modExtensions>
