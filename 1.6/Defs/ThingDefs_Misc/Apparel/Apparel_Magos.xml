@@ -138,7 +138,7 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.5</Mass>
 			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor> <!-- the duster armor is already rather high, maybe up this? idk what do you think abo-->
 			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
@@ -218,7 +218,7 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>6.1</Mass>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
@@ -379,7 +379,7 @@
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>6.1</Mass>
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
@@ -539,7 +539,7 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.5</Mass>
 			<StuffEffectMultiplierArmor>.85</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 				<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
@@ -618,7 +618,7 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.7</Mass>
 			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
@@ -702,7 +702,7 @@
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>7.2</Mass>
 			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>

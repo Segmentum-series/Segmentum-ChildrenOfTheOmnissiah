@@ -79,7 +79,7 @@
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.2</Mass>
 			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat> 
@@ -141,7 +141,7 @@
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.5</Mass>
 			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat> <!-- all random ass values for now, delete this comment when correct values implemneted--> 
@@ -206,7 +206,7 @@
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>550</MaxHitPoints>
-			<Mass>2.2</Mass>
+			<Mass>3.6</Mass>
 			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat> 
