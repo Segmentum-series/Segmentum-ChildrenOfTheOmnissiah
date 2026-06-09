@@ -35,6 +35,7 @@
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<inventoryOptions>
+			<skipChance>0.9</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>MealSurvivalPack</thingDef>
@@ -88,6 +89,7 @@
 			<li>Seg_COTO_SkitariusLeg</li>
 		</techHediffsRequired>
 		<inventoryOptions>
+			<skipChance>0.9</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>MealSurvivalPack</thingDef>
@@ -406,6 +408,7 @@
 		<combatPower>30</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<inventoryOptions>
+			<skipChance>0.4</skipChance>
 			<subOptionsChooseOne>
 				<li>
 					<thingDef>MealSurvivalPack</thingDef>
