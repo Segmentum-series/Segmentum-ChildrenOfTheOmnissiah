@@ -78,6 +78,10 @@
 					<value>TryMatch</value>
 				</li>
 				<li>
+					<key>Seg_FlakArmour_ColorPreset_7</key>
+					<value>TryMatch</value>
+				</li>
+				<li>
 					<key>Seg_COTO_MagosApparel_ColorPreset_7</key>
 					<value>Default</value>
 				</li>
@@ -174,6 +178,7 @@
 				<kindDef>Combat</kindDef>
 				<commonality>50</commonality>
 				<options>
+					<Seg_COTO_TechMilitia>10</Seg_COTO_TechMilitia>
 					<Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
 					<Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
 					<Seg_COTO_SkitariiVanguardAlpha>4</Seg_COTO_SkitariiVanguardAlpha>
@@ -185,6 +190,16 @@
 					<Seg_COTO_MagosMyrmidon>2</Seg_COTO_MagosMyrmidon>
 					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
 					<Seg_COTO_ArchmagosDominus>1</Seg_COTO_ArchmagosDominus>
+				</options>
+			</li>
+			<!-- Tech-Militia squad -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+					<Seg_COTO_TechMilitia>15</Seg_COTO_TechMilitia>
+					<Seg_COTO_MagosMyrmidon>5</Seg_COTO_MagosMyrmidon>
+					<Seg_COTO_MagosExplorator>2</Seg_COTO_MagosExplorator>
 				</options>
 			</li>
 			<!-- Myrmidon squad -->
@@ -202,6 +217,7 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
+					<Seg_COTO_TechMilitia>20</Seg_COTO_TechMilitia>
 					<Seg_COTO_SkitariiVanguard>15</Seg_COTO_SkitariiVanguard>
 					<Seg_COTO_SkitariiRanger>10</Seg_COTO_SkitariiRanger>
 					<Seg_COTO_SkitariiVanguardAlpha>3</Seg_COTO_SkitariiVanguardAlpha>
