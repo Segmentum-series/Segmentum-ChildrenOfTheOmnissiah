@@ -150,7 +150,16 @@
       <!-- none -->
       
       <!-- Apparel -->
-      <!-- none -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Seg_FlakArmour</tradeTag>
+        <thingDefCountRange>0~4</thingDefCountRange>
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Seg_Las</tradeTag>
+        <thingDefCountRange>0~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
       
       <!-- Implants -->
       <li Class="StockGenerator_Tag">
