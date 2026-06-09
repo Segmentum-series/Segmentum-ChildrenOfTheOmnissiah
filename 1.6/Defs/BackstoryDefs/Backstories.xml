@@ -941,6 +941,33 @@
 
 	<BackstoryDef>
 		<slot>Adulthood</slot>
+		<title>forge scribe</title>
+		<defName>SegCOTO_MechanicusScribe</defName>
+		<titleShort>scribe</titleShort>
+		<baseDesc>[PAWN_nameDef] was a scribe in the administrative division of a forgeplex. [PAWN_possessive] long days were spent writing and sorting paper and parchment missives as well as entering data into cogitator systems. [PAWN_pronoun] did not have much time for anything else in [PAWN_possessive] life, but at least [PAWN_pronoun] became used to operating on very little sleep.</baseDesc>
+		<spawnCategories>
+			<li>SegCOTO_Mechanicus</li>
+			<li>Offworld</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>None</li>
+		</workDisables>
+		<skillGains>
+			<Social>-2</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		<QuickSleeper />
+		</forcedTraits>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+	<BackstoryDef>
+		<slot>Adulthood</slot>
 		<title>manufactorum overseer</title>
 		<defName>SegCOTO_MechanicusManufactorumOverseer</defName>
 		<titleShort>overseer</titleShort>
@@ -1207,7 +1234,7 @@
 		<title>lay artisan</title>
 		<defName>SegCOTO_MechanicusArtisan</defName>
 		<titleShort>artisan</titleShort>
-		<baseDesc>While the Cult Mechanicus does not go in for the same ostentatious decoration as the rest of the Imperium, there is still a place in the Omnissiah's design for art. [PAWN_nameDef] was a skilled artisan who was skilled at carving circuit patterns and stamping out cog-and-skull emblems to adorn the halls and ships of the Cult.</baseDesc>
+		<baseDesc>While the Cult Mechanicus does not go in for quite the same kind of ostentatious decoration as the rest of the Imperium, there is still a place in the Omnissiah's design for art. [PAWN_nameDef] was a skilled artisan who was skilled at carving circuit patterns and stamping out cog-and-skull emblems to adorn the halls and ships of the Cult.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 		</spawnCategories>
