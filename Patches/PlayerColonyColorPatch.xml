@@ -35,10 +35,10 @@
                         <key>Seg_COTO_SkitariiBackpack_ColorPreset_1</key>
                         <value>TryMatch</value>
                     </li>
-                    <li>
+                    <!--<li>
                         <key>Seg_COTO_MagosApparel_ColorPreset_1</key>
                         <value>Default</value>
-                    </li>
+                    </li>-->    
                 </defaultColorSelection>
             </li>
         </value>
