@@ -27,7 +27,7 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>32</damageAmountBase>
 			<armorPenetrationBase>.93</armorPenetrationBase>
-			<stoppingPower>3</stoppingPower>
+			<stoppingPower>5</stoppingPower>
 		<speed>900</speed>
 		</projectile>
 	</ThingDef>
@@ -44,7 +44,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>18</damageAmountBase>
-			<stoppingPower>.5</stoppingPower>
+			<stoppingPower>3</stoppingPower>
 		<speed>300</speed>
 		</projectile>
 	</ThingDef>
@@ -61,7 +61,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>20</damageAmountBase>
-			<stoppingPower>.5</stoppingPower>
+			<stoppingPower>3</stoppingPower>
 		<speed>90</speed>
 		</projectile>
 		<recipeMaker>
@@ -232,7 +232,7 @@
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
 			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
-			<stoppingPower>0.2</stoppingPower>
+			<stoppingPower>0.5</stoppingPower>
 			<speed>999</speed>
 		</projectile>
 
@@ -242,7 +242,7 @@
 				<lifetimeTicks>120</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
-				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+				<beamWidthDrawScale>3</beamWidthDrawScale>
 
 				<sweepRatePerTick>0.01</sweepRatePerTick>
 				<maxSweepAngle>0.5</maxSweepAngle>
@@ -370,7 +370,7 @@
         <projectile>
             <damageDef>Seg_COTO_PlasDamage</damageDef>
             <damageAmountBase>30</damageAmountBase>
-            <stoppingPower>1.0</stoppingPower>
+            <stoppingPower>4.0</stoppingPower>
             <armorPenetrationBase>0.5</armorPenetrationBase>
             <explosionRadius>.6</explosionRadius>
             <speed>60</speed>
@@ -390,7 +390,7 @@
         <projectile>
             <damageDef>Seg_COTO_PlasDamage</damageDef>
             <damageAmountBase>50</damageAmountBase>
-            <stoppingPower>2.0</stoppingPower>
+            <stoppingPower>6.0</stoppingPower>
             <armorPenetrationBase>1.7</armorPenetrationBase>
             <explosionRadius>1.1</explosionRadius>
             <speed>60</speed>
