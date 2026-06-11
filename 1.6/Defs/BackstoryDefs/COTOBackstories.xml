@@ -11,6 +11,7 @@
 		<baseDesc>[PAWN_nameDef] was pressed into service in a manufactorum while still a child due to a need for fine-detail work and a shortage of appropriate servitors. [PAWN_pronoun] has quite the manual dexterity to show for it, unlike the unfortunate ones who lost fingers or worse.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Crafting</li>
@@ -83,6 +84,8 @@
 		<baseDesc>[PAWN_nameDef] was enrolled as a Planetary Defence Force cadet at a young age, training with dummy weapons and doing basic drill in addition to regular labour or education.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_MilitarumBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -105,6 +108,7 @@
 		<baseDesc>[PAWN_nameDef] was born and raised on a derelict voidship being salvaged by a recolliger clan, who were dropped off decades before and hoped to be picked up by another ship at some point in the future.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Outlander</li>
@@ -129,6 +133,8 @@
 		<baseDesc>Growing up among the labouring class of a crowded hive city, [PAWN_nameDef] is as close as can be to a typical Imperial citizen. [PAWN_pronoun] is used to crowds but unused to frontier living.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_RetinueBackstories</li>
+			<li>SegWOTV_WorkerBackstories</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -155,6 +161,8 @@
 		<baseDesc>[PAWN_nameDef] grew up in the dank and deteriorating lower levels of a hive city. Day to day survival was [PAWN_possessive] only concern.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_RetinueBackstories</li>
+			<li>SegWOTV_WorkerBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -188,6 +196,7 @@
 		<baseDesc>[PAWN_nameDef] was a child of a voidship clan tasked with menial maintenance of a machine none of them understood but regarded almost as divine. [PAWN_pronoun] is unused to open skies but good with [PAWN_possessive] hands.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Pirate</li>
 			<li>Offworld</li>
 			<li>Outlander</li>
@@ -1022,6 +1031,7 @@
 		<baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1051,6 +1061,7 @@
 		<baseDesc>[PAWN_nameDef] worked on a production line in a gargantuan manufactorum. [PAWN_possessive] days were spent on repetitive tasks and backbreaking labour, and [PAWN_pronoun] spent much of [PAWN_possessive] meagre pay on stims and chems to cope.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1081,6 +1092,7 @@
 		<baseDesc>[PAWN_nameDef] worked in a salvatorium, a gigantic scrapyard dedicated to salvaging usable parts and metals from wrecked equipment. [PAWN_possessive] days were spent hauling immense machine parts and hull plates to furnaces and storage yards, breaking them apart where necessary, and [PAWN_pronoun] relied on [PAWN_possessive] innate strength to make it through each shift.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1113,6 +1125,7 @@
 		<baseDesc>[PAWN_nameDef] worked in the bowels of a gargantuan chemworks, producing chemicals necessary for the Imperium's functioning. [PAWN_pronoun] was given insufficient protective gear for the toxic fumes and has never recovered from the privations of the job, while also chasing the highs [PAWN_pronoun] he experienced.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1179,6 +1192,7 @@
 		<baseDesc>[PAWN_nameDef] was a manufactorum worker assigned to the night shift to allow production to continue around the clock. [PAWN_pronoun] has never been able to adapt to different hours.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Madman</li>
