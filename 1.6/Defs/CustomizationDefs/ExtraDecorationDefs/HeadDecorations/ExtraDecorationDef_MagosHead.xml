@@ -11,7 +11,7 @@
 		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -45,8 +45,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Gear teeth -->
@@ -58,7 +58,7 @@
 		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_GearTeeth</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>2</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -92,8 +92,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 	
 	<!-- Thin stripe -->
@@ -105,7 +105,7 @@
 		<drawnTextureIconPath>Things/Decoration/MagosHood/Seg_COTO_MagosHood_ThinStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>3</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -139,8 +139,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 <!-- Biologis Hood -->
@@ -153,7 +153,7 @@
 		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_GearStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_BiologisHood</li>
@@ -187,8 +187,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Gear teeth -->
@@ -200,7 +200,7 @@
 		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_GearTeeth</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>2</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_BiologisHood</li>
@@ -234,8 +234,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Thin stripe -->
@@ -247,7 +247,7 @@
 		<drawnTextureIconPath>Things/Decoration/BiologusHood/Seg_COTO_BiologusHood_ThinStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>3</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_BiologisHood</li>
@@ -281,8 +281,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 <!-- Explorator Hood-->
@@ -295,7 +295,7 @@
 		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_GearStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
@@ -329,8 +329,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 		<!-- Gear teeth -->
@@ -342,7 +342,7 @@
 		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_GearTeeth</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>2</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
@@ -376,8 +376,8 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 	
 	<!-- Thin stripe -->
@@ -389,7 +389,7 @@
 		<drawnTextureIconPath>Things/Decoration/ExploratorHood/Seg_COTO_ExploratorHood_ThinStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>3</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<appliesTo>
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
@@ -423,7 +423,7 @@
 			<li>Seg_COTO_DecoPalette_TriplexYellow</li>
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 </Defs>

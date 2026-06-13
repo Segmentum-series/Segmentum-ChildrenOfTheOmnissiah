@@ -96,8 +96,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -146,8 +146,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -196,8 +196,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>

@@ -11,7 +11,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_GearStripe</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -47,8 +47,8 @@
 		</availablePresets>
 		<colourable>true</colourable>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 <!--Skitarii hood lenses 1-->
@@ -60,7 +60,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses1L</drawnTextureIconPath>
 		<drawSize>(0.25, 0.25)</drawSize>
 		<sortOrder>2</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>South</li>
@@ -81,8 +81,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 <!--Skitarii hood lenses 1 mirrored-->
@@ -94,7 +94,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses1R</drawnTextureIconPath>
 		<drawSize>(0.25, 0.25)</drawSize>
 		<sortOrder>3</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>South</li>
@@ -115,8 +115,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii hood lenses 2-->
@@ -128,7 +128,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses2</drawnTextureIconPath>
 		<drawSize>(0.25, 0.25)</drawSize>
 		<sortOrder>4</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>South</li>
@@ -160,8 +160,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii hood lenses 3-->
@@ -173,7 +173,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Lenses3</drawnTextureIconPath>
 		<drawSize>(0.25, 0.25)</drawSize>
 		<sortOrder>4</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>North</li>
@@ -202,12 +202,12 @@
 		<flipable>true</flipable>
 		<useMask>true</useMask>
 		<colorAmount>2</colorAmount>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+		<useParentColourAsDefault>true</useParentColourAsDefault>
 
 		<shaderType>BEWH_CutoutThreeColor</shaderType>
 		<!-- DefaultColor uses armor color option -->
 		<defaultColourTwo>(26,148,200)</defaultColourTwo>
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii hood visor-->
@@ -219,7 +219,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood_Visor</drawnTextureIconPath>
 		<drawSize>(0.55, 0.55)</drawSize>
 		<sortOrder>4</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>North</li>
@@ -253,8 +253,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 
@@ -268,7 +268,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Antena</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -310,7 +310,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii helmet crest -->
@@ -322,7 +322,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Crest</drawnTextureIconPath>
 		<drawSize>(0.55, 0.55)</drawSize>
 		<sortOrder>2</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -359,7 +359,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii helmet gear crest -->
@@ -371,7 +371,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_GearCrest</drawnTextureIconPath>
 		<drawSize>(0.56, 0.56)</drawSize>
 		<sortOrder>3</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -409,7 +409,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii helmet alpha crest -->
@@ -421,7 +421,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_AlphaCrest</drawnTextureIconPath>
 		<drawSize>(0.8, 0.8)</drawSize>
 		<sortOrder>4</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -459,7 +459,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 		
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii vanguard lenses-->
@@ -471,7 +471,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_Lenses</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>5</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -505,8 +505,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!--Skitarii vanguard reinforced visor-->
@@ -518,7 +518,7 @@
 		<drawnTextureIconPath>Things/Decoration/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet_ReinforcedVisor</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>6</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -544,11 +544,11 @@
 		<colourable>true</colourable>
 		<useMask>true</useMask>
 		<colorAmount>2</colorAmount>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+		<useParentColourAsDefault>true</useParentColourAsDefault>
 
 		<shaderType>BEWH_CutoutThreeColor</shaderType>
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>true</useParentColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
 
 <!-- Skitarii Marshal -->
@@ -561,7 +561,7 @@
 		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Crest</drawnTextureIconPath>
 		<drawSize>(0.94, 0.94)</drawSize>
 		<sortOrder>1</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -603,7 +603,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Marshal lenses -->
@@ -615,7 +615,7 @@
 		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Lenses</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>5</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -649,8 +649,8 @@
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Marshal Spikes -->
@@ -662,7 +662,7 @@
 		<drawnTextureIconPath>Things/Decoration/MarshalHelmet/Seg_COTO_MarshalHelmet_Spikes</drawnTextureIconPath>
 		<drawSize>(0.5, 0.5)</drawSize>
 		<sortOrder>5</sortOrder>
-		<isHelmetDecoration>true</isHelmetDecoration>
+		 
 
 		<defaultShowRotation>
 			<li>East</li>
@@ -693,7 +693,7 @@
 		<colourable>true</colourable>
 
 		<shaderType>Cutout</shaderType>
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>true</useParentColourAsDefault><!-- DefaultColor uses armor color options -->
 	</Core40k.ExtraDecorationDef>
 </Defs>

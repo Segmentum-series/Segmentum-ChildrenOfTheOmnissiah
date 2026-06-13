@@ -30,8 +30,8 @@
 		<useMask>true</useMask>
 
 		<shaderType>CutoutComplex</shaderType>
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault><!-- DefaultColor uses armor color options -->
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+		<useParentColourAsDefault>true</useParentColourAsDefault><!-- DefaultColor uses armor color options -->
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -91,8 +91,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -147,8 +147,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -203,8 +203,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -404,8 +404,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -560,8 +560,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -621,8 +621,8 @@
 			<li>Seg_COTO_DecoPalette_AgrippaGrey</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
-		<useArmorColourAsDefault>false</useArmorColourAsDefault>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
+		<useParentColourAsDefault>false</useParentColourAsDefault>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -677,7 +677,7 @@
 			<li>Seg_COTO_DecoPalette_Silver</li>
 		</availablePresets>
 
-		<hasArmorColourPaletteOption>true</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
 		
 		<appliesToBodyTypes>
 			<li>Male</li>
@@ -717,10 +717,10 @@
 		<colourable>true</colourable>
 		<useMask>true</useMask>
 		<colorAmount>2</colorAmount>
-		<useArmorColourAsDefault>true</useArmorColourAsDefault>
+		<useParentColourAsDefault>true</useParentColourAsDefault>
 
 		<shaderType>BEWH_CutoutThreeColor</shaderType>
-		<hasArmorColourPaletteOption>false</hasArmorColourPaletteOption>
+		<hasParentColourPaletteOption>false</hasParentColourPaletteOption>
 
 		<defaultColour>(234,130,56)</defaultColour>
 		<defaultColourTwo>(120,82,66)</defaultColourTwo>
