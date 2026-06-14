@@ -1,8 +1,8 @@
 <Defs>
-  <Core40k.WeaponDecorationTypeDef>
+  <Core40k.DecorationTypeDef>
     <defName>Seg_COTO_Upgrades</defName>
     <label>TEST</label>
-  </Core40k.WeaponDecorationTypeDef>
+  </Core40k.DecorationTypeDef>
 
  <!-- <Core40k.WeaponDecorationDef>
     <defName>Seg_COTO_Deco_Macrostubber</defName>

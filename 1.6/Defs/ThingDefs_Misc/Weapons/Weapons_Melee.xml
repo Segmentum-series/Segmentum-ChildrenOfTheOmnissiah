@@ -3,7 +3,9 @@
 	<ThingDef Abstract="True" Name="MeleePowerWeapon_base" ParentName="BaseWeapon">
 		<techLevel>Ultra</techLevel>
 		<comps>
-			 
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerArtWeaponMelee</nameMaker>
 				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
