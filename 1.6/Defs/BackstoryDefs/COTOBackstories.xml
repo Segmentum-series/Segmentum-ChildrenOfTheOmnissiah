@@ -12,6 +12,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Crafting</li>
@@ -67,6 +68,7 @@
 		<baseDesc>[PAWN_nameDef] was deemed at a young age to be part of the surplus population of a Mechanicus-run facility, and was marked for servitorisation in future when the lobotomised workforce numbers required it. For whatever reason, [PAWN_pronoun] managed to escape this fate.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_PirateBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>ManualDumb</li>
@@ -85,7 +87,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
-			<li>SegWOTV_MilitarumBackstories</li>
+			<li>SegWOTV_ArmsmanBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -109,6 +111,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Outlander</li>
@@ -135,6 +138,8 @@
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_RetinueBackstories</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_ArmsmanBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -163,6 +168,8 @@
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_RetinueBackstories</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_ArmsmanBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -197,6 +204,8 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_ArmsmanBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Pirate</li>
 			<li>Offworld</li>
 			<li>Outlander</li>
@@ -662,6 +671,9 @@
 		<baseDesc>[PAWN_nameDef] was once a respected Magos of the Cult Mechanicus, until [PAWN_pronoun] was judged to have committed a minor act of tech-heresy. With the intervention of a sympathetic superior, [PAWN_pronoun] managed to avoid execution or servitorisation, but was stripped of [PAWN_possessive] rank and privileges.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_MechanicusAdept</li>
+			<li>SegWOTV_RetinueBackstories</li>
+			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Pirate</li>
 			<li>Madman</li>
 			<li>Cult</li>
@@ -1032,6 +1044,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1062,6 +1075,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1093,6 +1107,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1126,6 +1141,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 		</spawnCategories>
@@ -1193,6 +1209,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Madman</li>
@@ -1337,6 +1354,7 @@
 		<baseDesc>[PAWN_nameDef] was a guard at a manufactorum that processed condemned criminals and the dregs of society into servitors. [PAWN_possessive] responsibility was to keep them in line with threats and physical force, and [PAWN_pronoun] quickly became desensitised to the horror of what [PAWN_pronoun] was doing.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_PirateBackstories</li>
 			<li>Pirate</li>
 			<li>Madman</li>
 		</spawnCategories>
