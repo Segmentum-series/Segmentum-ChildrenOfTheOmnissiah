@@ -313,12 +313,6 @@
 		</skills>
 	<modExtensions>
     <li Class="Core40k.DefModExtension_PawnKindCustomization">
-        <defaultColorSelection>
-            <li>
-                <key>Seg_COTO_SkitariiRangerHood_ColorPreset_7</key>
-                <value>TryMatch</value>
-            </li>
-        </defaultColorSelection>
         <extraDecorations>
             <li>
                 <key>Seg_COTO_Apparel_SkitariiRangerHood</key>
