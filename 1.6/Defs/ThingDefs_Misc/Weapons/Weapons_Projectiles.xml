@@ -165,11 +165,11 @@
 	</ThingDef>
 
 <!-- Arc -->
-	<!-- Arc pistol beam -->
+	<!-- Arc pistol -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
   		<label>arc beam</label>
-  		<description>The standard arc weaponry beam which projects the Motive Force at a target and anything along the way.</description>
+  		<description>Projects the Motive Force at a target and can arc to other targets with electrifying effect.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -201,21 +201,89 @@
 				<sweepRatePerTick>0.05</sweepRatePerTick>
 				<maxSweepAngle>1</maxSweepAngle>
 
-				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
+				
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>0.5</branchChance>
+				<maxBranches>2</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>2</chainRange>
+				<chainDelayTicks>3</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- Arc rifle -->
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_ArcRifle_Beam</defName>
+  		<label>arc beam</label>
+  		<description>Projects the Motive Force at a target and can arc to other targets in a small area with electrifying effect.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_ArcDamage</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>1</damageTickRate>
+				<lifetimeTicks>10</lifetimeTicks>
+
+				<beamWidth>0.45</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0.05</sweepRatePerTick>
+				<maxSweepAngle>1</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
+				<lockOnTarget>true</lockOnTarget>
+				
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>0.5</branchChance>
+				<maxBranches>3</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>4</chainRange>
+				<chainDelayTicks>3</chainDelayTicks>
+
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Arc rifle overcharge -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
   		<label>overcharged arc beam</label>
-  		<description>A more powerful variant of the arc rifle beam, capable of delivering a devastating sustained energy blast.</description>
+  		<description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -247,12 +315,22 @@
 				<sweepRatePerTick>0.01</sweepRatePerTick>
 				<maxSweepAngle>0.5</maxSweepAngle>
 
-				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>true</lockOnTarget>
 
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>0.7</branchChance>
+				<maxBranches>4</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>6</chainRange>
+				<chainDelayTicks>3</chainDelayTicks>
+				
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
