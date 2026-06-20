@@ -198,18 +198,18 @@
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.05</sweepRatePerTick>
-				<maxSweepAngle>1</maxSweepAngle>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
 
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>0.5</branchChance>
+				<branchChance>100</branchChance>
 				<maxBranches>2</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
@@ -249,24 +249,24 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>1</damageTickRate>
-				<lifetimeTicks>10</lifetimeTicks>
+				<damageTickRate>5</damageTickRate>
+				<lifetimeTicks>60</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.05</sweepRatePerTick>
-				<maxSweepAngle>1</maxSweepAngle>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
 
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>0.5</branchChance>
+				<branchChance>100</branchChance>
 				<maxBranches>3</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
@@ -312,19 +312,19 @@
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>3</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.01</sweepRatePerTick>
-				<maxSweepAngle>0.5</maxSweepAngle>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
 
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>0.7</branchChance>
-				<maxBranches>4</maxBranches>
+				<branchChance>100</branchChance>
+				<maxBranches>5</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
