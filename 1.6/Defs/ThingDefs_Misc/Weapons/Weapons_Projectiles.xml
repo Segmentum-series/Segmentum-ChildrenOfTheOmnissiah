@@ -209,12 +209,12 @@
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>1</branchChance>
+				<branchChance>2</branchChance>
 				<maxBranches>2</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
-				<chainRange>2</chainRange>
+				<chainRange>4</chainRange>
 				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
@@ -266,12 +266,12 @@
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>1</branchChance>
+				<branchChance>2</branchChance>
 				<maxBranches>3</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
-				<chainRange>4</chainRange>
+				<chainRange>6</chainRange>
 				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
@@ -323,12 +323,12 @@
 
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>1</branchChance>
+				<branchChance>2</branchChance>
 				<maxBranches>5</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
-				<chainRange>6</chainRange>
+				<chainRange>8</chainRange>
 				<chainDelayTicks>1</chainDelayTicks>
 				
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
