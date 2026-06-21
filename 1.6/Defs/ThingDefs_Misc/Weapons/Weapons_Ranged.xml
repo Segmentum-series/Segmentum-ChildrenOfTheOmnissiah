@@ -165,7 +165,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -247,7 +247,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will often arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>

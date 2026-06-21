@@ -184,7 +184,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
@@ -193,7 +193,7 @@
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
 				<damageTickRate>10</damageTickRate>
-				<lifetimeTicks>20</lifetimeTicks>
+				<lifetimeTicks>30</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
@@ -241,7 +241,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
@@ -298,7 +298,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>8</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>999</speed>
