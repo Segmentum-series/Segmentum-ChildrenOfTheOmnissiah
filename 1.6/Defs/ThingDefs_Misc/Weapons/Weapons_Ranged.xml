@@ -179,7 +179,7 @@
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>24000</WorkToMake>
@@ -261,9 +261,9 @@
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.20</AccuracyLong>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>36000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 		</statBases>
