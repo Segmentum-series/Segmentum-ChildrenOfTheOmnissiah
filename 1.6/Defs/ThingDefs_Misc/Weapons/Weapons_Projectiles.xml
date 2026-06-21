@@ -204,18 +204,18 @@
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
-				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>false</lockOnTarget>
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>100</branchChance>
+				<branchChance>1</branchChance>
 				<maxBranches>2</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
 				<chainRange>2</chainRange>
-				<chainDelayTicks>3</chainDelayTicks>
+				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
@@ -261,18 +261,18 @@
 				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
-				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
 				<lockOnTarget>false</lockOnTarget>
 				
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>100</branchChance>
+				<branchChance>1</branchChance>
 				<maxBranches>3</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
 				<chainRange>4</chainRange>
-				<chainDelayTicks>3</chainDelayTicks>
+				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
@@ -300,7 +300,7 @@
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
 			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
-			<stoppingPower>0.5</stoppingPower>
+			<stoppingPower>1</stoppingPower>
 			<speed>999</speed>
 		</projectile>
 
@@ -323,13 +323,13 @@
 
 				<maxChainTargets>2</maxChainTargets>
 				<chainDamageFalloff>0.80</chainDamageFalloff>
-				<branchChance>100</branchChance>
+				<branchChance>1</branchChance>
 				<maxBranches>5</maxBranches>
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
 				<chainRange>6</chainRange>
-				<chainDelayTicks>3</chainDelayTicks>
+				<chainDelayTicks>1</chainDelayTicks>
 				
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
@@ -337,7 +337,7 @@
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
 				<effectiveRange>35.9</effectiveRange>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
