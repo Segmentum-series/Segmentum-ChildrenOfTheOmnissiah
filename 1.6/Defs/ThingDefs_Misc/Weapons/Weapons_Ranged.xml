@@ -774,6 +774,7 @@
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_RadPistol</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
@@ -977,6 +978,7 @@
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_COTO_Plasma</li>
+			<li>Seg_COTO_PlasmaCaliver</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
