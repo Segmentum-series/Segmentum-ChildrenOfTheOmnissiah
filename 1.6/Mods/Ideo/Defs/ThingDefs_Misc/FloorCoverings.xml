@@ -12,7 +12,7 @@
     </graphicData>
      <thingClass>Seg.Building_Seg_COTOFloorCover</thingClass>
     <drawStyleCategory>Floors</drawStyleCategory>
-    <designationCategory>Floors</designationCategory>
+    <designationCategory>BEWH_RimDarkCategory</designationCategory>
     <uiOrder>2000</uiOrder>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <stuffCategories>
@@ -41,7 +41,7 @@
       <drawSize>(3,3)</drawSize>
     </graphicData>
     <drawStyleCategory>Floors</drawStyleCategory>
-    <designationCategory>Floors</designationCategory>
+    <designationCategory>BEWH_RimDarkCategory</designationCategory>
     <uiOrder>2001</uiOrder>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <stuffCategories>
