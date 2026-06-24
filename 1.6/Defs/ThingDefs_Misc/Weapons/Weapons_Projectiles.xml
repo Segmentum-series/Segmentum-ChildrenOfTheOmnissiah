@@ -298,7 +298,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>8</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>999</speed>
@@ -341,6 +341,14 @@
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
+		<comps>
+    <li Class="seg.CompProperties_ProjectileOverheat">
+        <overheatChance>0.45</overheatChance>
+        <blastRadius>1.5</blastRadius>
+        <damageDef>Seg_COTO_PlasDamage</damageDef>
+        <damageAmount>5</damageAmount>
+    </li>
+</comps>
 	</ThingDef>
 	 
 
