@@ -490,12 +490,12 @@
                 <warmupTime>2.1</warmupTime>
                 <shotsPerBurst>1</shotsPerBurst>
             </li>
-			<li Class="seg.CompProperties_ProjectileOverheat">
+			<!--li Class="seg.CompProperties_ProjectileOverheat">
 				<overheatChance>0.10</overheatChance>
 				<blastRadius>1.5</blastRadius>
 				<damageDef>Seg_COTO_PlasDamage</damageDef>
 				<damageAmount>15</damageAmount>
-			</li>
+			</li-->
         </modExtensions>
     </ThingDef>
 <ThingDef ParentName="BaseBullet">
