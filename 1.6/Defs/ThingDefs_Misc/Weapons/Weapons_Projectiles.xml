@@ -283,7 +283,7 @@
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
   		<label>overcharged arc beam</label>
-  		<description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area.</description>
+  		<description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area. Can overheat the arc coils and burn the shooter.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -446,6 +446,7 @@
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>
         <label>plasma shot</label>
+  		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
         <graphicData>
             <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
@@ -466,6 +467,7 @@
 	<ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_PlasmaOvercharge</defName>
         <label>overcharged plasma shot</label>
+  		<description>An overcharged blast of plasma, hotter and more damaging than the usual shot. Has a chance to overheat the weapon and cause an explosive plasma discharge centred on the shooter.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeCharged</uiIconPath>
         <graphicData>
             <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
@@ -488,6 +490,12 @@
                 <warmupTime>2.1</warmupTime>
                 <shotsPerBurst>1</shotsPerBurst>
             </li>
+			<li Class="seg.CompProperties_ProjectileOverheat">
+				<overheatChance>0.10</overheatChance>
+				<blastRadius>1.5</blastRadius>
+				<damageDef>Seg_COTO_PlasDamage</damageDef>
+				<damageAmount>15</damageAmount>
+			</li>
         </modExtensions>
     </ThingDef>
 <ThingDef ParentName="BaseBullet">
