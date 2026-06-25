@@ -345,8 +345,9 @@
     <li Class="seg.CompProperties_ProjectileOverheat">
         <overheatChance>0.45</overheatChance>
         <blastRadius>0.5</blastRadius>
-        <damageDef>Seg_COTO_PlasDamage</damageDef>
+        <damageDef>Seg_COTO_ArcDamage</damageDef>
         <damageAmount>5</damageAmount>
+		<fleckDefName>Seg_BlastEMPLong</fleckDefName>
     </li>
 </comps>
 	</ThingDef>
@@ -490,13 +491,16 @@
                 <warmupTime>2.1</warmupTime>
                 <shotsPerBurst>1</shotsPerBurst>
             </li>
-			<!--li Class="seg.CompProperties_ProjectileOverheat">
-				<overheatChance>0.10</overheatChance>
+        </modExtensions>
+		<comps>
+		<li Class="seg.CompProperties_ProjectileOverheat">
+				<overheatChance>0.20</overheatChance>
 				<blastRadius>1.5</blastRadius>
 				<damageDef>Seg_COTO_PlasDamage</damageDef>
 				<damageAmount>15</damageAmount>
-			</li-->
-        </modExtensions>
+				<fleckDefName>SEG_COTO_Plasmafleksplatter</fleckDefName>
+			</li>
+		</comps>
     </ThingDef>
 <ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_VolkBeam</defName>
