@@ -1257,7 +1257,7 @@
 		<tradeTags Inherit="False" />
 	</ThingDef>
 
-	<!--ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCaliver</defName>
 		<label>Volkite caliver</label>
 		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
@@ -1271,8 +1271,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1305,9 +1305,9 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
@@ -1330,8 +1330,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1369,9 +1369,9 @@
 			<skillRequirements>
 				<Crafting>19</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1394,8 +1394,8 @@
 		<statBases>
 			<Mass>2</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1431,11 +1431,11 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>19</Crafting>
+				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1460,8 +1460,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1494,16 +1494,16 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedRelicTier</li>
 		</tradeTags>
-	</ThingDef-->
+	</ThingDef>
 
 
 </Defs>
