@@ -271,7 +271,7 @@
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
-				<chainRange>6</chainRange>
+				<chainRange>5</chainRange>
 				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
@@ -328,7 +328,7 @@
 				<branchToSameTargets>false</branchToSameTargets>
 				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
 				<chainToAnything>False</chainToAnything>
-				<chainRange>8</chainRange>
+				<chainRange>6</chainRange>
 				<chainDelayTicks>1</chainDelayTicks>
 				
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
