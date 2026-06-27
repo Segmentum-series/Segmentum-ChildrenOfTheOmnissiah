@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 <!-- Main research tree -->
-<!-- Auto weapons -->
+	<!-- Auto weapons -->
 	<ResearchProjectDef>
 		<defName>Seg_AutoWeapons</defName><!-- To be moved later -->
 		<label>auto weapons</label>
@@ -16,22 +16,7 @@
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef>
 
-<!-- Ceramite production -->
-	<ResearchProjectDef>
-		<defName>Seg_CeramiteProduction</defName><!-- To be moved later -->
-		<label>ceramite production</label>
-		<description>Produce advanced ceramic composites from stone blocks and other materials.</description>
-		<baseCost>700</baseCost>
-		<techLevel>Industrial</techLevel>
-		<researchViewX>5.00</researchViewX>
-		<researchViewY>4.20</researchViewY>
-		<prerequisites>
-			<li>Electricity</li>
-			<li>Stonecutting</li>
-		</prerequisites>
-	</ResearchProjectDef>
-
-<!-- Radium volleys -->
+	<!-- Radium volleys -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_RadiumVolleys</defName>
 		<label>radium volleys</label>
@@ -50,7 +35,7 @@
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
-<!-- Arc permacapacitors -->
+	<!-- Arc permacapacitors -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_ArcPermacapacitors</defName>
 		<label>arc permacapacitors</label>
@@ -70,7 +55,7 @@
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
-<!-- Phosphor munitions -->
+	<!-- Phosphor munitions -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_PhosphexMunitions</defName>
 		<label>phosphor munitions</label>
@@ -88,7 +73,7 @@
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
 
-<!-- Matter destabilization -->
+	<!-- Matter destabilization -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_MatterDestabilization</defName>
 		<label>matter destabilization</label>
@@ -107,7 +92,7 @@
 	</ResearchProjectDef>
 
 <!-- Segmentum research tree -->
-<!-- Cult Mechanicus -->
+	<!-- Cult Mechanicus -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_CultMechanicus</defName>
 		<label>Cult Mechanicus</label>
@@ -126,7 +111,7 @@
 		<discoveredLetterText>Many pieces of Mechanicus apparel and armour require hyperweave, a tough and hard-to-acquire fabric. Hyperweave can be found through quests, trade, and exploration, but can also be refined by scrapping apparel and armour at the Mechanicus forge altar.\n\nRecycling low-durability and low-quality clothing for hyperweave is a great way to provide materials for your own production.</discoveredLetterText>
 	</ResearchProjectDef>
 
-<!-- Tech-Guard -->
+	<!-- Tech-Guard -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuard</defName>
 		<label>Tech-Guard</label>
@@ -146,7 +131,7 @@
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
-<!-- Tech-Guard advanced arsenal -->
+	<!-- Tech-Guard advanced arsenal -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_TechGuardAdvanced</defName>
 		<label>Tech-Guard advanced arsenal</label>
@@ -165,7 +150,7 @@
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 
-<!-- Maniple tactics -->
+	<!-- Maniple tactics -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_ManipleTactics</defName>
 		<label>Maniple tactics</label>
@@ -184,8 +169,8 @@
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
 	
-<!-- True Flesh-->
-<ResearchProjectDef>
+	<!-- True Flesh-->
+	<ResearchProjectDef>
 		<defName>Seg_COTO_TrueFlesh</defName>
 		<label>True Flesh</label>
 		<description>Be granted the secrets of true flesh manipulation, allowing for the creation of enhanced augmetic components for the glorification of the Machine God.</description>
@@ -206,7 +191,7 @@
 		<discoveredLetterText>The rank system of Mechanicus techpriests and their armed forces, the skitarii, is largely tied to artificial implants or augmetics. Augmetics can be manufactured at the Mechanicus augmetic microforge, and many ranks require a certain number of augmetic implants for a priest or skitarius to advance to the next rank.\n\nSome ranks ask for specific implants. For instance, the noospheric cortex is required by most techpriest rank paths at some point, and skitarii require the skitarii leg and skitarii eye lens implants.</discoveredLetterText>
 	</ResearchProjectDef>
 	
-<!-- Holy order vestments -->
+	<!-- Holy order vestments -->
 	<ResearchProjectDef>
 		<defName>Seg_COTO_HolyOrderVestments</defName>
 		<label>holy order vestments</label>
@@ -225,5 +210,5 @@
 		</requiredResearchFacilities>
 		<tab>Seg_SegmentumTab</tab>
 	</ResearchProjectDef>
-	
+
 </Defs>
