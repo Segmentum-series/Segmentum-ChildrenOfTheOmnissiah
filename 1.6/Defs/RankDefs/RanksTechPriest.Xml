@@ -68,6 +68,7 @@
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
             <ConstructSuccessChance>0.5</ConstructSuccessChance>
+            <FixBrokenDownBuildingSuccessChance>0.50</FixBrokenDownBuildingSuccessChance>
 
 
         </statOffsets>
