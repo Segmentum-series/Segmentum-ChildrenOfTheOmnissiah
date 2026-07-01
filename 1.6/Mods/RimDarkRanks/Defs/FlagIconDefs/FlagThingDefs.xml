@@ -46,7 +46,7 @@
 	<tickerType>Normal</tickerType>
 
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<designationCategory>Furniture</designationCategory>
+		<designationCategory>BEWH_RimDarkCategory</designationCategory>
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
