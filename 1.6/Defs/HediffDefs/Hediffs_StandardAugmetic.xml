@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef Abstract="True" Name="BodyPartStandardAugmetics" ParentName="BodyPartProstheticBase">
+  <ThingDef Abstract="True" Name="BodyPartStandardAugmetics" ParentName="BodyPartBionicBase">
     <recipeMaker>
       <researchPrerequisites>
         <li>Seg_COTO_TrueFlesh</li>
