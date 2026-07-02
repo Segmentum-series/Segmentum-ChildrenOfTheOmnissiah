@@ -26,19 +26,19 @@
 
 	<ThingCategoryDef>
 		<defName>Seg_COTO_MechanicusArmor</defName>
-		<label>Mechanicus armor</label>
+		<label>Mechanicus armour</label>
 		<parent>ApparelArmor</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
 		<defName>Seg_COTO_ArmorMagos</defName>
-		<label>Mechanicus magos armor</label>
+		<label>Mechanicus magos armour</label>
 		<parent>Seg_COTO_MechanicusArmor</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
 		<defName>Seg_COTO_ArmorSkitarii</defName>
-		<label>Mechanicus skitarii armor</label>
+		<label>Mechanicus skitarii armour</label>
 		<parent>Seg_COTO_MechanicusArmor</parent>
 	</ThingCategoryDef>
 </Defs>
