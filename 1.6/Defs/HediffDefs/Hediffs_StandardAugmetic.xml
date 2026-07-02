@@ -5,6 +5,8 @@
         <li>Seg_COTO_TrueFlesh</li>
         <li>Prosthetics</li>
       </researchPrerequisites>
+      <researchPrerequisite Inherit="false">
+      </researchPrerequisite>
 
       <recipeUsers Inherit="false">
         <li>Seg_COTO_AugmeticsTable</li>
