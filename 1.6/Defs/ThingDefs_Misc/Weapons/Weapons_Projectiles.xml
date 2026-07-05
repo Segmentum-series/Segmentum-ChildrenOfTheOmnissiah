@@ -165,11 +165,11 @@
 	</ThingDef>
 
 <!-- Arc -->
-	<!-- Arc pistol beam -->
+	<!-- Arc pistol -->
 	<ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_ArcPistol_Beam</defName>
   		<label>arc beam</label>
-  		<description>The standard arc weaponry beam which projects the Motive Force at a target and anything along the way.</description>
+  		<description>Projects the Motive Force at a target and can arc to other targets with electrifying effect.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -184,7 +184,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
@@ -192,30 +192,41 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>1</damageTickRate>
-				<lifetimeTicks>10</lifetimeTicks>
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>30</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>2.5</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.05</sweepRatePerTick>
-				<maxSweepAngle>1</maxSweepAngle>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
 
-				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
-				<textureScrollOffsetPerTick>(1, 1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>false</lockOnTarget>
+				
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>2</branchChance>
+				<maxBranches>2</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>4</chainRange>
+				<chainDelayTicks>1</chainDelayTicks>
 
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<!-- Arc rifle -->
 	<ThingDef ParentName="BaseBullet">
-  		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
-  		<label>overcharged arc beam</label>
-  		<description>A more powerful variant of the arc rifle beam, capable of delivering a devastating sustained energy blast.</description>
+  		<defName>Seg_COTO_ArcRifle_Beam</defName>
+  		<label>arc beam</label>
+  		<description>Projects the Motive Force at a target and can arc to other targets in a small area with electrifying effect.</description>
 		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
 		<category>Projectile</category>
 		<drawOffscreen>true</drawOffscreen>
@@ -230,39 +241,115 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_ArcDamage</damageDef>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
-			<stoppingPower>0.5</stoppingPower>
+			<stoppingPower>0.2</stoppingPower>
 			<speed>999</speed>
 		</projectile>
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
 				<damageTickRate>10</damageTickRate>
-				<lifetimeTicks>120</lifetimeTicks>
+				<lifetimeTicks>60</lifetimeTicks>
+
+				<beamWidth>0.45</beamWidth>
+				<beamWidthDrawScale>2.5</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>false</lockOnTarget>
+				
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>2</branchChance>
+				<maxBranches>3</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>5</chainRange>
+				<chainDelayTicks>1</chainDelayTicks>
+
+				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
+				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Arc rifle overcharge -->
+	<ThingDef ParentName="BaseBullet">
+  		<defName>Seg_COTO_ArcRifleOverCharged_Beam</defName>
+  		<label>overcharged arc beam</label>
+  		<description>Maximum-power projection of the Motive Force at a target which can arc to numerous other targets over a wider area. Can overheat the arc coils and burn the shooter.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_Arc</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_COTO_ArcDamage</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationBase>2.00</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>60</lifetimeTicks>
 
 				<beamWidth>0.45</beamWidth>
 				<beamWidthDrawScale>3</beamWidthDrawScale>
 
-				<sweepRatePerTick>0.01</sweepRatePerTick>
-				<maxSweepAngle>0.5</maxSweepAngle>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
 
-				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 
+				<maxChainTargets>2</maxChainTargets>
+				<chainDamageFalloff>0.80</chainDamageFalloff>
+				<branchChance>2</branchChance>
+				<maxBranches>5</maxBranches>
+				<branchToSameTargets>false</branchToSameTargets>
+				<chainAllowFriendlyFire>true</chainAllowFriendlyFire>
+				<chainToAnything>False</chainToAnything>
+				<chainRange>6</chainRange>
+				<chainDelayTicks>1</chainDelayTicks>
+				
 				<sustainerSoundDef>Seg_COTO_ElectricArc</sustainerSoundDef>
 				<trailSoundDef>Seg_COTO_ElectricArcEnd</trailSoundDef>
 			</li>
 			<li Class="Core40k.DefModExtension_AmmoChanger">
 				<unlockedBy>Seg_COTO_TechGuardAdvanced</unlockedBy>
 				<effectiveRange>35.9</effectiveRange>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2.5</warmupTime>
 				<shotsPerBurst>1</shotsPerBurst>
 			</li>
 		</modExtensions>
+		<comps>
+    <li Class="seg.CompProperties_ProjectileOverheat">
+        <overheatChance>0.45</overheatChance>
+        <blastRadius>0.5</blastRadius>
+        <damageDef>Seg_COTO_ArcDamage</damageDef>
+        <damageAmount>5</damageAmount>
+		<fleckDefName>Seg_BlastEMPLong</fleckDefName>
+    </li>
+</comps>
 	</ThingDef>
 	 
 
@@ -360,6 +447,7 @@
 <ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_Plasma</defName>
         <label>plasma shot</label>
+  		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
         <graphicData>
             <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
@@ -380,6 +468,7 @@
 	<ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_PlasmaOvercharge</defName>
         <label>overcharged plasma shot</label>
+  		<description>An overcharged blast of plasma, hotter and more damaging than the usual shot. Has a chance to overheat the weapon and cause an explosive plasma discharge centred on the shooter.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeCharged</uiIconPath>
         <graphicData>
             <texPath>Things/Projectile/Seg_COTO_Plasma</texPath>
@@ -403,6 +492,15 @@
                 <shotsPerBurst>1</shotsPerBurst>
             </li>
         </modExtensions>
+		<comps>
+		<li Class="seg.CompProperties_ProjectileOverheat">
+				<overheatChance>0.20</overheatChance>
+				<blastRadius>1.5</blastRadius>
+				<damageDef>Seg_COTO_PlasDamage</damageDef>
+				<damageAmount>15</damageAmount>
+				<fleckDefName>SEG_COTO_Plasmafleksplatter</fleckDefName>
+			</li>
+		</comps>
     </ThingDef>
 <ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_VolkBeam</defName>

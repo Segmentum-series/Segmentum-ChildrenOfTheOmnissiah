@@ -9,6 +9,7 @@
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
 			<li>Seg_COTO_TechMilita</li>
+            <li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_VoidshipMenial</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
     
@@ -68,6 +69,7 @@
             <BEWH_ArtificialPartsAffinityFactor>0.05</BEWH_ArtificialPartsAffinityFactor>
             <WorkSpeedGlobal>0.025</WorkSpeedGlobal>
             <ConstructSuccessChance>0.5</ConstructSuccessChance>
+            <FixBrokenDownBuildingSuccessChance>0.50</FixBrokenDownBuildingSuccessChance>
 
 
         </statOffsets>

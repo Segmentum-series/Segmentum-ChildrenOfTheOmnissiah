@@ -674,6 +674,7 @@
 			<li>SegWOTV_RetinueBackstories</li>
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>SegWOTV_MalatekBackstories</li>
 			<li>Pirate</li>
 			<li>Madman</li>
 			<li>Cult</li>
@@ -1018,6 +1019,7 @@
 		<baseDesc>[PAWN_nameDef] worked as a supervisor in a gargantuan manufactorum. [PAWN_pronoun] was expected to manage crews of labourers and servitors and keep them on-task and efficient by any means.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>SegWOTV_WorkerBackstories</li>
 			<li>Offworld</li>
 		</spawnCategories>
 		<workDisables>

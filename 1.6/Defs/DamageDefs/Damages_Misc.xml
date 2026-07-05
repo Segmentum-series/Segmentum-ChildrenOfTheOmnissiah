@@ -30,6 +30,10 @@
 		<causeStun>true</causeStun>
 		<deathMessage>{0} was electrified to death.</deathMessage>
 		<impactSoundType>Electric</impactSoundType>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<explosionCellFleck>BlastEMP</explosionCellFleck>
+		<explosionColorCenter>(0.3, 0.6, 1.0)</explosionColorCenter>
+		<explosionColorEdge>(0.1, 0.25, 0.6)</explosionColorEdge>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 	</DamageDef>
 	<!-- Gamma damage -->
@@ -90,7 +94,7 @@
 		<externalViolence>true</externalViolence>
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
-		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
+		<deathMessage>{0} has been burned to ash by power from the Dark Age of Technology.</deathMessage>
 		<additionalHediffs>
        		<li>
             	<hediff>Blindness</hediff>

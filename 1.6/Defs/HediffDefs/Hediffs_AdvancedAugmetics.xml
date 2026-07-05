@@ -1,6 +1,6 @@
 <Defs>
 <!-- BaseDef -->
-	<ThingDef Abstract="True" Name="BodyPartAdvancedAugmetics" ParentName="BodyPartProstheticBase">
+	<ThingDef Abstract="True" Name="BodyPartAdvancedAugmetics" ParentName="BodyPartBionicBase">
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_TrueFlesh</li>

@@ -178,6 +178,11 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/SkitariiRangerHood/Seg_COTO_SkitariiRangerHood</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+					<li>Eyes</li>
+			</renderSkipFlags>
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
@@ -254,6 +259,11 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/SkitariiVanguardHelmet/Seg_COTO_SkitariiVanguardHelmet</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+					<li>Eyes</li>
+			</renderSkipFlags>
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
@@ -504,6 +514,11 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/MarshalHelmet/Seg_COTO_MarshalHelmet</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+					<li>Beard</li>
+					<li>Eyes</li>
+			</renderSkipFlags>
 		</apparel>
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">

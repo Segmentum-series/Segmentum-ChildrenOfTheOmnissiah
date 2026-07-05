@@ -9,6 +9,7 @@
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesRankNeophyte</li>
             <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_ThunderWarriorRankInitiate</li>
 			<li>Seg_COTO_TechAcolytum</li>
+            <li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_VoidshipMenial</li>
         </incompatibleRanks>
         <!-- <requiredAgeRange>(7, 99999)</requiredAgeRange> -->
         <requiredSkills>

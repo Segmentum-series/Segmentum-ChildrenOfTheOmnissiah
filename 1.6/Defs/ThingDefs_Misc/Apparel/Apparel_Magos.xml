@@ -98,6 +98,9 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/MagosHood/Seg_COTO_MagosHood</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+			</renderSkipFlags>
 		</apparel>
 
 		<recipeMaker>
@@ -339,6 +342,9 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/BiologisHood/Seg_COTO_BiologisHood</li>
 			</wornGraphicPaths>
+			<renderSkipFlags>
+					<li>Hair</li>
+			</renderSkipFlags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisites>

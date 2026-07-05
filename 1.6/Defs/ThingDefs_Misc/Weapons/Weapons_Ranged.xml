@@ -165,7 +165,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcPistol</defName>
 		<label>arc pistol</label>
-		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -178,9 +178,9 @@
 			<Mass>2.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<WorkToMake>24000</WorkToMake>
 			<MarketValue>1100</MarketValue>
@@ -200,7 +200,7 @@
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<soundCast>Seg_COTO_ArcSound</soundCast>
 				<warmupTime>0.50</warmupTime>
-				<range>15.9</range>
+				<range>18.9</range>
 				<burstShotCount>1</burstShotCount>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -247,7 +247,7 @@
 	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
 		<defName>Seg_COTO_Gun_ArcRifle</defName>
 		<label>arc rifle</label>
-		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will often arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
@@ -260,10 +260,10 @@
 			<Mass>4.5</Mass>
 			<EquipDelay>0.5</EquipDelay>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-			<AccuracyTouch>0.90</AccuracyTouch>
-			<AccuracyShort>0.60</AccuracyShort>
-			<AccuracyMedium>0.35</AccuracyMedium>
-			<AccuracyLong>0.20</AccuracyLong>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
 			<WorkToMake>36000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 		</statBases>
@@ -283,7 +283,7 @@
 				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
 				<range>35.9</range>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>Seg_COTO_ArcSound</soundCast>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -774,6 +774,7 @@
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_RadPistol</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
@@ -977,6 +978,7 @@
 		<!-- Tags for trading and categorization for later-->
 		<weaponTags>
 			<li>Seg_COTO_Plasma</li>
+			<li>Seg_COTO_PlasmaCaliver</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedMidTier</li>
@@ -1255,7 +1257,7 @@
 		<tradeTags Inherit="False" />
 	</ThingDef>
 
-	<!--ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCaliver</defName>
 		<label>Volkite caliver</label>
 		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
@@ -1269,8 +1271,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1303,9 +1305,9 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
@@ -1328,8 +1330,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1367,9 +1369,9 @@
 			<skillRequirements>
 				<Crafting>19</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1392,8 +1394,8 @@
 		<statBases>
 			<Mass>2</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1429,11 +1431,11 @@
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
-				<Crafting>19</Crafting>
+				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 			<li>Seg_COTO_VolkCraftable</li>
@@ -1458,8 +1460,8 @@
 		<statBases>
 			<Mass>4</Mass>
 			<EquipDelay>1.2</EquipDelay>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown--> <!--long cooldown to "vent plasma"-->
-			<!--AccuracyTouch>0.60</AccuracyTouch>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.65</AccuracyMedium>
 			<AccuracyLong>0.56</AccuracyLong>
@@ -1492,16 +1494,16 @@
 			<skillRequirements>
 				<Crafting>21</Crafting>
 			</skillRequirements>
-		</recipeMaker-->
+		</recipeMaker>
 		<!-- Tags for trading and categorization for later-->
-		<!--weaponTags>
+		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedRelicTier</li>
 		</tradeTags>
-	</ThingDef-->
+	</ThingDef>
 
 
 </Defs>
