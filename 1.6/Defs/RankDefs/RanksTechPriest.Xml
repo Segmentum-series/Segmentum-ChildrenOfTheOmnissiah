@@ -261,6 +261,7 @@
         <rankTier>4</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_ServitorUnderseer</li>
+            <li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Drivesmaster</li>
         </incompatibleRanks>
         <ImplantsRequired>4</ImplantsRequired>
         <!--RequiredHediff>Seg_COTO_ManipulatorMechadendrite_Hediff</RequiredHediff-->
@@ -301,6 +302,7 @@
         <rankTier>4</rankTier>
           <incompatibleRanks>
             <li>Seg_COTO_FabricatorMinoris</li>
+            <li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_Drivesmaster</li>
         </incompatibleRanks>
        <ImplantsRequired>2</ImplantsRequired>
         <requiredSkills>
