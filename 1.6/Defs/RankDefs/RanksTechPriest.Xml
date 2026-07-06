@@ -256,6 +256,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_FabricatorMinoris</defName>
         <label>Fabricator Minoris</label>
+		<newPawnCardTitle>Fabricator</newPawnCardTitle>
         <description>A Fabricator Minoris has authority over the manufacturing processes \nand workforce of significant parts of a forgeplex, carrying out the orders \nof higher magi but with a good amount of independence.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_FabricatorMinoris</rankIconPath>
         <rankTier>4</rankTier>
@@ -297,6 +298,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_ServitorUnderseer</defName>
         <label>Servitor Underseer</label>
+		<newPawnCardTitle>Underseer</newPawnCardTitle>
         <description>These specialist techpriests are responsible for the maintenance and control of servitors in the field, particularly combat servitors. They are expected to be able to defend themselves if the situation calls for it.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_ServitorUnderseer</rankIconPath>
         <rankTier>4</rankTier>
@@ -405,6 +407,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_MagosBiologisextremis</defName>
         <label>Magos Biologis Extremis</label>
+		<newPawnCardTitle>Biologis Extremis</newPawnCardTitle>
         <description>A particular expert on medical matters and surgery, often found serving as the master chirurgeon on a voidship.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_MagosBiologisExtremis</rankIconPath>
         <rankTier>5</rankTier>
@@ -716,6 +719,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_CyberneticaDatasmith</defName>
         <label>Cybernetica Datasmith</label>
+		<newPawnCardTitle>Datasmith</newPawnCardTitle>
         <description>The mainstay of the Legio Cybernetica, Datasmiths command the \nrobotic forces of the Mechanicus and are often found fighting \nalongside their charges, believing deeply that these valiant machine spirits must be supported and cared for.</description>
         <rankIconPath>UI/Ranks/TechPriests/Seg_COTO_RankTechPriest_CyberneticaDatasmith</rankIconPath>
         <rankTier>6</rankTier>

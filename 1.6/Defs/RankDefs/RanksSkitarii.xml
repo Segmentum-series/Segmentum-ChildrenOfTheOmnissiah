@@ -112,6 +112,7 @@
     <Seg.RankDef>
         <defName>Seg_COTO_SkitariiVanguardAlpha</defName>
         <label>Skitarii Vanguard Alpha</label>
+		<newPawnCardTitle>Skitarii Alpha</newPawnCardTitle>
         <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiVanguardAlpha</rankIconPath>
         <rankTier>5</rankTier>
@@ -215,6 +216,7 @@
      <Seg.RankDef>
         <defName>Seg_COTO_SkitariiRangerAlpha</defName>
         <label>Skitarii Ranger Alpha</label>
+		<newPawnCardTitle>Skitarii Alpha</newPawnCardTitle>
         <description>An Alpha commands a squad of Skitarii, and is usually distinguished by more extensive augmetics and the privilege to use advanced weaponry such as power swords or phosphor pistols.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_SkitariiRangerAlpha</rankIconPath>
         <rankTier>5</rankTier>
