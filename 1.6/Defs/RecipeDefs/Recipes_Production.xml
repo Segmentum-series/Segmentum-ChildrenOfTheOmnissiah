@@ -109,6 +109,15 @@
 						<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
 						
 						<li MayRequire="Phonicmas.RimDark.MankindsFinest.Armory">BEWH_Undersuit</li>
+						
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBody</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyChild</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmet</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetChild</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavy</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
+						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -210,6 +219,15 @@
 				<li MayRequire="phonicmas.rimdark.mankindsfinest">BEWH_MkIPowerArmorHelmet</li>
 				
 				<li MayRequire="Phonicmas.RimDark.MankindsFinest.Armory">BEWH_Undersuit</li>
+				
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBody</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyChild</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmet</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetChild</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavy</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
+				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
