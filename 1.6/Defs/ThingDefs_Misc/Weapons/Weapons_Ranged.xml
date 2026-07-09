@@ -1216,6 +1216,11 @@
 		<smeltable>false</smeltable>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
+			<researchPrerequisite Inherit="False">
+			</researchPrerequisite>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_PlasmaInduction</li>
+			</researchPrerequisites>
 			</recipeUsers>
 		</recipeMaker>
 		<comps>
@@ -1260,7 +1265,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCaliver</defName>
 		<label>Volkite caliver</label>
-		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
+		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.:&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCaliver</texPath>
@@ -1319,7 +1324,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkBlaster</defName>
 		<label>Volkite blaster</label>
-		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
+		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.:&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkBlast</texPath>
@@ -1361,9 +1366,6 @@
 			<ComponentSpacer>30</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
-				<li>Seg_PlasmaInduction</li>
-			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
@@ -1383,7 +1385,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkSerpenta</defName>
 		<label>Volkite serpenta</label>
-		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
+		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.:&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkSerpenta</texPath>
@@ -1425,9 +1427,6 @@
 			<ComponentSpacer>30</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisites>
-				<li>Seg_PlasmaInduction</li>
-			</researchPrerequisites>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<skillRequirements>
@@ -1448,7 +1447,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCulverin</defName>
 		<label>Volkite culverin</label>
-		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.</description>
+		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.:&lt;/color&gt;</description>
 		
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCulverin</texPath>
