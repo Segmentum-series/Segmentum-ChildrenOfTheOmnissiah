@@ -203,6 +203,10 @@
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_WeaponRangedMidTier</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_WeaponRangedHighTier</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Seg_COTO_MechanicusArmor</tag></li>
+      <li Class="StockGenerator_BuyTradeTag" MayRequire="REDACTED.Segmentum.WarrantOfTheVoid"><tag>Seg_WOTV_Las</tag></li>
+      <li Class="StockGenerator_BuyTradeTag" MayRequire="REDACTED.Segmentum.WarrantOfTheVoid"><tag>Seg_WOTV_ProjectileGuns</tag></li>
+      <li Class="StockGenerator_BuyTradeTag" MayRequire="REDACTED.Segmentum.WarrantOfTheVoid"><tag>Seg_WOTV_WeaponMelee</tag></li>
+      <li Class="StockGenerator_BuyTradeTag" MayRequire="REDACTED.Segmentum.WarrantOfTheVoid"><tag>Seg_WOTV_Armor</tag></li>
       <li Class="StockGenerator_BuyTradeTag" MayRequire="Ludeon.RimWorld.Royalty"><tag>ImplantEmpireCommon</tag></li>
       <li Class="StockGenerator_BuyTradeTag" MayRequire="Ludeon.RimWorld.Royalty"><tag>ImplantEmpireRoyal</tag></li>
       <li Class="StockGenerator_BuyTradeTag" MayRequire="Ludeon.RimWorld.Odyssey"><tag>GravshipUpgrade</tag></li>
