@@ -628,7 +628,7 @@
     <defName>Seg_COTO_SkitariiDataUplink_Hediff</defName>
     <label>data uplink</label>
     <labelNoun>a data uplink implant</labelNoun>
-    <hediffClass>Seg.Hediff_SkillOffsetDisplay</hediffClass>
+    <hediffClass>Hediff_Implant</hediffClass>
     <description>An installed cranial implant which adds a basic noospheric connection and feeds combat and situational data directly to the bearer's neural cortex. Skitarii officers make use of these implants to better understand, analyse, and command on any battlefield the Machine Cult requires them to fight on.</description>
     <spawnThingOnRemoved>Seg_COTO_SkitariiDataUplink</spawnThingOnRemoved>
 
@@ -725,7 +725,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Brain</li>
+      <li>Torso</li>
     </appliedOnFixedBodyParts>
     <addsHediff>Seg_COTO_SkitariiDataUplink_Hediff</addsHediff>
   </RecipeDef>
