@@ -1438,7 +1438,6 @@
 		<weaponTags>
 			<li>Seg_COTO_Relic</li>
 			<li>Seg_COTO_Volk</li>
-			<li>Seg_COTO_VolkCraftable</li>
 		</weaponTags>
 		<tradeTags>
 			<li>Seg_COTO_WeaponRangedRelicTier</li>
