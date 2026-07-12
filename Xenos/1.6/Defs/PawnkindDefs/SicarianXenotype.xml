@@ -34,6 +34,7 @@
 		<description>Sicarians are living beings transformed into superbly efficient cybernetic killing machines, unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts and brain tissue are removed, and the body is prepared for martial augmetics in their place.</description>
 		<iconPath>UI/Icons/Seg_COTO_Icon_SicarianGene</iconPath>
 		<displayOrderInCategory>1</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
 		<biostatMet>3</biostatMet>
 		<biostatCpx>5</biostatCpx>
 		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>

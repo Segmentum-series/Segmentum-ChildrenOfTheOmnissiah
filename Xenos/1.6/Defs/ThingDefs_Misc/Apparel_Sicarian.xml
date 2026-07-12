@@ -314,9 +314,6 @@
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
 				
 			</li>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
-			</li>
 			<li Class="CompProperties_ApparelReloadable">
 				<maxCharges>250</maxCharges>
 				<ammoDef>Uranium</ammoDef>
