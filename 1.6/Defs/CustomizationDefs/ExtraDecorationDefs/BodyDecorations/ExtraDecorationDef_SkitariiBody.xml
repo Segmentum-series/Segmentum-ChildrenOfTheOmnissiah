@@ -27,7 +27,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
@@ -667,7 +667,7 @@
 
 		<flipable>false</flipable>
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
@@ -715,7 +715,7 @@
 
 		<flipable>false</flipable>
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 		<colorAmount>2</colorAmount>
 		<useParentColourAsDefault>true</useParentColourAsDefault>
 

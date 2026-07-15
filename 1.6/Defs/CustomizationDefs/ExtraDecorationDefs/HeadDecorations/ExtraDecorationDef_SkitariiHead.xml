@@ -76,7 +76,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
@@ -110,7 +110,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
@@ -155,7 +155,7 @@
 
 		<colourable>true</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
@@ -200,7 +200,7 @@
 
 		<colourable>true</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
+		 
 		<colorAmount>2</colorAmount>
 		<useParentColourAsDefault>true</useParentColourAsDefault>
 
@@ -248,7 +248,7 @@
 
 		<colourable>true</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
@@ -300,7 +300,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
@@ -399,7 +399,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
@@ -449,7 +449,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
@@ -500,7 +500,7 @@
 
 		<colourable>true</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>
@@ -542,7 +542,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 		<colorAmount>2</colorAmount>
 		<useParentColourAsDefault>true</useParentColourAsDefault>
 
@@ -593,7 +593,7 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(233,129,55)</defaultColour>
@@ -644,7 +644,7 @@
 
 		<colourable>true</colourable>
 		<flipable>true</flipable>
-		<useMask>true</useMask>
+		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<defaultColour>(26,148,200)</defaultColour>

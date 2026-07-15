@@ -153,6 +153,18 @@
 				<range>4~10</range>
 			</li>
 		</skills>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_PawnKindCustomization">
+				<extraDecorations>
+					<li>
+						<key>Seg_COTO_Apparel_SkitariiWarPlate</key>
+						<value>
+							<li>Seg_COTO_Deco_SkitariiWarPlateCrotchGuard</li>
+						</value>
+					</li>
+				</extraDecorations>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
@@ -211,7 +223,12 @@
         <li>
             <key>Seg_COTO_Apparel_SkitariiVanguardHelmet</key>
             <value>
-                <li>Seg_COTO_Deco_SkitariiVanguardHelmetCrest</li>
+                <li>Seg_COTO_Deco_SkitariiVanguardHelmetAlphaCrest</li>
+				<li>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</li>
+            </value>
+			<key>Seg_COTO_Apparel_SkitariiWarPlate</key>
+            <value>
+                <li>Seg_COTO_Deco_SkitariiWarPlateCrotchGuard</li>
             </value>
         </li>
     </extraDecorations>

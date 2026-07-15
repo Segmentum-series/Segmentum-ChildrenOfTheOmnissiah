@@ -37,7 +37,7 @@
 		</drawData>
 
 		<shaderType>BEWH_CutoutThreeColor</shaderType>	
-		<useMask>true</useMask>
+		 
 		<colourable>true</colourable>
 		<colorAmount>3</colorAmount>
 		<defaultColour>(146,12,18)</defaultColour>
