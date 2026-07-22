@@ -4,7 +4,7 @@
   <StyleCategoryDef>
     <defName>Seg_COTO_Omnissian</defName>
     <label>Omnissian</label>
-    <iconPath>UI/StyleCategories/Techist</iconPath>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineC</iconPath>
     <soundOngoingRitual>RitualSustainer_Techist</soundOngoingRitual>
     <ritualVisualEffectDef>Techist</ritualVisualEffectDef>
     <thingDefStyles>
