@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Omnissian -->
+
+  <ThingStyleDef>
+    <defName>Omnissian_SculptureSmall</defName>
+    <graphicData>
+      <texPath>Things/Building/BuildingStyles/Omnissian/SmallSculpture</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+</Defs>

@@ -53,7 +53,7 @@
     </symbolPacks>
     <thingStyleCategories>
       <li>
-        <category>Techist</category>
+        <category>Seg_COTO_Omnissian</category>
         <priority>4</priority>
       </li>
     </thingStyleCategories>
@@ -145,7 +145,7 @@
   
     <thingStyleCategories>
       <li>
-        <category>Techist</category>
+        <category>Seg_COTO_Omnissian</category>
         <priority>4</priority>
       </li>
     </thingStyleCategories>
@@ -263,7 +263,7 @@
   
     <thingStyleCategories>
       <li>
-        <category>Techist</category>
+        <category>Seg_COTO_Omnissian</category>
         <priority>4</priority>
       </li>
     </thingStyleCategories>
