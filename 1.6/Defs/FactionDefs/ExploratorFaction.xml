@@ -128,7 +128,7 @@
 			</li>
 		</deityPresets>
 		<styles>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Seg_COTO_Omnissian</li>
 		</styles>
 		<forcedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Omnissian</li>
