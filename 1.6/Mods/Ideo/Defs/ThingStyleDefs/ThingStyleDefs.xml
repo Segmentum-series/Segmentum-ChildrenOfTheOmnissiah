@@ -14,7 +14,7 @@
   <ThingStyleDef>
     <defName>Omnissian_IdeogramA</defName>
     <graphicData>
-      <texPath>Things/Building/Misc/Ideograms/IconOmnissianA</texPath>
+      <texPath>Things/Building/Ideograms/IconOmnissianA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
     </graphicData>
