@@ -648,7 +648,7 @@
 				<maxBranches>0</maxBranches>
 				<branchChance>0</branchChance>
 
-				<beamWidth>1.8</beamWidth>
+				<beamWidth>0.9</beamWidth>
 				<beamWidthDrawScale>2</beamWidthDrawScale>
 
 				<sweepRatePerTick>0</sweepRatePerTick>
