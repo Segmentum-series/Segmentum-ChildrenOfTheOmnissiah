@@ -1289,7 +1289,7 @@
 				<defaultProjectile>Seg_COTO_VolkBeam</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
 				<warmupTime>1.35</warmupTime>
-				<range>22.0</range>
+				<range>22.9</range>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -1433,7 +1433,7 @@
 				<defaultProjectile>Seg_COTO_VolkBlastBeam</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
 				<warmupTime>.35</warmupTime>
-				<range>9.9</range>
+				<range>11.9</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -1508,7 +1508,7 @@
 				<defaultProjectile>Seg_COTO_VolkCulverinBeam</defaultProjectile>
 				<soundCast>Seg_COTO_PlasmaSound</soundCast>
 				<warmupTime>2</warmupTime>
-				<range>22.0</range>
+				<range>22.9</range>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>

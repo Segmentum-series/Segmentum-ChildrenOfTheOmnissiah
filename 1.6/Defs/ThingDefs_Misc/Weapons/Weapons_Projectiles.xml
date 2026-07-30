@@ -532,7 +532,7 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>10</damageTickRate>
+				<damageTickRate>6</damageTickRate>
 				<lifetimeTicks>20</lifetimeTicks>
 				<chainRange>0</chainRange>
 				<maxChainTargets>0</maxChainTargets>
@@ -541,7 +541,7 @@
 				<maxBranches>0</maxBranches>
 				<branchChance>0</branchChance>
 
-				<beamWidth>1</beamWidth>
+				<beamWidth>0.8</beamWidth>
 				<beamWidthDrawScale>1</beamWidthDrawScale>
 
 				<sweepRatePerTick>0</sweepRatePerTick>
@@ -551,7 +551,7 @@
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -573,7 +573,7 @@
 
 		<projectile>
 			<damageDef>Seg_COTO_VolkDamage</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>999</speed>
@@ -585,8 +585,8 @@
 
 		<modExtensions>
 			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>10</damageTickRate>
-				<lifetimeTicks>6</lifetimeTicks>
+				<damageTickRate>6</damageTickRate>
+				<lifetimeTicks>14</lifetimeTicks>
 				<chainRange>0</chainRange>
 				<maxChainTargets>0</maxChainTargets>
 				<chainDelayTicks>100000</chainDelayTicks>
@@ -594,8 +594,8 @@
 				<maxBranches>0</maxBranches>
 				<branchChance>0</branchChance>
 
-				<beamWidth>1</beamWidth>
-				<beamWidthDrawScale>.75</beamWidthDrawScale>
+				<beamWidth>0.8</beamWidth>
+				<beamWidthDrawScale>.8</beamWidthDrawScale>
 
 				<sweepRatePerTick>0</sweepRatePerTick>
 				<maxSweepAngle>0</maxSweepAngle>
@@ -604,7 +604,7 @@
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -631,7 +631,7 @@
 			<armorPenetrationBase>2.00</armorPenetrationBase>
 			<stoppingPower>4</stoppingPower>
 			<speed>999</speed>
-			<explosionRadius>0.1</explosionRadius>
+			<explosionRadius>0.2</explosionRadius>
 			<filth>Filth_Ash</filth>
 			<filthChance>.1</filthChance>
 			<filthCount>0~1</filthCount>
@@ -648,7 +648,7 @@
 				<maxBranches>0</maxBranches>
 				<branchChance>0</branchChance>
 
-				<beamWidth>2</beamWidth>
+				<beamWidth>1.8</beamWidth>
 				<beamWidthDrawScale>2</beamWidthDrawScale>
 
 				<sweepRatePerTick>0</sweepRatePerTick>
@@ -658,7 +658,7 @@
 				<debugCells>false</debugCells>
 
 				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
-				<lockOnTarget>true</lockOnTarget>
+				<lockOnTarget>false</lockOnTarget>
 			</li>
 		</modExtensions>
 	</ThingDef>

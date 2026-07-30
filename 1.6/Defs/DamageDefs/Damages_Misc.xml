@@ -80,12 +80,12 @@
 	<DamageDef ParentName="Bullet">
 		<defName>Seg_COTO_FlechetteDamage</defName>
 		<label>flechette dart lacerations</label>
-		<additionalHediffs>
+		<!--additionalHediffs>
        		<li>
             	<hediff>Seg_COTO_FlechetteHiddenDamageAdd</hediff>
             	<severityPerDamageDealt>1</severityPerDamageDealt>
 			</li>
-    	</additionalHediffs>
+    	</additionalHediffs-->
 	</DamageDef>
 		<DamageDef>
 		<defName>Seg_COTO_VolkDamage</defName>
@@ -95,12 +95,12 @@
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been burned to ash by power from the Dark Age of Technology.</deathMessage>
-		<additionalHediffs>
+		<!--additionalHediffs>
        		<li>
             	<hediff>Blindness</hediff>
             	<severityPerDamageDealt>0.01</severityPerDamageDealt>
         	</li>
-		</additionalHediffs>
+		</additionalHediffs-->
 		<buildingDamageFactor>2</buildingDamageFactor>
 		<buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
 		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
