@@ -404,7 +404,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
 		<label>phosphor serpenta</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
 			<shaderType>Cutout</shaderType>
@@ -473,7 +473,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
 		<label>phosphor blast pistol</label>
-		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can ignite fires on its target and in the target's area.</description>
+		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
 			<shaderType>Cutout</shaderType>
