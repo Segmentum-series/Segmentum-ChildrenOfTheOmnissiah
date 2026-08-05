@@ -222,7 +222,7 @@
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
-			<Seg_RadResistance>.2</Seg_RadResistance>
+			<Seg_RadResistance>.25</Seg_RadResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>17000</WorkToMake>
@@ -312,7 +312,7 @@
 			
 		</statBases>
 		<equippedStatOffsets>
-			<Seg_RadResistance>.8</Seg_RadResistance>
+			<Seg_RadResistance>.5</Seg_RadResistance>
 		</equippedStatOffsets>
 		<costList>
 			<Plasteel>20</Plasteel>
@@ -398,7 +398,7 @@
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.30</CertaintyLossFactor>
-			<Seg_RadResistance>0.8</Seg_RadResistance>
+			<Seg_RadResistance>0.5</Seg_RadResistance>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
@@ -490,7 +490,7 @@
 				<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 				<AimingDelayFactor>-0.05</AimingDelayFactor>
 				<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
-				<Seg_RadResistance>.2</Seg_RadResistance>
+				<Seg_RadResistance>.25</Seg_RadResistance>
 		</equippedStatOffsets>
 		
 		<recipeMaker>
