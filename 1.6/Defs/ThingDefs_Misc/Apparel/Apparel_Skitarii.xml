@@ -222,6 +222,7 @@
 			<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+			<Seg_RadResistance>.2</Seg_RadResistance>
 		</equippedStatOffsets>
 		<statBases>
 			<WorkToMake>17000</WorkToMake>
@@ -308,8 +309,11 @@
 			<Insulation_Heat>10</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+			
 		</statBases>
-
+		<equippedStatOffsets>
+			<Seg_RadResistance>.8</Seg_RadResistance>
+		</equippedStatOffsets>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
@@ -387,12 +391,14 @@
 			<Insulation_Heat>10</Insulation_Heat>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
+			
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.20</SocialImpact>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.30</CertaintyLossFactor>
+			<Seg_RadResistance>0.8</Seg_RadResistance>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
@@ -476,13 +482,17 @@
 			<Insulation_Cold>5</Insulation_Cold>
 			<Insulation_Heat>3</Insulation_Heat>
 			<SocialImpact>0.20</SocialImpact>
+			
 		</statBases>
+
 		<equippedStatOffsets>
-		<ToxicResistance>1.00</ToxicResistance>
-		<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
-		<AimingDelayFactor>-0.05</AimingDelayFactor>
-		<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+				<ToxicResistance>1.00</ToxicResistance>
+				<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+				<AimingDelayFactor>-0.05</AimingDelayFactor>
+				<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">.50</SlaveSuppressionOffset>
+				<Seg_RadResistance>.2</Seg_RadResistance>
 		</equippedStatOffsets>
+		
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
 				<li>Seg_COTO_ManipleTactics</li>

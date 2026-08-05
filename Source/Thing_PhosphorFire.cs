@@ -203,7 +203,7 @@ public class Projectile_Phosphor : Bullet
 
     public class SEG_COTO_Radium_Verb_Shoot : Verb_Shoot
     {
-        private static readonly HediffDef RadBuildupDef = HediffDef.Named("SEG_COTO_RadBuildup");
+        private static readonly HediffDef RadBuildupDef = HediffDef.Named("SEG_RadBuildup");
 
         protected override bool TryCastShot()
         {

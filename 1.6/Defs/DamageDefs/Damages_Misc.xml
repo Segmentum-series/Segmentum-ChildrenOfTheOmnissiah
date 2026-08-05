@@ -47,7 +47,7 @@
 		<deathMessage>{0} has been shown why you should never split atoms.</deathMessage>
 		<additionalHediffs>
        		<li>
-            	<hediff>SEG_COTO_RadBuildup</hediff>
+            	<hediff>SEG_RadBuildup</hediff>
             	<severityPerDamageDealt>0.01</severityPerDamageDealt>
         	</li>
 		</additionalHediffs>
@@ -59,7 +59,7 @@
     	<label>radiation damage</label>
     	<additionalHediffs>
        		<li>
-            	<hediff>SEG_COTO_RadBuildup</hediff>
+            	<hediff>SEG_RadBuildup</hediff>
             	<severityPerDamageDealt>0.008</severityPerDamageDealt> <!-- this means 10 damage will add 1% (.008 is 8%)-->
         	</li>
     	</additionalHediffs>

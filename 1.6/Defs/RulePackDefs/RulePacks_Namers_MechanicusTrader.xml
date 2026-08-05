@@ -18,13 +18,13 @@
         <li>r_name->[MechanicusShipCode] [MechanicusShipNoun] of [MechanicusShipFamousPlace]</li>
       </rulesStrings>
       <rulesFiles>
-        <li>MechanicusShipHolyName->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipHolyName</li>
-        <li>MechanicusShipNoun->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNoun</li>
-        <li>MechanicusShipFamousPlace->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlace</li>
-        <li>MechanicusShipCode->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipCode</li>
-        <li>MechanicusShipNumeral->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNumeral</li>
-        <li>MechanicusShipFamousPlaceAdjective->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlaceAdjective</li>
-        <li>MechanicusShipAdjective->Names/SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipAdjective</li>
+        <li>MechanicusShipHolyName->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipHolyName</li>
+        <li>MechanicusShipNoun->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNoun</li>
+        <li>MechanicusShipFamousPlace->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlace</li>
+        <li>MechanicusShipCode->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipCode</li>
+        <li>MechanicusShipNumeral->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipNumeral</li>
+        <li>MechanicusShipFamousPlaceAdjective->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipFamousPlaceAdjective</li>
+        <li>MechanicusShipAdjective->SegmentumChildrenOfTheOmnissiahNames/Names/MechanicusShipAdjective</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
