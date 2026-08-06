@@ -404,7 +404,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
 		<label>phosphor serpenta</label>
-		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
 			<shaderType>Cutout</shaderType>
@@ -473,7 +473,7 @@
 	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
 		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
 		<label>phosphor blast pistol</label>
-		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits.</description>
+		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
 			<shaderType>Cutout</shaderType>
@@ -1263,7 +1263,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCaliver</defName>
 		<label>Volkite caliver</label>
-		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCaliver</texPath>
@@ -1334,7 +1334,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkBlaster</defName>
 		<label>Volkite blaster</label>
-		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkBlast</texPath>
@@ -1407,7 +1407,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkSerpenta</defName>
 		<label>Volkite serpenta</label>
-		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
 
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkSerpenta</texPath>
@@ -1481,7 +1481,7 @@
 	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
 		<defName>Seg_COTO_Gun_VolkCulverin</defName>
 		<label>Volkite culverin</label>
-		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
 		
 		<graphicData>
 			<texPath>Things/Weapon/Seg_COTO_VolkCulverin</texPath>
