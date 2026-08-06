@@ -76,7 +76,6 @@
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<techHediffsTags>
@@ -372,7 +371,6 @@
 			<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
 			<li>Seg_COTO_Apparel_MarshalHelmet</li>
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
-			<li>Seg_COTO_Apparel_MarshalBackpack</li>
 		</apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
@@ -472,7 +470,6 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
-			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_CrudeAugmetics</li>
@@ -523,7 +520,6 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
-			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
@@ -590,7 +586,6 @@
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
 			<li>Seg_COTO_Apparel_ExploratorRobe</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
-			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
@@ -667,7 +662,6 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
-			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>

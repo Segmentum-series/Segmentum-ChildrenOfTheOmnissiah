@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Defs> <!-- MOVE TO CORE -->
+
+	<!-- Shared -->
+	<Core40k.DecorationTypeDef>
+		<defName>Seg_DecoCategory_Antenna</defName>
+		<label>Antenna</label>
+	</Core40k.DecorationTypeDef>
+
+</Defs>

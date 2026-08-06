@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+<!-- War plate -->
 	<!-- Groin armour -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_SkitariiWarPlateCrotchGuard</defName>
@@ -27,7 +28,6 @@
 		</drawData>
 
 		<colourable>true</colourable>
-		 
 
 		<shaderType>CutoutComplex</shaderType>
 		<hasParentColourPaletteOption>true</hasParentColourPaletteOption>
@@ -40,6 +40,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Misc</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Horizontal gear stripe -->
@@ -101,6 +103,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Decals</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Vertical gear stripe -->
@@ -157,6 +161,12 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Decals</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiWarPlateVerticalStripe</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Vertical stripe -->
@@ -213,6 +223,12 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Decals</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiWarPlateVerticalGearStripe</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Purity seal 1 -->
@@ -261,6 +277,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Pseals</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Purity seal 2 -->
@@ -309,6 +327,8 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Pseals</decorationType>
 	</Core40k.ExtraDecorationDef>
 
 	<!-- Purity seal 3 -->
@@ -357,9 +377,204 @@
 			<li>Hulk</li>
 			<li>Fat</li>
 		</appliesToBodyTypes>
+
+		<decorationType>BEWH_DecoCategory_Pseals</decorationType>
+	</Core40k.ExtraDecorationDef>
+	
+	<!-- Skitarii backpack decorations -->
+	<!-- Antena 1 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena1</defName>
+		<label>Antenna U</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena1</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena1</drawnTextureIconPath>
+		<drawSize>(0.32, 0.32)</drawSize>
+		<sortOrder>1</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.25, 0, 0.52)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.55)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.25, 0, 0.52)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.55)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+		
+		<decorationType>Seg_DecoCategory_Antenna</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena2</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena3</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena4</li>
+		</incompatibleDecorations>
 	</Core40k.ExtraDecorationDef>
 
-<!--Marshal-->
+	<!-- Antena 2 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena2</defName>
+		<label>Antenna V</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena2</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena2</drawnTextureIconPath>
+		<drawSize>(0.32, 0.32)</drawSize>
+		<sortOrder>2</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.25, 0, 0.52)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.55)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.25, 0, 0.52)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.55)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+		
+		<decorationType>Seg_DecoCategory_Antenna</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena1</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena3</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena4</li>
+		</incompatibleDecorations>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Antena 3 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena3</defName>
+		<label>Antenna C</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena3</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena3</drawnTextureIconPath>
+		<drawSize>(0.32, 0.32)</drawSize>
+		<sortOrder>3</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.25, 0, 0.52)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.55)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.25, 0, 0.52)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.55)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+		
+		<decorationType>Seg_DecoCategory_Antenna</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena1</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena2</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena4</li>
+		</incompatibleDecorations>
+	</Core40k.ExtraDecorationDef>
+
+	<!-- Antena 4 -->
+	<Core40k.ExtraDecorationDef>
+		<defName>Seg_COTO_Deco_SkitariiBackpack_Antena4</defName>
+		<label>Antenna Y</label>
+		<description>...</description>
+		<iconPath>UI/Decoration/Icons/SkitariiBackpack/Seg_COTO_Deco_SkitariiBackpack_Antena4</iconPath>
+		<drawnTextureIconPath>Things/Decoration/SkitariiBackpack/Seg_COTO_SkitariiBackpack_Antena4</drawnTextureIconPath>
+		<drawSize>(0.32, 0.32)</drawSize>
+		<sortOrder>4</sortOrder>
+
+		<appliesTo>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+		</appliesTo>
+		<defaultShowRotation>
+			<li>East</li>
+			<li>North</li>
+			<li>South</li>
+			<li>West</li>
+		</defaultShowRotation>
+		<drawData>
+			<dataEast>
+				<layer>20</layer>
+				<offset>(-0.25, 0, 0.52)</offset>
+			</dataEast>
+			<dataNorth>
+				<layer>225</layer>
+				<offset>(-0.31, 0, 0.55)</offset>
+			</dataNorth>
+			<dataWest>
+				<layer>225</layer>
+				<offset>(0.25, 0, 0.52)</offset>
+			</dataWest>
+			<dataSouth>
+				<layer>20</layer>
+				<offset>(0.31, 0, 0.55)</offset>
+			</dataSouth>
+		</drawData>
+		<colourable>false</colourable>
+		
+		<decorationType>Seg_DecoCategory_Antenna</decorationType>
+
+		<incompatibleDecorations>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena1</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena2</li>
+				<li>Seg_COTO_Deco_SkitariiBackpack_Antena3</li>
+		</incompatibleDecorations>
+	</Core40k.ExtraDecorationDef>
+
+<!--Marshal command plate-->
 	<!-- Vertical stripe -->
 	<Core40k.ExtraDecorationDef>
 		<defName>Seg_COTO_Deco_MarshalCommandPlateVerticalStripe</defName>

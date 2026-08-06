@@ -16,7 +16,6 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
-			<li>Seg_COTO_Apparel_MagosBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<initialWillRange>0~0</initialWillRange>
@@ -57,7 +56,6 @@
 			<li>Seg_COTO_Apparel_SkitariiRangerHood</li>
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<initialWillRange>0~0</initialWillRange>
@@ -100,7 +98,6 @@
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
-			<li>Seg_COTO_Apparel_SkitariiBackpack</li>
 		</apparelRequired>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
 		<initialWillRange>0~0</initialWillRange>

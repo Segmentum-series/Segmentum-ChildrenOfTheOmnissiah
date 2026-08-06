@@ -16,7 +16,6 @@
         <itemQuality>Normal</itemQuality>
         <apparelRequired Inherit="False">
             <li>Seg_COTO_Apparel_SicarianBattleArmour</li>
-            <li>Seg_COTO_Apparel_SicarianBackpack</li>
             <li>Seg_COTO_Apparel_SkitariiFatigues</li>
         </apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>

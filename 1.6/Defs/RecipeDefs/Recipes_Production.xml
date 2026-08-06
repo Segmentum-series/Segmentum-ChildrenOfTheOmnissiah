@@ -145,12 +145,6 @@
 				<li>Apparel_PowerArmorHelmet</li>
 				<li>Apparel_PowerArmor</li>
 
-				<li>Seg_COTO_Apparel_MagosBackpack</li>
-				<li>Seg_COTO_Apparel_SkitariiBackpack</li>
-				<li>Seg_COTO_Apparel_MarshalBackpack</li>
-				<li MayRequire="redmattis.betterprerequisites">Seg_COTO_Apparel_SicarianBackpack</li>
-
-
 				<li MayRequire="ludeon.rimworld.odyssey">Apparel_VacsuitHelmet</li>
 				<li MayRequire="ludeon.rimworld.odyssey">Apparel_Vacsuit</li>
 				<li MayRequire="ludeon.rimworld.odyssey">Apparel_VacsuitChildren</li>

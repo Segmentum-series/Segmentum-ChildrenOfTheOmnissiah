@@ -19,6 +19,7 @@
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour</texPath>
 		</graphicData>
+		
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<MaxHitPoints>550</MaxHitPoints>
@@ -31,21 +32,28 @@
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.14</DecompressionResistance>
 			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.14</VacuumResistance>
 		</statBases>
+
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
 			<PainShockThreshold>0.3</PainShockThreshold>
-			<MoveSpeed>0.2</MoveSpeed>
+			<MoveSpeed>0.3</MoveSpeed>
+			<CarryingCapacity>40</CarryingCapacity>
+			<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
+			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
+
 		<recipeMaker>
 			<researchPrerequisites Inherit="False">
 				<li>Seg_COTO_SicarianKillclades</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Plasteel>40</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>7</ComponentSpacer>
 			<Hyperweave>10</Hyperweave>
 			<Seg_Ceramite>40</Seg_Ceramite>
+			<Cloth>20</Cloth>
+			<Uranium>6</Uranium>
 		</costList>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -73,15 +81,54 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour</li>
 			</wornGraphicPaths>
+
+			<renderNodeProperties>
+				<!-- Backpacks -->
+				<li>
+					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<texPath>Things/Apparel/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_Backpack</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>Body</parentTagDef>
+					<drawData>
+						<dataEast>
+							<layer>71</layer>
+						</dataEast>
+						<dataWest>
+							<layer>71</layer>
+						</dataWest>
+						<dataNorth>
+							<layer>99.6</layer>
+						</dataNorth>
+						<dataSouth>
+							<layer>-1</layer>
+						</dataSouth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
+
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative"> 
 				<decorativeType>Body</decorativeType>
 			</li>
+
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor><!-- Mars red -->
 				<defaultSecondaryColor>(166,166,166)</defaultSecondaryColor><!-- Grey -->
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
+			</li>
+
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>250</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>10</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
+				<baseReloadTicks>40</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
 			</li>
 		</comps>
 		<modExtensions>
@@ -266,73 +313,4 @@
 		</modExtensions>
 	</ThingDef>
 
-
-	<!-- Sicarian backpack -->
-	<ThingDef ParentName="Seg_COTO_BackpackBase">
-		<defName>Seg_COTO_Apparel_SicarianBackpack</defName>
-		<label>Sicarian powerpack</label>
-		<description>Sicarian troops have little need to carry supplies or equipment like the baseline soldiers of the Militarum do, but their backpacks are still useful for the integral interface systems that boost the operation of their augmetic bodies.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Powerpack or power source, refuelled with Uranium&lt;/color&gt;.</description>
-		<graphicData>
-			<texPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</texPath>
-		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>Seg_COTO_SicarianKillclades</researchPrerequisite>
-		</recipeMaker>
-		<costList>
-			<Plasteel>30</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<Cloth>20</Cloth>
-			<Uranium>6</Uranium>
-		</costList>
-		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<MaxHitPoints>550</MaxHitPoints>
-			<Mass>2.2</Mass>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.01</ArmorRating_Heat> 
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.15</MoveSpeed>
-			<CarryingCapacity>40</CarryingCapacity>
-			<VEF_MassCarryCapacity>50</VEF_MassCarryCapacity>
-			<SocialImpact>0.20</SocialImpact>
-		</equippedStatOffsets>
-		<apparel>
-			<wornGraphicPath>Things/Apparel/SicarianBackpack/Seg_COTO_SicarianBackpack</wornGraphicPath>
-			<tags>
-				<li>Seg_COTO_SicarianTag</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-		<comps>
-			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
-				<defaultPrimaryColor>(120,82,66)</defaultPrimaryColor>
-				<defaultSecondaryColor>(255,255,255)</defaultSecondaryColor>
-				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor>
-				
-			</li>
-			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>250</maxCharges>
-				<ammoDef>Uranium</ammoDef>
-				<ammoCountToRefill>10</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
-				<baseReloadTicks>40</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>powercell</chargeNoun>
-				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li>
-		</comps>
-		<modExtensions>
-			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-				<tabDefs>
-					<li>BEWH_ArmorColoring</li>
-				</tabDefs>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	
 </Defs>

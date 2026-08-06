@@ -43,6 +43,8 @@
 		
 	</ThingDef>
 
+
+<!-- Hoods -->
 	<!-- Magos hood -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_MagosHood</defName>
@@ -118,173 +120,13 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
-	</ThingDef>
-
-	<!-- Magos robe -->
-	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_Apparel_MagosRobes</defName>
-		<label>magos robe</label>
-		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
-		</graphicData>
-
-		<statBases>
-			<WorkToMake>12000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>3.5</Mass>
-			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor> <!-- the duster armor is already rather high, maybe up this? idk what do you think abo-->
-			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<SocialImpact>.15</SocialImpact>
-			<ResearchSpeed>.10</ResearchSpeed>
-		</equippedStatOffsets>
-
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
-
-		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
-				<li>Seg_COTO_MagosRobes</li>
-			</tags>
-			<countsAsClothingForNudity>true</countsAsClothingForNudity>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Neck</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-			<wornGraphicPaths>
-				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
-			</wornGraphicPaths>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
-			</researchPrerequisites>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-
-		<comps>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
 			</li>
-		</comps>
-		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
-	</ThingDef>
-
-	<!-- Magos cassock -->
-	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_Apparel_MagosCassock</defName>
-		<label>magos cassock</label>
-		<description>Standard clothing worn by the cultists of the Mechanicus. A common sight among priests of forge worlds, although higher ranking members may replace it with more distinct apparel suited to their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-
-		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</texPath>
-		</graphicData>
-
-		<statBases>
-			<WorkToMake>12000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>6.1</Mass>
-			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<ConstructionSpeed>.10</ConstructionSpeed>
-			<ConstructSuccessChance>.10</ConstructSuccessChance>
-		</equippedStatOffsets>
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
-
-		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
-				<li>Seg_COTO_MagosCassock</li>
-			</tags>
-			<countsAsClothingForNudity>true</countsAsClothingForNudity>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Neck</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-			<wornGraphicPaths>
-				<li>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</li>
-			</wornGraphicPaths>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>Seg_COTO_CultMechanicus</li>
-			</researchPrerequisites>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<comps>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
-			</li>
-		</comps>
-		<modExtensions>
-            <li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-                <tabDefs>
-                    <li>BEWH_ArmorColoring</li>
-                    <li>BEWH_ArmorDecoration</li>
-                </tabDefs>
-            </li>
-        </modExtensions>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Biologis hood -->
@@ -358,88 +200,6 @@
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Head</decorativeType>
-			</li>
-		</comps>
-		<modExtensions>
-			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
-				<tabDefs>
-					<li>BEWH_ArmorColoring</li>
-					<li>BEWH_ArmorDecoration</li>
-				</tabDefs>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
-	<!-- Biologis cassock -->
-	<ThingDef ParentName="Seg_COTO_MagosBase">
-		<defName>Seg_COTO_Apparel_BiologisCassock</defName>
-		<label>Biologis cassock</label>
-		<description>This cassock denotes membership and status within the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms. Magi Biologis often outfit their robes with surgical tools, sample storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
-
-		<graphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
-			<texPath>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</texPath>
-		</graphicData>
-
-		<statBases>
-			<WorkToMake>10000</WorkToMake>
-			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>6.1</Mass>
-			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
-			<MedicalTendQuality>.15</MedicalTendQuality>
-			<PlantWorkSpeed>.20</PlantWorkSpeed>
-		</equippedStatOffsets>
-
-		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-			<stuffCategories>
-				<li>Fabric</li>
-				<li>Leathery</li>
-			</stuffCategories>
-		<costStuffCount>70</costStuffCount>
-
-		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
-				<li>Seg_COTO_MagosCassock</li>
-			</tags>
-			<countsAsClothingForNudity>true</countsAsClothingForNudity>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Neck</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Middle</li>
-			</layers>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-			<wornGraphicPaths>
-				<li>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</li>
-			</wornGraphicPaths>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisites>
-				<li>Seg_COTO_HolyOrderVestments</li>
-			</researchPrerequisites>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<comps>
-			<li Class="Core40k.CompProperties_Decorative">
-				<decorativeType>Body</decorativeType>
 			</li>
 		</comps>
 		<modExtensions>
@@ -531,6 +291,121 @@
 		</modExtensions>
 	</ThingDef>
 
+
+<!-- Robes -->
+	<!-- Magos robe -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_MagosRobes</defName>
+		<label>magos robe</label>
+		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>5.5</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor> <!-- the duster armor is already rather high, maybe up this? idk what do you think abo-->
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+
+		<equippedStatOffsets>
+			<SocialImpact>.15</SocialImpact>
+			<ResearchSpeed>.10</ResearchSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Cloth>20</Cloth>
+			<Uranium>5</Uranium>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosRobes</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</li>
+			</wornGraphicPaths>
+
+			<renderNodeProperties>
+				<!-- Backpacks -->
+				<li>
+					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>Body</parentTagDef>
+					<drawSize>(1.20,1.20)</drawSize>
+					<drawData>
+						<dataEast>
+							<layer>71</layer>
+						</dataEast>
+						<dataWest>
+							<layer>71</layer>
+						</dataWest>
+						<dataNorth>
+							<layer>99.6</layer>
+						</dataNorth>
+						<dataSouth>
+							<layer>-1</layer>
+						</dataSouth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	<!-- Explorator robe -->
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_ExploratorRobe</defName>
@@ -543,21 +418,25 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>18000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>3.5</Mass>
+			<Mass>5.5</Mass>
 			<StuffEffectMultiplierArmor>.85</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
-				<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1.2</StuffEffectMultiplierInsulation_Cold>
 		</statBases>
+
 		<equippedStatOffsets>
 			<SocialImpact>.15</SocialImpact>
-			<MoveSpeed>0.1</MoveSpeed>
+			<CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>80</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>120</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Cloth>20</Cloth>
+			<Uranium>5</Uranium>
 		</costList>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -585,7 +464,34 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/ExploratorRobe/Seg_COTO_ExploratorRobe</li>
 			</wornGraphicPaths>
+
+			<renderNodeProperties>
+				<!-- Backpacks -->
+				<li>
+					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>Body</parentTagDef>
+					<drawSize>(1.20,1.20)</drawSize>
+					<drawData>
+						<dataEast>
+							<layer>71</layer>
+						</dataEast>
+						<dataWest>
+							<layer>71</layer>
+						</dataWest>
+						<dataNorth>
+							<layer>99.6</layer>
+						</dataNorth>
+						<dataSouth>
+							<layer>-1</layer>
+						</dataSouth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
+
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_HolyOrderVestments</li>
@@ -622,9 +528,9 @@
 		</graphicData>
 
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>18000</WorkToMake>
 			<MaxHitPoints>350</MaxHitPoints>
-			<Mass>3.7</Mass>
+			<Mass>5.7</Mass>
 			<StuffEffectMultiplierArmor>.75</StuffEffectMultiplierArmor> 
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
@@ -632,15 +538,20 @@
 				<!--Electricity reduction?-->
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>.10</SocialImpact>
-			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
-			<ConstructionSpeed>.10</ConstructionSpeed>
-			<ConstructSuccessChance>.10</ConstructSuccessChance>
+			<SocialImpact>0.10</SocialImpact>
+			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+			<ConstructionSpeed>0.10</ConstructionSpeed>
+			<ConstructSuccessChance>0.10</ConstructSuccessChance>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
 
 		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>70</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Cloth>20</Cloth>
+			<Uranium>5</Uranium>
 		</costList>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -668,7 +579,34 @@
 			<wornGraphicPaths>
 				<li>Things/Apparel/FabricatorRobe/Seg_COTO_FabricatorRobe</li>
 			</wornGraphicPaths>
+
+			<renderNodeProperties>
+				<!-- Backpacks -->
+				<li>
+					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>Body</parentTagDef>
+					<drawSize>(1.20,1.20)</drawSize>
+					<drawData>
+						<dataEast>
+							<layer>71</layer>
+						</dataEast>
+						<dataWest>
+							<layer>71</layer>
+						</dataWest>
+						<dataNorth>
+							<layer>99.6</layer>
+						</dataNorth>
+						<dataSouth>
+							<layer>-1</layer>
+						</dataSouth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
+
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>Seg_COTO_HolyOrderVestments</li>
@@ -678,6 +616,172 @@
 			</skillRequirements>
 		</recipeMaker>
 
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+<!-- Cassocks -->
+	<!-- Magos cassock -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_MagosCassock</defName>
+		<label>magos cassock</label>
+		<description>Standard clothing worn by the cultists of the Mechanicus. A common sight among priests of forge worlds, although higher ranking members may replace it with more distinct apparel suited to their tasks and augmented body needs.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>6.1</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>.10</ConstructionSpeed>
+			<ConstructSuccessChance>.10</ConstructSuccessChance>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosCassock</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/MagosCassock/Seg_COTO_MagosCassock</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_Decorative">
+				<decorativeType>Body</decorativeType>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
+				<tabDefs>
+					<li>BEWH_ArmorColoring</li>
+					<li>BEWH_ArmorDecoration</li>
+				</tabDefs>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- Biologis cassock -->
+	<ThingDef ParentName="Seg_COTO_MagosBase">
+		<defName>Seg_COTO_Apparel_BiologisCassock</defName>
+		<label>Biologis cassock</label>
+		<description>This cassock denotes membership and status within the Divisio Biologis, one of the Holy Orders of the Mechanicus which focuses on the organic in all its forms. Magi Biologis often outfit their robes with surgical tools, sample storage pouches, field analysis kits, and tokens beseeching the Omnissiah's blessing on their endeavours.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<texPath>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</texPath>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>6.1</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+			<MedicalTendQuality>.15</MedicalTendQuality>
+			<PlantWorkSpeed>.20</PlantWorkSpeed>
+		</equippedStatOffsets>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+			<stuffCategories>
+				<li>Fabric</li>
+				<li>Leathery</li>
+			</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>Seg_COTO_MagosCassock</li>
+			</tags>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPaths>
+				<li>Things/Apparel/BiologisCassock/Seg_COTO_BiologisCassock</li>
+			</wornGraphicPaths>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_HolyOrderVestments</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<comps>
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
