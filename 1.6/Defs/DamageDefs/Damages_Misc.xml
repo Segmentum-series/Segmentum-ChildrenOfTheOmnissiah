@@ -95,12 +95,12 @@
 		<hediff>Burn</hediff>
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been burned to ash by power from the Dark Age of Technology.</deathMessage>
-		<!--additionalHediffs>
+		<additionalHediffs>
        		<li>
-            	<hediff>Blindness</hediff>
-            	<severityPerDamageDealt>0.01</severityPerDamageDealt>
+            	<hediff>Seg_ScalableBlindness</hediff>
+            	<severityPerDamageDealt>.5</severityPerDamageDealt>
         	</li>
-		</additionalHediffs-->
+		</additionalHediffs>
 		<buildingDamageFactor>2</buildingDamageFactor>
 		<buildingDamageFactorImpassable>8</buildingDamageFactorImpassable>
 		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
