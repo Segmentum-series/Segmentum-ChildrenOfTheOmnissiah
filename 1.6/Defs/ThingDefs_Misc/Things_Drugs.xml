@@ -3,7 +3,7 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>Seg_COTO_RadPills</defName>
     <label>rad pills</label>
-    <description>Potasium iodide pills. provides a modest, but not total protection against radiation exposure for a few hours.</description>
+    <description>Anti-radiation medicaments. Provides moderate but not total protection against radiation exposure for a limited time.</description>
     <descriptionHyperlinks>
       <HediffDef>Seg_COTO_RadResistHediff</HediffDef>
     </descriptionHyperlinks>
@@ -46,8 +46,8 @@
 
   <HediffDef>
     <defName>Seg_COTO_RadResistHediff</defName>
-    <label>Radiation Resistance (Rad Pills)</label>
-    <description>Provides protection against radiation exposure for a few hours. Tastes vaguely like garlic.</description>
+    <label>radiation resistance (rad pills)</label>
+    <description>Moderate protection against radiation exposure for a limited time.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(150,123,182)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
