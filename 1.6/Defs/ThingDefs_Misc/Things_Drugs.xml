@@ -1,0 +1,70 @@
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Seg_COTO_RadPills</defName>
+    <label>rad pills</label>
+    <description>Potasium iodide pills. provides a modest, but not total protection against radiation exposure for a few hours.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Seg_COTO_RadResistHediff</HediffDef>
+    </descriptionHyperlinks>
+    <stackLimit>20</stackLimit>
+    <graphicData>
+      <texPath>Things/Item/Drug/RadPills</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>900</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Seg_COTO_RadResistHediff</hediffDef>
+          <severity>1</severity>
+        </li>
+        <!--<li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1.0</offset>
+        </li>-->
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>Seg_COTO_RadiumVolleys</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <displayPriority>1800</displayPriority>
+      <productCount>20</productCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+    </costList>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Seg_COTO_RadResistHediff</defName>
+    <label>Radiation Resistance (Rad Pills)</label>
+    <description>Provides protection against radiation exposure for a few hours. Tastes vaguely like garlic.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(150,123,182)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <Seg_RadResistance>0.5</Seg_RadResistance>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+</Defs>

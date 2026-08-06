@@ -12,5 +12,6 @@
 		<li IfModActive = "Phonicmas.RimDark.SpaceMaids">1.6/Mods/SpaceMaidDecos</li>
 		<li IfModActive = "RedMattis.BetterPrerequisites">Xenos/1.6</li>
 		<li IfModActive = "REDACTED.Segmentum.Servitors">1.6/Mods/Servitors</li>
+		<li IfModActive = "dubwise.rimatomics">1.6/Mods/Rimatomics</li>
 	</v1.6>
 </loadFolders>
