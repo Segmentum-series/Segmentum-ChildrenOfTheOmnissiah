@@ -357,27 +357,27 @@
 
 			<renderNodeProperties>
 				<!-- Backpacks -->
-				<li>
-					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
-					<texPath>Things/Apparel/SkitariiWarPlate/Backpack/Seg_COTO_SkitariiWarPlate_Backpack</texPath>
-					<shaderTypeDef>CutoutComplex</shaderTypeDef>
-					<parentTagDef>Body</parentTagDef>
-					<drawData>
-						<dataEast>
-							<layer>71</layer>
-						</dataEast>
-						<dataWest>
-							<layer>71</layer>
-						</dataWest>
-						<dataNorth>
-							<layer>99.6</layer>
-						</dataNorth>
-						<dataSouth>
-							<layer>-1</layer>
-						</dataSouth>
-					</drawData>
-				</li>
+                <li>
+                    <workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
+                    <nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass> <!--itll be seg.whatever we name it -->
+                    <texPath>Things/Apparel/SkitariiWarPlate/Backpack/Seg_COTO_SkitariiWarPlate_Backpack</texPath>
+                    <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <dataEast>
+                            <layer>71</layer>
+                        </dataEast>
+                        <dataWest>
+                            <layer>71</layer>
+                        </dataWest>
+                        <dataNorth>
+                            <layer>80</layer>
+                        </dataNorth>
+                        <dataSouth>
+                            <layer>39</layer>
+                        </dataSouth>
+                    </drawData>
+                </li>
 			</renderNodeProperties>
 		</apparel>
 
@@ -391,19 +391,7 @@
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 			</li>
-
-			<!-- The following needs to be removed for the specific decoration -->
-			<li Class="CompProperties_ApparelReloadable">
-				<maxCharges>100</maxCharges>
-				<ammoDef>Uranium</ammoDef>
-				<ammoCountToRefill>16</ammoCountToRefill><!-- Refills the entire backpack's power source. Can be replaced with "<ammoCountPerCharge>0.0</ammoCountPerCharge>" -->
-				<baseReloadTicks>60</baseReloadTicks>
-				<soundReload>Standard_Reload</soundReload>
-				<hotKey>Misc4</hotKey>
-				<chargeNoun>powercell</chargeNoun>
-				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
-			</li>
+			<li Class="seg.CompProperties_HasBackpack" />		
 		</comps>
 
 		<modExtensions>
@@ -630,4 +618,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+
 </Defs>
