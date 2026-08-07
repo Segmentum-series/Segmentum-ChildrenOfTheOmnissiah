@@ -17,9 +17,6 @@ Pilgrim
 Remembrance
 Memory
 Light
-Brilliance
-Hope
-Devotion
 Prostration
 Navigator
 Wayfarer
@@ -41,3 +38,15 @@ Synthesis
 Seeker
 Vigil
 Voidsailor
+Barque
+Fidelity
+Endeavour
+Works
+Work
+Dragon
+Custodian
+Spirit
+Machine
+Mendicant
+Missionary
+Beacon

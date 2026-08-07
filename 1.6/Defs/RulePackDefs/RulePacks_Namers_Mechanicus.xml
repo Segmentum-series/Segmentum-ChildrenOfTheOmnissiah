@@ -176,11 +176,13 @@
     <rulePack>
       <rulesStrings>
         <li>r_name->[MechanicusShipHolyName]'s [MechanicusShipNoun]</li>
-        <li>r_name->[MechanicusShipAdjective] [MechanicusShipHolyName]</li>
         <li>r_name->[MechanicusShipAdjective] [MechanicusShipNoun]</li>
+        <li>r_name->[MechanicusShipAdjective] [MechanicusShipNoun] [MechanicusShipNumeral]</li>
         <li>r_name->[MechanicusShipAdjective] [MechanicusShipNoun] of [MechanicusShipFamousPlace]</li>
+        <li>r_name->[MechanicusShipAdjective] [MechanicusShipFamousPlace]</li>
         <li>r_name->[MechanicusShipNoun] of the [MechanicusShipHolyName]</li>
         <li>r_name->[MechanicusShipNoun] of [MechanicusShipFamousPlace]</li>
+        <li>r_name->[MechanicusShipNoun] of [MechanicusShipFamousPlace] [MechanicusShipNumeral]</li>
         <li>r_name->[MechanicusShipFamousPlace] [MechanicusShipCode][MechanicusShipNumeral]</li>
         <li>r_name->[MechanicusShipFamousPlaceAdjective] [MechanicusShipNoun]</li>
         <li>r_name->[MechanicusShipFamousPlace]'s [MechanicusShipNoun]</li>
