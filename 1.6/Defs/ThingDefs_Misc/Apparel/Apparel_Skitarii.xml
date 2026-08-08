@@ -486,7 +486,7 @@
 				<!-- Backpacks -->
 				<li>
 					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass>
 					<texPath>Things/Apparel/MarshalCommandPlate/Backpack/Seg_COTO_MarshalCommandPlate_Backpack</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>Body</parentTagDef>
@@ -517,6 +517,7 @@
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 			</li>
+			<li Class="seg.CompProperties_HasBackpack" />
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
@@ -608,6 +609,7 @@
 				<defaultSecondaryColor>(234,130,56)</defaultSecondaryColor><!-- Adamantium -->
 				<defaultTertiaryColor>(25,146,198)</defaultTertiaryColor><!-- Lenses blue -->
 			</li>
+			
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">

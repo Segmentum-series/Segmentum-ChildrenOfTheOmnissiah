@@ -358,7 +358,7 @@
 				<!-- Backpacks -->
 				<li>
 					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					 <nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass>
 					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>Body</parentTagDef>
@@ -394,6 +394,7 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
+			<li Class="seg.CompProperties_HasBackpack" />
 		</comps>
 
 		<modExtensions>
@@ -469,7 +470,7 @@
 				<!-- Backpacks -->
 				<li>
 					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass>
 					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>Body</parentTagDef>
@@ -505,6 +506,7 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
+			<li Class="seg.CompProperties_HasBackpack" />
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
@@ -584,7 +586,7 @@
 				<!-- Backpacks -->
 				<li>
 					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+					<nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass>
 					<texPath>Things/Apparel/MagosRobe/Backpack/Seg_COTO_Magos_Backpack</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>Body</parentTagDef>
@@ -620,6 +622,7 @@
 			<li Class="Core40k.CompProperties_Decorative">
 				<decorativeType>Body</decorativeType>
 			</li>
+			<li Class="seg.CompProperties_HasBackpack" />
 		</comps>
 
 		<modExtensions>
