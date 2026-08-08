@@ -292,7 +292,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_SkitariiWarPlate</defName>
 		<label>skitarii war plate</label>
-		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are intended to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A war plate designed to be used by vanguard and ranger Skitarii forces. Its armoured plates are intended to be worn for several years at a time, utilizing special protective techniques to afford a measure of protection from the harmful effects of their weaponry.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Contains a minor powerpack or power source for certain weapons, refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>
@@ -420,7 +420,7 @@
 	<ThingDef ParentName="Seg_COTO_SkitariiBase">
 		<defName>Seg_COTO_Apparel_MarshalCommandPlate</defName>
 		<label>marshal command plate</label>
-		<description>This is a heavier and more ornate armour than that worn by rank and file Mechanicus soldiery. It is inlaid with holy circuitry and augmetic interface ports to boost the combat capabilities of the Skitarii Marshals.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>This is a heavier and more ornate armour than that worn by rank and file Mechanicus soldiery. It is inlaid with holy circuitry and augmetic interface ports to boost the combat capabilities of the Skitarii Marshals.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Contains a minor powerpack or power source for certain weapons, refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>BEWH_CutoutThreeColor</shaderType>

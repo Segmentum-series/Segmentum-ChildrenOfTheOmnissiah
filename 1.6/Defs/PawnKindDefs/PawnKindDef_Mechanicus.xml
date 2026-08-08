@@ -4,8 +4,8 @@
 	<!-- Tech Militia -->
 	<PawnKindDef ParentName="Seg_COTO_MechanicusBase">
 		<defName>Seg_COTO_TechMilitia</defName>
-		<initialWillRange>8~15</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>
+		<initialWillRange>6~10</initialWillRange>
+		<initialResistanceRange>7~12</initialResistanceRange>
 		<combatPower>50</combatPower>
 		<isFighter>true</isFighter>
 		<requiredWorkTags>
@@ -193,6 +193,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired Inherit="True">
 			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+			<li>Seg_Apparel_PowerPack</li>
 		</apparelRequired>
 		<techHediffsChance>1</techHediffsChance>
 		<techHediffsMoney>2000~3500</techHediffsMoney>
@@ -520,6 +521,7 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_Apparel_PowerPack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>
@@ -662,6 +664,7 @@
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
 			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Seg_Apparel_PowerPack</li>
 		</apparelRequired>
 		<techHediffsTags>
 			<li>Seg_COTO_StandardAugmetics</li>

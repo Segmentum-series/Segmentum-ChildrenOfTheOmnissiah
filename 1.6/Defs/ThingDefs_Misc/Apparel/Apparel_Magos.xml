@@ -297,7 +297,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_MagosRobes</defName>
 		<label>magos robe</label>
-		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Includes a minor powerpack or power source for certain weapons, refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
@@ -422,7 +422,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_ExploratorRobe</defName>
 		<label>Explorator robe</label>
-		<description>A lightweight but tough robe characteristic of those used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and tend to adapt their clothing for the rough conditions they expect to encounter on uncharted or hostile worlds.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A lightweight but tough robe characteristic of those used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and tend to adapt their clothing for the rough conditions they expect to encounter on uncharted or hostile worlds.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Includes a minor powerpack or power source for certain weapons, refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>
@@ -544,7 +544,7 @@
 	<ThingDef ParentName="Seg_COTO_MagosBase">
 		<defName>Seg_COTO_Apparel_FabricatorRobe</defName>
 		<label>Fabricator robe</label>
-		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
+		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.\n\n&lt;color=#bb8f04&gt;Includes a minor powerpack or power source for certain weapons, refuelled with uranium&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>Cutout</shaderType>

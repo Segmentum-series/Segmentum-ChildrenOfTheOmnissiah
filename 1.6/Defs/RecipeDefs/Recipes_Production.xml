@@ -22,6 +22,8 @@
 				<filter>
 					<categories>
 						<li>Seg_COTO_ArmorSkitarii</li>
+						<li>Seg_Accessory_Powerpack</li>
+						<li>Seg_Accessory_Voxcaster</li>
 						<li>ApparelNoble</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumArmour</li>
 					</categories>
@@ -127,6 +129,8 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>Seg_COTO_ArmorSkitarii</li>
+				<li>Seg_Accessory_Powerpack</li>
+				<li>Seg_Accessory_Voxcaster</li>
 				<li>ApparelNoble</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumArmour</li>
 			</categories>
@@ -287,6 +291,8 @@
 					<categories>
 						<li>ApparelMisc</li>
 						<li>Seg_COTO_ArmorMagos</li>
+						<li>Seg_Accessory_Pouches</li>
+						<li>Seg_Accessory_Medicae</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumWorkGear</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_PsykerApparel</li>
 					</categories>
@@ -316,6 +322,8 @@
 			<categories>
 				<li>ApparelMisc</li>
 				<li>Seg_COTO_ArmorMagos</li>
+				<li>Seg_Accessory_Pouches</li>
+				<li>Seg_Accessory_Medicae</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumWorkGear</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_PsykerApparel</li>
 			</categories>
