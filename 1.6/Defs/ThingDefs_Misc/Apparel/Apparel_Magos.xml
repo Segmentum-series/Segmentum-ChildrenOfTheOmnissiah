@@ -26,7 +26,7 @@
 			<li Class="Core40k.CompProperties_MultiColor" MayRequire="phonicmas.rimdark.frameworkcore">
 				<defaultPrimaryColor>(146,12,18)</defaultPrimaryColor>
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor>
-				<defaultTertiaryColor>(146,12,18)</defaultTertiaryColor>
+				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor>
 			</li>
 		</comps>
 		
@@ -300,7 +300,7 @@
 		<description>A basic robe utilized by new and low ranking Magos. While offering some degree of protection to the wearer, it is not designed for frontline service.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/MagosRobe/Seg_COTO_MagosRobe</texPath>
 		</graphicData>
 
@@ -425,7 +425,7 @@
 		<description>A lightweight but tough robe characteristic of those used by the Explorators of the Mechanicus. The Explorators are defined by their active and pioneering approach to the Quest for Knowledge, and tend to adapt their clothing for the rough conditions they expect to encounter on uncharted or hostile worlds.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/ExploratorRobe/Seg_COTO_ExploratorRobe</texPath>
 		</graphicData>
 
@@ -547,7 +547,7 @@
 		<description>A robe which is characteristic of Mechanicus fabricators and artisans, without whom the entire Imperium would ground to a halt. Due to the dangers inherent to metalworking and the manipulation of esoteric materials, Fabricators sometimes treat their clothing to be flame-retardant and resistant to Motive Force shocks.\n\n&lt;color=#40cbde&gt;Customizable in the styling station or Mechanicus forge altar&lt;/color&gt;.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>Cutout</shaderType>
+			<shaderType>BEWH_CutoutThreeColor</shaderType>
 			<texPath>Things/Apparel/FabricatorRobe/Seg_COTO_FabricatorRobe</texPath>
 		</graphicData>
 
