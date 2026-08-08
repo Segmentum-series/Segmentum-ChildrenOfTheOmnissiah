@@ -22,8 +22,6 @@
 				<filter>
 					<categories>
 						<li>Seg_COTO_ArmorSkitarii</li>
-						<li>Seg_Accessory_Powerpack</li>
-						<li>Seg_Accessory_Voxcaster</li>
 						<li>ApparelNoble</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumArmour</li>
 					</categories>
@@ -121,6 +119,9 @@
 						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li>
 						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
 						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
+						
+						<li>Seg_Apparel_PowerPack</li>
+						<!--li>Seg_Apparel_VoxCaster</li-->
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -129,8 +130,6 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>Seg_COTO_ArmorSkitarii</li>
-				<li>Seg_Accessory_Powerpack</li>
-				<li>Seg_Accessory_Voxcaster</li>
 				<li>ApparelNoble</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumArmour</li>
 			</categories>
@@ -248,6 +247,9 @@
 				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavy</li>
 				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
 				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
+				
+				<li>Seg_Apparel_PowerPack</li>
+				<!--li>Seg_Apparel_VoxCaster</li-->
 
 
 			</thingDefs>
@@ -291,8 +293,6 @@
 					<categories>
 						<li>ApparelMisc</li>
 						<li>Seg_COTO_ArmorMagos</li>
-						<li>Seg_Accessory_Pouches</li>
-						<li>Seg_Accessory_Medicae</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumWorkGear</li>
 						<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_PsykerApparel</li>
 					</categories>
@@ -304,6 +304,8 @@
 						<li>Apparel_WarVeil</li>
 						<li>Apparel_HatHood</li>
 						<li>Apparel_ClothMask</li>
+						<li>Seg_Apparel_CargoPack</li>
+						<li>Seg_Apparel_MedicaeBag</li>
 						<li MayRequire="ludeon.rimworld.biotech">Apparel_GasMask</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
@@ -322,8 +324,6 @@
 			<categories>
 				<li>ApparelMisc</li>
 				<li>Seg_COTO_ArmorMagos</li>
-				<li>Seg_Accessory_Pouches</li>
-				<li>Seg_Accessory_Medicae</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_ImperiumWorkGear</li>
 				<li MayRequire="REDACTED.Segmentum.WarrantOfTheVoid">Seg_WOTV_PsykerApparel</li>
 			</categories>
@@ -335,6 +335,8 @@
 				<li>Apparel_WarVeil</li>
 				<li>Apparel_HatHood</li>
 				<li>Apparel_ClothMask</li>
+				<li>Seg_Apparel_CargoPack</li>
+				<li>Seg_Apparel_MedicaeBag</li>
 				<li MayRequire="ludeon.rimworld.biotech">Apparel_GasMask</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Headwrap</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Broadwrap</li>
