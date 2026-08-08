@@ -104,9 +104,10 @@
 	<Core40k.ColourPresetDef ParentName="Seg_COTO_ColorPreset_MagosApparel">
 		<defName>Seg_COTO_MagosApparel_ColorPreset_2</defName>
 		<label>Agrippina</label>
-		<colorAmount>2</colorAmount>
+		<colorAmount>3</colorAmount>
 		<primaryColour>(51,51,51)</primaryColour><!-- Agrippa dark grey -->
 		<secondaryColour>(51,51,51)</secondaryColour><!-- Agrippa dark grey -->
+		<tertiaryColour>(234,130,56)</tertiaryColour><!-- Adamantium -->
 	</Core40k.ColourPresetDef>
 
 	<!-- Skitarii ranger hood -->
