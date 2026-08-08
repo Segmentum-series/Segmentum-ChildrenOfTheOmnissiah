@@ -86,8 +86,8 @@
 				<!-- Backpacks -->
 				<li>
 					<workerClass>Core40k.PawnRenderNodeWorker_AttachmentBackpack</workerClass>
-					<nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
-					<texPath>Things/Apparel/SicarianBattleArmour/Seg_COTO_SicarianBattleArmour_Backpack</texPath>
+					<nodeClass>Seg.PawnRenderNode_AttachmentAccessory</nodeClass>
+					<texPath>Things/Apparel/SicarianBattleArmour/SicarianBackpack/Seg_COTO_SicarianBattleArmour_Backpack</texPath>
 					<shaderTypeDef>CutoutComplex</shaderTypeDef>
 					<parentTagDef>Body</parentTagDef>
 					<drawData>

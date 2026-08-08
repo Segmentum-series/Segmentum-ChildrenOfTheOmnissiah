@@ -395,6 +395,17 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="seg.CompProperties_HasBackpack" />
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>30</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>5</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
 		</comps>
 
 		<modExtensions>
@@ -507,6 +518,17 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="seg.CompProperties_HasBackpack" />
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>30</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>5</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
@@ -623,6 +645,17 @@
 				<decorativeType>Body</decorativeType>
 			</li>
 			<li Class="seg.CompProperties_HasBackpack" />
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>30</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>5</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
 		</comps>
 
 		<modExtensions>

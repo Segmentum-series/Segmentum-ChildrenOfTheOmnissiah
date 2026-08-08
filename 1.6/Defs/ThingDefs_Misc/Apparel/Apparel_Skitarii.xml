@@ -391,7 +391,18 @@
 				<defaultSecondaryColor>(146,12,18)</defaultSecondaryColor><!-- Mars red -->
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 			</li>
-			<li Class="seg.CompProperties_HasBackpack" />		
+			<li Class="seg.CompProperties_HasBackpack" />	
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>50</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>8</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>	
 		</comps>
 
 		<modExtensions>
@@ -518,6 +529,17 @@
 				<defaultTertiaryColor>(234,130,56)</defaultTertiaryColor><!-- Adamantium -->
 			</li>
 			<li Class="seg.CompProperties_HasBackpack" />
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>50</maxCharges>
+				<ammoDef>Uranium</ammoDef>
+				<ammoCountToRefill>8</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>powercell</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Core40k.DefModExtension_AvailableDrawerTabDefs">
