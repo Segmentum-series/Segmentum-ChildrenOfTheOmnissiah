@@ -27,8 +27,8 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Smithing</workType>
 		<priorityInType>80</priorityInType>
-		<verb>smelt</verb>
-		<gerund>smelting at</gerund>
+		<verb>smith</verb>
+		<gerund>smithing at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
