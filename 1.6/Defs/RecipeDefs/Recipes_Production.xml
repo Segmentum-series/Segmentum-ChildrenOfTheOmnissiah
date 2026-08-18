@@ -40,6 +40,10 @@
 						<li>Apparel_PowerArmorHelmet</li>
 						<li>Apparel_PowerArmor</li>
 
+						<li MayRequire="ludeon.rimworld.odyssey">Apparel_VacsuitHelmet</li>
+						<li MayRequire="ludeon.rimworld.odyssey">Apparel_Vacsuit</li>
+						<li MayRequire="ludeon.rimworld.odyssey">Apparel_VacsuitChildren</li>
+				
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_Scout</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_FibroVest</li>
 						<li MayRequire="happypurging.ageofdarkness">GW_SM_ReiverArmor</li>
