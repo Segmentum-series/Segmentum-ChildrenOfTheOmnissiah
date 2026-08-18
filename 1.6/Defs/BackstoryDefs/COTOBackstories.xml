@@ -1139,7 +1139,7 @@
 		<title>chem plant worker</title>
 		<defName>SegCOTO_MechanicusChemWorker</defName>
 		<titleShort>chem worker</titleShort>
-		<baseDesc>[PAWN_nameDef] worked in the bowels of a gargantuan chemworks, producing chemicals necessary for the Imperium's functioning. [PAWN_pronoun] was given insufficient protective gear for the toxic fumes and has never recovered from the privations of the job, while also chasing the highs [PAWN_pronoun] he experienced.</baseDesc>
+		<baseDesc>[PAWN_nameDef] worked in the bowels of a gargantuan chemworks, producing chemicals necessary for the Imperium's functioning. [PAWN_pronoun] was given insufficient protective gear for the toxic fumes and has never recovered from the privations of the job, while also chasing the highs [PAWN_pronoun] experienced.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
