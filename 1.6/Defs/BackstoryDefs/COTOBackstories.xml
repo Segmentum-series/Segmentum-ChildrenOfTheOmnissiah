@@ -13,6 +13,7 @@
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Crafting</li>
@@ -88,6 +89,7 @@
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_ArmsmanBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -112,6 +114,7 @@
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Outlander</li>
@@ -140,6 +143,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -170,6 +174,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -206,6 +211,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 			<li>Pirate</li>
 			<li>Offworld</li>
 			<li>Outlander</li>
@@ -232,6 +238,7 @@
 		<baseDesc>[PAWN_nameDef] was selectively bred as part of a eugenics programme on a Mechanicus forge world. The programme intended to create ideal recruits for the forge's skitarii legion, but was far from a normal childhood for [PAWN_objective] even by the standards of the Cult Mechanicus.</baseDesc>
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
+			<li>CVN_BP_BloodPactBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
