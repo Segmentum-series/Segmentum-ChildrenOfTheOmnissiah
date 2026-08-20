@@ -14,6 +14,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Crafting</li>
@@ -70,6 +71,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>SegWOTV_PirateBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>ManualDumb</li>
@@ -90,6 +92,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -115,6 +118,7 @@
 			<li>SegWOTV_WorkerBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 			<li>Offworld</li>
 			<li>Pirate</li>
 			<li>Outlander</li>
@@ -144,6 +148,7 @@
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -175,6 +180,7 @@
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
@@ -212,6 +218,7 @@
 			<li>SegWOTV_ArmsmanBackstories</li>
 			<li>SegWOTV_PirateBackstories</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 			<li>Pirate</li>
 			<li>Offworld</li>
 			<li>Outlander</li>
@@ -239,6 +246,7 @@
 		<spawnCategories>
 			<li>SegCOTO_Mechanicus</li>
 			<li>CVN_BP_BloodPactBackstories</li>
+			<li>CVN_BP_BloodPactTraitorBackstories</li>
 		</spawnCategories>
 		<requiredWorkTags>
 			<li>Violent</li>
