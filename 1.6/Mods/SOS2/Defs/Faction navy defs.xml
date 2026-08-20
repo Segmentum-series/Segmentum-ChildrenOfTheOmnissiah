@@ -17,6 +17,8 @@
 		<spaceShipDefs>
 			<li>Seg_COTO_ExploratorFreight</li>
 			<li>Seg_COTO_ExploratorCobra</li>
+			<li>Seg_COTO_ExploratorFury</li>
+			<li>Seg_COTO_ExploratorStarhawk</li>
 		</spaceShipDefs>
 	</SaveOurShip2.NavyDef>
 </Defs>
