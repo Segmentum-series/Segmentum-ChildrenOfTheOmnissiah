@@ -8,7 +8,7 @@
 		<sizeX>66</sizeX>
 		<sizeZ>20</sizeZ>
 		<label>Explorator freighter</label>
-		<combatPoints>169</combatPoints>
+		<combatPoints>160</combatPoints>
 		<cargoValue>200</cargoValue>
 		<navyExclusive>True</navyExclusive>
 		<customPaintjob>True</customPaintjob>

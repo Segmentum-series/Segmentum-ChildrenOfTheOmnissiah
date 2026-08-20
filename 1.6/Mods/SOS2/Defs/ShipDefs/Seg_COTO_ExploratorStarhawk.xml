@@ -8,7 +8,7 @@
 		<sizeX>35</sizeX>
 		<sizeZ>24</sizeZ>
 		<label>Starhawk bomber</label>
-		<combatPoints>158</combatPoints>
+		<combatPoints>150</combatPoints>
 		<cargoValue>200</cargoValue>
 		<navyExclusive>True</navyExclusive>
 		<customPaintjob>True</customPaintjob>
