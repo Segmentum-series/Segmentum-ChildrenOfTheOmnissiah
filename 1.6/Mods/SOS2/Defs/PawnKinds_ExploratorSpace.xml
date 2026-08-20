@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Seg_COTO_SOS2Magos</defName>
+		<label>techpriest</label>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_MechanicusAdept</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags Inherit="False">
+			<li>Seg_COTO_MagosBasicRanged</li>
+			<li>Seg_COTO_MagosBasicMelee</li>
+		</weaponTags>
+		<weaponMoney>300~600</weaponMoney>
+		<apparelMoney>600~1000</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_MagosHood</li>
+			<li>Seg_COTO_Apparel_MagosRobes</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+			<li>Apparel_SpaceSurvivalBelt</li>
+		</apparelRequired>
+		<techHediffsChance>0.55</techHediffsChance>
+		<techHediffsMoney>600~2500</techHediffsMoney>
+		<techHediffsTags>
+			<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CrudeAugmetics</li>
+			<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_StandardAugmetics</li>
+		</techHediffsTags>
+		<initialWillRange>10~13</initialWillRange>
+		<initialResistanceRange>15~20</initialResistanceRange>
+		<useFactionXenotypes>true</useFactionXenotypes>
+	</PawnKindDef>
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Seg_COTO_SOS2Explorator</defName>
+		<label>explorator</label>
+		<race>Human</race>
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<defaultFactionType>Seg_WOTV_ImperiumPirates</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_MechanicusAdept</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>55</maxGenerationAge>
+		<apparelMoney>2000~2600</apparelMoney>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>Seg_FlakArmour</li>
+			<li>Seg_WOTV_UtilityApparel</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_ExploratorHood</li>
+			<li>Seg_COTO_Apparel_ExploratorRobe</li>
+			<li>Seg_COTO_Apparel_MagosCassock</li>
+		</apparelRequired>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponMoney>500~600</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>Seg_COTO_MagosAdvancedRanged</li>
+			<li>Seg_COTO_MagosAdvancedMelee</li>
+		</weaponTags>
+		<techHediffsChance>0.75</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_CrudeAugmetics</li>
+			<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_StandardAugmetics</li>
+			<li MayRequire="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Seg_COTO_AdvancedAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_BreathOfMars</li>
+		</techHediffsRequired>
+		<initialWillRange>10~13</initialWillRange>
+		<initialResistanceRange>15~20</initialResistanceRange>
+		<useFactionXenotypes>true</useFactionXenotypes>
+	</PawnKindDef>
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Seg_COTO_SOS2Skitarii</defName>
+		<label>skitarii breacher</label>
+		<race>Human</race>
+		<combatPower>100</combatPower>
+		<defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_SkitariiVanguard</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>55</maxGenerationAge>
+		<apparelMoney>2000~2600</apparelMoney>
+		<apparelTags Inherit="False">
+			<li>Seg_FlakArmour</li>
+			<li>Seg_WOTV_UtilityApparel</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponMoney>1200~2000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_Taser</li>
+		</weaponTags>
+		<techHediffsChance>0.40</techHediffsChance>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_BreathOfMars</li>
+		</techHediffsRequired>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~10</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_PawnKindCustomization">
+		<extraDecorations>
+			<li>
+				<key>Seg_COTO_Apparel_SkitariiVanguardHelmet</key>
+				<value>
+					<li>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</li>
+				</value>
+			</li>
+		</extraDecorations>
+		</li>
+		</modExtensions>
+	</PawnKindDef>
+	<PawnKindDef ParentName="OutlanderBase">
+		<defName>Seg_COTO_SOS2HeavySkitarii</defName>
+		<label>skitarii heavy breacher</label>
+		<race>Human</race>
+		<combatPower>200</combatPower>
+		<defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>SegCOTO_Mechanicus</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>SegCOTO_SkitariiVanguard</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>55</maxGenerationAge>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<apparelMoney>4000~6000</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
+			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+			<li>Seg_COTO_Apparel_SkitariiVanguardHelmet</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_Plasma</li>
+		</weaponTags>
+		<techHediffsMoney>1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Seg_COTO_SkitariiAugmetics</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_EyeLens</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_SkitariusLeg</li>
+			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_VanguardArm</li>
+			<li>Seg_COTO_ArmorPlating</li>
+		</techHediffsRequired>
+		<techHediffsChance>0</techHediffsChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~15</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~15</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>10~6</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_PawnKindCustomization">
+		<extraDecorations>
+			<li>
+				<key>Seg_COTO_Apparel_SkitariiVanguardHelmet</key>
+				<value>
+					<li>Seg_COTO_Deco_SkitariiVanguardHelmetLenses</li>
+				</value>
+				<key>Seg_COTO_Apparel_SkitariiWarPlate</key>
+				<value>
+					<li>Seg_COTO_Deco_SkitariiWarPlateCrotchGuard</li>
+				</value>
+			</li>
+		</extraDecorations>
+		</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>
