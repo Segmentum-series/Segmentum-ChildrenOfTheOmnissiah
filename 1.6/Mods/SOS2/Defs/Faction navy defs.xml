@@ -9,13 +9,14 @@
 		</factionDefs>
 		<bountyHunts>false</bountyHunts>
 		<pirates>false</pirates>
-		<colorPrimary>Structure_Red</colorPrimary>
-		<colorSecondary>Structure_Red</colorSecondary>
+		<colorPrimary>Structure_Black</colorPrimary>
+		<colorSecondary>Structure_Scarlet</colorSecondary>
 		<crewDef>Seg_COTO_SOS2Magos</crewDef>
 		<marineDef>Seg_COTO_SOS2Skitarii</marineDef>
 		<marineHeavyDef>Seg_COTO_SOS2HeavySkitarii</marineHeavyDef>
 		<spaceShipDefs>
 			<li>Seg_COTO_ExploratorFreight</li>
+			<li>Seg_COTO_ExploratorCobra</li>
 		</spaceShipDefs>
 	</SaveOurShip2.NavyDef>
 </Defs>
