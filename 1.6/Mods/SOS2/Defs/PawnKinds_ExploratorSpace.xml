@@ -23,7 +23,9 @@
 			<li>Seg_COTO_MagosBasicMelee</li>
 		</weaponTags>
 		<weaponMoney>500~1000</weaponMoney>
-		<apparelMoney>600~1000</apparelMoney>
+		<apparelMoney>0</apparelMoney>
+		<apparelTags Inherit="False">
+		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MagosHood</li>
 			<li>Seg_COTO_Apparel_MagosRobes</li>
@@ -46,7 +48,7 @@
 		<race>Human</race>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
-		<defaultFactionType>Seg_WOTV_ImperiumPirates</defaultFactionType>
+		<defaultFactionType>Seg_COTO_HostileMechanicus</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesChildhood>
@@ -58,12 +60,8 @@
 			</li>
 		</backstoryFiltersOverride>
 		<maxGenerationAge>55</maxGenerationAge>
-		<apparelMoney>2000~2600</apparelMoney>
+		<apparelMoney>0</apparelMoney>
 		<apparelTags Inherit="False">
-			<li>IndustrialBasic</li>
-			<li>IndustrialAdvanced</li>
-			<li>Seg_FlakArmour</li>
-			<li>Seg_WOTV_UtilityApparel</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_ExploratorHood</li>
@@ -87,6 +85,7 @@
 		<techHediffsRequired>
 			<li>Seg_COTO_BreathOfMars</li>
 			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_VoidHarness</li>
 		</techHediffsRequired>
 		<initialWillRange>10~13</initialWillRange>
 		<initialResistanceRange>15~20</initialResistanceRange>
@@ -111,8 +110,6 @@
 		<maxGenerationAge>55</maxGenerationAge>
 		<apparelMoney>2000~2600</apparelMoney>
 		<apparelTags Inherit="False">
-			<li>Seg_FlakArmour</li>
-			<li>Seg_WOTV_UtilityApparel</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
@@ -131,7 +128,7 @@
 		</specificApparelRequirements>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<weaponMoney>1200~2000</weaponMoney>
+		<weaponMoney>0</weaponMoney>
 		<weaponTags Inherit="False">
 			<li>Seg_COTO_Rad</li>
 			<li>Seg_COTO_Taser</li>
@@ -148,6 +145,7 @@
 			<li>Seg_COTO_SkitariusLeg</li>
 			<li>Seg_COTO_BreathOfMars</li>
 			<li>Seg_COTO_BreathOfMars</li>
+			<li>Seg_COTO_VoidHarness</li>
 		</techHediffsRequired>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<skills>
@@ -192,7 +190,9 @@
 		</backstoryFiltersOverride>
 		<maxGenerationAge>55</maxGenerationAge>
 		<chemicalAddictionChance>0.08</chemicalAddictionChance>
-		<apparelMoney>4000~6000</apparelMoney>
+		<apparelMoney>0</apparelMoney>
+		<apparelTags Inherit="False">
+		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_SkitariiFatigues</li>
 			<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
@@ -229,6 +229,7 @@
 			<li>Seg_COTO_VanguardArm</li>
 			<li>Seg_COTO_VanguardArm</li>
 			<li>Seg_COTO_ArmorPlating</li>
+			<li>Seg_COTO_VoidHarness</li>
 		</techHediffsRequired>
 		<techHediffsChance>0</techHediffsChance>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>

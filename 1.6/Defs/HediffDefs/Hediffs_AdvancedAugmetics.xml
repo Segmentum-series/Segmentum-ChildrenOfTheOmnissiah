@@ -714,7 +714,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAugmetics">
 		<defName>Seg_COTO_ThermoregulationMatrix</defName>
 		<label>thermoregulation matrix</label>
-		<description>An implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
+		<description>An implant which uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
 		<costList Inherit="False">
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -736,7 +736,7 @@
 		<label>thermoregulation matrix</label>
 		<labelNoun>a thermoregulation matrix</labelNoun>
 		<hediffClass>Hediff_Implant</hediffClass>
-		<description>An installed implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
+		<description>An installed implant which uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
 		<spawnThingOnRemoved>Seg_COTO_ThermoregulationMatrix</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -752,7 +752,7 @@
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>InstallSeg_COTO_ThermoregulationMatrix</defName>
 		<label>install thermoregulation matrix</label>
-		<description>Install an implant uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
+		<description>Install an implant which uses a mixture of sanctified biochemical treatment and the deployment of microscopic automata in the cardiovascular system to reduce the impact of extreme temperatures on the baseline human body.</description>
 		<jobString>Installing thermoregulation matrix.</jobString>
 		<ingredients>
 			<li>
