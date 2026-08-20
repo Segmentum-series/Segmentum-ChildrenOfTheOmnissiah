@@ -124,22 +124,23 @@
 						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
 						<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
 				
-						<li MayRequire="CVN.BloodPact">CVN_BP_KhornemarineH</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_KhornemarineT</li>	
-						<li MayRequire="CVN.BloodPact">CVN_BP_Flakhelm</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Flakghelm</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_SirdarMaskA</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_SirdarMaskB</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_DBmaskA</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_DBmaskB</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Arnogaurmask</li>		
-						<li MayRequire="CVN.BloodPact">CVN_BP_FlakArmor</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_SirdarArmorA</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_SirdarArmorB</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_DBArmorA</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_DBArmorB</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Arnogaur</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_AGchainmail</li>			
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineHelmet</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineTorso</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineBackpack</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Flakhelm</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Flakghelm</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarMaskA</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarMaskB</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBmaskA</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBmaskB</li>	
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_FlakArmor</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarArmorA</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarArmorB</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBArmorA</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBArmorB</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurChainmail</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurBattleplate</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurMask</li>
 						
 						<li>Seg_Apparel_PowerPack</li>
 						<!--li>Seg_Apparel_VoxCaster</li-->
@@ -269,22 +270,23 @@
 				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitBodyHeavyPrestige</li>
 				<li MayRequire="kentington.saveourship2">Apparel_SpaceSuitHelmetHeavyPrestige</li>
 				
-				<li MayRequire="CVN.BloodPact">CVN_BP_KhornemarineH</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_KhornemarineT</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Flakhelm</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Flakghelm</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_SirdarMaskA</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_SirdarMaskB</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_DBmaskA</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_DBmaskB</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Arnogaurmask</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_FlakArmor</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_SirdarArmorA</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_SirdarArmorB</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_DBArmorA</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_DBArmorB</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Arnogaur</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_AGchainmail</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineHelmet</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineTorso</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_KhornemarineBackpack</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Flakhelm</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Flakghelm</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarMaskA</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarMaskB</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBmaskA</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBmaskB</li>	
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_FlakArmor</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarArmorA</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_SirdarArmorB</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBArmorA</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBArmorB</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurChainmail</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurBattleplate</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_ArnogaurMask</li>
 				
 				
 				<li>Seg_Apparel_PowerPack</li>
@@ -355,12 +357,12 @@
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
 						<li MayRequire="ludeon.rimworld.ideology">Apparel_VisageMask</li>
 						
-						<li MayRequire="CVN.BloodPact">CVN_BP_Fatigues</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_DBfatigues</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Gorerobe</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Backpack</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_BackpackM</li>
-						<li MayRequire="CVN.BloodPact">CVN_BP_Pouch</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Fatigues</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBfatigues</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Goremagerobe</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Utility_Backpack</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Utility_BackpackMedicae</li>
+						<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Pouch</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -393,12 +395,12 @@
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_Flophat</li>
 				<li MayRequire="ludeon.rimworld.ideology">Apparel_VisageMask</li>
 				
-				<li MayRequire="CVN.BloodPact">CVN_BP_Fatigues</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_DBfatigues</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Gorerobe</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Backpack</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_BackpackM</li>
-				<li MayRequire="CVN.BloodPact">CVN_BP_Pouch</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Fatigues</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_DBfatigues</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Goremagerobe</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Utility_Backpack</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Utility_BackpackMedicae</li>
+				<li MayRequire="CVN.BloodPact">CVN_BP_Apparel_Pouch</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
