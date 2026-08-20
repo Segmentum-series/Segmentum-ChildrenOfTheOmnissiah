@@ -2,7 +2,7 @@
 <Defs>
 	<!-- navy -->
 	<SaveOurShip2.NavyDef ParentName="SpaceNavy">
-		<defName>Seg_COTO_SOS2ExploratorNavy</defName>
+		<defName>Seg_COTO_ExploratorNavy</defName>
 		<label>Mechanicus Explorator Fleet</label>
 		<factionDefs>
 			<li>Seg_COTO_HostileMechanicus</li>
@@ -15,7 +15,7 @@
 		<marineDef>Seg_COTO_SOS2Skitarii</marineDef>
 		<marineHeavyDef>Seg_COTO_SOS2HeavySkitarii</marineHeavyDef>
 		<spaceShipDefs>
-			<li>Seg_COTO_SOS2ExploratorFreighter</li>
+			<li>Seg_COTO_ExploratorFreight</li>
 		</spaceShipDefs>
 	</SaveOurShip2.NavyDef>
 </Defs>

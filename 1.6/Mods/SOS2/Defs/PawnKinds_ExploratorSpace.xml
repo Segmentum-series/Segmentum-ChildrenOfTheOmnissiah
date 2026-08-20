@@ -22,7 +22,7 @@
 			<li>Seg_COTO_MagosBasicRanged</li>
 			<li>Seg_COTO_MagosBasicMelee</li>
 		</weaponTags>
-		<weaponMoney>300~600</weaponMoney>
+		<weaponMoney>500~1000</weaponMoney>
 		<apparelMoney>600~1000</apparelMoney>
 		<apparelRequired Inherit="False">
 			<li>Seg_COTO_Apparel_MagosHood</li>
@@ -72,7 +72,7 @@
 		</apparelRequired>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<weaponMoney>500~600</weaponMoney>
+		<weaponMoney>1100~2500</weaponMoney>
 		<weaponTags Inherit="False">
 			<li>Seg_COTO_MagosAdvancedRanged</li>
 			<li>Seg_COTO_MagosAdvancedMelee</li>
