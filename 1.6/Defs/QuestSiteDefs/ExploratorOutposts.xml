@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_ExploratorOutpost1</defName>
   <isStorage>true</isStorage>
@@ -12,8 +12,8 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Auburn,Wall_Seg_Ceramite_Black,.,.,.,MeditationSpot,WallLamp_South,.,Stool_Steel_East,Table1x2c_Steel_North,Stool_Steel_East,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Auburn,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,Hopper_North,Hopper_North,Hopper_North,.,.,VitalsMonitor_South,Stool_Steel_East,.,Stool_Steel_East,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Auburn,Wall_Seg_Ceramite_Black,.,.,.,MoisturePump,WallLamp_South,.,Stool_Steel_East,Table1x2c_Steel_North,Stool_Steel_East,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Auburn,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,RawRice,RawRice,Hopper_North,.,.,VitalsMonitor_South,Stool_Steel_East,.,Stool_Steel_East,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Auburn,Wall_Seg_Ceramite_Black,.,.,.,.,.,VitalsMonitor_South,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Auburn,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,NutrientPasteDispenser_East,.,.,.,.,Stool_Steel_East,Table1x2c_Steel_North,Stool_Steel_East,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Auburn,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,Stool_Steel_East,.,Stool_Steel_East,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Auburn,.,.,.,.,.,.,.,.</li>
@@ -27,14 +27,14 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,PollutionPump,.,Barricade_Seg_Ceramite_Auburn,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,Wall_Seg_Ceramite_Auburn,.,Wall_Seg_Ceramite_Auburn,.,Wall_Seg_Ceramite_Auburn,FloodLight,.,.,.,.,PowerConduit,.,.,.,.,.,CaravanPackingSpot_North,.,Barricade_Seg_Ceramite_Black,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,.,.,.,PowerConduit,PowerConduit,PowerConduit,.,.,.,Barricade_Seg_Ceramite_Auburn,Barricade_Seg_Ceramite_Black,Barricade_Seg_Ceramite_Auburn,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,ShelfSmall_Steel_Black_North,Shelf_Steel_Black_North,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,ShelfSmall_Steel_Black_North,Shelf_Steel_Black_North,Chemfuel,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,LongRangeMineralScanner_East,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,Wall_Seg_Ceramite_Black,PowerConduit,PowerConduit,PowerConduit,PowerConduit,Shelf_Steel_Black_South,Wall_Seg_Ceramite_Black,.,.,.,PowerConduit,PowerConduit,PowerConduit,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,Wall_Seg_Ceramite_Black,PowerConduit,PowerConduit,PowerConduit,PowerConduit,Chemfuel,Wall_Seg_Ceramite_Black,.,.,.,PowerConduit,PowerConduit,PowerConduit,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,Wall_Seg_Ceramite_Black,WallLamp_West,.,.,PowerConduit,.,Door_Steel_Auburn,.,.,.,PowerConduit,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,PowerConduit,PowerConduit,Wall_Seg_Ceramite_Black,PowerConduit,PowerConduit,PowerConduit,PowerConduit,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,Chemfuel,PowerConduit,Wall_Seg_Ceramite_Black,PowerConduit,PowerConduit,PowerConduit,PowerConduit,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,Wall_Seg_Ceramite_Auburn,PowerConduit,Wall_Seg_Ceramite_Auburn,.,Wall_Seg_Ceramite_Auburn,FloodLight,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,Shelf_Steel_Black_South,ShelfSmall_Steel_Black_South,.,Shelf_Steel_Black_South,Wall_Seg_Ceramite_Black,.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,CaravanPackingSpot_North,.,CaravanPackingSpot_North,Wall_Seg_Ceramite_Black,.,.,.,MeditationSpot,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,Wall_Seg_Ceramite_Black,.,Shelf_Steel_Black_South,ShelfSmall_Steel_Black_South,.,ComponentIndustrial,Wall_Seg_Ceramite_Black,.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,Wall_Seg_Ceramite_Black,.,CaravanPackingSpot_North,.,CaravanPackingSpot_North,Wall_Seg_Ceramite_Black,.,.,MoisturePump,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,Wall_Seg_Ceramite_Auburn,Barricade_Seg_Ceramite_Auburn,Wall_Seg_Ceramite_Auburn,.,Wall_Seg_Ceramite_Auburn,FloodLight,.,.,.,.,Door_Steel_Auburn,.,.,VitalsMonitor_South,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Barricade_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,Barricade_Seg_Ceramite_Auburn,.,PollutionPump,.,PollutionPump,.,.,.,.,Wall_Seg_Ceramite_Black,Bed_Steel_Black_South,.,WallLamp_North,.,Bed_Steel_Black_South,Wall_Seg_Ceramite_Black,.,.,.,.,.,.,.,.,.</li>
@@ -51,7 +51,7 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,.,.,.,RawRice,RawRice,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,Hopper_North,Hopper_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -65,13 +65,13 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,Chemfuel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,PowerConduit,.,Seg_COTO_CraftingTable_West,.,.,Chemfuel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,Shelf_Steel_Black_North,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,PowerConduit,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,ComponentIndustrial,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,Shelf_Steel_Black_South,.,.,.,.,.,.,.,PowerConduit,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -105,9 +105,9 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,.,Chemfuel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,Shelf_Steel_Black_South,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-      <li>.,.,.,.,.,.,.,.,Chemfuel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,Shelf_Steel_Black_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -200,23 +200,64 @@
   <forceGenerateRoof>true</forceGenerateRoof>
   <needRoofClearance>true</needRoofClearance>
   <modRequirements>
-    <li>ludeon.rimworld.royalty</li>
     <li>ludeon.rimworld.biotech</li>
     <li>redacted.segmentum.childrenoftheomnissiah</li>
   </modRequirements>
 </KCSG.StructureLayoutDef>
 
-<KCSG.SymbolDef>
-  <defName>Wall_Seg_Ceramite_Auburn</defName>
+  <KCSG.SymbolDef>
+  <defName>Wall_Seg_Ceramite_Black</defName>
   <thing>Wall</thing>
+  <stuff>Seg_Ceramite</stuff>
+  <color>Structure_Black</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Door_Steel_Auburn</defName>
+  <thing>Door</thing>
+  <stuff>Steel</stuff>
+  <color>Structure_Auburn</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Barricade_Seg_Ceramite_Black</defName>
+  <thing>Barricade</thing>
+  <stuff>Seg_Ceramite</stuff>
+  <color>Structure_Black</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Barricade_Seg_Ceramite_Auburn</defName>
+  <thing>Barricade</thing>
   <stuff>Seg_Ceramite</stuff>
   <color>Structure_Auburn</color>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
-  <defName>ChemfuelPoweredGenerator_Fuel99</defName>
-  <thing>ChemfuelPoweredGenerator</thing>
-  <fuelPercent>0.99187696</fuelPercent>
+  <defName>Seg_COTO_CraftingTable</defName>
+  <thing>Seg_COTO_CraftingTable</thing>
+  <rotation>West</rotation>
 </KCSG.SymbolDef>
-  
+
+<KCSG.SymbolDef>
+  <defName>Shelf_Steel_Black</defName>
+  <thing>Shelf</thing>
+  <stuff>Steel</stuff>
+  <color>Structure_Black</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>ShelfSmall_Steel_Black</defName>
+  <thing>ShelfSmall</thing>
+  <stuff>Steel</stuff>
+  <color>Structure_Black</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Bed_Steel_Black</defName>
+  <thing>Bed</thing>
+  <stuff>Steel</stuff>
+  <color>Structure_Black</color>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
 </Defs>
