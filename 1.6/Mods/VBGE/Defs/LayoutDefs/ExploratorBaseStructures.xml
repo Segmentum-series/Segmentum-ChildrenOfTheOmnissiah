@@ -4,6 +4,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_GeneratorBuilding</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Generator</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -81,6 +84,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_ExploratorHab</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_ExploratorHab</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -158,6 +164,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_MortarPosition</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_MortarPosition</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -238,6 +247,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Prison</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Prison</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -315,6 +327,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Storage</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Storage</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -392,6 +407,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Workshop</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Workshop</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -473,6 +491,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Scanner</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Scanner</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -553,6 +574,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Laboratory</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_Laboratory</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
@@ -630,6 +654,9 @@
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_LandingPad</defName>
   <isStorage>true</isStorage>
+  <tags>
+	<li>Seg_COTO_LandingPad</li>
+  </tags>
   <layouts>
     <li>
       <li>.,.,.,.,.,.,.,HiddenConduit,.,.,.,.,.,.,.</li>
