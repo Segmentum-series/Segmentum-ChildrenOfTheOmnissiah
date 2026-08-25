@@ -628,7 +628,7 @@
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
-  <defName>Seg_COTO_Landing Pad</defName>
+  <defName>Seg_COTO_LandingPad</defName>
   <isStorage>true</isStorage>
   <layouts>
     <li>
@@ -747,6 +747,12 @@
   <thing>Door</thing>
   <stuff>Seg_Ceramite</stuff>
   <color>Structure_Black</color>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>ChemfuelPoweredGenerator_Fuel97</defName>
+  <thing>ChemfuelPoweredGenerator</thing>
+  <fuelPercent>0.978127837</fuelPercent>
 </KCSG.SymbolDef>
 
 </Defs>
