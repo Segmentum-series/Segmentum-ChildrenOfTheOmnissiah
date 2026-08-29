@@ -135,7 +135,6 @@
 		
 		<equippedStatOffsets>
 			<RangedWeapon_Cooldown>-0.1</RangedWeapon_Cooldown>
-			<MaxHitPoints>280</MaxHitPoints>
 			<AimingDelayFactor>-0.3</AimingDelayFactor>
 			<MoveSpeed>0.55</MoveSpeed>
 			<ToxicResistance>1.00</ToxicResistance>
