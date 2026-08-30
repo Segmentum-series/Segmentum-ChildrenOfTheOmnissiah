@@ -2,15 +2,15 @@
 <Defs>
   <KCSG.SettlementLayoutDef Name="Seg_COTO_ExploratorBase">
   <defName>Seg_COTO_ExploratorBase</defName>
-    <settlementSize>65,65</settlementSize>
+    <settlementSize>90,90</settlementSize>
     <centerBuildings>
       <centralBuildingTags>
-        <li>Seg_COTO_Workshop</li>
+        <li>Seg_COTO_Generator</li>
       </centralBuildingTags>
-      <centerSize>65,65</centerSize>
+      <centerSize>90,90</centerSize>
       <allowedStructures>
         <li>
-          <count>1~3</count>
+          <count>0~2</count>
           <tag>Seg_COTO_Generator</tag>
         </li>
         <li>
@@ -22,11 +22,11 @@
           <tag>Seg_COTO_MortarPosition</tag>
         </li>
         <li>
-          <count>1~3</count>
+          <count>1~2</count>
           <tag>Seg_COTO_Prison</tag>
         </li>
         <li>
-          <count>1~4</count>
+          <count>1~3</count>
           <tag>Seg_COTO_Storage</tag>
         </li>
         <li>

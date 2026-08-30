@@ -3,7 +3,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_GeneratorBuilding</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_Generator</li>
   </tags>
@@ -83,7 +83,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_ExploratorHab</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_ExploratorHab</li>
   </tags>
@@ -163,7 +163,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_MortarPosition</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_MortarPosition</li>
   </tags>
@@ -246,7 +246,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Prison</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_Prison</li>
   </tags>
@@ -406,7 +406,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Workshop</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_Workshop</li>
   </tags>
@@ -490,7 +490,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Scanner</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_Scanner</li>
   </tags>
@@ -573,7 +573,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_Laboratory</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_Laboratory</li>
   </tags>
@@ -653,7 +653,7 @@
 
 <KCSG.StructureLayoutDef>
   <defName>Seg_COTO_LandingPad</defName>
-  <isStorage>true</isStorage>
+  <isStorage>false</isStorage>
   <tags>
 	<li>Seg_COTO_LandingPad</li>
   </tags>
