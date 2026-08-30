@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/FactionDef[@Name="Seg_COTO_HostileMechanicus"]</xpath>
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      Defs/FactionDef[defName="Seg_COTO_HostileMechanicus"]/modExtensions
+    </xpath>
     <value>
       <li Class="KCSG.CustomGenOption">
         <chooseFromSettlements>
@@ -11,4 +13,4 @@
       </li>
     </value>
   </Operation>
-</Patch>
+  </Patch>

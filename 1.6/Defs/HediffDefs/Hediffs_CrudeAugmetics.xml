@@ -13,6 +13,7 @@
 			<skillRequirements>
 					<Crafting>4</Crafting>
 			</skillRequirements>
+				<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItem</texPath>
@@ -34,6 +35,7 @@
 		<tradeTags Inherit="False">
 			<li>Seg_COTO_CrudeAugmetics</li>
 		</tradeTags>
+	
 	</ThingDef>
 
 

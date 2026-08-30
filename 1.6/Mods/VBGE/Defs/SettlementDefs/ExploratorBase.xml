@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <KCSG.SettlementLayoutDef Abstract="True" Name="Seg_COTO_ExploratorBase">
+  <KCSG.SettlementLayoutDef Name="Seg_COTO_ExploratorBase">
+  <defName>Seg_COTO_ExploratorBase</defName>
     <settlementSize>65,65</settlementSize>
     <centerBuildings>
       <centralBuildingTags>
@@ -130,18 +131,6 @@
         <li>Silver</li>
         <li>Gold</li>
         <li>Plasteel</li>
-      </fillWithDefs>
-    </stockpileOptions>
-  </KCSG.SettlementLayoutDef>
-    <stockpileOptions>
-      <fillStorageBuildings>true</fillStorageBuildings>
-      <fillWithDefs>
-        <li>Steel</li>
-        <li>Gold</li>
-        <li>Plasteel</li>
-        <li>Silver</li>
-        <li>Jade</li>
-        <li>ComponentIndustrial</li>
       </fillWithDefs>
     </stockpileOptions>
   </KCSG.SettlementLayoutDef>
