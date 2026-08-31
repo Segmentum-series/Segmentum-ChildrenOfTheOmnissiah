@@ -453,9 +453,9 @@
             <NegotiationAbility>0.20</NegotiationAbility>
             <Insulation_Cold>10</Insulation_Cold>
             <Insulation_Heat>10</Insulation_Heat>
-            
-
-        </statOffsets>
+            <BEWH_GravEngineCooldownFactor MayRequire="ludeon.rimworld.odyssey">-0.05</BEWH_GravEngineCooldownFactor>
+            <BEWH_GravshipFuelEfficiency MayRequire="ludeon.rimworld.odyssey">0.05</BEWH_GravshipFuelEfficiency>
+         </statOffsets>
          <statFactors>
            <MeleeHitChance>1.02</MeleeHitChance>
         </statFactors>
@@ -678,10 +678,8 @@
             <MoveSpeed>0.05</MoveSpeed>
             <SocialImpact>0.20</SocialImpact>
             <MeleeCooldownFactor>0.03</MeleeCooldownFactor>
-           
-            
-
-        </statOffsets>
+            <BEWH_GravshipRangeOffset MayRequire="Ludeon.RimWorld.Odyssey">2</BEWH_GravshipRangeOffset>
+         </statOffsets>
          <statFactors>
            <NegotiationAbility>1.5</NegotiationAbility>
            
