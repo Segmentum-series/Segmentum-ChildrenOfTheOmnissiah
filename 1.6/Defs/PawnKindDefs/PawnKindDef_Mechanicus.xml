@@ -65,6 +65,30 @@
 		</skills>
 		<humanPregnancyChance>0</humanPregnancyChance>
 		<trader>false</trader>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_PawnKindRanks">
+				<ranks>
+				<li>
+				<rank></rank>
+				<rankOptions>
+					<li>
+						<rank>Seg_COTO_TechMilita</rank>
+						<weight>4</weight>
+					</li>
+					<li>
+						<rank>Seg_COTO_Hypaspist</rank>
+						<weight>2</weight>
+					</li>
+				</rankOptions>
+				<rankCategory></rankCategory>
+				<includePrerequisites>true</includePrerequisites>
+				<chance>1</chance>
+				<daysAsRank>12</daysAsRank>
+				<requireCategoryUnlocked>true</requireCategoryUnlocked>
+				</li>
+				</ranks>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Skitarii Base -->
@@ -163,6 +187,32 @@
 					</li>
 				</extraDecorations>
 			</li>
+			<li Class="Core40k.DefModExtension_PawnKindRanks">
+				<ranks>
+				<li>
+				<rank></rank>
+				<rankOptions>
+					<li>
+						<rank>Seg_COTO_Skitarius</rank>
+						<weight>2</weight>
+					</li>
+					<li>
+						<rank>Seg_COTO_SkitariiProvost</rank>
+						<weight>1</weight>
+					</li>
+					<li>
+						<rank>Seg_COTO_SkitariiVanguard</rank>
+						<weight>4</weight>
+					</li>
+				</rankOptions>
+				<rankCategory></rankCategory>
+				<includePrerequisites>true</includePrerequisites>
+				<chance>1</chance>
+				<daysAsRank>12</daysAsRank>
+				<requireCategoryUnlocked>true</requireCategoryUnlocked>
+				</li>
+				</ranks>
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 
@@ -233,6 +283,21 @@
         </li>
     </extraDecorations>
     </li>
+	<li Class="Core40k.DefModExtension_PawnKindRanks">
+	<ranks>
+		<li>
+		<rank>Seg_COTO_SkitariiVanguard</rank>
+		<!--rankOptions>
+			<li></li>
+		</rankOptions-->
+		<rankCategory></rankCategory>
+		<includePrerequisites>true</includePrerequisites>
+		<chance>1</chance>
+		<daysAsRank>8</daysAsRank>
+		<requireCategoryUnlocked>true</requireCategoryUnlocked>
+		</li>
+	</ranks>
+    </li>
 </modExtensions>
 	</PawnKindDef>
 
@@ -276,6 +341,30 @@
 				<range>4~6</range>
 			</li>
 		</skills>
+	<modExtensions>		
+	<li Class="Core40k.DefModExtension_PawnKindRanks">
+	<ranks>
+		<li>
+		<rank></rank>
+		<rankOptions>
+			<li>
+				<rank>Seg_COTO_Skitarius</rank>
+				<weight>2</weight>
+			</li>
+			<li>
+				<rank>Seg_COTO_SkitariiRanger</rank>
+				<weight>4</weight>
+			</li>
+		</rankOptions>
+		<rankCategory></rankCategory>
+		<includePrerequisites>true</includePrerequisites>
+		<chance>1</chance>
+		<daysAsRank>12</daysAsRank>
+		<requireCategoryUnlocked>true</requireCategoryUnlocked>
+		</li>
+	</ranks>
+    </li>
+	</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Seg_COTO_SkitariiPawnBase">
@@ -338,6 +427,21 @@
                 </value>
             </li>
         </extraDecorations>
+    </li>
+	<li Class="Core40k.DefModExtension_PawnKindRanks">
+	<ranks>
+		<li>
+		<rank>Seg_COTO_SkitariiRanger</rank>
+		<!--rankOptions>
+			<li></li>
+		</rankOptions-->
+		<rankCategory></rankCategory>
+		<includePrerequisites>true</includePrerequisites>
+		<chance>1</chance>
+		<daysAsRank>8</daysAsRank>
+		<requireCategoryUnlocked>true</requireCategoryUnlocked>
+		</li>
+	</ranks>
     </li>
 </modExtensions>
 	</PawnKindDef>
@@ -406,6 +510,28 @@
             </value>
         </li>
     </extraDecorations>
+    </li>
+	<li Class="Core40k.DefModExtension_PawnKindRanks">
+	<ranks>
+		<li>
+		<rank></rank>
+		<rankOptions>
+			<li>
+				<rank>Seg_COTO_SkitariiVanguard</rank>
+				<weight>2</weight>
+			</li>
+			<li>
+				<rank>Seg_COTO_SkitariiRanger</rank>
+				<weight>2</weight>
+			</li>
+		</rankOptions>
+		<rankCategory></rankCategory>
+		<includePrerequisites>true</includePrerequisites>
+		<chance>1</chance>
+		<daysAsRank>8</daysAsRank>
+		<requireCategoryUnlocked>true</requireCategoryUnlocked>
+		</li>
+	</ranks>
     </li>
 	</modExtensions>
 		
@@ -489,6 +615,30 @@
 				<range>4~8</range>
 			</li>
 		</skills>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank></rank>
+			<rankOptions>
+				<li>
+					<rank>Seg_COTO_AuxiliusMyrmidon</rank>
+					<weight>4</weight>
+				</li>
+				<li>
+					<rank>Seg_COTO_AdeptProbatoris</rank>
+					<weight>2</weight>
+				</li>
+			</rankOptions>
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>12</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Magos Myrmidon -->
@@ -556,6 +706,28 @@
         </li>
     </extraDecorations>
     </li>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank></rank>
+			<rankOptions>
+				<li>
+					<rank>Seg_COTO_AuxiliusMyrmidon</rank>
+					<weight>2</weight>
+				</li>
+				<li>
+					<rank>Seg_COTO_MagosMilitant</rank>
+					<weight>4</weight>
+				</li>
+			</rankOptions>
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>12</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
 </modExtensions>
 	</PawnKindDef>
 
@@ -630,6 +802,28 @@
         </li>
     </extraDecorations>
     </li>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank></rank>
+			<rankOptions>
+				<li>
+					<rank>Seg_COTO_AdeptProbatoris</rank>
+					<weight>2</weight>
+				</li>
+				<li>
+					<rank>Seg_COTO_MagosExplorator</rank>
+					<weight>4</weight>
+				</li>
+			</rankOptions>
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>12</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
 </modExtensions>
 	</PawnKindDef>
 
@@ -709,6 +903,28 @@
         </li>
     </extraDecorations>
     </li>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank></rank>
+			<rankOptions>
+				<li>
+					<rank>Seg_COTO_MagosDominius</rank>
+					<weight>2</weight>
+				</li>
+				<li>
+					<rank>Seg_COTO_ArchmagosDominius</rank>
+					<weight>1</weight>
+				</li>
+			</rankOptions>
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>20</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
 </modExtensions>
 	</PawnKindDef>
 

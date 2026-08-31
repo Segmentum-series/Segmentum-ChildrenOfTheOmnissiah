@@ -93,6 +93,22 @@
                 <range>4~11</range>
             </li>
         </skills>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank>Seg_COTO_SicarianInfiltrator</rank>
+			<!--rankOptions>
+			</rankOptions-->
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>12</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
+		</modExtensions>
     </PawnKindDef>
 	
     <!-- Sicarian Ruststalker -->
@@ -136,6 +152,22 @@
                 <range>8~11</range>
             </li>
         </skills>
+		<modExtensions>
+		<li Class="Core40k.DefModExtension_PawnKindRanks">
+		<ranks>
+			<li>
+			<rank>Seg_COTO_SicarianRuststalker</rank>
+			<!--rankOptions>
+			</rankOptions-->
+			<rankCategory></rankCategory>
+			<includePrerequisites>true</includePrerequisites>
+			<chance>1</chance>
+			<daysAsRank>12</daysAsRank>
+			<requireCategoryUnlocked>true</requireCategoryUnlocked>
+			</li>
+		</ranks>
+		</li>
+		</modExtensions>
     </PawnKindDef>
 	
     <!-- Sicarian Princeps -->
@@ -204,6 +236,28 @@
             </value>
         </li>
     </extraDecorations>
+    </li>
+	<li Class="Core40k.DefModExtension_PawnKindRanks">
+	<ranks>
+		<li>
+		<rank></rank>
+		<rankOptions>
+			<li>
+				<rank>Seg_COTO_SicarianInfiltrator</rank>
+				<weight>2</weight>
+			</li>
+			<li>
+				<rank>Seg_COTO_SicarianRuststalker</rank>
+				<weight>2</weight>
+			</li>
+		</rankOptions>
+		<rankCategory></rankCategory>
+		<includePrerequisites>true</includePrerequisites>
+		<chance>1</chance>
+		<daysAsRank>12</daysAsRank>
+		<requireCategoryUnlocked>true</requireCategoryUnlocked>
+		</li>
+	</ranks>
     </li>
 </modExtensions>
     </PawnKindDef>
