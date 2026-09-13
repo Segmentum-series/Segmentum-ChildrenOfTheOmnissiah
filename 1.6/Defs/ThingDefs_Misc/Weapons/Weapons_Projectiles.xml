@@ -59,7 +59,7 @@
 		</graphicData>
 		<uiIconPath>UI/Projectile/Seg_COTO_UI_BrainBullet</uiIconPath>
 		<projectile>
-			<damageDef>Bullet</damageDef>
+			<damageDef>Seg_COTO_BrainSeekerDamage</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<stoppingPower>3</stoppingPower>
 		<speed>90</speed>

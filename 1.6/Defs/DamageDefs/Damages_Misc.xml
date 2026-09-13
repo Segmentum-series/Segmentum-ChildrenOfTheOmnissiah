@@ -36,6 +36,19 @@
 		<explosionColorEdge>(0.1, 0.25, 0.6)</explosionColorEdge>
 		<defaultArmorPenetration>2.0</defaultArmorPenetration>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+	<defName>Seg_COTO_BrainSeekerDamage</defName>
+		<label>servitor sabot</label>
+		<modExtensions>
+			<li Class="Core40k.DefModExtension_TargetBodyParts">
+			<bodyParts>
+				<li>Head</li>
+				<li>Brain</li>
+			</bodyParts>
+			<chance>.35</chance>
+			</li>
+		</modExtensions>
+	</DamageDef>
 	<!-- Gamma damage -->
 	<DamageDef>
 		<defName>Seg_COTO_GammaDamage</defName>
