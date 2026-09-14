@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--===== Servo Turret =====-->
+	
+	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+		<defName>Seg_COTO_ServoTurret</defName>
+		<label>Servo Turret</label>
+	<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<graphicData>
+			<texPath>Things/Vehicles/Seg_COTO_ServoTurretBase</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+		<fillPercent>1</fillPercent>
+		<buildDef>Seg_COTO_ServoTurret_Blueprint</buildDef>
+		<size>(1, 1)</size>
+		<!-- <vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions> -->
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		<statBases>
+			<ArmorRating_Blunt>1.08</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.9</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MarketValue>4200</MarketValue>
+		</statBases>
+		<vehicleStats>
+			<Mass>620</Mass>
+			<MoveSpeed>1.5</MoveSpeed>
+			<CargoCapacity>225</CargoCapacity>
+			<RepairRate>5.0</RepairRate>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.04</AccelerationRate>
+		</vehicleStats>
+		<soundSustainersOnEvent>
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>GW_VoG_HeavySound</value>
+			</li>
+		</soundSustainersOnEvent>
+		<race>
+			<baseBodySize>1.0</baseBodySize>
+		</race>
+		<properties>
+			
+			<customRoadCosts AssignDefaults="1" />
+			<winterSpeedMultiplier>0.95</winterSpeedMultiplier>
+			<worldSpeedMultiplier>1</worldSpeedMultiplier>
+			<offRoadMultiplier>0.95</offRoadMultiplier>
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 5)</li>
+			</vehicleJobLimitations>
+			<roles>
+			</roles>
+		</properties>
+		<components>
+			<li>
+				<key>Engine</key>
+				<label>Engine</label>
+				<health>150</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>AmmoRack</key>
+				<label>Ammo Rack</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>2</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+			</li>
+			<li>
+				<key>FrontLeftServoLeg</key>
+				<label>Front Left Servo Leg</label>
+				<health>300</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontRightServoLeg</key>
+				<label>Front Right Servo Leg</label>
+				<health>300</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>BackLeftServoLeg</key>
+				<label>Back Left Servo Leg</label>
+				<health>300</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>BackRightServoLeg</key>
+				<label>Back Right Servo Leg</label>
+				<health>300</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>Gearbox</key>
+				<label>Gearbox</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontArmorPlating</key>
+				<label>Front Armor Plating</label>
+				<health>300</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.72</ArmorRating_Blunt>
+					<ArmorRating_Sharp>3.04</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftArmorPlating</key>
+				<label>Left Armor Plating</label>
+				<health>255</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.17</ArmorRating_Blunt>
+					<ArmorRating_Sharp>2.07</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Left</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightArmorPlating</key>
+				<label>Right Armor Plating</label>
+				<health>255</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.17</ArmorRating_Blunt>
+					<ArmorRating_Sharp>2.07</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Right</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>BackArmorPlating</key>
+				<label>Rear Armor Plating</label>
+				<health>205</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>0.94</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.66</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>FuelTank</key>
+				<label>Fuel Tank</label>
+				<health>125</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_FuelLeak" />
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.15</chance>
+						<radius>5</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>ServoBrain</key>
+				<label>Servitor Brain</label>
+				<health>55</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+		</components>
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Uranium</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>2</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>0.15</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>200</fuelCapacity>
+			</li>
+		    <li Class = "Vehicles.CompProperties_UpgradeTree">
+				<def>Seg_COTO_ServoTurret_UpgradeTree</def>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+				</turrets>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+
+</Defs>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_AnnihilatorLascannonShot</defName>
+		<label>las bolt</label>
+		<description>A stabbing bolt of las energy.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_Core_Lasbolt</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_LasgunDamage</damageDef>
+			<damageAmountBase>37</damageAmountBase>
+			<armorPenetrationBase>1.77</armorPenetrationBase>
+			<stoppingPower>1.77</stoppingPower>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>15</damageTickRate>
+				<lifetimeTicks>45</lifetimeTicks>
+				<chainRange>0</chainRange>
+				<maxChainTargets>0</maxChainTargets>
+				<chainDelayTicks>100000</chainDelayTicks>
+				<chainToAnything>false</chainToAnything>
+				<maxBranches>0</maxBranches>
+				<branchChance>0</branchChance>
+
+				<beamWidth>1.75</beamWidth>
+				<beamWidthDrawScale>3</beamWidthDrawScale>
+
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+				<!--<endEffecterDef>Seg_Lasgun_HitEffecter</endEffecterDef>-->
+				<groundFleckDef>Seg_Lasgun_HitMote</groundFleckDef>
+				<fleckChancePerTick>0.5</fleckChancePerTick>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>false</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	
+    <ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_HeavyBolterRound</defName>
+        <label>heavy bolt</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Seg_COTO_HeavyBolterRound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Seg_BolterDamage</damageDef>
+            <damageAmountBase>33</damageAmountBase>
+            <armorPenetrationBase>0.75</armorPenetrationBase>
+            <explosionRadius>1.2</explosionRadius>
+            <soundExplode>GunShotA</soundExplode>
+            <screenShakeFactor>0.2</screenShakeFactor>
+            <speed>80</speed>
+            <stoppingPower>2.0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>Seg_BolterDamage</defName>
+    <label>heavy bolter explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} learned the meaning of "mass-reactive" the hard way.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>25</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.03</corpseDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <soundExplosion>GunShotA</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+	
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_TwinLascannon_Turret</defName>
+		<label> annihilator twin linked lascannons</label>
+		<description>Twin lascannon weapons mounted in the turret, designed to destroy heavily armored vehicles and fortified positions with precise, high-energy shots.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		<projectile>Seg_COTO_AnnihilatorLascannonShot</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>40</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<accuracyTouch>0.55</accuracyTouch>
+				<accuracyShort>0.75</accuracyShort>
+				<accuracyMedium>0.95</accuracyMedium>
+				<accuracyLong>0.85</accuracyLong>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_ServoTurret_MainTurret_TwinLascannons</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_HeavyBolter_Turret</defName>
+		<label> twin linked heavy bolters</label>
+		<description>Twin heavy bolter weapons mounted in the turret, designed to destroy heavily armored vehicles and fortified positions with precise, mass reactive shots.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<projectile>Seg_COTO_HeavyBolterRound</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>200</magazineCapacity>
+		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>35</ticksBetweenBursts>
+				<spreadRadius>.5</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>8</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>24</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<spreadRadius>1.5</spreadRadius>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_ServoTurret_MainTurret_HeavyBolter</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+</Defs>
