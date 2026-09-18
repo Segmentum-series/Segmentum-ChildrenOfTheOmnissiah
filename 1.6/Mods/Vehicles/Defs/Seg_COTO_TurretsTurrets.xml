@@ -53,6 +53,59 @@
 		</modExtensions>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_ConversionBeamerShot</defName>
+		<label>las bolt</label>
+		<description>A stabbing bolt of las energy.</description>
+		<thingClass>seg.ConversionBeamerBeam</thingClass>
+		<category>Projectile</category>
+		<drawOffscreen>true</drawOffscreen>
+		<seeThroughFog>true</seeThroughFog>
+
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Seg_COTO_CBeam</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Seg_LasgunDamage</damageDef>
+			<armorPenetrationBase>1.77</armorPenetrationBase>
+			<stoppingPower>1.77</stoppingPower>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>999</speed>
+		</projectile>
+
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>10</damageTickRate>
+				<lifetimeTicks>30</lifetimeTicks>
+				<chainRange>3</chainRange>
+				<maxChainTargets>10</maxChainTargets>
+				<chainDelayTicks>5</chainDelayTicks>
+				<chainToAnything>true</chainToAnything>
+				<maxBranches>10</maxBranches>
+				<branchChance>.30</branchChance>
+
+				<beamWidth>1.75</beamWidth>
+				<beamWidthDrawScale>2</beamWidthDrawScale>
+
+				<sweepRatePerTick>1</sweepRatePerTick>
+				<maxSweepAngle>10</maxSweepAngle>
+
+				<damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+				<debugCells>false</debugCells>
+				<!--<endEffecterDef>Seg_Lasgun_HitEffecter</endEffecterDef>-->
+				<groundFleckDef>Seg_Lasgun_HitMote</groundFleckDef>
+				<fleckChancePerTick>0.5</fleckChancePerTick>
+
+				<textureScrollOffsetPerTick>(0, 0.1)</textureScrollOffsetPerTick>
+				<lockOnTarget>false</lockOnTarget>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 	
     <ThingDef ParentName="BaseBullet">
         <defName>Seg_COTO_HeavyBolterRound</defName>
@@ -71,6 +124,44 @@
             <screenShakeFactor>0.2</screenShakeFactor>
             <speed>80</speed>
             <stoppingPower>2.0</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_AutocannonShot</defName>
+		<label>high-explosive shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>95</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	
+    <ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_StubShot</defName>
+        <label>stub round</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>200</speed>
         </projectile>
     </ThingDef>
 
@@ -207,6 +298,225 @@
 		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_ServoTurret_MainTurret_HeavyBolter</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_ConversionBeamerTurret</defName>
+		<label> conversion beamer</label>
+		<description>Twin lascannon weapons mounted in the turret, designed to destroy heavily armored vehicles and fortified positions with precise, high-energy shots.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		<projectile>Seg_COTO_ConversionBeamerShot</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>40</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<accuracyTouch>0.55</accuracyTouch>
+				<accuracyShort>0.75</accuracyShort>
+				<accuracyMedium>0.95</accuracyMedium>
+				<accuracyLong>0.85</accuracyLong>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_TarantulaTurret_MainTurret_ConversionBeamer</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Plasteel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_HeavyStubber_Turret</defName>
+		<label>Quad Heavy Stubber</label>
+		<description>Quad heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate fire.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<projectile>Seg_COTO_StubShot</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>2000</magazineCapacity>
+		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>80</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>100</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>80</ticksBetweenBursts>
+				<spreadRadius>1.5</spreadRadius>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_TarantulaTurret_MainTurret_QuadStubbers</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_Autocannon_Turret</defName>
+		<label>Predator main autocannon</label>
+		<description>The Autocannon, a potent ballistic weapon in GrimWorld 40,000, is mounted on a robust vehicle. With a sleek design and formidable presence, this versatile armament embodies precision and rapid-fire capability. Integrated into battle-tested plating, the vehicle signifies the Imperium's relentless might in confronting armored and infantry threats on the tumultuous battlefield.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Seg_COTO_AutocannonShot</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>20</magazineCapacity>
+		<chargePerAmmoCount>3</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>50.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<accuracyTouch>0.85</accuracyTouch>
+				<accuracyShort>0.95</accuracyShort>
+				<accuracyMedium>0.75</accuracyMedium>	
+				<accuracyLong>0.75</accuracyLong>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<accuracyTouch>0.75</accuracyTouch>
+				<accuracyShort>0.65</accuracyShort>
+				<accuracyMedium>0.55</accuracyMedium>	
+				<accuracyLong>0.45</accuracyLong>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_TarantulaTurret_MainTurret_Autocannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_HeavyArcTurret</defName>
+		<label> heavy arc turret</label>
+		<description>Twin lascannon weapons mounted in the turret, designed to destroy heavily armored vehicles and fortified positions with precise, high-energy shots.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_Lascannon</shotSound>
+		<projectile>Seg_COTO_ArcRifleOverCharged_Beam</projectile>
+		<reloadTimer>2.0</reloadTimer>
+		<warmUpTimer>1.0</warmUpTimer>
+		<magazineCapacity>40</magazineCapacity>
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>0</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<label>Single</label>
+				<accuracyTouch>0.55</accuracyTouch>
+				<accuracyShort>0.75</accuracyShort>
+				<accuracyMedium>0.95</accuracyMedium>
+				<accuracyLong>0.85</accuracyLong>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_TarantulaTurret_MainTurret_ConversionBeamer</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(1.2, 1.2)</drawSize>

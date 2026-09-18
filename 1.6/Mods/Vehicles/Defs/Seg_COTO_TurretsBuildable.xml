@@ -32,4 +32,37 @@
 		<thingToSpawn>Seg_COTO_ServoTurret</thingToSpawn>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</Vehicles.VehicleBuildDef>
+
+	<!--===== Tarantula =====-->
+
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>Seg_COTO_Tarantula_Blueprint</defName>
+		<label>Tarantula Turret</label>
+		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<designationCategory>Security</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Seg_COTO_TarantulaTurretBase</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>15000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(2, 2)</size>
+		<researchPrerequisites>
+			<li>Seg_COTO_TechGuardAdvanced</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>600</Steel>
+			<Seg_Ceramite>50</Seg_Ceramite>
+			<ComponentIndustrial>16</ComponentIndustrial>
+			<Brain>1</Brain>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>Seg_COTO_TarantulaTurret</thingToSpawn>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
 </Defs>

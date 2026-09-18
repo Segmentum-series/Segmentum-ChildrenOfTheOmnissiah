@@ -47,10 +47,17 @@
         <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40kMankindsFinest\1.6\Assemblies\Genes40k.dll</HintPath>
     </Reference>
 
+    <Reference Include="taranchuk_lasers">
+          <HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3047564391\1.6\Assemblies\taranchuk_lasers.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+
   <Compile Include="Thing_PhosphorFire.cs" />
   <Compile Include="FerricLure.cs" />
   <Compile Include="FloorCovering.cs" />
   <Compile Include="Waveburst.cs" />
+  <Compile Include="ConversionBeamer.cs" />
+  
   </ItemGroup>
 </Project>
 
