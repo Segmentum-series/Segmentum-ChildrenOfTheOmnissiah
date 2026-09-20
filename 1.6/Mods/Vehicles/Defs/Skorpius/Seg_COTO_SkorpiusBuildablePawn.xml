@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Skorpius-->
+
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>Seg_COTO_Skorpius_Blueprint</defName>
+		<label>Skorpius</label>
+		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<designationCategory>BEWH_RimDarkCategory</designationCategory>
+		<graphicData>
+			<texPath>Things/Vehicles/Seg_COTO_Skorpius_Main</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6, 10)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<WorkToBuild>1720</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(6, 10)</size>
+		<researchPrerequisites>
+			<li>Seg_COTO_TechGuardAdvanced</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>400</Steel>
+			<Seg_Ceramite>30</Seg_Ceramite>
+			<ComponentIndustrial>16</ComponentIndustrial>
+			<Brain>1</Brain>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>Seg_COTO_Skorpius</thingToSpawn>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+
+	
+<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+		<defName>Seg_COTO_Skorpius</defName>
+		<label>Skorpius</label>
+		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<graphicData>
+			<texPath>Things/Vehicles/Seg_COTO_Skorpius_Main</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 10)</drawSize>
+			<color>(155, 155, 155)</color>
+			<colorTwo>(65, 75, 80)</colorTwo>
+			<colorThree>(45, 50, 45)</colorThree>
+		</graphicData>
+		<fillPercent>1</fillPercent>
+		<buildDef>Seg_COTO_Skorpius_Blueprint</buildDef>
+		<size>(6, 10)</size>
+		<!-- <vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions> -->
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		<statBases>
+			<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.21</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.32</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MarketValue>2200</MarketValue>
+		</statBases>
+		<vehicleStats>
+			<Mass>525</Mass>
+			<MoveSpeed>18</MoveSpeed> <!-- this is fairly high yeah, the covering of the vehicle with armor will reduce this severly. i want to make unarmored viable-->
+			<CargoCapacity>1000</CargoCapacity>
+			<RepairRate>0.45</RepairRate>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.2</AccelerationRate>
+		</vehicleStats>
+		
+		<soundSustainersOnEvent>
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>GW_VoG_HeavySound</value>
+			</li>
+		</soundSustainersOnEvent>
+		
+		<race>
+			<baseBodySize>6.0</baseBodySize>
+		</race>
+
+		<properties>
+
+			<customRoadCosts AssignDefaults="0.33" />
+			<winterSpeedMultiplier>0.95</winterSpeedMultiplier>
+			<worldSpeedMultiplier>2</worldSpeedMultiplier>
+			<offRoadMultiplier>0.95</offRoadMultiplier>
+			<customTerrainCosts AssignDefaults = "1"/>
+			<iconTexPath>UI/Icons/DefaultBoatIcon</iconTexPath>
+			<customBiomeCosts>
+				<li>
+					<key>Ocean</key>
+					<value>0.3</value>
+				</li>
+				<li>
+					<key>Lake</key>
+					<value>0.3</value>
+				</li>
+			</customBiomeCosts>
+			<roles>
+				<li>
+					<key>driver</key>
+					<label>Driver</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					<handlingTypes>
+						<li>Movement</li>
+					</handlingTypes>
+					<pawnRenderer>
+						<layer>-1</layer>
+						<layerNorth>1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						
+						<west>West</west>
+						
+						<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+						<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+						<drawOffsetEast>(-1,-1,0)</drawOffsetEast>
+						<drawOffsetWest>(-1.5,-1,0)</drawOffsetWest>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger</key>
+					<label>Passenger</label>
+					<slots>10</slots>
+				</li>
+			</roles>
+		</properties>
+		<components>
+			<li>
+				<key>Engine</key>
+				<label>Engine</label>
+				<health>150</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>AmmoRack</key>
+				<label>Ammo Rack</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<radius>2</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+			</li>
+			<li>
+				<key>LeftTrack</key>
+				<label>Left anti-grav rail</label>
+				<health>200</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<side>Left</side>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>RightTrack</key>
+				<label>Right anti-grav rail</label>
+				<health>200</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<side>Right</side>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>Gravengine</key>
+				<label>Gravskimmer engine</label>
+				<health>500</health>
+				<depth>External</depth>
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			
+			<li>
+				<key>Gearbox</key>
+				<label>Gearbox</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontArmorPlating</key>
+				<label>Front Armor Plating</label>
+				<health>220</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.64</ArmorRating_Blunt>
+					<ArmorRating_Sharp>2.84</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftArmorPlating</key>
+				<label>Left Armor Plating</label>
+				<health>210</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.84</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Left</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightArmorPlating</key>
+				<label>Right Armor Plating</label>
+				<health>210</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.84</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Right</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>BackArmorPlating</key>
+				<label>Rear Armor Plating</label>
+				<health>200</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>FuelTank</key>
+				<label>Fuel Tank</label>
+				<health>150</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class="Vehicles.Reactor_FuelLeak" />
+				</reactors>
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>Dashboard</key>
+				<label>Dashboard</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>SteeringApparatus</key>
+				<label>Steering Apparatus</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>Alternator</key>
+				<label>Alternator</label>
+				<health>50</health>
+				<depth>Internal</depth>
+			</li>
+		</components>
+		<comps>
+			<!--li Class = "Vehicles.CompProperties_UpgradeTree">
+				<def>Seg_COTO_Skorpius_UpgradeTree</def>
+			</li>-->
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Uranium</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>18</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>0.65</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>150</fuelCapacity>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+					<li>
+						<turretDef>Seg_COTO_CognisHeavyStubber_Turret</turretDef>
+						<renderProperties>
+							<north>(0.5,1.25)</north>
+							<south>(-0.5, -0.8)</south>
+							<east>(-1, -1.084)</east>
+							<west>(1, 1)</west>
+						</renderProperties>
+						<gizmoLabel>Main Turret</gizmoLabel>
+						<!-- <angleRestricted>(-85, 85)</angleRestricted> -->
+						<aimPieOffset>(0, 1)</aimPieOffset>
+						<drawLayer>1</drawLayer>
+						<key>mainTurret</key>
+					</li>
+				</turrets>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+
+
+	
+</Defs>

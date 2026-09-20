@@ -1,0 +1,62 @@
+<Defs>
+
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_CognisHeavyStubber_Turret</defName>
+		<label>Cognis Heavy Stubber</label>
+		<description>Cognis heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate fire.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<projectile>Seg_COTO_StubShot</projectile>
+		<reloadTimer>4.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>2000</magazineCapacity>
+		<chargePerAmmoCount>75</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>5</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<projectileShifting>
+			<li>-0.2</li>
+			<li>0.2</li>
+		</projectileShifting>
+		<minRange>4</minRange>
+		<maxRange>59.9</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>80</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>100</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>80</ticksBetweenBursts>
+				<spreadRadius>1.5</spreadRadius>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_CognisHeavyStubber</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.2, 1.2)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+
+
+
+
+</Defs>
