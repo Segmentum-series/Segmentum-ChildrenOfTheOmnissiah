@@ -10,7 +10,7 @@
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(6, 10)</drawSize>
+			<drawSize>(7, 10.5)</drawSize>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>2000</MaxHitPoints>
@@ -42,7 +42,7 @@
 			<texPath>Things/Vehicles/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(6, 10)</drawSize>
+			<drawSize>(7, 10.5)</drawSize>
 			<color>(155, 155, 155)</color>
 			<colorTwo>(65, 75, 80)</colorTwo>
 			<colorThree>(45, 50, 45)</colorThree>
@@ -337,7 +337,7 @@
 							<north>(0.5,1.25)</north>
 							<south>(-0.5, -0.8)</south>
 							<east>(-1, -1.084)</east>
-							<west>(1, 1)</west>
+							<west>(-2, -1)</west>
 						</renderProperties>
 						<gizmoLabel>Main Turret</gizmoLabel>
 						<!-- <angleRestricted>(-85, 85)</angleRestricted> -->
