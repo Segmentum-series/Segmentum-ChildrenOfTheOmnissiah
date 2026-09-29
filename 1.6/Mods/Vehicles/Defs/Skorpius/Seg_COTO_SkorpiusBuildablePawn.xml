@@ -112,13 +112,10 @@
 						<layer>-1</layer>
 						<layerNorth>1</layerNorth>
 						<layerSouth>-1</layerSouth>
-						
 						<west>West</west>
-						
-						<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+						<drawOffsetNorth>(2.5,3.5,0.25)</drawOffsetNorth>
 						<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
-						<drawOffsetEast>(-1,-1,0)</drawOffsetEast>
-						<drawOffsetWest>(-1.5,-1,0)</drawOffsetWest>
+						<drawOffsetWest>(2,0,0)</drawOffsetWest>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -319,9 +316,9 @@
 			</li>
 		</components>
 		<comps>
-			<!--li Class = "Vehicles.CompProperties_UpgradeTree">
+			<li Class = "Vehicles.CompProperties_UpgradeTree">
 				<def>Seg_COTO_Skorpius_UpgradeTree</def>
-			</li>-->
+			</li>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Uranium</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
@@ -331,20 +328,6 @@
 			</li>
 			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets>
-					<li>
-						<turretDef>Seg_COTO_CognisHeavyStubber_Turret</turretDef>
-						<renderProperties>
-							<north>(0.5,1.25)</north>
-							<south>(-0.5, -0.8)</south>
-							<east>(-1, -1.084)</east>
-							<west>(-2, -1)</west>
-						</renderProperties>
-						<gizmoLabel>Main Turret</gizmoLabel>
-						<!-- <angleRestricted>(-85, 85)</angleRestricted> -->
-						<aimPieOffset>(0, 1)</aimPieOffset>
-						<drawLayer>1</drawLayer>
-						<key>mainTurret</key>
-					</li>
 				</turrets>
 			</li>
 		</comps>

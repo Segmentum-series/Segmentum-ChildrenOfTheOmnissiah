@@ -11,9 +11,10 @@
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
 		<magazineCapacity>2000</magazineCapacity>
-		<chargePerAmmoCount>75</chargePerAmmoCount>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
-		
+		<empDisables>true</empDisables>
+
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>5</rotationSpeed>
 		<projectileOffset>1</projectileOffset>
@@ -46,7 +47,7 @@
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_CognisHeavyStubber</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
-			<drawSize>(1.2, 1.2)</drawSize>
+			<drawSize>(5, 5)</drawSize>
 		</graphicData>
 		<ammunition>
 			<thingDefs>
