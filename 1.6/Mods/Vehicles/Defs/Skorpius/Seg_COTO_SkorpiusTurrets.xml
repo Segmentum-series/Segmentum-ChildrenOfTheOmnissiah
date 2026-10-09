@@ -4,7 +4,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_CognisHeavyStubber_Turret</defName>
 		<label>Cognis Heavy Stubber</label>
-		<description>Cognis heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate fire.</description>
+		<description>Cognis heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate bolter fire.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_HeavyBolter</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>

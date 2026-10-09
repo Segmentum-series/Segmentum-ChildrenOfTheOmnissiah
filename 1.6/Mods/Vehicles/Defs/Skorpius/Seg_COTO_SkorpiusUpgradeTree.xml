@@ -82,7 +82,7 @@
 			<li>
 				<key>CombatBayUpgrade</key>
 				<label>Combat Bay</label>
-				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<description>Combat Bay. Slower.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 8)</gridCoordinate>
