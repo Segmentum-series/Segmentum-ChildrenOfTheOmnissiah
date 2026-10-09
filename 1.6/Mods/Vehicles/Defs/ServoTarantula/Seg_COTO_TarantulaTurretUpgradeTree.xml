@@ -1,0 +1,244 @@
+<Defs>
+	<Vehicles.UpgradeTreeDef>
+		<defName>Seg_COTO_TarantulaTurret_UpgradeTree</defName>		 
+		<nodes>
+			<li>
+				<key>HeavyBolterUpgrade</key>
+				<label>Heavy Bolter</label>
+				<description>The Heavy Bolter is a powerful, rapid-fire weapon designed to suppress enemy positions and provide covering fire for advancing troops.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(0, 10)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>LasCannonUpgrade</li>
+                    <li>QuadStubberUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>AutoCannonUpgrade</li>
+                    <li>HeavyArcUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_HeavyBolter_Turret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Heavy Bolter</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Steel>100</Steel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+
+			<li>
+				<key>LasCannonUpgrade</key>
+				<label>Lascannon</label>
+				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(0, 4)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HeavyBolterUpgrade</li>
+                    <li>QuadStubberUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>AutoCannonUpgrade</li>
+                    <li>HeavyArcUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_TwinLascannon_Turret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Lascannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Plasteel>100</Plasteel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+            <li>
+				<key>AutoCannonUpgrade</key>
+				<label>Autocannon</label>
+				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(0, 0)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HeavyBolterUpgrade</li>
+                    <li>QuadStubberUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>LasCannonUpgrade</li>
+                    <li>HeavyArcUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_Autocannon_Turret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Autocannon</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Plasteel>100</Plasteel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+            <li>
+				<key>QuadStubberUpgrade</key>
+				<label>Quad Heavy Stubber</label>
+				<description>The Quad Heavy Stubber is a high-rate fire weapon designed to destroy lightly armored targets.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(4, 10)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HeavyBolterUpgrade</li>
+                    <li>LasCannonUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>AutoCannonUpgrade</li>
+                    <li>HeavyArcUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_HeavyStubber_Turret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Heavy Stubber</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Plasteel>100</Plasteel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+            <li>
+				<key>ConversionBeamerUpgrade</key>
+				<label>ConversionBeamer</label>
+				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(4, 4)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HeavyBolterUpgrade</li>
+                    <li>QuadStubberUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>AutoCannonUpgrade</li>
+                    <li>HeavyArcUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_ConversionBeamerTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Conversion Beamer</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Plasteel>100</Plasteel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+
+            <li>
+				<key>HeavyArcUpgrade</key>
+				<label>Heavy Arc Turret</label>
+				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(8, 10)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>HeavyBolterUpgrade</li>
+                    <li>QuadStubberUpgrade</li>
+                    <li>ConversionBeamerUpgrade</li>
+                    <li>AutoCannonUpgrade</li>
+                    <li>LasCannonUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_HeavyArcTurret</turretDef>
+								<renderProperties>
+							<north>(0.0, 0.0)</north>
+							<south>(0.0, -0.0)</south>
+							<east>(0.0, 0)</east>
+								</renderProperties>
+								<drawLayer>1</drawLayer>
+								<gizmoLabel>Arc Rifle</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, .4)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 <Plasteel>100</Plasteel>
+				 <ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+	
+</Defs>
