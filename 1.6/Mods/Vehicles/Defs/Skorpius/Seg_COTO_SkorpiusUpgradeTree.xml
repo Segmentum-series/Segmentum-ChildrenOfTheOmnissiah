@@ -6,7 +6,7 @@
 				<key>TransportBayUpgrade</key>
 				<label>Dunestrider</label>
 				<!--anndra update pls, gw website--><description>The Skorpius Dunerider is a Dedicated Transport vehicle for Skitarii infantry, and is able to carry 10 of them within the walls of its armoured hull.</description>
-				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DunestriderIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
@@ -87,7 +87,7 @@
 				<key>CombatBayUpgrade</key>
 				<label>Disintegrator</label>
 				<!--anndra update pls, gw website--><description>The Skorpius Disintegrator of the Adeptus Mechanicus drifts gracefully across the dunes, its anti-grav motors thrumming quietly in stark contrast to its thundering guns. As it accompanies the advancing Skitarii phalanxes, the Skorpius Disintegrator delivers punishing salvoes from its ferrumite or belleros energy cannons, while its cognis heavy stubbers and disruptor missile launcher spit death at any who would threaten the armoured vessel./nIn addition to its flanking pair of cognis heavy stubbers, and prow-mounted disruptor missile launcher, the Skorpius Disintegrator bears a ferrumite cannon or a voltaic belleros energy cannon. Its primary turret weapon is manned by a Servitor gunner that has been hard-wired into the weapon for optimal performance.</description>
-				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DisintegratorIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 8)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
@@ -116,6 +116,7 @@
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
 						<turrets>
+						<!-- Ferrumite Cannon -->
 							<li>
 								<turretDef>Seg_COTO_Skorpius_FerrumiteCannon_Turret</turretDef>
 								<renderProperties>
@@ -130,6 +131,42 @@
 								<aimPieOffset>(0, 2)</aimPieOffset>
 								<key>mainTurret</key>
 							</li>
+						<!-- this seemed like the best way to give the things different stats-->
+						<li>
+								<turretDef>Seg_COTO_SponsonHeavyStubber_Turret</turretDef>
+								<renderProperties>
+
+									<east>(1.5, 2)</east>
+									<south>(2, -0.2)</south>
+									<north>(-2, 0.2)</north>
+									<west>(-1.5,-1.25)</west>
+									
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side stubber 1</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(-135,-45)</angleRestricted>
+								<key>sideSponsongamma</key>
+							</li>
+							<li>
+								<turretDef>Seg_COTO_SponsonHeavyStubber_Turret</turretDef>
+								<renderProperties>
+
+									<east>(1.5,-1.25)</east>
+									<south>(-2, -0.2)</south>
+									<north>(2, 0.2)</north>									
+									<west>(-1.5,2)</west>
+									
+								</renderProperties>
+								<drawLayer>0</drawLayer>
+								<gizmoLabel>side stubber 2</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(45,135)</angleRestricted>
+								<key>sideSponsondelta</key>
+							</li>							
+
 						</turrets>
 					</li>
 						
@@ -144,10 +181,14 @@
 			<key>SponsonUpgrade</key>
 				<label>Sponsons</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
-				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_SponsonIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(6, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
+
+				<prerequisiteNodes>
+					<li>TransportBayUpgrade</li>
+				</prerequisiteNodes>
 
 				<graphicOverlays><!-- (x,z,y)-->
 					<li>
@@ -198,7 +239,7 @@
 									<west>(-1.5,-1.25)</west>
 									
 								</renderProperties>
-								<drawLayer>4</drawLayer>
+								<drawLayer>1</drawLayer>
 								<gizmoLabel>side stubber 1</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
@@ -215,7 +256,7 @@
 									<west>(-1.5,2)</west>
 									
 								</renderProperties>
-								<drawLayer>5</drawLayer>
+								<drawLayer>1</drawLayer>
 								<gizmoLabel>side stubber 2</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
@@ -235,10 +276,14 @@
 				<key>BellerosEnergyCannonUpgrade</key>
 				<label>Belleros Energy Cannon</label>
 				<description>BellerosEnergyCannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
-				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BellerosEnergyCannonIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(6, 8)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
+
+				<prerequisiteNodes>
+					<li>CombatBayUpgrade</li>
+				</prerequisiteNodes>
 			
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
@@ -270,7 +315,133 @@
 					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
+
+
+			<li>
+				<key>ScopeUpgrade</key>
+				<label>Scope</label>
+				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Scope</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_ScopeIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(2, 2)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+
+				<prerequisiteNodes>
+					<li>CombatBayUpgrade</li>
+				</prerequisiteNodes>
+
+				<graphicOverlays><!-- (x,z,y)-->
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_Scope</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+
+							<drawOffsetEast>(4,0,1)</drawOffsetEast>
+							<drawOffsetSouth>(0,0,-3)</drawOffsetSouth>
+							<drawOffsetNorth>(0,0,4)</drawOffsetNorth>
+							<drawOffsetWest>(-3.7,0,1.25)</drawOffsetWest>
+
+							<drawSize>(4, 4)</drawSize>
+							<layer>12</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+
+						</graphicData>
+					</li>
+					
+				</graphicOverlays>
+
+				<upgrades>
+
+				</upgrades>
+				<ingredients>
+				 <Plasteel>20</Plasteel>
+				 <ComponentSpacer>4</ComponentSpacer>
+				</ingredients>
+			</li>
 			
+			<li>
+				<key>Bullbar</key>
+				<label>Bullbar</label>
+				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Bullbar</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(6, 2)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+
+				<prerequisiteNodes>
+					<li>TransportBayUpgrade</li>
+				</prerequisiteNodes>
+
+				<graphicOverlays><!-- (x,z,y)-->
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/Skorpius/Upgrades/Bullbar/Seg_COTO_Skorpius_Bullbar</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+
+							<drawOffsetEast>(4.5,0,0.5)</drawOffsetEast>
+							<drawOffsetSouth>(0,0,-4)</drawOffsetSouth>
+							<drawOffsetNorth>(0,0,5)</drawOffsetNorth>
+							<drawOffsetWest>(-4.5,0,0.5)</drawOffsetWest>
+
+							<drawSize>(4, 4)</drawSize>
+							<layer>2</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+
+						</graphicData>
+					</li>
+					
+				</graphicOverlays>
+
+				<upgrades>
+
+				</upgrades>
+				<ingredients>
+				 <Plasteel>20</Plasteel>
+				 <ComponentSpacer>4</ComponentSpacer>
+				</ingredients>
+			</li>
+
+			<li>
+				<key>Rambar</key>
+				<label>Rambar</label>
+				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Rambar</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarRamIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(10, 2)</gridCoordinate>
+				<drawSize>(75, 75)</drawSize>
+
+				<prerequisiteNodes>
+					<li>CombatBayUpgrade</li>
+				</prerequisiteNodes>
+
+				<graphicOverlays><!-- (x,z,y)-->
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/Skorpius/Upgrades/Bullbar_Ram/Seg_COTO_Skorpius_BullbarRam</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+
+							<drawOffsetEast>(2.5,0,0.5)</drawOffsetEast>
+							<drawOffsetSouth>(0,0,-2.5)</drawOffsetSouth>
+							<drawOffsetNorth>(0,0,5)</drawOffsetNorth>
+							<drawOffsetWest>(-2.5,0,0.5)</drawOffsetWest>
+
+							<drawSize>(4, 4)</drawSize>
+							<layer>3</layer>
+							<shaderType>CutoutComplexPattern</shaderType>
+
+						</graphicData>
+					</li>
+					
+				</graphicOverlays>
+
+				<upgrades>
+
+				</upgrades>
+				<ingredients>
+				 <Plasteel>20</Plasteel>
+				 <ComponentSpacer>4</ComponentSpacer>
+				</ingredients>
+			</li>
 
 
 		</nodes>

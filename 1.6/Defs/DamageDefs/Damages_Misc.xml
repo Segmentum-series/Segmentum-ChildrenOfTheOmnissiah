@@ -90,6 +90,29 @@
 		<armorCategory>Heat</armorCategory>
 		<deathMessage>{0} has been shown the power of the sun.</deathMessage>
 	</DamageDef>
+
+	<DamageDef>
+		<defName>Seg_COTO_BellerosDamage</defName>
+		<label>Plasma burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<impactSoundType>Bullet</impactSoundType>
+		<soundExplosion>Explosion_EMP</soundExplosion>
+		<externalViolence>true</externalViolence>
+		<hediff>Shredded</hediff>
+		<armorCategory>Heat</armorCategory>
+		<deathMessage>{0} has been shown the power of the sun.</deathMessage>
+
+		<buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+		<buildingDamageFactorImpassable>3</buildingDamageFactorImpassable>
+		<plantDamageFactor>10</plantDamageFactor>
+		<corpseDamageFactor>10</corpseDamageFactor>
+		<igniteCellChance>0.35</igniteCellChance>
+		<isExplosive>true</isExplosive>
+		<explosionCellFleck>Seg_COTO_EnergyImpact</explosionCellFleck>
+		<explosionColorCenter>(0.05, 0.95, 0.05, 0.80)</explosionColorCenter>
+		<explosionColorEdge>(0.65, 0.05, 0.95, 0.80)</explosionColorEdge>
+		
+	</DamageDef>
 	<DamageDef ParentName="Bullet">
 		<defName>Seg_COTO_FlechetteDamage</defName>
 		<label>flechette dart lacerations</label>

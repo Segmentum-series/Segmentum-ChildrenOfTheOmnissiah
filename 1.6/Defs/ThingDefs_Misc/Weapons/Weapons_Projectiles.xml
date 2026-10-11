@@ -465,6 +465,8 @@
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
         </projectile>
     </ThingDef>
+
+	
 	<ThingDef ParentName="BaseBullet">
         <defName>SEG_COTO_Bullet_PlasmaOvercharge</defName>
         <label>overcharged plasma shot</label>
@@ -502,6 +504,8 @@
 			</li>
 		</comps>
     </ThingDef>
+
+	
 <ThingDef ParentName="BaseBullet">
   		<defName>Seg_COTO_VolkBeam</defName>
   		<label>voltkite beam</label>

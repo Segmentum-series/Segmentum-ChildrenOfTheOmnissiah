@@ -268,11 +268,11 @@
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Seg_COTO_PlasDamage</damageDef>
-            <damageAmountBase>39</damageAmountBase>
+            <damageDef>Seg_COTO_BellerosDamage</damageDef>
+            <damageAmountBase>19</damageAmountBase>
             <stoppingPower>4.0</stoppingPower>
             <armorPenetrationBase>1.0</armorPenetrationBase>
-            <explosionRadius>2.12</explosionRadius>
+            <explosionRadius>6.35</explosionRadius>
             <speed>60</speed>
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
         </projectile>

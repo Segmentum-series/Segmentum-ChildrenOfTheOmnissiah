@@ -67,7 +67,7 @@
         <fadeOutTime>0.65</fadeOutTime>
     </FleckDef>
 
-    <!--
+    
   <FleckDef ParentName="FleckBase">
     <defName>Seg_COTO_EnergyImpact</defName>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -79,7 +79,7 @@
       <drawSize>(2, 2)</drawSize>
     </graphicData>
   </FleckDef>
-
+<!--
   
   <FleckDef ParentName="FleckBase">
     <defName>Seg_COTO_FerrumiteCannonImpact</defName>
