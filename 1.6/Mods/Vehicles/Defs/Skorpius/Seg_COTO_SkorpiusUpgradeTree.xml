@@ -4,12 +4,16 @@
 		<nodes>
             <li>
 				<key>TransportBayUpgrade</key>
-				<label>Transport Bay</label>
-				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<label>Dunestrider</label>
+				<!--anndra update pls, gw website--><description>The Skorpius Dunerider is a Dedicated Transport vehicle for Skitarii infantry, and is able to carry 10 of them within the walls of its armoured hull.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
+
+				<replaces>
+					<li>CombatBayUpgrade</li>
+				</replaces>
 				<graphicOverlays><!-- (x,z,y)-->
 					<li>
 						<graphicData>
@@ -81,12 +85,16 @@
 
 			<li>
 				<key>CombatBayUpgrade</key>
-				<label>Combat Bay</label>
-				<description>Combat Bay. Slower.</description>
+				<label>Disintegrator</label>
+				<!--anndra update pls, gw website--><description>The Skorpius Disintegrator of the Adeptus Mechanicus drifts gracefully across the dunes, its anti-grav motors thrumming quietly in stark contrast to its thundering guns. As it accompanies the advancing Skitarii phalanxes, the Skorpius Disintegrator delivers punishing salvoes from its ferrumite or belleros energy cannons, while its cognis heavy stubbers and disruptor missile launcher spit death at any who would threaten the armoured vessel./nIn addition to its flanking pair of cognis heavy stubbers, and prow-mounted disruptor missile launcher, the Skorpius Disintegrator bears a ferrumite cannon or a voltaic belleros energy cannon. Its primary turret weapon is manned by a Servitor gunner that has been hard-wired into the weapon for optimal performance.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 8)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
+
+				<replaces>
+					<li>TransportBayUpgrade</li>
+				</replaces>
 
 
 
@@ -108,9 +116,24 @@
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
 						<turrets>
-						
+							<li>
+								<turretDef>Seg_COTO_Skorpius_FerrumiteCannon_Turret</turretDef>
+								<renderProperties>
+									<east>(0.25, 1.25)</east>
+									<south>(0, .5 )</south>
+									<north>(0,1)</north>
+									<!--<west>(.5, .25)</west>-->
+								</renderProperties>
+								<drawLayer>12</drawLayer>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 2)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
 						</turrets>
 					</li>
+						
+
 				</upgrades>
 				<ingredients>
 				 <Plasteel>100</Plasteel>
@@ -125,9 +148,7 @@
 				<work>7500</work>
 				<gridCoordinate>(6, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
-				<prerequisiteNodes>
-					<li>TransportBayUpgrade</li>
-				</prerequisiteNodes>
+
 				<graphicOverlays><!-- (x,z,y)-->
 					<li>
 						<graphicData>
@@ -172,8 +193,8 @@
 								<renderProperties>
 
 									<east>(1.5, 2)</east>
-									<south>(1.7, -0.2)</south>
-									<north>(-1.7, -0.2)</north>
+									<south>(2, -0.2)</south>
+									<north>(-2, 0.2)</north>
 									<west>(-1.5,-1.25)</west>
 									
 								</renderProperties>
@@ -189,8 +210,8 @@
 								<renderProperties>
 
 									<east>(1.5,-1.25)</east>
-									<south>(-1.7, -0.2)</south>
-									<north>(1.7, -0.2)</north>									
+									<south>(-2, -0.2)</south>
+									<north>(2, 0.2)</north>									
 									<west>(-1.5,2)</west>
 									
 								</renderProperties>
@@ -209,6 +230,49 @@
 				 <ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
+
+			<li>
+				<key>BellerosEnergyCannonUpgrade</key>
+				<label>Belleros Energy Cannon</label>
+				<description>BellerosEnergyCannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
+				<work>7500</work>
+				<gridCoordinate>(6, 8)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+			
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>Seg_COTO_Skorpius_BellerosEnergyCannon</turretDef>
+								<renderProperties>
+								
+									<east>(0.25, 1.25)</east>
+									<south>(0, .5 )</south>
+									<north>(0,1)</north>
+									<!--<west>(.5, .25)</west>-->
+								
+								</renderProperties>
+								<drawLayer>12</drawLayer>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 2)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<Steel>100</Steel>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+			
+
+
 		</nodes>
 	</Vehicles.UpgradeTreeDef>
 		

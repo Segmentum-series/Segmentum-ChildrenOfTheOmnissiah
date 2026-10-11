@@ -169,6 +169,171 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_FerrumiteCannonShot</defName>
+		<label>solid core shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ShellHighExplosive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Seg_MeltaDamage</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<speed>95</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_Skorpius_FerrumiteCannon_Turret</defName>
+		<label>Ferrumite Cannon</label>
+		<description>peepee</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Seg_COTO_FerrumiteCannonShot</projectile>
+		<reloadTimer>6.0</reloadTimer>
+		<warmUpTimer>2.0</warmUpTimer>
+		<magazineCapacity>20</magazineCapacity>
+		<chargePerAmmoCount>3</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>50.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<accuracyTouch>0.85</accuracyTouch>
+				<accuracyShort>0.95</accuracyShort>
+				<accuracyMedium>0.75</accuracyMedium>	
+				<accuracyLong>0.75</accuracyLong>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>12</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<accuracyTouch>0.75</accuracyTouch>
+				<accuracyShort>0.65</accuracyShort>
+				<accuracyMedium>0.55</accuracyMedium>	
+				<accuracyLong>0.45</accuracyLong>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_FerrumiteCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+
+	<ThingDef ParentName="BaseBullet">
+        <defName>Seg_COTO_EnergyCannonShot</defName>
+        <label>plasma shot</label>
+  		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
+		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
+        <graphicData>
+            <texPath>Things/Projectile/Seg_COTO_Skorpius_BellerosEnergyCannonShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Seg_COTO_PlasDamage</damageDef>
+            <damageAmountBase>39</damageAmountBase>
+            <stoppingPower>4.0</stoppingPower>
+            <armorPenetrationBase>1.0</armorPenetrationBase>
+            <explosionRadius>2.12</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
+        </projectile>
+    </ThingDef>
+
+	
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_Skorpius_BellerosEnergyCannon</defName>
+		<label>Belleros Energy Cannon</label>
+		<description>BellerosEnergyCannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_TurretSniper</shotSound>
+		<projectile>Seg_COTO_EnergyCannonShot</projectile>
+		<reloadTimer>12.0</reloadTimer>
+		<warmUpTimer>4.0</warmUpTimer>
+		<magazineCapacity>6</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>4.0</projectileOffset>
+		<projectileShifting>
+			<li>-0.1</li>
+		</projectileShifting>
+		<minRange>5</minRange>
+		<maxRange>60.9</maxRange>
+		<recoil>
+			<distanceTotal>0.25</distanceTotal>
+			<distancePerTick>0.1</distancePerTick>
+			<speedMultiplierPostRecoil>0.25</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>22</ticksBetweenShots>
+				<ticksBetweenBursts>70</ticksBetweenBursts>
+				<accuracyTouch>0.75</accuracyTouch>
+				<accuracyShort>0.95</accuracyShort>
+				<accuracyMedium>0.85</accuracyMedium>
+				<accuracyLong>0.75</accuracyLong>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<graphicData>
+			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_BellerosEnergyCannon</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</ammunition>
+		
+	</Vehicles.VehicleTurretDef>
+
 
 
 

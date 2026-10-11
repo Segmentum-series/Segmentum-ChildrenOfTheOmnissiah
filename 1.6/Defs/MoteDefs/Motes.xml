@@ -66,4 +66,44 @@
         <solidTime>0.5</solidTime>
         <fadeOutTime>0.65</fadeOutTime>
     </FleckDef>
+
+    <!--
+  <FleckDef ParentName="FleckBase">
+    <defName>Seg_COTO_EnergyImpact</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.15</solidTime>
+    <fadeOutTime>0.35</fadeOutTime>
+    <graphicData>
+      <texPath>Effects/Seg_Coto_EnergyImpact</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>Seg_COTO_FerrumiteCannonImpact</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+     <solidTime>0.15</solidTime>
+    <fadeOutTime>0.35</fadeOutTime>
+    <graphicData>
+      <texPath>Things/Projectile/Seg_COTO_FerrumiteCannon</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>Seg_COTO_FerrumiteCannonPlume</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+     <solidTime>0.09</solidTime>
+    <fadeOutTime>0.15</fadeOutTime>
+    <graphicData>
+      <texPath>Things/Projectile/Seg_COTO_FerrumiteCannon</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(.5, .5)</drawSize>
+    </graphicData>
+  </FleckDef>
+  -->
 </Defs>
