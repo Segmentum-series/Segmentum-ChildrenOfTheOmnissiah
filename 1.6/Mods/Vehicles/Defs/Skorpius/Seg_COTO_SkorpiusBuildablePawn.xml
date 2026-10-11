@@ -101,7 +101,7 @@
 			</customBiomeCosts>
 			<roles>
 				<li>
-					<key>driver</key>
+					<key>driverr</key>
 					<label>Driver</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
@@ -109,20 +109,87 @@
 						<li>Movement</li>
 					</handlingTypes>
 					<pawnRenderer>
+						<!--layers-->
 						<layer>-1</layer>
 						<layerNorth>-1</layerNorth>
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
-						<west>West</west>
-						<drawOffsetNorth>(2,0,2.35)</drawOffsetNorth>
-						<drawOffsetSouth>(2,0,-1)</drawOffsetSouth>
-						<drawOffsetWest>(-1.25,0,2.35)</drawOffsetWest>
+						<!--offsets-->
+						<drawOffsetEast>(-1.25,0,-.5)</drawOffsetEast>
+						<drawOffsetSouth>(-2,0,2)</drawOffsetSouth>
+						<drawOffsetNorth>(2,0,-1)</drawOffsetNorth>
+						<drawOffsetWest>(1.25,0,-.35)</drawOffsetWest>
 					</pawnRenderer>
 				</li>
 				<li>
-					<key>passenger</key>
-					<label>Passenger</label>
-					<slots>10</slots>
+					<key>passenger1</key>
+					<label>Passenger 1</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger2</key>
+					<label>Passenger 2</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger3</key>
+					<label>Passenger 3</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger4</key>
+					<label>Passenger 4</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger5</key>
+					<label>Passenger 5</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger6</key>
+					<label>Passenger 6</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger7</key>
+					<label>Passenger 7</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger8</key>
+					<label>Passenger 8</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger9</key>
+					<label>Passenger 9</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
+				</li>
+				<li>
+					<key>passenger10</key>
+					<label>Passenger 10</label>
+					<slots>1</slots>
+					<pawnRenderer>
+					</pawnRenderer>
 				</li>
 			</roles>
 		</properties>
