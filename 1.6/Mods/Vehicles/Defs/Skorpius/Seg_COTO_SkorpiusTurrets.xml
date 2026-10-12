@@ -179,6 +179,7 @@
 			<texPath>Things/Projectile/ShellHighExplosive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(2, 2)</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>Seg_MeltaDamage</damageDef>
@@ -332,6 +333,109 @@
 			</thingDefs>
 		</ammunition>
 		
+	</Vehicles.VehicleTurretDef>
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Seg_COTO_Skorpius_Missile</defName>
+		<label>Servitor Guided Rocket</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_DisruptorRocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<speed>30</speed>
+			<explosionRadius>6.9</explosionRadius>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<comps>
+				<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+						<tickRate>1</tickRate> <!--this changes the rate this updates-->
+						<lifetimeTicks>600</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
+						<delayTurnInTicks>3</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
+						<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
+						<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
+						<effectLifetime>30</effectLifetime> <!--the life of those motes-->
+						<effectSize>1</effectSize> <!--the size of the motes-->
+				</li>
+			</comps>
+
+	</ThingDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>Seg_COTO_Skorpius_Missiles</defName>
+		<label>Disruptor Missile Launcher</label>
+		<description>missles, daddy.</description>
+		<turretType>Static</turretType>
+	<gizmoIconTexPath>Things/Projectile/Seg_COTO_DisruptorRocket</gizmoIconTexPath>
+
+		<reloadTimer>30</reloadTimer>
+		<warmUpTimer>2</warmUpTimer>
+
+		<magazineCapacity>6</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		 <genericAmmo>true</genericAmmo>
+		 <projectile>Seg_COTO_Skorpius_Missile</projectile>
+
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>0</rotationSpeed>
+		<projectileOffset>2.1</projectileOffset>
+		<projectileShifting>
+			<li>-0.85</li>
+			<li>0.9</li>
+		</projectileShifting>
+		<minRange>0</minRange>
+		<maxRange>130</maxRange>
+
+
+		<recoil>
+			<distanceTotal>0.15</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+
+		<fireModes>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>7</spreadRadius>
+				<label>Barrage</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+				<accuracyTouch>0.9</accuracyTouch>
+				<accuracyShort>0.8</accuracyShort>
+				<accuracyMedium>0.7</accuracyMedium>
+				<accuracyLong>0.66</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>15</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>0.9</accuracyShort>
+				<accuracyMedium>0.8</accuracyMedium>
+				<accuracyLong>0.77</accuracyLong>
+			</li>
+		</fireModes>
+
+
+		<ammunition>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</ammunition>
+
 	</Vehicles.VehicleTurretDef>
 
 
