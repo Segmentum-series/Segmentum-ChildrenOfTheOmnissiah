@@ -21,7 +21,7 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffset>(0,0,0)</drawOffset>
 							<drawSize>(7, 10.5)</drawSize>
-							<layer>2</layer>
+							<layer>100</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -31,7 +31,7 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffset>(0,0,0)</drawOffset>
 							<drawSize>(7, 10.5)</drawSize>
-							<layer>2</layer>
+							<layer>100</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -68,7 +68,7 @@
 										<west>(1.25, 2)</west>
 										<east>(-1.25, 2)</east>
 								</renderProperties>
-								<drawLayer>4</drawLayer>
+								<drawLayer>120</drawLayer>
 								<gizmoLabel>Heavy Stubber</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, .4)</aimPieOffset>
@@ -105,7 +105,7 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffset>(0,0,0)</drawOffset>
 							<drawSize>(7, 10.5)</drawSize>
-							<layer>3</layer>
+							<layer>100</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 
 						</graphicData>
@@ -124,7 +124,7 @@
 
 
 
-							<layer>12</layer>
+							<layer>119</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -141,7 +141,7 @@
 
 
 
-							<layer>12</layer>
+							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -160,7 +160,7 @@
 									<north>(0,1)</north>
 									<!--<west>(.5, .25)</west>-->
 								</renderProperties>
-								<drawLayer>12</drawLayer>
+								<drawLayer>120</drawLayer>
 								<gizmoLabel>Main Turret</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, 2)</aimPieOffset>
@@ -177,7 +177,7 @@
 									<west>(-1.5,-1.25)</west>
 									
 								</renderProperties>
-								<drawLayer>2</drawLayer>
+								<drawLayer>60</drawLayer>
 								<gizmoLabel>side stubber 1</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
@@ -194,7 +194,7 @@
 									<west>(-1.5,2)</west>
 									
 								</renderProperties>
-								<drawLayer>3</drawLayer>
+								<drawLayer>60</drawLayer>
 								<gizmoLabel>side stubber 2</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
@@ -239,7 +239,7 @@
 
 
 
-							<layer>12</layer>
+							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -255,7 +255,7 @@
 
 
 
-							<layer>12</layer>
+							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>
 					</li>
@@ -274,7 +274,7 @@
 									<west>(-1.5,-1.25)</west>
 									
 								</renderProperties>
-								<drawLayer>1</drawLayer>
+								<drawLayer>60</drawLayer>
 								<gizmoLabel>side stubber 1</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
@@ -333,7 +333,7 @@
 									<!--<west>(.5, .25)</west>-->
 								
 								</renderProperties>
-								<drawLayer>12</drawLayer>
+								<drawLayer>120</drawLayer>
 								<gizmoLabel>Main Turret</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, 2)</aimPieOffset>
@@ -503,7 +503,7 @@
 							<drawOffsetWest>(0,0,0)</drawOffsetWest>
 
 							<drawSize>(7, 10.5)</drawSize>
-							<layer>4</layer>
+							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 
 						</graphicData>

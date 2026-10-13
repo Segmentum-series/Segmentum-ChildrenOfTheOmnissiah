@@ -101,7 +101,7 @@
 			</customBiomeCosts>
 			<roles>
 				<li>
-					<key>driverr</key>
+					<key>driver</key>
 					<label>Driver</label>
 					<slots>1</slots>
 					<slotsToOperate>1</slotsToOperate>
@@ -110,10 +110,7 @@
 					</handlingTypes>
 					<pawnRenderer>
 						<!--layers-->
-						<layer>-1</layer>
-						<layerNorth>-1</layerNorth>
-						<layerSouth>-1</layerSouth>
-						<layerWest>-2</layerWest>
+						<layer>93</layer> <!--93 is backpack and head-->
 						<!--offsets-->
 						<drawOffsetEast>(-1.25,0,-.5)</drawOffsetEast>
 						<drawOffsetSouth>(-2,0,2)</drawOffsetSouth>
@@ -125,14 +122,51 @@
 					<key>passenger1</key>
 					<label>Passenger 1</label>
 					<slots>1</slots>
+
+					<turretIds>
+						<li>sideSponsongamma</li>
+					</turretIds>
+					<handlingTypes>Turret</handlingTypes>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<east>North</east>
+						<west>North</west>
+						<north>East</north>
+						<south>East</south>
+						<!--offsets-->
+						<drawOffsetEast>(1.65,0,1.45)</drawOffsetEast>
+						<drawOffsetNorth>(1.25,0,0)</drawOffsetNorth>	
+						
+						
+						
 					</pawnRenderer>
 				</li>
 				<li>
 					<key>passenger2</key>
 					<label>Passenger 2</label>
 					<slots>1</slots>
+					<turretIds>
+								<li>sideSponsondelta</li>
+					</turretIds>
+						<handlingTypes>Turret</handlingTypes>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<east>South</east>
+						<west>South</west>
+						<north>West</north>
+						<south>West</south>
+						<!--offsets-->
+						<drawOffsetEast>(1.65,0,-.25)</drawOffsetEast>		
+						<drawOffsetNorth>(-1.25,0,0)</drawOffsetNorth>	
+
 					</pawnRenderer>
 				</li>
 				<li>
@@ -140,6 +174,14 @@
 					<label>Passenger 3</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(0,0,0)</drawOffsetEast>
+						<drawOffsetNorth>(-.5,0,1)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -147,6 +189,14 @@
 					<label>Passenger 4</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(1,0,0)</drawOffsetEast>
+						<drawOffsetNorth>(.5,0,1)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -154,13 +204,30 @@
 					<label>Passenger 5</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(1,0,1)</drawOffsetEast>
+						<drawOffsetNorth>(-.5,0,0)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
+
 				<li>
 					<key>passenger6</key>
 					<label>Passenger 6</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(2,0,.55)</drawOffsetEast>
+						<drawOffsetNorth>(-.45,0,2)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -168,13 +235,31 @@
 					<label>Passenger 7</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(0,0,1)</drawOffsetEast>
+						<drawOffsetNorth>(.5,0,2)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
+				
+				
 				<li>
 					<key>passenger8</key>
 					<label>Passenger 8</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(3,0,1)</drawOffsetEast>
+						<drawOffsetNorth>(.45,0,0)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -182,6 +267,14 @@
 					<label>Passenger 9</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(3,0,0)</drawOffsetEast>
+						<drawOffsetNorth>(-.5,0,-1)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -189,6 +282,14 @@
 					<label>Passenger 10</label>
 					<slots>1</slots>
 					<pawnRenderer>
+						<!--layers-->
+						<layer>-1</layer>
+						<layerNorth>-1</layerNorth>
+						<layerSouth>-1</layerSouth>
+						<layerWest>-2</layerWest>
+						<!--offsets-->
+						<drawOffsetEast>(-1,0,0.5)</drawOffsetEast>
+						<drawOffsetNorth>(.5,0,-1)</drawOffsetNorth>
 					</pawnRenderer>
 				</li>
 			</roles>
