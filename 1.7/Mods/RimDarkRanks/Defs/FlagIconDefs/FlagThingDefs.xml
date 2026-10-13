@@ -1,6 +1,6 @@
 <Defs>
 <!-- Banner "lifted" from Mankind's Finest. -->
-	<!-- Decorative banner -->
+	<!-- Decorative banner CURRENTLY BROKEN. needs update to custom class.
 	<ThingDef ParentName="BuildingBase">
 		<defName>Seg_COTO_DecorativeForgerBanner</defName>
 		<label>decorative Forge Standard</label>
@@ -55,6 +55,6 @@
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 
-	</ThingDef>
+	</ThingDef>-->
 
 </Defs>

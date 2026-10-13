@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj": {}
   },
   "projects": {
-    "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj",
         "projectName": "SegCoto",
-        "projectPath": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\PhosphorFire.csproj",
         "packagesPath": "C:\\Users\\fkeye\\.nuget\\packages\\",
-        "outputPath": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Segmentum-ChildrenOfTheOmnissiah\\1.7\\SourceOnePointSeven\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fkeye\\AppData\\Roaming\\NuGet\\NuGet.Config"
