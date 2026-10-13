@@ -22,8 +22,8 @@
 			<li>-0.2</li>
 			<li>0.2</li>
 		</projectileShifting>
-		<minRange>4</minRange>
-		<maxRange>59.9</maxRange>
+		<minRange>1</minRange>
+		<maxRange>38.9</maxRange>
 		<fireModes>
 			<li>
 				<shotsPerBurst>10</shotsPerBurst>
