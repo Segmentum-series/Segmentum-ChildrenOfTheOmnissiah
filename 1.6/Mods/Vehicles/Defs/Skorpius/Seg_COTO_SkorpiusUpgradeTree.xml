@@ -4,8 +4,8 @@
 		<nodes>
             <li>
 				<key>TransportBayUpgrade</key>
-				<label>Dunestrider</label>
-				<!--anndra update pls, gw website--><description>The Skorpius Dunerider is a Dedicated Transport vehicle for Skitarii infantry, and is able to carry 10 of them within the walls of its armoured hull.</description>
+				<label>Dunerider</label>
+				<description>The Skorpius Dunerider is the main transport vehicle for the Skitarii legions, able to transport a full squad of 10 Skitarii into the thick of battle at high-speed with its gravskimmer repulsor technology. It can be outfitted with light weaponry to provide combat support and defence.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DunestriderIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 12)</gridCoordinate>
@@ -69,7 +69,7 @@
 										<east>(-1.25, 2)</east>
 								</renderProperties>
 								<drawLayer>120</drawLayer>
-								<gizmoLabel>Heavy Stubber</gizmoLabel>
+								<gizmoLabel>heavy stubber</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, .4)</aimPieOffset>
 								<key>mainTurret</key>
@@ -86,7 +86,7 @@
 			<li>
 				<key>CombatBayUpgrade</key>
 				<label>Disintegrator</label>
-				<!--anndra update pls, gw website--><description>The Skorpius Disintegrator of the Adeptus Mechanicus drifts gracefully across the dunes, its anti-grav motors thrumming quietly in stark contrast to its thundering guns. As it accompanies the advancing Skitarii phalanxes, the Skorpius Disintegrator delivers punishing salvoes from its ferrumite or belleros energy cannons, while its cognis heavy stubbers and disruptor missile launcher spit death at any who would threaten the armoured vessel./nIn addition to its flanking pair of cognis heavy stubbers, and prow-mounted disruptor missile launcher, the Skorpius Disintegrator bears a ferrumite cannon or a voltaic belleros energy cannon. Its primary turret weapon is manned by a Servitor gunner that has been hard-wired into the weapon for optimal performance.</description>
+				<description>The Skorpius Disintegrator is a fast battle tank used by the Skitarii legions powered by gravskimmer repulsor technology. It is designed to provide fire support for Skitarii infantry with a full suite of terrifying weaponry from the Dark Age of Technology, from advanced main cannons to missile launchers and machine-spirit-operated cognis stubbers.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DisintegratorIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 8)</gridCoordinate>
@@ -161,7 +161,7 @@
 									<!--<west>(.5, .25)</west>-->
 								</renderProperties>
 								<drawLayer>120</drawLayer>
-								<gizmoLabel>Main Turret</gizmoLabel>
+								<gizmoLabel>main turret</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, 2)</aimPieOffset>
 								<key>mainTurret</key>
@@ -214,8 +214,8 @@
 			</li>
 			<li>
 			<key>SponsonUpgrade</key>
-				<label>Sponsons</label>
-				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
+				<label>sponsons</label>
+				<description>The addition of sponson mounts to the Skorpius allows heavy stubbers to be added on each flank, providing solid anti-infantry firepower.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_SponsonIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(6, 12)</gridCoordinate>
@@ -309,8 +309,8 @@
 
 			<li>
 				<key>BellerosEnergyCannonUpgrade</key>
-				<label>Belleros Energy Cannon</label>
-				<description>BellerosEnergyCannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
+				<label>Belleros energy cannon</label>
+				<description>The Belleros energy cannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armoured targets and fortified positions with devastating effect.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BellerosEnergyCannonIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(6, 8)</gridCoordinate>
@@ -354,7 +354,7 @@
 
 			<li>
 				<key>ScopeUpgrade</key>
-				<label>Scope</label>
+				<label>scope</label>
 				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Scope</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_ScopeIcon</icon>
 				<work>7500</work>
@@ -396,7 +396,7 @@
 			
 			<li>
 				<key>Bullbar</key>
-				<label>Bullbar</label>
+				<label>bullbar</label>
 				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Bullbar</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarIcon</icon>
 				<work>7500</work>
@@ -435,7 +435,7 @@
 
 			<li>
 				<key>Rambar</key>
-				<label>Rambar</label>
+				<label>rambar</label>
 				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Rambar</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarRamIcon</icon>
 				<work>7500</work>
@@ -477,8 +477,7 @@
 
 			<li>
 				<key>DisruptorMissiles</key>
-				<label>Disruptor Missiles</label>
-				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Disruptor Missiles</description>
+				<label>Disruptor missiles</label><description>The Skorpius can field a prow-mounted launcher for Disruptor missiles, which are servitor-guided explosives designed for anti-armour duties. The missiles can be fired singly or in a full barrage of 6 to ensure that the Omnissiah's enemies are overwhelmed</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DissruptorMissilesIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(14, 2)</gridCoordinate>
@@ -525,7 +524,7 @@
 								
 								</renderProperties>
 								<drawLayer>0</drawLayer>
-								<gizmoLabel>Missle Bay</gizmoLabel>
+								<gizmoLabel>missile bay</gizmoLabel>
 								<angleRestricted/>
 								<aimPieOffset>(0, 0)</aimPieOffset>
 								<key>MissleBay</key>

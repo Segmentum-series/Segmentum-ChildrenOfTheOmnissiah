@@ -5,7 +5,7 @@
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>Seg_COTO_Skorpius_Blueprint</defName>
 		<label>Skorpius</label>
-		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; 1x Driver, 12x Passengers\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<designationCategory>BEWH_RimDarkCategory</designationCategory>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
@@ -37,7 +37,7 @@
 <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_Skorpius</defName>
 		<label>Skorpius</label>
-		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -334,7 +334,7 @@
 			</li>
 			<li>
 				<key>LeftTrack</key>
-				<label>Left anti-grav rail</label>
+				<label>left anti-grav rail</label>
 				<health>200</health>
 				<depth>External</depth>
 				<tags>
@@ -350,7 +350,7 @@
 			</li>
 			<li>
 				<key>RightTrack</key>
-				<label>Right anti-grav rail</label>
+				<label>right anti-grav rail</label>
 				<health>200</health>
 				<depth>External</depth>
 				<tags>
@@ -366,7 +366,7 @@
 			</li>
 			<li>
 				<key>Gravengine</key>
-				<label>Gravskimmer engine</label>
+				<label>gravskimmer engine</label>
 				<health>500</health>
 				<depth>External</depth>
 				<tags>
@@ -385,7 +385,7 @@
 			
 			<li>
 				<key>Gearbox</key>
-				<label>Gearbox</label>
+				<label>gearbox</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<hitbox>
@@ -399,7 +399,7 @@
 			</li>
 			<li>
 				<key>FrontArmorPlating</key>
-				<label>Front Armor Plating</label>
+				<label>front armour plating</label>
 				<health>220</health>
 				<depth>External</depth>
 				<armor>
@@ -412,7 +412,7 @@
 			</li>
 			<li>
 				<key>LeftArmorPlating</key>
-				<label>Left Armor Plating</label>
+				<label>left armour plating</label>
 				<health>210</health>
 				<depth>External</depth>
 				<armor>
@@ -425,7 +425,7 @@
 			</li>
 			<li>
 				<key>RightArmorPlating</key>
-				<label>Right Armor Plating</label>
+				<label>right armour plating</label>
 				<health>210</health>
 				<depth>External</depth>
 				<armor>
@@ -438,7 +438,7 @@
 			</li>
 			<li>
 				<key>BackArmorPlating</key>
-				<label>Rear Armor Plating</label>
+				<label>rear armour plating</label>
 				<health>200</health>
 				<depth>External</depth>
 				<armor>
@@ -451,7 +451,7 @@
 			</li>
 			<li>
 				<key>FuelTank</key>
-				<label>Fuel Tank</label>
+				<label>fuel tank</label>
 				<health>150</health>
 				<depth>Internal</depth>
 				<reactors>
@@ -465,21 +465,21 @@
 			</li>
 			<li>
 				<key>Dashboard</key>
-				<label>Dashboard</label>
+				<label>lumen interface</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>SteeringApparatus</key>
-				<label>Steering Apparatus</label>
+				<label>steering apparatus</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<hitWeight>5</hitWeight>
 			</li>
 			<li>
 				<key>Alternator</key>
-				<label>Alternator</label>
+				<label>alternator</label>
 				<health>50</health>
 				<depth>Internal</depth>
 			</li>

@@ -3,8 +3,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_CognisHeavyStubber_Turret</defName>
-		<label>Cognis Heavy Stubber</label>
-		<description>Cognis heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate bolter fire.</description>
+		<label>Cognis heavy stubbers</label>
+		<description>A twin-linked heavy stubber turret, designed to lay down a withering barrage of solid shot. It does so with high accuracy like all cognis weaponry, thanks to the awakened machine spirit housed within, and does not require crew to operate.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_HeavyBolter</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
@@ -77,8 +77,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_SponsonHeavyStubber_Turret</defName>
-		<label>Sponson Heavy Stubber</label>
-		<description>Sponson heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate bolter fire.</description>
+		<label>sponson heavy stubber</label>
+		<description>A sponson-mounted heavy stubber which can rapidly fire solid shot to one side of the vehicle.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_HeavyBolter</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
@@ -150,8 +150,8 @@
 
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_SponsonHeavyStubber_TurretDelta</defName>
-		<label>Sponson Heavy Stubber</label>
-		<description>Sponson heavy stubber weapons mounted in the turret, designed to destroy lightly armored targets with high-rate bolter fire.</description>
+		<label>sponson heavy stubber</label>
+		<description>A sponson-mounted heavy stubber which can rapidly fire solid shot to one side of the vehicle.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_HeavyBolter</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
@@ -225,6 +225,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_FerrumiteCannonShot</defName>
 		<label>solid core shell</label>
+  		<description>A solid-core shell which turns to a white-hot spear of molten metal on impact.</description>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/ShellHighExplosive</texPath>
@@ -246,8 +247,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_Skorpius_FerrumiteCannon_Turret</defName>
-		<label>Ferrumite Cannon</label>
-		<description>peepee</description>
+		<label>Ferrumite cannon</label>
+		<description>The Ferrumite cannon is a turret-mounted weapon which fires solid-core shells at long range. Each shell turns into a white-hot spear of molten metal on impact, and whatever isn't instantly destroyed by the impact force is flash-heated and cooked.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
 		<projectile>Seg_COTO_FerrumiteCannonShot</projectile>
@@ -264,7 +265,7 @@
 			<li>-0.1</li>
 		</projectileShifting>
 		<minRange>5</minRange>
-		<maxRange>50.9</maxRange>
+		<maxRange>48.9</maxRange>
 		<recoil>
 			<distanceTotal>0.25</distanceTotal>
 			<distancePerTick>0.1</distancePerTick>
@@ -334,7 +335,7 @@
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_Skorpius_BellerosEnergyCannon</defName>
 		<label>Belleros Energy Cannon</label>
-		<description>BellerosEnergyCannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
+		<description>The Belleros energy cannon is a turret-mounted weapon that fires arcing projectiles of hyper-reactive gas - a superheated version of the gas powering the Skorpius' repulsor drives. The projectiles explode on impact in a large spectroscopic energy blast.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
 		<projectile>Seg_COTO_EnergyCannonShot</projectile>
@@ -351,7 +352,7 @@
 			<li>-0.1</li>
 		</projectileShifting>
 		<minRange>5</minRange>
-		<maxRange>60.9</maxRange>
+		<maxRange>38.9</maxRange>
 		<recoil>
 			<distanceTotal>0.25</distanceTotal>
 			<distancePerTick>0.1</distancePerTick>
@@ -389,7 +390,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_Skorpius_Missile</defName>
-		<label>Servitor Guided Rocket</label>
+		<label>servitor guided missile</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_DisruptorRocket</texPath>
@@ -423,8 +424,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_Skorpius_Missiles</defName>
-		<label>Disruptor Missile Launcher</label>
-		<description>missles, daddy.</description>
+		<label>Disruptor missile launcher</label>
+		<description>The Skorpius can field a prow-mounted launcher for Disruptor missiles, which are servitor-guided explosives designed for anti-armour duties. The missiles can be fired singly or in a full barrage of 6 to ensure that the Omnissiah's enemies are overwhelmed.</description>
 		<turretType>Static</turretType>
 	<gizmoIconTexPath>Things/Projectile/Seg_COTO_DisruptorRocket</gizmoIconTexPath>
 
@@ -443,8 +444,8 @@
 			<li>-0.85</li>
 			<li>0.9</li>
 		</projectileShifting>
-		<minRange>0</minRange>
-		<maxRange>130</maxRange>
+		<minRange>7</minRange>
+		<maxRange>40.9</maxRange>
 
 
 		<recoil>
@@ -459,7 +460,7 @@
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>30</ticksBetweenBursts>
 				<spreadRadius>7</spreadRadius>
-				<label>Barrage</label>
+				<label>barrage</label>
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 				<accuracyTouch>0.9</accuracyTouch>
 				<accuracyShort>0.8</accuracyShort>
@@ -471,7 +472,7 @@
 				<ticksBetweenShots>15</ticksBetweenShots>
 				<ticksBetweenBursts>30</ticksBetweenBursts>
 				<spreadRadius>1</spreadRadius>
-				<label>Single</label>
+				<label>single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 				<accuracyTouch>1</accuracyTouch>
 				<accuracyShort>0.9</accuracyShort>
