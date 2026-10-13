@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>ExtinguishModFiresNearby</defName>
+        <driverClass>FireFlamework.JobDriver_ExtinguishModFiresNearby</driverClass>
+        <reportString>extinguishing fires nearby.</reportString>
+        <neverShowWeapon>true</neverShowWeapon>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
+    <JobDef>
+        <defName>ExtinguishModSelf</defName>
+        <driverClass>FireFlamework.JobDriver_ExtinguishModSelf</driverClass>
+        <reportString>extinguishing self.</reportString>
+        <neverShowWeapon>true</neverShowWeapon>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
+    <JobDef>
+        <defName>BeatModFire</defName>
+        <driverClass>FireFlamework.JobDriver_BeatModFire</driverClass>
+        <reportString>beating fire out.</reportString>
+        <neverShowWeapon>true</neverShowWeapon>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
+    <WorkGiverDef>
+        <defName>FightModFires</defName>
+        <label>fight fires</label>
+        <giverClass>FireFlamework.WorkGiver_FightModFires</giverClass>
+        <workType>Firefighter</workType>
+        <emergency>true</emergency>
+        <verb>extinguish</verb>
+        <gerund>extinguishing</gerund>
+        <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
+        <autoTakeablePriorityDrafted>21</autoTakeablePriorityDrafted>
+        <forceFleck>FeedbackExtinguish</forceFleck>
+        <directOrderable>false</directOrderable>
+    </WorkGiverDef>
+
+</Defs>

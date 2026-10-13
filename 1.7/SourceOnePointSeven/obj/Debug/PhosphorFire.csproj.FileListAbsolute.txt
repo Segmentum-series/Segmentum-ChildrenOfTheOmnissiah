@@ -1,0 +1,11 @@
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\PhosphorFire.csproj.AssemblyReference.cache
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\PhosphorFire.GeneratedMSBuildEditorConfig.editorconfig
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\PhosphorFire.csproj.CoreCompileInputs.cache
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\PhosphorFire.sourcelink.json
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Assemblies\SegCoto.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\Assemblies\SegCoto.pdb
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\Phosphor.561CDAEC.Up2Date
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\SegCoto.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\refint\SegCoto.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\SegCoto.pdb
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Segmentum-ChildrenOfTheOmnissiah\1.7\SourceOnePointSeven\obj\Debug\ref\SegCoto.dll

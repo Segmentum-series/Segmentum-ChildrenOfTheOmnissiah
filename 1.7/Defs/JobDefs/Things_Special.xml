@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="FF_FireBase" Abstract="True">
+    <thingClass>FireFlamework.FireFrame</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <graphicData>
+      <texPath>Things/Special/PhosphorFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(78, 226, 229, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -377,7 +377,7 @@
 							<drawOffsetWest>(-3.7,0,1.25)</drawOffsetWest>
 
 							<drawSize>(4, 4)</drawSize>
-							<layer>12</layer>
+							<layer>121</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 
 						</graphicData>
