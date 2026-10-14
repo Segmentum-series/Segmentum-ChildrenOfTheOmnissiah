@@ -5,8 +5,8 @@
 	
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_ServoTurret</defName>
-		<label>Servo Turret</label>
-	<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<label>servo turret</label>
+	<description>A light turret platform designed for close support of infantry. Can be outfitted with a variety of weapons. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_ServoTurretBase</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -59,7 +59,7 @@
 		<components>
 			<li>
 				<key>Engine</key>
-				<label>Engine</label>
+				<label>motive unit</label>
 				<health>150</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -82,7 +82,7 @@
 			</li>
 			<li>
 				<key>AmmoRack</key>
-				<label>Ammo Rack</label>
+				<label>ammunition magazines</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<reactors>
@@ -96,7 +96,7 @@
 			</li>
 			<li>
 				<key>FrontLeftServoLeg</key>
-				<label>Front Left Servo Leg</label>
+				<label>front left servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -114,7 +114,7 @@
 			</li>
 			<li>
 				<key>FrontRightServoLeg</key>
-				<label>Front Right Servo Leg</label>
+				<label>front right servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -132,7 +132,7 @@
 			</li>
 			<li>
 				<key>BackLeftServoLeg</key>
-				<label>Back Left Servo Leg</label>
+				<label>back left servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -150,7 +150,7 @@
 			</li>
 			<li>
 				<key>BackRightServoLeg</key>
-				<label>Back Right Servo Leg</label>
+				<label>back right servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -168,7 +168,7 @@
 			</li>
 			<li>
 				<key>Gearbox</key>
-				<label>Gearbox</label>
+				<label>stabiliser</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<hitbox>
@@ -182,7 +182,7 @@
 			</li>
 			<li>
 				<key>FrontArmorPlating</key>
-				<label>Front Armor Plating</label>
+				<label>front armour plating</label>
 				<health>300</health>
 				<depth>External</depth>
 				<armor>
@@ -195,7 +195,7 @@
 			</li>
 			<li>
 				<key>LeftArmorPlating</key>
-				<label>Left Armor Plating</label>
+				<label>left armour plating</label>
 				<health>255</health>
 				<depth>External</depth>
 				<armor>
@@ -208,7 +208,7 @@
 			</li>
 			<li>
 				<key>RightArmorPlating</key>
-				<label>Right Armor Plating</label>
+				<label>right armour plating</label>
 				<health>255</health>
 				<depth>External</depth>
 				<armor>
@@ -221,7 +221,7 @@
 			</li>
 			<li>
 				<key>BackArmorPlating</key>
-				<label>Rear Armor Plating</label>
+				<label>rear armour plating</label>
 				<health>205</health>
 				<depth>External</depth>
 				<armor>
@@ -234,7 +234,7 @@
 			</li>
 			<li>
 				<key>FuelTank</key>
-				<label>Fuel Tank</label>
+				<label>fuel tank</label>
 				<health>125</health>
 				<depth>Internal</depth>
 				<reactors>
@@ -254,7 +254,7 @@
 			</li>
 			<li>
 				<key>ServoBrain</key>
-				<label>Servitor Brain</label>
+				<label>servitor brain</label>
 				<health>55</health>
 				<depth>Internal</depth>
 				<hitWeight>5</hitWeight>
@@ -282,8 +282,8 @@
 	
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_TarantulaTurret</defName>
-		<label>Tarantula Turret</label>
-		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<label>Tarantula turret</label>
+		<description>A heavily armoured turret platform designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defence. Can be outfitted with a variety of weapons. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_TarantulaTurretBase</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -336,7 +336,7 @@
 		<components>
 			<li>
 				<key>PlasGenerator</key>
-				<label>PlasGenerator</label>
+				<label>plasma generator</label>
 				<health>500</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -359,7 +359,7 @@
 			</li>
 			<li>
 				<key>AmmoRack</key>
-				<label>Ammo Rack</label>
+				<label>ammunition storage</label>
 				<health>250</health>
 				<depth>Internal</depth>
 				<reactors>
@@ -373,7 +373,7 @@
 			</li>
 			<li>
 				<key>FrontLeftServoLeg</key>
-				<label>Front Left Servo Leg</label>
+				<label>front left servo leg</label>
 				<health>500</health>
 				<depth>External</depth>
 				<tags>
@@ -391,7 +391,7 @@
 			</li>
 			<li>
 				<key>FrontRightServoLeg</key>
-				<label>Front Right Servo Leg</label>
+				<label>front right servo leg</label>
 				<health>500</health>
 				<depth>External</depth>
 				<tags>
@@ -409,7 +409,7 @@
 			</li>
 			<li>
 				<key>BackLeftServoLeg</key>
-				<label>Back Left Servo Leg</label>
+				<label>back left servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -427,7 +427,7 @@
 			</li>
 			<li>
 				<key>BackRightServoLeg</key>
-				<label>Back Right Servo Leg</label>
+				<label>back right servo leg</label>
 				<health>300</health>
 				<depth>External</depth>
 				<tags>
@@ -445,7 +445,7 @@
 			</li>
 			<li>
 				<key>Gearbox</key>
-				<label>Gearbox</label>
+				<label>stabiliser</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<hitbox>
@@ -459,7 +459,7 @@
 			</li>
 			<li>
 				<key>FrontArmorPlating</key>
-				<label>Front Armor Plating</label>
+				<label>front armour plating</label>
 				<health>300</health>
 				<depth>External</depth>
 				<armor>
@@ -472,7 +472,7 @@
 			</li>
 			<li>
 				<key>LeftArmorPlating</key>
-				<label>Left Armor Plating</label>
+				<label>left armour plating</label>
 				<health>255</health>
 				<depth>External</depth>
 				<armor>
@@ -485,7 +485,7 @@
 			</li>
 			<li>
 				<key>RightArmorPlating</key>
-				<label>Right Armor Plating</label>
+				<label>right armour plating</label>
 				<health>255</health>
 				<depth>External</depth>
 				<armor>
@@ -498,7 +498,7 @@
 			</li>
 			<li>
 				<key>BackArmorPlating</key>
-				<label>Rear Armor Plating</label>
+				<label>rear armour plating</label>
 				<health>205</health>
 				<depth>External</depth>
 				<armor>
@@ -511,7 +511,7 @@
 			</li>
 			<li>
 				<key>FuelTank</key>
-				<label>Fuel Tank</label>
+				<label>fuel tank</label>
 				<health>125</health>
 				<depth>Internal</depth>
 				<reactors>
@@ -531,7 +531,7 @@
 			</li>
 			<li>
 				<key>ServoBrain</key>
-				<label>Servitor Brain</label>
+				<label>servitor brain</label>
 				<health>55</health>
 				<depth>Internal</depth>
 				<hitWeight>5</hitWeight>

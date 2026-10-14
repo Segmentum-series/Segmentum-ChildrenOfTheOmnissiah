@@ -4,8 +4,8 @@
 
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>Seg_COTO_ServoTurret_Blueprint</defName>
-		<label>Servo Turret</label>
-		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<label>servo turret</label>
+		<description>A light turret platform designed for close support of infantry. Can be outfitted with a variety of weapons. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<designationCategory>Security</designationCategory>
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_ServoTurretBase</texPath>
@@ -37,8 +37,8 @@
 
 	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 		<defName>Seg_COTO_Tarantula_Blueprint</defName>
-		<label>Tarantula Turret</label>
-		<description>A heavily armored turret designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defense. Can be outfitted with a variety of turrets. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PIOLTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<label>Tarantula turret</label>
+		<description>A heavily armoured turret platform designed for defensive purposes. While mobile, it is not designed for high-speed travel and is primarily used for stationary defence. Can be outfitted with a variety of weapons. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<designationCategory>Security</designationCategory>
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_TarantulaTurretBase</texPath>

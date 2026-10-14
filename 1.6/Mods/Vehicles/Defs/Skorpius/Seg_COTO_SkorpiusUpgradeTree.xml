@@ -63,10 +63,10 @@
 							<li>
 								<turretDef>Seg_COTO_CognisHeavyStubber_Turret</turretDef>
 								<renderProperties>
-										<north>(-2,-1)</north>
-										<south>(2,2)</south>
-										<west>(1.25, 2)</west>
-										<east>(-1.25, 2)</east>
+										<north>(2,-1)</north>
+										<south>(-2,2.4)</south>
+										<west>(1.2, 2.4)</west>
+										<east>(-1.2, -.25)</east>
 								</renderProperties>
 								<drawLayer>120</drawLayer>
 								<gizmoLabel>heavy stubber</gizmoLabel>
@@ -78,8 +78,8 @@
 					</li>
 				</upgrades>
 				<ingredients>
-				 <Plasteel>100</Plasteel>
-				 <ComponentIndustrial>4</ComponentIndustrial>
+					<Plasteel>100</Plasteel>
+					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
 
@@ -167,7 +167,7 @@
 								<key>mainTurret</key>
 							</li>
 						<!-- this seemed like the best way to give the things different stats-->
-						<li>
+							<li>
 								<turretDef>Seg_COTO_SponsonHeavyStubber_Turret</turretDef>
 								<renderProperties>
 
@@ -214,7 +214,7 @@
 			</li>
 			<li>
 			<key>SponsonUpgrade</key>
-				<label>sponsons</label>
+				<label>sponson mounts</label>
 				<description>The addition of sponson mounts to the Skorpius allows heavy stubbers to be added on each flank, providing solid anti-infantry firepower.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_SponsonIcon</icon>
 				<work>7500</work>
@@ -354,8 +354,8 @@
 
 			<li>
 				<key>ScopeUpgrade</key>
-				<label>scope</label>
-				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Scope</description>
+				<label>auspex/augur gear</label>
+				<description>A heavy-duty auspex and augur suite to augment the vehicle's capabilities, feeding targeting data to the weapons and allowing the crew to more efficiently gauge surrounding threats.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_ScopeIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(2, 2)</gridCoordinate>
@@ -371,10 +371,10 @@
 							<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_Scope</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 
-							<drawOffsetEast>(4,0,1)</drawOffsetEast>
+							<drawOffsetEast>(4,0,1.25)</drawOffsetEast>
 							<drawOffsetSouth>(0,0,-3)</drawOffsetSouth>
 							<drawOffsetNorth>(0,0,4)</drawOffsetNorth>
-							<drawOffsetWest>(-3.7,0,1.25)</drawOffsetWest>
+							<drawOffsetWest>(-4,0,1.25)</drawOffsetWest>
 
 							<drawSize>(4, 4)</drawSize>
 							<layer>121</layer>
@@ -397,7 +397,7 @@
 			<li>
 				<key>Bullbar</key>
 				<label>bullbar</label>
-				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Bullbar</description>
+				<description>This bullbar functions as extra protection for the repulsor base of the Skorpius, cushioning against impacts and incoming projectiles aimed at the gravskimmer.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(6, 2)</gridCoordinate>
@@ -436,7 +436,7 @@
 			<li>
 				<key>Rambar</key>
 				<label>rambar</label>
-				<!--anndra update pls, gw website--><description>Disintegrator Upgrade Rambar</description>
+				<description>This rambar reinforces the prow of the Skorpius with heavy-duty plasteel beams for bone-breaking impacts when ramming into luckless enemies at speed.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarRamIcon</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 2)</gridCoordinate>
