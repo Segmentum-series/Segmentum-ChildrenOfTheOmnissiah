@@ -333,7 +333,7 @@
 	
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_Skorpius_BellerosEnergyCannon</defName>
-		<label>Belleros Energy Cannon</label>
+		<label>Belleros energy cannon</label>
 		<description>The Belleros energy cannon is a turret-mounted weapon that fires arcing projectiles of hyper-reactive gas - a superheated version of the gas powering the Skorpius' repulsor drives. The projectiles explode on impact in a large spectroscopic energy blast.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>

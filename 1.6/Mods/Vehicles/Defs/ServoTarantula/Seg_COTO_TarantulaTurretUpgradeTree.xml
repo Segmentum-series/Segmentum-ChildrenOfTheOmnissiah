@@ -4,7 +4,7 @@
 		<nodes>
 			<li>
 				<key>HeavyBolterUpgrade</key>
-				<label>Heavy Bolter</label>
+				<label>twin heavy bolters</label>
 				<description>The Heavy Bolter is a powerful, rapid-fire weapon designed to suppress enemy positions and provide covering fire for advancing troops.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
 				<work>7500</work>
@@ -44,7 +44,7 @@
 
 			<li>
 				<key>LasCannonUpgrade</key>
-				<label>Lascannon</label>
+				<label>twin lascannons</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>
@@ -83,7 +83,7 @@
 			</li>
             <li>
 				<key>AutoCannonUpgrade</key>
-				<label>Autocannon</label>
+				<label>autocannon</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>
@@ -122,7 +122,7 @@
 			</li>
             <li>
 				<key>QuadStubberUpgrade</key>
-				<label>Quad Heavy Stubber</label>
+				<label>quad heavy stubbers</label>
 				<description>The Quad Heavy Stubber is a high-rate fire weapon designed to destroy lightly armored targets.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
 				<work>7500</work>
@@ -161,7 +161,7 @@
 			</li>
             <li>
 				<key>ConversionBeamerUpgrade</key>
-				<label>ConversionBeamer</label>
+				<label>conversion beamer</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>
@@ -201,7 +201,7 @@
 
             <li>
 				<key>HeavyArcUpgrade</key>
-				<label>Heavy Arc Turret</label>
+				<label>heavy arc turret</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>

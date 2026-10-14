@@ -6,7 +6,7 @@
 		<nodes>
 			<li>
 				<key>HeavyBolterUpgrade</key>
-				<label>Heavy Bolter</label>
+				<label>heavy bolter</label>
 				<description>The Heavy Bolter is a powerful, rapid-fire weapon designed to suppress enemy positions and provide covering fire for advancing troops.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</icon>
 				<work>7500</work>
@@ -42,7 +42,7 @@
 
 			<li>
 				<key>LasCannonUpgrade</key>
-				<label>Lascannon</label>
+				<label>lascannon</label>
 				<description>The Lascannon is a high-energy weapon designed to penetrate heavy armor and destroy fortified positions.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_ServoTurret_LascannonIcon</icon>
 				<work>7500</work>
