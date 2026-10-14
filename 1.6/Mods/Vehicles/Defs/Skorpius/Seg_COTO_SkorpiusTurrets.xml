@@ -8,8 +8,8 @@
 		<shotSound>Seg_COTO_Shot_HeavyStubber</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
-		<warmUpTimer>2.0</warmUpTimer>
-		<magazineCapacity>2000</magazineCapacity>
+		<warmUpTimer>1.5</warmUpTimer>
+		<magazineCapacity>600</magazineCapacity>
 		<chargePerAmmoCount>1</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
 		<empDisables>true</empDisables>
@@ -25,18 +25,18 @@
 		<maxRange>38.9</maxRange>
 		<fireModes>
 			<li>
-				<shotsPerBurst>10</shotsPerBurst>
-				<ticksBetweenShots>5</ticksBetweenShots>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>4</ticksBetweenShots>
 				<ticksBetweenBursts>15</ticksBetweenBursts>
 				<accuracyTouch>0.95</accuracyTouch>
 				<accuracyShort>0.90</accuracyShort>
 				<accuracyMedium>0.80</accuracyMedium>
-				<accuracyLong>0.65</accuracyLong>
+				<accuracyLong>0.70</accuracyLong>
 				<label>Single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>50</shotsPerBurst>
+				<shotsPerBurst>8</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>20</ticksBetweenBursts>
 				<accuracyTouch>0.55</accuracyTouch>
@@ -47,10 +47,10 @@
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>100</shotsPerBurst>
-				<ticksBetweenShots>5</ticksBetweenShots>
+				<shotsPerBurst>16</shotsPerBurst>
+				<ticksBetweenShots>4</ticksBetweenShots>
 				<ticksBetweenBursts>25</ticksBetweenBursts>
-				<accuracyTouch>0.12</accuracyTouch>
+				<accuracyTouch>0.32</accuracyTouch>
 				<accuracyShort>0.58</accuracyShort>
 				<accuracyMedium>0.53</accuracyMedium>
 				<accuracyLong>0.35</accuracyLong>
@@ -82,7 +82,7 @@
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
-		<magazineCapacity>500</magazineCapacity>
+		<magazineCapacity>300</magazineCapacity>
 		<chargePerAmmoCount>1</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
 		<empDisables>true</empDisables>
@@ -98,7 +98,7 @@
 		<maxRange>29.9</maxRange>
 		<fireModes>
 			<li>
-				<shotsPerBurst>10</shotsPerBurst>
+				<shotsPerBurst>1</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>15</ticksBetweenBursts>
 				<accuracyTouch>0.85</accuracyTouch>
@@ -109,7 +109,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>50</shotsPerBurst>
+				<shotsPerBurst>5</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>20</ticksBetweenBursts>
 				<accuracyTouch>0.45</accuracyTouch>
@@ -120,7 +120,7 @@
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>100</shotsPerBurst>
+				<shotsPerBurst>10</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>25</ticksBetweenBursts>
 				<accuracyTouch>0.35</accuracyTouch>
@@ -155,7 +155,7 @@
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
-		<magazineCapacity>500</magazineCapacity>
+		<magazineCapacity>300</magazineCapacity>
 		<chargePerAmmoCount>1</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
 		<empDisables>true</empDisables>
@@ -171,7 +171,7 @@
 		<maxRange>29.9</maxRange>
 			<fireModes>
 			<li>
-				<shotsPerBurst>10</shotsPerBurst>
+				<shotsPerBurst>1</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>15</ticksBetweenBursts>
 				<accuracyTouch>0.85</accuracyTouch>
@@ -182,7 +182,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>50</shotsPerBurst>
+				<shotsPerBurst>5</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>20</ticksBetweenBursts>
 				<accuracyTouch>0.45</accuracyTouch>
@@ -193,7 +193,7 @@
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 			<li>
-				<shotsPerBurst>100</shotsPerBurst>
+				<shotsPerBurst>10</shotsPerBurst>
 				<ticksBetweenShots>5</ticksBetweenShots>
 				<ticksBetweenBursts>25</ticksBetweenBursts>
 				<accuracyTouch>0.35</accuracyTouch>
@@ -309,8 +309,8 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_EnergyCannonShot</defName>
-		<label>plasma shot</label>
-		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
+		<label>Belleros energy blast</label>
+		<description>A projectile of superheated hyper-reactive gas, which explodes on impact in a large spectroscopic energy blast.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Skorpius_BellerosEnergyCannonShot</texPath>
