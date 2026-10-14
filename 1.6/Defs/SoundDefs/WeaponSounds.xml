@@ -248,4 +248,24 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+
+	<!-- Vehicle weapon sounds -->
+	<SoundDef>
+		<defName>Seg_COTO_Shot_HeavyStubber</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+		<li>
+			<grains>
+				<li Class="AudioGrain_Folder">
+					<clipFolderPath>Weapon/Minigun</clipFolderPath>
+				</li>
+			</grains>
+			<volumeRange>45~48</volumeRange>
+			<pitchRange>.55~.65</pitchRange>
+			<sustainLoop>False</sustainLoop>
+		</li>
+		</subSounds>
+	</SoundDef>
+
 </Defs>

@@ -1,12 +1,11 @@
 <Defs>
 
-	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_CognisHeavyStubber_Turret</defName>
 		<label>Cognis heavy stubbers</label>
 		<description>A twin-linked heavy stubber turret, designed to lay down a withering barrage of solid shot. It does so with high accuracy like all cognis weaponry, thanks to the awakened machine spirit housed within, and does not require crew to operate.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<shotSound>Seg_COTO_Shot_HeavyStubber</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
@@ -19,8 +18,8 @@
 		<rotationSpeed>5</rotationSpeed>
 		<projectileOffset>1</projectileOffset>
 		<projectileShifting>
-			<li>-0.2</li>
-			<li>0.2</li>
+			<li>-0.55</li>
+			<li>0.55</li>
 		</projectileShifting>
 		<minRange>1</minRange>
 		<maxRange>38.9</maxRange>
@@ -66,6 +65,7 @@
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(4.2, 4.2)</drawSize>
 		</graphicData>
+
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -73,14 +73,12 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 
-
-	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_SponsonHeavyStubber_Turret</defName>
 		<label>sponson heavy stubber</label>
 		<description>A sponson-mounted heavy stubber which can rapidly fire solid shot to one side of the vehicle.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<shotSound>Seg_COTO_Shot_HeavyStubber</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
@@ -139,8 +137,8 @@
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(4.2, 4.2)</drawSize>
-	
 		</graphicData>
+
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -153,7 +151,7 @@
 		<label>sponson heavy stubber</label>
 		<description>A sponson-mounted heavy stubber which can rapidly fire solid shot to one side of the vehicle.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>GW_AM_HeavyBolter</shotSound>
+		<shotSound>Seg_COTO_Shot_HeavyStubber</shotSound>
 		<projectile>Seg_COTO_StubShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
@@ -220,12 +218,10 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 
-	
-	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_FerrumiteCannonShot</defName>
 		<label>solid core shell</label>
-  		<description>A solid-core shell which turns to a white-hot spear of molten metal on impact.</description>
+		<description>A solid-core shell which turns to a white-hot spear of molten metal on impact.</description>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/ShellHighExplosive</texPath>
@@ -295,6 +291,7 @@
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 		</fireModes>
+
 		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_FerrumiteCannon</texPath>
@@ -302,6 +299,7 @@
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(6, 6)</drawSize>
 		</graphicData>
+
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -310,26 +308,27 @@
 	</Vehicles.VehicleTurretDef>
 
 	<ThingDef ParentName="BaseBullet">
-        <defName>Seg_COTO_EnergyCannonShot</defName>
-        <label>plasma shot</label>
-  		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
+		<defName>Seg_COTO_EnergyCannonShot</defName>
+		<label>plasma shot</label>
+		<description>A burst of plasma blasts which are effective at penetrating heavy armour.</description>
 		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
-        <graphicData>
-            <texPath>Things/Projectile/Seg_COTO_Skorpius_BellerosEnergyCannonShot</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-        </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
-        <projectile>
-            <damageDef>Seg_COTO_BellerosDamage</damageDef>
-            <damageAmountBase>19</damageAmountBase>
-            <stoppingPower>4.0</stoppingPower>
-            <armorPenetrationBase>1.0</armorPenetrationBase>
-            <explosionRadius>6.35</explosionRadius>
-            <speed>60</speed>
+		<graphicData>
+			<texPath>Things/Projectile/Seg_COTO_Skorpius_BellerosEnergyCannonShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+
+		<projectile>
+			<damageDef>Seg_COTO_BellerosDamage</damageDef>
+			<damageAmountBase>19</damageAmountBase>
+			<stoppingPower>4.0</stoppingPower>
+			<armorPenetrationBase>1.0</armorPenetrationBase>
+			<explosionRadius>6.35</explosionRadius>
+			<speed>60</speed>
 			<explosionEffect>SEG_COTO_PlasmaEffecter</explosionEffect>
-        </projectile>
-    </ThingDef>
+		</projectile>
+	</ThingDef>
 
 	
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
@@ -379,12 +378,12 @@
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(6, 6)</drawSize>
 		</graphicData>
+
 		<ammunition>
 			<thingDefs>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</ammunition>
-		
 	</Vehicles.VehicleTurretDef>
 
 
@@ -409,17 +408,16 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
 		<comps>
-				<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-						<tickRate>1</tickRate> <!--this changes the rate this updates-->
-						<lifetimeTicks>600</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
-						<delayTurnInTicks>3</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
-						<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
-						<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
-						<effectLifetime>30</effectLifetime> <!--the life of those motes-->
-						<effectSize>1</effectSize> <!--the size of the motes-->
-				</li>
-			</comps>
-
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+					<tickRate>1</tickRate> <!--this changes the rate this updates-->
+					<lifetimeTicks>600</lifetimeTicks> <!--once this runs out, it disintegrates, used for things like missiles running out of fuel and disarming-->
+					<delayTurnInTicks>3</delayTurnInTicks> <!--how soon after firing the projectile begins tracking-->
+					<initialSpreadAngle>20</initialSpreadAngle> <!--the degrees allowed for it to spread when fired, this is for things like micromissile swarms that you would imagine converging on your target-->
+					<tailMote>CracksShieldBreak</tailMote> <!--This gives it a trail of a specific mote-->
+					<effectLifetime>30</effectLifetime> <!--the life of those motes-->
+					<effectSize>1</effectSize> <!--the size of the motes-->
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
@@ -427,7 +425,7 @@
 		<label>Disruptor missile launcher</label>
 		<description>The Skorpius can field a prow-mounted launcher for Disruptor missiles, which are servitor-guided explosives designed for anti-armour duties. The missiles can be fired singly or in a full barrage of 6 to ensure that the Omnissiah's enemies are overwhelmed.</description>
 		<turretType>Static</turretType>
-	<gizmoIconTexPath>Things/Projectile/Seg_COTO_DisruptorRocket</gizmoIconTexPath>
+		<gizmoIconTexPath>Things/Projectile/Seg_COTO_DisruptorRocket</gizmoIconTexPath>
 
 		<reloadTimer>30</reloadTimer>
 		<warmUpTimer>2</warmUpTimer>
@@ -446,7 +444,6 @@
 		</projectileShifting>
 		<minRange>7</minRange>
 		<maxRange>40.9</maxRange>
-
 
 		<recoil>
 			<distanceTotal>0.15</distanceTotal>
@@ -481,17 +478,11 @@
 			</li>
 		</fireModes>
 
-
 		<ammunition>
 			<thingDefs>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</ammunition>
-
 	</Vehicles.VehicleTurretDef>
-
-
-
-
 
 </Defs>
