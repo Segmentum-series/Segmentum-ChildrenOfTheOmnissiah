@@ -1,0 +1,84 @@
+<Defs>
+<!-- BaseDef -->
+
+<!--Thermoregulation Matrix-->
+	<!-- ThingDef -->
+	<ThingDef ParentName="BodyPartAdvancedAugmetics">
+		<defName>Seg_COTO_VoidHarness</defName>
+		<label>void harness implant</label>
+		<description>This implant combines subcutaneous flakweave implants (for protection against vacuum and stellar radiation) with miniature integrated mind-impulse thrusters to allow agile movement in the void. Techpriests or skitarii specialised for void breacher duties are often outfitted with this set of augmetics, although air supply has to be provided elsewhere.</description>
+		<costList Inherit="False">
+			<Plasteel>15</Plasteel>
+			<Steel>30</Steel>
+			<Cloth>10</Cloth>
+			<Uranium>5</Uranium>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_COTO_TrueFlesh</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<!-- HediffDef -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Seg_COTO_VoidHarness_Hediff</defName>
+		<label>void harness</label>
+		<labelNoun>a void harness implant</labelNoun>
+		<hediffClass>Hediff_Implant</hediffClass>
+		<description>An installed implant which combines subcutaneous flakweave implants (for protection against vacuum and stellar radiation) with miniature integrated mind-impulse thrusters to allow agile movement in the void. Techpriests or skitarii specialised for void breacher duties are often outfitted with this set of augmetics, although air supply has to be provided elsewhere.</description>
+		<spawnThingOnRemoved>Seg_COTO_VoidHarness</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-85</ComfyTemperatureMin>
+					<VacuumSpeedMultiplier>6</VacuumSpeedMultiplier>
+					<DecompressionResistance>0.4</DecompressionResistance>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- RecipeDef -->
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>InstallSeg_COTO_VoidHarness</defName>
+		<label>install void harness</label>
+		<description>Install an implant which combines subcutaneous flakweave implants (for protection against vacuum and stellar radiation) with miniature integrated mind-impulse thrusters to allow agile movement in the void. Techpriests or skitarii specialised for void breacher duties are often outfitted with this set of augmetics, although air supply has to be provided elsewhere.</description>
+		<jobString>Installing void harness.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_COTO_VoidHarness</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seg_COTO_VoidHarness</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Seg_COTO_VoidHarness_Hediff</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>RemoveSeg_COTO_VoidHarness</defName>
+		<label>remove void harness</label>
+		<description>Remove void harness.</description>
+		<descriptionHyperlinks><ThingDef>Seg_COTO_VoidHarness</ThingDef></descriptionHyperlinks>
+		<jobString>Removing void harness.</jobString>
+		<removesHediff>Seg_COTO_VoidHarness_Hediff</removesHediff>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Seg_COTO_RadPills"]/ingestible/outcomeDoers</xpath>
+    <value>
+      <li Class="IngestionOutcomeDoer_GiveHediff">
+        <hediffDef>PotassiumIodide</hediffDef>
+        <severity>1.0</severity>
+      </li>
+    </value>
+  </Operation>
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="PotassiumIodide"]/ingestible/outcomeDoers</xpath>
+    <value>
+      <li Class="IngestionOutcomeDoer_GiveHediff">
+        <hediffDef>Seg_COTO_RadResistHediff</hediffDef>
+        <severity>1.0</severity>
+      </li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,93 @@
+version=1
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=PhosphorFire
+CommandLineArgsForDesignTimeEvaluation=-langversion:7.3 -define:TRACE
+CompilerGeneratedFilesOutputPath=
+MaxSupportedLangVersion=7.3
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=PhosphorFire
+RunAnalyzers=
+RunAnalyzersDuringLiveAnalysis=
+SolutionPath=<PATH>../Segmentum-ChildrenOfTheOmnissiah.sln
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>bin/Debug/net481/PhosphorFire.dll
+TargetRefPath=
+TemporaryDependencyNodeTargetIdentifier=net481
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:4
+/define:TRACE;DEBUG;NETFRAMEWORK;NET481;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER;NET48_OR_GREATER;NET481_OR_GREATER
+/highentropyva+
+/debug+
+/debug:portable
+/filealign:512
+/optimize-
+/out:obj\Debug\net481\PhosphorFire.dll
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/langversion:7.3
+/warnaserror+:NU1605
+
+[sourceFiles]
+FerricLure.cs
+FloorCovering.cs
+obj/Debug/net481/
+ .NETFramework,Version=v4.8.1.AssemblyAttributes.cs
+ PhosphorFire.AssemblyInfo.cs
+RanksParts.cs
+Thing_PhosphorFire.cs
+Waveburst.cs
+
+[metadataReferences]
+../../../../../workshop/content/294100/
+ 2009463077/Current/Assemblies/0Harmony.dll
+ 2023507013/1.6/Assemblies/VEF.dll
+../../../RimWorldWin64_Data/Managed/
+ Assembly-CSharp.dll
+ UnityEngine.CoreModule.dll
+ UnityEngine.dll
+ UnityEngine.IMGUIModule.dll
+ UnityEngine.TextRenderingModule.dll
+../
+ ../Rimdark40kFramework/1.6/Assemblies/Core40k.dll
+ Assemblies/
+  FireFlamework.dll
+  NepalmFire2.dll
+<NETFXREF>/v4.8.1/
+ Facades/netstandard.dll
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+
+[analyzerConfigFiles]
+obj/Debug/net481/PhosphorFire.GeneratedMSBuildEditorConfig.editorconfig

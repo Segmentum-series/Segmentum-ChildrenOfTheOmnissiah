@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineA</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineA</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineB</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineB</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineC</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineC</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineD</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineD</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineE</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineE</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineF</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineF</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineG</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineG</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineH</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineH</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+  <IdeoIconDef>
+    <defName>OmnissianMachineI</defName>
+    <iconPath>UI/Ideoligions/Seg_COTO_Ideoligions_MachineI</iconPath>
+    <cultures>
+      <li>Seg_COTO_Mechanicus</li>
+    </cultures>
+    <memes>
+      <li>Structure_Omnissian</li>
+      <li>Seg_COTO_MachineImmortal</li>
+    </memes>
+  </IdeoIconDef>
+
+</Defs>

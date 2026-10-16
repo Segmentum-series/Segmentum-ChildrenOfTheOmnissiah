@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- Stubber guns base -->
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="Seg_COTO_Stubber_base">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Seg_AutoWeapons</researchPrerequisite>
+			<displayPriority>420</displayPriority><!-- Remove if unecessary -->
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<!-- <thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>-->
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<!-- Macrostubber -->
+	<ThingDef ParentName="Seg_COTO_Stubber_base">
+		<defName>Seg_COTO_Gun_Macrostubber</defName>
+		<label>macrostubber</label>
+		<description>Favoured by Tech-Priests, macrostubbers are able to hurl out a thunderous cloud of solid slugs.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_Macrostubber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+			<shaderType>Cutout</shaderType>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_CultMechanicus</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>2.8</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<MarketValue>500</MarketValue>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Stubber</defaultProjectile>
+				<warmupTime>0.7</warmupTime>
+				<range>22.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_StubberSound</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_MagosBasicRanged</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedLowTier</li>
+		</tradeTags>
+
+		<comps>
+			<li Class="Core40k.CompProperties_WeaponDecoration" />
+			
+			<!-- This works, just commenting it out for now, not sure what we will use it on <3 2lgm <li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+			<li>Seg_COTO_Bullet_Stubber</li>
+			<li>SEG_COTO_RadBullet</li>
+			</availableProjectiles>
+			</li> -->
+		</comps>
+
+	</ThingDef>
+
+<!-- Arc weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_ArcWeaponBase" Abstract="True">
+		<label>arc weapon (base)</label>
+		<description>Base definition for arc‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_ArcPermacapacitors</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+			<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+	
+	<!-- Arc Pistol -->
+	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
+		<defName>Seg_COTO_Gun_ArcPistol</defName>
+		<label>arc pistol</label>
+		<description>A smaller, lighter, and more portable variant of arc weaponry. Despite its size, it will still fry more than a motherboard.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon can arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcPistol</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+
+		<statBases>
+			<Mass>2.5</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<WorkToMake>24000</WorkToMake>
+			<MarketValue>1100</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+					<li>Seg_Apparel_PowerPack</li>
+					<li>Seg_COTO_Apparel_MagosRobes</li>
+					<li>Seg_COTO_Apparel_ExploratorRobe</li>
+					<li>Seg_COTO_Apparel_FabricatorRobe</li>
+					<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+					<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
+				<warmupTime>0.50</warmupTime>
+				<range>18.9</range>
+				<burstShotCount>1</burstShotCount>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Uranium>5</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+			<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Arc</li>
+			<li>Seg_COTO_MagosAdvancedRanged</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+		<comps>
+		<li Class="WeaponOverlayTex.CompProperties_WeaponOverlay">
+            <TexturePath>Things/Weapon/Seg_LEND_ArcPistol_e</TexturePath>
+            <ShaderTypeDefName>TransparentPostLight</ShaderTypeDefName>
+            <OnlyDuringWarmup>true</OnlyDuringWarmup>
+            <WarmupFadeInTicks>5</WarmupFadeInTicks>
+		</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Arc rifle -->
+	<ThingDef ParentName="Seg_COTO_ArcWeaponBase">
+		<defName>Seg_COTO_Gun_ArcRifle</defName>
+		<label>arc rifle</label>
+		<description>A rapid firing arc weapon that discharges directed energy blasts with a loud crack, firing blots of blue-white electricity that can fry a creature's brain or overload a war machine's data-cortex in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will often arc to other targets near the original. Causes electric damage.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_ArcRifle</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<statBases>
+			<Mass>4.5</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<WorkToMake>36000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+
+		<verbs>
+			<!-- Replace the <li> + <verbClass bellow once BM_HeavyWeapons get re-introduced-->
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+						<li>Seg_Apparel_PowerPack</li>
+					<li>Seg_COTO_Apparel_MagosRobes</li>
+					<li>Seg_COTO_Apparel_ExploratorRobe</li>
+					<li>Seg_COTO_Apparel_FabricatorRobe</li>
+					<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+					<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_ArcPistol_Beam</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<range>35.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>Seg_COTO_ArcSound</soundCast>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Uranium>5</Uranium>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_ManipleTactics</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+			<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+				<compClass>Core40k.Comp_AmmoChanger</compClass>
+				<availableProjectiles>
+				<li>Seg_COTO_ArcPistol_Beam</li>
+				<li>Seg_COTO_ArcRifleOverCharged_Beam</li>
+				</availableProjectiles>
+			</li>
+		<li Class="WeaponOverlayTex.CompProperties_WeaponOverlay">
+            <TexturePath>Things/Weapon/Seg_LEND_ArcRifle_e</TexturePath>
+            <ShaderTypeDefName>TransparentPostLight</ShaderTypeDefName>
+            <OnlyDuringWarmup>true</OnlyDuringWarmup>
+            <WarmupFadeInTicks>5</WarmupFadeInTicks>
+      </li>
+		</comps> 
+
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<east>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.07)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Arc</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+
+<!-- Phosphor weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PhosphorWeaponBase" Abstract="True">
+		<label>phosphor weapon (base)</label>
+		<description>Base definition for phosphor weapons.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_PhosphexMunitions</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Phosphor serpentia -->
+	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
+		<defName>Seg_COTO_Gun_PhosphorSerpentia</defName>
+		<label>phosphor serpenta</label>
+		<description>A medium-ranged weapon capable of projecting phosphor discharges. Often favoured as a sidearm by tech-priests that go into battle directly.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporSerpentia</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.1</uiIconScale>
+
+		<statBases>
+			<Mass>3.5</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<WorkToMake>34000</WorkToMake>
+			<MarketValue>1800</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
+				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
+				<warmupTime>1.7</warmupTime>
+				<range>36.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Chemfuel>150</Chemfuel>
+			<Uranium>15</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuardAdvanced</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Phosphor</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Phosphor blast pistol -->
+	<ThingDef ParentName="Seg_COTO_PhosphorWeaponBase">
+		<defName>Seg_COTO_Gun_PhosphorBlastPistol</defName>
+		<label>phosphor blast pistol</label>
+		<description>A short-ranged sidearm capable of projecting blinding burning phosphor discharges.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will ignite hard-to-extinguish fires on anything it hits, and the blazing fires can cause temporary blindness.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PhosporBlastPistol</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+
+		<statBases>
+			<Mass>6</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.3</AccuracyMedium>
+			<AccuracyLong>0.15</AccuracyLong>
+			<WorkToMake>34000</WorkToMake>
+			<MarketValue>1200</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_PhosphorBlast</defaultProjectile>
+				<soundCast>Seg_COTO_PhosphoreSound</soundCast>
+				<warmupTime>1</warmupTime>
+				<range>18.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Chemfuel>100</Chemfuel>
+			<Uranium>10</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Phosphor</li>
+			<li>Seg_COTO_PhosphorBlast</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+
+<!-- Gamma weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_GammaWeaponBase" Abstract="True">
+		<label>GammaBase</label>
+		<description>not in game report to SEG team if you see in game</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_MatterDestabilization</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+		 
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+	</ThingDef>
+
+	<!-- Gamma pistol -->
+	<ThingDef ParentName="Seg_COTO_GammaWeaponBase">
+		<defName>Seg_COTO_Gun_GammaPistol</defName>
+		<label>gamma pistol</label>
+		<description>A sidearm capable of projecting a beam of ionizing radiation from its muzzle, able to reduce a man to a blackened shadow in a solar second.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it.\n\n&lt;color=#bb8f04&gt;Requires a powerpack or power source&lt;/color&gt;.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_GammaPistol</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2500</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li Class="BM_HeavyWeapon.VerbProperties_ApparelAmmo">
+				<verbClass>BM_HeavyWeapon.Verb_Shoot_ApparelAmmo</verbClass>
+				<apparelList>
+						<li>Seg_Apparel_PowerPack</li>
+					<li>Seg_COTO_Apparel_MagosRobes</li>
+					<li>Seg_COTO_Apparel_ExploratorRobe</li>
+					<li>Seg_COTO_Apparel_FabricatorRobe</li>
+					<li>Seg_COTO_Apparel_SkitariiWarPlate</li>
+					<li>Seg_COTO_Apparel_MarshalCommandPlate</li>
+				</apparelList>
+				<missingReason>Missing a source of energy. Equip a powerpack first.</missingReason>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_GammaBeam</defaultProjectile>
+				<soundCast>Seg_COTO_GammaSound</soundCast>
+				<warmupTime>1.0</warmupTime>
+				<range>12.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>40</Steel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Uranium>70</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuardAdvanced</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+				<Intellectual>10</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Gamma</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>
+	</ThingDef>
+
+
+<!-- Rad weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_RadWeaponBase" Abstract="True">
+		<label>RadBase</label>
+		<description>not in game report to SEG team if you see in game</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_COTO_RadiumVolleys</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+	</ThingDef>
+
+	<!-- Radium pistol -->
+	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
+		<defName>Seg_COTO_Gun_RadPistol</defName>
+		<label>radium pistol</label>
+		<description>A sidearm that utilises scaled-down radium technology, reaching a similar effect in smaller potency and scale, while still slowly killing its own wielder.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumPistol</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+
+		<statBases>
+			<Mass>3</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<WorkToMake>13000</WorkToMake>
+			<MarketValue>700</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Seg.COTO.SEG_COTO_Radium_Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
+				<soundCast>Seg_COTO_RadiumSound</soundCast>
+				<warmupTime>1</warmupTime>
+				<range>19.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Uranium>20</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Rad</li>
+			<li>Seg_COTO_RadPistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Radium carbine -->
+	<ThingDef ParentName="Seg_COTO_RadWeaponBase">
+		<defName>Seg_COTO_Gun_RadiumCarbine</defName>
+		<label>radium carbine</label>
+		<description>A rapid-firing weapon capable of a punishing rate of fire. Though be warned, radium weapons are so volatile that they eventually kill their own wielders.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will cause radiation poisoning on the target and in its user.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_RadiumCarbine</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>1150</MarketValue>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Seg.COTO.SEG_COTO_Radium_Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SEG_COTO_RadBullet</defaultProjectile>
+				<soundCast>Seg_COTO_RadiumSound</soundCast>
+				<warmupTime>.5</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Uranium>20</Uranium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.05, 0, 0)</drawOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Rad</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+
+<!-- Plasma weapons base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_PlasmaWeaponBase" Abstract="True">
+		<label>PlasmaWeaponBase</label>
+		<description>Base definition for plas‑energy weapons.this should never show in game, if it does report to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>Seg_PlasmaInduction</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+		 
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<!-- Plasma caliver -->
+	<ThingDef ParentName="Seg_COTO_PlasmaWeaponBase">
+		<defName>Seg_COTO_Gun_PlasmaCaliver</defName>
+		<label>plasma caliver</label>
+		<description>A heavy plasma infantry weapon that channels superheated matter into a focused discharge.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_PlasmaCaliver</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>8</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SEG_COTO_Bullet_Plasma</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>1.35</warmupTime>
+				<range>22.0</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<forcedMissRadius>0.3</forcedMissRadius>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuardAdvanced</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+      		<li Class="Core40k.CompProperties_AmmoChanger">
+       			 <compClass>Core40k.Comp_AmmoChanger</compClass>
+        			<availableProjectiles>
+          			<li>SEG_COTO_Bullet_Plasma</li>
+          			<li>SEG_COTO_Bullet_PlasmaOvercharge</li>
+        		</availableProjectiles>
+      		</li>
+		</comps>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0, 0, 0.1)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Plasma</li>
+			<li>Seg_COTO_PlasmaCaliver</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+
+<!-- Transuranic arquebus base -->
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_TUABWeaponBase" Abstract="True">
+		<label>TransuranicArquebusWeaponBase</label>
+		<description>Base definition for that Skitarii rifle thing i cant be assed to spell again.this should never show in game, if it does report to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Seg_COTO_CraftingTable</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">0</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<!-- Transuranic arquebus -->
+	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
+		<defName>Seg_COTO_Gun_TransuranicArquebus</defName>
+		<label>transuranic arquebus</label>
+		<description>A long-barrelled, precision rifle that fires depleted transuranium for massive armour penetration capabilities.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_TransuranicArquebus</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<uiIconScale>0.6</uiIconScale>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>9</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.20</AccuracyTouch>
+			<AccuracyShort>0.40</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<WorkToMake>80000</WorkToMake>
+			<MarketValue>2530</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Transuranic</defaultProjectile>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<warmupTime>2</warmupTime>
+				<range>58.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_ManipleTactics</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.25, 0, 0)</drawOffset>
+					</north>
+					<east>
+						<drawOffset>(0.3, 0, -0.15)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0.25, 0, -0.2)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.3, 0, -0.15)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Transuranic</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedHighTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Galvanic rifle -->
+	<ThingDef ParentName="Seg_COTO_TUABWeaponBase">
+		<defName>Seg_COTO_Gun_GalvanicRifle</defName>
+		<label>galvanic rifle</label>
+		<description>An exquisitely hand crafted rifle that fires electrified rounds at a great distance.</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_Ranged_GalvanicRifle</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<equippedAngleOffset>45</equippedAngleOffset> <!-- needed  for correct rendering, otherwise looks mf whack.-->
+		<statBases>
+			<Mass>5</Mass>
+			<EquipDelay>.5</EquipDelay>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>1200</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Core40k.Verb_ShootChangeableBullets</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_Bullet_Galvanic</defaultProjectile>
+				<soundCast>Seg_COTO_StubberSound</soundCast> <!-- Placeholder sound -->
+				<warmupTime>2</warmupTime>
+				<range>44.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>45</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Seg_COTO_TechGuard</li>
+			</researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</east>
+					<south>
+						<angleOffset>-20</angleOffset>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, -0.1)</drawOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="Core40k.CompProperties_AmmoChanger">
+			<compClass>Core40k.Comp_AmmoChanger</compClass>
+			<availableProjectiles>
+				<li>Seg_COTO_Bullet_Galvanic</li>
+				<li>Seg_COTO_Bullet_GalvanicSeeker</li>
+			</availableProjectiles>
+			</li>
+		</comps> 
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Galvanic</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedMidTier</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="Seg_COTO_VolkWeaponBase" Abstract="True">
+		<label>Seg_COTO_VolkWeaponBase</label>
+		<description>to KitchenSink.</description>
+		<techLevel>Spacer</techLevel>
+		<smeltable>false</smeltable>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+			</recipeUsers>
+			<researchPrerequisites Inherit="False">
+				<li>Seg_PlasmaInduction</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<comps>
+			 
+			 
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Good</minQualityForArtistic>
+			</li>
+			<!-- <li Class="Core40k.CompProperties_MultiColor">
+				<colorMaskAmount>3</colorMaskAmount>
+				<defaultPrimaryColor>(0.23,0.23,0.23)</defaultPrimaryColor>
+				<defaultSecondaryColor>(0.38,0.38,0.38)</defaultSecondaryColor>
+				<defaultTertiaryColor>(0.79,0.58,0.08)</defaultTertiaryColor>
+			</li> -->
+		</comps>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<relicChance MayRequire="Ludeon.RimWorld.Ideology">.8</relicChance>
+		<weaponTags Inherit="False" />
+		<tradeTags Inherit="False" />
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkCaliver</defName>
+		<label>Volkite caliver</label>
+		<description>An extra-large rifle-style volkite weapon from the Age of Strife, predating even the Great Crusade. It shoots a powerful beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkCaliver</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>1.35</warmupTime>
+				<range>22.9</range>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>21</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<south>
+						<angleOffset>-20</angleOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkBlaster</defName>
+		<label>Volkite blaster</label>
+		<description>A smaller pattern of volkite weapon from the Age of Strife, predating even the Great Crusade, but still in very limited use today by some groups of Mechanicus tech-priests. It shoots a beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkBlast</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>96000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBlastBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>1</warmupTime>
+				<range>16.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>19</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+			<li>Seg_COTO_VolkCraftable</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<south>
+						<angleOffset>-20</angleOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkSerpenta</defName>
+		<label>Volkite serpenta</label>
+		<description>The most compact pattern of volkite weapon from the Age of Strife, predating even the Great Crusade. Sometimes called a 'sun pistol' by laypeople, it shoots a focused beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkSerpenta</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.8</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>2</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>.85</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>96000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkBlastBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>.35</warmupTime>
+				<range>11.9</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>21</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-20</angleOffset>
+					</north>
+					<south>
+						<angleOffset>-20</angleOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="Seg_COTO_VolkWeaponBase">
+		<defName>Seg_COTO_Gun_VolkCulverin</defName>
+		<label>Volkite culverin</label>
+		<description>The largest volkite weapon known to exist from the Age of Strife, predating even the Great Crusade. Technically 'man-portable' for particularly strong humans or transhuman astartes, it shoots a devastating beam of thermodynamic energy that can cook flesh and turn it to superheated ash in the blink of an eye.\n\n&lt;color=#40cbde&gt;Danger:&lt;/color&gt; This weapon will damage everything in a line in front of it, and can cause temporary blindness.\n\n&lt;color=#40cbde&gt;Note: this weapon cannot be crafted, as the ancient knowledge of doing so has been lost.&lt;/color&gt;</description>
+		
+		<graphicData>
+			<texPath>Things/Weapon/Seg_COTO_VolkCulverin</texPath>
+			<shaderType>Cutout</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.95</drawSize>
+		</graphicData>
+		<!-- <equippedAngleOffset>45</equippedAngleOffset> -->
+		<statBases>
+			<Mass>4</Mass>
+			<EquipDelay>1.2</EquipDelay>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown> <!--long cooldown to "vent plasma"-->
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.56</AccuracyLong>
+			<WorkToMake>48000</WorkToMake>
+			<MarketValue>2205</MarketValue>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Seg_COTO_VolkCulverinBeam</defaultProjectile>
+				<soundCast>Seg_COTO_PlasmaSound</soundCast>
+				<warmupTime>2</warmupTime>
+				<range>22.9</range>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>30</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>21</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!-- Tags for trading and categorization for later-->
+		<weaponTags>
+			<li>Seg_COTO_Relic</li>
+			<li>Seg_COTO_Volk</li>
+		</weaponTags>
+		<tradeTags>
+			<li>Seg_COTO_WeaponRangedRelicTier</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<angleOffset>-45</angleOffset>
+					</north>
+					<east>
+						<angleOffset>45</angleOffset>
+					</east>
+					<west>
+						<angleOffset>-45</angleOffset>
+					</west>
+					<south>
+						<angleOffset>20</angleOffset>
+						<drawOffset>(-.1, 0, -.15)</drawOffset>
+					</south>
+				</weaponCarryDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>
