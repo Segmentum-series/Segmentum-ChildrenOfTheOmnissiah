@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <loadFolders>
-	<v1.7>
-		<li>/</li>
-		<li>1.7</li>
-		<li IfModActive = "VanillaExpanded.HelixienGas">1.7/Mods/HexGas</li>
-		<li IfModActive = "vanillaexpanded.vchemfuele">1.7/Mods/ChemExtended</li>
-		<li IfModActive = "ludeon.rimworld.ideology">1.7/Mods/Ideo</li>
-		<li IfModActive = "ludeon.rimworld.royalty">1.7/Mods/Royalty</li>
-		<li IfModActive = "Phonicmas.RimDark.MankindsFinest">1.7/Mods/RimDarkRanks</li>
-		<li IfModActive = "Phonicmas.RimDark.SpaceMaids">1.7/Mods/SpaceMaidDecos</li>
-		<li IfModActive = "RedMattis.BetterPrerequisites">Xenos/1.7</li>
-		<li IfModActive = "REDACTED.Segmentum.Servitors">1.7/Mods/Servitors</li>
-		<li IfModActive = "dubwise.rimatomics">1.7/Mods/Rimatomics</li>
-		<li IfModActive = "kentington.saveourship2">1.7/Mods/SOS2</li>
-		<li IfModActive = "VanillaExpanded.BaseGeneration">1.7/Mods/VBGE</li>
-		<li IfModActive = "smashphil.vehicleframework">1.7/Mods/Vehicles</li>
-	</v1.7>
-
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
