@@ -79,7 +79,7 @@
 				</upgrades>
 				<ingredients>
 					<Plasteel>50</Plasteel>
-					<Seg_Ceramite>50</Seg_Ceramite>
+					<Seg_Ceramite>100</Seg_Ceramite>
 					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
@@ -209,9 +209,9 @@
 
 				</upgrades>
 				<ingredients>
-				 <Steel>120</Steel>
+				 <Steel>80</Steel>
 				 <Plasteel>100</Plasteel>
-				 <Seg_Ceramite>50</Seg_Ceramite>
+				 <Seg_Ceramite>100</Seg_Ceramite>
 				 <ComponentIndustrial>3</ComponentIndustrial>
 				 <ComponentSpacer>1</ComponentSpacer>
 				</ingredients>

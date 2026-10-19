@@ -23,7 +23,7 @@
 		</researchPrerequisites>
 		<costList>
 			<Steel>400</Steel>
-			<Seg_Ceramite>30</Seg_Ceramite>
+			<Seg_Ceramite>50</Seg_Ceramite>
 			<ComponentIndustrial>16</ComponentIndustrial>
 			<Brain>1</Brain>
 			<ComponentSpacer>2</ComponentSpacer>
