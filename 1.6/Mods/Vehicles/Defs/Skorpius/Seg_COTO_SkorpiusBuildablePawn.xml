@@ -37,7 +37,7 @@
 <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_Skorpius</defName>
 		<label>Skorpius</label>
-		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry. The basic chassis is usable as a light transport even before outfitting into either Dunerider or Disintegrator variants.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -73,7 +73,7 @@
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>GW_VoG_HeavySound</value>
+				<value>GW_VoG_HeavySound</value> <!--Needs replacement?-->
 			</li>
 		</soundSustainersOnEvent>
 		

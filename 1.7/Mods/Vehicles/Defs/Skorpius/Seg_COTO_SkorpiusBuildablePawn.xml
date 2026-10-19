@@ -17,7 +17,7 @@
 			<WorkToBuild>1720</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
-		<size>(6, 10)</size>
+		<size>(5, 10)</size>
 		<researchPrerequisites>
 			<li>Seg_COTO_TechGuardAdvanced</li>
 		</researchPrerequisites>
@@ -49,7 +49,7 @@
 		</graphicData>
 		<fillPercent>1</fillPercent>
 		<buildDef>Seg_COTO_Skorpius_Blueprint</buildDef>
-		<size>(6, 10)</size>
+		<size>(5, 10)</size>
 		<!-- <vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions> -->
 		<vehicleCategory>Combat</vehicleCategory>
 		<techLevel>Industrial</techLevel>
@@ -108,16 +108,8 @@
 					<handlingTypes>
 						<li>Movement</li>
 					</handlingTypes>
-					<pawnRenderer>
-						<!--layers-->
-						<layer>93</layer> <!--93 is backpack and head-->
-						<!--offsets-->
-						<drawOffsetEast>(-1.25,0,-.5)</drawOffsetEast>
-						<drawOffsetSouth>(-2,0,2)</drawOffsetSouth>
-						<drawOffsetNorth>(2,0,-1)</drawOffsetNorth>
-						<drawOffsetWest>(1.25,0,-.35)</drawOffsetWest>
-					</pawnRenderer>
 				</li>
+				
 				<li>
 					<key>passenger1</key>
 					<label>Passenger 1</label>
@@ -134,17 +126,17 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<east>North</east>
-						<west>North</west>
-						<north>East</north>
+						<west>South</west>
+						<north>West</north>
 						<south>East</south>
 						<!--offsets-->
-						<drawOffsetEast>(1.65,0,1.45)</drawOffsetEast>
-						<drawOffsetNorth>(1.25,0,0)</drawOffsetNorth>	
-						
-						
-						
+						<drawOffsetEast>(1.52,0,1.2)</drawOffsetEast>
+						<drawOffsetWest>(-1.52,0,-.5)</drawOffsetWest>
+						<drawOffsetNorth>(-1.25,0,1.5)</drawOffsetNorth>
+						<drawOffsetSouth>(1.25,0,-.8)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
+				
 				<li>
 					<key>passenger2</key>
 					<label>Passenger 2</label>
@@ -160,13 +152,14 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<east>South</east>
-						<west>South</west>
-						<north>West</north>
+						<west>North</west>
+						<north>East</north>
 						<south>West</south>
 						<!--offsets-->
-						<drawOffsetEast>(1.65,0,-.25)</drawOffsetEast>		
-						<drawOffsetNorth>(-1.25,0,0)</drawOffsetNorth>	
-
+						<drawOffsetEast>(1.52,0,-.5)</drawOffsetEast>
+						<drawOffsetWest>(-1.52,0,1.2)</drawOffsetWest>
+						<drawOffsetNorth>(1.25,0,1.5)</drawOffsetNorth>
+						<drawOffsetSouth>(-1.25,0,-.8)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -180,8 +173,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(0,0,0)</drawOffsetEast>
-						<drawOffsetNorth>(-.5,0,1)</drawOffsetNorth>
+						<drawOffsetEast>(-.4,0,0)</drawOffsetEast>
+						<drawOffsetWest>(.4,0,1)</drawOffsetWest>
+						<drawOffsetNorth>(.65,0,-.5)</drawOffsetNorth>
+						<drawOffsetSouth>(-.65,0,1.2)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -195,8 +190,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(1,0,0)</drawOffsetEast>
-						<drawOffsetNorth>(.5,0,1)</drawOffsetNorth>
+						<drawOffsetEast>(-.4,0,1)</drawOffsetEast>
+						<drawOffsetWest>(.4,0,0)</drawOffsetWest>
+						<drawOffsetNorth>(-.65,0,-.5)</drawOffsetNorth>
+						<drawOffsetSouth>(.65,0,1.2)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -210,8 +207,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(1,0,1)</drawOffsetEast>
-						<drawOffsetNorth>(-.5,0,0)</drawOffsetNorth>
+						<drawOffsetEast>(.6,0,0)</drawOffsetEast>
+						<drawOffsetWest>(-.6,0,1)</drawOffsetWest>
+						<drawOffsetNorth>(.65,0,.5)</drawOffsetNorth>
+						<drawOffsetSouth>(-.65,0,0.1)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 
@@ -226,8 +225,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(2,0,.55)</drawOffsetEast>
-						<drawOffsetNorth>(-.45,0,2)</drawOffsetNorth>
+						<drawOffsetEast>(.6,0,1)</drawOffsetEast>
+						<drawOffsetWest>(-.6,0,0)</drawOffsetWest>
+						<drawOffsetNorth>(-.65,0,.5)</drawOffsetNorth>
+						<drawOffsetSouth>(.65,0,0.1)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -241,8 +242,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(0,0,1)</drawOffsetEast>
-						<drawOffsetNorth>(.5,0,2)</drawOffsetNorth>
+						<drawOffsetEast>(2.3,0,0)</drawOffsetEast>
+						<drawOffsetWest>(-2.3,0,1)</drawOffsetWest>
+						<drawOffsetNorth>(.65,0,2.5)</drawOffsetNorth>
+						<drawOffsetSouth>(-.65,0,-1.9)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				
@@ -258,8 +261,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(3,0,1)</drawOffsetEast>
-						<drawOffsetNorth>(.45,0,0)</drawOffsetNorth>
+						<drawOffsetEast>(2.3,0,1)</drawOffsetEast>
+						<drawOffsetWest>(-2.3,0,0)</drawOffsetWest>
+						<drawOffsetNorth>(-.65,0,2.5)</drawOffsetNorth>
+						<drawOffsetSouth>(.65,0,-1.9)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -273,8 +278,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(3,0,0)</drawOffsetEast>
-						<drawOffsetNorth>(-.5,0,-1)</drawOffsetNorth>
+						<drawOffsetEast>(3.3,0,0)</drawOffsetEast>
+						<drawOffsetWest>(-3.3,0,1)</drawOffsetWest>
+						<drawOffsetNorth>(.65,0,3.5)</drawOffsetNorth>
+						<drawOffsetSouth>(-.65,0,-3.1)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 				<li>
@@ -288,8 +295,10 @@
 						<layerSouth>-1</layerSouth>
 						<layerWest>-2</layerWest>
 						<!--offsets-->
-						<drawOffsetEast>(-1,0,0.5)</drawOffsetEast>
-						<drawOffsetNorth>(.5,0,-1)</drawOffsetNorth>
+						<drawOffsetEast>(3.3,0,1)</drawOffsetEast>
+						<drawOffsetWest>(-3.3,0,0)</drawOffsetWest>
+						<drawOffsetNorth>(-.65,0,3.5)</drawOffsetNorth>
+						<drawOffsetSouth>(.65,0,-3.1)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
 			</roles>
@@ -297,7 +306,7 @@
 		<components>
 			<li>
 				<key>Engine</key>
-				<label>Engine</label>
+				<label>engine</label>
 				<health>150</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -320,7 +329,7 @@
 			</li>
 			<li>
 				<key>AmmoRack</key>
-				<label>Ammo Rack</label>
+				<label>ammo rack</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<reactors>
