@@ -19,7 +19,8 @@
 		</statBases>
 		<size>(5, 10)</size>
 		<researchPrerequisites>
-			<li>Seg_COTO_TechGuardAdvanced</li>
+			<li>Seg_COTO_MechanisedCohorts</li>
+			<li>Seg_AutoWeapons</li>
 		</researchPrerequisites>
 		<costList>
 			<Steel>400</Steel>
