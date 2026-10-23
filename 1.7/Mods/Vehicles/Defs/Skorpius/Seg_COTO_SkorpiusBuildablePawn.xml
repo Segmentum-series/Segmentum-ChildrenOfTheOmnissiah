@@ -6,7 +6,7 @@
 		<defName>Seg_COTO_Skorpius_Blueprint</defName>
 		<label>Skorpius</label>
 		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
-		<designationCategory>BEWH_RimDarkCategory</designationCategory>
+		<designationCategory>VF_Vehicles</designationCategory>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
