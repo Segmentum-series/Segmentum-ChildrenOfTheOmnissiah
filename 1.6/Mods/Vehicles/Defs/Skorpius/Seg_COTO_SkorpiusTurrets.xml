@@ -58,7 +58,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_CognisHeavyStubber</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -131,7 +131,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_SponsonIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets_Sponsons/Seg_COTO_Skorpius_Sponson_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -204,7 +204,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_SponsonIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets_Sponsons/Seg_COTO_Skorpius_Sponson_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -292,7 +292,7 @@
 			</li>
 		</fireModes>
 
-		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_FerrumiteCannonIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_FerrumiteCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -371,7 +371,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_BellerosEnergyCannonIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_BellerosEnergyCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
