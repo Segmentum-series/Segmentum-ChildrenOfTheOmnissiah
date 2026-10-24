@@ -6,7 +6,7 @@
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_ServoTurret</defName>
 		<label>servo turret</label>
-		<description>A light turret platform designed for close support of infantry. Can be outfitted with a variety of weapons. not particularly sturdy.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<description>A light turret platform designed for close support of infantry. Not particularly sturdy, but can be outfitted with a variety of weapons.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Seg_COTO_ServoTurretBase</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
