@@ -218,7 +218,7 @@
 			</li>
 			<li>
 			<key>SponsonUpgrade</key>
-				<label>sponson mounts</label>
+				<label>Sponson mounts</label>
 				<description>The addition of sponson mounts to the Skorpius allows heavy stubbers to be added on each flank, providing solid anti-infantry firepower.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_SponsonIcon</icon>
 				<work>7500</work>
@@ -360,7 +360,7 @@
 
 			<li>
 				<key>ScopeUpgrade</key>
-				<label>auspex/augur gear</label>
+				<label>Auspex/augur gear</label>
 				<description>A heavy-duty auspex and augur suite to augment the vehicle's capabilities, feeding targeting data to the weapons and allowing the crew to more efficiently gauge surrounding threats.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_ScopeIcon</icon>
 				<work>7500</work>
@@ -402,7 +402,7 @@
 			
 			<li>
 				<key>Bullbar</key>
-				<label>bullbar</label>
+				<label>Bullbar</label>
 				<description>This bullbar functions as extra protection for the repulsor base of the Skorpius, cushioning against impacts and incoming projectiles aimed at the gravskimmer.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarIcon</icon>
 				<work>7500</work>
@@ -441,7 +441,7 @@
 
 			<li>
 				<key>Rambar</key>
-				<label>rambar</label>
+				<label>Rambar</label>
 				<description>This rambar reinforces the prow of the Skorpius with heavy-duty plasteel beams for bone-breaking impacts when ramming into luckless enemies at speed.</description>
 				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarRamIcon</icon>
 				<work>7500</work>
