@@ -1,5 +1,6 @@
 <Defs>
 
+	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_CognisHeavyStubber_Turret</defName>
 		<label>Cognis heavy stubbers</label>
@@ -18,8 +19,8 @@
 		<rotationSpeed>5</rotationSpeed>
 		<projectileOffset>1</projectileOffset>
 		<projectileShifting>
-			<li>-0.55</li>
-			<li>0.55</li>
+			<li>-0.2</li>
+			<li>0.2</li>
 		</projectileShifting>
 		<minRange>1</minRange>
 		<maxRange>38.9</maxRange>
@@ -58,14 +59,13 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_HeavyBolterIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_CognisHeavyStubber</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(4.2, 4.2)</drawSize>
 		</graphicData>
-
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -73,6 +73,8 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 
+
+	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>Seg_COTO_SponsonHeavyStubber_Turret</defName>
 		<label>sponson heavy stubber</label>
@@ -91,8 +93,8 @@
 		<rotationSpeed>5</rotationSpeed>
 		<projectileOffset>1</projectileOffset>
 		<projectileShifting>
-			<li>-0.2</li>
-			<li>0.2</li>
+			<li>-0.55</li>
+			<li>0.55</li>
 		</projectileShifting>
 		<minRange>4</minRange>
 		<maxRange>29.9</maxRange>
@@ -131,14 +133,14 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_SponsonIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets_Sponsons/Seg_COTO_Skorpius_Sponson_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(4.2, 4.2)</drawSize>
 		</graphicData>
-
+		
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -204,7 +206,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_SponsonIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets_Sponsons/Seg_COTO_Skorpius_Sponson_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -218,6 +220,8 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 
+	
+	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_FerrumiteCannonShot</defName>
 		<label>solid core shell</label>
@@ -291,15 +295,15 @@
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
 		</fireModes>
-
-		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_FerrumiteCannonIcon</gizmoIconTexPath>
+		
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_FerrumiteCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(6, 6)</drawSize>
 		</graphicData>
-
+		
 		<ammunition>
 			<thingDefs>
 				<li>Steel</li>
@@ -310,8 +314,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Seg_COTO_EnergyCannonShot</defName>
 		<label>Belleros energy blast</label>
-		<description>A projectile of superheated hyper-reactive gas, which explodes on impact in a large spectroscopic energy blast.</description>
-		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
+		<description>A projectile of superheated hyper-reactive gas, which explodes on impact in a large spectroscopic energy blast.</description>		<uiIconPath>UI/Buttons/BEWH_Icon_ModeDefault</uiIconPath>
 		<graphicData>
 			<texPath>Things/Projectile/Seg_COTO_Skorpius_BellerosEnergyCannonShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -371,19 +374,20 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
-		<gizmoIconTexPath>UI/Seg_COTO_SkorpiusTurret_BellerosEnergyCannonIcon</gizmoIconTexPath>
+		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
+		
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Turrets/Seg_COTO_Skorpius_BellerosEnergyCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(6, 6)</drawSize>
 		</graphicData>
-
 		<ammunition>
 			<thingDefs>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</ammunition>
+		
 	</Vehicles.VehicleTurretDef>
 
 
@@ -418,6 +422,7 @@
 					<effectSize>1</effectSize> <!--the size of the motes-->
 			</li>
 		</comps>
+
 	</ThingDef>
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">

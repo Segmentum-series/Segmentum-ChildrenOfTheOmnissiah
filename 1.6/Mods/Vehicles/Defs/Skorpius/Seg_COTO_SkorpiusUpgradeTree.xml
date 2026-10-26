@@ -6,9 +6,9 @@
 				<key>TransportBayUpgrade</key>
 				<label>Dunerider</label>
 				<description>The Skorpius Dunerider is the main transport vehicle for the Skitarii legions, able to transport a full squad of 10 Skitarii into the thick of battle at high-speed with its gravskimmer repulsor technology. It can be outfitted with light weaponry to provide combat support and defence.</description>
-				<icon>UI/Seg_COTO_Skorpius_DunestriderIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DunestriderIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(18, 12)</gridCoordinate>
+				<gridCoordinate>(2, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 				<replaces>
@@ -78,7 +78,8 @@
 					</li>
 				</upgrades>
 				<ingredients>
-					<Plasteel>100</Plasteel>
+					<Plasteel>50</Plasteel>
+					<Seg_Ceramite>100</Seg_Ceramite>
 					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 			</li>
@@ -87,9 +88,9 @@
 				<key>CombatBayUpgrade</key>
 				<label>Disintegrator</label>
 				<description>The Skorpius Disintegrator is a fast battle tank used by the Skitarii legions powered by gravskimmer repulsor technology. It is designed to provide fire support for Skitarii infantry with a full suite of terrifying weaponry from the Dark Age of Technology, from advanced main cannons to missile launchers and machine-spirit-operated cognis stubbers.</description>
-				<icon>UI/Seg_COTO_Skorpius_DisintegratorIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DisintegratorIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(12, 12)</gridCoordinate>
+				<gridCoordinate>(2, 8)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 				<replaces>
@@ -117,8 +118,12 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffsetEast>(1.5,0,-1.25)</drawOffsetEast>
 
-							<!-- <drawOffsetWest>(-1.5,0,2)</drawOffsetWest> -->
+
+
+							<drawOffsetWest>(-1.5,0,2)</drawOffsetWest>
 							<drawSize>(10, 10)</drawSize>
+
+
 
 							<layer>119</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
@@ -131,8 +136,11 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffsetEast>(1.5,0,2)</drawOffsetEast>
 							
-							<!-- <drawOffsetWest>(-1.5,0,-1.25)</drawOffsetWest> -->
+							
+							<drawOffsetWest>(-1.5,0,-1.25)</drawOffsetWest>
 							<drawSize>(10, 10)</drawSize>
+
+
 
 							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
@@ -160,7 +168,7 @@
 								<key>mainTurret</key>
 							</li>
 						<!-- this seemed like the best way to give the things different stats-->
-							<li>
+						<li>
 								<turretDef>Seg_COTO_SponsonHeavyStubber_Turret</turretDef>
 								<renderProperties>
 
@@ -201,17 +209,20 @@
 
 				</upgrades>
 				<ingredients>
+				 <Steel>80</Steel>
 				 <Plasteel>100</Plasteel>
-				 <ComponentIndustrial>4</ComponentIndustrial>
+				 <Seg_Ceramite>100</Seg_Ceramite>
+				 <ComponentIndustrial>3</ComponentIndustrial>
+				 <ComponentSpacer>1</ComponentSpacer>
 				</ingredients>
 			</li>
 			<li>
 			<key>SponsonUpgrade</key>
-				<label>sponson mounts</label>
+				<label>Sponson mounts</label>
 				<description>The addition of sponson mounts to the Skorpius allows heavy stubbers to be added on each flank, providing solid anti-infantry firepower.</description>
-				<icon>UI/Seg_COTO_Skorpius_SponsonIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_SponsonIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(18, 18)</gridCoordinate>
+				<gridCoordinate>(6, 12)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 				<prerequisiteNodes>
@@ -225,8 +236,12 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffsetEast>(1.5,0,-1.25)</drawOffsetEast>
 
-							<!-- <drawOffsetWest>(-1.5,0,2)</drawOffsetWest> -->
+
+
+							<drawOffsetWest>(-1.5,0,2)</drawOffsetWest>
 							<drawSize>(10, 10)</drawSize>
+
+
 
 							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
@@ -237,9 +252,12 @@
 							<texPath>Things/Vehicles/Skorpius/Turrets_Sponsons/Seg_COTO_Skorpius_Sponson_Cover2</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffsetEast>(1.5,0,2)</drawOffsetEast>
-
-							<!-- <drawOffsetWest>(-1.5,0,-1.25)</drawOffsetWest> -->
+							
+							
+							<drawOffsetWest>(-1.5,0,-1.25)</drawOffsetWest>
 							<drawSize>(10, 10)</drawSize>
+
+
 
 							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
@@ -288,8 +306,9 @@
 					</li>
 				</upgrades>
 				<ingredients>
-				 <Plasteel>100</Plasteel>
-				 <ComponentIndustrial>4</ComponentIndustrial>
+				 <Steel>80</Steel>
+				 <Seg_Ceramite>20</Seg_Ceramite>
+				 <ComponentIndustrial>2</ComponentIndustrial>
 				</ingredients>
 			</li>
 
@@ -297,9 +316,9 @@
 				<key>BellerosEnergyCannonUpgrade</key>
 				<label>Belleros energy cannon</label>
 				<description>The Belleros energy cannon is a high-energy turret-mounted weapon that fires superheated energy bolts, capable of melting through armoured targets and fortified positions with devastating effect.</description>
-				<icon>UI/Seg_COTO_Skorpius_BellerosEnergyCannonIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BellerosEnergyCannonIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(12, 18)</gridCoordinate>
+				<gridCoordinate>(6, 8)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 
 				<prerequisiteNodes>
@@ -332,19 +351,20 @@
 					</li>
 				</upgrades>
 				<ingredients>
-					<Steel>100</Steel>
+					<Steel>90</Steel>
 					<ComponentIndustrial>4</ComponentIndustrial>
+					<ComponentSpacer>2</ComponentSpacer>
 				</ingredients>
 			</li>
 
 
 			<li>
 				<key>ScopeUpgrade</key>
-				<label>auspex/augur gear</label>
+				<label>Auspex/augur gear</label>
 				<description>A heavy-duty auspex and augur suite to augment the vehicle's capabilities, feeding targeting data to the weapons and allowing the crew to more efficiently gauge surrounding threats.</description>
-				<icon>UI/Seg_COTO_Skorpius_ScopeIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_ScopeIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(12, 6)</gridCoordinate>
+				<gridCoordinate>(2, 2)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 				<prerequisiteNodes>
@@ -363,7 +383,7 @@
 							<drawOffsetWest>(-4,0,1.25)</drawOffsetWest>
 
 							<drawSize>(4, 4)</drawSize>
-							<layer>121</layer>
+							<layer>120</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 
 						</graphicData>
@@ -376,17 +396,17 @@
 				</upgrades>
 				<ingredients>
 				 <Plasteel>20</Plasteel>
-				 <ComponentSpacer>4</ComponentSpacer>
+				 <ComponentSpacer>3</ComponentSpacer>
 				</ingredients>
 			</li>
 			
 			<li>
 				<key>Bullbar</key>
-				<label>bullbar</label>
+				<label>Bullbar</label>
 				<description>This bullbar functions as extra protection for the repulsor base of the Skorpius, cushioning against impacts and incoming projectiles aimed at the gravskimmer.</description>
-				<icon>UI/Seg_COTO_Skorpius_BullbarIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(18, 6)</gridCoordinate>
+				<gridCoordinate>(6, 2)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 			
@@ -415,17 +435,17 @@
 				</upgrades>
 				<ingredients>
 				 <Plasteel>20</Plasteel>
-				 <ComponentSpacer>4</ComponentSpacer>
+				 <Seg_Ceramite>30</Seg_Ceramite>
 				</ingredients>
 			</li>
 
 			<li>
 				<key>Rambar</key>
-				<label>rambar</label>
+				<label>Rambar</label>
 				<description>This rambar reinforces the prow of the Skorpius with heavy-duty plasteel beams for bone-breaking impacts when ramming into luckless enemies at speed.</description>
-				<icon>UI/Seg_COTO_Skorpius_BullbarRamIcon</icon>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_BullbarRamIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(24, 6)</gridCoordinate>
+				<gridCoordinate>(10, 2)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 
 				<prerequisiteNodes>
@@ -440,7 +460,7 @@
 
 							<drawOffsetEast>(0,0,0)</drawOffsetEast>
 			
-							<!-- <drawOffsetWest>(0,0,0)</drawOffsetWest> -->
+							<drawOffsetWest>(0,0,0)</drawOffsetWest>
 
 							<drawSize>(7, 10.5)</drawSize>
 							<layer>3</layer>
@@ -456,17 +476,18 @@
 				</upgrades>
 				<ingredients>
 				 <Plasteel>20</Plasteel>
-				 <ComponentSpacer>4</ComponentSpacer>
+				 <Seg_Ceramite>30</Seg_Ceramite>
 				</ingredients>
 			</li>
 
 
 			<li>
 				<key>DisruptorMissiles</key>
-				<label>Disruptor missiles</label><description>The Skorpius can field a prow-mounted launcher for Disruptor missiles, which are servitor-guided explosives designed for anti-armour duties. The missiles can be fired singly or in a full barrage of 6 to ensure that the Omnissiah's enemies are overwhelmed</description>
-				<icon>UI/Seg_COTO_Skorpius_DissruptorMissilesIcon</icon>
+				<label>Disruptor missiles</label>
+				<description>The Skorpius can field a prow-mounted launcher for Disruptor missiles, which are servitor-guided explosives designed for anti-armour duties. The missiles can be fired singly or in a full barrage of 6 to ensure that the Omnissiah's enemies are overwhelmed</description>
+				<icon>UI/Icons/Vehicles/Seg_COTO_Skorpius_DissruptorMissilesIcon</icon>
 				<work>7500</work>
-				<gridCoordinate>(30, 6)</gridCoordinate>
+				<gridCoordinate>(14, 2)</gridCoordinate>
 				<drawSize>(75, 75)</drawSize>
 				
 
@@ -485,7 +506,7 @@
 							<drawOffsetEast>(0,0,0)</drawOffsetEast>
 							<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
 							<drawOffsetNorth>(0,0,0)</drawOffsetNorth>
-							<!-- <drawOffsetWest>(0,0,0)</drawOffsetWest> -->
+							<drawOffsetWest>(0,0,0)</drawOffsetWest>
 
 							<drawSize>(7, 10.5)</drawSize>
 							<layer>120</layer>
@@ -520,7 +541,8 @@
 					</li>
 				</upgrades>
 				<ingredients>
-				 <Plasteel>20</Plasteel>
+				 <Steel>100</Steel>
+				 <Plasteel>80</Plasteel>
 				 <ComponentSpacer>4</ComponentSpacer>
 				</ingredients>
 			</li>

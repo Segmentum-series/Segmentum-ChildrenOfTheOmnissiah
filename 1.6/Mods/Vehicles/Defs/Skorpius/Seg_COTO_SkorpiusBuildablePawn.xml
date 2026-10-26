@@ -6,7 +6,7 @@
 		<defName>Seg_COTO_Skorpius_Blueprint</defName>
 		<label>Skorpius</label>
 		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
-		<designationCategory>BEWH_RimDarkCategory</designationCategory>
+		<designationCategory>VF_Vehicles</designationCategory>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -19,11 +19,12 @@
 		</statBases>
 		<size>(5, 10)</size>
 		<researchPrerequisites>
-			<li>Seg_COTO_TechGuardAdvanced</li>
+			<li>Seg_COTO_MechanisedCohorts</li>
+			<li>Seg_AutoWeapons</li>
 		</researchPrerequisites>
 		<costList>
 			<Steel>400</Steel>
-			<Seg_Ceramite>30</Seg_Ceramite>
+			<Seg_Ceramite>50</Seg_Ceramite>
 			<ComponentIndustrial>16</ComponentIndustrial>
 			<Brain>1</Brain>
 			<ComponentSpacer>2</ComponentSpacer>
@@ -37,7 +38,7 @@
 <Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Seg_COTO_Skorpius</defName>
 		<label>Skorpius</label>
-		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry. The basic chassis is usable as a light transport even before outfitting into either Dunerider or Disintegrator variants.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
+		<description>The Skorpius is a repulsor vehicle which can serve as an armoured transport or a fast battle tank mounting a variety of deadly weaponry.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; SERVITOR-PILOTED\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Uranium</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Skorpius/Seg_COTO_Skorpius_Main</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -73,7 +74,7 @@
 			<li>
 				<start>IgnitionOn</start>
 				<stop>IgnitionOff</stop>
-				<value>GW_VoG_HeavySound</value> <!--Needs replacement?-->
+				<value>GW_VoG_HeavySound</value>
 			</li>
 		</soundSustainersOnEvent>
 		
@@ -109,7 +110,7 @@
 						<li>Movement</li>
 					</handlingTypes>
 				</li>
-
+				
 				<li>
 					<key>passenger1</key>
 					<label>Passenger 1</label>
@@ -136,7 +137,7 @@
 						<drawOffsetSouth>(1.25,0,-.8)</drawOffsetSouth>
 					</pawnRenderer>
 				</li>
-
+				
 				<li>
 					<key>passenger2</key>
 					<label>Passenger 2</label>
@@ -160,7 +161,6 @@
 						<drawOffsetWest>(-1.52,0,1.2)</drawOffsetWest>
 						<drawOffsetNorth>(1.25,0,1.5)</drawOffsetNorth>
 						<drawOffsetSouth>(-1.25,0,-.8)</drawOffsetSouth>
-
 					</pawnRenderer>
 				</li>
 				<li>
@@ -307,7 +307,7 @@
 		<components>
 			<li>
 				<key>Engine</key>
-				<label>Engine</label>
+				<label>engine</label>
 				<health>150</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<depth>Internal</depth>
@@ -330,7 +330,7 @@
 			</li>
 			<li>
 				<key>AmmoRack</key>
-				<label>Ammo Rack</label>
+				<label>ammo rack</label>
 				<health>50</health>
 				<depth>Internal</depth>
 				<reactors>
