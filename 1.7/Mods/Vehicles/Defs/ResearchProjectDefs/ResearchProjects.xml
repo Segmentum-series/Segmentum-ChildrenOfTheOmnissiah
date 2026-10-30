@@ -14,6 +14,7 @@
 		<researchViewY>0</researchViewY>
 		<prerequisites>
 			<li>Seg_COTO_TechGuard</li>
+			<li>Seg_AutoWeapons</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>

@@ -36,7 +36,7 @@
 				<branchChance>0</branchChance>
 
 				<beamWidth>1.75</beamWidth>
-				<beamWidthDrawScale>3</beamWidthDrawScale>
+				<beamWidthDrawScale>1</beamWidthDrawScale>
 
 				<sweepRatePerTick>0</sweepRatePerTick>
 				<maxSweepAngle>0</maxSweepAngle>
@@ -207,29 +207,47 @@
 		<projectile>Seg_COTO_AnnihilatorLascannonShot</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
-		<magazineCapacity>40</magazineCapacity>
-		<chargePerAmmoCount>2</chargePerAmmoCount>
+		<magazineCapacity>1500</magazineCapacity>
 		<genericAmmo>true</genericAmmo>
+		<chargePerAmmoCount>0.00066</chargePerAmmoCount>
+
+		<cooldown>
+			<heatPerShot>20</heatPerShot>
+			<dissipationRate >.1</dissipationRate>
+			<dissipationCapMultiplier>0.65</dissipationCapMultiplier>
+        </cooldown>
+  
 		
 		<autoSnapTargeting>false</autoSnapTargeting>
-		<rotationSpeed>5</rotationSpeed>
-		<projectileOffset>1</projectileOffset>
-		<projectileShifting>
+		<rotationSpeed>2.95</rotationSpeed>
+			<projectileShifting>
 			<li>-0.2</li>
 			<li>0.2</li>
 		</projectileShifting>
-		<minRange>4</minRange>
-		<maxRange>59.9</maxRange>
+		<projectileOffset>0.5</projectileOffset>
+		<minRange>1</minRange>
+		<maxRange>42.9</maxRange>
 		<fireModes>
 			<li>
-				<shotsPerBurst>2</shotsPerBurst>
-				<ticksBetweenShots>0</ticksBetweenShots>
-				<ticksBetweenBursts>10</ticksBetweenBursts>
-				<label>Single</label>
-				<accuracyTouch>0.55</accuracyTouch>
+				<shotsPerBurst>4</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>100</ticksBetweenBursts>
+				<accuracyTouch>0.85</accuracyTouch>
 				<accuracyShort>0.75</accuracyShort>
-				<accuracyMedium>0.95</accuracyMedium>
-				<accuracyLong>0.85</accuracyLong>
+				<accuracyMedium>0.55</accuracyMedium>
+				<accuracyLong>0.25</accuracyLong>
+				<label>Volley</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>2</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>0.95</accuracyShort>
+				<accuracyMedium>0.75</accuracyMedium>
+				<accuracyLong>0.65</accuracyLong>
+				<label>single</label>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
@@ -242,7 +260,7 @@
 		</graphicData>
 		<ammunition>
 			<thingDefs>
-				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
@@ -256,45 +274,53 @@
 		<projectile>Seg_COTO_HeavyBolterRound</projectile>
 		<reloadTimer>4.0</reloadTimer>
 		<warmUpTimer>2.0</warmUpTimer>
-		<magazineCapacity>200</magazineCapacity>
-		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<magazineCapacity>100</magazineCapacity>
+		<chargePerAmmoCount>.2</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
 		
 		<autoSnapTargeting>false</autoSnapTargeting>
-		<rotationSpeed>5</rotationSpeed>
-		<projectileOffset>1</projectileOffset>
+		<rotationSpeed>2.0</rotationSpeed>
+		<projectileOffset>1.0</projectileOffset>
 		<projectileShifting>
 			<li>-0.2</li>
 			<li>0.2</li>
 		</projectileShifting>
-		<minRange>4</minRange>
-		<maxRange>59.9</maxRange>
-		<fireModes>
-			<li>
-				<shotsPerBurst>2</shotsPerBurst>
-				<ticksBetweenShots>0</ticksBetweenShots>
-				<ticksBetweenBursts>35</ticksBetweenBursts>
-				<spreadRadius>.5</spreadRadius>
-				<label>Single</label>
-				<texPath>UI/Gizmos/FireRate_Single</texPath>
-			</li>
-			<li>
-				<shotsPerBurst>8</shotsPerBurst>
-				<ticksBetweenShots>8</ticksBetweenShots>
-				<ticksBetweenBursts>45</ticksBetweenBursts>
-				<spreadRadius>1</spreadRadius>
-				<label>Burst</label>
-				<texPath>UI/Gizmos/FireRate_Burst</texPath>
-			</li>
-			<li>
-				<shotsPerBurst>24</shotsPerBurst>
-				<ticksBetweenShots>8</ticksBetweenShots>
-				<ticksBetweenBursts>45</ticksBetweenBursts>
-				<spreadRadius>1.5</spreadRadius>
-				<label>Auto</label>
-				<texPath>UI/Gizmos/FireRate_Auto</texPath>
-			</li>
-		</fireModes>
+		<maxRange>28.9</maxRange>
+		 		<fireModes>
+            <li>
+                <shotsPerBurst>3</shotsPerBurst>
+                <ticksBetweenShots>20</ticksBetweenShots>
+                <ticksBetweenBursts>60</ticksBetweenBursts>
+                <accuracyTouch>0.6</accuracyTouch>
+                <accuracyShort>0.75</accuracyShort>
+                <accuracyMedium>0.8</accuracyMedium>
+                <accuracyLong>0.6</accuracyLong>
+                <label>Short burst</label>
+                <texPath>UI/Gizmos/FireRate_Single</texPath>
+            </li>
+            <li>
+                <shotsPerBurst>8</shotsPerBurst>
+                <ticksBetweenShots>15</ticksBetweenShots>
+                <ticksBetweenBursts>60</ticksBetweenBursts>
+                <accuracyTouch>0.4</accuracyTouch>
+                <accuracyShort>0.55</accuracyShort>
+                <accuracyMedium>0.6</accuracyMedium>
+                <accuracyLong>0.4</accuracyLong>
+                <label>Long burst</label>
+                <texPath>UI/Gizmos/FireRate_Burst</texPath>
+            </li>
+            <li>
+                <shotsPerBurst>15</shotsPerBurst>
+                <ticksBetweenShots>9</ticksBetweenShots>
+                <ticksBetweenBursts>90</ticksBetweenBursts>
+                <accuracyTouch>0.2</accuracyTouch>
+                <accuracyShort>0.35</accuracyShort>
+                <accuracyMedium>0.5</accuracyMedium>
+                <accuracyLong>0.25</accuracyLong>
+                <label>Auto</label>
+                <texPath>UI/Gizmos/FireRate_Auto</texPath>
+            </li>
+        </fireModes>
 		<gizmoIconTexPath>UI/Icons/Vehicles/Seg_COTO_ServoTurret_HeavyBolterIcon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Turrets/ServoTarantula/Seg_COTO_ServoTurret_MainTurret_HeavyBolter</texPath>
