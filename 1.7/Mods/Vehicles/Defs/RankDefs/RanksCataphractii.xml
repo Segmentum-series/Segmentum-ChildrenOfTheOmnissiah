@@ -1,0 +1,66 @@
+<Defs>
+<!--comment-->
+<Seg.RankDef>
+    <Seg.RankDef>
+        <defName>Seg_COTO_Cataphractius</defName>
+        <label>Cataphractius</label>
+        <description>Cataphractii are the vehicle crewmen of the skitarii forces, trained and modified to operate any military vehicle that the Mechanicus might field, from personnel carriers to tanks.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Cataphractius</rankIconPath>
+        <rankTier>3</rankTier>
+        <ImplantsRequired>2</ImplantsRequired>
+        <!--- EXAMPLE
+        <RequiredHediff>Seg_COTO_EyeLens_Hediff</RequiredHediff>
+        -->
+        <RequiredHediffs>
+            <li>Seg_COTO_SkitariusLeg_Hediff</li>
+            <li>Seg_COTO_EyeLens_Hediff</li>
+        </RequiredHediffs>
+
+
+        <requiredSkills>
+            <Shooting>6</Shooting>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
+        </statOffsets>
+         <statFactors>
+			<RangedCooldownFactor>0.95</RangedCooldownFactor>
+        </statFactors>
+    </Seg.RankDef>
+	
+    <Seg.RankDef>
+        <defName>Seg_COTO_CataphractiiAlpha</defName>
+        <label>Cataphractii Alpha</label>
+        <description>Mechanicus vehicle crews are commanded by the Cataphractii Alphas, who have extensive training and conditioning to let them direct the Mechanicus' machines in battle.</description>
+        <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_CataphractiiAlpha</rankIconPath>
+        <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
+        <rankTier>4</rankTier>
+        <ImplantsRequired>4</ImplantsRequired>
+        <RequiredHediffs>
+            <li>Seg_COTO_SkitariusLeg_Hediff</li>
+            <li>Seg_COTO_EyeLens_Hediff</li>
+        </RequiredHediffs>
+
+
+        <requiredSkills>
+            <Shooting>6</Shooting>
+			<Social>5</Social>
+            <Intellectual>4</Intellectual>
+        </requiredSkills>
+
+    
+
+        <statOffsets>
+            <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.3</PilotingAbility>
+            <SocialImpact>0.20</SocialImpact>
+            <BEWH_ShipGunnerySkillOffset MayRequire="kentington.saveourship2">1</BEWH_ShipGunnerySkillOffset>
+        </statOffsets>
+         <statFactors>
+        </statFactors>
+    </Seg.RankDef>
+</Defs>
