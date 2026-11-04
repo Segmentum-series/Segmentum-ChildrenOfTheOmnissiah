@@ -234,7 +234,6 @@
 				<count>3</count>
 			</li>
         </requirements>
-        <ImplantsRequired>3</ImplantsRequired>
         <givesPassions>
             <li>
 				<skill>Shooting</skill>
