@@ -98,6 +98,7 @@
             <li Class="Core40k.PawnRequirement_IncompatibleRanks">
                 <ranks>
 					<li>Seg_COTO_SkitariiRanger</li>
+					<li>Seg_COTO_SkitariiProvost</li>
 					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
 					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
 				</ranks>
@@ -219,6 +220,7 @@
             <li Class="Core40k.PawnRequirement_IncompatibleRanks">
                 <ranks>
 					<li>Seg_COTO_SkitariiVanguard</li>
+					<li>Seg_COTO_SkitariiProvost</li>
 					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
 					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
 				</ranks>

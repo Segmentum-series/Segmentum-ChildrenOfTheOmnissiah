@@ -1,64 +1,79 @@
 <Defs>
-    <Seg.RankDef>
+    <Core40k.RankDef>
         <defName>Seg_COTO_Cataphractius</defName>
         <label>Cataphractius</label>
         <description>Cataphractii are the vehicle crewmen of the skitarii forces, trained and modified to operate any military vehicle that the Mechanicus might field, from personnel carriers to tanks.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_Cataphractius</rankIconPath>
         <rankTier>3</rankTier>
-        <ImplantsRequired>2</ImplantsRequired>
-        <!--- EXAMPLE
-        <RequiredHediff>Seg_COTO_EyeLens_Hediff</RequiredHediff>
-        -->
-        <RequiredHediffs>
-            <li>Seg_COTO_SkitariusLeg_Hediff</li>
-            <li>Seg_COTO_EyeLens_Hediff</li>
-        </RequiredHediffs>
-
-
-        <requiredSkills>
-            <Shooting>6</Shooting>
-        </requiredSkills>
-
-    
-
+        <requirements>
+            <li Class="Core40k.PawnRequirement_IncompatibleRanks">
+                <ranks>
+					<li>Seg_COTO_SkitariiRanger</li>
+					<li>Seg_COTO_SkitariiVanguard</li>
+					<li>Seg_COTO_SkitariiProvost</li>
+					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianRuststalker</li>
+					<li MayRequire="redmattis.betterprerequisites">Seg_COTO_SicarianInfiltrator</li>
+				</ranks>
+            </li>
+            <li Class="Core40k.PawnRequirement_Skills">
+                <skills>
+					<Shooting>6</Shooting>
+                </skills>
+            </li>
+			<li Class="Core40k.PawnRequirement_Hediffs">
+				<hediffs>
+					<li>Seg_COTO_SkitariusLeg_Hediff</li>
+					<li>Seg_COTO_EyeLens_Hediff</li>
+				</hediffs>
+				<minCount>2</minCount>
+			</li>
+			<li Class="Seg.PawnRequirement_ArtificialParts">
+				<count>2</count>
+			</li>
+        </requirements>
         <statOffsets>
 			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
         </statOffsets>
-         <statFactors>
+        <statFactors>
 			<RangedCooldownFactor>0.95</RangedCooldownFactor>
         </statFactors>
-    </Seg.RankDef>
+    </Core40k.RankDef>
 	
-    <Seg.RankDef>
+    <Core40k.RankDef>
         <defName>Seg_COTO_CataphractiiAlpha</defName>
         <label>Cataphractii Alpha</label>
         <description>Mechanicus vehicle crews are commanded by the Cataphractii Alphas, who have extensive training and conditioning to let them direct the Mechanicus' machines in battle.</description>
         <rankIconPath>UI/Ranks/Skitarii/Seg_COTO_RankSkitarii_CataphractiiAlpha</rankIconPath>
         <colonyLimitOfRank>(2, 0)</colonyLimitOfRank>
         <rankTier>4</rankTier>
+        <requirements>
+            <li Class="Core40k.PawnRequirement_Skills">
+                <skills>
+					<Shooting>6</Shooting>
+					<Social>5</Social>
+					<Intellectual>4</Intellectual>
+                </skills>
+            </li>
+			<li Class="Core40k.PawnRequirement_Hediffs">
+				<hediffs>
+					<li>Seg_COTO_SkitariusLeg_Hediff</li>
+					<li>Seg_COTO_EyeLens_Hediff</li>
+				</hediffs>
+				<minCount>2</minCount>
+			</li>
+			<li Class="Seg.PawnRequirement_ArtificialParts">
+				<count>4</count>
+			</li>
+        </requirements>
         <ImplantsRequired>4</ImplantsRequired>
-        <RequiredHediffs>
-            <li>Seg_COTO_SkitariusLeg_Hediff</li>
-            <li>Seg_COTO_EyeLens_Hediff</li>
-        </RequiredHediffs>
-
-
-        <requiredSkills>
-            <Shooting>6</Shooting>
-			<Social>5</Social>
-            <Intellectual>4</Intellectual>
-        </requiredSkills>
-
-    
-
         <statOffsets>
             <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-0.1</CertaintyLossFactor>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.3</PilotingAbility>
             <SocialImpact>0.20</SocialImpact>
             <BEWH_ShipGunnerySkillOffset MayRequire="kentington.saveourship2">1</BEWH_ShipGunnerySkillOffset>
         </statOffsets>
-         <statFactors>
+        <statFactors>
         </statFactors>
-    </Seg.RankDef>
+    </Core40k.RankDef>
 </Defs>
