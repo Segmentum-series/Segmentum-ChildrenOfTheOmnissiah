@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Conversion -->
+	<RecipeDef ParentName="BS_TransformSurgery">
+		<defName>Seg_COTO_SicarianConversion</defName>
+		<label>Sicarian conversion</label>
+		<description>The Adeptus Mechanicus sees every human as a resource, and even the most seriously wounded can be put to good use in the skitarii legions. Converting a living being into a Sicarian involves making them into efficient killing machines - but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts and brain tissue are removed, and the body is prepared for specialised martial augmetics in their place.</description>
+		<uiIconPath>UI/Icons/Seg_COTO_Icon_SicarianImplant</uiIconPath>
+		<jobString>Bestow Sicarian conversion</jobString>
+		<uiIconPath>UI/Icons/Seg_COTO_Icon_SicarianImplant</uiIconPath>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<recipeUsers Inherit="False">
+			<li>Human</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+		</recipeUsers>
+		<researchPrerequisite>
+			<li>Seg_COTO_SicarianKillclades</li>
+		</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seg_Adamantium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+				<li>Seg_Adamantium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Seg_COTO_Sicarian_Morph</addsHediff>
+	</RecipeDef>
+	
+	<HediffDef>
+		<defName>Seg_COTO_Sicarian_Morph</defName>
+		<label>Sicarian adaptation</label>
+		<description>This person has undergone surgical and augmetic adaptation into a Sicarian - a superbly efficient killing machine, but unsuited for anything besides holy warfare in the Omnissiah's name. Superfluous parts and brain tissue have been removed, and the body is now ready to accept and operate martial augmetics in their place.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+        <li>
+            <label>initial</label>
+            <becomeVisible>false</becomeVisible>
+        </li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>1000</min>
+					<max>2000</max>
+				</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+		</comps>
+    <modExtensions>
+    <li Class="BigAndSmall.PawnExtension">
+      <morphSettings>
+        <morphOverAge>3</morphOverAge>
+      </morphSettings>
+      <morphTargets>
+        <li>
+          <xenotype>Seg_COTO_Sicarian</xenotype>
+          <removeHediffs>
+            <!-- <li></li> -->
+          </removeHediffs>
+        </li>
+      </morphTargets>
+    </li>
+  </modExtensions>
+	</HediffDef>
+
+</Defs>
