@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- Segmentum research tree -->
+<!-- Sicarian Killclades -->
+	<ResearchProjectDef>
+		<defName>Seg_COTO_SicarianKillclades</defName>
+		<label>Sicarian killclades</label>
+		<description>Be vested with the authority and data to form, equip, and command the lethal cybernetic scouts and assassins of the Sicarian killclades.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>Seg_COTO_TechGuardAdvanced</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>Seg_SegmentumTab</tab>
+		<discoveredLetterTitle>About: Sicarians</discoveredLetterTitle>
+		<discoveredLetterText>Grievously wounded skitarii can still be of use to the Adeptus Mechanicus. A skilled surgeon and crafter can operate and convert anybody to a Sicarian - removing many higher brain functions and any capabilities besides violence, but minimising their capacity to feel pain and making them perfect candidates for extreme martially-focused augmetics.\n\nOnly those who have undergone this conversion can make use of Sicarian equipment.</discoveredLetterText>
+	</ResearchProjectDef>
+
+</Defs>
